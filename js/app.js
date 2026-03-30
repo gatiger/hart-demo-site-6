@@ -125,6 +125,43 @@ function initGlobalNav(){
   });
 }
 
+function updateResponsiveHeader() {
+  const topbar = document.querySelector(".topbar");
+  const navRow = document.querySelector(".navRow");
+  const brand = document.querySelector(".brandLink");
+  const nav = document.querySelector(".topNav");
+  const menuBtn = document.getElementById("menuBtn");
+
+  if (!topbar || !navRow || !brand || !nav || !menuBtn) return;
+
+  // Reset to desktop state so measurements are accurate
+  topbar.classList.remove("nav-compact");
+
+  const rowWidth = navRow.clientWidth;
+  const brandWidth = brand.getBoundingClientRect().width;
+  const navWidth = nav.scrollWidth;
+
+  // Approximate combined spacing between brand and nav/button
+  const extraSpace = 32;
+
+  const needsCompact = (brandWidth + navWidth + extraSpace) > rowWidth;
+
+  topbar.classList.toggle("nav-compact", needsCompact);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  initMobileMenu();
+
+  if (typeof initLanguageControls === "function") {
+    initLanguageControls();
+  }
+
+  initGlobalNav();
+  updateResponsiveHeader();
+
+  window.addEventListener("resize", updateResponsiveHeader);
+});
+
 document.addEventListener("DOMContentLoaded", () => {
   initMobileMenu();
 
