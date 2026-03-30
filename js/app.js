@@ -158,16 +158,6 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("resize", updateResponsiveHeader);
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  initMobileMenu();
-
-  if(typeof initLanguageControls === "function"){
-    initLanguageControls();
-  }
-
-  initGlobalNav();
-});
-
 document.addEventListener("focusin", (e) => {
   const el = e.target;
   if(!el || typeof el.getBoundingClientRect !== "function") return;
