@@ -562,7 +562,7 @@ textarea,
 }
 
 /* ── Reflow / zoom breakpoints ── */
-@media (max-width: 1200px) {
+@media (max-width: 10240px) {
   .topNav {
     display: none;
   }
