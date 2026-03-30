@@ -1,10 +1,9 @@
-/* ==============================================
-   Forms & Documents page — Hart County style
-   Requires base.css for tokens + shared styles
-   ============================================== */
-
-/* ── Page top spacing ── */
-.formsPage { padding-top: 1.75rem; }
+/* ============================================================
+   forms.css — Hart County Forms & Documents page
+   Written to match the working forms page exactly.
+   Uses the project's actual class names from forms.html.
+   Requires base.css for tokens.
+   ============================================================ */
 
 /* ── Intro card ── */
 .formsIntroCard {
@@ -14,8 +13,6 @@
   margin-bottom: 1.125rem;
   position: relative;
   overflow: hidden;
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-card);
 }
 .formsIntroCard::after {
   content: '';
@@ -33,7 +30,7 @@
   font-weight: 600;
   color: #fff;
   line-height: 1.2;
-  margin: 0 0 .5rem;
+  margin-bottom: .5rem;
 }
 
 .formsPageIntro {
@@ -41,7 +38,7 @@
   color: rgba(255,255,255,.7);
   max-width: 58ch;
   line-height: 1.65;
-  margin: 0 0 1.125rem;
+  margin-bottom: 1.125rem;
 }
 
 .formsArchiveLinkWrap { margin: 0; }
@@ -65,17 +62,6 @@
 .formsSearchCard {
   padding: 1.25rem 1.5rem;
   margin-bottom: 1.125rem;
-  background: var(--surface);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-card);
-}
-
-.sectionTitle {
-  font-family: var(--font-serif);
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--navy);
-  margin: 0 0 .875rem;
 }
 
 .formsSearchField { display: grid; gap: .5rem; }
@@ -87,7 +73,7 @@
   color: var(--text-muted);
 }
 
-.formsSearchInput {
+#formsSearchInput {
   width: 100%;
   max-width: 620px;
   height: 42px;
@@ -101,17 +87,17 @@
   outline: none;
   transition: border-color .15s, box-shadow .15s;
 }
-.formsSearchInput:focus {
+#formsSearchInput:focus {
   border-color: var(--focus);
   box-shadow: 0 0 0 3px rgba(26,125,212,.14);
 }
-.formsSearchInput::placeholder { color: var(--text-hint); }
+#formsSearchInput::placeholder { color: var(--text-hint); }
 
-.formsSearchStatus {
+#formsSearchStatus {
   min-height: 1.2em;
   font-size: .8125rem;
   color: var(--text-muted);
-  margin: .375rem 0 0;
+  margin-top: .375rem;
 }
 
 /* ── Two-col layout ── */
@@ -127,133 +113,123 @@
   padding: 1.125rem;
   position: sticky;
   top: 1.125rem;
-  background: var(--surface);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-card);
 }
 .formsNavCard .sectionTitle { font-size: .9375rem; }
 
-.formsNavTree { display: flex; flex-direction: column; gap: .5rem; }
+.formsNavTree { display: flex; flex-direction: column; gap: .375rem; }
 
-/* ── Category (level 1) ── */
+/* ── Level 1: Department ── */
 .formCategory {
-  border: 1px solid var(--border);
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-sm);
   overflow: hidden;
-  background: var(--surface);
 }
 
 .formCategoryBtn {
-  width: 100%;
-  border: none;
-  background: transparent;
-  text-align: left;
-  cursor: pointer;
-  font: inherit;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: .75rem;
-  padding: .5rem .625rem;
+  gap: .5rem;
+  width: 100%;
+  padding: .375rem .5rem;
+  font-family: var(--font-body);
   font-size: .8rem;
   font-weight: 700;
   color: var(--navy);
+  background: transparent;
+  border: none;
   border-radius: var(--radius-sm);
+  cursor: pointer;
+  text-align: left;
   transition: background .12s;
+  letter-spacing: .01em;
 }
-.formCategoryBtn:hover { background: var(--navy-light); }
-.formCategoryBtn[aria-expanded="true"] { background: var(--navy-light); }
+.formCategoryBtn:hover                    { background: var(--navy-light); }
+.formCategoryBtn[aria-expanded="true"]    { background: var(--navy-light); }
 
 .formCategoryBtnText { line-height: 1.3; }
 
-.formCategoryIcon,
-.formTypeIcon {
-  font-size: .7rem;
+.formCategoryIcon {
+  font-size: .65rem;
   color: var(--text-hint);
   flex-shrink: 0;
   transition: transform .18s;
   font-style: normal;
 }
-.formCategoryBtn[aria-expanded="true"] .formCategoryIcon,
-.formTypeBtn[aria-expanded="true"]     .formTypeIcon {
-  transform: rotate(90deg);
-}
+.formCategoryBtn[aria-expanded="true"] .formCategoryIcon { transform: rotate(90deg); }
 
-/* ── Type (level 2) ── */
+/* ── Level 2: File type ── */
 .formTypes {
   display: flex;
   flex-direction: column;
-  gap: .375rem;
-  padding: 0 .5rem .5rem;
+  gap: .25rem;
+  padding: 0 0 .25rem .875rem;
 }
 
-.formType {
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  overflow: hidden;
-  background: var(--surface-alt);
-}
+.formType { overflow: hidden; }
 
 .formTypeBtn {
-  width: 100%;
-  border: none;
-  background: transparent;
-  text-align: left;
-  cursor: pointer;
-  font: inherit;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: .5rem;
+  width: 100%;
   padding: .3rem .5rem;
+  font-family: var(--font-body);
   font-size: .775rem;
   font-weight: 600;
   color: var(--text-muted);
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  text-align: left;
   transition: background .12s, color .12s;
 }
-.formTypeBtn:hover { background: var(--navy-light); color: var(--navy); }
+.formTypeBtn:hover                 { background: var(--surface-alt); color: var(--text); }
 .formTypeBtn[aria-expanded="true"] { color: var(--text); }
 
-/* ── Files (level 3) ── */
+.formTypeIcon {
+  font-size: .6rem;
+  color: var(--text-hint);
+  flex-shrink: 0;
+  transition: transform .18s;
+  font-style: normal;
+}
+.formTypeBtn[aria-expanded="true"] .formTypeIcon { transform: rotate(90deg); }
+
+/* ── Level 3: Files ── */
 .formFiles {
   display: flex;
   flex-direction: column;
-  gap: .25rem;
-  padding: 0 .375rem .375rem;
+  gap: .125rem;
+  padding: 0 0 .25rem .875rem;
 }
 
 .formFileBtn {
+  display: block;
   width: 100%;
-  border: 1px solid transparent;
-  background: transparent;
-  text-align: left;
-  cursor: pointer;
-  font: inherit;
+  padding: .3rem .5rem;
+  font-family: var(--font-body);
   font-size: .775rem;
   font-weight: 500;
   color: var(--text-muted);
-  padding: .3rem .5rem;
+  background: transparent;
+  border: none;
   border-radius: var(--radius-sm);
+  cursor: pointer;
+  text-align: left;
   line-height: 1.45;
-  transition: background .12s, color .12s, border-color .12s;
+  transition: background .12s, color .12s;
 }
-.formFileBtn:hover { background: var(--surface-alt); color: var(--text); }
-.formFileBtn:focus-visible { border-color: var(--focus); }
-.formFileBtn.is-active {
-  background: var(--navy-light);
-  color: var(--navy);
-  font-weight: 600;
-  border-color: rgba(26,46,74,.18);
-}
+.formFileBtn:hover        { background: var(--surface-alt); color: var(--text); }
+.formFileBtn.is-active    { background: var(--navy-light); color: var(--navy); font-weight: 600; }
+.formFileBtn:focus-visible { outline: 2px solid var(--focus); outline-offset: 1px; }
 
 /* ── Viewer card ── */
 .formsViewerCard {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  background: var(--surface);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-card);
 }
 
 .formsViewerHead {
@@ -272,7 +248,7 @@
   text-transform: uppercase;
   color: var(--gold);
   min-height: 1em;
-  margin: 0 0 .25rem;
+  margin-bottom: .25rem;
 }
 
 .formsViewerTitle {
@@ -284,7 +260,7 @@
   margin: 0;
 }
 
-/* ── Action buttons (Open PDF links) ── */
+/* ── Open PDF action links ── */
 .formsViewerActions {
   display: flex;
   flex-wrap: wrap;
@@ -292,7 +268,6 @@
   padding: .75rem 1.5rem;
   border-bottom: 0.5px solid var(--border);
 }
-
 .formsViewerActionsBottom {
   padding: .875rem 1.5rem;
   border-top: 0.5px solid var(--border);
@@ -323,7 +298,7 @@
   text-decoration: none;
 }
 
-/* ── Meta pills ── */
+/* ── Meta strip ── */
 .formsViewerMeta {
   display: flex;
   flex-wrap: wrap;
@@ -338,38 +313,26 @@
   color: var(--text-muted);
   line-height: 1.4;
 }
-.formsViewerMetaItem::before {
-  display: inline-block;
-  content: '';
-  width: 6px; height: 6px;
-  border-radius: 50%;
-  background: var(--gold);
-  margin-right: .375rem;
-  vertical-align: middle;
-  margin-bottom: 1px;
-}
 
 /* ── Description ── */
 .formsViewerDescription {
   padding: .875rem 1.5rem;
-  border-bottom: 0.5px solid var(--border);
-}
-.formsViewerDescription p {
-  margin: 0;
   font-size: .875rem;
   color: var(--text-muted);
   line-height: 1.65;
+  border-bottom: 0.5px solid var(--border);
 }
+.formsViewerDescription p { margin: 0; }
 
 /* ── Preview area ── */
 .formsPreviewWrap {
   flex: 1;
   min-height: 480px;
   display: flex;
-  align-items: stretch;
+  align-items: center;
+  justify-content: center;
   background: var(--surface-alt);
   position: relative;
-  overflow: hidden;
 }
 
 .formsPreviewFrame {
@@ -381,30 +344,16 @@
 }
 
 .formsPreviewFallback {
-  flex: 1;
-  min-height: 480px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 3rem;
-  text-align: center;
-}
-.formsPreviewFallback p {
-  margin: 0;
+  gap: .75rem;
+  color: var(--text-hint);
   font-size: .9375rem;
-  color: var(--text-hint);
-  line-height: 1.7;
-  max-width: 40ch;
-}
-
-/* ── Footer ── */
-.footer {
-  margin-top: 2rem;
   text-align: center;
-  font-size: .8125rem;
-  color: var(--text-hint);
-  padding-bottom: .5rem;
+  padding: 3rem;
 }
+.formsPreviewFallback p { margin: 0; color: var(--text-hint); line-height: 1.7; max-width: 40ch; }
 
 /* ── Responsive ── */
 @media (max-width: 1100px) {
@@ -412,20 +361,20 @@
 }
 
 @media (max-width: 900px) {
-  .formsLayout { grid-template-columns: 1fr; }
+  .formsLayout  { grid-template-columns: 1fr; }
   .formsNavCard { position: static; }
   .formsPreviewFrame { height: 560px; }
 }
 
 @media (max-width: 640px) {
-  .formsIntroCard        { padding: 1.5rem 1.25rem 1.25rem; }
-  .formsSearchCard       { padding: 1rem 1.25rem; }
-  .formsNavCard          { padding: 1rem; }
-  .formsViewerHead       { flex-direction: column; align-items: flex-start; }
-  .formsViewerActions    { padding: .625rem 1.25rem; }
-  .formsViewerMeta       { padding: .625rem 1.25rem; }
-  .formsViewerDescription{ padding: .75rem 1.25rem; }
-  .formsPreviewFrame     { height: 460px; }
-  .formsPreviewFallback  { min-height: 360px; }
-  .formsPageTitle        { font-size: 1.375rem; }
+  .formsIntroCard     { padding: 1.5rem 1.25rem 1.25rem; }
+  .formsSearchCard    { padding: 1rem 1.25rem; }
+  .formsNavCard       { padding: 1rem; }
+  .formsViewerHead    { flex-direction: column; align-items: flex-start; }
+  .formsViewerActions { padding: .625rem 1.25rem; }
+  .formsViewerMeta    { padding: .625rem 1.25rem; }
+  .formsViewerDescription { padding: .75rem 1.25rem; }
+  .formsPreviewFrame  { height: 460px; }
+  .formsPreviewFallback { min-height: 360px; }
+  .formsPageTitle     { font-size: 1.375rem; }
 }
