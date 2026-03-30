@@ -6,10 +6,10 @@ function renderDirectory(items) {
 
   const safe = (v) => (v === undefined || v === null) ? "" : String(v).trim();
   const visible = (items || [])
-  .filter(d => d.enabled !== false)
-  .sort((a, b) =>
-    (a.title || "").localeCompare((b.title || ""), undefined, { sensitivity: "base" })
-  );
+    .filter(d => d.enabled !== false)
+    .sort((a, b) =>
+      (a.title || "").localeCompare((b.title || ""), undefined, { sensitivity: "base" })
+    );
 
   list.innerHTML = visible.map(d => {
     const name  = safe(d.name);
@@ -102,6 +102,19 @@ function renderDirectory(items) {
   });
 }
 
+function initDirectorySearch() {
+  const input = document.getElementById("dirSearch");
+  if (!input) return;
+
+  input.addEventListener("input", () => {
+    const q = (input.value || "").toLowerCase();
+    document.querySelectorAll("#directoryList .item").forEach(card => {
+      const text = (card.innerText || "").toLowerCase();
+      card.style.display = text.includes(q) ? "" : "none";
+    });
+  });
+}
+
 document.addEventListener("DOMContentLoaded", async () => {
   const dirEl = document.getElementById("directoryList");
   const dirPath = dirEl?.getAttribute("data-json");
@@ -110,4 +123,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   const directory = await loadJSON(dirPath);
   if (directory?.items) renderDirectory(directory.items);
   else if (Array.isArray(directory)) renderDirectory(directory);
+
+  initDirectorySearch();
 });
