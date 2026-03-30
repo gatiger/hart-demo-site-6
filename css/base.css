@@ -105,7 +105,7 @@ a:hover {
   flex: 0 0 520px;
   min-width: 520px;
   position: relative;
-  padding-left: 100px;
+  padding-left: 240px;
 }
 
 .brandLink:hover {
@@ -126,7 +126,7 @@ a:hover {
   padding: 3px;
   position: absolute;
   left: 5px;
-  top: 20px;
+  top: 5px;
   transform: none;
   box-shadow: 0 4px 12px rgba(0,0,0,.18);
 }
