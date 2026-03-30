@@ -34,11 +34,6 @@
   --shadow-card: 0 1px 3px rgba(26,46,74,.08), 0 0 0 0.5px rgba(26,46,74,.12);
   --font-body:   'DM Sans', system-ui, sans-serif;
   --font-serif:  'Source Serif 4', Georgia, serif;
-
-  /* How far the seal overflows below the topbar.
-     Seal = 200px, navRow = 100px, overflow = 100px.
-     We add 1rem breathing room so cards don't touch the seal. */
-  --seal-overflow: calc(200px - 100px + 1rem);
 }
 
 /* ── Body ── */
@@ -62,7 +57,7 @@ a:hover { text-decoration: underline; }
   background: var(--navy);
   color: #fff;
   border-bottom: 1px solid rgba(255,255,255,.08);
-  overflow: visible;   /* allows seal to overflow downward */
+  overflow: visible;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -76,7 +71,7 @@ a:hover { text-decoration: underline; }
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  height: 100px;      /* taller bar */
+  height: 100px;
 }
 
 /* ── Brand ── */
@@ -88,11 +83,11 @@ a:hover { text-decoration: underline; }
   color: inherit;
   flex-shrink: 0;
   position: relative;
-  padding-left: calc(200px + 1.25rem); /* matches seal width */
+  padding-left: calc(200px + 1.25rem);
 }
 .brandLink:hover { text-decoration: none; }
 
-/* ── Seal — 200×200, anchored to top of navRow, overflows below ── */
+/* ── Seal — 200×200px, small gap from top, overflows below navRow ── */
 .seal {
   width: 200px;
   height: 200px;
@@ -105,10 +100,10 @@ a:hover { text-decoration: underline; }
   overflow: hidden;
   padding: 3px;
   position: absolute;
-  top: 0;
+  top: 8px;   /* small gap from top of navRow */
   left: 0;
-  /* Subtle drop shadow so it reads over page content below */
-  box-shadow: 0 4px 16px rgba(0,0,0,.25);
+  box-shadow: 0 4px 16px rgba(0,0,0,.3);
+  z-index: 10;
 }
 .seal img { width: 100%; height: 100%; object-fit: contain; }
 
@@ -117,18 +112,18 @@ a:hover { text-decoration: underline; }
   display: flex;
   flex-direction: column;
   line-height: 1.2;
-  padding-top: .375rem;
+  padding-top: .5rem;
 }
 .kicker {
   font-family: var(--font-body);
-  font-size: 2rem;       /* larger */
+  font-size: 2rem;
   font-weight: 700;
   letter-spacing: .01em;
   color: #fff;
 }
 .title {
   font-family: var(--font-body);
-  font-size: .9375rem;   /* slightly larger subtitle */
+  font-size: .9375rem;
   font-weight: 400;
   color: rgba(255,255,255,.6);
   letter-spacing: .01em;
@@ -301,10 +296,9 @@ a, button, input, select, textarea, [tabindex]:not([tabindex="-1"]) {
 }
 
 @media (max-width: 768px) {
-  :root { --seal-overflow: calc(120px - 80px + 1rem); }
   .navRow    { height: 80px; }
   .brandLink { padding-left: calc(120px + 1rem); }
-  .seal      { width: 120px; height: 120px; }
+  .seal      { width: 120px; height: 120px; top: 6px; }
   .kicker    { font-size: 1.375rem; }
   .title     { font-size: .8125rem; }
 }
