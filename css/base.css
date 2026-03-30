@@ -2,7 +2,6 @@
    base.css — Hart County
    Global only: reset, tokens, body, topbar, mobile menu,
    footer, skip link, focus, utilities, responsive.
-   Nothing page-specific. Nothing component-specific.
    ============================================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600&family=DM+Sans:wght@400;500;600&display=swap');
@@ -35,11 +34,16 @@
   --shadow-card: 0 1px 3px rgba(26,46,74,.08), 0 0 0 0.5px rgba(26,46,74,.12);
   --font-body:   'DM Sans', system-ui, sans-serif;
   --font-serif:  'Source Serif 4', Georgia, serif;
+
+  /* How far the seal overflows below the topbar.
+     Seal = 200px, navRow = 100px, overflow = 100px.
+     We add 1rem breathing room so cards don't touch the seal. */
+  --seal-overflow: calc(200px - 100px + 1rem);
 }
 
 /* ── Body ── */
 html, body { height: 100%; }
-html { scroll-behavior: smooth; scroll-padding-top: 96px; }
+html { scroll-behavior: smooth; scroll-padding-top: 116px; }
 
 body {
   font-family: var(--font-body);
@@ -58,7 +62,7 @@ a:hover { text-decoration: underline; }
   background: var(--navy);
   color: #fff;
   border-bottom: 1px solid rgba(255,255,255,.08);
-  overflow: visible;
+  overflow: visible;   /* allows seal to overflow downward */
   position: sticky;
   top: 0;
   z-index: 100;
@@ -71,10 +75,11 @@ a:hover { text-decoration: underline; }
   padding: 0 1.5rem;
   display: flex;
   align-items: center;
-  gap: 1.25rem;
-  height: 80px;
+  gap: 1.5rem;
+  height: 100px;      /* taller bar */
 }
 
+/* ── Brand ── */
 .brandLink {
   display: flex;
   align-items: flex-start;
@@ -83,13 +88,14 @@ a:hover { text-decoration: underline; }
   color: inherit;
   flex-shrink: 0;
   position: relative;
-  padding-left: calc(90px + 1rem);
+  padding-left: calc(200px + 1.25rem); /* matches seal width */
 }
 .brandLink:hover { text-decoration: none; }
 
+/* ── Seal — 200×200, anchored to top of navRow, overflows below ── */
 .seal {
-  width: 90px;
-  height: 90px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   background: rgba(255,255,255,.08);
   display: flex;
@@ -97,33 +103,38 @@ a:hover { text-decoration: underline; }
   justify-content: center;
   flex-shrink: 0;
   overflow: hidden;
-  padding: 2px;
+  padding: 3px;
   position: absolute;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
+  /* Subtle drop shadow so it reads over page content below */
+  box-shadow: 0 4px 16px rgba(0,0,0,.25);
 }
 .seal img { width: 100%; height: 100%; object-fit: contain; }
 
+/* ── Brand text ── */
 .brandText {
   display: flex;
   flex-direction: column;
-  line-height: 1.25;
-  padding-top: .25rem;
+  line-height: 1.2;
+  padding-top: .375rem;
 }
 .kicker {
   font-family: var(--font-body);
-  font-size: 1.25rem;
+  font-size: 2rem;       /* larger */
   font-weight: 700;
   letter-spacing: .01em;
   color: #fff;
 }
 .title {
   font-family: var(--font-body);
-  font-size: .8125rem;
+  font-size: .9375rem;   /* slightly larger subtitle */
   font-weight: 400;
   color: rgba(255,255,255,.6);
   letter-spacing: .01em;
 }
 
+/* ── Top nav ── */
 .topNav {
   display: flex;
   align-items: center;
@@ -240,8 +251,8 @@ footer.footer,
   justify-content: center;
   gap: .5rem;
 }
-.footerInner .sep { opacity: .4; }
-.footerInner a    { color: var(--text-hint); text-decoration: underline; }
+.footerInner .sep    { opacity: .4; }
+.footerInner a       { color: var(--text-hint); text-decoration: underline; }
 .footerInner a:hover { color: var(--text-muted); }
 
 /* ── Skip link ── */
@@ -262,7 +273,7 @@ footer.footer,
 }
 .skip-link:focus { transform: translateY(0); }
 
-/* ── Global utilities ── */
+/* ── Utilities ── */
 .sr-only {
   position: absolute !important;
   width: 1px; height: 1px;
@@ -273,12 +284,9 @@ footer.footer,
 [hidden] { display: none !important; }
 
 /* ── Focus ── */
-:focus-visible {
-  outline: 2px solid var(--focus);
-  outline-offset: 2px;
-}
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
 a, button, input, select, textarea, [tabindex]:not([tabindex="-1"]) {
-  scroll-margin-top: 96px;
+  scroll-margin-top: 116px;
 }
 
 /* ── Reduced motion ── */
@@ -293,8 +301,10 @@ a, button, input, select, textarea, [tabindex]:not([tabindex="-1"]) {
 }
 
 @media (max-width: 768px) {
-  .navRow    { height: 68px; }
-  .brandLink { padding-left: calc(60px + .75rem); }
-  .seal      { width: 60px; height: 60px; }
-  .kicker    { font-size: 1rem; }
+  :root { --seal-overflow: calc(120px - 80px + 1rem); }
+  .navRow    { height: 80px; }
+  .brandLink { padding-left: calc(120px + 1rem); }
+  .seal      { width: 120px; height: 120px; }
+  .kicker    { font-size: 1.375rem; }
+  .title     { font-size: .8125rem; }
 }
