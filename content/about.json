@@ -15,6 +15,30 @@
       "value": "Northeast Georgia"
     }
   ],
+  "carousel": {
+    "intro": "Scenes from across Hart County",
+    "intervalMs": 5000,
+    "images": [
+      {
+        "src": "/assets/images/about/lake-hartwell-1.jpg",
+        "alt": "Lake Hartwell shoreline at sunset",
+        "title": "Lake Hartwell",
+        "caption": "Hart County’s connection to Lake Hartwell supports recreation, tourism, and outdoor life."
+      },
+      {
+        "src": "/assets/images/about/courthouse-square.jpg",
+        "alt": "Downtown Hartwell streetscape and historic buildings",
+        "title": "Hartwell",
+        "caption": "The county seat serves as a center for government, business, and community events."
+      },
+      {
+        "src": "/assets/images/about/parks-trails.jpg",
+        "alt": "Park and trail area in Hart County",
+        "title": "Parks & Recreation",
+        "caption": "Outdoor spaces contribute to the county’s quality of life for residents and visitors."
+      }
+    ]
+  },
   "sections": [
     {
       "title": "History",
