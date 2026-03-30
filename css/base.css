@@ -1,7 +1,7 @@
 /* ============================================================
    base.css — Hart County
-   Built entirely from the working forms page.
-   No old styles. No pills. No rounded cards. No Inter font.
+   Global only: reset, tokens, body, topbar, nav, mobile menu,
+   container, card, buttons, footer, focus, utilities.
    ============================================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600&family=DM+Sans:wght@400;500;600;700&display=swap');
@@ -37,8 +37,15 @@
 }
 
 /* ── Body ── */
-html, body { height: 100%; }
-html { scroll-behavior: smooth; }
+html,
+body {
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 96px;
+}
 
 body {
   font-family: var(--font-body);
@@ -83,49 +90,60 @@ a:hover {
   padding: 0 1.5rem;
   display: flex;
   align-items: center;
-  gap: 1.5rem;
-  height: 100px;
+  gap: 1.25rem;
+  height: 120px;
 }
 
-/* ── Brand ── */
+/* ── Brand ──
+   Fixed-width brand area so the seal + county name move together,
+   while the nav stays pushed to the right. */
 .brandLink {
   display: flex;
-  align-items: flex-start;
-  gap: 1rem;
+  align-items: center;
   text-decoration: none;
   color: inherit;
-  flex-shrink: 0;
+  flex: 0 0 520px;
+  min-width: 520px;
   position: relative;
-  padding-left: calc(200px + 1.25rem);
+  padding-left: 320px;
 }
 
 .brandLink:hover {
   text-decoration: none;
 }
 
-/* ── Seal: 200×200px, sits 8px from top of navRow, overflows below ── */
+/* ── Seal ──
+   200×200 and centered vertically within the brand area */
 .seal {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   background: rgba(255,255,255,.08);
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
   overflow: hidden;
   padding: 3px;
   position: absolute;
-  top: 0; left: 0;
+  left: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 4px 12px rgba(0,0,0,.18);
 }
-.seal img { width: 100%; height: 100%; object-fit: contain; }
+
+.seal img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 
 /* ── Brand text ── */
 .brandText {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   line-height: 1.2;
-  padding-top: .5rem;
+  min-width: 0;
 }
 
 .kicker {
@@ -138,12 +156,13 @@ a:hover {
 
 .title {
   font-family: var(--font-body);
-  font-size: .9375rem;
+  font-size: .95rem;
   font-weight: 400;
   color: rgba(255,255,255,.68);
   letter-spacing: .01em;
 }
 
+/* ── Desktop nav ── */
 .topNav {
   display: flex;
   align-items: center;
@@ -166,10 +185,24 @@ a:hover {
   min-height: unset;
   display: inline;
 }
-.topNav a:hover                { color: #fff; background: rgba(255,255,255,.08); text-decoration: none; }
+
+.topNav a:hover {
+  color: #fff;
+  background: rgba(255,255,255,.08);
+  text-decoration: none;
+}
+
 .topNav a.active,
-.topNav a[aria-current="page"] { color: #fff; background: rgba(255,255,255,.14); }
-.topNav a:focus-visible        { outline: 2px solid var(--focus); outline-offset: 2px; }
+.topNav a.is-active,
+.topNav a[aria-current="page"] {
+  color: #fff;
+  background: rgba(255,255,255,.14);
+}
+
+.topNav a:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
 
 /* ── Mobile menu button ── */
 .menuBtn {
@@ -245,19 +278,30 @@ a:hover {
   font-family: var(--font-body);
   font-weight: 500;
   font-size: .9375rem;
-  font-family: var(--font-body);
-  border: none;
   background: transparent;
   transition: background .12s, color .12s;
 }
-.menuNav a:hover                { background: var(--navy-light); text-decoration: none; }
-.menuNav a[aria-current="page"] { background: var(--navy-light); color: var(--navy); font-weight: 600; }
-.menuNav hr { border: none; border-top: 1px solid var(--border); margin: .5rem 0; }
+
+.menuNav a:hover {
+  background: var(--navy-light);
+  text-decoration: none;
+}
+
+.menuNav a.is-active,
+.menuNav a[aria-current="page"] {
+  background: var(--navy-light);
+  color: var(--navy);
+  font-weight: 600;
+}
+
+.menuNav hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: .5rem 0;
+}
 
 /* ── Container ──
-   Seal: 200px tall, top: 8px → bottom edge at 208px from navRow top.
-   navRow height: 100px → seal overflows 108px below topbar.
-   Add 24px breathing room = 132px total top padding.            ── */
+   Large seal now overflows below the topbar, so keep extra top padding. */
 .container {
   max-width: 1280px;
   margin: 0 auto;
@@ -326,17 +370,39 @@ a:hover {
   color: var(--text-muted);
   transition: background .14s, color .14s, border-color .14s;
 }
-.btn:hover { background: var(--surface-alt); color: var(--text); }
+
+.btn:hover {
+  background: var(--surface-alt);
+  color: var(--text);
+}
+
+.btn.primary {
+  background: var(--navy);
+  border-color: var(--navy);
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background: var(--navy-mid);
+  border-color: var(--navy-mid);
+  color: #fff;
+}
 
 .btn.ghost {
   background: transparent;
   color: var(--text-muted);
   border-color: var(--border-mid);
 }
-.btn.ghost:hover { background: var(--surface-alt); color: var(--text); }
+
+.btn.ghost:hover {
+  background: var(--surface-alt);
+  color: var(--text);
+}
 
 /* ── Alerts ── */
-#alertHolder { margin-top: .875rem; }
+#alertHolder {
+  margin-top: .875rem;
+}
 
 /* ── Footer ── */
 footer.footer,
@@ -354,15 +420,42 @@ footer.footer,
 .footer > * + * {
   margin-top: .25rem;
 }
-.footerInner .sep { opacity: .4; }
-.footerInner a { color: var(--text-hint); text-decoration: underline; }
-.footerInner a:hover { color: var(--text-muted); }
+
+.footerInner .sep {
+  opacity: .4;
+}
+
+.footerInner a {
+  color: var(--text-hint);
+  text-decoration: underline;
+}
+
+.footerInner a:hover {
+  color: var(--text-muted);
+}
 
 /* ── Prose ── */
-.prose { max-width: 80ch; }
-.prose p { margin: 0 0 .875rem; line-height: 1.65; color: var(--text-muted); font-size: .9375rem; }
-.prose ul { margin: 0 0 .875rem 1.25rem; }
-.prose li { font-size: .9375rem; color: var(--text-muted); line-height: 1.6; }
+.prose {
+  max-width: 80ch;
+}
+
+.prose p {
+  margin: 0 0 .875rem;
+  line-height: 1.65;
+  color: var(--text-muted);
+  font-size: .9375rem;
+}
+
+.prose ul {
+  margin: 0 0 .875rem 1.25rem;
+}
+
+.prose li {
+  font-size: .9375rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
 .prose h3 {
   font-family: var(--font-serif);
   font-size: 1rem;
@@ -417,7 +510,11 @@ footer.footer,
 }
 
 /* ── Focus ── */
-:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
@@ -429,8 +526,12 @@ textarea:focus-visible {
 }
 
 /* ── Scroll margin ── */
-html { scroll-padding-top: 96px; }
-a, button, input, select, textarea, [tabindex]:not([tabindex="-1"]) {
+a,
+button,
+input,
+select,
+textarea,
+[tabindex]:not([tabindex="-1"]) {
   scroll-margin-top: 96px;
 }
 
@@ -452,12 +553,62 @@ a, button, input, select, textarea, [tabindex]:not([tabindex="-1"]) {
   .menuBtn {
     display: inline-flex;
   }
+
+  .navRow {
+    height: 90px;
+  }
+
+  .brandLink {
+    flex: 1 1 auto;
+    min-width: 0;
+    padding-left: 110px;
+  }
+
+  .seal {
+    width: 90px;
+    height: 90px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .kicker {
+    font-size: 1.25rem;
+  }
+
+  .title {
+    font-size: .8125rem;
+  }
+
+  .container {
+    padding: 1.75rem 1.5rem 3rem;
+  }
 }
 
 @media (max-width: 768px) {
-  .navRow    { height: 68px; }
-  .brandLink { padding-left: calc(60px + .75rem); }
-  .seal      { width: 60px; height: 60px; }
-  .kicker    { font-size: 1rem; }
-  .container { padding: 1.25rem 1rem 2.5rem; }
+  .navRow {
+    height: 68px;
+    padding: 0 1rem;
+  }
+
+  .brandLink {
+    padding-left: 60px;
+  }
+
+  .seal {
+    width: 60px;
+    height: 60px;
+  }
+
+  .kicker {
+    font-size: 1rem;
+  }
+
+  .title {
+    font-size: .75rem;
+  }
+
+  .container {
+    padding: 1.25rem 1rem 2.5rem;
+  }
 }
