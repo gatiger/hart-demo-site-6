@@ -1,0 +1,577 @@
+/* ─── Forms & Documents page ─────────────────────────────────────────────────
+   Requires base.css to provide:
+     --text, --muted (or --text-muted), --accent, --border,
+     --surface, --surface-alt (or --bg),
+     --font-body, --font-serif,
+     --radius-sm, --radius-md, --radius-lg,
+     --shadow-card,
+     and the base .card / .container rules.
+   ─────────────────────────────────────────────────────────────────────────── */
+
+/* ─── Page scaffold ──────────────────────────────────────────────────────── */
+
+.formsPage {
+  padding-top: 1.5rem;
+}
+
+/* ─── Intro card ─────────────────────────────────────────────────────────── */
+
+.formsIntroCard {
+  margin-bottom: 1.125rem;
+  padding: 2rem 2rem 1.75rem;
+  /* Uses a dark brand colour. If base.css exposes a --navy or --brand-dark,
+     swap the fallback below to match. */
+  background-color: var(--brand-dark, var(--navy, #1a2e4a));
+  color: #fff;
+  border-radius: var(--radius-lg, 12px);
+  box-shadow: var(--shadow-card);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decorative ring — no semantic meaning */
+.formsIntroCard::after {
+  content: '';
+  position: absolute;
+  right: -60px;
+  top: -60px;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .04);
+  pointer-events: none;
+}
+
+.formsPageTitle {
+  margin: 0 0 .5rem;
+  font-family: var(--font-serif);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 600;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.formsPageIntro {
+  margin: 0 0 1.25rem;
+  font-size: .9375rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, .72);
+  max-width: 62ch;
+}
+
+.formsArchiveLinkWrap {
+  margin: 0;
+}
+
+.formsArchiveLink {
+  display: inline-flex;
+  align-items: center;
+  gap: .375rem;
+  padding: .4375rem 1rem;
+  font-size: .875rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, .9);
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, .28);
+  border-radius: var(--radius-sm, 4px);
+  transition: background .15s, border-color .15s;
+}
+
+.formsArchiveLink:hover {
+  background: rgba(255, 255, 255, .1);
+  border-color: rgba(255, 255, 255, .5);
+}
+
+.formsArchiveLink:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, .8);
+  outline-offset: 2px;
+}
+
+/* ─── Search card ─────────────────────────────────────────────────────────── */
+
+.formsSearchCard {
+  margin-bottom: 1.125rem;
+  padding: 1.25rem 1.5rem;
+}
+
+.formsSearchField {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.formsSearchLabel {
+  font-size: .8125rem;
+  font-weight: 500;
+  color: var(--muted, var(--text-muted));
+}
+
+.formsSearchInput {
+  width: 100%;
+  max-width: 640px;
+  height: 42px;
+  padding: 0 1rem 0 2.75rem;
+  font-family: var(--font-body);
+  font-size: .9375rem;
+  color: var(--text);
+  background-color: var(--surface-alt, var(--bg, #f7f8fa));
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%235a6a7a' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='6.5' cy='6.5' r='4'/%3E%3Cline x1='10' y1='10' x2='14' y2='14'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 14px center;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md, 8px);
+  outline: none;
+  -webkit-appearance: none;
+  transition: border-color .15s, box-shadow .15s;
+}
+
+.formsSearchInput::placeholder {
+  color: var(--muted, var(--text-muted));
+  opacity: 1;
+}
+
+.formsSearchInput:hover {
+  border-color: var(--border-mid, var(--border));
+  filter: brightness(.92);
+}
+
+.formsSearchInput:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-subtle, rgba(0, 0, 0, .08));
+}
+
+.formsSearchStatus {
+  min-height: 1.4em;
+  margin-top: .375rem;
+  font-size: .8125rem;
+  color: var(--muted, var(--text-muted));
+}
+
+/* ─── Two-column layout ──────────────────────────────────────────────────── */
+
+.formsLayout {
+  display: grid;
+  grid-template-columns: 268px minmax(0, 1fr);
+  gap: 1.125rem;
+  align-items: start;
+}
+
+/* ─── Nav card ────────────────────────────────────────────────────────────── */
+
+.formsNavCard {
+  padding: 1.25rem;
+  position: sticky;
+  top: calc(64px + 1.25rem);
+  max-height: calc(100vh - 64px - 2.5rem);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.formsNavCard .sectionTitle {
+  font-size: .9375rem;
+  margin-bottom: .75rem;
+}
+
+.formsNavLoading {
+  padding: .5rem .625rem;
+  font-size: .8125rem;
+  color: var(--muted, var(--text-muted));
+}
+
+/* ── Shared button reset ── */
+
+.formCategoryBtn,
+.formTypeBtn,
+.formFileBtn {
+  width: 100%;
+  font-family: var(--font-body);
+  background: transparent;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  border-radius: var(--radius-sm, 4px);
+  transition: color .13s, background .13s;
+}
+
+.formCategoryBtn:focus-visible,
+.formTypeBtn:focus-visible,
+.formFileBtn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+/* ── Level 1: Category ── */
+
+.formsNavTree {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.formCategory {
+  display: flex;
+  flex-direction: column;
+}
+
+.formCategoryBtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .5rem;
+  padding: .375rem .625rem;
+  font-size: .6875rem;
+  font-weight: 700;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: var(--muted, var(--text-muted));
+  margin-top: .5rem;
+}
+
+.formCategory:first-child .formCategoryBtn {
+  margin-top: 0;
+}
+
+.formCategoryBtn:hover {
+  color: var(--text);
+  background: var(--surface-alt, var(--bg));
+}
+
+.formCategoryIcon {
+  flex-shrink: 0;
+  font-size: .65rem;
+  opacity: .55;
+  transition: transform .2s ease;
+}
+
+.formCategory.is-open > .formCategoryBtn > .formCategoryIcon {
+  transform: rotate(180deg);
+}
+
+/* ── Level 2: Type ── */
+
+.formTypes {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  margin-left: 10px;
+  border-left: 1.5px solid var(--border);
+}
+
+.formTypes[hidden] {
+  display: none;
+}
+
+.formType {
+  display: flex;
+  flex-direction: column;
+}
+
+.formTypeBtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .5rem;
+  padding: .375rem .625rem;
+  font-size: .8125rem;
+  font-weight: 600;
+  color: var(--muted, var(--text-muted));
+}
+
+.formTypeBtn:hover {
+  color: var(--text);
+  background: var(--surface-alt, var(--bg));
+}
+
+.formTypeIcon {
+  flex-shrink: 0;
+  font-size: .6rem;
+  opacity: .5;
+  transition: transform .2s ease;
+}
+
+.formType.is-open > .formTypeBtn > .formTypeIcon {
+  transform: rotate(180deg);
+}
+
+/* ── Level 3: File ── */
+
+.formFiles {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  margin-left: 10px;
+  border-left: 1.5px solid var(--border);
+}
+
+.formFiles[hidden] {
+  display: none;
+}
+
+.formFileBtn {
+  padding: .375rem .625rem;
+  font-size: .8125rem;
+  font-weight: 500;
+  color: var(--muted, var(--text-muted));
+  line-height: 1.4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.formFileBtn:hover {
+  color: var(--text);
+  background: var(--surface-alt, var(--bg));
+}
+
+.formFileBtn.is-active {
+  color: var(--accent);
+  background: var(--accent-subtle, rgba(0, 0, 0, .06));
+  font-weight: 600;
+}
+
+/* ─── Viewer card ─────────────────────────────────────────────────────────── */
+
+.formsViewerCard {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow: hidden;
+}
+
+.formsViewerHead {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem 1rem;
+  border-bottom: 0.5px solid var(--border);
+}
+
+.formsViewerEyebrow {
+  margin: 0 0 .25rem;
+  font-size: .6875rem;
+  font-weight: 700;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: var(--accent);
+  min-height: 1em;
+}
+
+.formsViewerTitle {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: clamp(1.0625rem, 1.5vw, 1.25rem);
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--text);
+}
+
+/* Top action bar */
+.formsViewerActions {
+  padding: .875rem 1.5rem;
+  border-bottom: 0.5px solid var(--border);
+}
+
+.formsViewerActions[hidden] {
+  display: none;
+}
+
+/* Bottom action bar */
+.formsViewerActionsBottom {
+  padding: .875rem 1.5rem;
+  border-top: 0.5px solid var(--border);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.formsViewerActionsBottom[hidden] {
+  display: none;
+}
+
+.formsViewerActionLink {
+  display: inline-flex;
+  align-items: center;
+  gap: .375rem;
+  padding: .4375rem 1rem;
+  font-family: var(--font-body);
+  font-size: .8125rem;
+  font-weight: 600;
+  color: var(--text);
+  text-decoration: none;
+  background: var(--surface, #fff);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm, 4px);
+  white-space: nowrap;
+  transition: background .13s, border-color .13s, color .13s;
+}
+
+.formsViewerActionLink:hover {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+.formsViewerActionLink:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Metadata strip */
+.formsViewerMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .375rem 1.5rem;
+  padding: .75rem 1.5rem;
+  background: var(--surface-alt, var(--bg));
+  border-bottom: 0.5px solid var(--border);
+}
+
+.formsViewerMeta[hidden] {
+  display: none;
+}
+
+.formsViewerMeta > div {
+  display: flex;
+  flex-direction: column;
+  gap: .125rem;
+}
+
+.formsViewerMeta dt {
+  font-size: .6875rem;
+  font-weight: 700;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: var(--muted, var(--text-muted));
+}
+
+.formsViewerMeta dd {
+  font-size: .875rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+/* Description */
+.formsViewerDescription {
+  padding: .875rem 1.5rem;
+  font-size: .875rem;
+  line-height: 1.7;
+  color: var(--muted, var(--text-muted));
+  border-bottom: 0.5px solid var(--border);
+}
+
+.formsViewerDescription:empty {
+  display: none;
+}
+
+/* ─── Preview area ───────────────────────────────────────────────────────── */
+
+.formsPreviewWrap {
+  position: relative;
+  height: calc(100vh - 269px - 200px);
+  min-height: 480px;
+  background: var(--surface-alt, var(--bg, #f7f8fa));
+}
+
+.formsPreviewObject,
+.formsPreviewFrame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+.formsPreviewObject[hidden],
+.formsPreviewFrame[hidden] {
+  display: none;
+}
+
+/* Fallback rendered inside <object> when PDF can't display inline */
+.formsPreviewFallback--pdf {
+  margin: 1.5rem;
+  padding: 2rem;
+  background: var(--surface, #fff);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md, 8px);
+  text-align: center;
+  font-size: .9375rem;
+  color: var(--muted, var(--text-muted));
+}
+
+/* Default empty state */
+.formsPreviewFallback {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .75rem;
+  padding: 2rem;
+  color: var(--muted, var(--text-muted));
+  font-size: .9375rem;
+  text-align: center;
+}
+
+.formsPreviewFallback[hidden] {
+  display: none;
+}
+
+.formsPreviewIcon {
+  display: block;
+  opacity: .35;
+}
+
+/* ─── Footer ──────────────────────────────────────────────────────────────── */
+
+.footer {
+  margin-top: 2.5rem;
+  text-align: center;
+  font-size: .8125rem;
+  color: var(--muted, var(--text-muted));
+}
+
+/* ─── Responsive ──────────────────────────────────────────────────────────── */
+
+@media (max-width: 1100px) {
+  .formsLayout {
+    grid-template-columns: 228px minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .formsLayout {
+    grid-template-columns: 1fr;
+  }
+
+  .formsNavCard {
+    position: static;
+    max-height: none;
+    overflow-y: visible;
+  }
+}
+
+@media (max-width: 720px) {
+  .formsIntroCard {
+    padding: 1.5rem;
+  }
+
+  .formsViewerHead {
+    flex-direction: column;
+  }
+
+  .formsViewerActionLink {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .formsPreviewWrap {
+    height: calc(100vh - 269px - 160px);
+    min-height: 360px;
+  }
+}

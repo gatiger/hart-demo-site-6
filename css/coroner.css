@@ -1,0 +1,19 @@
+/* Coroner page */
+
+.comingSoonCard{
+  margin-top: 18px;
+  min-height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 32px 24px;
+}
+
+.comingSoonText{
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: .02em;
+}

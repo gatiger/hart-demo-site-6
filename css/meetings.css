@@ -1,0 +1,138 @@
+/* Meetings page + homepage mini calendar */
+
+.miniCal{ margin-top: 10px; }
+
+.miniCalHead{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom:10px;
+}
+
+.miniCalHeadLeft{
+  display:flex;
+  align-items:flex-start;
+  gap:10px;
+}
+
+.miniCalTitle{
+  font-weight:700;
+  letter-spacing:.2px;
+}
+
+.miniCalNav{
+  display:flex;
+  gap:8px;
+  margin-top:2px;
+}
+
+.miniCalNavBtn{
+  width:34px;
+  height:34px;
+  border-radius:12px;
+  border:1px solid var(--border);
+  background: rgba(255,255,255,.04);
+  color: var(--text);
+  cursor:pointer;
+}
+
+.miniCalNavBtn:hover{ background: rgba(255,255,255,.07); }
+
+.miniCalNavBtn:focus-visible{
+  outline: 3px solid rgba(255,122,24,.9);
+  outline-offset: 2px;
+}
+
+.miniCalLegend{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+}
+
+.miniCalKey{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  font-size:12px;
+  padding:4px 8px;
+  border-radius:999px;
+  border:1px solid var(--border);
+  background: rgba(255,255,255,.04);
+}
+
+.miniCalKeyLabel{ color: var(--muted); }
+
+.miniCalGrid{
+  display:grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap:8px;
+}
+
+.miniCalDow{
+  font-size:12px;
+  color: var(--muted);
+  text-align:center;
+}
+
+.miniCalCell{
+  position:relative;
+  min-height:44px;
+  border-radius:14px;
+  border:1px solid var(--border);
+  background: rgba(255,255,255,.04);
+  display:flex;
+  align-items:flex-start;
+  justify-content:flex-end;
+  padding:8px 10px;
+  text-decoration:none;
+  color: var(--text);
+}
+
+.miniCalCell.is-empty{
+  opacity:0;
+  pointer-events:none;
+  border-color:transparent;
+  background:transparent;
+}
+
+.miniCalDayNum{
+  font-weight:700;
+  font-size:14px;
+}
+
+.miniCalCell.is-event{ box-shadow: 0 12px 30px rgba(0,0,0,.25); }
+.miniCalCell:hover{ background: rgba(255,255,255,.06); }
+.miniCalCell:focus-visible{
+  outline: 3px solid rgba(255,122,24,.9);
+  outline-offset:2px;
+}
+
+.miniCalDots{
+  position:absolute;
+  left:10px;
+  bottom:8px;
+  display:flex;
+  gap:5px;
+  align-items:center;
+}
+
+.miniCalDot{
+  width:9px;
+  height:9px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.35);
+}
+
+.miniCalMore{
+  font-size:11px;
+  color: var(--muted);
+  padding-left:2px;
+}
+
+.mtg-commissioners{ background: rgba(80,160,255,.95); }
+.mtg-assessors{     background: rgba(255,122,24,.95); }
+.mtg-planning{      background: rgba(34,197,94,.95); }
+.mtg-zoning{        background: rgba(168,85,247,.95); }
+.mtg-default{       background: rgba(255,255,255,.55); }
