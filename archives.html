@@ -5,17 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Archived Documents | Hart County</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Quintessential&family=Felipa&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
 
   <link rel="stylesheet" href="/css/base.css" />
   <link rel="stylesheet" href="/css/archives.css" />
 
-  <script defer src="js/alerts.js"></script>
-  <script defer src="js/app.js"></script>
-  <script defer src="js/archives.js"></script>
+  <script defer src="/js/app.js"></script>
+  <script defer src="/js/archives.js"></script>
 </head>
 
 <body>
@@ -25,10 +21,10 @@
     <div class="navRow">
       <a class="brand brandLink" href="index.html">
         <div class="seal">
-          <img src="./assets/hart_seal.svg" alt="Hart County, Georgia official seal">
+          <img src="/assets/hart_seal.svg" alt="Hart County, Georgia official seal">
         </div>
         <div class="brandText">
-          <div class="kicker">Hart County, Georgia</div>
+          <div class="kicker">Hart County</div>
           <div class="title">Archived Documents</div>
         </div>
       </a>
@@ -42,7 +38,7 @@
         <a href="news.html">News</a>
         <a href="meetings.html">Meetings</a>
         <a href="forms.html">Forms &amp; Documents</a>
-        <a href="archives.html" aria-current="page">Archived Documents</a>
+        <a href="archives.html">Archived Documents</a>
         <a href="accessibility.html">Accessibility</a>
       </nav>
 
@@ -64,16 +60,17 @@
     </div>
 
     <nav class="menuNav" aria-label="Primary mobile">
+      <a href="index.html">Home</a>
       <a href="directory.html">Directory</a>
       <a href="commissioners.html">Commissioners</a>
       <a href="employment.html">Employment</a>
-      <a href="about.html">About</a>
-      <a href="paynes-creek.html">Paynes Creek</a>
+      <a href="about.html">About Hart County</a>
+      <a href="paynes-creek.html">Paynes Creek Campground</a>
       <hr>
       <a href="news.html">News</a>
       <a href="meetings.html">Meetings</a>
       <a href="forms.html">Forms &amp; Documents</a>
-      <a href="archives.html" aria-current="page">Archived Documents</a>
+      <a href="archives.html">Archived Documents</a>
       <a href="accessibility.html">Accessibility</a>
     </nav>
   </aside>
@@ -93,7 +90,7 @@
         </label>
         <input
           id="archivesSearchInput"
-          class="archivesSearchInput"
+          class="field archivesSearchInput"
           type="text"
           autocomplete="off"
           placeholder="Search archived documents"

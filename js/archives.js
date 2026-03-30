@@ -18,7 +18,6 @@ async function initArchivesPage() {
     renderArchivesTree(categories);
     updateSearchStatus(categories, "");
 
-
     const searchInput = document.getElementById("archivesSearchInput");
     if (searchInput) {
       searchInput.addEventListener("input", () => {
@@ -128,7 +127,7 @@ function renderArchivesTree(categories) {
 
     const categoryIcon = document.createElement("span");
     categoryIcon.className = "archiveCategoryIcon";
-    categoryIcon.textContent = "−";
+    categoryIcon.textContent = "+";
 
     categoryBtn.appendChild(categoryBtnText);
     categoryBtn.appendChild(categoryIcon);
@@ -153,7 +152,7 @@ function renderArchivesTree(categories) {
 
       const typeIcon = document.createElement("span");
       typeIcon.className = "archiveTypeIcon";
-      typeIcon.textContent = "−";
+      typeIcon.textContent = "+";
 
       typeBtn.appendChild(typeBtnText);
       typeBtn.appendChild(typeIcon);
