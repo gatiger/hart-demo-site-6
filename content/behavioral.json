@@ -1,0 +1,29 @@
+{
+  "header": {
+    "eyebrow": "",
+    "title": "Behavioral Health Center"
+  },
+  "details": {
+    "name": "Ayala Armando",
+    "role": "Director",
+    
+    "address": "228 N. College Ave, Hartwell, GA 30643",
+    "phone": "(706) 376-4002",
+    "fax": "(706) 376-9020",
+    "hours": "Monday–Friday, 8:30 AM–5:00 PM"
+  },
+  "photo": {
+    "src": "/assets/behavhealth.jpg",
+    "alt": "Behavioral Health office",
+    "description": [
+      "This 5,500 sq ft facility is the Hart County Behavioral Health Center"
+    ]
+  },
+  "message": {
+    "title": "Behavioral Health Center",
+    "paragraphs": [
+      "Georgia Mountain Community Services/Hart County Mental Health's mission is to support individuals, families and communities with mental health, retardation and substance abuse needs as they pursue safe, stable and valued lives. We believe that individuals should be treated with dignity and respect and receive confidential, ethical services.",
+      "Services provided are outpatient crisis intervention, adult counseling, psychosocial and rehabilitation programs, child and adolescent support services, outpatient substance services and community support services. Please feel free to call if you have questions, need more information or would like to make an appointment."
+    ]
+  }
+}

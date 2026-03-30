@@ -1,0 +1,122 @@
+{
+  "subtitle": "Thông tin, liên hệ và nhân sự của Dịch vụ Cấp cứu Y tế Quận Hart.",
+
+  "hero": {
+    "title": "Dịch vụ Cấp cứu Y tế Quận Hart (EMS)",
+    "address": {
+      "street": "800 Chandler Street",
+      "city": "Hartwell",
+      "state": "GA",
+      "zip": "30643"
+    },
+
+    "leftImage": {
+      "src": "assets/ems/ems_logo.svg",
+      "alt": "Logo EMS Quận Hart"
+    },
+    "rightImage": {
+      "src": "assets/ems/ems_text.svg",
+      "alt": "Xe cứu thương bên ngoài trạm"
+    },
+
+    "buttons": [
+      {
+        "label": "Gọi 911 (Khẩn cấp)",
+        "href": "tel:911",
+        "variant": "primary",
+        "newTab": false,
+        "enabled": true
+      },
+      {
+        "label": "Đường dây Không Khẩn cấp",
+        "href": "tel:+17065551234",
+        "variant": "ghost",
+        "newTab": false,
+        "enabled": true
+      },
+      {
+        "label": "Yêu cầu Hồ sơ",
+        "href": "contact.html",
+        "variant": "ghost",
+        "newTab": false,
+        "enabled": true
+      }
+    ]
+  },
+
+  "about": {
+    "title": "Tuyên bố Sứ mệnh EMS",
+    "text": "EMS Quận Hart cam kết cung cấp các dịch vụ y tế xuất sắc, được thực hiện bởi đội ngũ nhân viên có trình độ chuyên môn cao, được đào tạo bài bản và chuyên nghiệp. Chúng tôi sẽ giáo dục cộng đồng về vai trò của mình trong việc phản ứng, điều trị và vận chuyển những người bị bệnh hoặc bị thương, cũng như trong việc phòng ngừa thương tích và bệnh tật. Chúng tôi sẽ thực hiện điều này một cách có trách nhiệm về tài chính như một phần không thể thiếu của cộng đồng."
+  },
+
+  "staff": {
+    "subtitle": "Nhấn vào số điện thoại để gọi từ thiết bị di động. Số fax được liệt kê để tham khảo.",
+    "people": [
+      {
+        "enabled": true,
+        "name": "Mike Adams",
+        "title": "Giám đốc",
+        "phone": "(706) 856-5314",
+        "fax": "(706) 376-3974",
+        "photo": {
+          "src": "./assets/ems/mike_adams.png",
+          "alt": "Chân dung Mike Adams"
+        }
+      },
+      {
+        "enabled": true,
+        "name": "Tony Jordan",
+        "title": "Quản lý Vận hành",
+        "photo": {
+          "src": "/assets/ems/tony_jordan.jpg",
+          "alt": "Chân dung Tony Jordan"
+        }
+      },
+      {
+        "enabled": true,
+        "name": "April Clem",
+        "title": "Chuyên viên Hành chính",
+        "phone": "(706) 856-5313",
+        "fax": "(706) 376-3974",
+        "info": "Vui lòng liên hệ nếu có câu hỏi về thanh toán.",
+        "photo": {
+          "src": "/assets/ems/april_clem.jpg",
+          "alt": "Chân dung April Clem"
+        }
+      },
+      {
+        "enabled": true,
+        "name": "Ronald Dutton",
+        "title": "Giám sát Ca trực",
+        "phone": "",
+        "fax": "",
+        "photo": {
+          "src": "/assets/ems/ronald_dutton.jpg",
+          "alt": "Chân dung Ronald Dutton"
+        }
+      },
+      {
+        "enabled": true,
+        "name": "Jess Eaton",
+        "title": "Giám sát Ca trực",
+        "phone": "",
+        "fax": "",
+        "photo": {
+          "src": "/assets/ems/jess_eaton.png",
+          "alt": "Chân dung Jess Eaton"
+        }
+      },
+      {
+        "enabled": true,
+        "name": "Forrest Briggs",
+        "title": "Giám sát Ca trực",
+        "phone": "",
+        "fax": "",
+        "photo": {
+          "src": "/assets/ems/forrest_briggs.jpg",
+          "alt": "Chân dung Forrest Briggs"
+        }
+      }
+    ]
+  }
+}

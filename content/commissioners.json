@@ -1,0 +1,59 @@
+{
+  "items": [
+    {
+      "id": "michael bennett",
+      "name": "Michael Bennet",
+      "role": "",
+      "district": "District 1",
+      "phone": "(706) 436-9378",
+      "phone_raw": "17064369378",
+      "email": "michaelbennett@hartcom.net",
+      "photo": "./assets/commissioners/commissioner_1.png",
+      "bio": "Focuses on countywide planning, infrastructure priorities, and strengthening public services (demo text)."
+    },
+    {
+      "id": "frankie teasley",
+      "name": "Frankie Teasley",
+      "role": "",
+      "district": "District 2",
+      "phone": "(706) 376-6214",
+      "phone_raw": "17063766214",
+      "email": "frankie.teasley63@gmail.com",
+      "photo": "./assets/commissioners/commissioner_2.png",
+      "bio": "Focuses on countywide planning, infrastructure priorities, and strengthening public services (demo text)."
+    },
+	{
+		"id": "marshall sayer",
+		"name": "Marshall Sayer",
+		"role": "Chairman",
+		"district": "District 3",
+		"phone": "(706) 436-6285",
+		"phone_raw": "17064366285",
+		"email": "marshall@hartcom.net",
+		"photo": "./assets/commissioners/commissioner_3.png",
+		"bio": "Marshall Sayer was elected to serve as Commissioner for District 3 in 2016 and took office on January 1,2017.  He is a lifelong resident of Hart County, graduated as an honor graduate in 1979 from Hart County High School. Marshall and his wife Sheila have one son, Dillon. He has volunteered for the Recreation Department for 30 plus years as a football coach and baseball coach. Marshall served on Hart County Little League Board for 10 years with the last 3 as president. He has served on the Recreation Advisory Board for 10 years. Marshall has completed all core classes to become a certified County Commissioner to better serve the people of Hart County."
+	},
+	{
+		"id": "jeff brown",
+		"name": "Jeff Brown",
+		"role": "",
+		"district": "District 4",
+		"phone": "(706) 371-0204",
+		"phone_raw": "17063710204",
+		"email": "jeffdbrown21@gmail.com",
+		"photo": "./assets/commissioners/commissioner_4.png",
+		"bio": ""
+	},
+	{
+		"id": "joey dorsey",
+		"name": "Joey Dorsey",
+		"role": "Vice-Chair",
+		"district": "District 5",
+		"phone": "(706) 376-4224",
+		"phone_raw": "17063764224",
+		"email": "joeydorsey@yahoo.com",
+		"photo": "./assets/commissioners/commissioner_5.png",
+		"bio": ""
+	}
+  ]
+}

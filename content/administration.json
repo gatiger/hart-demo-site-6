@@ -1,0 +1,50 @@
+{
+  "header": {
+    "eyebrow": "",
+    "title": "Hart County Administration"
+  },
+  "details": {
+    "name": "Terrell Partain",
+    "role": "County Administrator",
+    "address": "800 Chandler Street, Hartwell, GA 30643",
+    "phone": "(706) 376-2024",
+    "email": "tpartain@hartcountyga.gov",
+    "hours": "Monday–Friday, 8:30 AM–5:00 PM"
+  },
+  "photo": {
+    "src": "/assets/adminbldgnew.jpg",
+    "alt": "Portrait of the Hart County Administrator",
+    "description": [
+      "Hart County Administration Building"
+    ]
+  },
+  "shortMessage": {
+    "title": "Administrative Notice",
+    "paragraphs": [
+      "Please let us know if you would like to see more information on a particular subject posted on this website. In the meantime, we will continue to post information that will help you understand and work with your local government."
+    ]
+  },
+  "message": {
+    "title": "Message from the Administrator",
+    "paragraphs": [
+      "This past year (2016) Hart County has been through changes in administration with the departure of Jon Caime to persue other employment opportunities. Through these changes we have continued our progress towards economic recovery in Hart County, Georgia. In 2005, well before the current \"Great Recession\", our community suffered significant job losses as lower skilled jobs were being sent overseas. In response, the community leaders in Hart County united to form a coalition to transform Hart County's economic future by focusing on education and workforce development. Economic development remains one of the Hart County Board of Commissioner's top priorities.",
+      "During this difficult time our unemployment rate spiked to 14.3% but has now reversed to 4.8% and continues to improve each month. In the previous twelve month period we announced two large job announcements, which will provide over 1,000 new, good paying jobs. These two facilities will almost complete the occupancy of our recently acquired Gateway 2 properties.",
+      "Construction has been completed on Linde and Wiemann German a manufacturer that has constructed a new 60,000 sf facility, a 3,500 headquarters building is planned and will employ 200 as part of phase 2 of their new operations in the United States. This year Haering has begun construction on a 196,000 sf facility, a separate training center, and detached dining hall, creating 800 jobs by locating their first U.S. manufacturing facility in Hart County. Ritz Instrument Transformers has begun an addition to their facility that will double the size of their manufacturing operation and will be adding 50 new jobs this year.",
+      "All of these industries stated that the quality of the workforce was a key factor in their decision to invest in our community. Hart County's focus on improving education and workforce training is key to our continued success.",
+      "Initial grading has been completed on new industrial lands on Gateway 3 adjacent to the new Georgia State Patrol Post. We were having prospects inquiring about locating on the site, even before the grading was complete. The new GSP post brought 24 hour a day, 7 days a week, 365 days per year police presence to the growing I-85 corridor in Hart County at no ongoing cost to the Hart County taxpayers.",
+      "The Hart County Board of Commissioners economic development efforts includes taking advantage of our 225 miles of Lake Hartwell shoreline. Following 3 successful years in Hart County, the \"Wet and Wild\" Triple Crown of Watercross tour has agreed to sign a 3 year extension to hosting this event at the newly acquired Long Point County Park.",
+      "Fishing tournaments continued to be held at the new joint City of Hartwell/Hart County Megaramp park, festivals held in and around Hartwell, as well as film production events including the Country Music Channel's Reality TV show Season 5 (the second season filmed in Hart County), Music Festivals, highlight the beauty of our County and draw tourists into our County. Every tourist dollar generates a penny to directly offset property taxes, a penny to build new schools (including the new Hart College & Career Academy and Agro Science Center ), and a penny for fire department, recreation, economic development, new water lines, and for road construction.",
+      "Recognizing the positive quality of life impacts of recreation parks, the Hart County Board of Commissioners has expanded our recreation park system from a single 26 acre park to 5 County parks totaling over 200 acres including the acquisition of two large lakefront parks. Construction has been completed on the new 55 acre Recreation Park adding a football/soccer complex, new walking trails, and a new dog park, entirely funded with SPLOST sales taxes and grant funds. A private group has raised in excess of $85,000 in a challenge grant match by the Hart County Board of Commissioners for a new playground area at this park. The first phase of the project has been completed. This playground is totally handicap accessible and is expected to be a regional draw to Hart County.",
+      "In 2017 approximately $2,500,000 is projected to be spent on road projects. Most of this $2.5M will be from Federal and State grants with the remaining money coming from SPLOST sales taxes. Other grant funds and sale tax moneys were invested here in Hart County to extend new water and sewer lines, and to improve economic development.",
+      "Although there was the need for an increase in the millage rate for this year, Hart County continues to enjoy one of the lowest County tax rates in Georgia (7th lowest out of 159 counties). The Hart County BOC's emphasis on keeping taxes low has been an outstanding asset as we promote economic opportunities in our County.",
+      "The Hart County BOC continues to also focus our investments and support in enhancing our emergency services. Due to investments by the BOC, and the hard work of our dedicated volunteer and full time fire personnel, we received a Countywide ISO rating reduction from ISO9 to ISO4 which will result in significant savings in the cost of insurance for homeowners as well as our business and industries in Hart County. Our fire department efforts have been funded without the use of property taxes and reduced insurance costs further promote a great economic climate in Hart County.",
+      "The BOC is also moving forward with enhancing our EMS services by building two new EMS substations in the County. Enhancing our EMS services will save lives by reducing our response time.",
+      "Maintaining quality government services, providing top notch service, increasing the efficiency of providing these services, and reducing the cost of these services to the taxpayers is our continued focus."
+    ]
+  },
+  "orgChart": {
+    "title": "",
+    "label": "Hart County Organizational Chart",
+    "href": "/assets/documents/hart-county-organizational-chart.pdf"
+  }
+}

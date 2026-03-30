@@ -1,0 +1,122 @@
+{
+  "subtitle": "Información, contactos y personal de los Servicios Médicos de Emergencia del Condado de Hart.",
+
+  "hero": {
+    "title": "EMS del Condado de Hart",
+    "address": {
+      "street": "800 Chandler Street",
+      "city": "Hartwell",
+      "state": "GA",
+      "zip": "30643"
+    },
+
+    "leftImage": {
+      "src": "assets/ems/ems_logo.svg",
+      "alt": "Logotipo de EMS del Condado de Hart"
+    },
+    "rightImage": {
+      "src": "assets/ems/ems_text.svg",
+      "alt": "Ambulancia frente a la estación"
+    },
+
+    "buttons": [
+      {
+        "label": "Llamar al 911 (Emergencia)",
+        "href": "tel:911",
+        "variant": "primary",
+        "newTab": false,
+        "enabled": true
+      },
+      {
+        "label": "Línea de No Emergencia",
+        "href": "tel:+17065551234",
+        "variant": "ghost",
+        "newTab": false,
+        "enabled": true
+      },
+      {
+        "label": "Solicitar Registros",
+        "href": "contact.html",
+        "variant": "ghost",
+        "newTab": false,
+        "enabled": true
+      }
+    ]
+  },
+
+  "about": {
+    "title": "Declaración de Misión de EMS",
+    "text": "EMS del Condado de Hart se dedica a proporcionar servicios médicos excepcionales, brindados por un personal altamente capacitado, educado y profesional. Educaremos a la comunidad sobre nuestro papel en la respuesta, el tratamiento y el transporte de personas enfermas o lesionadas, así como en la prevención de lesiones y enfermedades. Haremos esto de manera fiscalmente responsable como un componente integral de la comunidad."
+  },
+
+  "staff": {
+    "subtitle": "Toque un número de teléfono para llamar desde un dispositivo móvil. Los números de fax se muestran solo como referencia.",
+    "people": [
+      {
+        "enabled": true,
+        "name": "Mike Adams",
+        "title": "Director",
+        "phone": "(706) 856-5314",
+        "fax": "(706) 376-3974",
+        "photo": {
+          "src": "./assets/ems/mike_adams.png",
+          "alt": "Retrato de Mike Adams"
+        }
+      },
+      {
+        "enabled": true,
+        "name": "Tony Jordan",
+        "title": "Gerente de Operaciones",
+        "photo": {
+          "src": "/assets/ems/tony_jordan.jpg",
+          "alt": "Retrato de Tony Jordan"
+        }
+      },
+      {
+        "enabled": true,
+        "name": "April Clem",
+        "title": "Especialista Administrativo",
+        "phone": "(706) 856-5313",
+        "fax": "(706) 376-3974",
+        "info": "Comuníquese para preguntas sobre facturación.",
+        "photo": {
+          "src": "/assets/ems/april_clem.jpg",
+          "alt": "Retrato de April Clem"
+        }
+      },
+      {
+        "enabled": true,
+        "name": "Ronald Dutton",
+        "title": "Supervisor de Turno",
+        "phone": "",
+        "fax": "",
+        "photo": {
+          "src": "/assets/ems/ronald_dutton.jpg",
+          "alt": "Retrato de Ronald Dutton"
+        }
+      },
+      {
+        "enabled": true,
+        "name": "Jess Eaton",
+        "title": "Supervisor de Turno",
+        "phone": "",
+        "fax": "",
+        "photo": {
+          "src": "/assets/ems/jess_eaton.png",
+          "alt": "Retrato de Jess Eaton"
+        }
+      },
+      {
+        "enabled": true,
+        "name": "Forrest Briggs",
+        "title": "Supervisor de Turno",
+        "phone": "",
+        "fax": "",
+        "photo": {
+          "src": "/assets/ems/forrest_briggs.jpg",
+          "alt": "Retrato de Forrest Briggs"
+        }
+      }
+    ]
+  }
+}

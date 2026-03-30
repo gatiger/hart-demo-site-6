@@ -1,0 +1,48 @@
+{
+  "title": "Work Calendar",
+
+  "paydays": {
+    "start": "2026-01-09",
+    "intervalDays": 14,
+    "label": "Payday"
+  },
+  
+  "events": [
+    {
+      "date": "2026-01-01",
+      "type": "holiday",
+      "label": "New Year's Day"
+    },
+    {
+      "date": "2026-01-19",
+      "type": "holiday",
+      "label": "Martin Luther King Jr. Day"
+    },
+    {
+      "date": "2026-04-03",
+      "type": "holiday",
+      "label": "Good Friday"
+    },
+    {
+      "date": "2026-05-25",
+      "type": "holiday",
+      "label": "Memorial Day"
+    },
+    {
+      "date": "2026-07-03",
+      "type": "holiday",
+      "label": "Independence Day"
+    },
+    {
+      "date": "2026-09-07",
+      "type": "holiday",
+      "label": "Labor Day"
+    },
+    {
+      "start": "2026-11-26",
+      "end": "2026-11-27",
+      "type": "holiday",
+      "label": "Thanksgiving"
+    }
+  ]
+}

@@ -1,0 +1,676 @@
+{
+  "departments": [
+    {
+      "name": "ADMINISTRATION",
+      "directory": [
+        {
+          "name": "**BOC MAIN LINE**",
+          "phone": "376-2024",
+          "extension": "6668"
+        },
+        {
+          "name": "Terrell Partain (County Administrator)",
+          "phone": "376-5306",
+          "extension": "5306",
+          "email": "tpartain@hartcountyga.gov"
+        },
+        {
+          "name": "Jason Spencer (Public Works Director)",
+          "phone": "376-3373",
+          "extension": "1003",
+          "email": "jspencer@hartcountyga.gov"
+        },
+        {
+          "name": "Lisa Evans (County Clerk/Personnel)",
+          "phone": "376-3317",
+          "extension": "3317",
+          "email": "levans@hartcountyga.gov"
+        },
+        {
+          "name": "Alyssa Kilgore (Personnel)",
+          "phone": "856-5208",
+          "extension": "5208",
+          "email": "akilgore@hartcountyga.gov"
+        },
+        {
+          "name": "Betty Floyd (Associate County Clerk/AP Clerk)",
+          "phone": "856-5301",
+          "extension": "5301",
+          "email": "bfloyd@hartcountyga.gov"
+        },
+        {
+          "name": "Paige Moorhead (Ass't AP Clerk)",
+          "phone": "856-5302",
+          "extension": "5302",
+          "email": "pmoorhead@hartcountyga.gov"
+        },
+        {
+          "name": "Briana Rameriz (Administrative Ass't)",
+          "phone": "856-5377",
+          "extension": "5377",
+          "email": "bramirez@hartcountyga.gov"
+        },
+        {
+          "name": "Julie Lunsford (Addressing/Permitting)",
+          "phone": "376-1468",
+          "extension": "1468",
+          "email": "jlunsford@hartcountyga.gov"
+        },
+        {
+          "name": "Lisa Cartledge (IT)",
+          "phone": "856-5367",
+          "extension": "5367",
+          "email": "lcartledge@hartcountyga.gov"
+        },
+        {
+          "name": "Coroner",
+          "phone": "856-5322",
+          "extension": "5322"
+        },
+        {
+          "name": "Jud Turpin (Code Enforcement)",
+          "phone": "376-9873",
+          "extension": "9873",
+          "email": "jturpin@hartcountyga.gov"
+        },
+        {
+          "name": "",
+          "phone": "",
+          "extension": ""
+        },
+        {
+          "name": "Personnel FAX",
+          "phone": "856-5358"
+        },
+        {
+          "name": "Coroner FAX",
+          "phone": "376-3974"
+        },
+        {
+          "name": "Accounts Payable FAX",
+          "phone": "376-9477"
+        }
+      ]
+    },
+    {
+      "name": "TAX COMMISSIONER OFFICE",
+      "directory": [
+        {
+          "name": "**TAX COMMISSIONER MAIN**",
+          "phone": "376-3944",
+          "extension": "1023"
+        },
+        {
+          "name": "Karen Martin (Tax Commissioner)",
+          "phone": "376-8415",
+          "extension": "1025",
+          "email": "kmartin@gmail.com"
+        },
+        {
+          "name": "Nicki Burdette",
+          "phone": "377-3790",
+          "extension": "1027",
+          "email": "nburdette@hartcountyga.gov"
+        },
+        {
+          "name": "",
+          "phone": "",
+          "extension": ""
+        },
+        {
+          "name": "TAX COMMISSIONER FAX",
+          "phone": "376-6009"
+        }
+      ]
+    },
+    {
+      "name": "MAGISTRATE OFFICE",
+      "directory": [
+        {
+          "name": "**MAGISTRATE COURT MAIN**",
+          "phone": "376-6817"
+        },
+        {
+          "name": "Thomas Jordan (Magistrate Judge)",
+          "phone": "376-8502",
+          "extension": "1020",
+          "email": "tjordan@hartcountyga.gov"
+        },
+        {
+          "name": "Sharon Bryan",
+          "phone": "856-5345",
+          "extension": "1018",
+          "email": "sbryan@hartcountyga.gov"
+        },
+        {
+          "name": "Susan Williford",
+          "phone": "376-6286",
+          "extension": "1019",
+          "email": "swilliford@hartcountyga.gov"
+        }
+      ]
+    },
+    {
+      "name": "EMS/911 NUMBERS",
+      "directory": [
+        {
+          "name": "April Clem (EMS Administrative Ass't)",
+          "phone": "856-5313",
+          "extension": "5313",
+          "email": "aclem@hartcountyga.gov"
+        },
+        {
+          "name": "Mike Adams (EMS Director)",
+          "phone": "856-5314",
+          "extension": "5314",
+          "email": "madams@hartcountyga.gov"
+        },
+        {
+          "name": "EMS SUPERVISORS (Jess, Forrest, Ronald)",
+          "phone": "376-6832",
+          "extension": "6832"
+        },
+        {
+          "name": "Tony Jordan (OSP Manager)",
+          "phone": "376-2808",
+          "extension": "1007"
+        },
+        {
+          "name": "CROSSROADS EMS STATION",
+          "phone": "856-5320"
+        },
+        {
+          "name": "GOLDMINE EMS STATION",
+          "phone": "961-9415"
+        },
+        {
+          "name": "911 NON EMERGENCY",
+          "phone": "376-3930"
+        },
+        {
+          "name": "Missy Cobb (911 Communications Dir)",
+          "phone": "376-5168",
+          "extension": "1077",
+          "email": "mcobb@hartcountyga.gov"
+        },
+        {
+          "name": "",
+          "phone": "",
+          "extension": ""
+        },
+        {
+          "name": "EMS BILLING FAX",
+          "phone": "376-3974"
+        }
+      ]
+    },
+	{
+		"name": "PROBATE OFFICE",
+		"directory": [
+			{
+			  "name": "**PROBATE COURT MAIN**",
+			  "phone": "376-2565"
+			},
+			{
+			  "name": "Merry Kirk (Probate Judge)",
+			  "phone": "376-6348",
+			  "extension": "1013",
+			  "email": "merrykirk@hartcountyga.gov"	
+			},
+			{
+			  "name": "Megan Snow",
+			  "phone": "376-6929",
+			  "extension": "1014",
+			  "email": "msnow@hartcountyga.gov"
+			},
+			{
+			  "name": "Coleena Williams",
+			  "phone": "376-3432",
+			  "extension": "1015",
+			  "email": "cwilliams1@hartcountyga.gov"
+			},
+			{
+			  "name": "Mollie Jones",
+			  "phone": "376-3523",
+			  "extension": "1016",
+			  "email": "mjones@hartcountyga.gov"
+			},
+			{
+			  "name": "",
+			  "phone": "",
+			  "extension": ""
+			},
+			{
+			  "name": "PROBATE COURT FAX",
+			  "phone": "376-9032"
+			}
+		]
+	},
+	{
+		"name": "PROPERTY APPRAISAL OFFICE",
+		"directory": [
+			{
+				"name": "**TAX ASSESSORS MAIN**",
+				"phone": "376-3997"
+			},
+			{
+				"name": "Shane Hix (Chief Appraiser)",
+				"phone": "377-3494",
+				"extension": "1051",
+				"email": "shix@hartcountyga.gov"
+			},
+			{
+				"name": "Robby Taylor",
+				"phone": "376-7079",
+				"extension": "1054",
+				"email": "rtaylor@hartcountyga.gov"
+			},
+			{
+				"name": "Zach Marcengill",
+				"phone": "376-9682",
+				"extension": "1055",
+				"email": "zmarcengill@hartcountyga.gov"
+			},
+			{
+				"name": "Nikki O'Barr",
+				"phone": "376-9944",
+				"extension": "1056",
+				"email": "nobarr@hartcountyga.gov"
+			},
+			{
+				"name": "Brad Goss",
+				"phone": "376-9318",
+				"extension": "1057",
+				"email": "bgoss@hartcountyga.gov"
+			},
+			{
+				"name": "Kris Dickerson",
+				"phone": "856-3340",
+				"extension": "1050",
+				"email": "kdickerson@hartcountyga.gov"
+			},
+			{
+				"name": "Trisha Geroux",
+				"phone": "376-0098",
+				"extension": "1052",
+				"email": "tgeroux@hartcountyga.gov"
+			},
+			{
+				"name": "Nicole Norman",
+				"phone": "376-6658",
+				"extension": "1053",
+				"email": "nnorman@hartcountyga.gov"
+			},
+			{
+				"name": "",
+				"phone": ""
+			},
+			{
+				"name": "TAX ASSESSORS FAX",
+				"phone": "376-0097"
+			}
+		]
+	},
+	{
+		"name": "SHERIFF'S OFFICE / JAIL",
+		"directory": [
+			{
+				"name": "**SHERIFF'S DEPARTMENT MAIN**",
+				"phone": "376-3114",
+				"extension": "13"
+			},
+			{
+				"name": "Jail Sergeant Office",
+				"phone": "377-3684",
+				"extension": "1070"
+			},
+			{
+				"name": "Joseph Haley (Cheif Deputy)",
+				"phone": "856-5331",
+				"extension": "14",
+				"email": "jasonh@hartcountyga.gov"
+			},
+			{
+				"name": "BJ White",
+				"phone": "856-5337",
+				"extension": "11",
+				"email": "bwhite@hartcountyga.gov"
+			},
+			{
+				"name": "Dawn Lemay",
+				"phone": "856-5335",
+				"extension": "1069",
+				"email": "dlemay@hartcountyga.gov"
+			},
+			{
+				"name": "Kane Beard",
+				"phone": "8565340",
+				"extension": "23",
+				"email": "kbeard@hartcountyga.gov"
+			},
+			{
+				"name": "Jarrod Tollison",
+				"phone": "856-5334",
+				"extension": "20",
+				"email":"jtollison@hartcountyga.gov"
+			},
+			{
+				"name": "Michael Davis",
+				"phone": "856-5336",
+				"extension": "16",
+				"email": "mdavis@hartcountyga.gov"
+			},
+			{
+				"name": "Chris O'Barr",
+				"phone": "856-5332",
+				"extension": "24",
+				"email": "cobarr@hartcountyga.gov"
+			},
+			{
+				"name": "Madison Morris",
+				"phone": "376-6071",
+				"extension": "17",
+				"email": "mmorris@hartcountyga.gov"
+			},
+			{
+				"name": "Megan King",
+				"phone": "377-4118",
+				"extension": "15",
+				"email": "mking@hartcountyga.gov"
+			},
+			{
+				"name": "Wayne Hinson",
+				"phone": "376-5212",
+				"extension": "12",
+				"email": "whinson@hartcountyga.gov"
+			},
+			{
+				"name": "**JAIL CONTROL ROOM**",
+				"phone": "856-5338",
+				"extension": "1002"
+			},
+			{
+				"name": "David Cleveland",
+				"phone": "376-7413",
+				"extension": "1074",
+				"email": "dcleveland@hartcountyga.gov"
+			},
+			{
+				"name": "Jonathon Durrett",
+				"phone": "377-2601",
+				"extension": "1073",
+				"email": "jdurrett@hartcountyga.gov"
+			},
+			{
+				"name": "Jennifer",
+				"phone": "856-5338",
+				"extension": "6680",
+				"email": ""
+			},
+			{
+				"name": "",
+				"phone": "",
+				"extension": ""
+			},
+			{
+				"name": "SHERIFF FAX",
+				"phone": "376-2287"
+			},
+			{
+				"name": "JAIL FAX",
+				"phone": "856-5333"
+			}
+		]
+	},
+	{
+		"name": "ELECTION OFFICE",
+		"directory": [
+			{
+				"name": "**ELECTIONS MAIN**",
+				"phone": "376-8911"
+			},
+			{
+				"name": "Robin Webb (Coordinator)",
+				"phone": "376-2502",
+				"extension": "1045",
+				"email": "rwebb@hartcountyga.gov"
+			},
+			{
+				"name": "Receptionist",
+				"phone": "376-1010",
+				"extension": "1046"
+			},
+			{
+				"name": "Suite C",
+				"phone": "376-7156",
+				"extension": "1047"
+			},
+			{
+				"name": "",
+				"phone": "",
+				"extension": ""
+			},
+			{
+				"name": "ELECTIONS FAX",
+				"phone": "376-6948"
+			}
+		]
+	},
+	{
+		"name": "Fire Department",
+		"directory": [
+			{
+				"name": "**FIRE ADMIN MAIN**",
+				"phone": "376-8515",
+				"extension": "6676"
+			},
+			{
+				"name": "Jerry Byrum (County Fire Chief)",
+				"phone": "856-5325",
+				"extension": "1040",
+				"email": "hcfchief@hartcountyga.gov"
+			},
+			{
+				"name": "Training Officer",
+				"phone": "460-6079",
+				"extension": "1039"
+			},
+			{
+				"name": ""
+			},
+			{
+				"name": "FIRE ADMIN FAX",
+				"PHONE": "376-7405"
+			},
+			{
+				"name": "COUNTY FIRE CHIEF OFFICE FAX",
+				"phone": "856-5759"
+			}
+		]
+	},
+	{
+		"name": "CLERK OF COURT",
+		"directory": [
+			{
+				"name": "**CLERK'S MAIN**",
+				"phone": "376-7189",
+				"extension": "6679"
+			},
+			{
+				"name": "Frankie Gray (Clerk of Superior Court)",
+				"phone": "376-6798",
+				"extension": "150",
+				"email": "frankie.gray@gsccca.org"
+			},
+			{
+				"name": "Connie Brown",
+				"phone": "376-2601",
+				"extension": "110",
+				"email": "Connie.Brown@gsccca.org"
+			},
+			{
+				"name": "Ginger Medlin",
+				"phone": "376-3871",
+				"extension": "120",
+				"email": " Ginger.Medlin@gsccca.org"
+			},
+			{
+				"name": "JoBeth Cuevas",
+				"phone": "376-6257",
+				"extension": "130",
+				"email": "Jobeth.Cuevas@gsccca.org"
+			},
+			{
+				"name": "Tammy Floyd",
+				"phone": "376-6368",
+				"extension": "140",
+				"email": "Tammy.Floyd@gsccca.org"
+			},
+			{
+				"name": "Ali Pless",
+				"phone": "376-1706",
+				"extension": "100",
+				"email": "Ali.Pless@gsccca.org"
+			}
+		]
+	},
+	{
+		"name": "SUPERIOR JUDGE OFFICE",
+		"directory": [
+			{
+				"name": "SUPERIOR JUDGE",
+				"phone": "377-4895",
+				"extension": "1033"
+			},
+			{
+				"name": "Tonya Fleming",
+				"phone": "376-7152",
+				"extension": "1030"
+			},
+			{
+				"name": "Law Clerk",
+				"phone": "376-7812",
+				"extension": "1031"
+			},
+			{
+				"name": ""
+			},
+			{
+				"name": "SUPERIOR COURT FAX",
+				"phone": "856-2329"
+			}
+		]
+	},
+	{
+		"name": "MAINT SHOP & ROAD DEPT",
+		"directory": [
+			{
+				"name": "**SHOP/AMBER/ED**",
+				"phone": "376-7503"
+			},
+			{
+				"name": "MAINT SHOP FAX",
+				"phone": "376-3468"
+			},
+			{
+				"name": "Shannon Teasley (Road Superintendent)",
+				"phone": "371-6115"
+			}
+		]
+	},
+	{
+		"name": "WASTE STATIONS",
+		"directory": [
+			{
+				"name": "**TRANSFER STATION**",
+				"phone": "376-7333"
+			},
+			{
+				"name": "SARDIS",
+				"phone": "376-1756"
+			},
+			{
+				"name": "GOLDMINE",
+				"phone": "436-3654"
+			},
+			{
+				"name": "NUBERG",
+				"phone": "376-1757"
+			},
+			{
+				"name": "SHOAL CREEK",
+				"phone": "356-7085"
+			},
+			{
+				"name": "AIR LINE",
+				"phone": "376-1752"
+			},
+			{
+				"name": "REED CREEK",
+				"phone": "376-1754"
+			},
+			{
+				"name": "HARTWELL",
+				"phone": "856-5346"
+			},
+			{
+				"name": "Jeff Smart (Solid Waste Superintendent)",
+				"phone": "436-3632"
+			}
+		]
+	},
+	{
+		"name": "4-H CENTER / WATER AUTHORITY",
+		"directory": [
+			{
+				"name": "**EXTENSION OFFICE MAIN",
+				"phone": "376-3134"
+			},
+			{
+				"name": "Brandi Shiflet",
+				"phone": "856-5327"
+			},
+			{
+				"name": "**WATER AUTHORITY MAIN",
+				"phone": "377-4387"
+			},
+			{
+				"name": "EXTENSION OFFICE FAX",
+				"phone": "376-3702"
+			}
+		]
+	},
+	{
+		"name": "RECREATION DEPARTMENT",
+		"directory": [
+			{
+				"name": "**MAIN NUMBER",
+				"phone": "3768528"
+			},
+			{
+				"name": "Jim Owens (Recreation Director)",
+				"phone": "436-6107"
+			}
+		]
+	},
+	{
+		"name": "SENIOR CENTER",
+		"directory": [
+			{
+				"name": "**MAIN NUMBER",
+				"phone": "376-3975"
+			},
+			{
+				"name": "Kelly Seymore (Director)"
+			},
+			{
+				"name": "Jacob Jones (Transit Director)"
+			},
+			{
+				"name": "SENIOR CENTER FAX",
+				"phone": "376-8528"
+			}
+		]
+	}
+  ]
+}

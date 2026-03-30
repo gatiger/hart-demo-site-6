@@ -1,0 +1,170 @@
+{
+  "pageTitle": "Forms & Documents",
+  "pageIntro": "Browse current Hart County forms and documents by department and category. Select a file to view details and preview when available.",
+  "archiveLink": {
+    "label": "View Archived Documents",
+    "href": "/archives.html"
+  },
+  "categories": [
+    {
+      "id": "administration",
+      "name": "Administration",
+      "types": [
+        {
+          "id": "budgets",
+          "name": "Budgets",
+          "files": [
+            {
+              "label": "2027 County Budget",
+              "href": "/assets/documents/current/2027-county-budget.pdf",
+              "description": "Adopted Hart County budget for fiscal year 2027.",
+              "year": "2027",
+              "updated": "January 2027",
+              "fileType": "PDF",
+              "keywords": ["budget", "finance"]
+            },
+            {
+              "label": "2026 County Budget",
+              "href": "/assets/documents/current/2026-county-budget.pdf",
+              "description": "Adopted Hart County budget for fiscal year 2026.",
+              "year": "2026",
+              "updated": "January 2026",
+              "fileType": "PDF",
+              "keywords": ["budget", "finance"]
+            }
+          ]
+        },
+        {
+          "id": "reports",
+          "name": "Reports",
+          "files": [
+            {
+              "label": "2025 Annual Report",
+              "href": "/assets/documents/current/2025-annual-report.pdf",
+              "description": "Annual report summarizing county operations and finances.",
+              "year": "2025",
+              "updated": "December 2025",
+              "fileType": "PDF",
+              "keywords": ["report", "annual"]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "elections",
+      "name": "Elections",
+      "types": [
+        {
+          "id": "applications",
+          "name": "Applications",
+          "files": [
+            {
+              "label": "Absentee Ballot Application",
+              "href": "/assets/documents/current/absentee-ballot-application.pdf",
+              "description": "Application to request an absentee ballot.",
+              "year": "2026",
+              "updated": "October 2026",
+              "fileType": "PDF",
+              "keywords": ["ballot", "absentee", "voting"]
+            },
+            {
+              "label": "Poll Worker Application",
+              "href": "/assets/documents/current/poll-worker-application.pdf",
+              "description": "Application to become a poll worker.",
+              "year": "2026",
+              "updated": "September 2026",
+              "fileType": "PDF",
+              "keywords": ["poll worker", "elections"]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "tax-assessor",
+      "name": "Tax Assessor",
+      "types": [
+        {
+          "id": "forms",
+          "name": "Forms",
+          "files": [
+            {
+              "label": "Homestead Exemption Application",
+              "href": "/assets/documents/current/homestead-exemption.pdf",
+              "description": "Application for homestead exemption.",
+              "year": "2027",
+              "updated": "January 2027",
+              "fileType": "PDF",
+              "keywords": ["homestead", "tax", "exemption"]
+            },
+            {
+              "label": "Property Appeal Form",
+              "href": "/assets/documents/current/property-appeal-form.pdf",
+              "description": "Form to appeal property valuation.",
+              "year": "2026",
+              "updated": "July 2026",
+              "fileType": "PDF",
+              "keywords": ["appeal", "property", "tax"]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "public-works",
+      "name": "Public Works",
+      "types": [
+        {
+          "id": "permits",
+          "name": "Permits",
+          "files": [
+            {
+              "label": "Driveway Permit Application",
+              "href": "/assets/documents/current/driveway-permit.pdf",
+              "description": "Application for driveway access permit.",
+              "year": "2026",
+              "updated": "June 2026",
+              "fileType": "PDF",
+              "keywords": ["driveway", "permit"]
+            },
+            {
+              "label": "Right-of-Way Permit",
+              "href": "/assets/documents/current/right-of-way-permit.pdf",
+              "description": "Permit for work within county right-of-way.",
+              "year": "2026",
+              "updated": "May 2026",
+              "fileType": "PDF",
+              "keywords": ["right of way", "permit"]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "behavioral-health",
+      "name": "Behavioral Health",
+      "types": [
+        {
+          "id": "intake",
+          "name": "Intake & Services",
+          "files": [
+            {
+              "label": "Behavioral Health Intake Form",
+              "href": "/assets/documents/current/behavioral-health-intake.pdf",
+              "description": "Initial intake form for Behavioral Health services.",
+              "year": "2026",
+              "updated": "November 2026",
+              "fileType": "PDF",
+              "keywords": ["mental health", "intake"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

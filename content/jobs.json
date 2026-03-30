@@ -1,0 +1,20 @@
+{
+  "jobs": [
+    {
+      "id": "roads-operator",
+      "active": true,
+      "title": "Roads Equipment Operator",
+      "department": "Road Department",
+      "location": "Hart County, GA",
+      "postedDate": "2026-03-27",
+      "closingDate": "2026-04-15",
+      "summary": "Hart County is accepting applications for Roads Equipment Operator.",
+      "details": "This position is responsible for operating county road equipment, assisting with road maintenance, and performing related duties as assigned. Applicants should have relevant experience and a valid driver's license.",
+      "applicationHref": "/assets/documents/EmploymentApplication.pdf",
+      "employeeStart": "2026-03-19T00:00:00-04:00",
+      "employeeEnd": "2026-03-26T23:59:59-04:00",
+      "publicStart": "2026-03-21T00:00:00-04:00",
+      "publicEnd": "2026-04-15T23:59:59-04:00"
+    }
+  ]
+}

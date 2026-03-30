@@ -1,0 +1,228 @@
+{
+  "pageTitle": "Archived Documents",
+  "pageIntro": "Browse archived Hart County documents by department and document type. Select a file to view details and preview when available.",
+  "categories": [
+    {
+      "id": "administration",
+      "name": "Administration",
+      "types": [
+        {
+          "id": "budgets",
+          "name": "Budgets",
+          "files": [
+            {
+              "label": "2026 County Budget",
+              "href": "/assets/documents/archive/2026-county-budget.pdf",
+              "description": "Archived adopted Hart County budget for fiscal year 2026.",
+              "year": "2026",
+              "updated": "January 2026",
+              "fileType": "PDF"
+            },
+            {
+              "label": "2025 County Budget",
+              "href": "/assets/documents/archive/2025-county-budget.pdf",
+              "description": "Archived adopted Hart County budget for fiscal year 2025.",
+              "year": "2025",
+              "updated": "January 2025",
+              "fileType": "PDF"
+            },
+            {
+              "label": "2014 County Budget",
+              "href": "/assets/documents/archive/FinalBudgetFY14Report.pdf",
+              "description": "Archived adopted Hart County budget for fiscal year 2014.",
+              "year": "2014",
+              "updated": "January 2014",
+              "fileType": "PDF"
+            }
+          ]
+        },
+        {
+          "id": "reports",
+          "name": "Reports",
+          "files": [
+            {
+              "label": "2024 Annual Report",
+              "href": "/assets/documents/archive/2024-annual-report.pdf",
+              "description": "Archived annual report summarizing county operations and finances.",
+              "year": "2024",
+              "updated": "December 2024",
+              "fileType": "PDF"
+            },
+            {
+              "label": "2023 Annual Report",
+              "href": "/assets/documents/archive/2023-annual-report.pdf",
+              "description": "Archived annual report summarizing county operations and finances.",
+              "year": "2023",
+              "updated": "December 2023",
+              "fileType": "PDF"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "elections",
+      "name": "Elections",
+      "types": [
+        {
+          "id": "applications",
+          "name": "Applications",
+          "files": [
+            {
+              "label": "2025 Absentee Ballot Application",
+              "href": "/assets/documents/archive/2025-absentee-ballot-application.pdf",
+              "description": "Archived absentee ballot application form.",
+              "year": "2025",
+              "updated": "October 2025",
+              "fileType": "PDF"
+            },
+            {
+              "label": "2024 Absentee Ballot Application",
+              "href": "/assets/documents/archive/2024-absentee-ballot-application.pdf",
+              "description": "Archived absentee ballot application form.",
+              "year": "2024",
+              "updated": "October 2024",
+              "fileType": "PDF"
+            }
+          ]
+        },
+        {
+          "id": "notices",
+          "name": "Notices",
+          "files": [
+            {
+              "label": "2024 General Election Notice",
+              "href": "/assets/documents/archive/2024-general-election-notice.pdf",
+              "description": "Archived public notice for the 2024 general election.",
+              "year": "2024",
+              "updated": "October 2024",
+              "fileType": "PDF"
+            },
+            {
+              "label": "2023 Special Election Notice",
+              "href": "/assets/documents/archive/2023-special-election-notice.pdf",
+              "description": "Archived public notice for the 2023 special election.",
+              "year": "2023",
+              "updated": "March 2023",
+              "fileType": "PDF"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tax-assessor",
+      "name": "Tax Assessor",
+      "types": [
+        {
+          "id": "forms",
+          "name": "Forms",
+          "files": [
+            {
+              "label": "2026 Homestead Exemption Application",
+              "href": "/assets/documents/archive/2026-homestead-exemption.pdf",
+              "description": "Archived homestead exemption application.",
+              "year": "2026",
+              "updated": "January 2026",
+              "fileType": "PDF"
+            },
+            {
+              "label": "2025 Homestead Exemption Application",
+              "href": "/assets/documents/archive/2025-homestead-exemption.pdf",
+              "description": "Archived homestead exemption application.",
+              "year": "2025",
+              "updated": "January 2025",
+              "fileType": "PDF"
+            }
+          ]
+        },
+        {
+          "id": "appeals",
+          "name": "Appeals",
+          "files": [
+            {
+              "label": "2025 Property Appeal Form",
+              "href": "/assets/documents/archive/2025-property-appeal-form.pdf",
+              "description": "Archived property appeal form.",
+              "year": "2025",
+              "updated": "July 2025",
+              "fileType": "PDF"
+            },
+            {
+              "label": "2024 Property Appeal Form",
+              "href": "/assets/documents/archive/2024-property-appeal-form.pdf",
+              "description": "Archived property appeal form.",
+              "year": "2024",
+              "updated": "July 2024",
+              "fileType": "PDF"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "public-works",
+      "name": "Public Works",
+      "types": [
+        {
+          "id": "permits",
+          "name": "Permits",
+          "files": [
+            {
+              "label": "2025 Driveway Permit Application",
+              "href": "/assets/documents/archive/2025-driveway-permit.pdf",
+              "description": "Archived driveway permit application.",
+              "year": "2025",
+              "updated": "June 2025",
+              "fileType": "PDF"
+            },
+            {
+              "label": "2024 Driveway Permit Application",
+              "href": "/assets/documents/archive/2024-driveway-permit.pdf",
+              "description": "Archived driveway permit application.",
+              "year": "2024",
+              "updated": "June 2024",
+              "fileType": "PDF"
+            },
+            {
+              "label": "2024 Right-of-Way Permit",
+              "href": "/assets/documents/archive/2024-right-of-way-permit.pdf",
+              "description": "Archived right-of-way permit document.",
+              "year": "2024",
+              "updated": "May 2024",
+              "fileType": "PDF"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "behavioral-health",
+      "name": "Behavioral Health",
+      "types": [
+        {
+          "id": "intake",
+          "name": "Intake & Services",
+          "files": [
+            {
+              "label": "2025 Behavioral Health Intake Form",
+              "href": "/assets/documents/archive/2025-behavioral-health-intake.pdf",
+              "description": "Archived Behavioral Health intake form.",
+              "year": "2025",
+              "updated": "November 2025",
+              "fileType": "PDF"
+            },
+            {
+              "label": "2024 Behavioral Health Intake Form",
+              "href": "/assets/documents/archive/2024-behavioral-health-intake.pdf",
+              "description": "Archived Behavioral Health intake form.",
+              "year": "2024",
+              "updated": "November 2024",
+              "fileType": "PDF"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "alerts": [
+    {
+      "id": "2026-weather-closure",
+      "active": true,
+      "level": "critical",
+      "template": "banner",
+      "title": "County Offices Closed",
+      "message": "Hart County offices will be closed Monday due to severe weather conditions.",
+      "link": { "label": "View Updates", "href": "/alerts/weather-closure.html" },
+      "dismissible": false,
+      "start": "2026-02-20T08:00:00-05:00",
+      "end": "2026-03-26T23:59:00-05:00",
+      "audience": "public"
+    },
+
+    {
+      "id": "employee-benefits",
+      "active": true,
+      "level": "info",
+      "template": "banner",
+      "title": "Employee Benefits Update",
+      "message": "Open enrollment ends Friday at 5 PM.",
+      "dismissible": false,
+      "audience": "employee-portal"
+    },
+    {
+      "id": "job-posting-roads-operator",
+      "active": true,
+      "kind": "job",
+      "level": "info",
+      "template": "banner",
+      "title": "Now Hiring: Roads Equipment Operator",
+      "message": "Hart County is accepting applications for Roads Equipment Operator. Apply through Human Resources.",
+      "link": {
+        "label": "View Job Posting",
+        "href": "/jobs/roads-operator.html"
+      },
+      "dismissible": false,
+
+      "employeeStart": "2026-03-19T00:00:00-04:00",
+      "employeeEnd": "2026-03-26T23:59:59-04:00",
+
+      "publicStart": "2026-03-27T00:00:00-04:00",
+      "publicEnd": "2026-04-15T23:59:59-04:00"
+    }
+  ]
+}
