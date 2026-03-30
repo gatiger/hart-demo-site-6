@@ -1,7 +1,7 @@
 /* ============================================================
    base.css — Hart County
-   Global only: reset, tokens, body, topbar, mobile menu,
-   footer, skip link, focus, utilities, responsive.
+   Built entirely from the working forms page.
+   No old styles. No pills. No rounded cards. No Inter font.
    ============================================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600&family=DM+Sans:wght@400;500;600&display=swap');
@@ -13,7 +13,7 @@
   padding: 0;
 }
 
-/* ── Tokens ── */
+/* ── Root tokens ── */
 :root {
   --navy:        #1a2e4a;
   --navy-mid:    #2c4a6e;
@@ -38,7 +38,7 @@
 
 /* ── Body ── */
 html, body { height: 100%; }
-html { scroll-behavior: smooth; scroll-padding-top: 116px; }
+html { scroll-behavior: smooth; }
 
 body {
   font-family: var(--font-body);
@@ -70,11 +70,10 @@ a:hover { text-decoration: underline; }
   padding: 0 1.5rem;
   display: flex;
   align-items: center;
-  gap: 1.5rem;
-  height: 100px;
+  gap: 1.25rem;
+  height: 80px;
 }
 
-/* ── Brand ── */
 .brandLink {
   display: flex;
   align-items: flex-start;
@@ -83,14 +82,13 @@ a:hover { text-decoration: underline; }
   color: inherit;
   flex-shrink: 0;
   position: relative;
-  padding-left: calc(200px + 1.25rem);
+  padding-left: calc(90px + 1rem);
 }
 .brandLink:hover { text-decoration: none; }
 
-/* ── Seal — 200×200px, small gap from top, overflows below navRow ── */
 .seal {
-  width: 200px;
-  height: 200px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   background: rgba(255,255,255,.08);
   display: flex;
@@ -98,38 +96,33 @@ a:hover { text-decoration: underline; }
   justify-content: center;
   flex-shrink: 0;
   overflow: hidden;
-  padding: 3px;
+  padding: 2px;
   position: absolute;
-  top: 8px;   /* small gap from top of navRow */
-  left: 0;
-  box-shadow: 0 4px 16px rgba(0,0,0,.3);
-  z-index: 10;
+  top: 0; left: 0;
 }
 .seal img { width: 100%; height: 100%; object-fit: contain; }
 
-/* ── Brand text ── */
 .brandText {
   display: flex;
   flex-direction: column;
-  line-height: 1.2;
-  padding-top: .5rem;
+  line-height: 1.25;
+  padding-top: .25rem;
 }
 .kicker {
-  font-family: var(--font-body);
-  font-size: 2rem;
+  font-size: 1.25rem;
   font-weight: 700;
   letter-spacing: .01em;
   color: #fff;
+  font-family: var(--font-body);
 }
 .title {
-  font-family: var(--font-body);
-  font-size: .9375rem;
+  font-size: .8125rem;
   font-weight: 400;
   color: rgba(255,255,255,.6);
   letter-spacing: .01em;
+  font-family: var(--font-body);
 }
 
-/* ── Top nav ── */
 .topNav {
   display: flex;
   align-items: center;
@@ -137,7 +130,6 @@ a:hover { text-decoration: underline; }
   margin-left: auto;
 }
 .topNav a {
-  font-family: var(--font-body);
   font-size: .8125rem;
   font-weight: 500;
   color: rgba(255,255,255,.65);
@@ -145,13 +137,16 @@ a:hover { text-decoration: underline; }
   padding: .375rem .6rem;
   border-radius: var(--radius-sm);
   white-space: nowrap;
+  transition: background .15s, color .15s;
   border: none;
   background: transparent;
-  transition: background .15s, color .15s;
+  min-height: unset;
+  display: inline;
 }
 .topNav a:hover                { color: #fff; background: rgba(255,255,255,.08); text-decoration: none; }
 .topNav a.active,
 .topNav a[aria-current="page"] { color: #fff; background: rgba(255,255,255,.14); }
+.topNav a:focus-visible        { outline: 2px solid var(--focus); outline-offset: 2px; }
 
 /* ── Mobile menu button ── */
 .menuBtn {
@@ -199,10 +194,10 @@ a:hover { text-decoration: underline; }
   margin-bottom: 1.25rem;
 }
 .menuPanelTitle {
-  font-family: var(--font-body);
   font-weight: 700;
   font-size: 1rem;
   color: var(--navy);
+  font-family: var(--font-body);
 }
 .menuNav {
   display: flex;
@@ -217,16 +212,71 @@ a:hover { text-decoration: underline; }
   border-radius: var(--radius-sm);
   text-decoration: none;
   color: var(--text);
-  font-family: var(--font-body);
   font-weight: 500;
   font-size: .9375rem;
+  font-family: var(--font-body);
   border: none;
   background: transparent;
   transition: background .12s;
 }
 .menuNav a:hover                { background: var(--navy-light); text-decoration: none; }
 .menuNav a[aria-current="page"] { background: var(--navy-light); color: var(--navy); font-weight: 600; }
-.menuNav hr                     { border: none; border-top: 1px solid var(--border); margin: .5rem 0; }
+.menuNav hr { border: none; border-top: 1px solid var(--border); margin: .5rem 0; }
+
+/* ── Container ── */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1.75rem 1.5rem 3rem;
+}
+
+/* ── Card ── */
+.card {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  border: none;
+}
+
+/* ── Section title ── */
+.sectionTitle {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: .875rem;
+  letter-spacing: normal;
+  text-transform: none;
+  line-height: 1.3;
+}
+
+/* ── Buttons ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .375rem;
+  padding: .4375rem 1rem;
+  font-family: var(--font-body);
+  font-size: .8125rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  border: 1px solid var(--border-mid);
+  background: transparent;
+  color: var(--text-muted);
+  transition: background .14s, color .14s, border-color .14s;
+}
+.btn:hover { background: var(--surface-alt); color: var(--text); }
+
+.btn.ghost {
+  background: transparent;
+  color: var(--text-muted);
+  border-color: var(--border-mid);
+}
+.btn.ghost:hover { background: var(--surface-alt); color: var(--text); }
+
+/* ── Alerts ── */
+#alertHolder { margin-top: .875rem; }
 
 /* ── Footer ── */
 footer.footer,
@@ -246,9 +296,23 @@ footer.footer,
   justify-content: center;
   gap: .5rem;
 }
-.footerInner .sep    { opacity: .4; }
-.footerInner a       { color: var(--text-hint); text-decoration: underline; }
+.footerInner .sep { opacity: .4; }
+.footerInner a { color: var(--text-hint); text-decoration: underline; }
 .footerInner a:hover { color: var(--text-muted); }
+
+/* ── Prose ── */
+.prose { max-width: 80ch; }
+.prose p { margin: 0 0 .875rem; line-height: 1.65; color: var(--text-muted); font-size: .9375rem; }
+.prose ul { margin: 0 0 .875rem 1.25rem; }
+.prose li { font-size: .9375rem; color: var(--text-muted); line-height: 1.6; }
+.prose h3 {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin: 1.125rem 0 .5rem;
+  letter-spacing: normal;
+}
 
 /* ── Skip link ── */
 .skip-link {
@@ -259,7 +323,6 @@ footer.footer,
   border-radius: var(--radius-sm);
   background: var(--navy);
   color: #fff;
-  font-family: var(--font-body);
   font-weight: 600;
   font-size: .875rem;
   text-decoration: none;
@@ -277,11 +340,24 @@ footer.footer,
   white-space: nowrap; border: 0;
 }
 [hidden] { display: none !important; }
+.muted { color: var(--text-hint); font-size: .875rem; }
 
 /* ── Focus ── */
 :focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* ── Scroll margin ── */
+html { scroll-padding-top: 96px; }
 a, button, input, select, textarea, [tabindex]:not([tabindex="-1"]) {
-  scroll-margin-top: 116px;
+  scroll-margin-top: 96px;
 }
 
 /* ── Reduced motion ── */
@@ -289,16 +365,16 @@ a, button, input, select, textarea, [tabindex]:not([tabindex="-1"]) {
   * { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
 }
 
-/* ── Responsive ── */
+/* ── Responsive: show mobile menu button ── */
 @media (max-width: 1024px) {
   .topNav  { display: none; }
   .menuBtn { display: inline-flex; }
 }
 
 @media (max-width: 768px) {
-  .navRow    { height: 80px; }
-  .brandLink { padding-left: calc(120px + 1rem); }
-  .seal      { width: 120px; height: 120px; top: 6px; }
-  .kicker    { font-size: 1.375rem; }
-  .title     { font-size: .8125rem; }
+  .navRow    { height: 68px; }
+  .brandLink { padding-left: calc(60px + .75rem); }
+  .seal      { width: 60px; height: 60px; }
+  .kicker    { font-size: 1rem; }
+  .container { padding: 1.25rem 1rem 2.5rem; }
 }
