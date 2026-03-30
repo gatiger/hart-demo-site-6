@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Employee Portal | Hart County</title>
+
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+
+  <!-- Prevent indexing -->
+  <meta name="robots" content="noindex, nofollow">
+
+  <link rel="stylesheet" href="../css/portal_base.css" />
+  <link rel="stylesheet" href="../css/alerts.css" />
+  <link rel="stylesheet" href="../css/portal_jobs.css" />
+
+  <script defer src="../js/alerts.js"></script>
+  <script defer src="../js/lang.js"></script>
+  <script defer src="../js/content_loader.js?v=2"></script>
+  <script defer src="../js/portal_app.js"></script>
+  <script defer src="../js/portal_resources.js?v=2"></script>
+</head>
+
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+  
+    <div class="sealBar">
+        <a href="../index.html" class="sealLink" aria-label="Go to homepage">
+  <img src="../assets/hart_seal.svg" alt="Hart County, Georgia official seal">
+  </a>
+</div>
+
+<!-- NEW NAV BUTTONS -->
+<nav class="portalNav" aria-label="Employee portal sections">
+  <a href="portal_directory.html" class="portalBtn">Employee Directory</a>
+  <a href="portal_jobs_descriptions.html" class="portalBtn">Job Descriptions</a>
+  <a href="portal_employee_policies.html" class="portalBtn">Employee Policies</a>
+  <a href="portal_employee_forms.html" class="portalBtn">Forms</a>
+  <a href="portal_county_policies.html" class="portalBtn">Countywide Policies</a>
+</nav>
+
+  
+
+  <!-- Use your existing header/nav exactly as other pages -->
+
+  <main id="main" class="container" tabindex="-1">
+
+    <!-- Alerts -->
+    <div id="alertHolder"></div>
+
+    <div id="internalJobsNotice"></div>
+
+    <section class="card" id="internalJobs">
+  <h2 class="cardTitle">Internal Opportunities</h2>
+  <div id="internalJobsList"></div>
+</section>
+
+    <section class="card">
+  <h2 class="cardTitle">Work Calendar</h2>
+
+  <div class="workCalLegend" aria-label="Calendar legend">
+    <span class="legendItem">
+      <span class="legendDot legendDot--holiday" aria-hidden="true"></span>
+      Holiday
+    </span>
+    <span class="legendItem">
+      <span class="legendDot legendDot--payday" aria-hidden="true"></span>
+      Payday
+    </span>
+  </div>
+
+  <div class="workCalShell">
+    <div class="workCalPanel">
+      <div class="workCalHead">
+        <button type="button" class="workCalNavBtn" id="calPrevBtn" aria-label="Previous month">‹</button>
+        <h3 class="workCalMonth" id="workCalMonthLabel">Month Year</h3>
+        <button type="button" class="workCalNavBtn" id="calNextBtn" aria-label="Next month">›</button>
+      </div>
+
+      <div class="workCalWeekdays" aria-hidden="true">
+        <div>Sun</div>
+        <div>Mon</div>
+        <div>Tue</div>
+        <div>Wed</div>
+        <div>Thu</div>
+        <div>Fri</div>
+        <div>Sat</div>
+      </div>
+
+      <div id="workCalendarGrid" class="workCalGrid" aria-label="Work calendar month view"></div>
+    </div>
+
+    <aside class="workCalAside">
+      <h3 class="workCalAsideTitle">Upcoming Dates</h3>
+      <div id="upcomingDates" class="upcomingDates"></div>
+    </aside>
+  </div>
+</section>
+
+    <!-- Page Header -->
+    <div class="pageHead">
+      <h1 class="pageTitle" data-content="title"></h1>
+      <p class="pageSub" data-content="subtitle"></p>
+    </div>
+
+    <!-- Quick Links -->
+    <section class="card">
+      <h2 class="cardTitle" data-content="quickLinks.title"></h2>
+      <div id="quickLinksGrid" class="quickLinksGrid"></div>
+    </section>
+
+    <!-- Employee Directory -->
+    <section class="card">
+      <h2 class="cardTitle" data-content="directory.title"></h2>
+
+      <input
+        type="text"
+        id="directorySearch"
+        class="field"
+        placeholder="Search employees..."
+      />
+
+      <div id="directoryList" class="directoryList"></div>
+    </section>
+
+    <!-- Forms & Documents -->
+    <section class="card">
+      <h2 class="cardTitle" data-content="forms.title"></h2>
+      <div id="formsList" class="formsList"></div>
+    </section>
+
+    <!-- Contacts -->
+    <section class="card">
+      <h2 class="cardTitle" data-content="contacts.title"></h2>
+      <div id="contactsList" class="contactsList"></div>
+    </section>
+
+  </main>
+</body>
+</html>

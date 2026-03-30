@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Employment | Hart County</title>
+
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+
+  <link rel="stylesheet" href="/css/base.css" />
+  <link rel="stylesheet" href="/css/alerts.css" />
+  <link rel="stylesheet" href="/css/employment.css" />
+
+  <script defer src="js/alerts.js"></script>
+  <script defer src="js/lang.js"></script>
+  <script defer src="js/content_loader.js"></script>
+  <script defer src="js/app.js"></script>
+  <script defer src="js/employment.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="topbar">
+    <div class="navRow">
+      <a class="brand brandLink" href="index.html">
+        <div class="seal">
+          <img src="./assets/hart_seal.svg" alt="Hart County, Georgia official seal">
+        </div>
+        <div class="brandText">
+          <div class="kicker">Hart County, Georgia</div>
+          <div class="title">Employment</div>
+        </div>
+      </a>
+
+      <nav class="topNav" aria-label="Primary">
+        <a href="directory.html" data-i18n="directory">Directory</a>
+        <a href="commissioners.html" data-i18n="commissioners">Commissioners</a>
+        <a href="employment.html" data-i18n="employment">Employment</a>
+        <a href="about.html" data-i18n="about">About</a>
+        <a href="paynes-creek.html" data-i18n="paynesCreek">Paynes Creek</a>
+        <a href="news.html" data-i18n="news">News</a>
+        <a href="meetings.html" data-i18n="meetings">Meetings</a>
+        <a href="ems.html" class="navOptional" data-i18n="ems">EMS</a>
+        <a href="publicworks.html" class="navOptional" data-i18n="publicWorks">Public Works</a>
+        <a href="accessibility.html" data-i18n="accessibility">Accessibility</a>
+
+        <label class="sr-only" for="langSelectDesktop">Language</label>
+        <select id="langSelectDesktop" class="langSelect fieldSlim">
+          <option value="en">English</option>
+          <option value="es">Español</option>
+          <option value="vi">Tiếng Việt</option>
+        </select>
+      </nav>
+
+      <button class="btn menuBtn" type="button"
+              aria-controls="mobileMenu"
+              aria-expanded="false"
+              id="menuBtn">
+        Menu
+      </button>
+    </div>
+  </header>
+
+  <div class="menuBackdrop" id="menuBackdrop" hidden></div>
+
+  <aside class="menuPanel" id="mobileMenu" hidden aria-label="Mobile navigation">
+    <div class="menuPanelHead">
+      <div class="menuPanelTitle">Menu</div>
+      <button class="btn ghost" type="button" id="menuClose" aria-label="Close menu">Close</button>
+    </div>
+
+    <nav class="menuNav" aria-label="Primary mobile">
+      <a href="directory.html" data-i18n="directory">Directory</a>
+      <a href="commissioners.html" data-i18n="commissioners">Commissioners</a>
+      <a href="employment.html" data-i18n="employment">Employment</a>
+      <a href="about.html" data-i18n="about">About</a>
+      <a href="paynes-creek.html" data-i18n="paynesCreek">Paynes Creek</a>
+      <hr>
+      <a href="news.html" data-i18n="news">News</a>
+      <a href="meetings.html" data-i18n="meetings">Meetings</a>
+      <a href="ems.html" class="navOptional" data-i18n="ems">EMS</a>
+      <a href="publicworks.html" class="navOptional" data-i18n="publicWorks">Public Works</a>
+      <a href="accessibility.html" data-i18n="accessibility">Accessibility</a>
+
+      <div class="langBlock">
+        <label for="langSelectMobile" class="menuLangLabel" data-i18n="language">Language</label>
+        <select id="langSelectMobile" class="langSelect fieldSlim">
+          <option value="en">English</option>
+          <option value="es">Español</option>
+          <option value="vi">Tiếng Việt</option>
+        </select>
+      </div>
+    </nav>
+  </aside>
+
+  <main id="main" class="container" tabindex="-1">
+    <div id="alertHolder"></div>
+
+    <div class="pageHead">
+      <h1 class="pageTitle">Employment Opportunities</h1>
+      <p class="pageSub">View current openings with Hart County and expand each listing for full details.</p>
+    </div>
+
+    <section class="card">
+      <h2 class="cardTitle">Current Openings</h2>
+      <div id="publicJobsList" class="publicJobsList"></div>
+    </section>
+  </main>
+</body>
+</html>

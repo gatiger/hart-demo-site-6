@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Archived Documents | Hart County</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Quintessential&family=Felipa&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+
+  <link rel="stylesheet" href="/css/base.css" />
+  <link rel="stylesheet" href="/css/archives.css" />
+
+  <script defer src="js/alerts.js"></script>
+  <script defer src="js/app.js"></script>
+  <script defer src="js/archives.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="topbar">
+    <div class="navRow">
+      <a class="brand brandLink" href="index.html">
+        <div class="seal">
+          <img src="./assets/hart_seal.svg" alt="Hart County, Georgia official seal">
+        </div>
+        <div class="brandText">
+          <div class="kicker">Hart County, Georgia</div>
+          <div class="title">Archived Documents</div>
+        </div>
+      </a>
+
+      <nav class="topNav" aria-label="Primary">
+        <a href="directory.html">Directory</a>
+        <a href="commissioners.html">Commissioners</a>
+        <a href="employment.html">Employment</a>
+        <a href="about.html">About</a>
+        <a href="paynes-creek.html">Paynes Creek</a>
+        <a href="news.html">News</a>
+        <a href="meetings.html">Meetings</a>
+        <a href="forms.html">Forms &amp; Documents</a>
+        <a href="archives.html" aria-current="page">Archived Documents</a>
+        <a href="accessibility.html">Accessibility</a>
+      </nav>
+
+      <button class="btn menuBtn" type="button"
+              aria-controls="mobileMenu"
+              aria-expanded="false"
+              id="menuBtn">
+        Menu
+      </button>
+    </div>
+  </header>
+
+  <div class="menuBackdrop" id="menuBackdrop" hidden></div>
+
+  <aside class="menuPanel" id="mobileMenu" hidden aria-label="Mobile navigation">
+    <div class="menuPanelHead">
+      <div class="menuPanelTitle">Menu</div>
+      <button class="btn ghost" type="button" id="menuClose" aria-label="Close menu">Close</button>
+    </div>
+
+    <nav class="menuNav" aria-label="Primary mobile">
+      <a href="directory.html">Directory</a>
+      <a href="commissioners.html">Commissioners</a>
+      <a href="employment.html">Employment</a>
+      <a href="about.html">About</a>
+      <a href="paynes-creek.html">Paynes Creek</a>
+      <hr>
+      <a href="news.html">News</a>
+      <a href="meetings.html">Meetings</a>
+      <a href="forms.html">Forms &amp; Documents</a>
+      <a href="archives.html" aria-current="page">Archived Documents</a>
+      <a href="accessibility.html">Accessibility</a>
+    </nav>
+  </aside>
+
+  <main id="main" class="container archivesPage" tabindex="-1">
+    <section class="card archivesIntroCard" aria-labelledby="archivesPageTitle">
+      <h1 id="archivesPageTitle" class="archivesPageTitle"></h1>
+      <p id="archivesPageIntro" class="archivesPageIntro"></p>
+    </section>
+
+    <section class="card archivesSearchCard" aria-labelledby="archivesSearchTitle">
+      <h2 id="archivesSearchTitle" class="sectionTitle">Search Archive</h2>
+
+      <div class="archivesSearchField">
+        <label for="archivesSearchInput" class="archivesSearchLabel">
+          Search by category, document type, title, year, or keyword
+        </label>
+        <input
+          id="archivesSearchInput"
+          class="archivesSearchInput"
+          type="text"
+          autocomplete="off"
+          placeholder="Search archived documents"
+        >
+      </div>
+
+      <p id="archivesSearchStatus" class="archivesSearchStatus" aria-live="polite"></p>
+    </section>
+
+    <section class="archivesLayout" aria-label="Archived documents browser">
+      <aside class="card archivesNavCard" aria-labelledby="archivesNavTitle">
+        <h2 id="archivesNavTitle" class="sectionTitle">Archive Categories</h2>
+        <div id="archivesNavTree" class="archivesNavTree"></div>
+      </aside>
+
+      <section class="card archivesViewerCard" aria-labelledby="archivesViewerTitle">
+        <div class="archivesViewerHead">
+          <div>
+            <p id="archivesViewerEyebrow" class="archivesViewerEyebrow"></p>
+            <h2 id="archivesViewerTitle" class="archivesViewerTitle">Select a file</h2>
+          </div>
+        </div>
+
+        <div id="archivesViewerActionsTop" class="archivesViewerActions" hidden>
+          <a id="archivesViewerOpenTop"
+             class="archivesViewerActionLink"
+             href="#"
+             target="_blank"
+             rel="noopener">
+            Open PDF (Print or Save)
+          </a>
+        </div>
+
+        <div id="archivesViewerMeta" class="archivesViewerMeta"></div>
+
+        <div id="archivesViewerDescription" class="archivesViewerDescription"></div>
+
+        <div class="archivesPreviewWrap">
+          <iframe
+            id="archivesPreviewFrame"
+            class="archivesPreviewFrame"
+            title="Archived document preview"
+            hidden
+          ></iframe>
+
+          <div id="archivesPreviewFallback" class="archivesPreviewFallback">
+            <p>Select a file from the archive list to view details here.</p>
+          </div>
+        </div>
+
+        <div id="archivesViewerActionsBottom"
+             class="archivesViewerActions archivesViewerActionsBottom"
+             hidden>
+          <a id="archivesViewerOpenBottom"
+             class="archivesViewerActionLink"
+             href="#"
+             target="_blank"
+             rel="noopener">
+            Open PDF (Print or Save)
+          </a>
+        </div>
+      </section>
+    </section>
+
+    <footer class="footer">
+      <div>© 2026 Hart County Board of Commissioners</div>
+    </footer>
+  </main>
+</body>
+</html>
