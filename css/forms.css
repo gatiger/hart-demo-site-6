@@ -1,15 +1,22 @@
 /* ============================================================
    forms.css — Hart County Forms & Documents
-   Matches the working forms page (Image 1) exactly.
-   Every rule is explicit to override any inherited styles.
+   Self-contained page styles. Requires only base.css.
+   No components.css needed.
    ============================================================ */
 
-/* ── Page spacing ── */
-.formsPage { padding-top: 1.75rem; }
+/* ── Section title (used on this page) ── */
+.sectionTitle {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a2e4a;
+  margin-bottom: .875rem;
+  letter-spacing: normal;
+  text-transform: none;
+  line-height: 1.3;
+}
 
-/* ================================================================
-   INTRO CARD
-   ================================================================ */
+/* ── Intro card ── */
 .formsIntroCard {
   background: #1a2e4a;
   background-image: radial-gradient(circle at 90% -20%, rgba(255,255,255,.06) 0%, transparent 55%);
@@ -17,8 +24,6 @@
   margin-bottom: 1.125rem;
   position: relative;
   overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 1px 3px rgba(26,46,74,.08), 0 0 0 0.5px rgba(26,46,74,.12);
 }
 .formsIntroCard::after {
   content: '';
@@ -30,8 +35,8 @@
   pointer-events: none;
 }
 
-.formsIntroCard #formsPageTitle,
-.formsIntroCard .formsPageTitle {
+#formsPageTitle,
+.formsPageTitle {
   font-family: 'Source Serif 4', Georgia, serif;
   font-size: 1.625rem;
   font-weight: 600;
@@ -40,8 +45,8 @@
   margin: 0 0 .5rem;
 }
 
-.formsIntroCard #formsPageIntro,
-.formsIntroCard .formsPageIntro {
+#formsPageIntro,
+.formsPageIntro {
   font-size: .9375rem;
   color: rgba(255,255,255,.7);
   max-width: 58ch;
@@ -68,18 +73,12 @@
 }
 .formsArchiveLink:hover { background: rgba(255,255,255,.1); text-decoration: none; }
 
-/* ================================================================
-   SEARCH CARD
-   ================================================================ */
+/* ── Search card ── */
 .formsSearchCard {
   padding: 1.25rem 1.5rem;
   margin-bottom: 1.125rem;
-  background: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 1px 3px rgba(26,46,74,.08), 0 0 0 0.5px rgba(26,46,74,.12);
 }
 
-/* Override any h2 browser defaults or inherited card styles */
 .formsSearchCard h2,
 .formsSearchCard #formsSearchTitle {
   font-family: 'Source Serif 4', Georgia, serif;
@@ -94,14 +93,12 @@
 
 .formsSearchField { display: grid; gap: .5rem; }
 
-.formsSearchLabel,
 label[for="formsSearchInput"] {
   display: block;
   font-family: 'DM Sans', system-ui, sans-serif;
   font-size: .8125rem;
   font-weight: 500;
   color: #5a6a7a;
-  margin-bottom: 0;
 }
 
 #formsSearchInput {
@@ -134,9 +131,7 @@ label[for="formsSearchInput"] {
   margin: .375rem 0 0;
 }
 
-/* ================================================================
-   TWO-COLUMN LAYOUT
-   ================================================================ */
+/* ── Two-column layout ── */
 .formsLayout {
   display: grid;
   grid-template-columns: 228px 1fr;
@@ -144,16 +139,11 @@ label[for="formsSearchInput"] {
   align-items: start;
 }
 
-/* ================================================================
-   NAV CARD (Categories)
-   ================================================================ */
+/* ── Nav card ── */
 .formsNavCard {
   padding: 1.125rem;
   position: sticky;
   top: 1.125rem;
-  background: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 1px 3px rgba(26,46,74,.08), 0 0 0 0.5px rgba(26,46,74,.12);
 }
 
 .formsNavCard h2,
@@ -173,7 +163,7 @@ label[for="formsSearchInput"] {
   gap: .25rem;
 }
 
-/* ── Level 1: Department ── */
+/* Level 1: Department */
 .formCategory {
   border: none;
   background: transparent;
@@ -206,11 +196,7 @@ label[for="formsSearchInput"] {
 .formCategoryBtn:hover                 { background: #e8eef5; }
 .formCategoryBtn[aria-expanded="true"] { background: #e8eef5; }
 
-.formCategoryBtnText {
-  line-height: 1.3;
-  font-size: .8rem;
-  font-weight: 700;
-}
+.formCategoryBtnText { line-height: 1.3; font-size: .8rem; font-weight: 700; }
 
 .formCategoryIcon {
   font-size: .65rem;
@@ -222,7 +208,7 @@ label[for="formsSearchInput"] {
 }
 .formCategoryBtn[aria-expanded="true"] .formCategoryIcon { transform: rotate(90deg); }
 
-/* ── Level 2: File type ── */
+/* Level 2: File type */
 .formTypes {
   display: flex;
   flex-direction: column;
@@ -271,7 +257,7 @@ label[for="formsSearchInput"] {
 }
 .formTypeBtn[aria-expanded="true"] .formTypeIcon { transform: rotate(90deg); }
 
-/* ── Level 3: Files ── */
+/* Level 3: Files */
 .formFiles {
   display: flex;
   flex-direction: column;
@@ -300,19 +286,13 @@ label[for="formsSearchInput"] {
 .formFileBtn:hover     { background: #f7f8fa; color: #1c2b3a; }
 .formFileBtn.is-active { background: #e8eef5; color: #1a2e4a; font-weight: 600; }
 
-/* ================================================================
-   VIEWER CARD
-   ================================================================ */
+/* ── Viewer card ── */
 .formsViewerCard {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  background: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 1px 3px rgba(26,46,74,.08), 0 0 0 0.5px rgba(26,46,74,.12);
 }
 
-/* ── Viewer header ── */
 .formsViewerHead {
   display: flex;
   align-items: flex-start;
@@ -346,7 +326,6 @@ label[for="formsSearchInput"] {
   letter-spacing: normal;
 }
 
-/* ── Open PDF button ── */
 .formsViewerActions {
   display: flex;
   flex-wrap: wrap;
@@ -355,12 +334,11 @@ label[for="formsSearchInput"] {
   border-bottom: 0.5px solid rgba(26,46,74,.12);
 }
 .formsViewerActionsBottom {
-  padding: .875rem 1.5rem;
-  border-top: 0.5px solid rgba(26,46,74,.12);
-  border-bottom: none;
   display: flex;
   flex-wrap: wrap;
   gap: .5rem;
+  padding: .875rem 1.5rem;
+  border-top: 0.5px solid rgba(26,46,74,.12);
 }
 
 .formsViewerActionLink {
@@ -379,8 +357,6 @@ label[for="formsSearchInput"] {
   white-space: nowrap;
   cursor: pointer;
   transition: background .13s, color .13s, border-color .13s;
-  min-height: unset;
-  border-radius: 4px;
 }
 .formsViewerActionLink:hover {
   background: #1a2e4a;
@@ -389,7 +365,6 @@ label[for="formsSearchInput"] {
   text-decoration: none;
 }
 
-/* ── Meta strip (YEAR / REVISED / DEPARTMENT / FILE SIZE) ── */
 #formsViewerMeta,
 .formsViewerMeta {
   display: flex;
@@ -403,9 +378,6 @@ label[for="formsSearchInput"] {
 }
 
 .formsViewerMetaItem {
-  display: flex;
-  flex-direction: column;
-  gap: .1rem;
   font-size: .8125rem;
   color: #1c2b3a;
   font-weight: 500;
@@ -413,13 +385,8 @@ label[for="formsSearchInput"] {
   border: none;
   border-radius: 0;
   padding: 0;
-  /* Uppercase label style using data- or just text */
 }
 
-/* If JS renders "Type: Budgets" as plain text, style it simply */
-.formsViewerMetaItem::before { display: none; }
-
-/* ── Description ── */
 #formsViewerDescription,
 .formsViewerDescription {
   padding: .875rem 1.5rem;
@@ -437,7 +404,6 @@ label[for="formsSearchInput"] {
   font-weight: 400;
 }
 
-/* ── Preview area ── */
 .formsPreviewWrap {
   flex: 1;
   min-height: 480px;
@@ -474,37 +440,20 @@ label[for="formsSearchInput"] {
   font-weight: 400;
 }
 
-/* ── Footer ── */
-.footer {
-  margin-top: 2rem;
-  text-align: center;
-  font-size: .8125rem;
-  color: #8a9aaa;
-  padding-bottom: .5rem;
-  background: transparent;
-  border: none;
-  box-shadow: none;
-  backdrop-filter: none;
-}
-
-/* ================================================================
-   RESPONSIVE
-   ================================================================ */
+/* ── Responsive ── */
 @media (max-width: 1100px) {
   .formsLayout { grid-template-columns: 200px 1fr; }
 }
-
 @media (max-width: 900px) {
   .formsLayout  { grid-template-columns: 1fr; }
   .formsNavCard { position: static; }
   .formsPreviewFrame { height: 560px; }
 }
-
 @media (max-width: 640px) {
   .formsIntroCard         { padding: 1.5rem 1.25rem 1.25rem; }
   .formsSearchCard        { padding: 1rem 1.25rem; }
   .formsNavCard           { padding: 1rem; }
-  .formsViewerHead        { flex-direction: column; align-items: flex-start; }
+  .formsViewerHead        { flex-direction: column; }
   .formsViewerActions     { padding: .625rem 1.25rem; }
   #formsViewerMeta        { padding: .625rem 1.25rem; }
   #formsViewerDescription { padding: .75rem 1.25rem; }
