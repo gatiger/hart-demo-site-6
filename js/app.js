@@ -130,19 +130,15 @@ function updateResponsiveHeader() {
   const navRow = document.querySelector(".navRow");
   const brand = document.querySelector(".brandLink");
   const nav = document.querySelector(".topNav");
-  const menuBtn = document.getElementById("menuBtn");
 
-  if (!topbar || !navRow || !brand || !nav || !menuBtn) return;
+  if (!topbar || !navRow || !brand || !nav) return;
 
-  // Reset to desktop state so measurements are accurate
   topbar.classList.remove("nav-compact");
 
   const rowWidth = navRow.clientWidth;
   const brandWidth = brand.getBoundingClientRect().width;
   const navWidth = nav.scrollWidth;
-
-  // Approximate combined spacing between brand and nav/button
-  const extraSpace = 32;
+  const extraSpace = 40;
 
   const needsCompact = (brandWidth + navWidth + extraSpace) > rowWidth;
 
