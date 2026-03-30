@@ -13,9 +13,9 @@
   <link rel="stylesheet" href="/css/base.css" />
   <link rel="stylesheet" href="/css/administration.css" />
 
-  <script defer src="js/alerts.js"></script>
-  <script defer src="js/app.js"></script>
-  <script defer src="js/administration.js"></script>
+  <script defer src="/js/alerts.js"></script>
+  <script defer src="/js/app.js"></script>
+  <script defer src="/js/administration.js"></script>
 </head>
 
 <body>
@@ -25,7 +25,7 @@
     <div class="navRow">
       <a class="brand brandLink" href="index.html">
         <div class="seal">
-          <img src="./assets/hart_seal.svg" alt="Hart County, Georgia official seal">
+          <img src="/assets/hart_seal.svg" alt="Hart County, Georgia official seal">
         </div>
         <div class="brandText">
           <div class="kicker">Hart County, Georgia</div>
@@ -46,10 +46,12 @@
         <a href="accessibility.html">Accessibility</a>
       </nav>
 
-      <button class="btn menuBtn" type="button"
-              aria-controls="mobileMenu"
-              aria-expanded="false"
-              id="menuBtn">
+      <button
+        class="btn menuBtn"
+        type="button"
+        id="menuBtn"
+        aria-controls="mobileMenu"
+        aria-expanded="false">
         Menu
       </button>
     </div>
@@ -57,7 +59,11 @@
 
   <div class="menuBackdrop" id="menuBackdrop" hidden></div>
 
-  <aside class="menuPanel" id="mobileMenu" hidden aria-label="Mobile navigation">
+  <aside
+    class="menuPanel"
+    id="mobileMenu"
+    hidden
+    aria-label="Mobile navigation">
     <div class="menuPanelHead">
       <div class="menuPanelTitle">Menu</div>
       <button class="btn ghost" type="button" id="menuClose" aria-label="Close menu">Close</button>
@@ -80,44 +86,56 @@
 
   <main id="main" class="container administrationPage" tabindex="-1">
     <section class="adminTopGrid" aria-label="Administration overview">
-  <article class="card adminPhotoCard" aria-label="Administrator photo">
-    <div class="adminPhotoWrap">
-      <img id="adminPhoto" class="adminPhoto" src="" alt="">
-    </div>
+      <article class="card adminPhotoCard" aria-labelledby="adminPhotoCaption">
+        <div class="adminPhotoWrap">
+          <img
+            id="adminPhoto"
+            class="adminPhoto"
+            src="/assets/admin-placeholder.jpg"
+            alt="Hart County Administration Building">
+        </div>
 
-    <div class="adminPhotoText" id="adminPhotoText"></div>
-  </article>
+        <div class="adminPhotoText" id="adminPhotoText">
+          <p id="adminPhotoCaption"></p>
+        </div>
+      </article>
 
-  <article class="card adminInfoCard">
-    <p class="adminEyebrow" id="adminEyebrow"></p>
-    <h1 class="adminPageTitle" id="adminPageTitle"></h1>
+      <article class="card adminInfoCard" aria-labelledby="adminPageTitle">
+        <p class="adminEyebrow" id="adminEyebrow"></p>
+        <h1 class="adminPageTitle" id="adminPageTitle">Administration</h1>
 
-    <div class="adminInfoBlock">
-      <p class="adminName" id="adminName"></p>
-      <p class="adminRole" id="adminRole"></p>
-    </div>
+        <div class="adminInfoBlock">
+          <p class="adminName" id="adminName"></p>
+          <p class="adminRole" id="adminRole"></p>
+        </div>
 
-    <div class="adminDetails" aria-label="Administrator contact information">
-      <p id="adminOfficeRow"></p>
-      <p id="adminAddressRow"></p>
-      <p id="adminPhoneRow"></p>
-      <p id="adminEmailRow"></p>
-      <p id="adminHoursRow"></p>
-    </div>
-  </article>
-</section>
+        <div class="adminDetails" aria-label="Administrator contact information">
+          <p id="adminOfficeRow" hidden></p>
+          <p id="adminAddressRow" hidden></p>
+          <p id="adminPhoneRow" hidden></p>
+          <p id="adminEmailRow" hidden></p>
+          <p id="adminHoursRow" hidden></p>
+        </div>
+      </article>
+    </section>
 
-<section class="card adminShortMessageCard" aria-labelledby="adminShortMessageTitle">
-  <h2 id="adminShortMessageTitle" class="sectionTitle"></h2>
-  <div class="adminShortMessageBody" id="adminShortMessageBody"></div>
-</section>
+    <section class="card adminShortMessageCard" aria-labelledby="adminShortMessageTitle">
+      <h2 id="adminShortMessageTitle" class="sectionTitle"></h2>
+      <div
+        class="adminShortMessageBody"
+        id="adminShortMessageBody"
+        aria-live="polite"></div>
+    </section>
 
     <section class="card adminMessageCard" aria-labelledby="adminMessageTitle">
       <h2 id="adminMessageTitle" class="sectionTitle"></h2>
 
-      <div class="adminMessageBody" id="adminMessageBody"></div>
+      <div
+        class="adminMessageBody"
+        id="adminMessageBody"
+        aria-live="polite"></div>
 
-      <div class="orgChartBlock">
+      <div class="orgChartBlock" id="orgChartBlock" hidden>
         <h3 class="orgChartTitle" id="orgChartTitle"></h3>
         <p class="orgChartText">
           <a id="orgChartLink" href="" target="_blank" rel="noopener"></a>
