@@ -1,7 +1,6 @@
 /* ============================================================
    forms.css — Hart County Forms & Documents
-   Self-contained page styles. Requires only base.css.
-   No components.css needed.
+   Reflow-safe for high zoom.
    ============================================================ */
 
 /* ── Section title (used on this page) ── */
@@ -25,11 +24,14 @@
   position: relative;
   overflow: hidden;
 }
+
 .formsIntroCard::after {
   content: '';
   position: absolute;
-  right: -50px; top: -50px;
-  width: 220px; height: 220px;
+  right: -50px;
+  top: -50px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   background: rgba(255,255,255,.03);
   pointer-events: none;
@@ -55,7 +57,9 @@
   font-weight: 400;
 }
 
-.formsArchiveLinkWrap { margin: 0; }
+.formsArchiveLinkWrap {
+  margin: 0;
+}
 
 .formsArchiveLink {
   display: inline-flex;
@@ -71,7 +75,11 @@
   background: transparent;
   transition: background .15s;
 }
-.formsArchiveLink:hover { background: rgba(255,255,255,.1); text-decoration: none; }
+
+.formsArchiveLink:hover {
+  background: rgba(255,255,255,.1);
+  text-decoration: none;
+}
 
 /* ── Search card ── */
 .formsSearchCard {
@@ -91,7 +99,10 @@
   text-transform: none;
 }
 
-.formsSearchField { display: grid; gap: .5rem; }
+.formsSearchField {
+  display: grid;
+  gap: .5rem;
+}
 
 label[for="formsSearchInput"] {
   display: block;
@@ -116,12 +127,16 @@ label[for="formsSearchInput"] {
   box-shadow: none;
   transition: border-color .15s, box-shadow .15s;
 }
+
 #formsSearchInput:focus {
   border-color: #1a7fd4;
   box-shadow: 0 0 0 3px rgba(26,125,212,.14);
   background: #fff;
 }
-#formsSearchInput::placeholder { color: #8a9aaa; }
+
+#formsSearchInput::placeholder {
+  color: #8a9aaa;
+}
 
 #formsSearchStatus {
   min-height: 1.2em;
@@ -193,10 +208,17 @@ label[for="formsSearchInput"] {
   transition: background .12s;
   box-shadow: none;
 }
-.formCategoryBtn:hover                 { background: #e8eef5; }
-.formCategoryBtn[aria-expanded="true"] { background: #e8eef5; }
 
-.formCategoryBtnText { line-height: 1.3; font-size: .8rem; font-weight: 700; }
+.formCategoryBtn:hover,
+.formCategoryBtn[aria-expanded="true"] {
+  background: #e8eef5;
+}
+
+.formCategoryBtnText {
+  line-height: 1.3;
+  font-size: .8rem;
+  font-weight: 700;
+}
 
 .formCategoryIcon {
   font-size: .65rem;
@@ -206,7 +228,10 @@ label[for="formsSearchInput"] {
   font-style: normal;
   font-weight: 400;
 }
-.formCategoryBtn[aria-expanded="true"] .formCategoryIcon { transform: rotate(90deg); }
+
+.formCategoryBtn[aria-expanded="true"] .formCategoryIcon {
+  transform: rotate(90deg);
+}
 
 /* Level 2: File type */
 .formTypes {
@@ -244,8 +269,15 @@ label[for="formsSearchInput"] {
   transition: background .12s, color .12s;
   box-shadow: none;
 }
-.formTypeBtn:hover                 { background: #f7f8fa; color: #1c2b3a; }
-.formTypeBtn[aria-expanded="true"] { color: #1c2b3a; }
+
+.formTypeBtn:hover {
+  background: #f7f8fa;
+  color: #1c2b3a;
+}
+
+.formTypeBtn[aria-expanded="true"] {
+  color: #1c2b3a;
+}
 
 .formTypeIcon {
   font-size: .6rem;
@@ -255,7 +287,10 @@ label[for="formsSearchInput"] {
   font-style: normal;
   font-weight: 400;
 }
-.formTypeBtn[aria-expanded="true"] .formTypeIcon { transform: rotate(90deg); }
+
+.formTypeBtn[aria-expanded="true"] .formTypeIcon {
+  transform: rotate(90deg);
+}
 
 /* Level 3: Files */
 .formFiles {
@@ -283,14 +318,25 @@ label[for="formsSearchInput"] {
   transition: background .12s, color .12s;
   box-shadow: none;
 }
-.formFileBtn:hover     { background: #f7f8fa; color: #1c2b3a; }
-.formFileBtn.is-active { background: #e8eef5; color: #1a2e4a; font-weight: 600; }
+
+.formFileBtn:hover {
+  background: #f7f8fa;
+  color: #1c2b3a;
+}
+
+.formFileBtn.is-active {
+  background: #e8eef5;
+  color: #1a2e4a;
+  font-weight: 600;
+}
 
 /* ── Viewer card ── */
 .formsViewerCard {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .formsViewerHead {
@@ -333,6 +379,7 @@ label[for="formsSearchInput"] {
   padding: .75rem 1.5rem;
   border-bottom: 0.5px solid rgba(26,46,74,.12);
 }
+
 .formsViewerActionsBottom {
   display: flex;
   flex-wrap: wrap;
@@ -354,10 +401,11 @@ label[for="formsSearchInput"] {
   border: 1px solid rgba(26,46,74,.22);
   border-radius: 4px;
   text-decoration: none;
-  white-space: nowrap;
+  white-space: normal;
   cursor: pointer;
   transition: background .13s, color .13s, border-color .13s;
 }
+
 .formsViewerActionLink:hover {
   background: #1a2e4a;
   color: #fff;
@@ -395,6 +443,7 @@ label[for="formsSearchInput"] {
   line-height: 1.65;
   border-bottom: 0.5px solid rgba(26,46,74,.12);
 }
+
 #formsViewerDescription p,
 .formsViewerDescription p {
   margin: 0;
@@ -412,6 +461,8 @@ label[for="formsSearchInput"] {
   justify-content: center;
   background: #f7f8fa;
   position: relative;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .formsPreviewFrame {
@@ -432,6 +483,7 @@ label[for="formsSearchInput"] {
   text-align: center;
   padding: 3rem;
 }
+
 .formsPreviewFallback p {
   margin: 0;
   color: #8a9aaa;
@@ -441,22 +493,50 @@ label[for="formsSearchInput"] {
 }
 
 /* ── Responsive ── */
-@media (max-width: 1100px) {
-  .formsLayout { grid-template-columns: 200px 1fr; }
+@media (max-width: 1200px) {
+  .formsLayout {
+    grid-template-columns: 1fr;
+  }
+
+  .formsNavCard {
+    position: static;
+  }
 }
-@media (max-width: 900px) {
-  .formsLayout  { grid-template-columns: 1fr; }
-  .formsNavCard { position: static; }
-  .formsPreviewFrame { height: 560px; }
-}
-@media (max-width: 640px) {
-  .formsIntroCard         { padding: 1.5rem 1.25rem 1.25rem; }
-  .formsSearchCard        { padding: 1rem 1.25rem; }
-  .formsNavCard           { padding: 1rem; }
-  .formsViewerHead        { flex-direction: column; }
-  .formsViewerActions     { padding: .625rem 1.25rem; }
-  #formsViewerMeta        { padding: .625rem 1.25rem; }
-  #formsViewerDescription { padding: .75rem 1.25rem; }
-  .formsPreviewFrame      { height: 460px; }
-  .formsPreviewFallback   { min-height: 360px; }
+
+@media (max-width: 700px) {
+  .formsIntroCard {
+    padding: 1.5rem 1.25rem 1.25rem;
+  }
+
+  .formsSearchCard {
+    padding: 1rem 1.25rem;
+  }
+
+  .formsNavCard {
+    padding: 1rem;
+  }
+
+  .formsViewerHead {
+    flex-direction: column;
+  }
+
+  .formsViewerActions {
+    padding: .625rem 1.25rem;
+  }
+
+  #formsViewerMeta {
+    padding: .625rem 1.25rem;
+  }
+
+  #formsViewerDescription {
+    padding: .75rem 1.25rem;
+  }
+
+  .formsPreviewFrame {
+    height: 460px;
+  }
+
+  .formsPreviewFallback {
+    min-height: 360px;
+  }
 }

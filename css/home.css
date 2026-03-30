@@ -1,7 +1,6 @@
 /* ============================================================
    home.css — Hart County homepage only
-   Hero, page tools, badges, homepage grid, announcements,
-   and homepage-specific card content.
+   Reflow-safe for high zoom.
    ============================================================ */
 
 .hero {
@@ -217,19 +216,18 @@
   color: var(--navy);
 }
 
-/* Meetings card body spacing on homepage */
 #meetingsMiniCal {
   padding: 0 1.5rem 1.5rem;
 }
 
-/* News alerts card body spacing */
 #newsAlerts {
   padding: 0 1.5rem 1.5rem;
 }
 
-/* Responsive */
-@media (max-width: 1024px) {
-  .heroTop {
+/* Reflow sooner for zoom */
+@media (max-width: 1200px) {
+  .heroTop,
+  .homeTwoCol {
     grid-template-columns: 1fr;
   }
 
@@ -237,12 +235,12 @@
     max-width: 22ch;
   }
 
-  .homeTwoCol {
-    grid-template-columns: 1fr;
+  .quickActionsCard .btnRow {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 700px) {
   .heroIntro {
     padding: 1.5rem 1.25rem 1.25rem;
   }
