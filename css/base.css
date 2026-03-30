@@ -125,7 +125,7 @@ a:hover {
   overflow: hidden;
   padding: 3px;
   position: absolute;
-  left: 60px;
+  left: 40px;
   top: 50%;
   transform: translateY(-50%);
   box-shadow: 0 4px 12px rgba(0,0,0,.18);
