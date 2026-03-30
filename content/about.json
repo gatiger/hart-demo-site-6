@@ -1,0 +1,51 @@
+{
+  "pageTitle": "About Hart County",
+  "pageIntro": "Hart County is located in northeast Georgia and is known for its strong community, scenic beauty, and access to Lake Hartwell. This page provides an overview of the county’s history, geography, government, and public services.",
+  "badges": [
+    {
+      "label": "Established",
+      "value": "1853"
+    },
+    {
+      "label": "County Seat",
+      "value": "Hartwell"
+    },
+    {
+      "label": "Region",
+      "value": "Northeast Georgia"
+    }
+  ],
+  "sections": [
+    {
+      "title": "History",
+      "body": "Hart County was created in 1853 and named in honor of Nancy Hart, a Revolutionary War heroine closely associated with Georgia history. Over time, the county developed as a rural agricultural community and later expanded with recreation, tourism, and regional commerce."
+    },
+    {
+      "title": "Geography & Recreation",
+      "body": "Hart County features rolling hills, farmland, and shoreline along Lake Hartwell. Outdoor recreation plays an important role in the area, with boating, fishing, camping, and parks contributing to the county’s quality of life."
+    },
+    {
+      "title": "Government Structure",
+      "body": "Hart County operates under a Board of Commissioners form of government. County leadership oversees administration, budgeting, infrastructure, planning, and the delivery of public services to residents and businesses."
+    },
+    {
+      "title": "Community & Services",
+      "body": "The county provides services including public safety, road maintenance, planning and zoning, elections administration, tax services, parks and recreation, and other functions that support daily life in the community."
+    }
+  ],
+  "statsIntro": "Key facts and general county information",
+  "stats": [
+    {
+      "title": "Population",
+      "value": "Approximately 26,000 residents"
+    },
+    {
+      "title": "Major Employment Sectors",
+      "value": "Education, healthcare, manufacturing, public administration, and service industries"
+    },
+    {
+      "title": "Transportation",
+      "value": "State highways and regional access to the I-85 corridor"
+    }
+  ]
+}
