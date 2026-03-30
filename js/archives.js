@@ -127,7 +127,7 @@ function renderArchivesTree(categories) {
 
     const categoryIcon = document.createElement("span");
     categoryIcon.className = "archiveCategoryIcon";
-    categoryIcon.textContent = "+";
+    categoryIcon.textContent = "›";
 
     categoryBtn.appendChild(categoryBtnText);
     categoryBtn.appendChild(categoryIcon);
@@ -152,7 +152,7 @@ function renderArchivesTree(categories) {
 
       const typeIcon = document.createElement("span");
       typeIcon.className = "archiveTypeIcon";
-      typeIcon.textContent = "+";
+      typeIcon.textContent = "›";
 
       typeBtn.appendChild(typeBtnText);
       typeBtn.appendChild(typeIcon);
@@ -182,7 +182,6 @@ function renderArchivesTree(categories) {
         const expanded = typeBtn.getAttribute("aria-expanded") === "true";
         typeBtn.setAttribute("aria-expanded", String(!expanded));
         filesWrap.hidden = expanded;
-        typeIcon.textContent = expanded ? "+" : "−";
       });
 
       typeWrap.appendChild(typeBtn);
@@ -194,7 +193,6 @@ function renderArchivesTree(categories) {
       const expanded = categoryBtn.getAttribute("aria-expanded") === "true";
       categoryBtn.setAttribute("aria-expanded", String(!expanded));
       typesWrap.hidden = expanded;
-      categoryIcon.textContent = expanded ? "+" : "−";
     });
 
     categoryWrap.appendChild(categoryBtn);
@@ -222,10 +220,10 @@ function renderFileDetails(file, categoryName, typeName) {
     ].filter(item => safeText(item.value));
 
     items.forEach(item => {
-      const pill = document.createElement("span");
-      pill.className = "archivesViewerMetaItem";
-      pill.textContent = `${item.label}: ${safeText(item.value)}`;
-      meta.appendChild(pill);
+      const metaItem = document.createElement("span");
+      metaItem.className = "archivesViewerMetaItem";
+      metaItem.textContent = `${item.label}: ${safeText(item.value)}`;
+      meta.appendChild(metaItem);
     });
   }
 
@@ -264,7 +262,6 @@ function renderFileDetails(file, categoryName, typeName) {
 function setViewerActions(href) {
   const topWrap = document.getElementById("archivesViewerActionsTop");
   const bottomWrap = document.getElementById("archivesViewerActionsBottom");
-
   const openTop = document.getElementById("archivesViewerOpenTop");
   const openBottom = document.getElementById("archivesViewerOpenBottom");
 
@@ -306,6 +303,7 @@ function clearViewerForNoResults(query) {
     frame.src = "";
     frame.hidden = true;
   }
+
   if (fallback) {
     fallback.hidden = false;
     fallback.innerHTML = `<p>Try another search term.</p>`;

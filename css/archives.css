@@ -1,356 +1,493 @@
 /* ============================================================
    archives.css — Hart County Archived Documents
-   Page-specific styles only.
+   Styled to match forms.css patterns.
    ============================================================ */
 
-.archivesPage {
-  padding-top: 18px;
-}
-
-/* ===== INTRO ===== */
-
-.archivesIntroCard {
-  padding: 1.75rem 1.75rem 1.5rem;
-  margin-bottom: 18px;
-}
-
-.archivesPageTitle {
-  margin: 0 0 .5rem;
-  font-family: var(--font-serif);
-  font-size: clamp(1.85rem, 3vw, 2.5rem);
+/* ── Section title ── */
+.sectionTitle {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 1rem;
   font-weight: 600;
-  line-height: 1.12;
-  color: var(--navy);
+  color: #1a2e4a;
+  margin-bottom: .875rem;
+  letter-spacing: normal;
+  text-transform: none;
+  line-height: 1.3;
 }
 
+/* ── Intro card ── */
+.archivesIntroCard {
+  background: #1a2e4a;
+  background-image: radial-gradient(circle at 90% -20%, rgba(255,255,255,.06) 0%, transparent 55%);
+  padding: 2rem 2rem 1.625rem;
+  margin-bottom: 1.125rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.archivesIntroCard::after {
+  content: '';
+  position: absolute;
+  right: -50px;
+  top: -50px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.03);
+  pointer-events: none;
+}
+
+#archivesPageTitle,
+.archivesPageTitle {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 1.625rem;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.2;
+  margin: 0 0 .5rem;
+}
+
+#archivesPageIntro,
 .archivesPageIntro {
+  font-size: .9375rem;
+  color: rgba(255,255,255,.7);
+  max-width: 58ch;
+  line-height: 1.65;
   margin: 0;
-  line-height: 1.7;
-  color: var(--text-muted);
-  max-width: 70ch;
-  font-size: .95rem;
+  font-weight: 400;
 }
 
-/* ===== SEARCH ===== */
-
+/* ── Search card ── */
 .archivesSearchCard {
-  padding: 1.5rem 1.75rem;
-  margin-bottom: 18px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.125rem;
+}
+
+.archivesSearchCard h2,
+.archivesSearchCard #archivesSearchTitle {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a2e4a;
+  margin: 0 0 .875rem;
+  line-height: 1.3;
+  letter-spacing: normal;
+  text-transform: none;
 }
 
 .archivesSearchField {
   display: grid;
-  gap: .625rem;
+  gap: .5rem;
 }
 
-.archivesSearchLabel {
-  font-size: .875rem;
-  font-weight: 600;
-  color: var(--text);
+.archivesSearchLabel,
+label[for="archivesSearchInput"] {
+  display: block;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: .8125rem;
+  font-weight: 500;
+  color: #5a6a7a;
 }
 
+#archivesSearchInput,
 .archivesSearchInput {
   width: 100%;
   max-width: 620px;
+  height: 42px;
+  padding: 0 1rem;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: .9375rem;
+  color: #1c2b3a;
+  background: #f7f8fa;
+  border: 1px solid rgba(26,46,74,.22);
+  border-radius: 8px;
+  outline: none;
+  box-shadow: none;
+  transition: border-color .15s, box-shadow .15s;
 }
 
+#archivesSearchInput:focus,
+.archivesSearchInput:focus {
+  border-color: #1a7fd4;
+  box-shadow: 0 0 0 3px rgba(26,125,212,.14);
+  background: #fff;
+}
+
+#archivesSearchInput::placeholder,
+.archivesSearchInput::placeholder {
+  color: #8a9aaa;
+}
+
+#archivesSearchStatus,
 .archivesSearchStatus {
-  margin: .75rem 0 0;
   min-height: 1.2em;
-  color: var(--text-muted);
-  font-size: .875rem;
+  font-size: .8125rem;
+  font-weight: 400;
+  color: #5a6a7a;
+  margin: .375rem 0 0;
 }
 
-/* ===== LAYOUT ===== */
-
+/* ── Two-column layout ── */
 .archivesLayout {
   display: grid;
-  grid-template-columns: 320px minmax(0, 1fr);
-  gap: 18px;
+  grid-template-columns: 228px 1fr;
+  gap: 1.125rem;
   align-items: start;
 }
 
-/* ===== NAV TREE ===== */
-
+/* ── Nav card ── */
 .archivesNavCard {
-  padding: 1.25rem;
+  padding: 1.125rem;
   position: sticky;
-  top: 18px;
+  top: 1.125rem;
+}
+
+.archivesNavCard h2,
+.archivesNavCard #archivesNavTitle {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: .9375rem;
+  font-weight: 600;
+  color: #1a2e4a;
+  margin: 0 0 .875rem;
+  letter-spacing: normal;
+  text-transform: none;
 }
 
 .archivesNavTree {
-  display: grid;
-  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
 }
 
-.archiveCategory,
-.archiveType {
-  border: 1px solid var(--border);
-  border-radius: var(--radius-md);
-  background: var(--surface-alt);
-  overflow: hidden;
-}
-
-.archiveCategoryBtn,
-.archiveTypeBtn,
-.archiveFileBtn {
-  width: 100%;
-  border: 0;
+/* Level 1 */
+.archiveCategory {
+  border: none;
   background: transparent;
-  color: var(--text);
-  text-align: left;
-  cursor: pointer;
-  font: inherit;
+  border-radius: 4px;
+  overflow: visible;
+  box-shadow: none;
 }
 
 .archiveCategoryBtn {
-  padding: .9rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .5rem;
+  width: 100%;
+  padding: .375rem .5rem;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: .8rem;
   font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 14px;
-}
-
-.archiveCategoryBtnText {
-  line-height: 1.35;
-}
-
-.archiveCategoryIcon,
-.archiveTypeIcon {
-  font-size: .85rem;
-  color: var(--text-hint);
-  flex: 0 0 auto;
-}
-
-.archiveTypes {
-  display: grid;
-  gap: 8px;
-  padding: 0 .75rem .75rem;
-}
-
-.archiveTypeBtn {
-  padding: .75rem .875rem;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-}
-
-.archiveFiles {
-  display: grid;
-  gap: 8px;
-  padding: 0 .625rem .625rem;
-}
-
-.archiveFileBtn {
-  padding: .65rem .75rem;
-  border-radius: var(--radius-sm);
-  background: #fff;
-  border: 1px solid var(--border);
-  line-height: 1.45;
-  font-size: .875rem;
+  color: #1a2e4a;
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: left;
+  line-height: 1.3;
+  letter-spacing: .01em;
+  transition: background .12s;
+  box-shadow: none;
 }
 
 .archiveCategoryBtn:hover,
-.archiveTypeBtn:hover {
-  background: rgba(26,46,74,.04);
+.archiveCategoryBtn[aria-expanded="true"] {
+  background: #e8eef5;
 }
 
-.archiveFileBtn:hover,
-.archiveFileBtn:focus-visible {
-  border-color: var(--focus);
-  background: #fff;
+.archiveCategoryBtnText {
+  line-height: 1.3;
+  font-size: .8rem;
+  font-weight: 700;
+}
+
+.archiveCategoryIcon {
+  font-size: .65rem;
+  color: #8a9aaa;
+  flex-shrink: 0;
+  transition: transform .18s;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.archiveCategoryBtn[aria-expanded="true"] .archiveCategoryIcon {
+  transform: rotate(90deg);
+}
+
+/* Level 2 */
+.archiveTypes {
+  display: flex;
+  flex-direction: column;
+  gap: .125rem;
+  padding: 0 0 .125rem .875rem;
+  margin: 0;
+}
+
+.archiveType {
+  border: none;
+  background: transparent;
+  border-radius: 4px;
+  overflow: visible;
+  box-shadow: none;
+}
+
+.archiveTypeBtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .5rem;
+  width: 100%;
+  padding: .3rem .5rem;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: .775rem;
+  font-weight: 600;
+  color: #5a6a7a;
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: left;
+  transition: background .12s, color .12s;
+  box-shadow: none;
+}
+
+.archiveTypeBtn:hover {
+  background: #f7f8fa;
+  color: #1c2b3a;
+}
+
+.archiveTypeBtn[aria-expanded="true"] {
+  color: #1c2b3a;
+}
+
+.archiveTypeIcon {
+  font-size: .6rem;
+  color: #8a9aaa;
+  flex-shrink: 0;
+  transition: transform .18s;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.archiveTypeBtn[aria-expanded="true"] .archiveTypeIcon {
+  transform: rotate(90deg);
+}
+
+/* Level 3 */
+.archiveFiles {
+  display: flex;
+  flex-direction: column;
+  gap: .125rem;
+  padding: 0 0 .25rem .875rem;
+  margin: 0;
+}
+
+.archiveFileBtn {
+  display: block;
+  width: 100%;
+  padding: .3rem .5rem;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: .775rem;
+  font-weight: 500;
+  color: #5a6a7a;
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: left;
+  line-height: 1.45;
+  transition: background .12s, color .12s;
+  box-shadow: none;
+}
+
+.archiveFileBtn:hover {
+  background: #f7f8fa;
+  color: #1c2b3a;
 }
 
 .archiveFileBtn.is-active {
-  border-color: var(--focus);
-  background: var(--navy-light);
-  color: var(--navy);
+  background: #e8eef5;
+  color: #1a2e4a;
   font-weight: 600;
 }
 
-/* ===== VIEWER ===== */
-
+/* ── Viewer card ── */
 .archivesViewerCard {
-  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 .archivesViewerHead {
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
-  gap: 18px;
-  align-items: start;
-  margin-bottom: 12px;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem 1rem;
+  border-bottom: 0.5px solid rgba(26,46,74,.12);
 }
 
+#archivesViewerEyebrow,
 .archivesViewerEyebrow {
-  margin: 0 0 .35rem;
-  font-size: .75rem;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: .7rem;
   font-weight: 700;
-  letter-spacing: .08em;
+  letter-spacing: .07em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: #b8860b;
+  min-height: 1em;
+  margin: 0 0 .25rem;
+  line-height: 1;
 }
 
+#archivesViewerTitle,
 .archivesViewerTitle {
-  margin: 0;
-  font-family: var(--font-serif);
-  font-size: clamp(1.35rem, 2.2vw, 2rem);
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 1.125rem;
   font-weight: 600;
-  line-height: 1.15;
-  color: var(--navy);
+  color: #1a2e4a;
+  line-height: 1.3;
+  margin: 0;
+  letter-spacing: normal;
 }
 
 .archivesViewerActions {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin: 0 0 16px;
+  gap: .5rem;
+  padding: .75rem 1.5rem;
+  border-bottom: 0.5px solid rgba(26,46,74,.12);
 }
 
 .archivesViewerActionsBottom {
-  margin: 16px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  padding: .875rem 1.5rem;
+  border-top: 0.5px solid rgba(26,46,74,.12);
 }
 
 .archivesViewerActionLink {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  min-height: 40px;
-  padding: .5rem .9rem;
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--border-mid);
-  background: var(--surface);
-  color: var(--navy);
-  font: inherit;
-  font-size: .8125rem;
+  gap: .375rem;
+  padding: .4rem .875rem;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: .8rem;
   font-weight: 600;
+  color: #1a2e4a;
+  background: #ffffff;
+  border: 1px solid rgba(26,46,74,.22);
+  border-radius: 4px;
   text-decoration: none;
+  white-space: nowrap;
   cursor: pointer;
+  transition: background .13s, color .13s, border-color .13s;
 }
 
-.archivesViewerActionLink:hover,
-.archivesViewerActionLink:focus-visible {
-  background: var(--surface-alt);
-  color: var(--navy);
+.archivesViewerActionLink:hover {
+  background: #1a2e4a;
+  color: #fff;
+  border-color: #1a2e4a;
   text-decoration: none;
 }
 
+#archivesViewerMeta,
 .archivesViewerMeta {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  margin: 0 0 14px;
+  gap: .375rem 1.5rem;
+  padding: .75rem 1.5rem;
+  background: #f7f8fa;
+  border-bottom: 0.5px solid rgba(26,46,74,.12);
+  margin: 0;
+  list-style: none;
 }
 
 .archivesViewerMetaItem {
-  padding: .4rem .65rem;
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  background: var(--surface-alt);
-  color: var(--text);
   font-size: .8125rem;
-  line-height: 1.3;
+  color: #1c2b3a;
+  font-weight: 500;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
 }
 
+#archivesViewerDescription,
 .archivesViewerDescription {
-  margin-bottom: 16px;
+  padding: .875rem 1.5rem;
+  font-size: .875rem;
+  color: #5a6a7a;
+  line-height: 1.65;
+  border-bottom: 0.5px solid rgba(26,46,74,.12);
 }
 
+#archivesViewerDescription p,
 .archivesViewerDescription p {
   margin: 0;
-  color: var(--text-muted);
-  line-height: 1.7;
-  font-size: .9375rem;
+  font-size: .875rem;
+  color: #5a6a7a;
+  line-height: 1.65;
+  font-weight: 400;
 }
 
 .archivesPreviewWrap {
-  border: 1px solid var(--border);
-  border-radius: var(--radius-md);
-  overflow: hidden;
-  background: var(--surface-alt);
-  min-height: 520px;
+  flex: 1;
+  min-height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f7f8fa;
+  position: relative;
 }
 
 .archivesPreviewFrame {
   width: 100%;
   height: 720px;
-  border: 0;
+  border: none;
   display: block;
   background: #fff;
 }
 
 .archivesPreviewFallback {
-  min-height: 520px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 24px;
+  gap: .75rem;
+  color: #8a9aaa;
+  font-size: .9375rem;
   text-align: center;
+  padding: 3rem;
 }
 
 .archivesPreviewFallback p {
   margin: 0;
-  color: var(--text-muted);
+  color: #8a9aaa;
   line-height: 1.7;
   max-width: 40ch;
-  font-size: .9375rem;
+  font-weight: 400;
 }
 
-/* ===== EMPTY / STATUS TEXT IN TREE ===== */
-
-.archivesNavTree > p {
-  font-size: .9rem;
-  color: var(--text-muted);
-}
-
-/* ===== RESPONSIVE ===== */
-
+/* ── Responsive ── */
 @media (max-width: 1100px) {
-  .archivesLayout {
-    grid-template-columns: 280px minmax(0, 1fr);
-  }
+  .archivesLayout { grid-template-columns: 200px 1fr; }
 }
 
 @media (max-width: 900px) {
-  .archivesLayout {
-    grid-template-columns: 1fr;
-  }
-
-  .archivesNavCard {
-    position: static;
-  }
-
-  .archivesPreviewFrame {
-    height: 560px;
-  }
+  .archivesLayout  { grid-template-columns: 1fr; }
+  .archivesNavCard { position: static; }
+  .archivesPreviewFrame { height: 560px; }
 }
 
 @media (max-width: 640px) {
-  .archivesIntroCard,
-  .archivesSearchCard,
-  .archivesNavCard,
-  .archivesViewerCard {
-    padding: 1.125rem;
-  }
-
-  .archivesPageTitle {
-    font-size: 1.75rem;
-  }
-
-  .archivesViewerHead {
-    flex-direction: column;
-    align-items: start;
-  }
-
-  .archivesPreviewFrame {
-    height: 460px;
-  }
-
-  .archivesPreviewWrap,
-  .archivesPreviewFallback {
-    min-height: 360px;
-  }
+  .archivesIntroCard         { padding: 1.5rem 1.25rem 1.25rem; }
+  .archivesSearchCard        { padding: 1rem 1.25rem; }
+  .archivesNavCard           { padding: 1rem; }
+  .archivesViewerHead        { flex-direction: column; }
+  .archivesViewerActions     { padding: .625rem 1.25rem; }
+  #archivesViewerMeta        { padding: .625rem 1.25rem; }
+  #archivesViewerDescription { padding: .75rem 1.25rem; }
+  .archivesPreviewFrame      { height: 460px; }
+  .archivesPreviewFallback   { min-height: 360px; }
 }
