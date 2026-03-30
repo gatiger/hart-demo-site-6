@@ -20,16 +20,16 @@
     "intervalMs": 5000,
     "images": [
       {
-        "src": "/assets/images/about/lake-hartwell-1.jpg",
-        "alt": "Lake Hartwell shoreline at sunset",
+        "src": "/assets/images/about/aboutlakejpg",
+        "alt": "Lake Hartwell",
         "title": "Lake Hartwell",
         "caption": "Hart County’s connection to Lake Hartwell supports recreation, tourism, and outdoor life."
       },
       {
-        "src": "/assets/images/about/courthouse-square.jpg",
-        "alt": "Downtown Hartwell streetscape and historic buildings",
-        "title": "Hartwell",
-        "caption": "The county seat serves as a center for government, business, and community events."
+        "src": "/assets/images/about/aboutlakeazaleas.jpg",
+        "alt": "Lake azaleas",
+        "title": "Lake Azaleas",
+        "caption": "Azaleas growing on the shore of Lake Hartwell."
       },
       {
         "src": "/assets/images/about/parks-trails.jpg",
