@@ -104,9 +104,9 @@ function initGlobalNav(){
 
   document.querySelectorAll(".topNav a, .menuNav a").forEach(link => {
     const href = link.getAttribute("href");
-    if (!href) return;
+    if(!href) return;
 
-    if (href === currentPath) {
+    if(href === currentPath){
       link.classList.add("is-active");
       link.setAttribute("aria-current", "page");
     }
@@ -114,10 +114,10 @@ function initGlobalNav(){
 
   document.querySelectorAll(".navOptional").forEach(link => {
     const href = link.getAttribute("href");
-    if (!href) return;
+    if(!href) return;
 
     const shouldShow = href === currentPath;
-    if (!shouldShow) {
+    if(!shouldShow){
       link.style.display = "none";
       link.setAttribute("aria-hidden", "true");
       link.tabIndex = -1;
@@ -128,7 +128,7 @@ function initGlobalNav(){
 document.addEventListener("DOMContentLoaded", () => {
   initMobileMenu();
 
-  if (typeof initLanguageControls === "function") {
+  if(typeof initLanguageControls === "function"){
     initLanguageControls();
   }
 
@@ -137,10 +137,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("focusin", (e) => {
   const el = e.target;
-  if (!el || typeof el.getBoundingClientRect !== "function") return;
+  if(!el || typeof el.getBoundingClientRect !== "function") return;
 
   const topbar = document.querySelector(".topbar");
-  if (!topbar) return;
+  if(!topbar) return;
 
   const topbarHeight = topbar.getBoundingClientRect().height;
   const extraGap = 16;
@@ -149,12 +149,12 @@ document.addEventListener("focusin", (e) => {
     const rect = el.getBoundingClientRect();
     const minTop = topbarHeight + extraGap;
 
-    if (rect.top < minTop) {
+    if(rect.top < minTop){
       window.scrollBy({
         top: rect.top - minTop,
         behavior: "auto"
       });
-    } else if (rect.bottom > window.innerHeight) {
+    } else if(rect.bottom > window.innerHeight){
       window.scrollBy({
         top: rect.bottom - window.innerHeight + extraGap,
         behavior: "auto"

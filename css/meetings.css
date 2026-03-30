@@ -1,138 +1,184 @@
 /* Meetings page + homepage mini calendar */
 
-.miniCal{ margin-top: 10px; }
-
-.miniCalHead{
-  display:flex;
-  align-items:flex-start;
-  justify-content:space-between;
-  gap:12px;
-  margin-bottom:10px;
+.miniCal {
+  margin-top: 10px;
 }
 
-.miniCalHeadLeft{
-  display:flex;
-  align-items:flex-start;
-  gap:10px;
+.miniCalHead {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
 }
 
-.miniCalTitle{
-  font-weight:700;
-  letter-spacing:.2px;
+.miniCalHeadLeft {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
 }
 
-.miniCalNav{
-  display:flex;
-  gap:8px;
-  margin-top:2px;
+.miniCalTitle {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--navy);
 }
 
-.miniCalNavBtn{
-  width:34px;
-  height:34px;
-  border-radius:12px;
-  border:1px solid var(--border);
-  background: rgba(255,255,255,.04);
+.miniCalNav {
+  display: flex;
+  gap: 8px;
+  margin-top: 2px;
+}
+
+.miniCalNavBtn {
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--surface-alt);
   color: var(--text);
-  cursor:pointer;
+  cursor: pointer;
 }
 
-.miniCalNavBtn:hover{ background: rgba(255,255,255,.07); }
+.miniCalNavBtn:hover {
+  background: var(--navy-light);
+}
 
-.miniCalNavBtn:focus-visible{
-  outline: 3px solid rgba(255,122,24,.9);
+.miniCalNavBtn:focus-visible {
+  outline: 3px solid rgba(26,127,212,.45);
   outline-offset: 2px;
 }
 
-.miniCalLegend{
-  display:flex;
-  gap:10px;
-  flex-wrap:wrap;
-  justify-content:flex-end;
+.miniCalLegend {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
-.miniCalKey{
-  display:inline-flex;
-  align-items:center;
-  gap:6px;
-  font-size:12px;
-  padding:4px 8px;
-  border-radius:999px;
-  border:1px solid var(--border);
-  background: rgba(255,255,255,.04);
+.miniCalKey {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--surface-alt);
 }
 
-.miniCalKeyLabel{ color: var(--muted); }
+.miniCalKeyLabel {
+  color: var(--text-muted);
+}
 
-.miniCalGrid{
-  display:grid;
+.miniCalGrid {
+  display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap:8px;
+  gap: 8px;
 }
 
-.miniCalDow{
-  font-size:12px;
-  color: var(--muted);
-  text-align:center;
+.miniCalDow {
+  font-size: 12px;
+  color: var(--text-hint);
+  text-align: center;
+  font-weight: 600;
 }
 
-.miniCalCell{
-  position:relative;
-  min-height:44px;
-  border-radius:14px;
-  border:1px solid var(--border);
-  background: rgba(255,255,255,.04);
-  display:flex;
-  align-items:flex-start;
-  justify-content:flex-end;
-  padding:8px 10px;
-  text-decoration:none;
+.miniCalCell {
+  position: relative;
+  min-height: 52px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--surface-alt);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 8px 10px;
+  text-decoration: none;
   color: var(--text);
 }
 
-.miniCalCell.is-empty{
-  opacity:0;
-  pointer-events:none;
-  border-color:transparent;
-  background:transparent;
+.miniCalCell.is-empty {
+  opacity: 0;
+  pointer-events: none;
+  border-color: transparent;
+  background: transparent;
 }
 
-.miniCalDayNum{
-  font-weight:700;
-  font-size:14px;
+.miniCalDayNum {
+  font-weight: 700;
+  font-size: 14px;
 }
 
-.miniCalCell.is-event{ box-shadow: 0 12px 30px rgba(0,0,0,.25); }
-.miniCalCell:hover{ background: rgba(255,255,255,.06); }
-.miniCalCell:focus-visible{
-  outline: 3px solid rgba(255,122,24,.9);
-  outline-offset:2px;
+.miniCalCell.is-event {
+  box-shadow: 0 1px 3px rgba(26,46,74,.08), 0 0 0 0.5px rgba(26,46,74,.12);
 }
 
-.miniCalDots{
-  position:absolute;
-  left:10px;
-  bottom:8px;
-  display:flex;
-  gap:5px;
-  align-items:center;
+.miniCalCell:hover {
+  background: #eef3f8;
+  text-decoration: none;
 }
 
-.miniCalDot{
-  width:9px;
-  height:9px;
-  border-radius:999px;
-  border:1px solid rgba(255,255,255,.35);
+.miniCalCell:focus-visible {
+  outline: 3px solid rgba(26,127,212,.45);
+  outline-offset: 2px;
 }
 
-.miniCalMore{
-  font-size:11px;
-  color: var(--muted);
-  padding-left:2px;
+.miniCalDots {
+  position: absolute;
+  left: 10px;
+  bottom: 8px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
 }
 
-.mtg-commissioners{ background: rgba(80,160,255,.95); }
-.mtg-assessors{     background: rgba(255,122,24,.95); }
-.mtg-planning{      background: rgba(34,197,94,.95); }
-.mtg-zoning{        background: rgba(168,85,247,.95); }
-.mtg-default{       background: rgba(255,255,255,.55); }
+.miniCalDot {
+  width: 9px;
+  height: 9px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.55);
+}
+
+.miniCalMore {
+  font-size: 11px;
+  color: var(--text-hint);
+  padding-left: 2px;
+}
+
+.mtg-commissioners { background: rgba(80,160,255,.95); }
+.mtg-assessors     { background: rgba(255,122,24,.95); }
+.mtg-planning      { background: rgba(34,197,94,.95); }
+.mtg-zoning        { background: rgba(168,85,247,.95); }
+.mtg-default       { background: rgba(140,152,164,.95); }
+
+@media (max-width: 640px) {
+  .miniCalHead {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .miniCalHeadLeft {
+    justify-content: space-between;
+  }
+
+  .miniCalLegend {
+    justify-content: flex-start;
+  }
+
+  .miniCalGrid {
+    gap: 6px;
+  }
+
+  .miniCalCell {
+    min-height: 46px;
+    padding: 6px 8px;
+  }
+
+  .miniCalDots {
+    left: 8px;
+    bottom: 6px;
+  }
+}
