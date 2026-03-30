@@ -1,53 +1,59 @@
 document.addEventListener("DOMContentLoaded", initAccessibility);
 
-async function initAccessibility(){
+async function initAccessibility() {
   const mount = document.getElementById("accessibilityContent");
-  if(!mount) return;
+  if (!mount) return;
 
-  try{
-    const res = await fetch("./content/accessibility.json");
-    const data = await res.json();
+  try {
+    const data = await loadJSON("./content/accessibility.json");
+    if (!data) throw new Error("Unable to load accessibility content.");
 
     renderAccessibility(data);
-
-  }catch(err){
+  } catch (err) {
     console.error(err);
-    mount.innerHTML = `<p class="muted">Unable to load accessibility information.</p>`;
+    mount.innerHTML = `
+      <section class="card accessCard">
+        <div class="cardHead">
+          <h1 class="cardTitle">Accessibility</h1>
+        </div>
+        <div class="prose">
+          <p class="muted">Unable to load accessibility information.</p>
+        </div>
+      </section>
+    `;
   }
 }
 
-function renderAccessibility(data){
-
+function renderAccessibility(data) {
   const mount = document.getElementById("accessibilityContent");
+  if (!mount) return;
 
   let html = `
-    <div class="pageHead">
-      <h1 class="pageTitle">${data.title}</h1>
-      <p class="pageSub">${data.subtitle}</p>
-    </div>
+    <section class="pageHead" aria-labelledby="accessibilityPageTitle">
+      <h1 id="accessibilityPageTitle" class="pageTitle">${escapeHtml(safeText(data.title))}</h1>
+      ${safeText(data.subtitle) ? `<p class="pageSub">${escapeHtml(data.subtitle)}</p>` : ""}
+    </section>
   `;
 
-  data.sections.forEach(section => {
-
+  (Array.isArray(data.sections) ? data.sections : []).forEach(section => {
     html += `
-      <section class="card">
+      <section class="card accessCard">
         <div class="cardHead">
-          <h2 class="cardTitle">${section.title}</h2>
+          <h2 class="cardTitle">${escapeHtml(safeText(section.title))}</h2>
         </div>
-
         <div class="prose">
     `;
 
-    if(section.paragraphs){
-      section.paragraphs.forEach(p=>{
-        html += `<p>${p}</p>`;
+    if (Array.isArray(section.paragraphs)) {
+      section.paragraphs.forEach(p => {
+        html += `<p>${escapeHtml(safeText(p))}</p>`;
       });
     }
 
-    if(section.list){
+    if (Array.isArray(section.list) && section.list.length) {
       html += `<ul>`;
-      section.list.forEach(item=>{
-        html += `<li>${item}</li>`;
+      section.list.forEach(item => {
+        html += `<li>${escapeHtml(safeText(item))}</li>`;
       });
       html += `</ul>`;
     }
@@ -58,29 +64,59 @@ function renderAccessibility(data){
     `;
   });
 
+  const contact = data.contact || {};
   html += `
-    <section class="card">
+    <section class="card accessCard contactCard">
       <div class="cardHead">
-        <h2 class="cardTitle">${data.contact.title}</h2>
+        <h2 class="cardTitle">${escapeHtml(safeText(contact.title || "Contact information"))}</h2>
       </div>
 
       <div class="prose">
-        <p>
-          ${data.contact.name}<br>
-          ${data.contact.street}<br>
-          ${data.contact.city}, ${data.contact.state} ${data.contact.zip}
-        </p>
+        <div class="accessContactBlock">
+          <p>
+            ${escapeHtml(safeText(contact.name))}<br>
+            ${escapeHtml(safeText(contact.street))}<br>
+            ${escapeHtml(safeText(contact.city))}, ${escapeHtml(safeText(contact.state))} ${escapeHtml(safeText(contact.zip))}
+          </p>
 
-        <p>
-          Phone: <a href="tel:${data.contact.phone.replace(/[^0-9]/g,'')}">${data.contact.phone}</a>
-        </p>
+          ${safeText(contact.phone) ? `
+            <p>
+              Phone:
+              <a href="tel:${safeText(contact.phone).replace(/[^0-9]/g, "")}">
+                ${escapeHtml(safeText(contact.phone))}
+              </a>
+            </p>
+          ` : ""}
 
-        <p class="muted">
-          Last updated: ${data.lastUpdated}
-        </p>
+          ${safeText(contact.email) ? `
+            <p>
+              Email:
+              <a href="mailto:${escapeHtml(safeText(contact.email))}">
+                ${escapeHtml(safeText(contact.email))}
+              </a>
+            </p>
+          ` : ""}
+
+          ${safeText(data.lastUpdated) ? `
+            <p class="muted">Last updated: ${escapeHtml(safeText(data.lastUpdated))}</p>
+          ` : ""}
+        </div>
       </div>
     </section>
   `;
 
   mount.innerHTML = html;
+}
+
+function safeText(value) {
+  return value === undefined || value === null ? "" : String(value).trim();
+}
+
+function escapeHtml(str) {
+  return String(str)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#39;");
 }

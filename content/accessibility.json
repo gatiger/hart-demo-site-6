@@ -1,7 +1,6 @@
 {
   "title": "Accessibility Statement",
-  "subtitle": "",
-
+  "subtitle": "Hart County is committed to making its website accessible and usable for all residents, visitors, and employees.",
   "sections": [
     {
       "title": "Commitment to accessibility",
@@ -10,7 +9,6 @@
         "Our goal is to meet or exceed the accessibility standards outlined in the Web Content Accessibility Guidelines (WCAG) 2.2 Level AA wherever possible."
       ]
     },
-
     {
       "title": "Accessibility features",
       "list": [
@@ -23,7 +21,6 @@
         "Links and navigation elements that are clearly identifiable"
       ]
     },
-
     {
       "title": "Ongoing improvements",
       "paragraphs": [
@@ -31,7 +28,6 @@
         "While we strive to ensure that all content is accessible, some older documents or third-party content may not yet fully meet accessibility standards."
       ]
     },
-
     {
       "title": "External websites",
       "paragraphs": [
@@ -39,7 +35,6 @@
         "Hart County does not control the accessibility of external sites and cannot guarantee their accessibility compliance."
       ]
     },
-
     {
       "title": "Need assistance or found an issue?",
       "paragraphs": [
@@ -48,7 +43,6 @@
       ]
     }
   ],
-
   "contact": {
     "title": "Contact information",
     "name": "Hart County Administration",
@@ -56,10 +50,8 @@
     "city": "Hartwell",
     "state": "GA",
     "zip": "30643",
-    "phone": "(706) 376-2024"
+    "phone": "(706) 376-2024",
+    "email": "info@hartcountyga.gov"
   },
-
   "lastUpdated": "March 5, 2026"
-
 }
-
