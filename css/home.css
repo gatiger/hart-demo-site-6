@@ -3,6 +3,11 @@
    Reflow-safe for high zoom.
    ============================================================ */
 
+.indexPage{
+  padding-top: 230px;
+  padding-bottom: 3rem;
+}
+
 .hero {
   margin-top: 14px;
 }
