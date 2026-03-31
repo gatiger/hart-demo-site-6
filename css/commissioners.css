@@ -1,13 +1,12 @@
 /* Commissioners page */
 
 .commissionersPage{
-  padding-top: 18px;
+  padding-top: 230px;
+  padding-bottom: 3rem;
 }
 
 .commissionersHero{
-  margin-top: 60px;
-  padding: 40px;
-  border-radius: 18px;
+  margin-top: 14px;
 }
 
 .commissionersIntro{
