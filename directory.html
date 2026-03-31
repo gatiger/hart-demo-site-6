@@ -78,23 +78,27 @@
 
     <div class="pageLayout">
       <div>
-        <section class="dirHero" aria-label="Directory overview">
-          <div class="dirHeroInner">
-            <h1 class="dirTitle">Directory</h1>
-            <p class="dirLead">Departments, offices, and contact information.</p>
+        <section class="card directoryIntroCard" aria-labelledby="directoryTitle">
+  <div class="directoryIntroInner">
+    <div class="directoryIntroMain">
+      <h1 id="directoryTitle" class="directoryIntroTitle">Directory</h1>
+      <p class="directoryIntroText">
+        Departments, offices, and contact information.
+      </p>
 
-            <div class="dirSearchWrap">
-              <label class="sr-only" for="dirSearch">Search directory</label>
-              <input
-                id="dirSearch"
-                class="field dirSearch"
-                type="text"
-                placeholder="Search..."
-                autocomplete="off"
-              />
-            </div>
-          </div>
-        </section>
+      <div class="directoryIntroSearch">
+        <label class="sr-only" for="dirSearch">Search directory</label>
+        <input
+          id="dirSearch"
+          class="field"
+          type="text"
+          placeholder="Search..."
+          autocomplete="off"
+        />
+      </div>
+    </div>
+  </div>
+</section>
 
         <section class="card dirCard" aria-label="Directory list">
           <div class="cardHeader">
