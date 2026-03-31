@@ -32,7 +32,7 @@
       </a>
 
       <nav class="topNav" aria-label="Primary">
-        <a href="directory.html">Directory</a>
+        <a href="directory.html" aria-current="page">Directory</a>
         <a href="commissioners.html">Commissioners</a>
         <a href="employment.html">Employment</a>
         <a href="about.html">About</a>
@@ -61,7 +61,7 @@
 
     <nav class="menuNav" aria-label="Primary mobile">
       <a href="index.html">Home</a>
-      <a href="directory.html">Directory</a>
+      <a href="directory.html" aria-current="page">Directory</a>
       <a href="commissioners.html">Commissioners</a>
       <a href="employment.html">Employment</a>
       <a href="about.html">About Hart County</a>
@@ -76,42 +76,38 @@
   <main id="main" class="container directoryPage" tabindex="-1">
     <div id="alertHolder"></div>
 
-    <div class="pageLayout">
-      <div>
-        <section class="card directoryIntroCard" aria-labelledby="directoryTitle">
-  <div class="directoryIntroInner">
-    <div class="directoryIntroMain">
-      <h1 id="directoryTitle" class="directoryIntroTitle">Directory</h1>
-      <p class="directoryIntroText">
-        Departments, offices, and contact information.
-      </p>
+    <section class="card pageIntroCard" aria-labelledby="directoryTitle">
+      <div class="pageIntroInner">
+        <h1 id="directoryTitle" class="pageIntroTitle">Directory</h1>
+        <p class="pageIntroText">Departments, offices, and contact information.</p>
 
-      <div class="directoryIntroSearch">
-        <label class="sr-only" for="dirSearch">Search directory</label>
-        <input
-          id="dirSearch"
-          class="field"
-          type="text"
-          placeholder="Search..."
-          autocomplete="off"
-        />
+        <div class="directoryIntroSearch">
+          <label class="sr-only" for="dirSearch">Search directory</label>
+          <input
+            id="dirSearch"
+            class="field"
+            type="text"
+            placeholder="Search..."
+            autocomplete="off"
+          />
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-        <section class="card dirCard" aria-label="Directory list">
-          <div class="cardHeader">
-            <div>
-              <h2>Contacts</h2>
-              <p class="sub">Departments, offices, and contact information.</p>
-            </div>
-          </div>
-
-          <div class="dirList" id="directoryList" data-json="./content/directory.json"></div>
-        </section>
+    <section class="card dirCard" aria-label="Directory list">
+      <div class="cardHeader">
+        <div>
+          <h2>Contacts</h2>
+          <p class="sub">Departments, offices, and contact information.</p>
+        </div>
       </div>
-    </div>
+
+      <div class="dirList" id="directoryList" data-json="./content/directory.json"></div>
+    </section>
+
+    <footer class="footer">
+      <div>© 2026 Hart County Board of Commissioners</div>
+    </footer>
   </main>
 </body>
 </html>

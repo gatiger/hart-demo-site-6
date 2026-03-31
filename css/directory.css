@@ -3,74 +3,22 @@
    Page-specific styles only.
    ============================================================ */
 
-/* ===== HERO ===== */
-
 .directoryPage{
   padding-top: 230px;
   padding-bottom: 3rem;
-}
-
-/* ===== INTRO CARD (match site pattern) ===== */
-
-.directoryIntroCard{
-  background: #1a2e4a;
-  background-image: radial-gradient(circle at 90% -20%, rgba(255,255,255,.06) 0%, transparent 55%);
-  padding: 2rem 2rem 1.625rem;
-  margin-bottom: 1.125rem;
-  position: relative;
-  overflow: hidden;
-}
-
-.directoryIntroCard::after{
-  content: "";
-  position: absolute;
-  right: -50px;
-  top: -50px;
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  background: rgba(255,255,255,.03);
-  pointer-events: none;
-}
-
-.directoryIntroInner{
-  position: relative;
-  z-index: 1;
-  max-width: 720px;
-}
-
-.directoryIntroTitle{
-  font-family: var(--font-serif);
-  font-size: 1.625rem;
-  font-weight: 600;
-  color: #fff;
-  margin: 0 0 .5rem;
-}
-
-.directoryIntroText{
-  font-size: .9375rem;
-  color: rgba(255,255,255,.78);
-  line-height: 1.65;
-  margin: 0 0 1rem;
 }
 
 .directoryIntroSearch{
   max-width: 420px;
 }
 
-.directoryIntroSearch .field{
-  width: 100%;
-}
-
-/* ===== CARD ===== */
-
-.dirCard {
+.dirCard{
   margin-top: 16px;
 }
 
 /* ===== LIST ===== */
 
-.dirList {
+.dirList{
   padding: 0 1.5rem 1.5rem;
   display: grid;
   gap: 12px;
@@ -78,20 +26,20 @@
 
 /* ===== ITEM ===== */
 
-.item {
+.item{
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
   padding: 14px;
   background: var(--surface-alt);
 }
 
-.itemTop {
+.itemTop{
   display: flex;
   justify-content: space-between;
   gap: 10px;
 }
 
-.itemTitle {
+.itemTitle{
   font-family: var(--font-serif);
   font-size: 1.05rem;
   font-weight: 600;
@@ -101,23 +49,23 @@
 
 /* ===== TITLE LINKS ===== */
 
-.title-link {
+.title-link{
   color: inherit;
   text-decoration: none;
   font-weight: inherit;
 }
 
-.title-link:hover {
+.title-link:hover{
   text-decoration: underline;
 }
 
-.external-link {
+.external-link{
   display: inline-flex;
   align-items: center;
   gap: 4px;
 }
 
-.extIcon {
+.extIcon{
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -126,7 +74,7 @@
 
 /* ===== META ===== */
 
-.meta {
+.meta{
   margin-top: 6px;
   font-size: .85rem;
   color: var(--text-muted);
@@ -136,37 +84,33 @@
   align-items: center;
 }
 
-.meta span {
+.meta span{
   opacity: .6;
 }
 
 /* ===== LINKS ===== */
 
 .phone-link,
-.link {
+.link{
   color: var(--navy-mid);
   text-decoration: none;
 }
 
 .phone-link:hover,
-.link:hover {
+.link:hover{
   text-decoration: underline;
 }
 
 /* ===== DESCRIPTION ===== */
 
-.item .sub {
+.item .sub{
   margin-top: 6px;
 }
 
 /* ===== RESPONSIVE ===== */
 
-@media (max-width: 640px) {
-  .dirTitle {
-    font-size: 1.6rem;
-  }
-
-  .dirList {
+@media (max-width: 640px){
+  .dirList{
     padding: 0 1rem 1rem;
   }
 }
