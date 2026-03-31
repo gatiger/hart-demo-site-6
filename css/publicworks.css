@@ -1,38 +1,95 @@
-.pageHead{ margin: 18px 0 14px; }
-.pageTitle{ margin: 0 0 6px; }
-.pageSub{ margin: 0; color: var(--muted); }
+/* Public Works page */
+
+.publicWorksPage{
+  padding-top: 230px;
+  padding-bottom: 3rem;
+}
+
+.pwPageHead{
+  margin-bottom: 18px;
+}
+
+.pageTitle{
+  margin: 0 0 6px;
+}
+
+.pageSub{
+  margin: 0;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+/* Shared page section styling */
+.pwHeroCard,
+.pwAboutCard,
+.pwSectionCard{
+  margin-bottom: 18px;
+}
+
+.pwSectionTitle{
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--navy);
+  line-height: 1.25;
+  margin: 0;
+}
+
+.pwCardHead{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 1.25rem 1.5rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.pwCardSub{
+  margin: 0;
+  font-size: .875rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
 
 /* HERO */
+.pwHeroCard{
+  padding: 1.25rem 1.5rem;
+}
+
 .pwHeroGrid{
   display: grid;
   gap: 14px;
   align-items: stretch;
 }
+
 @media (min-width: 900px){
-  .pwHeroGrid{ grid-template-columns: 1fr 1.4fr 1fr; gap: 16px; }
+  .pwHeroGrid{
+    grid-template-columns: 1fr 1.4fr 1fr;
+    gap: 16px;
+  }
 }
 
 .pwHeroMedia{
   border: 1px solid var(--border);
-  border-radius: var(--radius);
+  border-radius: var(--radius-lg);
   overflow: hidden;
   min-height: 160px;
-  background: rgba(255,255,255,.04);
+  background: var(--surface-alt);
   display: grid;
   place-items: center;
 }
+
 .pwHeroMedia img{
   width: 100%;
   height: 100%;
-  object-fit: cover; /* change to contain for logos */
+  object-fit: cover;
   display: block;
 }
 
 .pwHeroContent{
   border: 1px solid var(--border);
-  border-radius: var(--radius);
+  border-radius: var(--radius-lg);
   padding: 18px 16px;
-  background: rgba(255,255,255,1);
+  background: var(--surface);
   display: grid;
   align-content: center;
   text-align: center;
@@ -43,10 +100,14 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
-  font-size: 15px;
-  color: var(--muted);
+  font-size: .9375rem;
+  color: var(--text-muted);
+  line-height: 1.5;
 }
-#pwCityStateZip{ white-space: nowrap; }
+
+#pwCityStateZip{
+  white-space: nowrap;
+}
 
 .pwHeroCtas{
   margin-top: 14px;
@@ -57,84 +118,114 @@
 }
 
 /* ABOUT */
-.pwAbout{ padding: 18px 16px; }
+.pwAboutCard{
+  padding: 18px 16px;
+}
+
 .pwAboutInner{
   max-width: 70ch;
   margin: 0 auto;
   text-align: center;
 }
+
 .pwAboutText{
-  margin: 10px 0 0;
+  margin-top: 10px;
   color: var(--text);
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
 .pwAboutText p{
   margin: 0 0 14px;
 }
 
+.pwAboutText p:last-child{
+  margin-bottom: 0;
+}
+
 /* SERVICES */
 .pwServicesGrid{
   display: grid;
   gap: 12px;
-  margin-top: 14px;
+  padding: 1rem 1.5rem 1.5rem;
 }
+
 @media (min-width: 800px){
-  .pwServicesGrid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .pwServicesGrid{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
+
 @media (min-width: 1100px){
-  .pwServicesGrid{ grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .pwServicesGrid{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 .pwService{
   border: 1px solid var(--border);
-  border-radius: var(--radius);
-  background: rgba(255,255,255,.03);
+  border-radius: var(--radius-lg);
+  background: var(--surface-alt);
   padding: 14px;
 }
+
 .pwService h3{
   margin: 0 0 6px;
-  font-size: 16px;
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--navy);
+  line-height: 1.3;
 }
+
 .pwService p{
   margin: 0;
-  color: var(--muted);
-  line-height: 1.5;
+  color: var(--text-muted);
+  line-height: 1.6;
+  font-size: .9375rem;
 }
 
 /* STAFF */
 .pwStaffGrid{
   display: grid;
   gap: 14px;
-  margin-top: 14px;
+  padding: 1rem 1.5rem 1.5rem;
 }
+
 @media (min-width: 700px){
-  .pwStaffGrid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .pwStaffGrid{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
+
 @media (min-width: 1050px){
-  .pwStaffGrid{ grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .pwStaffGrid{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 .pwPerson{
   border: 1px solid var(--border);
-  border-radius: var(--radius);
+  border-radius: var(--radius-lg);
   overflow: hidden;
-  background: rgba(255,255,255,.03);
+  background: var(--surface-alt);
   display: flex;
   flex-direction: column;
 }
+
 .pwPhoto{
   width: 100%;
   aspect-ratio: 3 / 4;
   overflow: hidden;
   background: rgba(255,255,255,.05);
 }
+
 .pwPhoto img{
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
+
 .pwBody{
   padding: 14px;
   display: flex;
@@ -142,16 +233,48 @@
   gap: 6px;
   text-align: left;
 }
-.pwName{ margin: 0; font-weight: 700; font-size: 16px; }
-.pwTitle{ margin: 0; color: var(--muted); font-size: 14px; }
-.pwMeta{ margin-top: 6px; display: flex; flex-direction: column; gap: 4px; }
-.pwInfo{ margin-top: 8px; font-size: 14px; color: var(--muted); line-height: 1.4; }
 
-/* Staff card becomes 2 columns on wider screens */
+.pwName{
+  margin: 0;
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--navy);
+  line-height: 1.3;
+}
+
+.pwTitle{
+  margin: 0;
+  color: var(--text-muted);
+  font-size: .875rem;
+  line-height: 1.5;
+}
+
+.pwMeta{
+  margin-top: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.pwMeta a{
+  color: var(--navy-mid);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.pwInfo{
+  margin-top: 8px;
+  font-size: .875rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+/* Featured / wide staff card */
 .pwPersonWide{
   display: grid;
-  grid-template-columns: 1fr; /* mobile: stacked */
-  grid-column: 1 / -1; /* span full width of staff grid */
+  grid-template-columns: 1fr;
+  grid-column: 1 / -1;
 }
 
 .pwLeft{
@@ -163,16 +286,20 @@
   padding: 14px;
   border-top: 1px solid var(--border);
   color: var(--text);
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
 .pwBio p{
   margin: 0 0 14px;
 }
 
+.pwBio p:last-child{
+  margin-bottom: 0;
+}
+
 @media (min-width: 900px){
   .pwPersonWide{
-    grid-template-columns: 340px minmax(0,1fr); /* left panel fixed-ish, bio flexible */
+    grid-template-columns: 340px minmax(0, 1fr);
     align-items: stretch;
   }
 
@@ -181,9 +308,23 @@
     border-left: 1px solid var(--border);
   }
 
-  .pwBio p {
-  text-indent: 24px;
+  .pwBio p{
+    text-indent: 24px;
+  }
 }
 
-}
+@media (max-width: 700px){
+  .pwHeroCard,
+  .pwAboutCard{
+    padding: 1rem 1.25rem;
+  }
 
+  .pwCardHead{
+    padding: 1rem 1.25rem .875rem;
+  }
+
+  .pwServicesGrid,
+  .pwStaffGrid{
+    padding: .875rem 1.25rem 1.25rem;
+  }
+}

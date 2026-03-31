@@ -9,15 +9,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
-	
-  <link rel="stylesheet" href="css/base.css" />
-  <link rel="stylesheet" href="css/alerts.css" />
-  <link rel="stylesheet" href="css/publicworks.css" />
 
-  <!-- Keep consistent with other pages -->
-  <script defer src="js/alerts.js"></script>
-  <script defer src="js/app.js"></script>
-  <script defer src="js/publicworks.js"></script>
+  <link rel="stylesheet" href="/css/base.css" />
+  <link rel="stylesheet" href="/css/alerts.css" />
+  <link rel="stylesheet" href="/css/publicworks.css" />
+
+  <script defer src="/js/alerts.js"></script>
+  <script defer src="/js/app.js"></script>
+  <script defer src="/js/publicworks.js"></script>
 </head>
 
 <body>
@@ -27,7 +26,7 @@
     <div class="navRow">
       <a class="brand brandLink" href="index.html">
         <div class="seal">
-          <img src="./assets/hart_seal.svg" alt="Hart County, Georgia official seal">
+          <img src="/assets/hart_seal.svg" alt="Hart County, Georgia official seal">
         </div>
         <div class="brandText">
           <div class="kicker">Hart County, Georgia</div>
@@ -43,15 +42,17 @@
         <a href="paynes-creek.html">Paynes Creek</a>
         <a href="news.html">News</a>
         <a href="meetings.html">Meetings</a>
-        <a href="ems.html" class="navOptional" data-show-on="ems.html">EMS</a>
-        <a href="publicworks.html">Public Works</a>
-        <a href="accessibility.html" data-i18n="accessibility">Accessibility</a>
+        <a href="ems.html" class="navOptional">EMS</a>
+        <a href="publicworks.html" aria-current="page">Public Works</a>
+        <a href="accessibility.html">Accessibility</a>
       </nav>
 
-      <button class="btn menuBtn" type="button"
-              aria-controls="mobileMenu"
-              aria-expanded="false"
-              id="menuBtn">
+      <button
+        class="btn menuBtn"
+        type="button"
+        aria-controls="mobileMenu"
+        aria-expanded="false"
+        id="menuBtn">
         Menu
       </button>
     </div>
@@ -75,27 +76,27 @@
       <hr>
       <a href="news.html">News</a>
       <a href="meetings.html">Meetings</a>
-      <a href="ems.html" class="navOptional" data-show-on="ems.html">EMS</a>
-      <a href="publicworks.html">Public Works</a>
+      <a href="ems.html" class="navOptional">EMS</a>
+      <a href="publicworks.html" aria-current="page">Public Works</a>
+      <a href="accessibility.html">Accessibility</a>
     </nav>
   </aside>
 
-  <main id="main" class="container" tabindex="-1">
-  
-	<div id="alertHolder" aria-live="polite"></div>
-  
-    <div class="pageHead">
+  <main id="main" class="container publicWorksPage" tabindex="-1">
+    <div id="alertHolder" aria-live="polite"></div>
+
+    <div class="pageHead pwPageHead">
       <h1 class="pageTitle">Public Works</h1>
       <p class="pageSub" id="pwSub"></p>
     </div>
 
     <!-- CARD 1: HERO -->
-    <section class="hero pwHero" aria-labelledby="pwHeroTitle">
+    <section class="card pwHeroCard" aria-labelledby="pwHeroTitle">
       <div class="pwHeroGrid">
         <div class="pwHeroMedia" id="pwHeroLeft" aria-label="Public Works photo left"></div>
 
         <div class="pwHeroContent">
-          <h2 id="pwHeroTitle" class="cardTitle">Loading…</h2>
+          <h2 id="pwHeroTitle" class="pwSectionTitle">Loading…</h2>
 
           <div class="pwHeroAddress">
             <div id="pwStreet"></div>
@@ -110,40 +111,36 @@
     </section>
 
     <!-- CARD 2: ABOUT -->
-    <section class="card pwAbout" aria-labelledby="pwAboutTitle">
+    <section class="card pwAboutCard" aria-labelledby="pwAboutTitle">
       <div class="pwAboutInner">
-        <h2 id="pwAboutTitle" class="cardTitle">Loading…</h2>
-        <p class="pwAboutText" id="pwAboutText"></p>
+        <h2 id="pwAboutTitle" class="pwSectionTitle">Loading…</h2>
+        <div class="pwAboutText" id="pwAboutText"></div>
       </div>
     </section>
 
     <!-- CARD 3: SERVICES -->
-    <section class="card" aria-labelledby="pwServicesTitle">
-      <div class="cardHead">
-        <h2 id="pwServicesTitle" class="cardTitle">Services</h2>
-        <p class="cardSub" id="pwServicesSub"></p>
+    <section class="card pwSectionCard" aria-labelledby="pwServicesTitle">
+      <div class="pwCardHead">
+        <h2 id="pwServicesTitle" class="pwSectionTitle">Services</h2>
+        <p class="pwCardSub" id="pwServicesSub"></p>
       </div>
 
       <div class="pwServicesGrid" id="pwServicesGrid" aria-label="Public Works services list"></div>
     </section>
 
     <!-- CARD 4: STAFF -->
-    <section class="card" aria-labelledby="pwStaffTitle">
-      <div class="cardHead">
-        <h2 id="pwStaffTitle" class="cardTitle">Staff & Contacts</h2>
-        <p class="cardSub" id="pwStaffSub"></p>
+    <section class="card pwSectionCard" aria-labelledby="pwStaffTitle">
+      <div class="pwCardHead">
+        <h2 id="pwStaffTitle" class="pwSectionTitle">Staff &amp; Contacts</h2>
+        <p class="pwCardSub" id="pwStaffSub"></p>
       </div>
 
       <div class="pwStaffGrid" id="pwStaffGrid" aria-label="Public Works staff list"></div>
     </section>
+
+    <footer class="footer">
+      <div>© 2026 Hart County Board of Commissioners</div>
+    </footer>
   </main>
-
-  <footer class="footer">
-    <div class="footerInner">
-      <span>© Hart County, Georgia</span>
-    </div>
-  </footer>
 </body>
-
 </html>
-
