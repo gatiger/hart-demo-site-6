@@ -82,12 +82,22 @@
   <main id="main" class="container employmentPage" tabindex="-1">
     <div id="alertHolder"></div>
 
-    <div class="pageHead employmentHead">
-      <h1 class="pageTitle">Employment Opportunities</h1>
-      <p class="pageSub">
+    <section class="card employmentIntroCard" aria-labelledby="employmentTitle">
+  <div class="employmentIntroInner">
+    <div class="employmentIntroMain">
+      <h1 id="employmentTitle" class="employmentIntroTitle">Employment Opportunities</h1>
+      <p class="employmentIntroText">
         View current openings with Hart County and expand each listing for full details.
       </p>
+
+      <div class="btnRow">
+        <a class="btn primary" href="/assets/documents/EmploymentApplication.pdf" target="_blank" rel="noopener">
+          Employment Application
+        </a>
+      </div>
     </div>
+  </div>
+</section>
 
     <section class="card employmentCard" aria-labelledby="publicJobsTitle">
       <h2 id="publicJobsTitle" class="cardTitle">Current Openings</h2>
