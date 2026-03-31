@@ -3,6 +3,11 @@
    Page-specific styles only.
    ============================================================ */
 
+.PAGE_NAMEPage{
+  padding-top: 230px;
+  padding-bottom: 3rem;
+}
+
 /* Intro card */
 .aboutIntroCard {
   background: #1a2e4a;
