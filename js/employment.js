@@ -56,7 +56,7 @@ function renderPublicJobs(items){
             <h3 class="jobListingTitle">${escapeHtml(job.title || "")}</h3>
             <div class="jobListingMeta">
               <span><strong>Posted:</strong> ${formatDisplayDate(job.postedDate)}</span>
-              <span><strong>Ends:</strong> ${job.closingDate ? formatDisplayDate(job.closingDate) : "Open Until Filled"}
+              <span><strong>Ends:</strong> ${job.closingDate ? formatDisplayDate(job.closingDate) : "Open Until Filled"}</span>
             </div>
           </div>
 
@@ -74,7 +74,7 @@ function renderPublicJobs(items){
         <div class="jobListingBody" id="${detailsId}" hidden>
           ${job.summary ? `<p class="jobListingSummary">${escapeHtml(job.summary)}</p>` : ""}
           ${job.details ? `<p class="jobListingDetails">${escapeHtml(job.details)}</p>` : ""}
-          ${job.applicationHref ? `<a class="jobAppLink" href="${job.applicationHref}" target="_blank" rel="noopener">Employment Application</a>` : ""}
+          ${job.applicationHref ? `<a class="jobAppLink" href="${escapeHtml(job.applicationHref)}" target="_blank" rel="noopener">Employment Application</a>` : ""}
         </div>
       </article>
     `;

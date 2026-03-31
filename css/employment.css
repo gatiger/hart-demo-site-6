@@ -1,4 +1,22 @@
-/* Employment / jobs page only */
+/* Employment / jobs page */
+
+.employmentPage{
+  padding-top: 18px;
+}
+
+.employmentHead{
+  margin-bottom: 18px;
+}
+
+.employmentCard{
+  margin-bottom: 18px;
+}
+
+.noJobsMsg{
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
 
 .workCalLegend{
   display:flex;
