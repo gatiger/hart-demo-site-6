@@ -88,11 +88,28 @@
 .pwHeroContent{
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  padding: 18px 16px;
-  background: var(--surface);
+  padding: 20px 18px;
+
+  /* 🔵 BLUE STYLE */
+  background: linear-gradient(
+    180deg,
+    var(--navy-mid),
+    var(--navy)
+  );
+
+  color: #fff;
+
   display: grid;
   align-content: center;
   text-align: center;
+}
+
+.pwHeroContent .pwSectionTitle{
+  color: #fff;
+}
+
+.pwHeroContent .pwHeroAddress{
+  color: rgba(255,255,255,.85);
 }
 
 .pwHeroAddress{
