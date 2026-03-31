@@ -7,15 +7,14 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Quintessential&family=Felipa&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="/css/base.css" />
   <link rel="stylesheet" href="/css/behavioral.css" />
 
-  <script defer src="js/alerts.js"></script>
-  <script defer src="js/app.js"></script>
-  <script defer src="js/behavioral.js"></script>
+  <script defer src="/js/alerts.js"></script>
+  <script defer src="/js/app.js"></script>
+  <script defer src="/js/behavioral.js"></script>
 </head>
 
 <body>
@@ -25,7 +24,7 @@
     <div class="navRow">
       <a class="brand brandLink" href="index.html">
         <div class="seal">
-          <img src="./assets/hart_seal.svg" alt="Hart County, Georgia official seal">
+          <img src="/assets/hart_seal.svg" alt="Hart County, Georgia official seal">
         </div>
         <div class="brandText">
           <div class="kicker">Hart County, Georgia</div>
@@ -45,74 +44,58 @@
         <a href="accessibility.html">Accessibility</a>
       </nav>
 
-      <button class="btn menuBtn" type="button"
-              aria-controls="mobileMenu"
-              aria-expanded="false"
-              id="menuBtn">
-        Menu
-      </button>
+      <button class="btn menuBtn" id="menuBtn">Menu</button>
     </div>
   </header>
 
-  <div class="menuBackdrop" id="menuBackdrop" hidden></div>
-
-  <aside class="menuPanel" id="mobileMenu" hidden aria-label="Mobile navigation">
-    <div class="menuPanelHead">
-      <div class="menuPanelTitle">Menu</div>
-      <button class="btn ghost" type="button" id="menuClose" aria-label="Close menu">Close</button>
-    </div>
-
-    <nav class="menuNav" aria-label="Primary mobile">
-      <a href="directory.html">Directory</a>
-      <a href="commissioners.html">Commissioners</a>
-      <a href="employment.html">Employment</a>
-      <a href="about.html">About</a>
-      <a href="paynes-creek.html">Paynes Creek</a>
-      <hr>
-      <a href="news.html">News</a>
-      <a href="meetings.html">Meetings</a>
-      <a href="behavioral.html" aria-current="page">Behavioral Health</a>
-      <a href="accessibility.html">Accessibility</a>
-    </nav>
-  </aside>
-
   <main id="main" class="container behavioralPage" tabindex="-1">
-    <section class="behavioralTopGrid" aria-label="Behavioral Health overview">
-      <article class="card behavioralPhotoCard" aria-label="Behavioral Health photo">
-        <div class="behavioralPhotoWrap">
-          <img id="behavioralPhoto" class="behavioralPhoto" src="" alt="">
-        </div>
 
+    <section class="behavioralTopGrid">
+      <!-- PHOTO -->
+      <article class="card behavioralPhotoCard">
+        <div class="behavioralPhotoWrap">
+          <img
+            id="behavioralPhoto"
+            class="behavioralPhoto"
+            src="/assets/placeholder.jpg"
+            alt="Behavioral Health Center building">
+        </div>
         <div class="behavioralPhotoText" id="behavioralPhotoText"></div>
       </article>
 
+      <!-- INFO -->
       <article class="card behavioralInfoCard">
         <p class="behavioralEyebrow" id="behavioralEyebrow"></p>
-        <h1 class="behavioralPageTitle" id="behavioralPageTitle"></h1>
+        <h1 class="behavioralPageTitle" id="behavioralPageTitle">Behavioral Health</h1>
 
         <div class="behavioralInfoBlock">
           <p class="behavioralName" id="behavioralName"></p>
           <p class="behavioralRole" id="behavioralRole"></p>
         </div>
 
-        <div class="behavioralDetails" aria-label="Behavioral Health contact information">
-          <p id="behavioralOfficeRow"></p>
-          <p id="behavioralAddressRow"></p>
-          <p id="behavioralPhoneRow"></p>
-          <p id="behavioralEmailRow"></p>
-          <p id="behavioralHoursRow"></p>
+        <div class="behavioralDetails">
+          <p id="behavioralOfficeRow" hidden></p>
+          <p id="behavioralAddressRow" hidden></p>
+          <p id="behavioralPhoneRow" hidden></p>
+          <p id="behavioralEmailRow" hidden></p>
+          <p id="behavioralHoursRow" hidden></p>
         </div>
       </article>
     </section>
 
-    <section class="card behavioralMessageCard" aria-labelledby="behavioralMessageTitle">
+    <!-- MESSAGE -->
+    <section class="card behavioralMessageCard">
       <h2 id="behavioralMessageTitle" class="sectionTitle"></h2>
-      <div class="behavioralMessageBody" id="behavioralMessageBody"></div>
+      <div
+        id="behavioralMessageBody"
+        class="behavioralMessageBody"
+        aria-live="polite"></div>
     </section>
 
     <footer class="footer">
       <div>© 2026 Hart County Board of Commissioners</div>
     </footer>
+
   </main>
 </body>
 </html>

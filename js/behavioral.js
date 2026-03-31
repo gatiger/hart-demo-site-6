@@ -1,147 +1,85 @@
-document.addEventListener("DOMContentLoaded", () => {
-  initBehavioralPage();
-});
+document.addEventListener("DOMContentLoaded", initBehavioralPage);
 
-async function initBehavioralPage() {
-  try {
-    const res = await fetch("/content/behavioral.json", { cache: "no-store" });
-    if (!res.ok) throw new Error("Failed to load /content/behavioral.json");
+async function initBehavioralPage(){
+  try{
+    const res = await fetch("/content/behavioral.json",{cache:"no-store"});
+    if(!res.ok) throw new Error();
 
     const data = await res.json();
 
-    renderBehavioralHeader(data.header || {});
-    renderBehavioralDetails(data.details || {});
-    renderBehavioralPhoto(data.photo || {});
-    renderBehavioralMessage(data.message || {});
-  } catch (err) {
-    console.error(err);
+    setText("behavioralEyebrow", data.header?.eyebrow);
+    setText("behavioralPageTitle", data.header?.title);
 
-    const title = document.getElementById("behavioralPageTitle");
-    const body = document.getElementById("behavioralMessageBody");
+    setText("behavioralName", data.details?.name);
+    setText("behavioralRole", data.details?.role);
 
-    if (title) title.textContent = "Behavioral Health";
-    if (body) {
-      body.innerHTML = "<p>Unable to load Behavioral Health content at this time.</p>";
-    }
+    setRow("behavioralOfficeRow","Office",data.details?.office);
+    setRow("behavioralAddressRow","Address",data.details?.address);
+    setPhone("behavioralPhoneRow","Phone",data.details?.phone);
+    setEmail("behavioralEmailRow","Email",data.details?.email);
+    setRow("behavioralHoursRow","Hours",data.details?.hours);
+
+    renderPhoto(data.photo);
+    renderMessage(data.message);
+
+  }catch{
+    document.getElementById("behavioralMessageBody").innerHTML =
+      "<p>Unable to load content at this time.</p>";
   }
 }
 
-function renderBehavioralHeader(header) {
-  setText("behavioralEyebrow", header.eyebrow);
-  setText("behavioralPageTitle", header.title);
-}
-
-function renderBehavioralDetails(details) {
-  setText("behavioralName", details.name);
-  setText("behavioralRole", details.role);
-
-  setLabeledText("behavioralOfficeRow", "Office", details.office);
-  setLabeledText("behavioralAddressRow", "Address", details.address);
-  setPhoneRow("behavioralPhoneRow", "Phone", details.phone);
-  setEmailRow("behavioralEmailRow", "Email", details.email);
-  setLabeledText("behavioralHoursRow", "Hours", details.hours);
-}
-
-function renderBehavioralPhoto(photo) {
+function renderPhoto(photo){
   const img = document.getElementById("behavioralPhoto");
-  const textWrap = document.getElementById("behavioralPhotoText");
+  if(!img) return;
 
-  if (img) {
-    img.src = safeText(photo.src);
-    img.alt = safeText(photo.alt) || "Behavioral Health photo";
-  }
+  img.src = photo?.src || "/assets/placeholder.jpg";
+  img.alt = photo?.alt || "Behavioral Health Center";
 
-  if (textWrap) {
-    textWrap.innerHTML = "";
-    const paragraphs = Array.isArray(photo.description) ? photo.description : [photo.description];
+  const wrap = document.getElementById("behavioralPhotoText");
+  wrap.innerHTML = "";
 
-    paragraphs
-      .map(safeText)
-      .filter(Boolean)
-      .forEach(text => {
-        const p = document.createElement("p");
-        p.textContent = text;
-        textWrap.appendChild(p);
-      });
-  }
+  (photo?.description || []).forEach(t=>{
+    const p=document.createElement("p");
+    p.textContent=t;
+    wrap.appendChild(p);
+  });
 }
 
-function renderBehavioralMessage(message) {
-  setText("behavioralMessageTitle", message.title);
+function renderMessage(msg){
+  setText("behavioralMessageTitle", msg?.title);
 
   const body = document.getElementById("behavioralMessageBody");
-  if (!body) return;
+  body.innerHTML="";
 
-  body.innerHTML = "";
-
-  const paragraphs = Array.isArray(message.paragraphs) ? message.paragraphs : [];
-  paragraphs
-    .map(safeText)
-    .filter(Boolean)
-    .forEach(text => {
-      const p = document.createElement("p");
-      p.textContent = text;
-      body.appendChild(p);
-    });
+  (msg?.paragraphs || []).forEach(t=>{
+    const p=document.createElement("p");
+    p.textContent=t;
+    body.appendChild(p);
+  });
 }
 
-function setText(id, value) {
-  const el = document.getElementById(id);
-  if (el) el.textContent = safeText(value);
+/* helpers */
+function setText(id,val){
+  const el=document.getElementById(id);
+  if(el) el.textContent = val || "";
 }
 
-function setLabeledText(id, label, value) {
-  const el = document.getElementById(id);
-  const safeValue = safeText(value);
-  if (!el) return;
-
-  if (!safeValue) {
-    el.hidden = true;
-    return;
-  }
-
-  el.hidden = false;
-  el.innerHTML = `<strong>${escapeHtml(label)}:</strong> ${escapeHtml(safeValue)}`;
+function setRow(id,label,val){
+  const el=document.getElementById(id);
+  if(!el || !val){ if(el) el.hidden=true; return; }
+  el.hidden=false;
+  el.innerHTML=`<strong>${label}:</strong> ${val}`;
 }
 
-function setPhoneRow(id, label, value) {
-  const el = document.getElementById(id);
-  const safeValue = safeText(value);
-  if (!el) return;
-
-  if (!safeValue) {
-    el.hidden = true;
-    return;
-  }
-
-  const tel = safeValue.replace(/[^\d+]/g, "");
-  el.hidden = false;
-  el.innerHTML = `<strong>${escapeHtml(label)}:</strong> <a href="tel:${escapeHtml(tel)}">${escapeHtml(safeValue)}</a>`;
+function setPhone(id,label,val){
+  const el=document.getElementById(id);
+  if(!el || !val){ if(el) el.hidden=true; return; }
+  const tel=val.replace(/[^\d+]/g,"");
+  el.innerHTML=`<strong>${label}:</strong> <a href="tel:${tel}">${val}</a>`;
 }
 
-function setEmailRow(id, label, value) {
-  const el = document.getElementById(id);
-  const safeValue = safeText(value);
-  if (!el) return;
-
-  if (!safeValue) {
-    el.hidden = true;
-    return;
-  }
-
-  el.hidden = false;
-  el.innerHTML = `<strong>${escapeHtml(label)}:</strong> <a href="mailto:${escapeHtml(safeValue)}">${escapeHtml(safeValue)}</a>`;
-}
-
-function safeText(value) {
-  return value === undefined || value === null ? "" : String(value).trim();
-}
-
-function escapeHtml(str) {
-  return String(str)
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#39;");
+function setEmail(id,label,val){
+  const el=document.getElementById(id);
+  if(!el || !val){ if(el) el.hidden=true; return; }
+  el.innerHTML=`<strong>${label}:</strong> <a href="mailto:${val}">${val}</a>`;
 }
