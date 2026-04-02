@@ -1,121 +1,136 @@
-/* EMS page additions — keeps your existing base.css look */
+/* ============================================================
+   ems.css — Hart County EMS
+   Page-specific styles only.
+   ============================================================ */
+
+.emsPage{
+  padding-bottom: 3rem;
+}
+
+/* ===== PAGE HEAD ===== */
 
 .pageHead{
-  margin: 18px 0 14px;
+  margin-bottom: 18px;
 }
+
 .pageTitle{
   margin: 0 0 6px;
 }
+
 .pageSub{
   margin: 0;
-  color: var(--muted);
+  color: var(--text-muted);
+  line-height: 1.65;
 }
 
-.emsHero{
-   max-width: 100%;
-}
-.emsHeroGrid{
-  display: grid;
-  gap: 14px;
-  align-items: stretch;
+/* ===== HERO BANNER CARD ===== */
+
+.emsHeroBannerOnly{
+  padding: 0;
+  margin-bottom: 18px;
 }
 
-/* 3 columns on wide screens: left photo | centered text | right photo */
-@media (min-width: 900px){
-  .emsHeroGrid{
-    grid-template-columns: 1fr 1.4fr 1fr;
-    gap: 16px;
-  }
-}
-
-.emsHeroMedia{
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  overflow: hidden;
-  min-height: 160px;
-  background: rgba(255,255,255,.04);
-  display: grid;
-  place-items: center;
-}
-
-.emsHeroMedia img{
+.emsHeroBannerCard{
+  min-height: 320px;
   width: 100%;
-  height: 100%;
-  object-fit: contain;
-  border-radius: var(--radius);
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
 }
 
-.emsHeroContent{
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
+.emsHeroBannerSvg{
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+/* ===== ABOUT CARD ===== */
+
+.emsAbout{
+  margin-bottom: 18px;
   padding: 18px 16px;
-  background: rgba(255,255,255,.03);
-  display: grid;
-  align-content: center;
+}
+
+.emsAboutInner{
+  max-width: 70ch;
+  margin: 0 auto;
   text-align: center;
 }
 
-.emsHeroText{
-  margin: 10px auto 0;
-  max-width: 60ch;
+.emsAboutText{
+  margin-top: 10px;
   color: var(--text);
+  line-height: 1.65;
 }
 
-.emsHeroCtas{
-  margin-top: 14px;
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  flex-wrap: wrap;
+.emsAboutText p{
+  margin: 0 0 14px;
 }
 
-.emsHeroAddress{
-  margin-top: 8px;
+.emsAboutText p:last-child{
+  margin-bottom: 0;
+}
+
+/* ===== STAFF CARD ===== */
+
+.cardHead{
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  font-size: 15px;
-  color: var(--muted);
+  gap: 6px;
+  padding: 1.25rem 1.5rem 1rem;
+  border-bottom: 1px solid var(--border);
 }
 
-#emsCityStateZip{
-  white-space: nowrap;
+.cardTitle{
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--navy);
+  line-height: 1.25;
+  margin: 0;
 }
 
-/* Staff grid */
+.cardSub{
+  margin: 0;
+  font-size: .875rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
 .emsGrid{
   display: grid;
   gap: 14px;
-  margin-top: 14px;
+  padding: 1rem 1.5rem 1.5rem;
 }
 
-/* 2 columns tablet, 3 columns desktop (6 items total looks good) */
 @media (min-width: 700px){
   .emsGrid{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+
 @media (min-width: 1050px){
   .emsGrid{
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
-/* Staff card */
 .emsPerson{
   border: 1px solid var(--border);
-  border-radius: var(--radius);
+  border-radius: var(--radius-lg);
   overflow: hidden;
-  background: rgba(255,255,255,.03);
+  background: var(--surface-alt);
   display: flex;
   flex-direction: column;
 }
 
-/* Photo section */
 .emsPhoto{
   width: 100%;
-  aspect-ratio: 3 / 4;   /* portrait ratio */
+  aspect-ratio: 3 / 4;
   overflow: hidden;
   background: rgba(255,255,255,.05);
 }
@@ -123,11 +138,10 @@
 .emsPhoto img{
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   display: block;
 }
 
-/* Text section */
 .emsBody{
   padding: 14px;
   display: flex;
@@ -138,14 +152,18 @@
 
 .emsName{
   margin: 0;
-  font-weight: 700;
-  font-size: 16px;
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--navy);
+  line-height: 1.3;
 }
 
 .emsTitle{
   margin: 0;
-  color: var(--muted);
-  font-size: 14px;
+  color: var(--text-muted);
+  font-size: .875rem;
+  line-height: 1.5;
 }
 
 .emsMeta{
@@ -155,27 +173,85 @@
   gap: 4px;
 }
 
+.emsMeta a{
+  color: var(--navy-mid);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .emsInfo{
   margin-top: 8px;
-  font-size: 14px;
-  color: var(--muted);
-  line-height: 1.4;
+  font-size: .875rem;
+  color: var(--text-muted);
+  line-height: 1.55;
 }
 
-.emsHeroTitleWrap{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  margin-bottom:12px;
+/* ===== WIDE / FEATURED CARD OPTION ===== */
+
+.emsPersonWide{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column: 1 / -1;
 }
 
-.emsHeroTitleSvg{
-  display:block;
-  max-width:100%;
-  width:400px; /* adjust as needed */
-  height:auto;
+.emsLeft{
+  display: flex;
+  flex-direction: column;
 }
 
-.jobDescBody p{
-  text-indent: 20px;
+.emsBio{
+  padding: 14px;
+  border-top: 1px solid var(--border);
+  color: var(--text);
+  line-height: 1.65;
+}
+
+.emsBio p{
+  margin: 0 0 14px;
+}
+
+.emsBio p:last-child{
+  margin-bottom: 0;
+}
+
+@media (min-width: 900px){
+  .emsPersonWide{
+    grid-template-columns: 340px minmax(0, 1fr);
+    align-items: stretch;
+  }
+
+  .emsBio{
+    border-top: 0;
+    border-left: 1px solid var(--border);
+  }
+
+  .emsBio p{
+    text-indent: 24px;
+  }
+}
+
+/* ===== EMPTY / ERROR STATES ===== */
+
+.emsEmpty{
+  padding: 1rem 1.5rem 1.5rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 700px){
+  .emsAbout{
+    padding: 1rem 1.25rem;
+  }
+
+  .cardHead{
+    padding: 1rem 1.25rem .875rem;
+  }
+
+  .emsGrid{
+    padding: .875rem 1.25rem 1.25rem;
+  }
+
+  .emsHeroBannerCard{
+    min-height: 220px;
+    padding: 18px;
+  }
 }

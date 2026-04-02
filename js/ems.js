@@ -1,226 +1,157 @@
-// EMS page JSON-driven rendering
 document.addEventListener("DOMContentLoaded", () => {
   initEmsPage();
 });
 
 async function initEmsPage(){
   const sub = document.getElementById("emsSub");
+  const aboutTitle = document.getElementById("emsAboutTitle");
+  const aboutText = document.getElementById("emsAboutText");
+  const staffSub = document.getElementById("emsStaffSub");
+  const staffGrid = document.getElementById("emsStaffGrid");
 
   try{
-    const lang = (typeof getCurrentLang === "function") ? getCurrentLang() : "en";
-    const url = `/content/ems.${lang}.json`;
+    const res = await fetch("/content/ems.json", { cache: "no-store" });
+    if(!res.ok) throw new Error("Failed to load /content/ems.json");
 
-    console.log("EMS lang:", lang);
-    console.log("EMS url:", url);
-
-    const res = await fetch(url, { cache: "no-store" });
-    console.log("EMS fetch status:", res.status, res.statusText);
-
-    if(!res.ok) throw new Error(`Failed to load ${url} (${res.status})`);
-
-    const raw = await res.text();
-    console.log("EMS raw text:", raw);
-
-    const data = JSON.parse(raw);
-    console.log("EMS parsed data:", data);
+    const data = await res.json();
 
     if(sub) sub.textContent = safeText(data.subtitle) || "";
 
-    renderHero(data.hero || {});
-    renderStaff(data.staff || {});
-    renderAbout(data.about || {});
+    if(aboutTitle){
+      aboutTitle.textContent = safeText(data.about?.title) || "About EMS";
+    }
+
+    if(aboutText){
+      renderRichTextBlock(aboutText, data.about?.text);
+    }
+
+    if(staffSub){
+      staffSub.textContent = safeText(data.staff?.subtitle) || "";
+    }
+
+    if(staffGrid){
+      renderStaff(staffGrid, data.staff?.people || []);
+    }
   }catch(err){
-    console.error("EMS LOAD ERROR:", err);
+    console.error(err);
+
     if(sub) sub.textContent = "Unable to load EMS content.";
-  }
-}
-
-function renderAbout(about){
-  const titleEl = document.getElementById("emsAboutTitle");
-  const textEl  = document.getElementById("emsAboutText");
-
-  if(titleEl) titleEl.textContent = safeText(about.title) || "What EMS Does";
-  if(textEl)  textEl.textContent  = safeText(about.text) || "";
-}
-
-function renderHero(hero){
-  const leftEl  = document.getElementById("emsHeroLeft");
-  const rightEl = document.getElementById("emsHeroRight");
-  const ctasEl  = document.getElementById("emsHeroCtas");
-
-
-  console.log("HERO OBJECT:", hero);
-console.log("ADDRESS:", hero.address);
-console.log("ELS:", {
-  streetEl: !!document.getElementById("emsStreet"),
-  cityEl: !!document.getElementById("emsCityStateZip")
-});
-
-    // Address fields (center column)
-  const streetEl = document.getElementById("emsStreet");
-  const cityEl   = document.getElementById("emsCityStateZip");
-
-  if(streetEl){
-    streetEl.textContent = safeText(hero.address?.street) || "";
-  }
-
-  if(cityEl){
-    const city  = safeText(hero.address?.city);
-    const state = safeText(hero.address?.state);
-    const zip   = safeText(hero.address?.zip);
-
-    const cityState = [city, state].filter(Boolean).join(", ");
-    cityEl.textContent = cityState + (zip ? " " + zip : "");
-  }
-
-  // Left image
-  if(leftEl){
-    leftEl.innerHTML = "";
-    const src = safeText(hero.leftImage?.src);
-    if(src){
-      const img = document.createElement("img");
-      img.src = src;
-      img.alt = safeText(hero.leftImage?.alt) || "EMS photo";
-      img.loading = "lazy";
-      leftEl.appendChild(img);
-    }else{
-      leftEl.innerHTML = `<div class="muted">Add hero.leftImage.src in ems.json</div>`;
+    if(aboutTitle) aboutTitle.textContent = "About EMS";
+    if(aboutText) aboutText.textContent = "EMS information is unavailable right now.";
+    if(staffSub) staffSub.textContent = "";
+    if(staffGrid){
+      staffGrid.innerHTML = `<div class="emsEmpty">Staff information is unavailable right now.</div>`;
     }
   }
-
-  // Right image
-  if(rightEl){
-    rightEl.innerHTML = "";
-    const src = safeText(hero.rightImage?.src);
-    if(src){
-      const img = document.createElement("img");
-      img.src = src;
-      img.alt = safeText(hero.rightImage?.alt) || "EMS photo";
-      img.loading = "lazy";
-      rightEl.appendChild(img);
-    }else{
-      rightEl.innerHTML = `<div class="muted">Add hero.rightImage.src in ems.json</div>`;
-    }
-  }
-
-  // CTA buttons
-  if(ctasEl){
-    ctasEl.innerHTML = "";
-    const buttons = Array.isArray(hero.buttons) ? hero.buttons : [];
-    buttons
-      .filter(b => b && b.enabled !== false)
-      .slice(0, 4)
-      .forEach(b => {
-        const a = document.createElement("a");
-        a.className = (b.variant === "ghost") ? "btn ghost" : "btn";
-        a.textContent = safeText(b.label) || "Learn more";
-
-        const href = safeText(b.href);
-        a.href = href || "#";
-
-        // external/new tab support
-        if(b.newTab === true){
-          a.target = "_blank";
-          a.rel = "noopener noreferrer";
-        }
-
-        // Accessible label if provided
-        const aria = safeText(b.ariaLabel);
-        if(aria) a.setAttribute("aria-label", aria);
-
-        ctasEl.appendChild(a);
-      });
-  }
 }
 
-function renderStaff(staff){
-  const subEl = document.getElementById("emsStaffSub");
-  const grid = document.getElementById("emsStaffGrid");
-  if(!grid) return;
+function renderStaff(mount, people){
+  const visible = (people || []).filter(person => person && person.enabled !== false);
 
-  if(subEl) subEl.textContent = safeText(staff.subtitle) || "";
-
-  const people = Array.isArray(staff.people) ? staff.people : [];
-  const visible = people.filter(p => p && p.enabled !== false).slice(0, 6);
-
-  grid.innerHTML = visible.map(p => personCard(p)).join("");
-
-  // If fewer than 1 person, show helper text
-  if(visible.length === 0){
-    grid.innerHTML = `<div class="muted">Add staff.people items in content/ems.json</div>`;
+  if(!visible.length){
+    mount.innerHTML = `<div class="emsEmpty">No staff entries are available right now.</div>`;
+    return;
   }
+
+  mount.innerHTML = visible.map(person => renderStaffCard(person)).join("");
 }
 
-function personCard(p){
-  const name = safeText(p.name) || "Name";
-  const title = safeText(p.title) || "";
-  const phone = safeText(p.phone) || "";
-  const fax = safeText(p.fax) || "";
-  const info  = safeText(p.info);
-  const imgSrc = safeText(p.photo?.src) || "";
-  const imgAlt = safeText(p.photo?.alt) || `${name} photo`;
+function renderStaffCard(person){
+  const name = safeText(person.name);
+  const title = safeText(person.title || person.role);
+  const phone = safeText(person.phone);
+  const fax = safeText(person.fax);
+  const email = safeText(person.email);
+  const info = safeText(person.info || person.description);
+  const photo = safeText(person.photo || person.image || person.img);
+  const bio = person.bio;
+  const featured = person.featured === true || person.wide === true;
 
-  const phoneLink = phone
-  ? `<div><a href="tel:${telHref(phone)}" aria-label="Call ${name}">${escapeHtml(phone)}</a></div>`
-  : "";
+  const metaBits = [
+    phone ? `<a href="tel:${escapeAttr(phone)}">${escapeHtml(phone)}</a>` : "",
+    fax ? `<span>Fax: ${escapeHtml(fax)}</span>` : "",
+    email ? `<a href="mailto:${escapeAttr(email)}">${escapeHtml(email)}</a>` : ""
+  ].filter(Boolean).join("");
 
-const faxLine = fax
-  ? `<div>Fax: ${escapeHtml(fax)}</div>`
-  : "";
-
- return `
-  <article class="emsPerson">
-    <div class="emsPhoto">
-      ${imgSrc
-        ? `<img src="${escapeAttr(imgSrc)}" alt="${escapeAttr(imgAlt)}" loading="lazy">`
-        : `<div class="muted">Add photo.src</div>`
-      }
-    </div>
-
-    <div class="emsBody">
-      <h3 class="emsName">${escapeHtml(name)}</h3>
-
-      ${title
-        ? `<div class="emsTitle">${escapeHtml(title)}</div>`
-        : `<div class="emsTitle muted"></div>`
-      }
-
-      <div class="emsMeta">
-        ${phoneLink}
-        ${faxLine}
+  const photoBlock = photo
+    ? `
+      <div class="emsPhoto">
+        <img src="${escapeAttr(photo)}" alt="${escapeAttr(name || "EMS staff member")}">
       </div>
+    `
+    : `
+      <div class="emsPhoto" aria-hidden="true"></div>
+    `;
 
-      ${info
-        ? `<div class="emsInfo">${escapeHtml(info)}</div>`
-        : ""
-      }
+  if(featured){
+    return `
+      <article class="emsPerson emsPersonWide">
+        <div class="emsLeft">
+          ${photoBlock}
+          <div class="emsBody">
+            ${name ? `<h3 class="emsName">${escapeHtml(name)}</h3>` : ""}
+            ${title ? `<p class="emsTitle">${escapeHtml(title)}</p>` : ""}
+            ${metaBits ? `<div class="emsMeta">${metaBits}</div>` : ""}
+            ${info ? `<div class="emsInfo">${escapeHtml(info)}</div>` : ""}
+          </div>
+        </div>
+        <div class="emsBio">
+          ${renderParagraphHtml(bio)}
+        </div>
+      </article>
+    `;
+  }
 
-    </div>
-  </article>
-`;
+  return `
+    <article class="emsPerson">
+      ${photoBlock}
+      <div class="emsBody">
+        ${name ? `<h3 class="emsName">${escapeHtml(name)}</h3>` : ""}
+        ${title ? `<p class="emsTitle">${escapeHtml(title)}</p>` : ""}
+        ${metaBits ? `<div class="emsMeta">${metaBits}</div>` : ""}
+        ${info ? `<div class="emsInfo">${escapeHtml(info)}</div>` : ""}
+      </div>
+    </article>
+  `;
 }
 
-function safeText(v){
-  return (v === undefined || v === null) ? "" : String(v).trim();
+function renderRichTextBlock(mount, value){
+  mount.innerHTML = renderParagraphHtml(value);
 }
 
-function telHref(phone){
-  // keep digits and leading +
-  return String(phone).replace(/[^\d+]/g, "");
+function renderParagraphHtml(value){
+  if(Array.isArray(value)){
+    return value
+      .map(item => safeText(item))
+      .filter(Boolean)
+      .map(item => `<p>${escapeHtml(item)}</p>`)
+      .join("");
+  }
+
+  const text = safeText(value);
+  if(!text) return "";
+
+  return text
+    .split(/\n\s*\n/)
+    .map(part => part.trim())
+    .filter(Boolean)
+    .map(part => `<p>${escapeHtml(part)}</p>`)
+    .join("");
 }
 
-function escapeHtml(str){
-  return String(str)
-    .replaceAll("&","&amp;")
-    .replaceAll("<","&lt;")
-    .replaceAll(">","&gt;")
-    .replaceAll('"',"&quot;")
-    .replaceAll("'","&#039;");
+function safeText(value){
+  return value === undefined || value === null ? "" : String(value).trim();
 }
 
-function escapeAttr(str){
-  // same as escapeHtml for our use
-  return escapeHtml(str);
-
+function escapeHtml(value){
+  return String(value)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#39;");
 }
 
+function escapeAttr(value){
+  return escapeHtml(value);
+}
