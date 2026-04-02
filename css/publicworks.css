@@ -1,12 +1,11 @@
 /* Public Works page */
 
-/* ===== INTRO CARD (like Forms) ===== */
+/* ===== INTRO CARD ===== */
 
 .pwIntroCard{
   margin-bottom: 18px;
   padding: 2rem 2rem 1.625rem;
 
-  /* 🔵 BLUE STYLE */
   background: linear-gradient(
     180deg,
     var(--navy-mid),
@@ -14,6 +13,8 @@
   );
 
   color: #fff;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 10px 28px rgba(0,0,0,.25);
 }
 
 .pwIntroTitle{
@@ -33,12 +34,9 @@
   max-width: 60ch;
 }
 
-.pwIntroCard{
-  box-shadow: 0 10px 28px rgba(0,0,0,.25);
-}
+/* ===== PAGE WRAPPER ===== */
 
 .publicWorksPage{
-  padding-top: 230px;
   padding-bottom: 3rem;
 }
 
@@ -56,7 +54,8 @@
   line-height: 1.65;
 }
 
-/* Shared page section styling */
+/* ===== SECTION CARDS ===== */
+
 .pwHeroCard,
 .pwAboutCard,
 .pwSectionCard{
@@ -87,7 +86,8 @@
   line-height: 1.6;
 }
 
-/* HERO */
+/* ===== HERO ===== */
+
 .pwHeroCard{
   padding: 1.25rem 1.5rem;
 }
@@ -154,7 +154,8 @@
   flex-wrap: wrap;
 }
 
-/* ABOUT */
+/* ===== ABOUT ===== */
+
 .pwAboutCard{
   padding: 18px 16px;
 }
@@ -179,7 +180,8 @@
   margin-bottom: 0;
 }
 
-/* SERVICES */
+/* ===== SERVICES ===== */
+
 .pwServicesGrid{
   display: grid;
   gap: 12px;
@@ -221,7 +223,8 @@
   font-size: .9375rem;
 }
 
-/* STAFF */
+/* ===== STAFF ===== */
+
 .pwStaffGrid{
   display: grid;
   gap: 14px;
@@ -307,7 +310,8 @@
   line-height: 1.55;
 }
 
-/* Featured / wide staff card */
+/* ===== WIDE STAFF CARD ===== */
+
 .pwPersonWide{
   display: grid;
   grid-template-columns: 1fr;
