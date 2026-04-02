@@ -63,9 +63,11 @@ function renderStaffCard(person){
   const fax = safeText(person.fax);
   const email = safeText(person.email);
   const info = safeText(person.info || person.description);
-  const photo = safeText(person.photo || person.image || person.img);
   const bio = person.bio;
   const featured = person.featured === true || person.wide === true;
+
+  const photoSrc = getPhotoSrc(person);
+  const photoAlt = getPhotoAlt(person, name);
 
   const metaBits = [
     phone ? `<a href="tel:${escapeAttr(phone)}">${escapeHtml(phone)}</a>` : "",
@@ -73,10 +75,10 @@ function renderStaffCard(person){
     email ? `<a href="mailto:${escapeAttr(email)}">${escapeHtml(email)}</a>` : ""
   ].filter(Boolean).join("");
 
-  const photoBlock = photo
+  const photoBlock = photoSrc
     ? `
       <div class="emsPhoto">
-        <img src="${escapeAttr(photo)}" alt="${escapeAttr(name || "EMS staff member")}">
+        <img src="${escapeAttr(photoSrc)}" alt="${escapeAttr(photoAlt)}">
       </div>
     `
     : `
@@ -113,6 +115,30 @@ function renderStaffCard(person){
       </div>
     </article>
   `;
+}
+
+function getPhotoSrc(person){
+  if(person.photo && typeof person.photo === "object"){
+    return safeText(person.photo.src);
+  }
+
+  if(person.image && typeof person.image === "object"){
+    return safeText(person.image.src);
+  }
+
+  return safeText(person.photo || person.image || person.img);
+}
+
+function getPhotoAlt(person, name){
+  if(person.photo && typeof person.photo === "object" && safeText(person.photo.alt)){
+    return safeText(person.photo.alt);
+  }
+
+  if(person.image && typeof person.image === "object" && safeText(person.image.alt)){
+    return safeText(person.image.alt);
+  }
+
+  return name ? `Portrait of ${name}` : "EMS staff member";
 }
 
 function renderRichTextBlock(mount, value){
