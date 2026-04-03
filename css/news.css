@@ -55,31 +55,30 @@
   gap: 8px;
 }
 
-.pill{
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+/* ===== FILTER BUTTONS ===== */
+
+.filters{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* Use base .btn styling, just tweak active state */
+.filterBtn{
   min-height: 36px;
   padding: .375rem .875rem;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  background: var(--surface-alt);
-  color: var(--text);
-  font-size: .8125rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background .14s, color .14s, border-color .14s;
 }
 
-.pill:hover{
-  background: var(--navy-light);
-  border-color: var(--border-mid);
-}
-
-.pill.active{
+/* Active state */
+.filterBtn.active{
   background: var(--navy);
-  border-color: var(--navy);
   color: #fff;
+  border-color: var(--navy);
+}
+
+/* Optional hover polish */
+.filterBtn:not(.active):hover{
+  background: var(--navy-light);
 }
 
 /* ===== POSTS CARD ===== */
