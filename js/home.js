@@ -3,44 +3,44 @@
 function renderAnnouncementsList({
   newsUrl = "./content/news.json",
   mountId = "annList",
-  maxItems = 3
+  maxItems = 3,
+  maxSummaryLength = 220
 } = {}) {
   const mount = document.getElementById(mountId);
   if (!mount) return;
 
-  if (!mount.dataset.expandWired) {
-    mount.addEventListener("click", (e) => {
-      const btn = e.target.closest(".annExpandBtn");
-      if (!btn) return;
-
-      const bodyId = btn.getAttribute("data-expand");
-      const p = document.getElementById(bodyId);
-      if (!p) return;
-
-      const expanded = btn.getAttribute("aria-expanded") === "true";
-
-      if (expanded) {
-        p.classList.add("clamp2");
-        btn.setAttribute("aria-expanded", "false");
-        btn.textContent = "View more";
-      } else {
-        p.classList.remove("clamp2");
-        btn.setAttribute("aria-expanded", "true");
-        btn.textContent = "View less";
-      }
-    });
-
-    mount.dataset.expandWired = "1";
-  }
-
   const safe = (v) => (v === undefined || v === null) ? "" : String(v).trim();
+
   const parseDate = (v) => {
     const s = safe(v);
     const d = new Date(s);
     return isNaN(d.getTime()) ? new Date(0) : d;
   };
+
   const fmtDate = (d) =>
     d.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
+
+  const escapeHtml = (value) =>
+    String(value)
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#39;");
+
+  const truncateText = (text, limit) => {
+    const clean = safe(text).replace(/\s+/g, " ");
+    if (!clean || clean.length <= limit) return clean;
+
+    const shortened = clean.slice(0, limit);
+    const lastSpace = shortened.lastIndexOf(" ");
+
+    if (lastSpace > Math.floor(limit * 0.6)) {
+      return `${shortened.slice(0, lastSpace).trim()}…`;
+    }
+
+    return `${shortened.trim()}…`;
+  };
 
   const start = async () => {
     let items = [];
@@ -52,7 +52,7 @@ function renderAnnouncementsList({
 
       const list = Array.isArray(data) ? data : (Array.isArray(data.items) ? data.items : []);
       items = list
-        .filter(x => x && (x.enabled !== false))
+        .filter(x => x && x.enabled !== false)
         .slice()
         .sort((a, b) => parseDate(b.date) - parseDate(a.date))
         .slice(0, maxItems);
@@ -70,9 +70,9 @@ function renderAnnouncementsList({
     mount.innerHTML = items.map((it, i) => {
       const title = safe(it.title || it.headline || "Update");
       const date = parseDate(it.date);
-      const summary = safe(it.body || it.summary || it.excerpt || it.description || "");
+      const summaryRaw = safe(it.body || it.summary || it.excerpt || it.description || "");
+      const summary = truncateText(summaryRaw, maxSummaryLength);
       const url = safe(it.url || it.link || "news.html");
-      const bodyId = `annBody-${i}`;
 
       return `
         <article class="annTile" style="margin-top:${i === 0 ? 0 : 12}px">
@@ -80,24 +80,17 @@ function renderAnnouncementsList({
             ${date.getTime() ? `<time class="annDate">${fmtDate(date)}</time>` : ""}
           </div>
 
-          <h3 class="annTitle">${title}</h3>
+          <h3 class="annTitle">${escapeHtml(title)}</h3>
 
           ${summary ? `
-            <p class="annBody clamp2" id="${bodyId}">
-              ${summary}
+            <p class="annBody">
+              ${escapeHtml(summary)}
             </p>
-            <button class="btn ghost annExpandBtn"
-                    type="button"
-                    data-expand="${bodyId}"
-                    aria-expanded="false"
-                    aria-controls="${bodyId}">
-              View more
-            </button>
           ` : ""}
 
           ${url ? `
             <div class="annFooter">
-              <a class="annCta" href="${url}">Read more →</a>
+              <a class="annCta" href="${escapeHtml(url)}">Read more →</a>
             </div>
           ` : ""}
         </article>
@@ -120,7 +113,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     renderAnnouncementsList({
       newsUrl: "./content/news.json",
       mountId: "annList",
-      maxItems: 3
+      maxItems: 3,
+      maxSummaryLength: 220
     });
   }
 });

@@ -4,7 +4,6 @@
    ============================================================ */
 
 .indexPage{
-  padding-top: 230px;
   padding-bottom: 3rem;
 }
 
@@ -137,6 +136,13 @@
   width: 100%;
 }
 
+.quickActionsCard .btn[disabled],
+.pageTools .btn[disabled] {
+  opacity: .6;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 /* Homepage cards and layout */
 .homeSection {
   margin-top: 16px;
@@ -193,17 +199,6 @@
   color: var(--text-muted);
   line-height: 1.7;
   margin: 0 0 .75rem;
-}
-
-.clamp2 {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.annExpandBtn {
-  margin-bottom: .75rem;
 }
 
 .annFooter {

@@ -75,8 +75,7 @@
     </nav>
   </aside>
 
-  <!-- PAGE TEMPLATE -->
-<main id="main" class="container indexPage" tabindex="-1">
+  <main id="main" class="container indexPage" tabindex="-1">
     <div id="alertHolder"></div>
 
     <section class="hero" aria-label="Overview">
@@ -84,7 +83,7 @@
         <div class="card heroIntro">
           <h1 class="heroTitle">News, alerts, and meeting information — in one place.</h1>
           <p class="heroLead">
-            Stay up to date with county announcements, active public notices, and upcoming meeting information through a clear, easy-to-use homepage.
+            Stay up to date with county announcements, public notices, and upcoming meetings.
           </p>
 
           <div class="pageTools" aria-label="Page tools">
@@ -93,11 +92,8 @@
 
             <div class="btnRow">
               <a class="btn" href="directory.html">Find a Department</a>
-              <a class="btn" href="contact.html">Report an Issue</a>
-              <button class="btn ghost" type="button"
-                data-toast="Accessibility|Accessibility assistance information would open here.">
-                Accessibility
-              </button>
+              <button class="btn" type="button" disabled aria-disabled="true">Report an Issue</button>
+              <button class="btn ghost" type="button" disabled aria-disabled="true">Accessibility</button>
             </div>
           </div>
 
@@ -120,8 +116,8 @@
           <div class="btnRow">
             <a class="btn" href="https://www.hartcountypay.com" target="_blank" rel="noopener">Pay Taxes</a>
             <a class="btn" href="directory.html">County Directory</a>
-            <button class="btn" type="button" data-toast="Report an Issue|Would open a public issue form.">Report an Issue</button>
-            <button class="btn" type="button" data-toast="Emergency Info|Would open emergency resources.">Emergency Info</button>
+            <button class="btn" type="button" disabled aria-disabled="true">Report an Issue</button>
+            <button class="btn" type="button" disabled aria-disabled="true">Emergency Info</button>
             <a class="btn" href="forms.html">Forms & Documents</a>
           </div>
         </section>
