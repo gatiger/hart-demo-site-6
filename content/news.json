@@ -1,24 +1,58 @@
 {
   "items": [
     {
-      "id": "service-directory",
+      "enabled": true,
+      "title": "New EMS Training Completed",
+      "date": "2026-04-03",
       "type": "Press",
-      "title": "Hart County launches new service directory (Demo)",
-      "date": "Feb 18, 2026",
-      "body": "A redesigned hub makes it easier to find departments and services."
+      "department": "Hart County EMS",
+      "body": "Hart County EMS personnel recently completed advanced emergency response training focused on improving patient care, response time, and coordination with other public safety agencies.",
+      "url": "news.html"
     },
     {
-      "id": "parking-improvements",
+      "enabled": true,
+      "title": "Road Maintenance Scheduled for Reed Creek Highway",
+      "date": "2026-04-02",
       "type": "Project",
-      "title": "Courthouse parking improvements begin next week (Demo)",
-      "date": "Feb 17, 2026",
-      "body": "Work will be phased to maintain access.vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv"
+      "department": "Public Works",
+      "body": "Public Works crews will begin maintenance and resurfacing operations along Reed Creek Highway starting next week. Motorists should expect minor delays and are encouraged to use alternate routes when possible.",
+      "url": "news.html"
+    },
+    {
+      "enabled": true,
+      "title": "County Offices Closed for Holiday",
+      "date": "2026-04-01",
+      "type": "Alert",
+      "department": "Administration",
+      "body": "All Hart County administrative offices will be closed on Friday in observance of the upcoming holiday. Emergency services will remain fully operational during this time.",
+      "url": "news.html"
+    },
+    {
+      "enabled": true,
+      "title": "New Job Openings Available",
+      "date": "2026-03-30",
+      "type": "Press",
+      "department": "Human Resources",
+      "body": "Hart County is currently accepting applications for several open positions across multiple departments. Interested applicants are encouraged to visit the Employment page for full details and application instructions.",
+      "url": "news.html"
+    },
+    {
+      "enabled": true,
+      "title": "Water Service Interruption Notice",
+      "date": "2026-03-28",
+      "type": "Alert",
+      "department": "Water Department",
+      "body": "A temporary water service interruption will occur in the North Hartwell area due to scheduled infrastructure repairs. Service is expected to be restored by late afternoon.",
+      "url": "news.html"
+    },
+    {
+      "enabled": true,
+      "title": "Park Improvements Underway at Paynes Creek",
+      "date": "2026-03-25",
+      "type": "Project",
+      "department": "Recreation Department",
+      "body": "Improvements to facilities at Paynes Creek Campground are currently underway, including updated picnic areas, improved parking, and additional signage for visitors.",
+      "url": "news.html"
     }
   ]
-
 }
-
-
-
-
-

@@ -267,3 +267,16 @@
     padding: 0 1.125rem 1.125rem;
   }
 }
+
+.annDept {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--navy-light);
+  color: var(--navy);
+  font-size: .75rem;
+  font-weight: 600;
+  line-height: 1.2;
+}

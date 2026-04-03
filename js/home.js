@@ -70,6 +70,7 @@ function renderAnnouncementsList({
     mount.innerHTML = items.map((it, i) => {
       const title = safe(it.title || it.headline || "Update");
       const date = parseDate(it.date);
+      const department = safe(it.department || it.office);
       const summaryRaw = safe(it.body || it.summary || it.excerpt || it.description || "");
       const summary = truncateText(summaryRaw, maxSummaryLength);
       const url = safe(it.url || it.link || "news.html");
@@ -78,6 +79,7 @@ function renderAnnouncementsList({
         <article class="annTile" style="margin-top:${i === 0 ? 0 : 12}px">
           <div class="annMetaRow">
             ${date.getTime() ? `<time class="annDate">${fmtDate(date)}</time>` : ""}
+            ${department ? `<span class="annDept">${escapeHtml(department)}</span>` : ""}
           </div>
 
           <h3 class="annTitle">${escapeHtml(title)}</h3>

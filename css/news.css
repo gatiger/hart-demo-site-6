@@ -1,0 +1,117 @@
+/* ============================================================
+   news.css — Hart County News Page
+   ============================================================ */
+
+.newsPage{
+  padding-bottom: 3rem;
+}
+
+/* ===== PAGE HEAD ===== */
+
+.pageHead{
+  margin-bottom: 18px;
+}
+
+.pageTitle{
+  margin: 0 0 6px;
+}
+
+.pageSub{
+  margin: 0;
+  color: var(--text-muted);
+}
+
+/* ===== TOOLS ===== */
+
+.newsTools{
+  margin-bottom: 18px;
+  padding: 1rem 1.5rem;
+}
+
+.newsToolsInner{
+  display: grid;
+  gap: 10px;
+}
+
+.filters{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pill{
+  border: 1px solid var(--border);
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: var(--surface-alt);
+  cursor: pointer;
+  font-size: .8125rem;
+}
+
+.pill.active{
+  background: var(--navy);
+  color: #fff;
+}
+
+/* ===== NEWS LIST ===== */
+
+.newsList{
+  padding: 1rem 1.5rem 1.5rem;
+  display: grid;
+  gap: 14px;
+}
+
+.newsItem{
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  background: var(--surface-alt);
+}
+
+.newsTop{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.newsTitle{
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.newsMeta{
+  margin-top: 6px;
+  font-size: .85rem;
+  color: var(--text-muted);
+}
+
+.newsBody{
+  margin-top: 6px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* ===== TAG ===== */
+
+.tag{
+  background: var(--navy-light);
+  color: var(--navy);
+  font-size: .75rem;
+  padding: 4px 8px;
+  border-radius: 999px;
+}
+
+.newsDept{
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--navy-light);
+  color: var(--navy);
+  font-size: .75rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
