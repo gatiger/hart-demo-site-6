@@ -1,0 +1,59 @@
+{
+  "about": {
+    "title": "About the Fire Department",
+    "text": [
+      "Hart County Fire Department provides fire protection, emergency response, and public safety support throughout the county.",
+      "The department works to protect lives and property through trained personnel, equipment readiness, fire prevention efforts, and coordination with other emergency services."
+    ]
+  },
+  "gallery": {
+    "subtitle": "Photos from Hart County Fire Department operations and facilities.",
+    "images": [
+      {
+        "enabled": true,
+        "src": "/assets/fire/gallery/fire_station.jpg",
+        "alt": "Hart County fire station",
+        "caption": "Hart County Fire Department station."
+      },
+      {
+        "enabled": true,
+        "src": "/assets/fire/gallery/fire_engine.jpg",
+        "alt": "Fire engine parked outside",
+        "caption": "Department apparatus ready for response."
+      },
+      {
+        "enabled": true,
+        "src": "/assets/fire/gallery/training.jpg",
+        "alt": "Firefighters during training",
+        "caption": "Training and readiness remain a priority."
+      }
+    ]
+  },
+  "staff": {
+    "subtitle": "Tap a phone number to call from a mobile device.",
+    "people": [
+      {
+        "enabled": true,
+        "name": "John Smith",
+        "title": "Fire Chief",
+        "phone": "(706) 000-0000",
+        "email": "jsmith@hartcountyga.gov",
+        "photo": {
+          "src": "/assets/fire/staff/john-smith.jpg",
+          "alt": "Portrait of John Smith"
+        }
+      },
+      {
+        "enabled": true,
+        "name": "Jane Doe",
+        "title": "Assistant Chief",
+        "phone": "(706) 000-0001",
+        "email": "jdoe@hartcountyga.gov",
+        "photo": {
+          "src": "/assets/fire/staff/jane-doe.jpg",
+          "alt": "Portrait of Jane Doe"
+        }
+      }
+    ]
+  }
+}
