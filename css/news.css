@@ -7,21 +7,6 @@
   padding-bottom: 3rem;
 }
 
-/* ===== PAGE HEAD ===== */
-
-.pageHead{
-  margin-bottom: 18px;
-}
-
-.pageTitle{
-  margin: 0 0 6px;
-}
-
-.pageSub{
-  margin: 0;
-  color: var(--text-muted);
-  line-height: 1.65;
-}
 
 /* ===== TOOLS CARD ===== */
 
@@ -228,4 +213,41 @@
     flex-direction: column;
     align-items: stretch;
   }
+}
+
+/* ===== INTRO CARD (BLUE) ===== */
+
+.newsIntroCard{
+  margin-bottom: 18px;
+  padding: 2rem 2rem 1.625rem;
+
+  background: linear-gradient(
+    180deg,
+    var(--navy-mid),
+    var(--navy)
+  );
+
+  color: #fff;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 10px 28px rgba(0,0,0,.25);
+}
+
+.newsIntroInner{
+  max-width: 720px;
+}
+
+.newsIntroTitle{
+  margin: 0 0 6px;
+  font-family: var(--font-serif);
+  font-size: 1.625rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.newsIntroText{
+  margin: 0;
+  font-size: .95rem;
+  line-height: 1.65;
+  color: rgba(255,255,255,.9);
 }
