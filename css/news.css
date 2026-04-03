@@ -1,5 +1,6 @@
 /* ============================================================
-   news.css — Hart County News Page
+   news.css — Hart County News
+   Page-specific styles only.
    ============================================================ */
 
 .newsPage{
@@ -19,18 +20,48 @@
 .pageSub{
   margin: 0;
   color: var(--text-muted);
+  line-height: 1.65;
 }
 
-/* ===== TOOLS ===== */
+/* ===== TOOLS CARD ===== */
 
-.newsTools{
+.newsToolsCard{
   margin-bottom: 18px;
-  padding: 1rem 1.5rem;
+  padding: 1.25rem 1.5rem;
 }
 
 .newsToolsInner{
   display: grid;
-  gap: 10px;
+  gap: 14px;
+}
+
+.newsToolsTop{
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.newsSectionTitle{
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--navy);
+  line-height: 1.25;
+  margin: 0;
+}
+
+.newsSectionSub{
+  margin: 6px 0 0;
+  font-size: .875rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.newsToolFields{
+  display: grid;
+  gap: 12px;
+  max-width: 760px;
 }
 
 .filters{
@@ -40,25 +71,66 @@
 }
 
 .pill{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  padding: .375rem .875rem;
   border: 1px solid var(--border);
-  padding: 6px 10px;
   border-radius: 999px;
   background: var(--surface-alt);
-  cursor: pointer;
+  color: var(--text);
   font-size: .8125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .14s, color .14s, border-color .14s;
+}
+
+.pill:hover{
+  background: var(--navy-light);
+  border-color: var(--border-mid);
 }
 
 .pill.active{
   background: var(--navy);
+  border-color: var(--navy);
   color: #fff;
 }
 
-/* ===== NEWS LIST ===== */
+/* ===== POSTS CARD ===== */
+
+.newsPostsCard{
+  margin-bottom: 18px;
+}
+
+.cardHead{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 1.25rem 1.5rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.cardTitle{
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--navy);
+  line-height: 1.25;
+  margin: 0;
+}
+
+.cardSub{
+  margin: 0;
+  font-size: .875rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
 
 .newsList{
   padding: 1rem 1.5rem 1.5rem;
   display: grid;
-  gap: 14px;
+  gap: 12px;
 }
 
 .newsItem{
@@ -71,36 +143,31 @@
 .newsTop{
   display: flex;
   justify-content: space-between;
+  align-items: start;
   gap: 10px;
 }
 
 .newsTitle{
+  margin: 0;
   font-family: var(--font-serif);
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 600;
   color: var(--navy);
+  line-height: 1.3;
 }
 
 .newsMeta{
-  margin-top: 6px;
+  margin-top: 8px;
   font-size: .85rem;
   color: var(--text-muted);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
 }
 
-.newsBody{
-  margin-top: 6px;
-  color: var(--text-muted);
-  line-height: 1.6;
-}
-
-/* ===== TAG ===== */
-
-.tag{
-  background: var(--navy-light);
-  color: var(--navy);
-  font-size: .75rem;
-  padding: 4px 8px;
-  border-radius: 999px;
+.newsMetaSep{
+  opacity: .6;
 }
 
 .newsDept{
@@ -114,4 +181,51 @@
   font-size: .75rem;
   font-weight: 600;
   line-height: 1.2;
+}
+
+.newsBody{
+  margin-top: 8px;
+  color: var(--text-muted);
+  line-height: 1.65;
+  font-size: .9375rem;
+}
+
+.tag{
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--gold-light);
+  color: #7a5a00;
+  font-size: .75rem;
+  font-weight: 700;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.newsEmpty{
+  padding: 1rem 1.5rem 1.5rem;
+  color: var(--text-muted);
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 700px){
+  .newsToolsCard{
+    padding: 1rem 1.25rem;
+  }
+
+  .cardHead{
+    padding: 1rem 1.25rem .875rem;
+  }
+
+  .newsList{
+    padding: .875rem 1.25rem 1.25rem;
+  }
+
+  .newsTop{
+    flex-direction: column;
+    align-items: stretch;
+  }
 }
