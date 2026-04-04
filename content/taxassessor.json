@@ -23,7 +23,7 @@
     "items": [
       {
         "enabled": true,
-        "label": "Property Search",
+        "label": "Property Search *",
         "href": "https://qpublic.schneidercorp.com/Application.aspx?App=HartCountyGA&Layer=Parcels&PageType=Search",
         "variant": "primary",
         "newTab": true
@@ -64,7 +64,7 @@
         "newTab": false
       }
     ],
-    "footerText": "Links to external websites are provided for convenience and do not constitute endorsement by Hart County."
+    "footerText": "* QPublic is a third party website and is not to be used for legal purposes."
   },
   "miscCards": [
     {
