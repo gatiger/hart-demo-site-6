@@ -1,0 +1,215 @@
+/* ============================================================
+   taxforms.css — Hart County Tax Forms
+   Page-specific styles only.
+   ============================================================ */
+
+.taxFormsPage{
+  display: grid;
+  gap: 18px;
+  padding-bottom: 3rem;
+}
+
+/* ===== INTRO CARD ===== */
+
+.tfIntroCard{
+  padding: 2rem 2rem 1.625rem;
+  background: linear-gradient(
+    180deg,
+    var(--navy-mid),
+    var(--navy)
+  );
+  color: #fff;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 10px 28px rgba(0,0,0,.25);
+}
+
+.tfIntroInner{
+  max-width: 760px;
+}
+
+.tfIntroTitle{
+  margin: 0 0 6px;
+  font-family: var(--font-serif);
+  font-size: 1.625rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.tfIntroText{
+  margin: 0;
+  font-size: .95rem;
+  line-height: 1.65;
+  color: rgba(255,255,255,.9);
+}
+
+/* ===== SHARED CARD HEAD ===== */
+
+.cardHead{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 1.25rem 1.5rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.cardTitle{
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--navy);
+}
+
+.cardSub{
+  margin: 0;
+  font-size: .875rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* ===== BODY ===== */
+
+.tfBody{
+  padding: 1rem 1.5rem 1.5rem;
+}
+
+.tfCategories{
+  display: grid;
+  gap: 12px;
+}
+
+/* ===== CATEGORY ===== */
+
+.tfCategory{
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--surface-alt);
+  overflow: hidden;
+}
+
+.tfCategoryToggle{
+  width: 100%;
+  border: 0;
+  background: transparent;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.tfCategoryToggle:hover{
+  background: var(--navy-light);
+}
+
+.tfCategoryTitle{
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--navy);
+}
+
+.tfCategoryMeta{
+  margin-top: 4px;
+  font-size: .875rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.tfChevron{
+  flex: 0 0 auto;
+  font-size: 1rem;
+  color: var(--text-muted);
+  transition: transform .15s ease;
+}
+
+.tfCategory.is-open .tfChevron{
+  transform: rotate(180deg);
+}
+
+.tfCategoryPanel{
+  border-top: 1px solid var(--border);
+  padding: 0;
+}
+
+.tfFormsList{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tfFormItem + .tfFormItem{
+  border-top: 1px solid rgba(26,46,74,.08);
+}
+
+.tfFormLink{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.tfFormLink:hover{
+  background: rgba(255,255,255,.55);
+  text-decoration: none;
+}
+
+.tfFormText{
+  min-width: 0;
+}
+
+.tfFormName{
+  display: block;
+  font-weight: 600;
+  color: var(--navy);
+  line-height: 1.4;
+}
+
+.tfFormDesc{
+  display: block;
+  margin-top: 3px;
+  font-size: .875rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.tfExternal{
+  flex: 0 0 auto;
+  font-size: .9rem;
+  color: var(--text-muted);
+  line-height: 1;
+}
+
+.tfEmpty{
+  padding: 14px 16px;
+  color: var(--text-muted);
+  font-size: .9375rem;
+  line-height: 1.55;
+}
+
+@media (max-width: 700px){
+  .tfIntroCard{
+    padding: 1.5rem 1.25rem 1.25rem;
+  }
+
+  .cardHead{
+    padding: 1rem 1.25rem .875rem;
+  }
+
+  .tfBody{
+    padding: .875rem 1.25rem 1.25rem;
+  }
+
+  .tfCategoryToggle,
+  .tfFormLink{
+    padding: 12px 14px;
+  }
+}
