@@ -88,23 +88,44 @@ function renderLinks(officeLinks){
     ? officeLinks.items.filter(item => item && item.enabled !== false)
     : [];
 
+  const footerText = safeText(officeLinks.footerText);
+
   if(!links.length){
     mount.innerHTML = `<div class="taEmpty">No office links are available right now.</div>`;
-    return;
+  } else {
+    mount.innerHTML = links.map(item => {
+      const label = safeText(item.label);
+      const href = safeText(item.href);
+      const variant = item.variant === "primary" ? "btn primary" : "btn";
+      const isExternal = /^https?:\/\//i.test(href);
+      const newTab = item.newTab || isExternal;
+      const target = newTab ? ` target="_blank" rel="noopener"` : "";
+      const externalIcon = isExternal
+        ? `<span class="taExternalIcon" aria-hidden="true">↗</span>`
+        : "";
+
+      if(!href){
+        return `<button class="${variant}" type="button" disabled aria-disabled="true">${escapeHtml(label)}</button>`;
+      }
+
+      return `
+        <a class="${variant}" href="${escapeAttr(href)}"${target}>
+          <span>${escapeHtml(label)}</span>${externalIcon}
+        </a>
+      `;
+    }).join("");
   }
 
-  mount.innerHTML = links.map(item => {
-    const label = safeText(item.label);
-    const href = safeText(item.href);
-    const variant = item.variant === "primary" ? "btn primary" : "btn";
-    const newTab = item.newTab ? ` target="_blank" rel="noopener"` : "";
+  const existingFooter = document.querySelector(".taLinksFooter");
+  if(existingFooter) existingFooter.remove();
 
-    if(!href){
-      return `<button class="${variant}" type="button" disabled aria-disabled="true">${escapeHtml(label)}</button>`;
-    }
-
-    return `<a class="${variant}" href="${escapeAttr(href)}"${newTab}>${escapeHtml(label)}</a>`;
-  }).join("");
+  if(footerText){
+    mount.insertAdjacentHTML("afterend", `
+      <div class="taLinksFooter">
+        ${escapeHtml(footerText)}
+      </div>
+    `);
+  }
 }
 
 function renderMiscCards(cards){

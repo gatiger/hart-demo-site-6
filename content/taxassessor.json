@@ -4,10 +4,10 @@
   },
   "chiefAppraiser": {
     "subtitle": "Office leadership and contact information.",
-    "name": "Sahne Hix",
+    "name": "Jane Doe",
     "role": "Chief Appraiser",
-    "phone": "(706) 376-3997",
-    "email": "shix@hartcountyga.gov",
+    "phone": "(706) 555-0101",
+    "email": "jdoe@hartcountyga.gov",
     "officeHours": "Monday–Friday, 8:30 AM – 5:00 PM",
     "photo": {
       "src": "/assets/taxassessor/chief-appraiser.jpg",
@@ -23,7 +23,7 @@
     "items": [
       {
         "enabled": true,
-        "label": "Property Search *",
+        "label": "Property Search",
         "href": "https://qpublic.schneidercorp.com/Application.aspx?App=HartCountyGA&Layer=Parcels&PageType=Search",
         "variant": "primary",
         "newTab": true
@@ -63,7 +63,8 @@
         "variant": "default",
         "newTab": false
       }
-    ]
+    ],
+    "footerText": "Links to external websites are provided for convenience and do not constitute endorsement by Hart County."
   },
   "miscCards": [
     {

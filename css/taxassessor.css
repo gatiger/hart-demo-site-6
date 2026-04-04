@@ -158,7 +158,7 @@
 /* ===== LINKS CARD ===== */
 
 .taLinksGrid{
-  padding: 1rem 1.5rem 1.5rem;
+  padding: 1rem 1.5rem 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
@@ -166,6 +166,26 @@
 
 .taLinksGrid .btn{
   width: 100%;
+}
+
+.taLinksGrid .btn,
+.taLinksGrid a.btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .375rem;
+}
+
+.taExternalIcon{
+  font-size: .9em;
+  line-height: 1;
+}
+
+.taLinksFooter{
+  padding: 0 1.5rem 1.25rem;
+  font-size: .8rem;
+  color: #b42318;
+  line-height: 1.5;
 }
 
 /* ===== MISC CARDS ===== */
@@ -230,6 +250,10 @@
   .taLinksGrid,
   .taMiscCardBody{
     padding: .875rem 1.25rem 1.25rem;
+  }
+
+  .taLinksFooter{
+    padding: 0 1.25rem 1.125rem;
   }
 
   .taLinksGrid{
