@@ -1,19 +1,238 @@
-/* PAGE TITLE page */
+/* ============================================================
+   taxassessor.css — Hart County Tax Assessor
+   Page-specific styles only.
+   ============================================================ */
 
-.comingSoonCard{
-  margin-top: 18px;
-  min-height: 260px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 32px 24px;
+.taxAssessorPage{
+  display: grid;
+  gap: 18px;
+  padding-bottom: 3rem;
 }
 
-.comingSoonText{
+/* ===== INTRO CARD ===== */
+
+.taIntroCard{
+  margin-bottom: 0;
+  padding: 2rem 2rem 1.625rem;
+  background: linear-gradient(
+    180deg,
+    var(--navy-mid),
+    var(--navy)
+  );
+  color: #fff;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 10px 28px rgba(0,0,0,.25);
+}
+
+.taIntroInner{
+  max-width: 760px;
+}
+
+.taIntroTitle{
+  margin: 0 0 6px;
+  font-family: var(--font-serif);
+  font-size: 1.625rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.taIntroText{
   margin: 0;
-  font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 800;
+  font-size: .95rem;
+  line-height: 1.65;
+  color: rgba(255,255,255,.9);
+}
+
+/* ===== SHARED CARD HEAD ===== */
+
+.cardHead{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 1.25rem 1.5rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.cardTitle{
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--navy);
+}
+
+.cardSub{
+  margin: 0;
+  font-size: .875rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* ===== TOP GRID ===== */
+
+.taTopGrid{
+  display: grid;
+  grid-template-columns: minmax(320px, 1fr) minmax(320px, 1fr);
+  gap: 18px;
+  align-items: start;
+}
+
+/* ===== CHIEF CARD ===== */
+
+.taChiefInner{
+  padding: 1rem 1.5rem 1.5rem;
+  display: grid;
+  gap: 14px;
+}
+
+.taChiefPhotoWrap{
+  display: flex;
+  justify-content: center;
+}
+
+.taChiefPhoto{
+  width: min(100%, 320px);
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: var(--surface-alt);
+}
+
+.taChiefPhoto img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.taChiefBody{
+  display: grid;
+  gap: 8px;
+  text-align: center;
+}
+
+.taChiefName{
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--navy);
+}
+
+.taChiefRole{
+  margin: 0;
+  color: var(--text-muted);
+  font-size: .9375rem;
+  line-height: 1.5;
+}
+
+.taChiefMeta{
+  display: grid;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.taChiefMetaRow{
+  color: var(--text-muted);
+  line-height: 1.55;
+  font-size: .9375rem;
+}
+
+.taChiefMetaRow a{
+  color: var(--navy-mid);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.taChiefInfo{
+  margin-top: 6px;
   color: var(--text);
-  letter-spacing: .02em;
+  line-height: 1.65;
+  font-size: .9375rem;
+}
+
+/* ===== LINKS CARD ===== */
+
+.taLinksGrid{
+  padding: 1rem 1.5rem 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.taLinksGrid .btn{
+  width: 100%;
+}
+
+/* ===== MISC CARDS ===== */
+
+.taMiscGrid{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.taMiscCardBody{
+  padding: 1rem 1.5rem 1.5rem;
+}
+
+.taMiscText{
+  color: var(--text);
+  line-height: 1.65;
+  font-size: .9375rem;
+}
+
+.taMiscText p{
+  margin: 0 0 14px;
+}
+
+.taMiscText p:last-child{
+  margin-bottom: 0;
+}
+
+.taInfoList{
+  margin: 0;
+  padding-left: 1.25rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  display: grid;
+  gap: 8px;
+}
+
+.taEmpty{
+  padding: 1rem 1.5rem 1.5rem;
+  color: var(--text-muted);
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 980px){
+  .taTopGrid,
+  .taMiscGrid{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px){
+  .taIntroCard{
+    padding: 1.5rem 1.25rem 1.25rem;
+  }
+
+  .cardHead{
+    padding: 1rem 1.25rem .875rem;
+  }
+
+  .taChiefInner,
+  .taLinksGrid,
+  .taMiscCardBody{
+    padding: .875rem 1.25rem 1.25rem;
+  }
+
+  .taLinksGrid{
+    grid-template-columns: 1fr;
+  }
 }

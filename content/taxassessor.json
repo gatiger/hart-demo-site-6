@@ -1,0 +1,91 @@
+{
+  "intro": {
+    "text": "The Hart County Tax Assessor’s Office is responsible for identifying, listing, and appraising taxable property within the county in accordance with Georgia law."
+  },
+  "chiefAppraiser": {
+    "subtitle": "Office leadership and contact information.",
+    "name": "Jane Doe",
+    "role": "Chief Appraiser",
+    "phone": "(706) 555-0101",
+    "email": "jdoe@hartcountyga.gov",
+    "officeHours": "Monday–Friday, 8:30 AM – 5:00 PM",
+    "photo": {
+      "src": "/assets/taxassessor/chief-appraiser.jpg",
+      "alt": "Portrait of the Chief Appraiser"
+    },
+    "text": [
+      "The Chief Appraiser oversees appraisal operations, property records, and assessment processes for the Hart County Tax Assessor’s Office.",
+      "Please contact the office for assistance with property records, assessment notices, exemptions, and general questions related to the appraisal process."
+    ]
+  },
+  "officeLinks": {
+    "subtitle": "Common forms, resources, and related office links.",
+    "items": [
+      {
+        "enabled": true,
+        "label": "Property Search",
+        "href": "https://qpublic.schneidercorp.com/",
+        "variant": "primary",
+        "newTab": true
+      },
+      {
+        "enabled": true,
+        "label": "Forms",
+        "href": "/forms.html",
+        "variant": "default",
+        "newTab": false
+      },
+      {
+        "enabled": true,
+        "label": "FAQ",
+        "href": "",
+        "variant": "default",
+        "newTab": false
+      },
+      {
+        "enabled": true,
+        "label": "Exemptions",
+        "href": "",
+        "variant": "default",
+        "newTab": false
+      },
+      {
+        "enabled": true,
+        "label": "Appeals Information",
+        "href": "",
+        "variant": "default",
+        "newTab": false
+      },
+      {
+        "enabled": true,
+        "label": "Contact Directory",
+        "href": "/directory.html",
+        "variant": "default",
+        "newTab": false
+      }
+    ]
+  },
+  "miscCards": [
+    {
+      "enabled": true,
+      "title": "Services",
+      "subtitle": "Common services provided by the office.",
+      "items": [
+        "Property record maintenance",
+        "Assessment notices",
+        "Exemption information",
+        "Ownership and parcel information",
+        "General appraisal assistance"
+      ]
+    },
+    {
+      "enabled": true,
+      "title": "Important Information",
+      "subtitle": "Helpful information for property owners.",
+      "text": [
+        "The Tax Assessor’s Office does not set tax rates and does not collect property taxes.",
+        "Questions about tax bills or payments should be directed to the appropriate billing or tax collection office."
+      ]
+    }
+  ]
+}

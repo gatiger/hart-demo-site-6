@@ -5,18 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tax Assessor | Hart County</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Quintessential&family=Felipa&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
 
   <link rel="stylesheet" href="/css/base.css" />
   <link rel="stylesheet" href="/css/taxassessor.css" />
 
-  <script defer src="js/alerts.js"></script>
-  <script defer src="js/lang.js"></script>
-  <script defer src="js/app.js"></script>
-  <script defer src="js/taxassessor.js"></script>
+  <script defer src="/js/alerts.js"></script>
+  <script defer src="/js/app.js"></script>
+  <script defer src="/js/taxassessor.js"></script>
 </head>
 
 <body>
@@ -26,7 +22,7 @@
     <div class="navRow">
       <a class="brand brandLink" href="index.html">
         <div class="seal">
-          <img src="./assets/hart_seal.svg" alt="Hart County, Georgia official seal">
+          <img src="/assets/hart_seal.svg" alt="Hart County, Georgia official seal">
         </div>
         <div class="brandText">
           <div class="kicker">Hart County</div>
@@ -35,21 +31,14 @@
       </a>
 
       <nav class="topNav" aria-label="Primary">
-        <a href="directory.html" data-i18n="directory">Directory</a>
-        <a href="commissioners.html" data-i18n="commissioners">Commissioners</a>
-        <a href="employment.html" data-i18n="employment">Employment</a>
-        <a href="about.html" data-i18n="about">About</a>
-        <a href="paynes_creek.html" data-i18n="paynesCreek">Paynes Creek</a>
-        <a href="news.html" data-i18n="news">News</a>
-        <a href="meetings.html" data-i18n="meetings">Meetings</a>
-        <a href="accessibility.html" data-i18n="accessibility">Accessibility</a>
-
-        <label class="sr-only" for="langSelectDesktop">Language</label>
-        <select id="langSelectDesktop" class="langSelect fieldSlim">
-          <option value="en">English</option>
-          <option value="es">Español</option>
-          <option value="vi">Tiếng Việt</option>
-        </select>
+        <a href="directory.html">Directory</a>
+        <a href="commissioners.html">Commissioners</a>
+        <a href="employment.html">Employment</a>
+        <a href="about.html">About</a>
+        <a href="paynes_creek.html">Paynes Creek</a>
+        <a href="news.html">News</a>
+        <a href="meetings.html">Meetings</a>
+        <a href="accessibility.html">Accessibility</a>
       </nav>
 
       <button class="btn menuBtn" type="button"
@@ -70,30 +59,55 @@
     </div>
 
     <nav class="menuNav" aria-label="Primary mobile">
-      <a href="directory.html" data-i18n="directory">Directory</a>
-      <a href="commissioners.html" data-i18n="commissioners">Commissioners</a>
-      <a href="employment.html" data-i18n="employment">Employment</a>
-      <a href="about.html" data-i18n="about">About</a>
-      <a href="paynes_creek.html" data-i18n="paynesCreek">Paynes Creek</a>
+      <a href="index.html">Home</a>
+      <a href="directory.html">Directory</a>
+      <a href="commissioners.html">Commissioners</a>
+      <a href="employment.html">Employment</a>
+      <a href="about.html">About Hart County</a>
+      <a href="paynes_creek.html">Paynes Creek Campground</a>
       <hr>
-      <a href="news.html" data-i18n="news">News</a>
-      <a href="meetings.html" data-i18n="meetings">Meetings</a>
-      <a href="accessibility.html" data-i18n="accessibility">Accessibility</a>
-
-      <div class="langBlock">
-        <label for="langSelectMobile" class="menuLangLabel" data-i18n="language">Language</label>
-        <select id="langSelectMobile" class="langSelect fieldSlim">
-          <option value="en">English</option>
-          <option value="es">Español</option>
-          <option value="vi">Tiếng Việt</option>
-        </select>
-      </div>
+      <a href="news.html">News</a>
+      <a href="meetings.html">Meetings</a>
+      <a href="accessibility.html">Accessibility</a>
     </nav>
   </aside>
 
-  <main id="main" class="container" tabindex="-1">
-    <section class="card comingSoonCard" aria-label="Page status">
-      <p class="comingSoonText">Page coming soon....</p>
+  <main id="main" class="container taxAssessorPage" tabindex="-1">
+    <div id="alertHolder"></div>
+
+    <section class="card taIntroCard" aria-labelledby="taIntroTitle">
+      <div class="taIntroInner">
+        <h1 id="taIntroTitle" class="taIntroTitle">Tax Assessor</h1>
+        <p id="taIntroText" class="taIntroText">Loading…</p>
+      </div>
+    </section>
+
+    <section class="taTopGrid" aria-label="Tax Assessor overview">
+      <section class="card taChiefCard" aria-labelledby="taChiefTitle">
+        <div class="cardHead">
+          <h2 id="taChiefTitle" class="cardTitle">Chief Appraiser</h2>
+          <p id="taChiefSub" class="cardSub"></p>
+        </div>
+
+        <div class="taChiefInner" id="taChiefCardBody">
+          <!-- injected -->
+        </div>
+      </section>
+
+      <section class="card taLinksCard" aria-labelledby="taLinksTitle">
+        <div class="cardHead">
+          <h2 id="taLinksTitle" class="cardTitle">Office Links</h2>
+          <p id="taLinksSub" class="cardSub"></p>
+        </div>
+
+        <div class="taLinksGrid" id="taLinksGrid">
+          <!-- injected -->
+        </div>
+      </section>
+    </section>
+
+    <section class="taMiscGrid" id="taMiscGrid" aria-label="Additional office information">
+      <!-- misc cards injected -->
     </section>
 
     <footer class="footer">
