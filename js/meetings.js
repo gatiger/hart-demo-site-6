@@ -15,7 +15,39 @@ function escapeHtml(s) {
     .replaceAll("&", "&amp;")
     .replaceAll("<", "&lt;")
     .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;");
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#39;");
+}
+
+function safe(v){
+  return (v === undefined || v === null) ? "" : String(v).trim();
+}
+
+function formatMeetingDate(v){
+  const d = new Date(safe(v));
+  if (Number.isNaN(d.getTime())) return safe(v);
+  return d.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric"
+  });
+}
+
+function formatMeetingTime(v){
+  const s = safe(v);
+  if (!s) return "";
+
+  const match = s.match(/^(\d{1,2}):(\d{2})$/);
+  if (!match) return s;
+
+  let hour = Number(match[1]);
+  const minute = match[2];
+  const suffix = hour >= 12 ? "PM" : "AM";
+
+  hour = hour % 12;
+  if (hour === 0) hour = 12;
+
+  return `${hour}:${minute} ${suffix}`;
 }
 
 function buildMeetingsLegendHtml() {
@@ -87,7 +119,7 @@ function renderMeetingsMiniCalendar(meetings, opts = {}) {
     const last  = new Date(year, month + 1, 0);
     const daysInMonth = last.getDate();
 
-    const monthLabel = first.toLocaleString(undefined, { month: "long", year: "numeric" });
+    const monthLabel = first.toLocaleString("en-US", { month: "long", year: "numeric" });
 
     let offset = first.getDay();
     if (weekStartsOnMonday) offset = (offset + 6) % 7;
@@ -120,7 +152,7 @@ function renderMeetingsMiniCalendar(meetings, opts = {}) {
       const dayMeetings = byDay.get(key) || [];
       const hasMeetings = dayMeetings.length > 0;
 
-      const prettyDate = d.toLocaleDateString(undefined, { weekday: "long", month: "long", day: "numeric" });
+      const prettyDate = d.toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric" });
 
       if (hasMeetings) {
         const typesForDay = [...new Set(dayMeetings.map(m => (m?.type || "default")))];
@@ -170,7 +202,6 @@ function renderMeetingsMini(items){
   const mount = document.getElementById("meetingsMini");
   if(!mount) return;
 
-  const safe = (v) => (v === undefined || v === null) ? "" : String(v).trim();
   const parseDate = (v) => {
     const d = new Date(safe(v));
     return Number.isNaN(d.getTime()) ? null : d;
@@ -192,20 +223,20 @@ function renderMeetingsMini(items){
     <div class="list">
       ${upcoming.map(m => {
         const title = safe(m.title || "Meeting");
-        const date  = safe(m.date || "");
-        const time  = safe(m.time || "");
+        const date  = formatMeetingDate(m.date);
+        const time  = formatMeetingTime(m.time);
         const agenda = safe(m.agenda || m.agenda_url || "");
         const packet = safe(m.packet || m.packet_url || "");
         const watch  = safe(m.watch || m.stream || m.video_url || "");
         return `
           <article class="item">
             <div class="itemTop">
-              <h3 class="itemTitle">${title}</h3>
+              <h3 class="itemTitle">${escapeHtml(title)}</h3>
             </div>
             <div class="meta">
-              ${date ? `<span>${date}</span>` : ``}
+              ${date ? `<span>${escapeHtml(date)}</span>` : ``}
               ${(date && time) ? `<span>•</span>` : ``}
-              ${time ? `<span>${time}</span>` : ``}
+              ${time ? `<span>${escapeHtml(time)}</span>` : ``}
             </div>
             <div class="meta" style="margin-top:8px">
               ${agenda ? `<a class="link" href="${agenda}">Agenda</a>` : ``}
@@ -226,7 +257,6 @@ function renderMeetingsPage(items){
   const pastEl = document.getElementById("pastMeetings");
   if(!upcomingEl && !pastEl) return;
 
-  const safe = (v) => (v === undefined || v === null) ? "" : String(v).trim();
   const parseDate = (v) => {
     const s = safe(v);
     const d = new Date(s);
@@ -253,8 +283,8 @@ function renderMeetingsPage(items){
     <div class="list">
       ${list.map(m => {
         const title = safe(m.title || "Meeting");
-        const date  = safe(m.date || "");
-        const time  = safe(m.time || "");
+        const date  = formatMeetingDate(m.date);
+        const time  = formatMeetingTime(m.time);
         const loc   = safe(m.location || "");
 
         const agenda = safe(m.agenda_url || m.agenda || "");
@@ -262,11 +292,13 @@ function renderMeetingsPage(items){
         const minutes = safe(m.minutes_url || m.minutes || "");
         const stream = safe(m.stream_url || m.watch || m.video_url || "");
 
+        const typeMeta = MEETING_TYPE_META[safe(m.type)] || MEETING_TYPE_META.default;
+
         return `
           <article class="item" aria-label="${escapeHtml(title)}">
             <div class="itemTop">
               <h3 class="itemTitle">${escapeHtml(title)}</h3>
-              ${m.type ? `<span class="tag">${escapeHtml(m.type)}</span>` : ``}
+              ${m.type ? `<span class="tag">${escapeHtml(typeMeta.label)}</span>` : ``}
             </div>
 
             ${(date || time || loc) ? `
@@ -299,17 +331,22 @@ function renderMeetingsPage(items){
   if(upcomingEl){
     upcomingEl.innerHTML = upcoming.length
       ? renderList(upcoming)
-      : `<p class="sub">No upcoming meetings are posted yet.</p>`;
+      : `<div class="meetingsListWrap"><p class="sub">No upcoming meetings are posted yet.</p></div>`;
   }
 
   if(pastEl){
     pastEl.innerHTML = past.length
       ? renderList(past)
-      : `<p class="sub">No past meetings are posted yet.</p>`;
+      : `<div class="meetingsListWrap"><p class="sub">No past meetings are posted yet.</p></div>`;
   }
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
+  const alerts = await loadJSON("./content/alerts.json");
+  if (typeof window.renderAlert === "function") {
+    window.renderAlert(alerts || {});
+  }
+
   const meetings = await loadJSON("./content/meetings.json");
   const items = meetings?.items || meetings || [];
 

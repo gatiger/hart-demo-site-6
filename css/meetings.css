@@ -1,7 +1,157 @@
-/* Meetings page + homepage mini calendar */
+/* ============================================================
+   meetings.css — Meetings page + homepage mini calendar
+   Page-specific styles only.
+   ============================================================ */
+
+.meetingsPage{
+  display: grid;
+  gap: 18px;
+  padding-bottom: 3rem;
+}
+
+/* ===== INTRO CARD ===== */
+
+.meetingsIntroCard{
+  margin-bottom: 0;
+  padding: 2rem 2rem 1.625rem;
+  background: linear-gradient(
+    180deg,
+    var(--navy-mid),
+    var(--navy)
+  );
+  color: #fff;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 10px 28px rgba(0,0,0,.25);
+}
+
+.meetingsIntroInner{
+  max-width: 760px;
+}
+
+.meetingsIntroTitle{
+  margin: 0 0 6px;
+  font-family: var(--font-serif);
+  font-size: 1.625rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.meetingsIntroText{
+  margin: 0;
+  font-size: .95rem;
+  line-height: 1.65;
+  color: rgba(255,255,255,.9);
+}
+
+/* ===== SHARED CARD HEAD ===== */
+
+.cardHead {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 1.25rem 1.5rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.cardTitle {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--navy);
+  margin: 0;
+}
+
+.cardSub {
+  margin: 0;
+  font-size: .875rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* ===== PAGE LAYOUT ===== */
+
+.meetingsCalendarBody{
+  padding: 1rem 1.5rem 1.5rem;
+}
+
+.meetingsGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.meetingsListWrap{
+  padding: 1rem 1.5rem 1.5rem;
+}
+
+.meetingsListWrap .list{
+  display: grid;
+  gap: 12px;
+}
+
+.meetingsListWrap .item{
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  background: var(--surface-alt);
+}
+
+.meetingsListWrap .itemTop{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: start;
+}
+
+.meetingsListWrap .itemTitle{
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--navy);
+  margin: 0;
+}
+
+.meetingsListWrap .meta{
+  margin-top: 8px;
+  font-size: .85rem;
+  color: var(--text-muted);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+}
+
+.meetingsListWrap .meta span{
+  opacity: 1;
+}
+
+.meetingsListWrap .link{
+  color: var(--navy-mid);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.meetingsListWrap .tag{
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--navy-light);
+  color: var(--navy);
+  font-size: .75rem;
+  font-weight: 700;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+/* ===== MINI CALENDAR ===== */
 
 .miniCal {
-  margin-top: 10px;
+  margin-top: 0;
 }
 
 .miniCalHead {
@@ -153,6 +303,34 @@
 .mtg-planning      { background: rgba(34,197,94,.95); }
 .mtg-zoning        { background: rgba(168,85,247,.95); }
 .mtg-default       { background: rgba(140,152,164,.95); }
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 980px){
+  .meetingsGrid{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px){
+  .meetingsIntroCard{
+    padding: 1.5rem 1.25rem 1.25rem;
+  }
+
+  .cardHead{
+    padding: 1rem 1.25rem .875rem;
+  }
+
+  .meetingsCalendarBody,
+  .meetingsListWrap{
+    padding: .875rem 1.25rem 1.25rem;
+  }
+
+  .meetingsListWrap .itemTop{
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
 
 @media (max-width: 640px) {
   .miniCalHead {
