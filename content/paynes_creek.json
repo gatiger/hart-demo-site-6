@@ -1,0 +1,103 @@
+{
+  "intro": {
+    "text": "Enjoy lakeside camping, outdoor recreation, and convenient access to Lake Hartwell at Paynes Creek Campground."
+  },
+  "quickInfo": {
+    "subtitle": "Key information for visitors.",
+    "items": [
+      {
+        "title": "Office Hours",
+        "value": "8:30 AM – 5:00 PM"
+      },
+      {
+        "title": "Season",
+        "value": "Year-round"
+      },
+      {
+        "title": "Phone",
+        "value": "(706) 555-0301",
+        "type": "phone"
+      }
+    ]
+  },
+  "gallery": {
+    "subtitle": "Photos of campsites, lake access, and campground amenities.",
+    "images": [
+      {
+        "enabled": true,
+        "src": "/assets/paynes_creek/photo-1.webp",
+        "alt": "Lakeside campsites at Paynes Creek Campground",
+        "caption": "Lakeside campsites at Paynes Creek Campground."
+      },
+      {
+        "enabled": true,
+        "src": "/assets/paynes_creek/photo-2.webp",
+        "alt": "Picnic area and shoreline at Paynes Creek Campground",
+        "caption": "Picnic and recreation areas near the shoreline."
+      }
+    ]
+  },
+  "about": {
+    "title": "About Paynes Creek Campground",
+    "text": [
+      "Paynes Creek Campground offers visitors a scenic place to camp, relax, and enjoy recreation near Lake Hartwell.",
+      "The campground provides access to the outdoors for day visitors and overnight guests while supporting family-friendly use of the area."
+    ]
+  },
+  "amenities": {
+    "subtitle": "Available amenities and features.",
+    "items": [
+      "Campsites for RV and tent camping",
+      "Restrooms and showers",
+      "Picnic areas",
+      "Boat access and lake recreation",
+      "Trash disposal"
+    ]
+  },
+  "fees": {
+    "subtitle": "Fees, hours, and reservation information.",
+    "items": [
+      "Nightly site fee: $25–$40",
+      "Day-use fee: $5",
+      "Check-in: 2:00 PM",
+      "Check-out: 11:00 AM"
+    ],
+    "buttons": [
+      {
+        "label": "Reserve Online",
+        "href": "",
+        "variant": "primary",
+        "newTab": false,
+        "enabled": true
+      },
+      {
+        "label": "Download Brochure",
+        "href": "",
+        "variant": "default",
+        "newTab": false,
+        "enabled": true
+      }
+    ]
+  },
+  "rules": {
+    "subtitle": "Please review campground rules and safety information before visiting.",
+    "items": [
+      {
+        "title": "Quiet Hours",
+        "text": "Quiet hours are observed from 10:00 PM to 7:00 AM."
+      },
+      {
+        "title": "Pets",
+        "text": "Pets must be leashed and owners are responsible for cleanup."
+      },
+      {
+        "title": "Fires",
+        "text": "Fires are allowed in designated areas only and must follow any burn advisories."
+      },
+      {
+        "title": "Emergency",
+        "text": "Call 911 for emergencies. Contact the campground office for non-emergency questions."
+      }
+    ]
+  }
+}

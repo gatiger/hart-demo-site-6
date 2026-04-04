@@ -1,0 +1,320 @@
+/* ============================================================
+   paynes_creek.css — Hart County Paynes Creek Campground
+   Page-specific styles only.
+   ============================================================ */
+
+.paynesPage{
+  display: grid;
+  gap: 18px;
+  padding-bottom: 3rem;
+}
+
+/* ===== INTRO CARD ===== */
+
+.paynesIntroCard{
+  margin-bottom: 0;
+  padding: 2rem 2rem 1.625rem;
+  background: linear-gradient(
+    180deg,
+    var(--navy-mid),
+    var(--navy)
+  );
+  color: #fff;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 10px 28px rgba(0,0,0,.25);
+}
+
+.paynesIntroInner{
+  max-width: 760px;
+}
+
+.paynesIntroTitle{
+  margin: 0 0 6px;
+  font-family: var(--font-serif);
+  font-size: 1.625rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.paynesIntroText{
+  margin: 0;
+  font-size: .95rem;
+  line-height: 1.65;
+  color: rgba(255,255,255,.9);
+}
+
+/* ===== SHARED CARD HEAD ===== */
+
+.cardHead{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 1.25rem 1.5rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.cardTitle{
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--navy);
+  line-height: 1.25;
+  margin: 0;
+}
+
+.cardSub{
+  margin: 0;
+  font-size: .875rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* ===== HERO / TOP GRID ===== */
+
+.paynesHeroGrid{
+  display: grid;
+  grid-template-columns: minmax(280px, 360px) minmax(0, 1fr);
+  gap: 18px;
+  align-items: stretch;
+}
+
+.paynesQuickInfoList{
+  padding: 1rem 1.5rem 1.5rem;
+  display: grid;
+  gap: 12px;
+}
+
+.paynesQuickInfoItem{
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 12px;
+  background: var(--surface-alt);
+}
+
+.paynesQuickInfoTitle{
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--navy);
+  line-height: 1.3;
+  margin: 0 0 4px;
+}
+
+.paynesQuickInfoValue{
+  color: var(--text-muted);
+  line-height: 1.6;
+  font-size: .9375rem;
+}
+
+.paynesPhoneText,
+.paynesPhoneLink{
+  color: var(--navy-mid);
+}
+
+.paynesPhoneLink{
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* ===== CAROUSEL ===== */
+
+.paynesCarouselCard{
+  overflow: hidden;
+}
+
+.paynesCarouselWrap{
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  padding: 1rem 1.5rem;
+}
+
+.paynesCarouselViewport{
+  min-width: 0;
+  overflow: hidden;
+}
+
+.paynesCarouselStage{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 280px;
+  text-align: center;
+}
+
+.paynesCarouselFigure{
+  margin: 0;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 100%;
+}
+
+.paynesCarouselImage{
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 420px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.paynesCarouselCaption{
+  color: var(--text-muted);
+  font-size: .9375rem;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 70ch;
+}
+
+.paynesCarouselMeta{
+  padding: 0 1.5rem 1.25rem;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: .875rem;
+}
+
+.paynesCarouselEmpty{
+  padding: 1rem 1.5rem 1.5rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+/* ===== ABOUT ===== */
+
+.paynesAboutCard{
+  padding: 18px 16px;
+}
+
+.paynesAboutInner{
+  max-width: 72ch;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.paynesAboutText{
+  margin-top: 10px;
+  color: var(--text);
+  line-height: 1.65;
+}
+
+.paynesAboutText p{
+  margin: 0 0 14px;
+}
+
+.paynesAboutText p:last-child{
+  margin-bottom: 0;
+}
+
+/* ===== SPLIT SECTION ===== */
+
+.paynesSplit{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.paynesInfoList{
+  margin: 0;
+  padding: 1rem 1.5rem 1.5rem 2.75rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  display: grid;
+  gap: 8px;
+}
+
+.paynesButtonRow{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0 1.5rem 1.5rem;
+}
+
+/* ===== RULES ===== */
+
+.paynesRulesList{
+  padding: 1rem 1.5rem 1.5rem;
+  display: grid;
+  gap: 12px;
+}
+
+.paynesRuleItem{
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  background: var(--surface-alt);
+}
+
+.paynesRuleTitle{
+  margin: 0 0 4px;
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--navy);
+  line-height: 1.3;
+}
+
+.paynesRuleText{
+  margin: 0;
+  color: var(--text-muted);
+  line-height: 1.6;
+  font-size: .9375rem;
+}
+
+.paynesEmpty{
+  padding: 1rem 1.5rem 1.5rem;
+  color: var(--text-muted);
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 950px){
+  .paynesHeroGrid,
+  .paynesSplit{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px){
+  .paynesIntroCard{
+    padding: 1.5rem 1.25rem 1.25rem;
+  }
+
+  .cardHead{
+    padding: 1rem 1.25rem .875rem;
+  }
+
+  .paynesQuickInfoList,
+  .paynesRulesList{
+    padding: .875rem 1.25rem 1.25rem;
+  }
+
+  .paynesInfoList{
+    padding: .875rem 1.25rem 1.25rem 2.25rem;
+  }
+
+  .paynesButtonRow{
+    padding: 0 1.25rem 1.25rem;
+  }
+
+  .paynesAboutCard{
+    padding: 1rem 1.25rem;
+  }
+
+  .paynesCarouselWrap{
+    grid-template-columns: 1fr;
+    padding: .875rem 1.25rem;
+  }
+
+  .paynesCarouselBtn{
+    justify-self: center;
+  }
+
+  .paynesCarouselMeta{
+    padding: 0 1.25rem 1.125rem;
+  }
+}
