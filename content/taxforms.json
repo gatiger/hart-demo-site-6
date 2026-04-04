@@ -31,6 +31,13 @@
             "description": "A form to appeal the property assessment.",
             "href": "assets/documents/taxforms/PT-311A_Appeal_of_Assessment_Form.pdf",
             "newTab": true
+          },
+          {
+            "enabled": true,
+            "name": "PT-283A Current Use Assessment Form (CUVA)",
+            "description": "A form to apply for current use assessment (CUVA).",
+            "href": "assets/documents/taxforms/PT-283A_Application_for_Current Use_Assessment_of_Bona_Fide_Agricultural_Property.pdf",
+            "newTab": true
           }
         ]
       },
@@ -49,9 +56,23 @@
           },
           {
             "enabled": true,
-            "name": "Freeport Exemption Application",
+            "name": "PT-50F Freeport Exemption Application",
             "description": "Application for qualifying inventory exemption.",
-            "href": "/assets/forms/freeport-exemption.pdf",
+            "href": "assets/documents/taxforms/PT-50PF_Application_for_Freeport_Inventory_Exemption_rev_12-4-17.pdf",
+            "newTab": true
+          },
+          {
+            "enabled": true,
+            "name": "PT-50A Aircraft Personal Property Return",
+            "description": "Annual filing form for aircraft personal property.",
+            "href": "assets/documents/taxforms/PT-50A_Aircraft_Personal_Property_Tax_Return_and_Schedules.pdf",
+            "newTab": true
+          },
+          {
+            "enabled": true,
+            "name": "PT-50M Marine Personal Property Return",
+            "description": "Annual filing form for marine personal property.",
+            "href": "assets/documents/taxforms/PT-50M_Marine_Personal_Property_Tax_Return_and_Schedules.pdf",
             "newTab": true
           }
         ]
