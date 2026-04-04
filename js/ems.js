@@ -69,11 +69,19 @@ function renderStaffCard(person){
   const photoSrc = getPhotoSrc(person);
   const photoAlt = getPhotoAlt(person, name);
 
-  const metaBits = [
-    phone ? `<a href="tel:${escapeAttr(phone)}">${escapeHtml(phone)}</a>` : "",
-    fax ? `<span>Fax: ${escapeHtml(fax)}</span>` : "",
-    email ? `<a href="mailto:${escapeAttr(email)}">${escapeHtml(email)}</a>` : ""
-  ].filter(Boolean).join("");
+  const isMobile = isMobileDevice();
+
+const phoneHtml = phone
+  ? isMobile
+    ? `<a href="tel:${escapeAttr(phone)}">${escapeHtml(phone)}</a>`
+    : `<span>${escapeHtml(phone)}</span>`
+  : "";
+
+const metaBits = [
+  phoneHtml,
+  fax ? `<span>Fax: ${escapeHtml(fax)}</span>` : "",
+  email ? `<a href="mailto:${escapeAttr(email)}">${escapeHtml(email)}</a>` : ""
+].filter(Boolean).join("");
 
   const photoBlock = photoSrc
     ? `
@@ -180,4 +188,12 @@ function escapeHtml(value){
 
 function escapeAttr(value){
   return escapeHtml(value);
+}
+
+function isMobileDevice(){
+  return (
+    ('ontouchstart' in window) ||
+    navigator.maxTouchPoints > 0 ||
+    /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)
+  );
 }

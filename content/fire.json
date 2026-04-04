@@ -11,19 +11,19 @@
     "images": [
       {
         "enabled": true,
-        "src": "/assets/fire/gallery/fire_station.jpg",
+        "src": "/assets/fire/fire_station.jpg",
         "alt": "Hart County fire station",
         "caption": "Hart County Fire Department station."
       },
       {
         "enabled": true,
-        "src": "/assets/fire/gallery/fire_engine.jpg",
+        "src": "/assets/fire/fire_engine.jpg",
         "alt": "Fire engine parked outside",
         "caption": "Department apparatus ready for response."
       },
       {
         "enabled": true,
-        "src": "/assets/fire/gallery/training.jpg",
+        "src": "/assets/fire/training.jpg",
         "alt": "Firefighters during training",
         "caption": "Training and readiness remain a priority."
       }
