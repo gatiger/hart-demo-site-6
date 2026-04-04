@@ -49,19 +49,19 @@ function renderCard(section){
       : [];
 
     return `
-      <section class="tfCategory${index === 0 ? " is-open" : ""}" data-category>
-        <button class="tfCategoryToggle"
-                type="button"
-                aria-expanded="${index === 0 ? "true" : "false"}"
-                aria-controls="${escapeAttr(id)}-panel">
-          <span>
-            <span class="tfCategoryTitle">${escapeHtml(title)}</span>
-            ${desc ? `<span class="tfCategoryMeta">${escapeHtml(desc)}</span>` : ""}
-          </span>
-          <span class="tfChevron" aria-hidden="true">▾</span>
-        </button>
+      <section class="tfCategory" data-category>
+         <button class="tfCategoryToggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="${escapeAttr(id)}-panel">
+            <span>
+                <span class="tfCategoryTitle">${escapeHtml(title)}</span>
+                ${desc ? `<span class="tfCategoryMeta">${escapeHtml(desc)}</span>` : ""}
+            </span>
+            <span class="tfChevron" aria-hidden="true">▾</span>
+         </button>
 
-        <div class="tfCategoryPanel" id="${escapeAttr(id)}-panel"${index === 0 ? "" : " hidden"}>
+        <div class="tfCategoryPanel" id="${escapeAttr(id)}-panel" hidden>
           ${
             forms.length
               ? `
