@@ -15,19 +15,22 @@
             "enabled": true,
             "name": "Homestead Exemption Application",
             "description": "Application for homestead exemption.",
-            "href": "assets/documents/taxforms/LGS-Homestead.pdf"
+            "href": "assets/documents/taxforms/LGS-Homestead.pdf",
+            "newTab": true
           },
           {
             "enabled": true,
             "name": "PT-50R Property Return Form",
             "description": "Return form for real property records.",
-            "href": "assets/documents/taxforms/PT-50R_Taxpayers_Return_of_Real_Property.pdf"
+            "href": "assets/documents/taxforms/PT-50R_Taxpayers_Return_of_Real_Property.pdf",
+            "newTab": true
           },
           {
             "enabled": true,
             "name": "PT-311A Appeal of Assessment",
             "description": "A form to appeal the property assessment.",
-            "href": "assets/documents/taxforms/PT-311A_Appeal_of_Assessment_Form.pdf"
+            "href": "assets/documents/taxforms/PT-311A_Appeal_of_Assessment_Form.pdf",
+            "newTab": true
           }
         ]
       },
@@ -41,13 +44,15 @@
             "enabled": true,
             "name": "PT-50P Business Personal Property Return",
             "description": "Annual filing form for business personal property.",
-            "href": "assets/documents/taxforms/PT-50P_Tangible_Personal_Property_Tax_Return_and_Schedules.pdf"
+            "href": "assets/documents/taxforms/PT-50P_Tangible_Personal_Property_Tax_Return_and_Schedules.pdf",
+            "newTab": true
           },
           {
             "enabled": true,
             "name": "Freeport Exemption Application",
             "description": "Application for qualifying inventory exemption.",
-            "href": "/assets/forms/freeport-exemption.pdf"
+            "href": "/assets/forms/freeport-exemption.pdf",
+            "newTab": true
           }
         ]
       },
@@ -61,13 +66,15 @@
             "enabled": true,
             "name": "Motor Vehicle Appeal Form",
             "description": "Form for certain motor vehicle-related matters.",
-            "href": "/assets/forms/motor-vehicle-appeal.pdf"
+            "href": "/assets/forms/motor-vehicle-appeal.pdf",
+            "newTab": true
           },
           {
             "enabled": true,
             "name": "Georgia Department of Revenue Motor Vehicle Forms",
             "description": "External resource for additional vehicle forms.",
-            "href": "https://dor.georgia.gov/motor-vehicles"
+            "href": "https://dor.georgia.gov/motor-vehicles",
+            "newTab": true
           }
         ]
       }

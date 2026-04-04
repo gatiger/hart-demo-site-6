@@ -71,6 +71,7 @@ function renderCard(section){
                     const href = safeText(form.href);
                     const desc = safeText(form.description);
                     const isExternal = /^https?:\/\//i.test(href);
+                    const openInNewTab = form.newTab === true || isExternal;
 
                     if(!href){
                       return `
@@ -82,7 +83,7 @@ function renderCard(section){
 
                     return `
                       <li class="tfFormItem">
-                        <a class="tfFormLink" href="${escapeAttr(href)}"${isExternal ? ` target="_blank" rel="noopener"` : ""}>
+                        <a class="tfFormLink" href="${escapeAttr(href)}"${openInNewTab ? ` target="_blank" rel="noopener"` : ""}>
                           <span class="tfFormText">
                             <span class="tfFormName">${escapeHtml(name)}</span>
                             ${desc ? `<span class="tfFormDesc">${escapeHtml(desc)}</span>` : ""}
