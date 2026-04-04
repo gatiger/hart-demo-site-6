@@ -11,18 +11,6 @@
     "assessors": {
       "label": "Board of Assessors",
       "color": "#FF7A18"
-    },
-    "planning": {
-      "label": "Planning",
-      "color": "#22C55E"
-    },
-    "zoning": {
-      "label": "Zoning",
-      "color": "#A855F7"
-    },
-    "other": {
-      "label": "Other",
-      "color": "#8C98A4"
     }
   },
 
