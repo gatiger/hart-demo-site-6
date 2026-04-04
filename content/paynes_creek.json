@@ -11,12 +11,16 @@
       },
       {
         "title": "Season",
-        "value": "Year-round"
+        "value": "March 1st - October 31st"
       },
       {
         "title": "Phone",
-        "value": "(706) 555-0301",
+        "value": "(706) 377-3456",
         "type": "phone"
+      },
+      {
+        "title": "Gate Hours",
+        "value": "7:00 AM - 5:00 PM"
       }
     ]
   },
@@ -84,7 +88,7 @@
     "items": [
       {
         "title": "Quiet Hours",
-        "text": "Quiet hours are observed from 10:00 PM to 7:00 AM."
+        "text": "Quiet hours are observed from 10:00 PM to 6:00 AM."
       },
       {
         "title": "Pets",
