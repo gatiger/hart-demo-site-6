@@ -50,6 +50,23 @@ function formatMeetingTime(v){
   return `${hour}:${minute} ${suffix}`;
 }
 
+function getMeetingDateTime(meeting){
+  const dateStr = safe(meeting?.date);
+  if (!dateStr) return null;
+
+  const timeStr = safe(meeting?.time);
+  const full = timeStr ? `${dateStr}T${timeStr}` : `${dateStr}T23:59`;
+
+  const d = new Date(full);
+  return Number.isNaN(d.getTime()) ? null : d;
+}
+
+function isUpcomingMeeting(meeting){
+  const dt = getMeetingDateTime(meeting);
+  if (!dt) return false;
+  return dt.getTime() >= Date.now();
+}
+
 function buildMeetingsLegendHtml() {
   const items = MEETING_LEGEND_TYPES
     .map(k => ({ key: k, meta: MEETING_TYPE_META[k] }))
@@ -202,16 +219,11 @@ function renderMeetingsMini(items){
   const mount = document.getElementById("meetingsMini");
   if(!mount) return;
 
-  const parseDate = (v) => {
-    const d = new Date(safe(v));
-    return Number.isNaN(d.getTime()) ? null : d;
-  };
-
   const upcoming = (items || [])
     .filter(m => m && (m.enabled !== false))
-    .filter(m => String(m.status || "Upcoming").toLowerCase() === "upcoming")
+    .filter(isUpcomingMeeting)
     .slice()
-    .sort((a,b) => (parseDate(a.date)?.getTime()||0) - (parseDate(b.date)?.getTime()||0))
+    .sort((a,b) => (getMeetingDateTime(a)?.getTime()||0) - (getMeetingDateTime(b)?.getTime()||0))
     .slice(0,2);
 
   if(!upcoming.length){
@@ -257,20 +269,13 @@ function renderMeetingsPage(items){
   const pastEl = document.getElementById("pastMeetings");
   if(!upcomingEl && !pastEl) return;
 
-  const parseDate = (v) => {
-    const s = safe(v);
-    const d = new Date(s);
-    return Number.isNaN(d.getTime()) ? null : d;
-  };
-
   const all = (items || [])
     .filter(m => m && m.enabled !== false)
     .slice()
-    .sort((a,b) => (parseDate(a.date)?.getTime()||0) - (parseDate(b.date)?.getTime()||0));
+    .sort((a,b) => (getMeetingDateTime(a)?.getTime()||0) - (getMeetingDateTime(b)?.getTime()||0));
 
-  const isUpcoming = (m) => String(m.status || "Upcoming").toLowerCase() === "upcoming";
-  const upcoming = all.filter(isUpcoming);
-  const past = all.filter(m => !isUpcoming(m)).reverse();
+  const upcoming = all.filter(isUpcomingMeeting);
+  const past = all.filter(m => !isUpcomingMeeting(m)).reverse();
 
   const linkAttrs = (href) => {
     const h = safe(href);
@@ -352,8 +357,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   if (document.getElementById("meetingsMiniCal")) {
     const upcoming = items.filter(m =>
-      m && m.enabled !== false &&
-      String(m.status || "Upcoming").toLowerCase() === "upcoming"
+      m && m.enabled !== false && isUpcomingMeeting(m)
     );
 
     renderMeetingsMiniCalendar(upcoming, {
