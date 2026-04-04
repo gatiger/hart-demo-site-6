@@ -4,43 +4,51 @@
   "timezone": "America/New_York",
 
   "types": {
-    "commissioners": { "label": "Commissioners", "colorHint": "blue" },
-    "assessors": { "label": "Board of Assessors", "colorHint": "orange" },
-    "planning": { "label": "Planning", "colorHint": "green" },
-    "zoning": { "label": "Zoning", "colorHint": "purple" },
-    "other": { "label": "Other", "colorHint": "gray" }
+    "commissioners": {
+      "label": "Commissioners",
+      "color": "#50A0FF"
+    },
+    "assessors": {
+      "label": "Board of Assessors",
+      "color": "#FF7A18"
+    },
+    "planning": {
+      "label": "Planning",
+      "color": "#22C55E"
+    },
+    "zoning": {
+      "label": "Zoning",
+      "color": "#A855F7"
+    },
+    "other": {
+      "label": "Other",
+      "color": "#8C98A4"
+    }
   },
 
   "items": [
     {
       "id": "mtg-2026-03-03-boc",
       "enabled": true,
-      "status": "Upcoming",
       "type": "commissioners",
-
       "title": "Board of Commissioners – Regular Meeting",
       "date": "2026-03-03",
       "time": "18:00",
       "location": "Administration Building, 165 W Franklin St, Hartwell, GA",
-
       "agenda_url": "./assets/meetings/2026-03-03-boc-agenda.pdf",
       "packet_url": "./assets/meetings/2026-03-03-boc-packet.pdf",
       "stream_url": "https://www.youtube.com/@HartCounty",
-
       "notes": "Public comment sign-in begins at 5:30 PM."
     },
 
     {
       "id": "mtg-2026-03-10-boa",
       "enabled": true,
-      "status": "Upcoming",
       "type": "assessors",
-
       "title": "Board of Assessors – Work Session",
       "date": "2026-03-10",
       "time": "09:00",
       "location": "Tax Assessor’s Office, 456 E Howell St, Hartwell, GA",
-
       "agenda_url": "./assets/meetings/2026-03-10-boa-agenda.pdf",
       "packet_url": "",
       "stream_url": ""
@@ -49,14 +57,11 @@
     {
       "id": "mtg-2026-03-10-plan",
       "enabled": true,
-      "status": "Upcoming",
       "type": "planning",
-
       "title": "Planning Commission Meeting",
       "date": "2026-03-10",
       "time": "18:00",
       "location": "Courthouse Annex, Meeting Room A",
-
       "agenda_url": "./assets/meetings/2026-03-10-planning-agenda.pdf",
       "packet_url": "./assets/meetings/2026-03-10-planning-packet.pdf",
       "stream_url": ""
@@ -65,14 +70,11 @@
     {
       "id": "mtg-2026-03-17-zba",
       "enabled": true,
-      "status": "Upcoming",
       "type": "zoning",
-
       "title": "Zoning Board of Appeals Hearing",
       "date": "2026-03-17",
       "time": "17:30",
       "location": "Administration Building, Conference Room 2",
-
       "agenda_url": "",
       "packet_url": "",
       "stream_url": "",
@@ -82,14 +84,11 @@
     {
       "id": "mtg-2026-02-11-boc",
       "enabled": true,
-      "status": "Past",
       "type": "commissioners",
-
       "title": "Board of Commissioners – Called Meeting",
       "date": "2026-02-11",
       "time": "12:00",
       "location": "Administration Building, 165 W Franklin St, Hartwell, GA",
-
       "agenda_url": "./assets/meetings/2026-02-11-boc-agenda.pdf",
       "packet_url": "./assets/meetings/2026-02-11-boc-packet.pdf",
       "minutes_url": "./assets/meetings/2026-02-11-boc-minutes.pdf",

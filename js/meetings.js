@@ -1,14 +1,6 @@
 // Public meetings page and homepage mini calendar only
 
-const MEETING_TYPE_META = {
-  commissioners: { label: "Commissioners", className: "mtg-commissioners" },
-  assessors:     { label: "Board of Assessors", className: "mtg-assessors" },
-  planning:      { label: "Planning", className: "mtg-planning" },
-  zoning:        { label: "Zoning", className: "mtg-zoning" },
-  default:       { label: "Other", className: "mtg-default" }
-};
-
-const MEETING_LEGEND_TYPES = ["commissioners", "assessors", "planning", "zoning"];
+let MEETING_TYPE_META = {};
 
 function escapeHtml(s) {
   return String(s ?? "")
@@ -67,17 +59,40 @@ function isUpcomingMeeting(meeting){
   return dt.getTime() >= Date.now();
 }
 
+function getTypeMeta(typeKey){
+  const key = safe(typeKey);
+  const meta = MEETING_TYPE_META[key];
+
+  if (meta) {
+    return {
+      label: safe(meta.label) || "Other",
+      color: safe(meta.color) || "#8c98a4"
+    };
+  }
+
+  return {
+    label: "Other",
+    color: "#8c98a4"
+  };
+}
+
 function buildMeetingsLegendHtml() {
-  const items = MEETING_LEGEND_TYPES
-    .map(k => ({ key: k, meta: MEETING_TYPE_META[k] }))
-    .filter(x => x.meta);
+  const items = Object.entries(MEETING_TYPE_META || {})
+    .filter(([key]) => key !== "default")
+    .map(([key, meta]) => ({
+      key,
+      label: safe(meta.label) || key,
+      color: safe(meta.color) || "#8c98a4"
+    }));
+
+  if (!items.length) return "";
 
   return `
     <div class="miniCalLegend" aria-label="Meeting type legend">
-      ${items.map(x => `
+      ${items.map(item => `
         <span class="miniCalKey">
-          <span class="miniCalDot ${escapeHtml(x.meta.className)}" aria-hidden="true"></span>
-          <span class="miniCalKeyLabel">${escapeHtml(x.meta.label)}</span>
+          <span class="miniCalDot" style="background:${escapeHtml(item.color)}" aria-hidden="true"></span>
+          <span class="miniCalKeyLabel">${escapeHtml(item.label)}</span>
         </span>
       `).join("")}
     </div>
@@ -90,9 +105,9 @@ function buildDotsHtml(typesForDay) {
 
   return `
     <div class="miniCalDots" aria-hidden="true">
-      ${shown.map(t => {
-        const meta = MEETING_TYPE_META[t] || MEETING_TYPE_META.default;
-        return `<span class="miniCalDot ${escapeHtml(meta.className)}" title="${escapeHtml(meta.label)}"></span>`;
+      ${shown.map(typeKey => {
+        const meta = getTypeMeta(typeKey);
+        return `<span class="miniCalDot" style="background:${escapeHtml(meta.color)}" title="${escapeHtml(meta.label)}"></span>`;
       }).join("")}
       ${hiddenCount ? `<span class="miniCalMore">+${hiddenCount}</span>` : ""}
     </div>
@@ -172,7 +187,7 @@ function renderMeetingsMiniCalendar(meetings, opts = {}) {
       const prettyDate = d.toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric" });
 
       if (hasMeetings) {
-        const typesForDay = [...new Set(dayMeetings.map(m => (m?.type || "default")))];
+        const typesForDay = [...new Set(dayMeetings.map(m => safe(m?.type) || "default"))];
         const dotsHtml = buildDotsHtml(typesForDay);
 
         const titles = dayMeetings.map(m => m?.title).filter(Boolean);
@@ -297,13 +312,13 @@ function renderMeetingsPage(items){
         const minutes = safe(m.minutes_url || m.minutes || "");
         const stream = safe(m.stream_url || m.watch || m.video_url || "");
 
-        const typeMeta = MEETING_TYPE_META[safe(m.type)] || MEETING_TYPE_META.default;
+        const typeMeta = getTypeMeta(m.type);
 
         return `
           <article class="item" aria-label="${escapeHtml(title)}">
             <div class="itemTop">
               <h3 class="itemTitle">${escapeHtml(title)}</h3>
-              ${m.type ? `<span class="tag">${escapeHtml(typeMeta.label)}</span>` : ``}
+              ${safe(m.type) ? `<span class="tag" style="background:${escapeHtml(typeMeta.color)}1A; color:${escapeHtml(typeMeta.color)};">${escapeHtml(typeMeta.label)}</span>` : ``}
             </div>
 
             ${(date || time || loc) ? `
@@ -353,6 +368,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   const meetings = await loadJSON("./content/meetings.json");
+  MEETING_TYPE_META = meetings?.types || {};
+
   const items = meetings?.items || meetings || [];
 
   if (document.getElementById("meetingsMiniCal")) {
