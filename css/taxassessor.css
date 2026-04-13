@@ -44,6 +44,42 @@
   color: rgba(255,255,255,.9);
 }
 
+/* ===== PUBLIC NOTICE CARD ===== */
+
+.taNoticeCard{
+  padding: 1.5rem 1.75rem;
+}
+
+.taNoticeInner{
+  max-width: 980px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.taNoticeTitle{
+  margin: 0 0 .875rem;
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #b42318;
+}
+
+.taNoticeText{
+  color: var(--text);
+  line-height: 1.7;
+  font-size: .95rem;
+  text-align: center;
+}
+
+.taNoticeText p{
+  margin: 0 0 14px;
+}
+
+.taNoticeText p:last-child{
+  margin-bottom: 0;
+}
+
 /* ===== SHARED CARD HEAD ===== */
 
 .cardHead{
@@ -240,6 +276,10 @@
 @media (max-width: 700px){
   .taIntroCard{
     padding: 1.5rem 1.25rem 1.25rem;
+  }
+
+  .taNoticeCard{
+    padding: 1.25rem;
   }
 
   .cardHead{

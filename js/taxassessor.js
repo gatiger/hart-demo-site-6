@@ -10,6 +10,7 @@ async function initTaxAssessorPage(){
     const data = await res.json();
 
     renderIntro(data.intro || {});
+    renderNotice(data.publicNotice || {});
     renderChief(data.chiefAppraiser || {});
     renderLinks(data.officeLinks || {});
     renderMiscCards(data.miscCards || []);
@@ -23,6 +24,19 @@ function renderIntro(intro){
   const introText = document.getElementById("taIntroText");
   if(introText){
     introText.textContent = safeText(intro.text) || "";
+  }
+}
+
+function renderNotice(notice){
+  const title = document.getElementById("taNoticeTitle");
+  const text = document.getElementById("taNoticeText");
+
+  if(title){
+    title.textContent = safeText(notice.title) || "PUBLIC NOTICE";
+  }
+
+  if(text){
+    text.innerHTML = renderParagraphHtml(notice.text);
   }
 }
 
@@ -225,11 +239,15 @@ function getPhotoAlt(item, fallbackName){
 
 function renderTaxAssessorError(){
   const intro = document.getElementById("taIntroText");
+  const noticeTitle = document.getElementById("taNoticeTitle");
+  const noticeText = document.getElementById("taNoticeText");
   const chief = document.getElementById("taChiefCardBody");
   const links = document.getElementById("taLinksGrid");
   const misc = document.getElementById("taMiscGrid");
 
   if(intro) intro.textContent = "Tax Assessor information is unavailable right now.";
+  if(noticeTitle) noticeTitle.textContent = "PUBLIC NOTICE";
+  if(noticeText) noticeText.innerHTML = `<p>Notice information is unavailable right now.</p>`;
   if(chief) chief.innerHTML = `<div class="taEmpty">Chief Appraiser information is unavailable right now.</div>`;
   if(links) links.innerHTML = `<div class="taEmpty">Office links are unavailable right now.</div>`;
   if(misc) misc.innerHTML = "";

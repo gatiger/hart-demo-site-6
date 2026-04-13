@@ -2,6 +2,14 @@
   "intro": {
     "text": "The Hart County Tax Assessor’s Office is responsible for identifying, listing, and appraising taxable property within the county in accordance with Georgia law."
   },
+  "publicNotice": {
+    "title": "PUBLIC NOTICE",
+    "text": [
+      "Notice to the Hart County Property Owners and Occupants",
+      "In accordance with O.C.G.A. 48-5-264.1, please be advised that the Hart County Appraisal Staff may be visiting your property to review your parcel information concerning an appeal filed, return filed, construction of new improvement or addition, review of parcel, and/or conservation use application. The field appraiser from our office will have photo identification and will be driving a marked County Vehicle. If you have any further questions, please call our office at the number listed at the top of this page.",
+      "EVERY PARCEL IN HART COUNTY WILL BE REEVALUATED EACH YEAR!"
+    ]
+  },
   "chiefAppraiser": {
     "subtitle": "Office leadership and contact information.",
     "name": "Shane Hix",
