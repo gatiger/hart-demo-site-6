@@ -115,7 +115,15 @@ function renderLinks(officeLinks){
       const newTab = item.newTab || isExternal;
       const target = newTab ? ` target="_blank" rel="noopener"` : "";
       const externalIcon = isExternal
-        ? `<span class="taExternalIcon" aria-hidden="true">↗</span>`
+        ? `
+          <span class="extIcon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" focusable="false">
+              <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3z"/>
+              <path d="M5 5h6v2H7v10h10v-4h2v6H5z"/>
+            </svg>
+          </span>
+          <span class="sr-only">(opens in a new tab)</span>
+        `
         : "";
 
       if(!href){
@@ -124,7 +132,8 @@ function renderLinks(officeLinks){
 
       return `
         <a class="${variant}" href="${escapeAttr(href)}"${target}>
-          <span>${escapeHtml(label)}</span>${externalIcon}
+          <span>${escapeHtml(label)}</span>
+          ${externalIcon}
         </a>
       `;
     }).join("");
