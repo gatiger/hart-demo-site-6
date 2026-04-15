@@ -345,7 +345,7 @@
       "types": [
         {
           "id": "minutes",
-          "name": "Permits",
+          "name": "Minutes",
           "files": [
             {
               "label": "Nov. 13 2012 Minutes",
