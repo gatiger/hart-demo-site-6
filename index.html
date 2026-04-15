@@ -80,34 +80,9 @@
 
     <section class="hero" aria-label="Overview">
       <div class="heroTop">
-        <div class="card heroIntro">
-          <h1 class="heroTitle">News, alerts, and meeting information — in one place.</h1>
-          <p class="heroLead">
-            Stay up to date with county announcements, public notices, and upcoming meetings.
-          </p>
-
-          <div class="pageTools" aria-label="Page tools">
-            <label class="sr-only" for="siteSearch">Search</label>
-            <input id="siteSearch" class="field" type="text" placeholder="Search this page…" />
-
-            <div class="btnRow">
-              <a class="btn" href="directory.html">Find a Department</a>
-              <button class="btn" type="button" disabled aria-disabled="true">Report an Issue</button>
-              <button class="btn ghost" type="button" disabled aria-disabled="true">Accessibility</button>
-            </div>
-          </div>
-
-          <div class="badgeRow" aria-label="Highlights">
-            <div class="badge"><strong>Current notices</strong> when residents need them</div>
-            <div class="badge"><strong>Mobile friendly</strong> for public access</div>
-            <div class="badge"><strong>Easy updates</strong> for county staff</div>
-          </div>
-
-          <div class="btnRow heroActions">
-            <a class="btn primary" href="news.html">View all news</a>
-            <a class="btn" href="meetings.html">View meetings</a>
-            <button class="btn ghost" type="button" id="jumpToAlerts">Alert area</button>
-          </div>
+        <div class="card heroIntro" aria-labelledby="homeWelcomeTitle">
+          <h1 class="heroTitle" id="homeWelcomeTitle"></h1>
+          <div class="heroLead" id="homeWelcomeBody"></div>
         </div>
 
         <section class="card quickActionsCard" aria-label="Quick actions">
@@ -165,6 +140,19 @@
         <div id="meetingsMiniCal" class="miniCal" aria-label="Meetings calendar"></div>
       </section>
     </div>
+
+    <section class="homeExtraSection" aria-labelledby="homeExtraTitle">
+      <div class="card homeExtraShell">
+        <div class="cardHeader">
+          <div>
+            <h2 id="homeExtraTitle">Additional Information</h2>
+            <p class="sub">Additional county information and updates</p>
+          </div>
+        </div>
+
+        <div id="homeExtraCards" class="homeExtraCards" aria-live="polite"></div>
+      </div>
+    </section>
 
     <footer class="footer">
       <div>© 2026 Hart County Board of Commissioners</div>

@@ -1,0 +1,26 @@
+{
+  "welcome": {
+    "title": "Welcome to Hart County",
+    "body": [
+      "Welcome to the official Hart County website. Here you can find county news, alerts, meeting information, and resources for residents, businesses, and visitors.",
+      "We are committed to providing clear, timely information and making county services easier to access online."
+    ]
+  },
+  "extraCards": [
+    {
+      "enabled": true,
+      "title": "Public Notices",
+      "body": [
+        "Additional public notices can be posted here as needed.",
+        "Use this card area for updates that should be visible on the home page but do not fit in the main alert or news sections."
+      ]
+    },
+    {
+      "enabled": true,
+      "title": "County Information",
+      "body": [
+        "This section can also be used for seasonal updates, office closures, road work notices, or other important county information."
+      ]
+    }
+  ]
+}

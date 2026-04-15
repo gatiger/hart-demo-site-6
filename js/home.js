@@ -1,5 +1,101 @@
 // Public homepage only
 
+document.addEventListener("DOMContentLoaded", async () => {
+  const site = await loadJSON("./content/site.json");
+  const alerts = await loadJSON("./content/alerts.json");
+  const home = await loadJSON("./content/home.json");
+
+  if (typeof window.renderAlert === "function") {
+    window.renderAlert(alerts || site);
+  }
+
+  renderHomeWelcome(home?.welcome || {});
+  renderHomeExtraCards(home?.extraCards || []);
+
+  if (document.getElementById("annList")) {
+    renderAnnouncementsList({
+      newsUrl: "./content/news.json",
+      mountId: "annList",
+      maxItems: 3,
+      maxSummaryLength: 220
+    });
+  }
+});
+
+function renderHomeWelcome(welcome){
+  const titleEl = document.getElementById("homeWelcomeTitle");
+  const bodyEl = document.getElementById("homeWelcomeBody");
+
+  if (titleEl) {
+    titleEl.textContent = safeText(welcome.title) || "Welcome to Hart County";
+  }
+
+  if (!bodyEl) return;
+
+  bodyEl.innerHTML = "";
+
+  const paragraphs = Array.isArray(welcome.body)
+    ? welcome.body
+    : [welcome.body];
+
+  paragraphs
+    .map(safeText)
+    .filter(Boolean)
+    .forEach(text => {
+      const p = document.createElement("p");
+      p.textContent = text;
+      bodyEl.appendChild(p);
+    });
+}
+
+function renderHomeExtraCards(items){
+  const mount = document.getElementById("homeExtraCards");
+  if (!mount) return;
+
+  const cards = (items || []).filter(item => item && item.enabled !== false);
+
+  if (!cards.length) {
+    mount.innerHTML = `<p class="sub">No additional information is posted at this time.</p>`;
+    return;
+  }
+
+  mount.innerHTML = cards.map(item => {
+    const title = escapeHtml(safeText(item.title) || "Additional Information");
+    const paragraphs = Array.isArray(item.body) ? item.body : [item.body];
+
+    const bodyHtml = paragraphs
+      .map(safeText)
+      .filter(Boolean)
+      .map(text => `<p>${escapeHtml(text)}</p>`)
+      .join("");
+
+    const url = safeText(item.url);
+
+    if (url) {
+      return `
+        <a class="homeExtraCard homeExtraCardLink"
+          href="${escapeHtml(url)}"
+          target="_blank"
+          rel="noopener">
+          <h3 class="homeExtraCardTitle">${title}</h3>
+          <div class="homeExtraCardBody">
+            ${bodyHtml}
+          </div>
+        </a>
+      `;
+    }
+
+    return `
+      <article class="homeExtraCard">
+        <h3 class="homeExtraCardTitle">${title}</h3>
+        <div class="homeExtraCardBody">
+          ${bodyHtml}
+        </div>
+      </article>
+    `;
+  }).join("");
+}
+
 function renderAnnouncementsList({
   newsUrl = "./content/news.json",
   mountId = "annList",
@@ -9,10 +105,8 @@ function renderAnnouncementsList({
   const mount = document.getElementById(mountId);
   if (!mount) return;
 
-  const safe = (v) => (v === undefined || v === null) ? "" : String(v).trim();
-
   const parseDate = (v) => {
-    const s = safe(v);
+    const s = safeText(v);
     const d = new Date(s);
     return isNaN(d.getTime()) ? new Date(0) : d;
   };
@@ -20,16 +114,8 @@ function renderAnnouncementsList({
   const fmtDate = (d) =>
     d.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
 
-  const escapeHtml = (value) =>
-    String(value)
-      .replaceAll("&", "&amp;")
-      .replaceAll("<", "&lt;")
-      .replaceAll(">", "&gt;")
-      .replaceAll('"', "&quot;")
-      .replaceAll("'", "&#39;");
-
   const truncateText = (text, limit) => {
-    const clean = safe(text).replace(/\s+/g, " ");
+    const clean = safeText(text).replace(/\s+/g, " ");
     if (!clean || clean.length <= limit) return clean;
 
     const shortened = clean.slice(0, limit);
@@ -68,12 +154,12 @@ function renderAnnouncementsList({
     }
 
     mount.innerHTML = items.map((it, i) => {
-      const title = safe(it.title || it.headline || "Update");
+      const title = safeText(it.title || it.headline || "Update");
       const date = parseDate(it.date);
-      const department = safe(it.department || it.office);
-      const summaryRaw = safe(it.body || it.summary || it.excerpt || it.description || "");
+      const department = safeText(it.department || it.office);
+      const summaryRaw = safeText(it.body || it.summary || it.excerpt || it.description || "");
       const summary = truncateText(summaryRaw, maxSummaryLength);
-      const url = safe(it.url || it.link || "news.html");
+      const url = safeText(it.url || it.link || "news.html");
 
       return `
         <article class="annTile" style="margin-top:${i === 0 ? 0 : 12}px">
@@ -103,20 +189,15 @@ function renderAnnouncementsList({
   start();
 }
 
-document.addEventListener("DOMContentLoaded", async () => {
-  const site = await loadJSON("./content/site.json");
-  const alerts = await loadJSON("./content/alerts.json");
+function safeText(v){
+  return (v === undefined || v === null) ? "" : String(v).trim();
+}
 
-  if (typeof window.renderAlert === "function") {
-    window.renderAlert(alerts || site);
-  }
-
-  if (document.getElementById("annList")) {
-    renderAnnouncementsList({
-      newsUrl: "./content/news.json",
-      mountId: "annList",
-      maxItems: 3,
-      maxSummaryLength: 220
-    });
-  }
-});
+function escapeHtml(value){
+  return String(value)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#39;");
+}

@@ -280,3 +280,65 @@
   font-weight: 600;
   line-height: 1.2;
 }
+
+.indexPage{
+  padding-top: 230px;
+  padding-bottom: 3rem;
+}
+
+.heroLead p{
+  margin: 0 0 14px;
+}
+
+.heroLead p:last-child{
+  margin-bottom: 0;
+}
+
+.homeExtraSection{
+  margin-top: 16px;
+}
+
+.homeExtraCards{
+  display: grid;
+  gap: 14px;
+  padding: 1rem 1.5rem 1.5rem;
+}
+
+.homeExtraCard{
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface-alt);
+  padding: 16px;
+}
+
+.homeExtraCardTitle{
+  margin: 0 0 8px;
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--navy);
+  line-height: 1.3;
+}
+
+.homeExtraCardBody p{
+  margin: 0 0 14px;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.homeExtraCardBody p:last-child{
+  margin-bottom: 0;
+}
+
+.homeExtraCardLink{
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.homeExtraCardLink:hover{
+  background: var(--surface);
+  transform: translateY(-2px);
+  transition: all .15s ease;
+  box-shadow: var(--shadow-card);
+}
