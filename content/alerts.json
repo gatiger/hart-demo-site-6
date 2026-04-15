@@ -9,7 +9,7 @@
       "message": "Hart County offices will be closed Monday due to severe weather conditions.",
       "link": { "label": "View Updates", "href": "/alerts/weather-closure.html" },
       "dismissible": false,
-      "start": "2026-04-15T08:00:00-05:00",
+      "start": "2026-04-14T08:00:00-05:00",
       "end": "2026-04-16T23:59:00-05:00",
       "audience": "public"
     },
