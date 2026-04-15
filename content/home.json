@@ -19,9 +19,14 @@
     },
     {
       "enabled": true,
-      "title": "County Information",
+      "title": "***NEED A RIDE?***",
+      "url": "transit.html",
       "body": [
-        "This section can also be used for seasonal updates, office closures, road work notices, or other important county information."
+        "(Shopping, doctor's appointments, paying bills, bank, errands, etc)",
+        "Call Hart Transit (706) 376-3975",
+        "Local rides available Monday-Friday",
+        "We accomidate ALL Hart County residents",
+        "Mobility Device Accessiable"
       ]
     }
   ]
