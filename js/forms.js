@@ -14,9 +14,11 @@ async function initFormsPage() {
 
     renderFormsHeader(formsData.formsPage || {});
 
-    const categories = filterCategoriesByShowIn(
-      normalizeFormsData(formsData),
-      "forms"
+    const categories = sortFormsTreeData(
+      filterCategoriesByShowIn(
+        normalizeFormsData(formsData),
+        "forms"
+      )
     );
 
     renderFormsTree(categories);
@@ -32,7 +34,7 @@ async function initFormsPage() {
     if (searchInput) {
       searchInput.addEventListener("input", () => {
         const query = safeText(searchInput.value).toLowerCase();
-        const filtered = filterForms(categories, query);
+        const filtered = sortFormsTreeData(filterForms(categories, query));
 
         activeFileButton = null;
         renderFormsTree(filtered);
@@ -118,6 +120,87 @@ function filterCategoriesByShowIn(categories, target) {
         .filter(type => Array.isArray(type.files) && type.files.length > 0)
     }))
     .filter(category => Array.isArray(category.types) && category.types.length > 0);
+}
+
+function sortFormsTreeData(categories) {
+  return (categories || [])
+    .map(category => ({
+      ...category,
+      types: (Array.isArray(category.types) ? category.types : [])
+        .map(type => ({
+          ...type,
+          files: (Array.isArray(type.files) ? type.files : [])
+            .slice()
+            .sort(compareFilesByDateDesc)
+        }))
+        .sort((a, b) =>
+          safeText(a.name).localeCompare(safeText(b.name), undefined, { sensitivity: "base" })
+        )
+    }))
+    .sort((a, b) =>
+      safeText(a.name).localeCompare(safeText(b.name), undefined, { sensitivity: "base" })
+    );
+}
+
+function compareFilesByDateDesc(a, b) {
+  const aTime = getFileSortTime(a);
+  const bTime = getFileSortTime(b);
+
+  if (aTime !== bTime) return bTime - aTime;
+
+  return safeText(a.label || a.title).localeCompare(
+    safeText(b.label || b.title),
+    undefined,
+    { sensitivity: "base" }
+  );
+}
+
+function getFileSortTime(file) {
+  const updatedDate = parseDateString(file.updated);
+  if (updatedDate) return updatedDate.getTime();
+
+  const year = parseYearValue(file.year);
+  if (year) return new Date(year, 11, 31).getTime();
+
+  return 0;
+}
+
+function parseYearValue(value) {
+  const text = safeText(value);
+  const match = text.match(/\b(19|20)\d{2}\b/);
+  return match ? Number(match[0]) : null;
+}
+
+function parseDateString(value) {
+  const text = safeText(value);
+  if (!text) return null;
+
+  const direct = new Date(text);
+  if (!Number.isNaN(direct.getTime())) return direct;
+
+  const normalized = text
+    .replace(/(\d+)(st|nd|rd|th)\b/gi, "$1")
+    .replace(/\s+/g, " ")
+    .trim();
+
+  const retry = new Date(normalized);
+  if (!Number.isNaN(retry.getTime())) return retry;
+
+  const monthYear = normalized.match(
+    /\b(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{4})\b/i
+  );
+  if (monthYear) {
+    const fallback = new Date(`${monthYear[1]} 1, ${monthYear[2]}`);
+    if (!Number.isNaN(fallback.getTime())) return fallback;
+  }
+
+  const year = parseYearValue(normalized);
+  if (year) {
+    const fallback = new Date(year, 11, 31);
+    if (!Number.isNaN(fallback.getTime())) return fallback;
+  }
+
+  return null;
 }
 
 function filterForms(categories, query) {
