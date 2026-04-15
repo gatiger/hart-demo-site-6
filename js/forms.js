@@ -7,25 +7,26 @@ let activeFileButton = null;
 
 async function initFormsPage() {
   try {
-    const res = await fetch("/content/forms.json", { cache: "no-store" });
-    if (!res.ok) throw new Error("Failed to load /content/forms.json");
+    const res = await fetch("/content/documents.json", { cache: "no-store" });
+    if (!res.ok) throw new Error("Failed to load /content/documents.json");
 
     formsData = await res.json();
 
-    renderFormsHeader(formsData);
+    renderFormsHeader(formsData.formsPage || {});
 
-    const categories = normalizeFormsData(formsData);
+    const categories = filterCategoriesByShowIn(
+      normalizeFormsData(formsData),
+      "forms"
+    );
+
     renderFormsTree(categories);
     updateSearchStatus(categories, "");
 
-    // 🔥 Auto-open document from URL
     const params = new URLSearchParams(window.location.search);
     const docParam = params.get("doc");
-
     if (docParam) {
       openDocFromParam(categories, docParam);
     }
-
 
     const searchInput = document.getElementById("formsSearchInput");
     if (searchInput) {
@@ -94,11 +95,29 @@ function normalizeFormsData(data) {
           year: item.year,
           updated: item.updated,
           fileType: item.fileType,
-          keywords: item.keywords
+          keywords: item.keywords,
+          showIn: item.showIn
         }))
       }
     ]
   }));
+}
+
+function filterCategoriesByShowIn(categories, target) {
+  return (categories || [])
+    .map(category => ({
+      ...category,
+      types: (Array.isArray(category.types) ? category.types : [])
+        .map(type => ({
+          ...type,
+          files: (Array.isArray(type.files) ? type.files : []).filter(file => {
+            const showIn = safeText(file.showIn).toLowerCase();
+            return showIn === target;
+          })
+        }))
+        .filter(type => Array.isArray(type.files) && type.files.length > 0)
+    }))
+    .filter(category => Array.isArray(category.types) && category.types.length > 0);
 }
 
 function filterForms(categories, query) {
@@ -310,6 +329,56 @@ function renderFileDetails(file, categoryName, typeName) {
   }
 }
 
+function openDocFromParam(categories, docParam) {
+  const target = safeText(docParam).toLowerCase();
+
+  for (const category of categories) {
+    for (const type of (category.types || [])) {
+      for (const file of (type.files || [])) {
+        const href = safeText(file.href).toLowerCase();
+
+        if (href.includes(target)) {
+          expandTreeForFile(category.name, type.name);
+          renderFileDetails(file, category.name, type.name);
+          return;
+        }
+      }
+    }
+  }
+}
+
+function expandTreeForFile(categoryName, typeName) {
+  document.querySelectorAll(".formCategory").forEach(cat => {
+    const btn = cat.querySelector(".formCategoryBtnText");
+    if (btn && btn.textContent.trim() === categoryName) {
+      const button = cat.querySelector(".formCategoryBtn");
+      const wrap = cat.querySelector(".formTypes");
+      const icon = cat.querySelector(".formCategoryIcon");
+
+      if (button && wrap) {
+        button.setAttribute("aria-expanded", "true");
+        wrap.hidden = false;
+        if (icon) icon.textContent = "−";
+      }
+    }
+  });
+
+  document.querySelectorAll(".formType").forEach(type => {
+    const button = type.querySelector(".formTypeBtn");
+    const textSpan = button?.querySelector("span");
+    const wrap = type.querySelector(".formFiles");
+    const icon = type.querySelector(".formTypeIcon");
+
+    if (textSpan && textSpan.textContent.trim() === typeName) {
+      if (button && wrap) {
+        button.setAttribute("aria-expanded", "true");
+        wrap.hidden = false;
+        if (icon) icon.textContent = "−";
+      }
+    }
+  });
+}
+
 function setViewerActions(href) {
   const topWrap = document.getElementById("formsViewerActionsTop");
   const bottomWrap = document.getElementById("formsViewerActionsBottom");
@@ -402,58 +471,4 @@ function escapeHtml(str) {
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#39;");
-}
-
-function openDocFromParam(categories, docParam){
-  const target = safeText(docParam).toLowerCase();
-
-  for (const category of categories) {
-    for (const type of (category.types || [])) {
-      for (const file of (type.files || [])) {
-
-        const href = safeText(file.href).toLowerCase();
-
-        if (href.includes(target)) {
-
-          // Expand category + type
-          expandTreeForFile(category.name, type.name);
-
-          // Render the file
-          renderFileDetails(file, category.name, type.name);
-
-          return;
-        }
-      }
-    }
-  }
-}
-
-function expandTreeForFile(categoryName, typeName){
-  // Expand category
-  document.querySelectorAll(".formCategory").forEach(cat => {
-    const btn = cat.querySelector(".formCategoryBtnText");
-    if (btn && btn.textContent.trim() === categoryName) {
-      const button = cat.querySelector(".formCategoryBtn");
-      const wrap = cat.querySelector(".formTypes");
-
-      if (button && wrap) {
-        button.setAttribute("aria-expanded", "true");
-        wrap.hidden = false;
-      }
-    }
-  });
-
-  // Expand type
-  document.querySelectorAll(".formType").forEach(type => {
-    const btn = type.querySelector(".formTypeBtn span");
-    if (btn && btn.textContent.trim() === typeName) {
-      const button = type.querySelector(".formTypeBtn");
-      const wrap = type.querySelector(".formFiles");
-
-      if (button && wrap) {
-        button.setAttribute("aria-expanded", "true");
-        wrap.hidden = false;
-      }
-    }
-  });
 }

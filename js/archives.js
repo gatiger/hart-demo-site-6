@@ -7,14 +7,18 @@ let activeFileButton = null;
 
 async function initArchivesPage() {
   try {
-    const res = await fetch("/content/archives.json", { cache: "no-store" });
-    if (!res.ok) throw new Error("Failed to load /content/archives.json");
+    const res = await fetch("/content/documents.json", { cache: "no-store" });
+    if (!res.ok) throw new Error("Failed to load /content/documents.json");
 
     archivesData = await res.json();
 
-    renderArchivesHeader(archivesData);
+    renderArchivesHeader(archivesData.archivesPage || {});
 
-    const categories = Array.isArray(archivesData.categories) ? archivesData.categories : [];
+    const categories = filterCategoriesByShowIn(
+      normalizeArchivesData(archivesData),
+      "archives"
+    );
+
     renderArchivesTree(categories);
     updateSearchStatus(categories, "");
 
@@ -55,6 +59,31 @@ async function initArchivesPage() {
 function renderArchivesHeader(data) {
   setText("archivesPageTitle", data.pageTitle);
   setText("archivesPageIntro", data.pageIntro);
+}
+
+function normalizeArchivesData(data) {
+  if (Array.isArray(data.categories)) {
+    return data.categories;
+  }
+
+  return [];
+}
+
+function filterCategoriesByShowIn(categories, target) {
+  return (categories || [])
+    .map(category => ({
+      ...category,
+      types: (Array.isArray(category.types) ? category.types : [])
+        .map(type => ({
+          ...type,
+          files: (Array.isArray(type.files) ? type.files : []).filter(file => {
+            const showIn = safeText(file.showIn).toLowerCase();
+            return showIn === target;
+          })
+        }))
+        .filter(type => Array.isArray(type.files) && type.files.length > 0)
+    }))
+    .filter(category => Array.isArray(category.types) && category.types.length > 0);
 }
 
 function filterArchives(categories, query) {
