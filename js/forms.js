@@ -18,6 +18,14 @@ async function initFormsPage() {
     renderFormsTree(categories);
     updateSearchStatus(categories, "");
 
+    // 🔥 Auto-open document from URL
+    const params = new URLSearchParams(window.location.search);
+    const docParam = params.get("doc");
+
+    if (docParam) {
+      openDocFromParam(categories, docParam);
+    }
+
 
     const searchInput = document.getElementById("formsSearchInput");
     if (searchInput) {
@@ -394,4 +402,58 @@ function escapeHtml(str) {
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#39;");
+}
+
+function openDocFromParam(categories, docParam){
+  const target = safeText(docParam).toLowerCase();
+
+  for (const category of categories) {
+    for (const type of (category.types || [])) {
+      for (const file of (type.files || [])) {
+
+        const href = safeText(file.href).toLowerCase();
+
+        if (href.includes(target)) {
+
+          // Expand category + type
+          expandTreeForFile(category.name, type.name);
+
+          // Render the file
+          renderFileDetails(file, category.name, type.name);
+
+          return;
+        }
+      }
+    }
+  }
+}
+
+function expandTreeForFile(categoryName, typeName){
+  // Expand category
+  document.querySelectorAll(".formCategory").forEach(cat => {
+    const btn = cat.querySelector(".formCategoryBtnText");
+    if (btn && btn.textContent.trim() === categoryName) {
+      const button = cat.querySelector(".formCategoryBtn");
+      const wrap = cat.querySelector(".formTypes");
+
+      if (button && wrap) {
+        button.setAttribute("aria-expanded", "true");
+        wrap.hidden = false;
+      }
+    }
+  });
+
+  // Expand type
+  document.querySelectorAll(".formType").forEach(type => {
+    const btn = type.querySelector(".formTypeBtn span");
+    if (btn && btn.textContent.trim() === typeName) {
+      const button = type.querySelector(".formTypeBtn");
+      const wrap = type.querySelector(".formFiles");
+
+      if (button && wrap) {
+        button.setAttribute("aria-expanded", "true");
+        wrap.hidden = false;
+      }
+    }
+  });
 }
