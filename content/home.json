@@ -3,16 +3,18 @@
     "title": "Welcome to Hart County",
     "body": [
       "Welcome to the official Hart County website. Here you can find county news, alerts, meeting information, and resources for residents, businesses, and visitors.",
-      "We are committed to providing clear, timely information and making county services easier to access online."
+      "We are committed to providing clear, timely information and making county services easier to access online.",
+      "Please take some time to look around the site and let us know if there are other areas of interest or services you would like us to offer online.",
+      "Hart County is an Equal Opportunity Employer - E-Verify ID#47141, authorized July 1, 2007."
     ]
   },
   "extraCards": [
     {
       "enabled": true,
-      "title": "Public Notices",
+      "title": "Current Digest",
+      "url": "assets/documents/current/2025_Current_Tax_Digest_and_5_Year_History_of_Levy completed 11112025.pdf",
       "body": [
-        "Additional public notices can be posted here as needed.",
-        "Use this card area for updates that should be visible on the home page but do not fit in the main alert or news sections."
+        "2025 CURRENT TAX DIGEST AND 5 YEAR HISTORY OF LEVY"
       ]
     },
     {
