@@ -48,6 +48,20 @@
               "keywords": ["report", "annual"]
             }
           ]
+        },
+        {
+          "id": "digests",
+          "name": "Digests",
+          "files": [
+            {
+              "label": "2025 TAX DIGEST AND 5 YEAR HISTORY OF LEVY",
+              "href": "assets/documents/current/2025_Current_Tax_Digest_and_5_Year_History_of_Levy completed 11112025.pdf",
+              "year": "2025",
+              "updated": "2025",
+              "fileType": "PDF",
+              "keywords": ["digest", "annual", "tax", "history"]
+            }
+          ]
         }
       ]
     },
