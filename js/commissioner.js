@@ -44,7 +44,7 @@ function renderCommissioner(item){
   const phoneRaw = safe(item.phone_raw || phone.replace(/[^\d+]/g, ""));
   const email = safe(item.email);
   const photo = safe(item.photo || "/assets/commissioners/placeholder.png");
-  const bio = safe(item.bio);
+  const bioParts = normalizeBio(item.bio);
 
   const roleLine = [role, district].filter(Boolean).join(" • ");
 
@@ -68,8 +68,8 @@ function renderCommissioner(item){
   if (bioBody) {
     bioBody.innerHTML = "";
 
-    if (bio) {
-      splitParagraphs(bio).forEach(text => {
+    if (bioParts.length) {
+      bioParts.forEach(text => {
         const p = document.createElement("p");
         p.textContent = text;
         bioBody.appendChild(p);
@@ -78,6 +78,17 @@ function renderCommissioner(item){
       bioBody.innerHTML = "<p>Biography information is not available at this time.</p>";
     }
   }
+}
+
+function normalizeBio(bio){
+  if (Array.isArray(bio)) {
+    return bio
+      .map(part => String(part || "").trim())
+      .filter(Boolean);
+  }
+
+  const single = String(bio || "").trim();
+  return single ? [single] : [];
 }
 
 function renderNotFound(){
@@ -90,16 +101,6 @@ function renderNotFound(){
   if (bioBody) {
     bioBody.innerHTML = "<p>Please return to the Commissioners page and select a profile.</p>";
   }
-}
-
-function splitParagraphs(text){
-  const cleaned = String(text || "").trim();
-  if (!cleaned) return [];
-
-  return cleaned
-    .split(/\n{2,}/)
-    .map(part => part.trim())
-    .filter(Boolean);
 }
 
 function setText(id, value){
