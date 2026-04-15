@@ -11,6 +11,14 @@
     "assessors": {
       "label": "Board of Assessors",
       "color": "#FF7A18"
+    },
+    "elections": {
+      "label": "Board of Elecetions",
+      "color": "#F50404"
+    },
+    "industrial": {
+      "label": "Industrial Building Authority",
+      "color": "#E356F5"
     }
   },
 
