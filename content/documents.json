@@ -338,6 +338,27 @@
           ]
         }
       ]
+    },
+    {
+      "id": "board of commissioners",
+      "name": "Board of Commissioners",
+      "types": [
+        {
+          "id": "minutes",
+          "name": "Permits",
+          "files": [
+            {
+              "label": "Nov. 13 2012 Minutes",
+              "href": "assets/documents/BOC/Minutes/MeetingSummaryNov132012.pdf",
+              "description": "November 13th 2012 Board of Commissioners meeting minutes",
+              "year": "2012",
+              "updated": "November 13th 2012",
+              "fileType": "PDF",
+              "showIn": "forms"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
