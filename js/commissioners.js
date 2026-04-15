@@ -24,7 +24,19 @@ function renderCommissioners(items){
       .replaceAll('"', "&quot;")
       .replaceAll("'", "&#39;");
 
-  mount.innerHTML = (items || []).map(c => {
+  const slugify = (value) =>
+    safe(value)
+      .toLowerCase()
+      .replace(/&/g, "and")
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "");
+
+  if (!items || !items.length) {
+    mount.innerHTML = "<p class=\"sub\">No commissioner information is available at this time.</p>";
+    return;
+  }
+
+  mount.innerHTML = items.map(c => {
     const name = safe(c.name);
     const role = safe(c.role);
     const district = safe(c.district);
@@ -32,9 +44,10 @@ function renderCommissioners(items){
     const phoneRaw = safe(c.phone_raw || phone.replace(/[^\d+]/g, ""));
     const email = safe(c.email);
     const photo = safe(c.photo || "./assets/commissioners/placeholder.png");
-    const bio = safe(c.bio);
+    const slug = safe(c.slug) || slugify(c.name || c.id || "");
 
     const roleLine = [role, district].filter(Boolean).join(" • ");
+    const detailHref = `commissioner.html?id=${encodeURIComponent(slug)}`;
 
     return `
       <article class="commCard" aria-label="${escapeHtml(name ? `Profile for ${name}` : "Commissioner profile")}">
@@ -45,7 +58,11 @@ function renderCommissioners(items){
         </figure>
 
         <div class="commInfo">
-          <h3 class="commName">${escapeHtml(name)}</h3>
+          <h3 class="commName">
+            <a class="commNameLink" href="${escapeHtml(detailHref)}">
+              ${escapeHtml(name)}
+            </a>
+          </h3>
 
           ${roleLine ? `
             <div class="commRole">${escapeHtml(roleLine)}</div>
@@ -58,14 +75,8 @@ function renderCommissioners(items){
               ${email ? `<span>Email: <a class="email-link" href="mailto:${escapeHtml(email)}">${escapeHtml(email)}</a></span>` : ``}
             </div>
           ` : ""}
-
-          ${bio ? `<p class="sub commBio">${escapeHtml(bio)}</p>` : ``}
         </div>
       </article>
     `;
   }).join("");
-
-  if (!items || !items.length) {
-    mount.innerHTML = "<p class=\"sub\">No commissioner information is available at this time.</p>";
-  }
 }
