@@ -3,16 +3,13 @@
     {
       "id": "michael bennett",
       "slug": "michael-bennet",
-      "name": "Michael Bennet",
-      "role": "",
+      "name": "Michael Bennett",
       "district": "District 1",
       "phone": "(706) 436-9378",
       "phone_raw": "17064369378",
       "email": "michaelbennett@hartcom.net",
       "photo": "./assets/commissioners/commissioner_1.png",
-      "bio": [
-        "Focuses on countywide planning, infrastructure priorities, and strengthening public services."
-      ]
+      "bio": "['Focuses on countywide planning, infrastructure priorities, and strengthening public services.']"
     },
     {
       "id": "frankie teasley",
