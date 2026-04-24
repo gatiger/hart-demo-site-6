@@ -34,10 +34,10 @@
     "people": [
       {
         "enabled": true,
-        "name": "Jerry Byrum",
+        "name": "John Smith",
         "title": "Fire Chief",
-        "phone": "(706) 376-8515",
-        "email": "",
+        "phone": "(706) 000-0000",
+        "email": "jsmith@hartcountyga.gov",
         "photo": {
           "src": "/assets/fire/staff/john-smith.jpg",
           "alt": "Portrait of John Smith"
