@@ -1,15 +1,13 @@
 {
   "subtitle": "Information, contacts, and staff for Hart County Emergency Medical Services.",
-
   "hero": {
     "title": "Hart County EMS",
     "address": {
-		"street": "800 Chandler Street",
-		"city": "Hartwell",
-		"state": "GA",
-		"zip": "30643"
-	},
-
+      "street": "800 Chandler Street",
+      "city": "Hartwell",
+      "state": "GA",
+      "zip": "30643"
+    },
     "leftImage": {
       "src": "assets/ems/ems_logo.svg",
       "alt": "Hart County EMS logo"
@@ -18,7 +16,6 @@
       "src": "assets/ems/ems_text.svg",
       "alt": "Ambulance outside the station"
     },
-
     "buttons": [
       {
         "label": "Call 911 (Emergency)",
@@ -43,12 +40,10 @@
       }
     ]
   },
-
   "about": {
-  "title": "EMS Mission Statement",
-  "text": "Hart County EMS is dedicated to providing exceptional medical services, delivered by a highly skilled, educated and professional staff. We will educate the community on our role in the response, treatment, and transport of the sick and injured as well as the prevention of injury and illness. We will do this in a fiscally responsible manner as an integral component of the community."
-},
-
+    "title": "EMS Mission Statement",
+    "text": "Hart County EMS is dedicated to providing exceptional medical services, delivered by a highly skilled, educated and professional staff. We will educate the community on our role in the response, treatment, and transport of the sick and injured as well as the prevention of injury and illness. We will do this in a fiscally responsible manner as an integral component of the community."
+  },
   "staff": {
     "subtitle": "Tap a phone number to call from a mobile device. Fax numbers are listed for reference.",
     "people": [
@@ -59,7 +54,7 @@
         "phone": "(706) 856-5314",
         "fax": "(706) 376-3974",
         "photo": {
-          "src": "./assets/ems/mike_adams.png",
+          "src": "./assets/ems/mike_adams.jpg",
           "alt": "Portrait of Mike Adams"
         }
       },
@@ -78,7 +73,7 @@
         "title": "Administration Specialist",
         "phone": "(706) 856-5313",
         "fax": "(706) 376-3974",
-		  "info": "Please contact for billing questions.",
+        "info": "Please contact for billing questions.",
         "photo": {
           "src": "/assets/ems/april_clem.jpg",
           "alt": "Portrait of April Clem"
@@ -119,17 +114,4 @@
       }
     ]
   }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,0 +1,135 @@
+{
+  "subtitle": "Information, contacts, and staff for Hart County Emergency Medical Services.",
+
+  "hero": {
+    "title": "Hart County EMS",
+    "address": {
+		"street": "800 Chandler Street",
+		"city": "Hartwell",
+		"state": "GA",
+		"zip": "30643"
+	},
+
+    "leftImage": {
+      "src": "assets/ems/ems_logo.svg",
+      "alt": "Hart County EMS logo"
+    },
+    "rightImage": {
+      "src": "assets/ems/ems_text.svg",
+      "alt": "Ambulance outside the station"
+    },
+
+    "buttons": [
+      {
+        "label": "Call 911 (Emergency)",
+        "href": "tel:911",
+        "variant": "primary",
+        "newTab": false,
+        "enabled": true
+      },
+      {
+        "label": "Non-Emergency Line",
+        "href": "tel:+17065551234",
+        "variant": "ghost",
+        "newTab": false,
+        "enabled": true
+      },
+      {
+        "label": "Request Records",
+        "href": "contact.html",
+        "variant": "ghost",
+        "newTab": false,
+        "enabled": true
+      }
+    ]
+  },
+
+  "about": {
+  "title": "EMS Mission Statement",
+  "text": "Hart County EMS is dedicated to providing exceptional medical services, delivered by a highly skilled, educated and professional staff. We will educate the community on our role in the response, treatment, and transport of the sick and injured as well as the prevention of injury and illness. We will do this in a fiscally responsible manner as an integral component of the community."
+},
+
+  "staff": {
+    "subtitle": "Tap a phone number to call from a mobile device. Fax numbers are listed for reference.",
+    "people": [
+      {
+        "enabled": true,
+        "name": "Mike Adams",
+        "title": "Director",
+        "phone": "(706) 856-5314",
+        "fax": "(706) 376-3974",
+        "photo": {
+          "src": "./assets/ems/mike_adams.png",
+          "alt": "Portrait of Mike Adams"
+        }
+      },
+      {
+        "enabled": true,
+        "name": "Tony Jordan",
+        "title": "Operations Manager",
+        "photo": {
+          "src": "/assets/ems/tony_jordan.jpg",
+          "alt": "Portrait of Tony Jordan"
+        }
+      },
+      {
+        "enabled": true,
+        "name": "April Clem",
+        "title": "Administration Specialist",
+        "phone": "(706) 856-5313",
+        "fax": "(706) 376-3974",
+		  "info": "Please contact for billing questions.",
+        "photo": {
+          "src": "/assets/ems/april_clem.jpg",
+          "alt": "Portrait of April Clem"
+        }
+      },
+      {
+        "enabled": true,
+        "name": "Ronald Dutton",
+        "title": "Shift Supervisor",
+        "phone": "",
+        "fax": "",
+        "photo": {
+          "src": "/assets/ems/ronald_dutton.jpg",
+          "alt": "Portrait of Ronald Dutton"
+        }
+      },
+      {
+        "enabled": true,
+        "name": "Jess Eaton",
+        "title": "Shift Supervisor",
+        "phone": "",
+        "fax": "",
+        "photo": {
+          "src": "/assets/ems/jess_eaton.png",
+          "alt": "Portrait of Jess Eaton"
+        }
+      },
+      {
+        "enabled": true,
+        "name": "Forrest Briggs",
+        "title": "Shift Supervisor",
+        "phone": "",
+        "fax": "",
+        "photo": {
+          "src": "/assets/ems/forrest_briggs.jpg",
+          "alt": "Portrait of Forrest Briggs"
+        }
+      }
+    ]
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
