@@ -1,0 +1,126 @@
+{
+  "hero": {
+    "eyebrow": "Tax Assessor",
+    "title": "Appeals Information",
+    "intro": "Property owners have the right to appeal an assessment when they disagree with the value, uniformity, taxability, exemption denial, or other appealable items shown on an assessment notice.",
+    "actions": [
+      {
+        "enabled": true,
+        "label": "Download Appeal Form",
+        "href": "/assets/documents/taxforms/PT-311A_Appeal_of_Assessment_Form.pdf",
+        "variant": "primary",
+        "newTab": true
+      },
+      {
+        "enabled": true,
+        "label": "Back to Tax Assessor",
+        "href": "/taxassessor.html",
+        "variant": "default",
+        "newTab": false
+      }
+    ]
+  },
+  "notice": {
+    "title": "Important Deadline Information",
+    "text": [
+      "Appeals must be filed within the deadline shown on the annual Notice of Assessment. Property owners should review their notice carefully and contact the Tax Assessor’s Office with questions before the deadline passes.",
+      "This page is intended as a general guide. Official filing requirements are controlled by Georgia law and the instructions on the assessment notice and appeal form."
+    ]
+  },
+  "process": {
+    "title": "How the Appeal Process Works",
+    "intro": "The steps below provide a general overview of the property assessment appeal process.",
+    "steps": [
+      {
+        "title": "Review your Notice of Assessment",
+        "text": "Read the notice carefully and compare the property details, value, exemptions, and appeal deadline shown on the notice."
+      },
+      {
+        "title": "Contact the Tax Assessor’s Office if you have questions",
+        "text": "Staff may be able to explain the assessment, review property record details, and help you understand what information may be useful."
+      },
+      {
+        "title": "File a written appeal before the deadline",
+        "text": "Submit the appeal form or written appeal to the Tax Assessor’s Office by the deadline listed on the notice. Keep a copy for your records."
+      },
+      {
+        "title": "Staff review",
+        "text": "The appraisal staff reviews the appeal, property record, supporting information, and any relevant market or property data."
+      },
+      {
+        "title": "Board of Assessors review",
+        "text": "The Board of Assessors reviews the appeal and may make changes, offer a value, or forward the appeal according to the selected appeal path."
+      },
+      {
+        "title": "Further appeal options",
+        "text": "If the appeal is not resolved at the local review stage, the appeal may proceed through the applicable appeal option selected by the property owner, such as the Board of Equalization or other available process."
+      }
+    ]
+  },
+  "helpfulDetails": {
+    "title": "Helpful Details",
+    "intro": "Items commonly needed during an appeal.",
+    "blocks": [
+      {
+        "title": "Possible reasons for appeal",
+        "items": [
+          "Value",
+          "Uniformity",
+          "Taxability",
+          "Denial of exemption",
+          "Breach of covenant",
+          "Other appealable items listed on the assessment notice"
+        ]
+      },
+      {
+        "title": "Helpful supporting information",
+        "items": [
+          "Recent sales information",
+          "Photos showing condition or damage",
+          "Appraisals or estimates, if available",
+          "Documentation of incorrect property details",
+          "Any other information that supports the reason for appeal"
+        ]
+      },
+      {
+        "title": "Office Contact",
+        "text": [
+          "Hart County Tax Assessor’s Office",
+          "Phone: (706) 376-3997",
+          "Office Hours: Monday–Friday, 8:30 AM – 5:00 PM"
+        ]
+      }
+    ]
+  },
+  "infoCards": [
+    {
+      "enabled": true,
+      "title": "Before You File",
+      "subtitle": "Make sure the basic property information is correct.",
+      "items": [
+        "Check the parcel number and property location.",
+        "Review land and building details shown on the property record.",
+        "Review exemptions and special assessment information, if applicable.",
+        "Note the appeal deadline printed on the assessment notice."
+      ]
+    },
+    {
+      "enabled": true,
+      "title": "How to Submit",
+      "subtitle": "Submit the completed appeal before the deadline.",
+      "text": [
+        "Appeals should be submitted to the Hart County Tax Assessor’s Office. The appeal should identify the property, owner, reason for appeal, and preferred appeal option when required.",
+        "Contact the office for current submission options if you are unsure how to file."
+      ],
+      "actions": [
+        {
+          "enabled": true,
+          "label": "Download Appeal Form",
+          "href": "/assets/documents/taxforms/PT-311A_Appeal_of_Assessment_Form.pdf",
+          "variant": "primary",
+          "newTab": true
+        }
+      ]
+    }
+  ]
+}
