@@ -7,7 +7,7 @@
       {
         "enabled": true,
         "label": "Download Appeal Form",
-        "href": "/assets/documents/taxforms/PT-311A_Appeal_of_Assessment_Form.pdf",
+        "href": "/forms.html?doc=PT-311A_Appeal_of_Assessment_Form.pdf",
         "variant": "primary",
         "newTab": true
       },
@@ -116,7 +116,7 @@
         {
           "enabled": true,
           "label": "Download Appeal Form",
-          "href": "/assets/documents/taxforms/PT-311A_Appeal_of_Assessment_Form.pdf",
+          "href": "/forms.html?doc=PT-311A_Appeal_of_Assessment_Form.pdf",
           "variant": "primary",
           "newTab": true
         }
