@@ -98,6 +98,22 @@
             "newTab": true
           }
         ]
+      },
+      {
+        "enabled": true,
+        "id": "miscellaneous forms",
+        "title": "Miscellaneous Forms",
+        "description": "Various forms related to property information.",
+        "forms": [
+          {
+            "enabled": true,
+            "name": "Address Change Form",
+            "description": "Form to change the mailing address for a property.",
+            "href": "assets/documents/taxforms/Address_Change_Form.pdf",
+            "newTab": true
+          }
+        ]
+
       }
     ]
   }
