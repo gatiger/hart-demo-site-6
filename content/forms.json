@@ -122,6 +122,15 @@
               "updated": "July 2018",
               "fileType": "PDF",
               "keywords": ["appeal", "property", "tax"]
+            },
+            {
+              "label": "Address Change Form",
+              "href": "assets/documents/taxforms/Address_Change_Form.pdf",
+              "description": "Form to change mailing address.",
+              "year": "",
+              "updated": "",
+              "fileType": "PDF",
+              "keywords": ["appeal", "property", "tax", "address"]
             }
           ]
         }
