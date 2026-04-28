@@ -1,93 +1,145 @@
-document.addEventListener("DOMContentLoaded", () => {
-  initTaxAssessorExemptionsPage();
-});
+document.addEventListener("DOMContentLoaded", () => initExemptionsPage());
 
-async function initTaxAssessorExemptionsPage() {
-  try {
+async function initExemptionsPage(){
+  try{
     const res = await fetch("/content/taxassessor-exemptions.json", { cache: "no-store" });
-    if (!res.ok) throw new Error("Failed to load /content/taxassessor-exemptions.json");
-
+    if(!res.ok) throw new Error("Failed to load exemptions JSON");
     const data = await res.json();
 
-    renderIntro(data.intro || {});
-    renderCards(data.cards || []);
-    renderContact(data.contact || {});
-  } catch (err) {
+    renderHero(data.hero || {});
+    renderNotice(data.notice || {});
+    renderProcess(data.process || {});
+    renderHelpfulDetails(data.helpfulDetails || {});
+    renderInfoCards(data.infoCards || []);
+  }catch(err){
     console.error(err);
-    renderError();
+    setText("exemptionsIntro", "Exemptions information is unavailable right now. Please contact the Tax Assessor’s Office for assistance.");
   }
 }
 
-function renderIntro(intro) {
-  const introEl = document.getElementById("taExIntro");
-  if (introEl) introEl.textContent = safeText(intro.text) || "";
+function renderHero(hero){
+  setText("exemptionsEyebrow", hero.eyebrow || "Tax Assessor");
+  setText("exemptionsPageTitle", hero.title || "Exemptions Information");
+  setText("exemptionsIntro", hero.intro || "Information about property tax exemptions.");
+
+  const mount = document.getElementById("exemptionsActions");
+  if(mount){
+    const actions = Array.isArray(hero.actions) ? hero.actions.filter(x => x && x.enabled !== false) : [];
+    mount.innerHTML = actions.map(renderAction).join("");
+  }
 }
 
-function renderCards(cards) {
-  const mount = document.getElementById("taExGrid");
-  if (!mount) return;
+function renderNotice(notice){
+  const card = document.getElementById("exemptionsNoticeCard");
+  const title = document.getElementById("exemptionsNoticeTitle");
+  const body = document.getElementById("exemptionsNoticeBody");
+  if(!card || !title || !body) return;
 
-  const visible = Array.isArray(cards) ? cards.filter(card => card && card.enabled !== false) : [];
-
-  if (!visible.length) {
-    mount.innerHTML = `<section class="card"><div class="taEmpty">No exemption information is available right now.</div></section>`;
+  const noticeTitle = safeText(notice.title);
+  const noticeBody = renderParagraphs(notice.text);
+  if(!noticeTitle && !noticeBody){
+    card.hidden = true;
     return;
   }
 
-  mount.innerHTML = visible.map(card => {
-    const title = safeText(card.title);
-    const subtitle = safeText(card.subtitle);
-    const text = Array.isArray(card.text) ? card.text : [];
+  card.hidden = false;
+  title.textContent = noticeTitle || "Important Information";
+  body.innerHTML = noticeBody;
+}
 
+function renderProcess(process){
+  setText("exemptionsStepsTitle", process.title || "Available Exemptions");
+  setText("exemptionsStepsIntro", process.intro || "");
+
+  const list = document.getElementById("exemptionsStepsList");
+  if(!list) return;
+
+  const steps = Array.isArray(process.steps) ? process.steps.filter(Boolean) : [];
+  list.innerHTML = steps.map(step => `
+    <li>
+      <div class="exemptionsStepContent">
+        ${safeText(step.title) ? `<h3>${escapeHtml(step.title)}</h3>` : ""}
+        ${safeText(step.text) ? `<p>${escapeHtml(step.text)}</p>` : ""}
+      </div>
+    </li>
+  `).join("");
+}
+
+function renderHelpfulDetails(details){
+  setText("exemptionsSideTitle", details.title || "Helpful Details");
+  setText("exemptionsSideIntro", details.intro || "");
+
+  const mount = document.getElementById("exemptionsSideBlocks");
+  if(!mount) return;
+
+  const blocks = Array.isArray(details.blocks) ? details.blocks.filter(Boolean) : [];
+  mount.innerHTML = blocks.map(block => {
+    const items = Array.isArray(block.items) ? block.items.filter(Boolean) : [];
     return `
-      <section class="card" aria-label="${escapeAttr(title || "Exemption information")}">
-        <div class="cardHead">
-          <h2 class="cardTitle">${escapeHtml(title)}</h2>
-          ${subtitle ? `<p class="cardSub">${escapeHtml(subtitle)}</p>` : ""}
+      <section class="exemptionsSideBlock" aria-label="${escapeAttr(block.title || "Exemption detail")}">
+        ${safeText(block.title) ? `<h3>${escapeHtml(block.title)}</h3>` : ""}
+        ${renderParagraphs(block.text)}
+        ${items.length ? `<ul>${items.map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul>` : ""}
+      </section>
+    `;
+  }).join("");
+}
+
+function renderInfoCards(cards){
+  const mount = document.getElementById("exemptionsInfoCards");
+  if(!mount) return;
+
+  const visible = Array.isArray(cards) ? cards.filter(card => card && card.enabled !== false) : [];
+  mount.innerHTML = visible.map(card => {
+    const items = Array.isArray(card.items) ? card.items.filter(Boolean) : [];
+    const actions = Array.isArray(card.actions) ? card.actions.filter(x => x && x.enabled !== false) : [];
+    return `
+      <section class="card exemptionsInfoCard" aria-label="${escapeAttr(card.title || "Additional information")}">
+        <div class="exemptionsCardHead">
+          ${safeText(card.title) ? `<h2>${escapeHtml(card.title)}</h2>` : ""}
+          ${safeText(card.subtitle) ? `<p>${escapeHtml(card.subtitle)}</p>` : ""}
         </div>
-        <div class="taExCardBody">
-          ${text.map(p => `<p>${escapeHtml(safeText(p))}</p>`).join("")}
+        <div class="exemptionsInfoBody">
+          ${renderParagraphs(card.text)}
+          ${items.length ? `<ul class="exemptionsInfoList">${items.map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul>` : ""}
+          ${actions.length ? `<div class="exemptionsCardActions">${actions.map(renderAction).join("")}</div>` : ""}
         </div>
       </section>
     `;
   }).join("");
 }
 
-function renderContact(contact) {
-  const mount = document.getElementById("taExContactBody");
-  if (!mount) return;
+function renderAction(item){
+  const label = safeText(item.label);
+  const href = safeText(item.href);
+  const variant = item.variant === "primary" ? "btn primary" : "btn";
+  if(!href) return `<button class="${variant}" type="button" disabled aria-disabled="true">${escapeHtml(label)}</button>`;
 
-  const name = safeText(contact.name);
-  const phone = safeText(contact.phone);
-  const email = safeText(contact.email);
-  const officeHours = safeText(contact.officeHours);
-  const text = Array.isArray(contact.text) ? contact.text : [];
-
-  mount.innerHTML = `
-    ${name ? `<p><strong>${escapeHtml(name)}</strong></p>` : ""}
-    ${phone ? `<p><strong>Phone:</strong> ${escapeHtml(phone)}</p>` : ""}
-    ${email ? `<p><strong>Email:</strong> <a href="mailto:${escapeAttr(email)}">${escapeHtml(email)}</a></p>` : ""}
-    ${officeHours ? `<p><strong>Office Hours:</strong> ${escapeHtml(officeHours)}</p>` : ""}
-    ${text.map(p => `<p>${escapeHtml(safeText(p))}</p>`).join("")}
-  `;
+  const isExternal = /^https?:\/\//i.test(href);
+  const newTab = item.newTab || isExternal;
+  const target = newTab ? ` target="_blank" rel="noopener"` : "";
+  const sr = newTab ? `<span class="sr-only"> opens in a new tab</span>` : "";
+  return `<a class="${variant}" href="${escapeAttr(href)}"${target}>${escapeHtml(label)}${sr}</a>`;
 }
 
-function renderError() {
-  const introEl = document.getElementById("taExIntro");
-  const grid = document.getElementById("taExGrid");
-  const contact = document.getElementById("taExContactBody");
-
-  if (introEl) introEl.textContent = "We were unable to load the exemptions information at this time.";
-  if (grid) grid.innerHTML = "";
-  if (contact) contact.innerHTML = "";
+function renderParagraphs(value){
+  if(Array.isArray(value)){
+    return value.map(safeText).filter(Boolean).map(text => `<p>${escapeHtml(text)}</p>`).join("");
+  }
+  return safeText(value).split(/\n\s*\n/).map(safeText).filter(Boolean).map(text => `<p>${escapeHtml(text)}</p>`).join("");
 }
 
-function safeText(value) {
-  return typeof value === "string" ? value.trim() : "";
+function setText(id, value){
+  const el = document.getElementById(id);
+  if(el) el.textContent = safeText(value);
 }
 
-function escapeHtml(str) {
-  return String(str)
+function safeText(value){
+  return value === undefined || value === null ? "" : String(value).trim();
+}
+
+function escapeHtml(value){
+  return String(value)
     .replaceAll("&", "&amp;")
     .replaceAll("<", "&lt;")
     .replaceAll(">", "&gt;")
@@ -95,6 +147,6 @@ function escapeHtml(str) {
     .replaceAll("'", "&#39;");
 }
 
-function escapeAttr(str) {
-  return escapeHtml(str);
+function escapeAttr(value){
+  return escapeHtml(value);
 }

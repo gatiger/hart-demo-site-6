@@ -1,35 +1,98 @@
 {
-  "intro": {
-    "text": "Hart County property owners may qualify for certain exemptions under Georgia law. Please review the information below and contact the Tax Assessor’s Office if you have questions about eligibility, deadlines, or required documentation."
+  "hero": {
+    "eyebrow": "Tax Assessor",
+    "title": "Exemptions Information",
+    "intro": "Hart County property owners may qualify for certain property tax exemptions under Georgia law. Please review the information below and contact the Tax Assessor’s Office with questions about eligibility, deadlines, and required documentation.",
+    "actions": [
+      {
+        "enabled": true,
+        "label": "Back to Tax Assessor",
+        "href": "/taxassessor.html",
+        "variant": "default",
+        "newTab": false
+      }
+    ]
   },
-  "cards": [
+  "notice": {
+    "title": "Important Filing Information",
+    "text": [
+      "Exemptions are subject to eligibility requirements and filing deadlines established by Georgia law.",
+      "Please contact the Tax Assessor’s Office if you have questions about which exemption may apply or what documentation is needed."
+    ]
+  },
+  "process": {
+    "title": "Available Exemptions",
+    "intro": "The information below provides a general overview of commonly requested exemptions.",
+    "steps": [
+      {
+        "title": "Homestead Exemption",
+        "text": "Homestead exemptions may reduce the taxable value of an owner-occupied primary residence for qualifying applicants."
+      },
+      {
+        "title": "Age-Based Exemptions",
+        "text": "Additional exemptions may be available for qualifying senior citizens depending on age, residency, and other requirements."
+      },
+      {
+        "title": "Disability and Veteran Exemptions",
+        "text": "Certain exemptions may be available for disabled individuals, disabled veterans, or surviving spouses when qualifications are met."
+      },
+      {
+        "title": "Application Requirements",
+        "text": "Applicants may be required to provide identification, proof of residency, income documentation, or other supporting records depending on the exemption requested."
+      }
+    ]
+  },
+  "helpfulDetails": {
+    "title": "Helpful Details",
+    "intro": "Things to keep in mind before applying.",
+    "blocks": [
+      {
+        "title": "Before you apply",
+        "items": [
+          "Make sure the property is in the correct owner name.",
+          "Confirm the property is your primary residence if required.",
+          "Gather any supporting documentation before filing.",
+          "Ask the office about the filing deadline for the exemption you need."
+        ]
+      },
+      {
+        "title": "Documentation may include",
+        "items": [
+          "Driver’s license or photo identification",
+          "Vehicle registration",
+          "Proof of residency",
+          "Income documentation when required",
+          "Any other records needed for the specific exemption"
+        ]
+      },
+      {
+        "title": "Office Contact",
+        "text": [
+          "Hart County Tax Assessor’s Office",
+          "Phone: (706) 376-3997",
+          "Office Hours: Monday–Friday, 8:30 AM – 5:00 PM"
+        ]
+      }
+    ]
+  },
+  "infoCards": [
     {
       "enabled": true,
-      "title": "Homestead Exemption",
-      "subtitle": "Primary residence exemption information.",
+      "title": "Questions About Eligibility",
+      "subtitle": "Contact the office before filing if you are unsure.",
       "text": [
-        "Homestead exemptions may reduce the taxable value of an owner-occupied primary residence.",
-        "Applicants should contact the office for eligibility requirements, filing deadlines, and required supporting documents."
+        "Eligibility requirements can vary depending on the exemption type.",
+        "The Tax Assessor’s Office can help explain which exemption forms and supporting records may be needed."
       ]
     },
     {
       "enabled": true,
-      "title": "Specialized Exemptions",
-      "subtitle": "Additional exemptions that may be available.",
+      "title": "How to Apply",
+      "subtitle": "Contact the office for current forms and instructions.",
       "text": [
-        "Additional exemptions may be available for qualifying individuals and properties under Georgia law.",
-        "Please contact the Tax Assessor’s Office for assistance determining whether a specific exemption may apply."
+        "Some exemptions require a specific application form and supporting documentation.",
+        "Please contact the Hart County Tax Assessor’s Office for the most current filing instructions."
       ]
     }
-  ],
-  "contact": {
-    "name": "Hart County Tax Assessor’s Office",
-    "phone": "(706) 376-3997",
-    "email": "shix@hartcountyga.gov",
-    "officeHours": "Monday–Friday, 8:30 AM – 5:00 PM",
-    "text": [
-      "Exemption applications and requirements may vary depending on the exemption type.",
-      "Please contact the office before filing if you need help determining which form or documentation is required."
-    ]
-  }
+  ]
 }
