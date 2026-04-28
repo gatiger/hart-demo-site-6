@@ -86,7 +86,10 @@
         "title": "Office Contact",
         "text": [
           "Hart County Tax Assessor’s Office",
+          "194 Cade St., Suite A Hartwell, GA",
+          "or PO BOX 810",
           "Phone: (706) 376-3997",
+          "Email: property@hartcountyga.gov",
           "Office Hours: Monday–Friday, 8:30 AM – 5:00 PM"
         ]
       }
@@ -110,7 +113,8 @@
       "subtitle": "Submit the completed appeal before the deadline.",
       "text": [
         "Appeals should be submitted to the Hart County Tax Assessor’s Office. The appeal should identify the property, owner, reason for appeal, and preferred appeal option when required.",
-        "Contact the office for current submission options if you are unsure how to file."
+        "You do not have to use the Appeal Form to appeal.  A handwritten letter can also be used, but should include all relevent information for the property being appealed.",
+        "Appeals may be filed by mail, brough into the office or emailed.  If sent by mail, it must be postmarked by the deadline."
       ],
       "actions": [
         {
