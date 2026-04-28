@@ -62,7 +62,7 @@
         "label": "Appeals Information",
         "href": "/taxassessor-appeals.html",
         "variant": "default",
-        "newTab": false
+        "newTab": true
       },
       {
         "enabled": true,
