@@ -183,6 +183,16 @@
               "showIn": "forms"
             },
             {
+              "label": "Address Change Form",
+              "href": "assets/documents/taxforms/Address_Change_Form.pdf",
+              "description": "Form for changing the mailing address of a property.",
+              "year": "",
+              "updated": "",
+              "fileType": "PDF",
+              "keywords": ["address", "tax", "property", "mailing"],
+              "showIn": "forms"
+            },
+            {
               "label": "2026 Homestead Exemption Application",
               "href": "assets/documents/taxforms/LGS-Homestead.pdf",
               "description": "Archived homestead exemption application.",
