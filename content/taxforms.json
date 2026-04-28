@@ -109,7 +109,7 @@
             "enabled": true,
             "name": "Address Change Form",
             "description": "Form to change the mailing address for a property.",
-            "href": "assets/documents/taxforms/Address_Change_Form.pdf",
+            "href": "forms.html?doc=Address_Change_Form.pdf",
             "newTab": true
           }
         ]
