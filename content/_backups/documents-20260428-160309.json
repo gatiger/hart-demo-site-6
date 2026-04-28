@@ -82,7 +82,7 @@
           ]
         },
         {
-          "id": "digests",
+            "id": "digests",
           "name": "Digests",
           "files": [
             {
@@ -92,17 +92,13 @@
               "updated": "2025",
               "fileType": "PDF",
               "showIn": "forms",
-              "keywords": [
-                "digest",
-                "annual",
-                "tax",
-                "history"
-              ]
+              "keywords": ["digest", "annual", "tax", "history"]
             }
           ]
         }
       ]
     },
+
     {
       "id": "elections",
       "name": "Elections",
@@ -118,11 +114,7 @@
               "year": "2026",
               "updated": "October 2026",
               "fileType": "PDF",
-              "keywords": [
-                "elections",
-                "absentee ballot",
-                "application"
-              ],
+              "keywords": ["elections", "absentee ballot", "application"],
               "showIn": "forms"
             },
             {
@@ -171,6 +163,7 @@
         }
       ]
     },
+
     {
       "id": "tax-assessor",
       "name": "Tax Assessor",
@@ -186,11 +179,7 @@
               "year": "2026",
               "updated": "January 2026",
               "fileType": "PDF",
-              "keywords": [
-                "homestead",
-                "exemption",
-                "tax"
-              ],
+              "keywords": ["homestead", "exemption", "tax"],
               "showIn": "forms"
             },
             {
@@ -200,12 +189,7 @@
               "year": "",
               "updated": "",
               "fileType": "PDF",
-              "keywords": [
-                "address",
-                "tax",
-                "property",
-                "mailing"
-              ],
+              "keywords": ["address", "tax", "property", "mailing"],
               "showIn": "forms"
             },
             {
@@ -225,16 +209,6 @@
               "updated": "January 2025",
               "fileType": "PDF",
               "showIn": "archives"
-            },
-            {
-              "label": "PT-283A Application for Current Use Assessment of Bona Fide Agricultural Property",
-              "href": "/assets/documents/taxforms/PT283A_Application_for_Current_Use_Assessment_of_Bona_fide_Agricultural_Property.pdf",
-              "description": "Application for the Conservation Use program (CUVA)",
-              "year": "",
-              "updated": "",
-              "fileType": "pdf",
-              "showIn": "forms",
-              "id": "item-20260428155041"
             }
           ]
         },
@@ -249,11 +223,7 @@
               "year": "2018",
               "updated": "July 2018",
               "fileType": "PDF",
-              "keywords": [
-                "appeal",
-                "property",
-                "tax"
-              ],
+              "keywords": ["appeal", "property", "tax"],
               "showIn": "forms"
             },
             {
@@ -278,6 +248,7 @@
         }
       ]
     },
+
     {
       "id": "public-works",
       "name": "Public Works",
@@ -293,10 +264,7 @@
               "year": "2026",
               "updated": "June 2026",
               "fileType": "PDF",
-              "keywords": [
-                "driveway",
-                "permit"
-              ],
+              "keywords": ["driveway", "permit"],
               "showIn": "forms"
             },
             {
@@ -306,10 +274,7 @@
               "year": "2026",
               "updated": "May 2026",
               "fileType": "PDF",
-              "keywords": [
-                "right of way",
-                "permit"
-              ],
+              "keywords": ["right of way", "permit"],
               "showIn": "forms"
             },
             {
@@ -343,6 +308,7 @@
         }
       ]
     },
+
     {
       "id": "behavioral-health",
       "name": "Behavioral Health",
@@ -358,10 +324,7 @@
               "year": "2026",
               "updated": "November 2026",
               "fileType": "PDF",
-              "keywords": [
-                "mental health",
-                "intake"
-              ],
+              "keywords": ["mental health", "intake"],
               "showIn": "forms"
             },
             {
