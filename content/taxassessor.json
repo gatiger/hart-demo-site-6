@@ -55,7 +55,7 @@
         "label": "Exemptions",
         "href": "/exemptions.html",
         "variant": "default",
-        "newTab": false
+        "newTab": true
       },
       {
         "enabled": true,
