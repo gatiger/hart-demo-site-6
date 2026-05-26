@@ -406,6 +406,27 @@
           ]
         }
       ]
+    },
+    {
+      "id": "board of assessors",
+      "name": "Board of Assessors",
+      "types": [
+        {
+          "id": "minutes",
+          "name": "Minutes",
+          "files": [
+            {
+              "label": "August 2021",
+              "href": "assets/documents/BOA-minutes-8-21.pdf",
+              "description": "August 2021 Board of Assessors meeting minutes",
+              "year": "2021",
+              "updated": "",
+              "fileType": "PDF",
+              "showIn": "archives"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
