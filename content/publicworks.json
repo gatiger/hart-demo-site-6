@@ -4,7 +4,7 @@
   "hero": {
     "title": "Hart County Public Works",
     "address": {
-      "street": "123 Public Works Way",
+      "street": "800 Chandler St",
       "city": "Hartwell",
       "state": "GA",
       "zip": "30643"
@@ -51,8 +51,8 @@
       "enabled": true,
       "name": "Jason Spencer",
       "title": "Director",
-      "phone": "(706) 376-0000",
-      "fax": "(706) 555-0299",
+      "phone": "(706) 376-2024",
+      "fax": "",
       "info": "Office hours: Mon–Fri, 8:30 AM – 5:00 PM.",
       "bio": [
         "Jason Spencer, APM, serves as Hart County’s Public Works Director, overseeing the planning, organization, and delivery of public works operations across the county. In this role he is responsible for managing county roads, supporting engineering and capital projects, overseeing solid waste operations, coordinating maintenance of public buildings, and directing county vehicle and equipment maintenance. Jason brings more than 20 years of experience in local government and operations leadership, including long-tenured service as a municipal Public Works Director.",
