@@ -45,7 +45,6 @@
   },
 
   "staff": {
-  "subtitle": "Tap a phone number to call from a mobile device.",
   "people": [
     {
       "enabled": true,
