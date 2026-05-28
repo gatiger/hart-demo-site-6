@@ -149,7 +149,7 @@
       {
         "enabled": true,
         "label": "Utility Permit Requirements",
-        "href": "/documents/public-works/utility-permit-requirements.pdf",
+        "href": "assets/documents/utilitypermitrequirements.pdf",
         "variant": "ghost",
         "newTab": true
       }
