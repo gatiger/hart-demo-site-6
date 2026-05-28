@@ -18,9 +18,9 @@
       "alt": "County road maintenance"
     },
     "buttons": [
-      { "label": "Report a Road Issue", "href": "contact.html", "variant": "primary", "enabled": true },
+      { "label": "Report a Road Issue", "href": "email:roads@hartcountyga.gov", "variant": "primary", "enabled": true },
       { "label": "Service Directory", "href": "directory.html", "variant": "ghost", "enabled": true },
-      { "label": "After Hours (Demo)", "href": "tel:+17065551234", "variant": "ghost", "enabled": true }
+      { "label": "After Hours", "href": "tel:+17065551234", "variant": "ghost", "enabled": true }
     ]
   },
 
