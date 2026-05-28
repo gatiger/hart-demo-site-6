@@ -223,6 +223,103 @@
   font-size: .9375rem;
 }
 
+
+/* ===== DEPARTMENTS / PERMITS / BID PACKETS ===== */
+
+.pwDepartmentsGrid{
+  display: grid;
+  gap: 12px;
+  padding: 1rem 1.5rem 1.5rem;
+}
+
+@media (min-width: 760px){
+  .pwDepartmentsGrid{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1100px){
+  .pwDepartmentsGrid{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.pwDepartment{
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface-alt);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pwDepartment h3{
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--navy);
+  line-height: 1.3;
+}
+
+.pwDepartment p{
+  margin: 0;
+  color: var(--text-muted);
+  line-height: 1.6;
+  font-size: .9375rem;
+}
+
+.pwSmallBtn{
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+.pwSplitCards{
+  display: grid;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+@media (min-width: 850px){
+  .pwSplitCards{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+  }
+}
+
+.pwSplitCard{
+  margin-bottom: 0;
+}
+
+.pwActionList{
+  padding: 1rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pwActionItem{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
+}
+
+.pwActionBtn{
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.pwActionItem p,
+.pwEmptyText{
+  margin: 0;
+  color: var(--text-muted);
+  font-size: .9375rem;
+  line-height: 1.6;
+}
+
 /* ===== STAFF ===== */
 
 .pwStaffGrid{
@@ -365,6 +462,8 @@
   }
 
   .pwServicesGrid,
+  .pwDepartmentsGrid,
+  .pwActionList,
   .pwStaffGrid{
     padding: .875rem 1.25rem 1.25rem;
   }

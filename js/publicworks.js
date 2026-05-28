@@ -15,6 +15,9 @@ async function initPublicWorks(){
     renderHero(data.hero || {});
     renderAbout(data.about || {});
     renderServices(data.services || {});
+    renderDepartments(data.departments || {});
+    renderPermits(data.permits || {});
+    renderBids(data.bidPackets || {});
     renderStaff(data.staff || {});
   }catch(err){
     if(sub) sub.textContent = "Unable to load Public Works content.";
@@ -96,6 +99,79 @@ function renderServices(services){
       <p>${escapeHtml(safeText(s.text) || "")}</p>
     </article>
   `).join("");
+}
+
+
+function renderDepartments(departments){
+  const subEl = document.getElementById("pwDepartmentsSub");
+  const grid  = document.getElementById("pwDepartmentsGrid");
+  if(!grid) return;
+
+  const titleEl = document.getElementById("pwDepartmentsTitle");
+  if(titleEl) titleEl.textContent = safeText(departments.title) || "Departments";
+  if(subEl) subEl.textContent = safeText(departments.subtitle) || "";
+
+  const items = Array.isArray(departments.items) ? departments.items : [];
+  const visible = items.filter(x => x && x.enabled !== false);
+
+  grid.innerHTML = visible.map(d => {
+    const title = safeText(d.title) || "Department";
+    const text = safeText(d.text) || "";
+    const href = safeText(d.href);
+    const label = safeText(d.buttonLabel) || "Learn more";
+    const newTab = d.newTab === true ? ` target="_blank" rel="noopener noreferrer"` : "";
+    return `
+      <article class="pwDepartment">
+        <h3>${escapeHtml(title)}</h3>
+        ${text ? `<p>${escapeHtml(text)}</p>` : ``}
+        ${href ? `<a class="btn ghost pwSmallBtn" href="${escapeAttr(href)}"${newTab}>${escapeHtml(label)}</a>` : ``}
+      </article>
+    `;
+  }).join("");
+}
+
+function renderPermits(permits){
+  const titleEl = document.getElementById("pwPermitsTitle");
+  const subEl = document.getElementById("pwPermitsSub");
+  const list = document.getElementById("pwPermitsLinks");
+  renderLinkCard(permits, titleEl, subEl, list, "Permits & Applications", "No permit links are listed yet.");
+}
+
+function renderBids(bids){
+  const titleEl = document.getElementById("pwBidsTitle");
+  const subEl = document.getElementById("pwBidsSub");
+  const list = document.getElementById("pwBidLinks");
+  renderLinkCard(bids, titleEl, subEl, list, "Current Bid Packets", "No current bid packets are listed at this time.");
+}
+
+function renderLinkCard(section, titleEl, subEl, listEl, fallbackTitle, emptyText){
+  if(titleEl) titleEl.textContent = safeText(section.title) || fallbackTitle;
+  if(subEl) subEl.textContent = safeText(section.subtitle) || "";
+  if(!listEl) return;
+
+  const links = Array.isArray(section.links) ? section.links : [];
+  const visible = links.filter(x => x && x.enabled !== false);
+
+  if(!visible.length){
+    listEl.innerHTML = `<p class="pwEmptyText">${escapeHtml(emptyText)}</p>`;
+    return;
+  }
+
+  listEl.innerHTML = visible.map(link => {
+    const label = safeText(link.label) || "Open link";
+    const href = safeText(link.href) || "#";
+    const description = safeText(link.description);
+    const newTab = link.newTab === true ? ` target="_blank" rel="noopener noreferrer"` : "";
+    const aria = safeText(link.ariaLabel) ? ` aria-label="${escapeAttr(link.ariaLabel)}"` : "";
+    const variant = link.variant === "ghost" ? "btn ghost pwActionBtn" : "btn pwActionBtn";
+
+    return `
+      <div class="pwActionItem">
+        <a class="${variant}" href="${escapeAttr(href)}"${newTab}${aria}>${escapeHtml(label)}</a>
+        ${description ? `<p>${escapeHtml(description)}</p>` : ``}
+      </div>
+    `;
+  }).join("");
 }
 
 function renderStaff(staff){
