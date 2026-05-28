@@ -3,7 +3,7 @@
   "hero": {
     "title": "Hart County Public Works",
     "address": {
-      "street": "123 Public Works Way",
+      "street": "800 Chandler St",
       "city": "Hartwell",
       "state": "GA",
       "zip": "30643"
@@ -19,7 +19,7 @@
     "buttons": [
       {
         "label": "Report a Road Issue",
-        "href": "contact.html",
+        "href": "mailto:roads@hartcountyga.gov",
         "variant": "primary",
         "enabled": true
       },
@@ -30,8 +30,8 @@
         "enabled": true
       },
       {
-        "label": "After Hours (Demo)",
-        "href": "tel:+17065551234",
+        "label": "After Hours",
+        "href": "",
         "variant": "ghost",
         "enabled": true
       }
@@ -74,19 +74,19 @@
       },
       {
         "enabled": true,
-        "title": "Facilities Support (Demo)",
-        "text": "Support for county maintenance needs (demo content)."
+        "title": "Facilities Support",
+        "text": "Support for county maintenance needs."
       }
     ]
   },
   "staff": {
-    "subtitle": "Tap a phone number to call from a mobile device.",
+    "subtitle": "",
     "people": [
       {
         "enabled": true,
         "name": "Jason Spencer",
         "title": "Director",
-        "phone": "(706) 376-0000",
+        "phone": "(706) 376-2024",
         "fax": "(706) 555-0299",
         "info": "Office hours: Mon\u2013Fri, 8:30 AM \u2013 5:00 PM.",
         "bio": [
@@ -123,7 +123,7 @@
         "enabled": true,
         "title": "Vehicle Maintenance",
         "text": "Maintenance and support for county vehicles and equipment.",
-        "href": "#",
+        "href": "shop.html",
         "buttonLabel": "Vehicle Maintenance"
       },
       {
