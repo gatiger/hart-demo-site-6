@@ -1,10 +1,30 @@
 {
   "name": "Hart County EMS Protocols",
   "short_name": "EMS Protocols",
-  "start_url": "./",
-  "scope": "./",
+  "start_url": "/ems-protocols/",
+  "scope": "/ems-protocols/",
   "display": "standalone",
   "background_color": "#f4f7f5",
   "theme_color": "#0f5132",
-  "description": "Mobile-friendly Hart County EMS protocol reference."
+  "description": "Mobile-friendly Hart County EMS protocol reference.",
+  "icons": [
+    {
+      "src": "/ems-protocols/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/ems-protocols/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/ems-protocols/icons/icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
 }
