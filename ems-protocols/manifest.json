@@ -9,19 +9,19 @@
   "description": "Mobile-friendly Hart County EMS protocol reference.",
   "icons": [
     {
-      "src": "/ems-protocols/icons/icon-192.png",
+      "src": "/ems-protocols/icons/ems-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/ems-protocols/icons/icon-512.png",
+      "src": "/ems-protocols/icons/ems-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/ems-protocols/icons/icon-512-maskable.png",
+      "src": "/ems-protocols/icons/ems-512-maskable.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
