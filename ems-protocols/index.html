@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0f5132" />
+  <title>Hart County EMS Protocols</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#protocol-title">Skip to protocol</a>
+  <header class="app-header">
+    <div>
+      <p class="eyebrow">Hart County EMS</p>
+      <h1>EMS Protocols</h1>
+      <p id="metaLine" class="meta-line">Loading protocol data…</p>
+    </div>
+    <div class="header-actions">
+      <a class="btn btn-primary" href="documents/ems/2026-hcems-protocols.pdf" target="_blank" rel="noopener">Open Full PDF</a>
+      <button id="installBtn" class="btn" hidden>Install App</button>
+    </div>
+  </header>
+
+  <main class="app-shell">
+    <aside class="sidebar" aria-label="Protocol navigation">
+      <div class="search-card">
+        <label for="searchBox">Search protocols</label>
+        <input id="searchBox" type="search" placeholder="Search by title or text…" autocomplete="off" />
+      </div>
+      <nav id="treeNav" class="tree-nav"></nav>
+    </aside>
+
+    <section class="content-area" aria-live="polite">
+      <article class="protocol-card">
+        <div class="protocol-topline">
+          <span id="protocolType" class="pill">Protocol</span>
+          <span id="protocolPages" class="source-pages"></span>
+        </div>
+        <h2 id="protocol-title">Select a protocol</h2>
+        <p id="protocolPath" class="protocol-path"></p>
+        <div id="reviewNotice" class="notice" hidden>
+          Auto-extracted text. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.
+        </div>
+        <div id="protocolContent" class="protocol-content">
+          <p>Choose a protocol from the left menu or use search.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

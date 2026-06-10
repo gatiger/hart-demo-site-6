@@ -1,0 +1,10 @@
+{
+  "name": "Hart County EMS Protocols",
+  "short_name": "EMS Protocols",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4f7f5",
+  "theme_color": "#0f5132",
+  "description": "Mobile-friendly Hart County EMS protocol reference."
+}
