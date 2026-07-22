@@ -77,19 +77,33 @@
   </aside>
 
   <main id="main" class="container countyClerkPage" tabindex="-1">
-
-    <section class="card comingSoonCard" aria-labelledby="comingSoonTitle">
-      <div class="comingSoonInner">
-        <p class="comingSoonEyebrow">Hart County</p>
-        <h1 id="comingSoonTitle" class="comingSoonTitle">County Clerk</h1>
-        <p class="comingSoonText">Page coming soon.</p>
+    <div id="alertHolder"></div>
+    <section class="card pageIntroCard countyClerkIntroCard" aria-labelledby="countyClerkTitle">
+      <div class="countyClerkIntroLayout">
+        <div class="countyClerkIntroMain">
+          <p id="countyClerkEyebrow" class="pageIntroEyebrow"></p>
+          <h1 id="countyClerkTitle" class="pageIntroTitle">County Clerk</h1>
+          <p id="countyClerkDescription" class="pageIntroText"></p>
+        </div>
+        <div class="countyClerkIntroContact" aria-labelledby="contactTitle">
+          <h2 id="contactTitle">County Clerk's Office</h2>
+          <div id="countyClerkContact"></div>
+        </div>
       </div>
     </section>
-
-    <footer class="footer">
-      <div>© 2026 Hart County Board of Commissioners</div>
-    </footer>
-
+    <section class="card countyClerkStaffCard" aria-labelledby="staffTitle">
+      <div class="cardHeader"><div><h2 id="staffTitle">Office Staff</h2><p class="sub">Hart County Administrative Offices</p></div></div>
+      <div id="countyClerkStaff" class="staffList"></div>
+    </section>
+    <section class="card countyClerkDutiesCard" aria-labelledby="dutiesTitle">
+      <div class="cardHeader"><div><h2 id="dutiesTitle">Responsibilities of the County Clerk</h2></div></div>
+      <div id="countyClerkDuties"></div>
+    </section>
+    <section class="card countyClerkLinksCard" aria-labelledby="linksTitle">
+      <div class="cardHeader"><div><h2 id="linksTitle">Related Information</h2></div></div>
+      <div id="countyClerkLinks" class="countyClerkLinkList"></div>
+    </section>
+    <footer class="footer"><div>© 2026 Hart County Board of Commissioners</div></footer>
   </main>
 </body>
 </html>

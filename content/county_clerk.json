@@ -1,0 +1,39 @@
+{
+  "intro": {
+    "eyebrow": "Hart County",
+    "title": "County Clerk",
+    "description": "The County Clerk provides administrative assistance to the County Administrator and Board of Commissioners in support of the overall administration of county government."
+  },
+  "contact": {
+    "location_name": "County Administrative Offices",
+    "address": "800 Chandler St.",
+    "city_state_zip": "Hartwell, GA 30643",
+    "phone": "706-376-2024",
+    "phone_raw": "17063762024",
+    "fax": "706-376-9477"
+  },
+  "staff": [
+    {
+      "name": "Lisa Evans",
+      "role": "County Clerk",
+      "email": "levans@hartcountyga.gov"
+    },
+    {
+      "name": "Betty Floyd",
+      "role": "Associate County Clerk",
+      "email": "bettyf@hartcom.net"
+    }
+  ],
+  "responsibility_paragraphs": [
+    "This office is located in the Administrative Building at 800 Chandler St.",
+    "The County Clerk is responsible for providing administrative assistance to the County Administrator and Board of Commissioners for the overall administration of county government.",
+    "The County Clerk attends Commission meetings and compiles and records meeting minutes. This office is also responsible for personnel records and county payroll."
+  ],
+  "links": [
+    {
+      "title": "Hart County Charter",
+      "url": "https://hartcountyga.org/",
+      "external": true
+    }
+  ]
+}
