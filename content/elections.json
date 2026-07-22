@@ -1,0 +1,192 @@
+{
+  "intro": {
+    "eyebrow": "Hart County",
+    "title": "Board of Elections and Registration",
+    "description": "Election office contact information, board and staff listings, public notices, election documents, and voter registration guidance."
+  },
+  "contact": {
+    "mailing_address": "P.O. Box 426",
+    "mailing_city_state_zip": "Hartwell, GA 30643",
+    "office_location": "182 Cade Street, Suite B",
+    "phone": "706-376-8911",
+    "phone_raw": "17063768911",
+    "fax": "706-376-1694",
+    "office_hours": [
+      "Monday – Friday",
+      "8:00 AM – 12:00 PM",
+      "1:00 PM – 5:00 PM"
+    ]
+  },
+  "people": [
+    {
+      "title": "Board Members",
+      "items": [
+        {
+          "name": "Garry Hamilton",
+          "role": "Chairman"
+        },
+        {
+          "name": "Pam Gordon",
+          "role": ""
+        },
+        {
+          "name": "Dottie Williams",
+          "role": ""
+        }
+      ]
+    },
+    {
+      "title": "Office Staff",
+      "items": [
+        {
+          "name": "Robin Webb",
+          "role": "Elections Coordinator"
+        },
+        {
+          "name": "Lacey Sanders",
+          "role": "Elections Clerk to Staff"
+        }
+      ]
+    }
+  ],
+  "documents": [
+    {
+      "title": "Hart County Commission and School Board Districting",
+      "url": "https://hartcountyga.gov/documents/bocminutes/hartccsb-draft1-2022-11x17s.pdf",
+      "external": true
+    },
+    {
+      "title": "Recount Notice",
+      "url": "https://hartcountyga.gov/documents/electionsboarddocs/recount%20notice.pdf",
+      "external": true
+    },
+    {
+      "title": "Notice of Consolidation and Canvassing",
+      "url": "https://hartcountyga.gov/documents/electionsboarddocs/Notice%20of%20consolidation%20and%20canvassing.pdf",
+      "external": true
+    },
+    {
+      "title": "Notice of Processing Ballots",
+      "url": "https://hartcountyga.gov/documents/electionsboarddocs/Notice%20of%20Processing%20Ballots.pdf",
+      "external": true
+    },
+    {
+      "title": "Audit Results",
+      "url": "https://hartcountyga.gov/documents/electionsboarddocs/Screenshot%202026-05-29%20145711.png",
+      "external": true
+    },
+    {
+      "title": "Sample Ballots",
+      "url": "https://hartcountyga.gov/documents/electionsboarddocs/sample%20ballots.pdf",
+      "external": true
+    },
+    {
+      "title": "May 19, 2026 Election Summary Report",
+      "url": "https://hartcountyga.gov/documents/electionsboarddocs/100_.pdf",
+      "external": true
+    },
+    {
+      "title": "Certification of Returns",
+      "url": "https://hartcountyga.gov/documents/electionsboarddocs/CERTIFICATION.pdf",
+      "external": true
+    },
+    {
+      "title": "RLA Notice 2026",
+      "url": "https://hartcountyga.gov/documents/electionsboarddocs/RLA%20notice%202026%2005%2019.pdf",
+      "external": true
+    },
+    {
+      "title": "2026 Election Calendar",
+      "url": "https://hartcountyga.gov/documents/electionsboarddocs/",
+      "external": true
+    },
+    {
+      "title": "Voting Checklist",
+      "url": "https://hartcountyga.gov/documents/electionsboarddocs/VOTING%20CHECKLIST%20.pdf",
+      "external": true
+    },
+    {
+      "title": "Are You Election Ready?",
+      "url": "https://hartcountyga.gov/documents/electionsboarddocs/ARE%20YOU%20ELECTION%20READY.pdf",
+      "external": true
+    },
+    {
+      "title": "Hart County Precinct Addresses",
+      "url": "https://hartcountyga.gov/documents/electionsboarddocs/Hart%20County%20Precinct%20addresses.pdf",
+      "external": true
+    },
+    {
+      "title": "House Bill 1018 – Powers and Duties of the Board",
+      "url": "https://hartcountyga.gov/documents/hb1018.pdf",
+      "external": true
+    },
+    {
+      "title": "Bylaws of the Board of Elections",
+      "url": "https://hartcountyga.gov/documents/electionsboarddocs/BdofElectionsBylaws.pdf",
+      "external": true
+    }
+  ],
+  "information_sections": [
+    {
+      "title": "Qualifications to Register",
+      "width": "half",
+      "items": [
+        "17½ years of age or older; you must be 18 years old to vote",
+        "United States citizen",
+        "Not serving a sentence for a felony involving moral turpitude",
+        "Not having been adjudicated mentally incompetent"
+      ]
+    },
+    {
+      "title": "Ways to Register",
+      "width": "half",
+      "items": [
+        "Department of Public Safety when applying for or renewing a driver's license",
+        "Department of Human Services public assistance offices, including WIC, DFCS, rehabilitation, and other offices serving people with disabilities",
+        "Public libraries",
+        "Recruitment offices",
+        "County courthouses, city halls, colleges, and high schools",
+        "Board of Elections and Registration office"
+      ]
+    },
+    {
+      "title": "What to Do if You Move",
+      "width": "full",
+      "paragraphs": [
+        "Voters are required to notify the board of registrars in their county of residence whenever they move. Use the address and telephone number listed above.",
+        "If you move within the same county and do not notify the Board at least 30 days before an election, you may vote at your old polling place for that election. You must file notice of your new address by writing the county Board of Elections and Registration office or by submitting a new voter registration application.",
+        "If you move outside the county within 30 days of an election, you may vote in your old precinct for that election.",
+        "If you move outside the county more than 30 days before an election, you are no longer eligible to vote in your former county. You must register in your new county by the applicable deadline."
+      ]
+    },
+    {
+      "title": "Information Required",
+      "width": "half",
+      "items": [
+        "Complete name",
+        "Residence address",
+        "Mailing address, if different",
+        "County of residence",
+        "Social Security number; confidentiality is maintained",
+        "Date of birth",
+        "Signature or mark",
+        "Optional information includes race, gender, and telephone number"
+      ]
+    },
+    {
+      "title": "Registration Status and Applications",
+      "width": "half",
+      "paragraphs": [
+        "A precinct card is mailed after a voter registration application is approved. If you do not receive the card within two to three weeks, contact the local registration office.",
+        "Visit the Georgia Secretary of State website to check your registration status or locate your polling place.",
+        "Mail-in applications are available through the Secretary of State, county voter registration offices, and other mandated registration sites."
+      ],
+      "links": [
+        {
+          "label": "Georgia Secretary of State website",
+          "url": "https://mvp.sos.ga.gov/s/"
+        }
+      ]
+    }
+  ]
+}

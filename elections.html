@@ -77,13 +77,49 @@
   </aside>
 
   <main id="main" class="container electionsPage" tabindex="-1">
-    <section class="card comingSoonCard" aria-labelledby="comingSoonTitle">
-      <div class="comingSoonInner">
-        <p class="comingSoonEyebrow">Hart County</p>
-        <h1 id="comingSoonTitle" class="comingSoonTitle">Elections</h1>
-        <p class="comingSoonText">Page coming soon.</p>
+    <div id="alertHolder"></div>
+
+    <section class="electionsIntroGrid" aria-labelledby="electionsTitle">
+      <div class="card pageIntroCard electionsIntroCard">
+        <div class="pageIntroInner">
+          <p id="electionsEyebrow" class="pageIntroEyebrow"></p>
+          <h1 id="electionsTitle" class="pageIntroTitle">Board of Elections and Registration</h1>
+          <p id="electionsDescription" class="pageIntroText"></p>
+        </div>
       </div>
+
+      <aside class="card electionsContactCard" aria-labelledby="contactTitle">
+        <div class="cardHeader compact">
+          <div>
+            <h2 id="contactTitle">Election Office</h2>
+            <p class="sub">Contact and office information</p>
+          </div>
+        </div>
+        <div id="electionsContact"></div>
+      </aside>
     </section>
+
+    <section class="card electionsPeopleCard" aria-labelledby="peopleTitle">
+      <div class="cardHeader">
+        <div>
+          <h2 id="peopleTitle">Board Members and Office Staff</h2>
+          <p class="sub">Hart County Board of Elections and Registration</p>
+        </div>
+      </div>
+      <div id="electionsPeople" class="peopleGrid"></div>
+    </section>
+
+    <section class="card electionsDocumentsCard" aria-labelledby="documentsTitle">
+      <div class="cardHeader">
+        <div>
+          <h2 id="documentsTitle">Election Information and Documents</h2>
+          <p class="sub">Notices, reports, ballots, maps, calendars, and governing documents</p>
+        </div>
+      </div>
+      <div id="electionsDocuments" class="documentGrid"></div>
+    </section>
+
+    <section id="electionsInformation" class="electionsInformationGrid" aria-label="Voter registration information"></section>
 
     <footer class="footer">
       <div>© 2026 Hart County Board of Commissioners</div>

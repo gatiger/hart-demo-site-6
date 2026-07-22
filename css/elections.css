@@ -5,46 +5,247 @@
   padding-bottom: 3rem;
 }
 
-.comingSoonCard{
-  margin-top: 18px;
-  min-height: 320px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 32px 24px;
+.electionsIntroGrid{
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(300px, .85fr);
+  gap: 18px;
+  margin-bottom: 18px;
 }
 
-.comingSoonInner{
-  max-width: 700px;
+.electionsIntroGrid > .card{
+  margin: 0;
 }
 
-.comingSoonEyebrow{
-  margin: 0 0 10px;
-  font-size: 0.9rem;
-  font-weight: 800;
-  letter-spacing: 0.12em;
+.electionsIntroCard{
+  min-height: 100%;
+}
+
+.pageIntroEyebrow{
+  margin: 0 0 .55rem;
+  font-size: .82rem;
+  font-weight: 900;
+  letter-spacing: .11em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: rgba(255,255,255,.75);
 }
 
-.comingSoonTitle{
-  margin: 0 0 14px;
-  font-size: clamp(2rem, 4vw, 3rem);
-  line-height: 1.1;
+.electionsContactCard{
+  padding: 0;
+  overflow: hidden;
+}
+
+.electionsContactCard .cardHeader{
+  padding: 1.15rem 1.25rem .8rem;
+}
+
+.contactList{
+  display: grid;
+  gap: 0;
+  padding: 0 1.25rem 1.25rem;
+}
+
+.contactItem{
+  padding: .8rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.contactItem:first-child{
+  border-top: 0;
+  padding-top: .2rem;
+}
+
+.contactLabel{
+  display: block;
+  margin-bottom: .2rem;
+  color: var(--text-muted);
+  font-size: .78rem;
+  font-weight: 900;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.contactValue{
+  color: var(--text);
+  font-weight: 700;
+  line-height: 1.55;
+  white-space: pre-line;
+}
+
+.phoneDesktop{
+  display: inline;
+}
+
+.phoneMobile{
+  display: none;
+}
+
+.peopleGrid{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.peopleGroup{
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: rgba(255,255,255,.72);
+  padding: 1rem;
+}
+
+.peopleGroup h3{
+  margin: 0 0 .75rem;
+  font-size: 1.1rem;
+}
+
+.personList{
+  display: grid;
+  gap: .65rem;
+}
+
+.person{
+  padding: .7rem .8rem;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid var(--border);
+}
+
+.personName{
+  font-weight: 900;
   color: var(--text);
 }
 
-.comingSoonText{
+.personRole{
+  margin-top: .15rem;
+  color: var(--text-muted);
+  font-size: .88rem;
+  font-weight: 700;
+}
+
+.electionsDocumentsCard{
+  margin-top: 18px;
+}
+
+.documentGrid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.documentLink{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .9rem;
+  min-height: 76px;
+  padding: .95rem 1rem;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 850;
+  line-height: 1.35;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: rgba(255,255,255,.86);
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+}
+
+.documentLink::after{
+  content: "Open";
+  flex: 0 0 auto;
+  color: var(--navy-mid);
+  font-size: .75rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+
+.documentLink:hover{
+  transform: translateY(-1px);
+  border-color: rgba(20,63,105,.32);
+  box-shadow: 0 10px 24px rgba(0,0,0,.08);
+}
+
+.documentLink:focus-visible{
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.electionsInformationGrid{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.infoCard{
   margin: 0;
-  font-size: clamp(1.05rem, 2vw, 1.25rem);
+}
+
+.infoCard.full{
+  grid-column: 1 / -1;
+}
+
+.infoCard h2{
+  margin: 0 0 .75rem;
+}
+
+.infoCard h3{
+  margin: 1.25rem 0 .5rem;
+  font-size: 1.05rem;
+}
+
+.infoCard p{
+  margin: .65rem 0 0;
   line-height: 1.7;
-  color: var(--muted);
+}
+
+.infoCard ul{
+  margin: .7rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.infoCard li{
+  margin: .45rem 0;
+  line-height: 1.6;
+}
+
+.inlineLink{
+  font-weight: 850;
+  color: var(--navy-mid);
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 1000px){
+  .documentGrid{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 820px){
+  .electionsIntroGrid,
+  .electionsInformationGrid{
+    grid-template-columns: 1fr;
+  }
+
+  .infoCard.full{
+    grid-column: auto;
+  }
 }
 
 @media (max-width: 640px){
-  .comingSoonCard{
-    min-height: 260px;
-    padding: 28px 18px;
+  .electionsPage{
+    padding-top: 150px;
+  }
+
+  .peopleGrid,
+  .documentGrid{
+    grid-template-columns: 1fr;
+  }
+
+  .phoneDesktop{
+    display: none;
+  }
+
+  .phoneMobile{
+    display: inline;
   }
 }
