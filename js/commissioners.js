@@ -3,13 +3,24 @@ document.addEventListener("DOMContentLoaded", async () => {
   if (!mount) return;
 
   try {
-    const commissioners = await loadJSON("./content/commissioners.json");
-    renderCommissioners(commissioners?.items || commissioners || []);
+    const data = await loadJSON("./content/commissioners.json");
+    renderPageContent(data?.page || {});
+    renderCommissioners(data?.items || data || []);
   } catch (err) {
     console.error(err);
     mount.innerHTML = "<p class=\"sub\">Unable to load commissioner information at this time.</p>";
   }
 });
+
+function renderPageContent(page){
+  const description = document.getElementById("commissionersDescription");
+  if (!description) return;
+
+  const text = page?.description;
+  if (typeof text === "string" && text.trim()) {
+    description.textContent = text.trim();
+  }
+}
 
 function renderCommissioners(items){
   const mount = document.getElementById("commissionersList");
@@ -70,7 +81,7 @@ function renderCommissioners(items){
 
           ${(phone || email) ? `
             <div class="commMeta" aria-label="Contact information">
-              ${phone ? `<span>Phone: <a class="phone-link" href="tel:${escapeHtml(phoneRaw)}">${escapeHtml(phone)}</a></span>` : ``}
+              ${phone ? `<span>Phone: <span class="phoneDesktop">${escapeHtml(phone)}</span><a class="phoneMobile phone-link" href="tel:${escapeHtml(phoneRaw)}">${escapeHtml(phone)}</a></span>` : ``}
               ${(phone && email) ? `<span aria-hidden="true">•</span>` : ``}
               ${email ? `<span>Email: <a class="email-link" href="mailto:${escapeHtml(email)}">${escapeHtml(email)}</a></span>` : ``}
             </div>
