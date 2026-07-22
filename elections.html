@@ -79,24 +79,19 @@
   <main id="main" class="container electionsPage" tabindex="-1">
     <div id="alertHolder"></div>
 
-    <section class="electionsIntroGrid" aria-labelledby="electionsTitle">
-      <div class="card pageIntroCard electionsIntroCard">
-        <div class="pageIntroInner">
+    <section class="card pageIntroCard electionsIntroCard" aria-labelledby="electionsTitle">
+      <div class="electionsIntroLayout">
+        <div class="electionsIntroMain">
           <p id="electionsEyebrow" class="pageIntroEyebrow"></p>
           <h1 id="electionsTitle" class="pageIntroTitle">Board of Elections and Registration</h1>
           <p id="electionsDescription" class="pageIntroText"></p>
         </div>
-      </div>
 
-      <aside class="card electionsContactCard" aria-labelledby="contactTitle">
-        <div class="cardHeader compact">
-          <div>
-            <h2 id="contactTitle">Election Office</h2>
-            <p class="sub">Contact and office information</p>
-          </div>
+        <div class="electionsIntroContact" aria-labelledby="contactTitle">
+          <h2 id="contactTitle">Election Office</h2>
+          <div id="electionsContact"></div>
         </div>
-        <div id="electionsContact"></div>
-      </aside>
+      </div>
     </section>
 
     <section class="card electionsPeopleCard" aria-labelledby="peopleTitle">

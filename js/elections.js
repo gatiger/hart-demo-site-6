@@ -129,9 +129,7 @@ function renderElectionsPage(data){
         class="documentLink"
         href="${escapeAttr(safe(item.url))}"
         ${item.external ? 'target="_blank" rel="noopener noreferrer"' : ""}
-      >
-        <span>${escapeHtml(safe(item.title))}</span>
-      </a>
+      >${escapeHtml(safe(item.title))}</a>
     `).join("");
   }
 
