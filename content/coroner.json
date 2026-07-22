@@ -1,0 +1,42 @@
+{
+  "intro": {
+    "eyebrow": "Hart County",
+    "title": "Hart County Coroner's Office",
+    "description": "The Coroner's Office determines the cause and manner of deaths that are unexpected, unexplained, suspicious, or otherwise require investigation."
+  },
+  "contact": {
+    "name": "Mike Adams, Coroner",
+    "address": "800 Chandler St.",
+    "city_state_zip": "Hartwell, GA 30643",
+    "phone": "706-856-5322",
+    "phone_raw": "17068565322",
+    "email": "coroner@hartcountyga.org"
+  },
+  "function_paragraphs": [
+    "The function of the Coroner's Office is to determine cause and manner in any death that is unexpected or unexplained."
+  ],
+  "investigation_cases": [
+    "As a result of violence",
+    "By suicide or casualty",
+    "Suddenly when in apparent good health",
+    "When unattended by a physician",
+    "In any suspicious or unusual manner, with particular attention to persons 16 years of age and under",
+    "After birth but before seven years of age if the death is unexpected or unexplained",
+    "As a result of an execution carried out pursuant to the death penalty",
+    "When an inmate of a state hospital or a state, county, or city penal institution",
+    "After having been admitted to a hospital in an unconscious state and without regaining consciousness within 24 hours of admission"
+  ],
+  "about_paragraphs": [
+    "The county currently employs one Coroner and one Deputy Coroner. The Deputy Coroner performs the same duties as the Coroner in the Coroner's absence.",
+    "The Coroner is elected at large to a four-year term. Mike Adams has served as Coroner since January 1992.",
+    "Mike Adams has been an active member of the Georgia Coroners Association since 1993 and served as District Director from 2000 through 2002. He is currently serving the Association as Second Vice President.",
+    "He has also served as chairperson of the state-mandated Hart County Child Fatality Review Committee."
+  ],
+  "links": [
+    {
+      "title": "Georgia Coroners Association",
+      "url": "https://www.georgiacoronersassoc.org/",
+      "external": true
+    }
+  ]
+}

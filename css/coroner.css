@@ -5,46 +5,206 @@
   padding-bottom: 3rem;
 }
 
-.comingSoonCard{
-  margin-top: 18px;
-  min-height: 320px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 32px 24px;
+.coronerIntroCard,
+.coronerFunctionCard,
+.coronerCasesCard,
+.coronerAboutCard,
+.coronerLinksCard{
+  padding: 1.5rem 1.65rem;
 }
 
-.comingSoonInner{
-  max-width: 700px;
+.coronerIntroCard{
+  margin-bottom: 18px;
 }
 
-.comingSoonEyebrow{
-  margin: 0 0 10px;
-  font-size: 0.9rem;
-  font-weight: 800;
-  letter-spacing: 0.12em;
+.coronerIntroLayout{
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(340px, .9fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+.coronerIntroMain{
+  align-self: center;
+}
+
+.pageIntroEyebrow{
+  margin: 0 0 .4rem;
+  font-size: .82rem;
+  font-weight: 900;
+  letter-spacing: .11em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: rgba(255,255,255,.75);
 }
 
-.comingSoonTitle{
-  margin: 0 0 14px;
-  font-size: clamp(2rem, 4vw, 3rem);
-  line-height: 1.1;
-  color: var(--text);
+.coronerIntroCard .pageIntroTitle{
+  margin-bottom: .55rem;
 }
 
-.comingSoonText{
+.coronerIntroCard .pageIntroText{
+  max-width: 740px;
+  margin-bottom: 0;
+}
+
+.coronerIntroContact{
+  padding-left: 1.5rem;
+  border-left: 1px solid rgba(255,255,255,.22);
+}
+
+.coronerIntroContact h2{
+  margin: 0 0 .7rem;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.contactList{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .7rem 1.25rem;
+}
+
+.contactItem{
+  min-width: 0;
+}
+
+.contactLabel{
+  display: block;
+  margin-bottom: .15rem;
+  color: rgba(255,255,255,.72);
+  font-size: .72rem;
+  font-weight: 900;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.contactValue{
+  color: #fff;
+  font-weight: 700;
+  font-size: .9rem;
+  line-height: 1.45;
+  white-space: pre-line;
+}
+
+.coronerIntroContact a{
+  color: #fff;
+  text-underline-offset: 3px;
+}
+
+.phoneDesktop,
+.emailDesktop{
+  display: inline;
+}
+
+.phoneMobile,
+.emailMobile{
+  display: none;
+}
+
+.coronerFunctionCard,
+.coronerCasesCard,
+.coronerAboutCard,
+.coronerLinksCard{
+  margin-top: 18px;
+}
+
+.coronerFunctionCard .cardHeader,
+.coronerCasesCard .cardHeader,
+.coronerAboutCard .cardHeader,
+.coronerLinksCard .cardHeader{
+  margin-bottom: .9rem;
+}
+
+.coronerFunctionCard p,
+.coronerAboutCard p{
+  margin: .7rem 0 0;
+  line-height: 1.75;
+}
+
+.coronerFunctionCard p:first-child,
+.coronerAboutCard p:first-child{
+  margin-top: 0;
+}
+
+.coronerCaseList{
   margin: 0;
-  font-size: clamp(1.05rem, 2vw, 1.25rem);
-  line-height: 1.7;
-  color: var(--muted);
+  padding-left: 1.45rem;
+  columns: 2;
+  column-gap: 3rem;
+}
+
+.coronerCaseList li{
+  margin: 0 0 .75rem;
+  line-height: 1.65;
+  break-inside: avoid;
+}
+
+.coronerLinkList{
+  display: grid;
+  gap: .7rem;
+}
+
+.coronerTextLink{
+  width: fit-content;
+  max-width: 100%;
+  color: var(--navy-mid);
+  font-weight: 800;
+  text-underline-offset: 3px;
+}
+
+.coronerTextLink:hover{
+  text-decoration-thickness: 2px;
+}
+
+.coronerTextLink:focus-visible{
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+@media (max-width: 900px){
+  .coronerIntroLayout{
+    grid-template-columns: 1fr;
+    gap: 1.15rem;
+  }
+
+  .coronerIntroContact{
+    padding-left: 0;
+    padding-top: 1rem;
+    border-left: 0;
+    border-top: 1px solid rgba(255,255,255,.22);
+  }
+}
+
+@media (max-width: 700px){
+  .coronerCaseList{
+    columns: 1;
+  }
 }
 
 @media (max-width: 640px){
-  .comingSoonCard{
-    min-height: 260px;
-    padding: 28px 18px;
+  .coronerPage{
+    padding-top: 150px;
+  }
+
+  .coronerIntroCard,
+  .coronerFunctionCard,
+  .coronerCasesCard,
+  .coronerAboutCard,
+  .coronerLinksCard{
+    padding: 1.25rem;
+  }
+
+  .contactList{
+    grid-template-columns: 1fr;
+  }
+
+  .phoneDesktop,
+  .emailDesktop{
+    display: none;
+  }
+
+  .phoneMobile,
+  .emailMobile{
+    display: inline;
   }
 }

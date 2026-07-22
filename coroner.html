@@ -77,12 +77,58 @@
   </aside>
 
   <main id="main" class="container coronerPage" tabindex="-1">
-    <section class="card comingSoonCard" aria-labelledby="comingSoonTitle">
-      <div class="comingSoonInner">
-        <p class="comingSoonEyebrow">Hart County</p>
-        <h1 id="comingSoonTitle" class="comingSoonTitle">Coroner</h1>
-        <p class="comingSoonText">Page coming soon.</p>
+    <div id="alertHolder"></div>
+
+    <section class="card pageIntroCard coronerIntroCard" aria-labelledby="coronerTitle">
+      <div class="coronerIntroLayout">
+        <div class="coronerIntroMain">
+          <p id="coronerEyebrow" class="pageIntroEyebrow"></p>
+          <h1 id="coronerTitle" class="pageIntroTitle">Hart County Coroner's Office</h1>
+          <p id="coronerDescription" class="pageIntroText"></p>
+        </div>
+
+        <div class="coronerIntroContact" aria-labelledby="contactTitle">
+          <h2 id="contactTitle">Coroner's Office</h2>
+          <div id="coronerContact"></div>
+        </div>
       </div>
+    </section>
+
+    <section class="card coronerFunctionCard" aria-labelledby="functionTitle">
+      <div class="cardHeader">
+        <div>
+          <h2 id="functionTitle">Function of the Coroner's Office</h2>
+        </div>
+      </div>
+      <div id="coronerFunction"></div>
+    </section>
+
+    <section class="card coronerCasesCard" aria-labelledby="casesTitle">
+      <div class="cardHeader">
+        <div>
+          <h2 id="casesTitle">When the Coroner Investigates</h2>
+          <p class="sub">The Coroner's Office determines cause and manner of death in the following circumstances.</p>
+        </div>
+      </div>
+      <ul id="coronerCases" class="coronerCaseList"></ul>
+    </section>
+
+    <section class="card coronerAboutCard" aria-labelledby="aboutTitle">
+      <div class="cardHeader">
+        <div>
+          <h2 id="aboutTitle">About the Office</h2>
+        </div>
+      </div>
+      <div id="coronerAbout"></div>
+    </section>
+
+    <section class="card coronerLinksCard" aria-labelledby="linksTitle">
+      <div class="cardHeader">
+        <div>
+          <h2 id="linksTitle">Related Information</h2>
+        </div>
+      </div>
+      <div id="coronerLinks" class="coronerLinkList"></div>
     </section>
 
     <footer class="footer">
