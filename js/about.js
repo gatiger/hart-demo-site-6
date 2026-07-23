@@ -21,9 +21,56 @@ function renderAboutPage(data) {
   setText("aboutPageIntro", data.pageIntro);
   setText("aboutStatsIntro", data.statsIntro);
 
+  renderAboutIntroComponents(data);
   renderAboutBadges(data.badges || []);
   renderAboutSections(data.sections || []);
   renderAboutStats(data.stats || []);
+}
+
+
+function renderAboutIntroComponents(data) {
+  const imageHost = document.getElementById("aboutIntroImage");
+  const buttonHost = document.getElementById("aboutDynamicButtons");
+
+  if (imageHost) {
+    const image = data && data.image && typeof data.image === "object" ? data.image : null;
+    const src = safeText(image && image.src);
+    if (src) {
+      imageHost.hidden = false;
+      imageHost.innerHTML = renderAboutImage(image, "aboutIntroMedia");
+    } else {
+      imageHost.hidden = true;
+      imageHost.innerHTML = "";
+    }
+  }
+
+  if (buttonHost) {
+    buttonHost.innerHTML = renderAboutButtons(Array.isArray(data && data.buttons) ? data.buttons : []);
+  }
+}
+
+function renderAboutImage(image, className) {
+  const src = safeText(image && image.src);
+  if (!src) return "";
+  const alt = safeText(image.alt);
+  const title = safeText(image.title);
+  const caption = safeText(image.caption);
+  return `
+    <figure class="aboutComponentImage ${escapeHtml(className || "")}">
+      <img src="${escapeHtml(src)}" alt="${escapeHtml(alt)}">
+      ${(title || caption) ? `<figcaption>${title ? `<strong>${escapeHtml(title)}</strong>` : ""}${caption ? `<span>${escapeHtml(caption)}</span>` : ""}</figcaption>` : ""}
+    </figure>
+  `;
+}
+
+function renderAboutButtons(buttons) {
+  return (buttons || []).map(button => {
+    const label = safeText(button.label) || "Learn More";
+    const href = safeText(button.href) || "#";
+    const style = safeText(button.style).toLowerCase();
+    const styleClass = style === "ghost" || style === "secondary" ? " ghost" : "";
+    return `<a class="btn${styleClass} aboutComponentButton" href="${escapeHtml(href)}">${escapeHtml(label)}</a>`;
+  }).join("");
 }
 
 function renderAboutBadges(items) {
@@ -52,10 +99,17 @@ function renderAboutSections(items) {
     const body = safeText(item.body);
     const widthClass = getAboutCardWidthClass(item.width);
 
+    const imageHtml = item.image && typeof item.image === "object"
+      ? renderAboutImage(item.image, "aboutInfoMedia")
+      : "";
+    const buttonsHtml = renderAboutButtons(Array.isArray(item.buttons) ? item.buttons : []);
+
     return `
       <article class="card aboutInfoCard aboutSearchItem ${widthClass}" data-search-text="${escapeHtml((title + " " + body).toLowerCase())}">
+        ${imageHtml}
         <h2 class="aboutInfoTitle">${escapeHtml(title)}</h2>
         <p class="aboutInfoText">${escapeHtml(body)}</p>
+        ${buttonsHtml ? `<div class="aboutInfoButtons btnRow">${buttonsHtml}</div>` : ""}
       </article>
     `;
   }).join("");

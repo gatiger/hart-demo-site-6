@@ -294,3 +294,72 @@
     padding: 0 1.125rem 1.125rem;
   }
 }
+
+/* Live Builder optional image and button components */
+.aboutIntroImage{
+  margin: 0 0 1rem;
+}
+
+.aboutDynamicButtons{
+  display: contents;
+}
+
+.aboutComponentImage{
+  margin: 0;
+}
+
+.aboutComponentImage img{
+  display: block;
+  width: 100%;
+  max-height: 360px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+}
+
+.aboutComponentImage figcaption{
+  display: grid;
+  gap: .2rem;
+  padding-top: .5rem;
+  font-size: .8125rem;
+  line-height: 1.45;
+}
+
+.aboutComponentImage figcaption span{
+  color: var(--text-muted);
+}
+
+.aboutIntroMedia img{
+  max-height: 420px;
+}
+
+.aboutInfoMedia{
+  margin: -1.25rem -1.5rem 1rem;
+}
+
+.aboutInfoMedia img{
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+  max-height: 260px;
+}
+
+.aboutInfoMedia figcaption{
+  padding: .55rem 1.5rem 0;
+}
+
+.aboutInfoButtons{
+  margin-top: 1rem;
+}
+
+.aboutComponentButton{
+  text-decoration: none;
+}
+
+@media (max-width: 700px){
+  .aboutInfoMedia{
+    margin: -1rem -1.125rem 1rem;
+  }
+
+  .aboutInfoMedia figcaption{
+    padding-left: 1.125rem;
+    padding-right: 1.125rem;
+  }
+}
