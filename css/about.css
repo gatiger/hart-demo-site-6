@@ -165,9 +165,26 @@
 /* Info cards */
 .aboutGrid{
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(12, minmax(0, 1fr));
   gap: 1rem;
   margin-bottom: 1rem;
+  align-items: stretch;
+}
+
+.aboutWidthQuarter{
+  grid-column: span 3;
+}
+
+.aboutWidthHalf{
+  grid-column: span 6;
+}
+
+.aboutWidthThreeQuarter{
+  grid-column: span 9;
+}
+
+.aboutWidthFull{
+  grid-column: span 12;
 }
 
 .aboutInfoCard{
@@ -225,8 +242,21 @@
 }
 
 @media (max-width: 1200px){
-  .aboutGrid{
-    grid-template-columns: 1fr;
+  .aboutWidthQuarter{
+    grid-column: span 6;
+  }
+
+  .aboutWidthThreeQuarter{
+    grid-column: span 12;
+  }
+}
+
+@media (max-width: 760px){
+  .aboutWidthQuarter,
+  .aboutWidthHalf,
+  .aboutWidthThreeQuarter,
+  .aboutWidthFull{
+    grid-column: span 12;
   }
 }
 

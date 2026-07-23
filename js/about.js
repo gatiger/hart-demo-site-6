@@ -50,14 +50,29 @@ function renderAboutSections(items) {
   grid.innerHTML = (items || []).map(item => {
     const title = safeText(item.title);
     const body = safeText(item.body);
+    const widthClass = getAboutCardWidthClass(item.width);
 
     return `
-      <article class="card aboutInfoCard aboutSearchItem" data-search-text="${escapeHtml((title + " " + body).toLowerCase())}">
+      <article class="card aboutInfoCard aboutSearchItem ${widthClass}" data-search-text="${escapeHtml((title + " " + body).toLowerCase())}">
         <h2 class="aboutInfoTitle">${escapeHtml(title)}</h2>
         <p class="aboutInfoText">${escapeHtml(body)}</p>
       </article>
     `;
   }).join("");
+}
+
+
+function getAboutCardWidthClass(width) {
+  const normalized = safeText(width).toLowerCase();
+
+  const widthClasses = {
+    quarter: "aboutWidthQuarter",
+    half: "aboutWidthHalf",
+    "three-quarter": "aboutWidthThreeQuarter",
+    full: "aboutWidthFull"
+  };
+
+  return widthClasses[normalized] || "aboutWidthHalf";
 }
 
 function renderAboutStats(items) {
