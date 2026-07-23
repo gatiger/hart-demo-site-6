@@ -37,7 +37,8 @@
         "title": "Parks & Recreation",
         "caption": "Outdoor spaces contribute to the county’s quality of life for residents and visitors."
       }
-    ]
+    ],
+    "gridSpan": 12
   },
   "sections": [
     {
@@ -79,5 +80,8 @@
       "title": "Transportation",
       "value": "State highways and regional access to the I-85 corridor"
     }
-  ]
+  ],
+  "introGridSpan": 12,
+  "sectionsGridSpan": 12,
+  "statsGridSpan": 12
 }

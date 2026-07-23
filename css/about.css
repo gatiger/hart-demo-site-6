@@ -6,6 +6,23 @@
 .aboutPage{
   padding-top: 230px;
   padding-bottom: 3rem;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: start;
+}
+
+.aboutPage > #alertHolder,
+.aboutPage > .footer{
+  grid-column: 1 / -1;
+}
+
+#aboutIntroSection,
+#aboutCarouselSection,
+#aboutInfoGrid,
+#aboutStatsSection{
+  grid-column: span var(--about-section-span, 12);
+  min-width: 0;
 }
 
 /* Intro tools / badges */
@@ -263,6 +280,15 @@
   }
 }
 
+@media (max-width: 760px){
+  #aboutIntroSection,
+  #aboutCarouselSection,
+  #aboutInfoGrid,
+  #aboutStatsSection{
+    grid-column: 1 / -1;
+  }
+}
+
 @media (max-width: 700px){
   .aboutCarousel{
     padding: 0 1.125rem 1.125rem;
@@ -304,10 +330,7 @@
 }
 
 .aboutDynamicButtons{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: .625rem;
+  display: contents;
 }
 
 .aboutComponentImage{
@@ -353,13 +376,20 @@
   padding: .55rem 1.5rem 0;
 }
 
+.aboutPageTools .btnRow,
 .aboutInfoButtons{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  column-gap: .45rem;
-  row-gap: .6rem;
-  margin: .75rem 0 .2rem;
+  gap: .5rem;
+}
+
+.aboutPageTools .btnRow{
+  margin: .25rem 0 .5rem;
+}
+
+.aboutInfoButtons{
+  margin: .75rem 0 .25rem;
 }
 
 
@@ -400,6 +430,15 @@
 
 .aboutComponentButton{
   text-decoration: none;
+}
+
+@media (max-width: 760px){
+  #aboutIntroSection,
+  #aboutCarouselSection,
+  #aboutInfoGrid,
+  #aboutStatsSection{
+    grid-column: 1 / -1;
+  }
 }
 
 @media (max-width: 700px){

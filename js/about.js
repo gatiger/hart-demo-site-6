@@ -20,6 +20,7 @@ function renderAboutPage(data) {
   setText("aboutPageTitle", data.pageTitle);
   setText("aboutPageIntro", data.pageIntro);
   setText("aboutStatsIntro", data.statsIntro);
+  applyAboutSectionLayout(data);
 
   renderAboutIntroComponents(data);
   renderAboutBadges(data.badges || []);
@@ -27,6 +28,23 @@ function renderAboutPage(data) {
   renderAboutStats(data.stats || []);
 }
 
+
+function clampAboutSpan(value, fallback = 12) {
+  const parsed = Number(value);
+  return Math.max(3, Math.min(12, Number.isFinite(parsed) ? parsed : fallback));
+}
+
+function applyAboutSectionLayout(data) {
+  const intro = document.getElementById("aboutIntroSection");
+  const carousel = document.getElementById("aboutCarouselSection");
+  const infoGrid = document.getElementById("aboutInfoGrid");
+  const stats = document.getElementById("aboutStatsSection");
+
+  if (intro) intro.style.setProperty("--about-section-span", clampAboutSpan(data && data.introGridSpan));
+  if (carousel) carousel.style.setProperty("--about-section-span", clampAboutSpan(data && data.carousel && data.carousel.gridSpan));
+  if (infoGrid) infoGrid.style.setProperty("--about-section-span", clampAboutSpan(data && data.sectionsGridSpan));
+  if (stats) stats.style.setProperty("--about-section-span", clampAboutSpan(data && data.statsGridSpan));
+}
 
 function renderAboutIntroComponents(data) {
   const imageHost = document.getElementById("aboutIntroImage");
