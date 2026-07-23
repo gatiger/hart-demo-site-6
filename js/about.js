@@ -34,8 +34,7 @@ function renderAboutIntroComponents(data) {
 
   if (imageHost) {
     const image = data && data.image && typeof data.image === "object" ? data.image : null;
-    const src = safeText(image && image.src);
-    if (src) {
+    if (image) {
       imageHost.hidden = false;
       imageHost.innerHTML = renderAboutImage(image, "aboutIntroMedia");
     } else {
@@ -51,13 +50,22 @@ function renderAboutIntroComponents(data) {
 
 function renderAboutImage(image, className) {
   const src = safeText(image && image.src);
-  if (!src) return "";
-  const alt = safeText(image.alt);
-  const title = safeText(image.title);
-  const caption = safeText(image.caption);
+  const alt = safeText(image && image.alt);
+  const title = safeText(image && image.title);
+  const caption = safeText(image && image.caption);
+  const gridSpan = Math.max(3, Math.min(12, Number(image && image.gridSpan) || 12));
+
+  const media = src
+    ? `<img src="${escapeHtml(src)}" alt="${escapeHtml(alt)}">`
+    : `<div class="aboutImagePlaceholder" role="img" aria-label="Image placeholder">
+         <span class="aboutImagePlaceholderIcon" aria-hidden="true">▧</span>
+         <strong>Image added</strong>
+         <span>Enter an image path in the editor to display the photo.</span>
+       </div>`;
+
   return `
-    <figure class="aboutComponentImage ${escapeHtml(className || "")}">
-      <img src="${escapeHtml(src)}" alt="${escapeHtml(alt)}">
+    <figure class="aboutComponentImage ${escapeHtml(className || "")}" style="--about-image-span:${gridSpan}">
+      ${media}
       ${(title || caption) ? `<figcaption>${title ? `<strong>${escapeHtml(title)}</strong>` : ""}${caption ? `<span>${escapeHtml(caption)}</span>` : ""}</figcaption>` : ""}
     </figure>
   `;
@@ -98,6 +106,7 @@ function renderAboutSections(items) {
     const title = safeText(item.title);
     const body = safeText(item.body);
     const widthClass = getAboutCardWidthClass(item.width);
+    const cardSpan = Math.max(3, Math.min(12, Number(item.gridSpan) || ({quarter:3,half:6,"three-quarter":9,full:12}[safeText(item.width).toLowerCase()] || 6)));
 
     const imageHtml = item.image && typeof item.image === "object"
       ? renderAboutImage(item.image, "aboutInfoMedia")
@@ -105,7 +114,7 @@ function renderAboutSections(items) {
     const buttonsHtml = renderAboutButtons(Array.isArray(item.buttons) ? item.buttons : []);
 
     return `
-      <article class="card aboutInfoCard aboutSearchItem ${widthClass}" data-search-text="${escapeHtml((title + " " + body).toLowerCase())}">
+      <article class="card aboutInfoCard aboutSearchItem ${widthClass}" style="--about-card-span:${cardSpan}" data-search-text="${escapeHtml((title + " " + body).toLowerCase())}">
         ${imageHtml}
         <h2 class="aboutInfoTitle">${escapeHtml(title)}</h2>
         <p class="aboutInfoText">${escapeHtml(body)}</p>

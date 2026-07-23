@@ -29,7 +29,9 @@
 .aboutBadgeRow{
   display: flex;
   flex-wrap: wrap;
-  gap: .625rem;
+  column-gap: .45rem;
+  row-gap: .6rem;
+  margin: .65rem 0;
 }
 
 .aboutBadge{
@@ -189,6 +191,7 @@
 
 .aboutInfoCard{
   padding: 1.25rem 1.5rem;
+  grid-column: span var(--about-card-span, 6);
 }
 
 .aboutInfoTitle{
@@ -301,11 +304,16 @@
 }
 
 .aboutDynamicButtons{
-  display: contents;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .625rem;
 }
 
 .aboutComponentImage{
   margin: 0;
+  width: calc((var(--about-image-span, 12) / 12) * 100%);
+  max-width: 100%;
 }
 
 .aboutComponentImage img{
@@ -333,11 +341,11 @@
 }
 
 .aboutInfoMedia{
-  margin: -1.25rem -1.5rem 1rem;
+  margin: 0 0 1rem;
 }
 
 .aboutInfoMedia img{
-  border-radius: var(--radius-md) var(--radius-md) 0 0;
+  border-radius: var(--radius-md);
   max-height: 260px;
 }
 
@@ -346,7 +354,48 @@
 }
 
 .aboutInfoButtons{
-  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: .45rem;
+  row-gap: .6rem;
+  margin: .75rem 0 .2rem;
+}
+
+
+.aboutImagePlaceholder{
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: .35rem;
+  min-height: 180px;
+  padding: 1.25rem;
+  border: 2px dashed var(--border-mid);
+  border-radius: var(--radius-md);
+  background: var(--surface-alt);
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.aboutImagePlaceholderIcon{
+  font-size: 2rem;
+  line-height: 1;
+  color: var(--navy);
+}
+
+.aboutImagePlaceholder strong{
+  color: var(--navy);
+}
+
+.aboutImagePlaceholder span:last-child{
+  max-width: 28rem;
+  font-size: .8125rem;
+  line-height: 1.45;
+}
+
+.aboutInfoMedia .aboutImagePlaceholder{
+  min-height: 160px;
+  border-radius: var(--radius-md);
 }
 
 .aboutComponentButton{
