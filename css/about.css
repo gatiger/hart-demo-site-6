@@ -7,7 +7,7 @@
   padding-top: 230px;
   padding-bottom: 3rem;
   display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-columns: repeat(24, minmax(0, 1fr));
   gap: 1rem;
   align-items: start;
 }
@@ -21,7 +21,8 @@
 #aboutCarouselSection,
 #aboutInfoGrid,
 #aboutStatsSection{
-  grid-column: span var(--about-section-span, 12);
+  grid-column: span var(--about-section-span, 24);
+  grid-row: span var(--about-section-effective-rows, 1);
   min-width: 0;
 }
 
@@ -184,14 +185,14 @@
 /* Info cards */
 .aboutGrid{
   display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-columns: repeat(24, minmax(0, 1fr));
   gap: 1rem;
   margin-bottom: 1rem;
   align-items: stretch;
 }
 
 .aboutWidthQuarter{
-  grid-column: span 3;
+  grid-column: span 24;
 }
 
 .aboutWidthHalf{
@@ -199,7 +200,7 @@
 }
 
 .aboutWidthThreeQuarter{
-  grid-column: span 9;
+  grid-column: span 18;
 }
 
 .aboutWidthFull{
@@ -208,7 +209,7 @@
 
 .aboutInfoCard{
   padding: 1.25rem 1.5rem;
-  grid-column: span var(--about-card-span, 6);
+  grid-column: span var(--about-card-span, 12);
 }
 
 .aboutInfoTitle{
@@ -451,3 +452,19 @@
     padding-right: 1.125rem;
   }
 }
+
+
+/* v6.21 dynamic 24-column grid */
+.aboutPage{grid-auto-rows:24px;grid-auto-flow:row dense;}
+#aboutIntroSection,#aboutCarouselSection,#aboutInfoGrid,#aboutStatsSection{
+  --about-section-effective-rows:max(1,var(--about-section-rows,1));
+}
+#aboutIntroSection[style*="--about-section-rows: 0"],#aboutCarouselSection[style*="--about-section-rows: 0"],#aboutInfoGrid[style*="--about-section-rows: 0"],#aboutStatsSection[style*="--about-section-rows: 0"]{grid-row:auto;}
+.aboutGrid{grid-auto-rows:24px;grid-auto-flow:row dense;}
+.aboutInfoCard{grid-row:span max(1,var(--about-card-rows,1));overflow:visible;}
+.aboutInfoCard[style*="--about-card-rows:0"]{grid-row:auto;}
+.aboutComponentImage{grid-column:span var(--about-image-span,24);min-width:0;}
+.aboutComponentImage[style*="--about-image-rows:0"]{height:auto;}
+.aboutComponentImage:not([style*="--about-image-rows:0"]){height:calc(var(--about-image-rows) * 24px);}
+.aboutComponentImage:not([style*="--about-image-rows:0"]) img{height:100%;object-fit:cover;}
+@media(max-width:760px){.aboutPage,.aboutGrid{display:block}.aboutPage>*{margin-bottom:1rem}.aboutInfoCard{margin-bottom:1rem}.aboutComponentImage{width:100%!important;height:auto!important}}

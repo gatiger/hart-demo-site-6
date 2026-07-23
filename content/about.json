@@ -38,32 +38,37 @@
         "caption": "Outdoor spaces contribute to the county’s quality of life for residents and visitors."
       }
     ],
-    "gridSpan": 12
+    "gridSpan": 24,
+    "gridRowSpan": 0
   },
   "sections": [
     {
       "title": "History",
       "body": "Hart County was created in 1853 and named in honor of Nancy Hart, a Revolutionary War heroine closely associated with Georgia history. Over time, the county developed as a rural agricultural community and later expanded with recreation, tourism, and regional commerce.",
       "width": "half",
-      "gridSpan": 6
+      "gridSpan": 12,
+      "gridRowSpan": 0
     },
     {
       "title": "Geography & Recreation",
       "body": "Hart County features rolling hills, farmland, and shoreline along Lake Hartwell. Outdoor recreation plays an important role in the area, with boating, fishing, camping, and parks contributing to the county’s quality of life.",
       "width": "half",
-      "gridSpan": 6
+      "gridSpan": 12,
+      "gridRowSpan": 0
     },
     {
       "title": "Government Structure",
       "body": "Hart County operates under a Board of Commissioners form of government. County leadership oversees administration, budgeting, infrastructure, planning, and the delivery of public services to residents and businesses.",
       "width": "half",
-      "gridSpan": 6
+      "gridSpan": 12,
+      "gridRowSpan": 0
     },
     {
       "title": "Community & Services",
       "body": "The county provides services including public safety, road maintenance, planning and zoning, elections administration, tax services, parks and recreation, and other functions that support daily life in the community.",
       "width": "half",
-      "gridSpan": 6
+      "gridSpan": 12,
+      "gridRowSpan": 0
     }
   ],
   "statsIntro": "Key facts and general county information",
@@ -81,7 +86,16 @@
       "value": "State highways and regional access to the I-85 corridor"
     }
   ],
-  "introGridSpan": 12,
-  "sectionsGridSpan": 12,
-  "statsGridSpan": 12
+  "introGridSpan": 24,
+  "sectionsGridSpan": 24,
+  "statsGridSpan": 24,
+  "pageOrder": [
+    "intro",
+    "carousel",
+    "sections",
+    "stats"
+  ],
+  "introGridRowSpan": 0,
+  "sectionsGridRowSpan": 0,
+  "statsGridRowSpan": 0
 }

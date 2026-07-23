@@ -29,9 +29,9 @@ function renderAboutPage(data) {
 }
 
 
-function clampAboutSpan(value, fallback = 12) {
+function clampAboutSpan(value, fallback = 24) {
   const parsed = Number(value);
-  return Math.max(3, Math.min(12, Number.isFinite(parsed) ? parsed : fallback));
+  return Math.max(1, Math.min(24, Number.isFinite(parsed) ? parsed : fallback));
 }
 
 function applyAboutSectionLayout(data) {
@@ -44,6 +44,19 @@ function applyAboutSectionLayout(data) {
   if (carousel) carousel.style.setProperty("--about-section-span", clampAboutSpan(data && data.carousel && data.carousel.gridSpan));
   if (infoGrid) infoGrid.style.setProperty("--about-section-span", clampAboutSpan(data && data.sectionsGridSpan));
   if (stats) stats.style.setProperty("--about-section-span", clampAboutSpan(data && data.statsGridSpan));
+  const rowMap = [[intro, data && data.introGridRowSpan], [carousel, data && data.carousel && data.carousel.gridRowSpan], [infoGrid, data && data.sectionsGridRowSpan], [stats, data && data.statsGridRowSpan]];
+  rowMap.forEach(([node, rows]) => node && node.style.setProperty("--about-section-rows", Math.max(0, Number(rows) || 0)));
+  applyAboutPageOrder(data);
+}
+
+
+function applyAboutPageOrder(data) {
+  const page = document.querySelector(".aboutPage");
+  if (!page) return;
+  const map = {intro:"aboutIntroSection", carousel:"aboutCarouselSection", sections:"aboutInfoGrid", stats:"aboutStatsSection"};
+  const footer = page.querySelector(".footer");
+  const order = Array.isArray(data && data.pageOrder) ? data.pageOrder : ["intro","carousel","sections","stats"];
+  order.forEach(key => { const node = document.getElementById(map[key]); if (node) page.insertBefore(node, footer); });
 }
 
 function renderAboutIntroComponents(data) {
@@ -71,7 +84,7 @@ function renderAboutImage(image, className) {
   const alt = safeText(image && image.alt);
   const title = safeText(image && image.title);
   const caption = safeText(image && image.caption);
-  const gridSpan = Math.max(3, Math.min(12, Number(image && image.gridSpan) || 12));
+  const gridSpan = Math.max(1, Math.min(24, Number(image && image.gridSpan) || 24));
 
   const media = src
     ? `<img src="${escapeHtml(src)}" alt="${escapeHtml(alt)}">`
@@ -82,7 +95,7 @@ function renderAboutImage(image, className) {
        </div>`;
 
   return `
-    <figure class="aboutComponentImage ${escapeHtml(className || "")}" style="--about-image-span:${gridSpan}">
+    <figure class="aboutComponentImage ${escapeHtml(className || "")}" style="--about-image-span:${gridSpan};--about-image-rows:${Math.max(0, Number(image && image.gridRowSpan) || 0)}">
       ${media}
       ${(title || caption) ? `<figcaption>${title ? `<strong>${escapeHtml(title)}</strong>` : ""}${caption ? `<span>${escapeHtml(caption)}</span>` : ""}</figcaption>` : ""}
     </figure>
@@ -124,7 +137,7 @@ function renderAboutSections(items) {
     const title = safeText(item.title);
     const body = safeText(item.body);
     const widthClass = getAboutCardWidthClass(item.width);
-    const cardSpan = Math.max(3, Math.min(12, Number(item.gridSpan) || ({quarter:3,half:6,"three-quarter":9,full:12}[safeText(item.width).toLowerCase()] || 6)));
+    const cardSpan = Math.max(1, Math.min(24, Number(item.gridSpan) || ({quarter:6,half:12,"three-quarter":18,full:24}[safeText(item.width).toLowerCase()] || 12)));
 
     const imageHtml = item.image && typeof item.image === "object"
       ? renderAboutImage(item.image, "aboutInfoMedia")
@@ -132,7 +145,7 @@ function renderAboutSections(items) {
     const buttonsHtml = renderAboutButtons(Array.isArray(item.buttons) ? item.buttons : []);
 
     return `
-      <article class="card aboutInfoCard aboutSearchItem ${widthClass}" style="--about-card-span:${cardSpan}" data-search-text="${escapeHtml((title + " " + body).toLowerCase())}">
+      <article class="card aboutInfoCard aboutSearchItem ${widthClass}" style="--about-card-span:${cardSpan};--about-card-rows:${Math.max(0, Number(item.gridRowSpan) || 0)}" data-search-text="${escapeHtml((title + " " + body).toLowerCase())}">
         ${imageHtml}
         <h2 class="aboutInfoTitle">${escapeHtml(title)}</h2>
         <p class="aboutInfoText">${escapeHtml(body)}</p>
