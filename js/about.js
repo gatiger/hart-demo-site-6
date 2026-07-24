@@ -59,6 +59,34 @@ function applyAboutPageOrder(data) {
   order.forEach(key => { const node = document.getElementById(map[key]); if (node) page.insertBefore(node, footer); });
 }
 
+
+function getComponentLayout(layout, key, fallbackOrder = 0) {
+  const raw = layout && typeof layout[key] === "object" ? layout[key] : {};
+  return {
+    gridSpan: Math.max(1, Math.min(24, Number(raw.gridSpan) || 24)),
+    gridRowSpan: Math.max(0, Number(raw.gridRowSpan) || 0),
+    order: Number.isFinite(Number(raw.order)) ? Number(raw.order) : fallbackOrder
+  };
+}
+
+function componentStyle(layout, key, fallbackOrder = 0) {
+  const item = getComponentLayout(layout, key, fallbackOrder);
+  return `--about-component-span:${item.gridSpan};--about-component-rows:${item.gridRowSpan};order:${item.order}`;
+}
+
+function applyIntroComponentLayout(data) {
+  const layout = data && data.componentLayout ? data.componentLayout : {};
+  const mappings = [
+    ["aboutPageTitle", "title", 0], ["aboutPageIntro", "text", 1],
+    ["aboutIntroImage", "image", 2], ["aboutSearch", "search", 3],
+    ["aboutIntroButtonRow", "buttons", 4], ["aboutBadgeRow", "badges", 5]
+  ];
+  mappings.forEach(([id, key, order]) => {
+    const node = document.getElementById(id);
+    if (node) node.setAttribute("style", componentStyle(layout, key, order));
+  });
+}
+
 function renderAboutIntroComponents(data) {
   const imageHost = document.getElementById("aboutIntroImage");
   const buttonHost = document.getElementById("aboutDynamicButtons");
@@ -77,6 +105,7 @@ function renderAboutIntroComponents(data) {
   if (buttonHost) {
     buttonHost.innerHTML = renderAboutButtons(Array.isArray(data && data.buttons) ? data.buttons : []);
   }
+  applyIntroComponentLayout(data || {});
 }
 
 function renderAboutImage(image, className) {
@@ -144,12 +173,13 @@ function renderAboutSections(items) {
       : "";
     const buttonsHtml = renderAboutButtons(Array.isArray(item.buttons) ? item.buttons : []);
 
+    const layout = item.componentLayout || {};
     return `
       <article class="card aboutInfoCard aboutSearchItem ${widthClass}" style="--about-card-span:${cardSpan};--about-card-rows:${Math.max(0, Number(item.gridRowSpan) || 0)}" data-search-text="${escapeHtml((title + " " + body).toLowerCase())}">
-        ${imageHtml}
-        <h2 class="aboutInfoTitle">${escapeHtml(title)}</h2>
-        <p class="aboutInfoText">${escapeHtml(body)}</p>
-        ${buttonsHtml ? `<div class="aboutInfoButtons btnRow">${buttonsHtml}</div>` : ""}
+        ${imageHtml ? `<div class="aboutCardComponent aboutCardImageComponent" style="${componentStyle(layout, "image", 0)}">${imageHtml}</div>` : ""}
+        <h2 class="aboutInfoTitle aboutCardComponent" style="${componentStyle(layout, "title", 1)}">${escapeHtml(title)}</h2>
+        <p class="aboutInfoText aboutCardComponent" style="${componentStyle(layout, "body", 2)}">${escapeHtml(body)}</p>
+        ${buttonsHtml ? `<div class="aboutInfoButtons btnRow aboutCardComponent" style="${componentStyle(layout, "buttons", 3)}">${buttonsHtml}</div>` : ""}
       </article>
     `;
   }).join("");
