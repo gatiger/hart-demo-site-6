@@ -1,50 +1,27 @@
 /* E-911 page */
-
-.e911Page{
-  padding-top: 230px;
-  padding-bottom: 3rem;
-}
-
-.comingSoonCard{
-  margin-top: 18px;
-  min-height: 320px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 32px 24px;
-}
-
-.comingSoonInner{
-  max-width: 700px;
-}
-
-.comingSoonEyebrow{
-  margin: 0 0 10px;
-  font-size: 0.9rem;
-  font-weight: 800;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--accent);
-}
-
-.comingSoonTitle{
-  margin: 0 0 14px;
-  font-size: clamp(2rem, 4vw, 3rem);
-  line-height: 1.1;
-  color: var(--text);
-}
-
-.comingSoonText{
-  margin: 0;
-  font-size: clamp(1.05rem, 2vw, 1.25rem);
-  line-height: 1.7;
-  color: var(--muted);
-}
-
-@media (max-width: 640px){
-  .comingSoonCard{
-    min-height: 260px;
-    padding: 28px 18px;
-  }
-}
+.e911Page{padding-top:230px;padding-bottom:3rem;}
+.e911IntroCard,.e911ServicesCard,.e911AddressingCard,.e911LogansCard,.e911CodeRedCard,.e911FormsCard{padding:1.5rem 1.65rem;}
+.e911IntroCard{margin-bottom:18px;}
+.e911IntroLayout{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(360px,.95fr);gap:2rem;align-items:start;}
+.e911IntroMain{align-self:center;}
+.pageIntroEyebrow{margin:0 0 .4rem;font-size:.82rem;font-weight:900;letter-spacing:.11em;text-transform:uppercase;color:rgba(255,255,255,.75);}
+.e911IntroCard .pageIntroTitle{margin-bottom:.55rem;}
+.e911IntroCard .pageIntroText{max-width:760px;margin-bottom:0;}
+.e911IntroContact{padding-left:1.5rem;border-left:1px solid rgba(255,255,255,.22);}
+.e911IntroContact h2{margin:0 0 .7rem;color:#fff;font-size:1.2rem;}
+.contactList{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.7rem 1.25rem;}
+.contactItem{min-width:0;}
+.contactLabel{display:block;margin-bottom:.15rem;color:rgba(255,255,255,.72);font-size:.72rem;font-weight:900;letter-spacing:.06em;text-transform:uppercase;}
+.contactValue{color:#fff;font-weight:700;font-size:.9rem;line-height:1.45;white-space:pre-line;}
+.e911IntroContact a{color:#fff;text-underline-offset:3px;}
+.phoneDesktop,.emailDesktop{display:inline;}.phoneMobile,.emailMobile{display:none;}
+.e911ServicesCard,.e911AddressingCard,.e911LogansCard,.e911CodeRedCard,.e911FormsCard{margin-top:18px;}
+.e911ServicesCard .cardHeader,.e911AddressingCard .cardHeader,.e911LogansCard .cardHeader,.e911CodeRedCard .cardHeader,.e911FormsCard .cardHeader{margin-bottom:.95rem;}
+.e911ServicesCard p,.e911AddressingCard p,.e911LogansCard p,.e911CodeRedCard p{margin:.7rem 0 0;line-height:1.75;}
+.e911ServicesCard p:first-child,.e911AddressingCard p:first-child,.e911LogansCard p:first-child,.e911CodeRedCard p:first-child{margin-top:0;}
+.e911NoticeList{margin:.85rem 0 0;padding-left:1.4rem;}.e911NoticeList li{margin-bottom:.65rem;line-height:1.65;}
+.e911LinkList{display:grid;gap:.75rem;}
+.e911TextLink{width:fit-content;max-width:100%;color:var(--navy-mid);font-weight:800;text-underline-offset:3px;overflow-wrap:anywhere;}
+.e911TextLink:hover{text-decoration-thickness:2px;}.e911TextLink:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:3px;}
+@media (max-width:900px){.e911IntroLayout{grid-template-columns:1fr;gap:1.15rem}.e911IntroContact{padding-left:0;padding-top:1rem;border-left:0;border-top:1px solid rgba(255,255,255,.22)}}
+@media (max-width:640px){.e911Page{padding-top:150px}.e911IntroCard,.e911ServicesCard,.e911AddressingCard,.e911LogansCard,.e911CodeRedCard,.e911FormsCard{padding:1.25rem}.contactList{grid-template-columns:1fr}.phoneDesktop,.emailDesktop{display:none}.phoneMobile,.emailMobile{display:inline}}

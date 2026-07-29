@@ -1,0 +1,73 @@
+{
+  "intro": {
+    "eyebrow": "Hart County",
+    "title": "Hart County E-911 Services",
+    "description": "Hart County E-911 provides professional and prompt emergency communications services to every caller."
+  },
+  "contact": {
+    "director": "Missy Cobb",
+    "address": "800 Chandler Street",
+    "city_state_zip": "Hartwell, Georgia 30643",
+    "phone": "706-376-3930",
+    "phone_raw": "17063763930",
+    "fax": "706-856-5316",
+    "email": "mcobb@hartcountyga.gov"
+  },
+  "services": [
+    "Hart County E-911 uses a Computer Aided Dispatch system with Next Generation technology to assist Emergency Communications Officers with reporting, recording, and dispatching Hart County emergency service personnel.",
+    "Wireless Phase 2 systems are integrated with the CAD system to assist with locating and communicating with callers.",
+    "Following in-house training, Emergency Communications Officers are required to complete 40 hours of Georgia State POST mandatory certification at the Georgia Public Safety Training Center, including telephone CPR. The State of Georgia also requires annual continuing education for certified Emergency Communications Officers.",
+    "The department has eight full-time personnel working 12-hour Pitman schedules, with at least two personnel assigned to each rotation.",
+    "In addition to answering calls and dispatching responders, staff assist with CodeRED enrollment, CAD and Master Street Address Guide updates, priority patient information, Logan's Law records, and emergency contact information for residential properties, businesses, and livestock owners."
+  ],
+  "addressing": {
+    "paragraphs": [
+      "The E-911 Addressing and Permitting Office assigns newly created addresses and names new roads within Hart County."
+    ],
+    "notices": [
+      "Addresses and telephone numbers are continually updated by E-911 staff.",
+      "Residents who have recently moved should contact the E-911 Addressing Office and report the change."
+    ]
+  },
+  "logans_law": [
+    "Parents, guardians, and caretakers of people with special needs are encouraged to register for Logan's List.",
+    "Georgia's Logan's Law allows each county to maintain a database containing information about individuals with special needs so public safety personnel can be better prepared when responding to emergencies.",
+    "The list may include information about physical, mental, or neurological conditions and possible triggers. Personal information is available only to emergency personnel and is not shared with the public."
+  ],
+  "codered": [
+    "CodeRED is an emergency notification system that allows local and state agencies to alert residents and businesses by telephone call, text message, email, mobile application, and other methods.",
+    "The service helps residents stay informed about emergencies and important community updates."
+  ],
+  "forms": [
+    {
+      "title": "AED Registration Form",
+      "url": "https://hartcountyga.gov/911/Updated%20AED%20AD.pdf",
+      "external": true
+    },
+    {
+      "title": "Logan's Law Registration Form",
+      "url": "https://hartcountyga.gov/911/Hart%20County%20E911%20logans%20law%20.pdf",
+      "external": true
+    },
+    {
+      "title": "CodeRED Emergency Alert Signup Form",
+      "url": "https://hartcountyga.gov/911/CodeRED%20Emergency%20Alert%20signup.pdf",
+      "external": true
+    },
+    {
+      "title": "Livestock Information Form",
+      "url": "https://hartcountyga.gov/911/Hart%20County%20E911%20livestock.pdf",
+      "external": true
+    },
+    {
+      "title": "Residential Information Form",
+      "url": "https://hartcountyga.gov/911/Hart%20County%20E911%20residential%20info%20page.pdf",
+      "external": true
+    },
+    {
+      "title": "Business Information Form",
+      "url": "https://hartcountyga.gov/911/Business%20Information%20Page.pdf",
+      "external": true
+    }
+  ]
+}

@@ -77,17 +77,48 @@
   </aside>
 
   <main id="main" class="container e911Page" tabindex="-1">
-    <section class="card comingSoonCard" aria-labelledby="comingSoonTitle">
-      <div class="comingSoonInner">
-        <p class="comingSoonEyebrow">Hart County</p>
-        <h1 id="comingSoonTitle" class="comingSoonTitle">E-911</h1>
-        <p class="comingSoonText">Page coming soon.</p>
+    <div id="alertHolder"></div>
+
+    <section class="card pageIntroCard e911IntroCard" aria-labelledby="e911Title">
+      <div class="e911IntroLayout">
+        <div class="e911IntroMain">
+          <p id="e911Eyebrow" class="pageIntroEyebrow"></p>
+          <h1 id="e911Title" class="pageIntroTitle">Hart County E-911 Services</h1>
+          <p id="e911Description" class="pageIntroText"></p>
+        </div>
+        <div class="e911IntroContact" aria-labelledby="contactTitle">
+          <h2 id="contactTitle">E-911 Office</h2>
+          <div id="e911Contact"></div>
+        </div>
       </div>
     </section>
 
-    <footer class="footer">
-      <div>© 2026 Hart County Board of Commissioners</div>
-    </footer>
+    <section class="card e911ServicesCard" aria-labelledby="servicesTitle">
+      <div class="cardHeader"><div><h2 id="servicesTitle">Emergency Communications</h2></div></div>
+      <div id="e911Services"></div>
+    </section>
+
+    <section class="card e911AddressingCard" aria-labelledby="addressingTitle">
+      <div class="cardHeader"><div><h2 id="addressingTitle">Addressing and Information Updates</h2></div></div>
+      <div id="e911Addressing"></div>
+    </section>
+
+    <section class="card e911LogansCard" aria-labelledby="logansTitle">
+      <div class="cardHeader"><div><h2 id="logansTitle">Logan's Law List</h2></div></div>
+      <div id="e911Logans"></div>
+    </section>
+
+    <section class="card e911CodeRedCard" aria-labelledby="codeRedTitle">
+      <div class="cardHeader"><div><h2 id="codeRedTitle">CodeRED Emergency Notifications</h2></div></div>
+      <div id="e911CodeRed"></div>
+    </section>
+
+    <section class="card e911FormsCard" aria-labelledby="formsTitle">
+      <div class="cardHeader"><div><h2 id="formsTitle">Forms and Registration</h2><p class="sub">Open or print the appropriate form, then return completed forms to Hart County E-911.</p></div></div>
+      <div id="e911Forms" class="e911LinkList"></div>
+    </section>
+
+    <footer class="footer"><div>© 2026 Hart County Board of Commissioners</div></footer>
   </main>
 </body>
 </html>
