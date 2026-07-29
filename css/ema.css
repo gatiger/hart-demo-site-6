@@ -1,39 +1,27 @@
 /* EMA page */
-
-.emaPage{
-  padding-top: 230px;
-  padding-bottom: 3rem;
-}
-
-.comingSoonCard{
-  margin-top: 18px;
-  min-height: 320px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 32px 24px;
-}
-
-.comingSoonInner{
-  max-width: 700px;
-}
-
-.comingSoonEyebrow{
-  margin: 0 0 10px;
-  font-size: 0.9rem;
-  font-weight: 800;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--accent);
-}
-
-.comingSoonTitle{
-  margin: 0 0 14px;
-  font-size: clamp(2rem, 4vw, 3rem);
-}
-
-.comingSoonText{
-  font-size: clamp(1.05rem, 2vw, 1.25rem);
-  color: var(--muted);
-}
+.emaPage{padding-top:230px;padding-bottom:3rem}
+.emaIntroCard,.emaFunctionCard,.emaMissionCard,.emaResourcesCard,.emaRelatedCard{padding:1.5rem 1.65rem}
+.emaIntroCard{margin-bottom:18px}
+.emaIntroLayout{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(360px,.95fr);gap:2rem;align-items:start}
+.emaIntroMain{align-self:center}
+.pageIntroEyebrow{margin:0 0 .4rem;font-size:.82rem;font-weight:900;letter-spacing:.11em;text-transform:uppercase;color:rgba(255,255,255,.75)}
+.emaIntroCard .pageIntroTitle{margin-bottom:.55rem}
+.emaIntroCard .pageIntroText{max-width:760px;margin-bottom:0}
+.emaIntroContact{padding-left:1.5rem;border-left:1px solid rgba(255,255,255,.22)}
+.emaIntroContact h2{margin:0 0 .7rem;color:#fff;font-size:1.2rem}
+.contactList{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.7rem 1.25rem}
+.contactItem{min-width:0}
+.contactLabel{display:block;margin-bottom:.15rem;color:rgba(255,255,255,.72);font-size:.72rem;font-weight:900;letter-spacing:.06em;text-transform:uppercase}
+.contactValue{color:#fff;font-weight:700;font-size:.9rem;line-height:1.45;white-space:pre-line;overflow-wrap:anywhere}
+.emaIntroContact a{color:#fff;text-underline-offset:3px}
+.phoneDesktop,.emailDesktop{display:inline}.phoneMobile,.emailMobile{display:none}
+.emaFunctionCard,.emaMissionCard,.emaResourcesCard,.emaRelatedCard{margin-top:18px}
+.emaFunctionCard .cardHeader,.emaMissionCard .cardHeader,.emaResourcesCard .cardHeader,.emaRelatedCard .cardHeader{margin-bottom:.95rem}
+.emaFunctionCard p,.emaMissionCard p{margin:.7rem 0 0;line-height:1.75}
+.emaFunctionCard p:first-child,.emaMissionCard p:first-child{margin-top:0}
+.emaLinkList{display:grid;gap:.75rem}
+.emaTextLink{width:fit-content;max-width:100%;color:var(--navy-mid);font-weight:800;text-underline-offset:3px;overflow-wrap:anywhere}
+.emaTextLink:hover{text-decoration-thickness:2px}
+.emaTextLink:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:3px}
+@media(max-width:900px){.emaIntroLayout{grid-template-columns:1fr;gap:1.15rem}.emaIntroContact{padding-left:0;padding-top:1rem;border-left:0;border-top:1px solid rgba(255,255,255,.22)}}
+@media(max-width:640px){.emaPage{padding-top:150px}.emaIntroCard,.emaFunctionCard,.emaMissionCard,.emaResourcesCard,.emaRelatedCard{padding:1.25rem}.contactList{grid-template-columns:1fr}.phoneDesktop,.emailDesktop{display:none}.phoneMobile,.emailMobile{display:inline}}

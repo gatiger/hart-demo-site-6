@@ -1,0 +1,56 @@
+{
+  "intro": {
+    "eyebrow": "Hart County",
+    "title": "Emergency Management Agency",
+    "description": "Hart County Emergency Management coordinates planning, preparedness, response, and recovery efforts to protect lives and property during emergencies and disasters."
+  },
+  "contact": {
+    "director": "Terrell Partain",
+    "address": "800 Chandler Street",
+    "city_state_zip": "Hartwell, Georgia 30643",
+    "phone": "706-376-3930",
+    "phone_raw": "17063763930",
+    "fax": "706-856-5316",
+    "email": "hartcoems@hartcom.net"
+  },
+  "function_paragraphs": [
+    "Emergency management describes the steps government agencies take to plan, organize, and prepare for saving lives, protecting property, and recovering from emergencies, disasters, or catastrophes."
+  ],
+  "mission_paragraphs": [
+    "The Georgia Emergency Management and Homeland Security Agency is the lead state agency for coordinating emergency and disaster response activities. Its mission is to provide comprehensive preparedness, response, and recovery programs that save lives, protect property, and reduce the effects of disasters."
+  ],
+  "resources": [
+    {
+      "title": "Georgia Emergency Management and Homeland Security Agency",
+      "url": "https://gema.georgia.gov/",
+      "external": true
+    },
+    {
+      "title": "CodeRED Emergency Notifications",
+      "url": "https://public.coderedweb.com/CNE/en-US/3F5FC7B2F8A2",
+      "external": true
+    },
+    {
+      "title": "National Weather Service \u2014 Weather Safety",
+      "url": "https://www.weather.gov/safety/",
+      "external": true
+    },
+    {
+      "title": "Ready.gov Emergency Preparedness",
+      "url": "https://www.ready.gov/",
+      "external": true
+    }
+  ],
+  "related_services": [
+    {
+      "title": "Hart County E-911 Services",
+      "url": "e911.html",
+      "external": false
+    },
+    {
+      "title": "Hart County Emergency Medical Services",
+      "url": "ems.html",
+      "external": false
+    }
+  ]
+}

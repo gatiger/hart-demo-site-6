@@ -70,19 +70,51 @@
   </aside>
 
   <main id="main" class="container emaPage" tabindex="-1">
+    <div id="alertHolder"></div>
 
-    <section class="card comingSoonCard" aria-labelledby="comingSoonTitle">
-      <div class="comingSoonInner">
-        <p class="comingSoonEyebrow">Hart County</p>
-        <h1 id="comingSoonTitle" class="comingSoonTitle">Emergency Management Agency</h1>
-        <p class="comingSoonText">Page coming soon.</p>
+    <section class="card pageIntroCard emaIntroCard" aria-labelledby="emaTitle">
+      <div class="emaIntroLayout">
+        <div class="emaIntroMain">
+          <p id="emaEyebrow" class="pageIntroEyebrow"></p>
+          <h1 id="emaTitle" class="pageIntroTitle">Emergency Management Agency</h1>
+          <p id="emaDescription" class="pageIntroText"></p>
+        </div>
+
+        <div class="emaIntroContact" aria-labelledby="emaContactTitle">
+          <h2 id="emaContactTitle">EMA Office</h2>
+          <div id="emaContact"></div>
+        </div>
       </div>
+    </section>
+
+    <section class="card emaFunctionCard" aria-labelledby="functionTitle">
+      <div class="cardHeader"><div><h2 id="functionTitle">Function</h2></div></div>
+      <div id="emaFunction"></div>
+    </section>
+
+    <section class="card emaMissionCard" aria-labelledby="missionTitle">
+      <div class="cardHeader"><div><h2 id="missionTitle">Mission Statement</h2></div></div>
+      <div id="emaMission"></div>
+    </section>
+
+    <section class="card emaResourcesCard" aria-labelledby="resourcesTitle">
+      <div class="cardHeader">
+        <div>
+          <h2 id="resourcesTitle">Emergency Preparedness Resources</h2>
+          <p class="sub">Official information for preparing for and responding to emergencies and disasters.</p>
+        </div>
+      </div>
+      <div id="emaResources" class="emaLinkList"></div>
+    </section>
+
+    <section class="card emaRelatedCard" aria-labelledby="relatedTitle">
+      <div class="cardHeader"><div><h2 id="relatedTitle">Related County Services</h2></div></div>
+      <div id="emaRelated" class="emaLinkList"></div>
     </section>
 
     <footer class="footer">
       <div>© 2026 Hart County Board of Commissioners</div>
     </footer>
-
   </main>
 </body>
 </html>
