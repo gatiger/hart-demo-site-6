@@ -74,9 +74,34 @@
     </nav>
   </aside>
 
-  <main id="main" class="container" tabindex="-1">
-    <section class="card comingSoonCard" aria-label="Page status">
-      <p class="comingSoonText">Page coming soon....</p>
+  <main id="main" class="container itPage" tabindex="-1">
+    <div id="alertHolder"></div>
+
+    <section class="card pageIntroCard itIntroCard" aria-labelledby="itTitle">
+      <div class="itIntroInner">
+        <p id="itEyebrow" class="pageIntroEyebrow"></p>
+        <h1 id="itTitle" class="pageIntroTitle">Information Technology</h1>
+        <p id="itDescription" class="pageIntroText"></p>
+      </div>
+    </section>
+
+    <section class="card itOverviewCard" aria-labelledby="overviewTitle">
+      <div class="cardHeader">
+        <div>
+          <h2 id="overviewTitle">Technology Services</h2>
+        </div>
+      </div>
+      <div id="itOverview"></div>
+    </section>
+
+    <section class="card itResponsibilitiesCard" aria-labelledby="responsibilitiesTitle">
+      <div class="cardHeader">
+        <div>
+          <h2 id="responsibilitiesTitle">IT Responsibilities</h2>
+          <p class="sub">Technology services and support provided across Hart County government.</p>
+        </div>
+      </div>
+      <ul id="itResponsibilities" class="itResponsibilityList"></ul>
     </section>
 
     <footer class="footer">

@@ -1,19 +1,88 @@
-/* PAGE TITLE page */
+/* Information Technology page */
 
-.comingSoonCard{
-  margin-top: 18px;
-  min-height: 260px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 32px 24px;
+.itPage{
+  padding-top: 230px;
+  padding-bottom: 3rem;
 }
 
-.comingSoonText{
+.itIntroCard,
+.itOverviewCard,
+.itResponsibilitiesCard{
+  padding: 1.5rem 1.65rem;
+}
+
+.itIntroCard{
+  margin-bottom: 18px;
+}
+
+.itIntroInner{
+  max-width: 920px;
+}
+
+.pageIntroEyebrow{
+  margin: 0 0 .4rem;
+  font-size: .82rem;
+  font-weight: 900;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.75);
+}
+
+.itIntroCard .pageIntroTitle{
+  margin-bottom: .55rem;
+}
+
+.itIntroCard .pageIntroText{
+  max-width: 820px;
+  margin-bottom: 0;
+}
+
+.itOverviewCard,
+.itResponsibilitiesCard{
+  margin-top: 18px;
+}
+
+.itOverviewCard .cardHeader,
+.itResponsibilitiesCard .cardHeader{
+  margin-bottom: .95rem;
+}
+
+.itOverviewCard p{
+  margin: .7rem 0 0;
+  line-height: 1.75;
+}
+
+.itOverviewCard p:first-child{
+  margin-top: 0;
+}
+
+.itResponsibilityList{
   margin: 0;
-  font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 800;
-  color: var(--text);
-  letter-spacing: .02em;
+  padding-left: 1.45rem;
+  columns: 2;
+  column-gap: 3rem;
+}
+
+.itResponsibilityList li{
+  margin: 0 0 .85rem;
+  line-height: 1.65;
+  break-inside: avoid;
+}
+
+@media (max-width: 760px){
+  .itResponsibilityList{
+    columns: 1;
+  }
+}
+
+@media (max-width: 640px){
+  .itPage{
+    padding-top: 150px;
+  }
+
+  .itIntroCard,
+  .itOverviewCard,
+  .itResponsibilitiesCard{
+    padding: 1.25rem;
+  }
 }
