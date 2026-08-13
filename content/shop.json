@@ -1,0 +1,60 @@
+{
+  "intro": {
+    "eyebrow": "Hart County",
+    "title": "Hart County Vehicle Maintenance",
+    "description": "The Hart County Maintenance Shop maintains and repairs the vehicles and heavy equipment that support county departments and public services."
+  },
+  "contact": {
+    "phone": "706-376-7503",
+    "fax": "706-376-3468",
+    "email": "hcms@hartcom.net"
+  },
+  "overview": [
+    "The Hart County Maintenance Shop is housed in a 6,000 square foot facility. The Shop services and repairs approximately 220 vehicles and pieces of equipment for 15 departments.",
+    "The seven-employee operation saves taxpayers money by performing work ranging from routine tire repairs to major equipment overhauls."
+  ],
+  "feature_image": {
+    "src": "assets/maintenance-shop/shop.jpg",
+    "alt": "Hart County Maintenance Shop",
+    "caption": "Hart County Maintenance Shop"
+  },
+  "rebuild": [
+    "The Maintenance Shop can extend the useful life of expensive county equipment through major repairs and rebuilds.",
+    "One older piece of equipment that would have cost more than $125,000 to replace was rebuilt by the Shop for less than $20,000, extending its service life for many more years."
+  ],
+  "rebuild_image": {
+    "src": "assets/maintenance-shop/rebuilt-loader.jpg",
+    "alt": "Rebuilt Hart County front-end loader",
+    "caption": "Rebuilt front-end loader"
+  },
+  "fabrication": [
+    "The Shop also operates a welding and fabrication division that can produce custom fabrications for a fraction of the cost of outside services. The department has fabricated and rebuilt fire trucks for the Hart County volunteer fire service.",
+    "The Maintenance Shop also supports the County fleet's fueling system, helping county vehicles obtain fuel at a lower cost than local retail stations."
+  ],
+  "gallery": [
+    {
+      "src": "assets/maintenance-shop/fleet-1.jpg",
+      "alt": "Hart County fleet vehicle"
+    },
+    {
+      "src": "assets/maintenance-shop/fleet-2.jpg",
+      "alt": "Hart County fleet vehicle"
+    },
+    {
+      "src": "assets/maintenance-shop/fleet-3.jpg",
+      "alt": "Hart County fleet vehicle"
+    },
+    {
+      "src": "assets/maintenance-shop/fleet-4.jpg",
+      "alt": "Hart County fleet vehicle"
+    },
+    {
+      "src": "assets/maintenance-shop/fleet-5.jpg",
+      "alt": "Hart County fleet vehicle"
+    },
+    {
+      "src": "assets/maintenance-shop/fleet-6.jpg",
+      "alt": "Hart County fleet vehicle"
+    }
+  ]
+}

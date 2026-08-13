@@ -29,7 +29,7 @@
         </div>
         <div class="brandText">
           <div class="kicker">Hart County, Georgia</div>
-          <div class="title">PAGE TITLE</div>
+          <div class="title">Vehicle Maintenance</div>
         </div>
       </a>
 
@@ -74,14 +74,54 @@
     </nav>
   </aside>
 
-  <main id="main" class="container" tabindex="-1">
-    <section class="card comingSoonCard" aria-label="Page status">
-      <p class="comingSoonText">Page coming soon....</p>
+  <main id="main" class="container shopPage" tabindex="-1">
+    <div id="alertHolder"></div>
+
+    <section class="card pageIntroCard shopIntroCard" aria-labelledby="shopTitle">
+      <div class="shopIntroLayout">
+        <div>
+          <p id="shopEyebrow" class="pageIntroEyebrow"></p>
+          <h1 id="shopTitle" class="pageIntroTitle">Hart County Vehicle Maintenance</h1>
+          <p id="shopDescription" class="pageIntroText"></p>
+        </div>
+        <div class="shopIntroContact">
+          <h2>Maintenance Shop</h2>
+          <div id="shopContact"></div>
+        </div>
+      </div>
     </section>
 
-    <footer class="footer">
-      <div>© 2026 Hart County Board of Commissioners</div>
-    </footer>
+    <section class="card shopOverviewCard">
+      <div class="shopFeatureGrid">
+        <div id="shopOverview"></div>
+        <figure id="shopFacilityPhoto" class="shopPhoto"></figure>
+      </div>
+    </section>
+
+    <section class="card shopRebuildCard">
+      <div class="cardHeader"><div><h2>Extending the Life of County Equipment</h2></div></div>
+      <div class="shopFeatureGrid reverse">
+        <figure id="shopRebuildPhoto" class="shopPhoto"></figure>
+        <div id="shopRebuild"></div>
+      </div>
+    </section>
+
+    <section class="card shopFabricationCard">
+      <div class="cardHeader"><div><h2>Welding, Fabrication and Fleet Support</h2></div></div>
+      <div id="shopFabrication"></div>
+    </section>
+
+    <section class="card shopGalleryCard">
+      <div class="cardHeader">
+        <div>
+          <h2>County Fleet</h2>
+          <p class="sub">Vehicles and equipment maintained by the Hart County Maintenance Shop.</p>
+        </div>
+      </div>
+      <div id="shopGallery" class="shopGallery"></div>
+    </section>
+
+    <footer class="footer"><div>© 2026 Hart County Board of Commissioners</div></footer>
   </main>
 </body>
 </html>

@@ -1,19 +1,29 @@
-/* PAGE TITLE page */
-
-.comingSoonCard{
-  margin-top: 18px;
-  min-height: 260px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 32px 24px;
-}
-
-.comingSoonText{
-  margin: 0;
-  font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 800;
-  color: var(--text);
-  letter-spacing: .02em;
-}
+/* Vehicle Maintenance page */
+.shopPage{padding-top:230px;padding-bottom:3rem}
+.shopIntroCard,.shopOverviewCard,.shopRebuildCard,.shopFabricationCard,.shopGalleryCard{padding:1.5rem 1.65rem}
+.shopIntroCard{margin-bottom:18px}
+.shopIntroLayout{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(330px,.8fr);gap:2rem;align-items:start}
+.pageIntroEyebrow{margin:0 0 .4rem;font-size:.82rem;font-weight:900;letter-spacing:.11em;text-transform:uppercase;color:rgba(255,255,255,.75)}
+.shopIntroCard .pageIntroTitle{margin-bottom:.55rem}
+.shopIntroCard .pageIntroText{max-width:760px;margin-bottom:0}
+.shopIntroContact{padding-left:1.5rem;border-left:1px solid rgba(255,255,255,.22)}
+.shopIntroContact h2{margin:0 0 .7rem;color:#fff;font-size:1.2rem}
+.contactList{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.7rem 1.25rem}
+.contactLabel{display:block;margin-bottom:.15rem;color:rgba(255,255,255,.72);font-size:.72rem;font-weight:900;letter-spacing:.06em;text-transform:uppercase}
+.contactValue{color:#fff;font-weight:700;font-size:.9rem;line-height:1.45}
+.shopIntroContact a{color:#fff;text-underline-offset:3px}
+.phoneDesktop,.emailDesktop{display:inline}.phoneMobile,.emailMobile{display:none}
+.shopOverviewCard,.shopRebuildCard,.shopFabricationCard,.shopGalleryCard{margin-top:18px}
+.shopFeatureGrid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(300px,.8fr);gap:2rem;align-items:center}
+.shopFeatureGrid.reverse{grid-template-columns:minmax(300px,.8fr) minmax(0,1.2fr)}
+.shopOverviewCard p,.shopRebuildCard p,.shopFabricationCard p{margin:.7rem 0 0;line-height:1.75}
+.shopOverviewCard p:first-child,.shopRebuildCard p:first-child,.shopFabricationCard p:first-child{margin-top:0}
+.shopPhoto{margin:0}
+.shopPhoto img{display:block;width:100%;height:auto;max-height:360px;object-fit:cover;border-radius:14px}
+.shopPhoto figcaption{margin-top:.45rem;color:var(--text-muted);font-size:.82rem;line-height:1.45}
+.shopGallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.shopGallery figure{margin:0}
+.shopGallery img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+.shopGallery figcaption{margin-top:.4rem;color:var(--text-muted);font-size:.8rem}
+@media(max-width:900px){.shopIntroLayout,.shopFeatureGrid,.shopFeatureGrid.reverse{grid-template-columns:1fr}.shopIntroContact{padding-left:0;padding-top:1rem;border-left:0;border-top:1px solid rgba(255,255,255,.22)}.shopGallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){.shopPage{padding-top:150px}.shopIntroCard,.shopOverviewCard,.shopRebuildCard,.shopFabricationCard,.shopGalleryCard{padding:1.25rem}.contactList,.shopGallery{grid-template-columns:1fr}.phoneDesktop,.emailDesktop{display:none}.phoneMobile,.emailMobile{display:inline}}
