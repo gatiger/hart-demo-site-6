@@ -29,7 +29,7 @@
         </div>
         <div class="brandText">
           <div class="kicker">Hart County, Georgia</div>
-          <div class="title">PAGE TITLE</div>
+          <div class="title">Magistrate Court</div>
         </div>
       </a>
 
@@ -74,9 +74,68 @@
     </nav>
   </aside>
 
-  <main id="main" class="container" tabindex="-1">
-    <section class="card comingSoonCard" aria-label="Page status">
-      <p class="comingSoonText">Page coming soon....</p>
+  <main id="main" class="container magistratePage" tabindex="-1">
+    <div id="alertHolder"></div>
+
+    <section class="card pageIntroCard magistrateIntroCard" aria-labelledby="magistrateTitle">
+      <div class="magistrateIntroLayout">
+        <div class="magistrateIntroMain">
+          <p id="magistrateEyebrow" class="pageIntroEyebrow"></p>
+          <h1 id="magistrateTitle" class="pageIntroTitle">Hart County Magistrate Court</h1>
+          <p id="magistrateDescription" class="pageIntroText"></p>
+        </div>
+
+        <div class="magistrateIntroContact" aria-labelledby="contactTitle">
+          <h2 id="contactTitle">Court Information</h2>
+          <div id="magistrateContact"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card magistrateResourcesCard" aria-labelledby="resourcesTitle">
+      <div class="cardHeader">
+        <div>
+          <h2 id="resourcesTitle">Court Resources and Online Filing</h2>
+        </div>
+      </div>
+      <div id="magistrateResources" class="magistrateLinkList"></div>
+    </section>
+
+    <section class="card magistrateStaffCard" aria-labelledby="staffTitle">
+      <div class="cardHeader">
+        <div>
+          <h2 id="staffTitle">Court Staff</h2>
+        </div>
+      </div>
+      <div id="magistrateStaff" class="magistrateStaffList"></div>
+    </section>
+
+    <section class="card magistrateCriminalCard" aria-labelledby="criminalTitle">
+      <div class="cardHeader">
+        <div>
+          <h2 id="criminalTitle">Criminal Matters</h2>
+        </div>
+      </div>
+      <div id="magistrateCriminal"></div>
+    </section>
+
+    <section class="card magistrateCivilCard" aria-labelledby="civilTitle">
+      <div class="cardHeader">
+        <div>
+          <h2 id="civilTitle">Civil Matters</h2>
+        </div>
+      </div>
+      <div id="magistrateCivil"></div>
+    </section>
+
+    <section class="card magistrateFeesCard" aria-labelledby="feesTitle">
+      <div class="cardHeader">
+        <div>
+          <h2 id="feesTitle">Civil Filing Fees</h2>
+          <p id="magistrateFeeNotice" class="sub"></p>
+        </div>
+      </div>
+      <div id="magistrateFees" class="feeList"></div>
     </section>
 
     <footer class="footer">

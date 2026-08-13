@@ -1,0 +1,84 @@
+{
+  "intro": {
+    "eyebrow": "Hart County",
+    "title": "Hart County Magistrate Court",
+    "description": "Magistrate Court handles a variety of civil and criminal matters for Hart County, including claims, dispossessory cases, warrants, hearings, ordinance violations, and other matters within the court's jurisdiction."
+  },
+  "contact": {
+    "chief_magistrate": "Thomas Jordan",
+    "mailing_address": "P.O. Box 698",
+    "city_state_zip": "Hartwell, GA 30643",
+    "phone": "706-376-6817",
+    "phone_raw": "17063766817",
+    "location": "Hart County Courthouse on the square in downtown Hartwell",
+    "hours": "8:00 AM – 5:00 PM, Monday through Friday"
+  },
+  "resources": [
+    {
+      "title": "Landlord–Tenant Issues and Handbook",
+      "url": "https://consumer.georgia.gov/consumer-topics/landlord-tenant-issues-and-handbook",
+      "external": true
+    },
+    {
+      "title": "Georgia Magistrate Council",
+      "url": "https://georgiamagistratecouncil.com/",
+      "external": true
+    },
+    {
+      "title": "Online Filing – Statement of Claims or Dispossessory Cases",
+      "url": "https://www.efilegeorgia.com/PagesBS/Default.aspx",
+      "external": true
+    }
+  ],
+  "staff": [
+    {
+      "name": "Thomas J. Jordan",
+      "role": "Chief Magistrate Judge"
+    },
+    {
+      "name": "Craig Fulghum",
+      "role": "Magistrate Judge"
+    },
+    {
+      "name": "Taylor Burnett",
+      "role": "Chief Deputy Clerk"
+    },
+    {
+      "name": "Kaitlyn S. Garrett",
+      "role": "Associate Deputy Clerk"
+    }
+  ],
+  "criminal_matters": [
+    "Judges are on call 24 hours a day for criminal matters.",
+    "Magistrate judges issue misdemeanor and felony warrants and conduct first appearance hearings, pre-warrant hearings, and bond hearings.",
+    "Other criminal matters include county ordinance violations, bad checks, and special misdemeanor charges."
+  ],
+  "civil_matters": [
+    "Civil matters have a $15,000 limitation.",
+    "The defendant or business must be located in Hart County.",
+    "The filer must provide the Court with the correct street address for proper service."
+  ],
+  "fee_notice": "Effective July 1, 2024, all filing fees increased by $4.00.",
+  "filing_fees": [
+    {
+      "name": "Statement of Claim",
+      "detail": "$108.00 for one defendant; add $50.00 for each additional defendant."
+    },
+    {
+      "name": "Garnishments",
+      "detail": "$108.00"
+    },
+    {
+      "name": "Foreclosure",
+      "detail": "$108.00. If filing for a vehicle, you must bring the title with you."
+    },
+    {
+      "name": "Dispossessory",
+      "detail": "$108.00"
+    },
+    {
+      "name": "Interrogatory",
+      "detail": "$10.00 plus a $50.00 service fee, for a $60.00 total."
+    }
+  ]
+}
