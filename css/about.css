@@ -528,3 +528,22 @@
   font-size:.9375rem;
   line-height:1.7;
 }
+
+
+/* v6.30 precise vertical grid foundation. Row starts are safe flow offsets: they add
+   fixed 24px row increments before an element while normal document flow still prevents overlap. */
+#aboutIntroSection,#aboutCarouselSection,#aboutInfoGrid,#aboutStatsSection{
+  margin-top:calc((var(--about-section-row-start,1) - 1) * 24px);
+}
+.aboutInfoCard{margin-top:calc((var(--about-card-row-start,1) - 1) * 24px);}
+.pageIntroInner > #aboutPageTitle,
+.pageIntroInner > #aboutPageIntro,
+.pageIntroInner > #aboutIntroImage,
+.pageIntroInner > .aboutPageTools > #aboutSearch,
+.pageIntroInner > .aboutPageTools > #aboutIntroButtonRow,
+.pageIntroInner > #aboutBadgeRow,
+.aboutCardComponent{margin-top:calc((var(--about-component-row-start,1) - 1) * 24px);}
+.aboutComponentImage{margin-top:calc((var(--about-image-row-start,1) - 1) * 24px);}
+@media(max-width:760px){
+  #aboutIntroSection,#aboutCarouselSection,#aboutInfoGrid,#aboutStatsSection,.aboutInfoCard,.aboutCardComponent,.aboutComponentImage{margin-top:0!important;}
+}
