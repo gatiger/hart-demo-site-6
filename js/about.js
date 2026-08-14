@@ -19,13 +19,16 @@ document.addEventListener("DOMContentLoaded", async () => {
 function renderAboutPage(data) {
   setText("aboutPageTitle", data.pageTitle);
   setText("aboutPageIntro", data.pageIntro);
+  setText("aboutStatsTitle", data.statsTitle || "County At a Glance");
   setText("aboutStatsIntro", data.statsIntro);
+  setText("aboutCarouselTitle", (data.carousel && data.carousel.title) || "Photo Gallery");
   applyAboutSectionLayout(data);
 
   renderAboutIntroComponents(data);
   renderAboutBadges(data.badges || []);
   renderAboutSections(data.sections || []);
   renderAboutStats(data.stats || []);
+  applyAboutStaticTextStyles(data);
 }
 
 
@@ -88,6 +91,23 @@ function aboutTextStyle(style) {
   const line = Number(style.lineHeight);
   if (Number.isFinite(line) && line >= .8 && line <= 3) bits.push(`line-height:${line}`);
   return bits.join(";");
+}
+
+function applyAboutStaticTextStyles(data) {
+  const rootStyles = data && data.textStyles && typeof data.textStyles === "object" ? data.textStyles : {};
+  const carouselStyles = data && data.carousel && data.carousel.textStyles && typeof data.carousel.textStyles === "object" ? data.carousel.textStyles : {};
+  const map = [
+    ["aboutStatsTitle", rootStyles.statsTitle],
+    ["aboutStatsIntro", rootStyles.statsIntro],
+    ["aboutCarouselTitle", carouselStyles.title],
+    ["aboutCarouselIntro", carouselStyles.intro]
+  ];
+  map.forEach(([id, style]) => {
+    const node = document.getElementById(id);
+    if (!node) return;
+    const css = aboutTextStyle(style);
+    if (css) node.style.cssText += ";" + css;
+  });
 }
 
 function applyIntroComponentLayout(data) {
@@ -162,7 +182,8 @@ function renderAboutButtons(buttons) {
     const href = safeText(button.href) || "#";
     const style = safeText(button.style).toLowerCase();
     const styleClass = style === "ghost" || style === "secondary" ? " ghost" : "";
-    return `<a class="btn${styleClass} aboutComponentButton" href="${escapeHtml(href)}">${escapeHtml(label)}</a>`;
+    const textCss = aboutTextStyle(button && button.textStyle && typeof button.textStyle === "object" ? button.textStyle : {});
+    return `<a class="btn${styleClass} aboutComponentButton" href="${escapeHtml(href)}" style="${textCss}">${escapeHtml(label)}</a>`;
   }).join("");
 }
 
@@ -185,10 +206,11 @@ function renderAboutBadges(items) {
     const label = safeText(item.label);
     const value = safeText(item.value);
 
+    const styles = item && item.textStyles && typeof item.textStyles === "object" ? item.textStyles : {};
     return `
       <div class="aboutBadge">
-        <strong>${escapeHtml(label)}:</strong>
-        <span>${escapeHtml(value)}</span>
+        <strong style="${aboutTextStyle(styles.label)}">${escapeHtml(label)}:</strong>
+        <span style="${aboutTextStyle(styles.value)}">${escapeHtml(value)}</span>
       </div>
     `;
   }).join("");
@@ -247,10 +269,11 @@ function renderAboutStats(items) {
     const title = safeText(item.title);
     const value = safeText(item.value);
 
+    const styles = item && item.textStyles && typeof item.textStyles === "object" ? item.textStyles : {};
     return `
       <div class="item aboutSearchItem" data-search-text="${escapeHtml((title + " " + value).toLowerCase())}">
-        <div class="itemTitle">${escapeHtml(title)}</div>
-        <div class="meta">${escapeHtml(value)}</div>
+        <div class="itemTitle" style="${aboutTextStyle(styles.title)}">${escapeHtml(title)}</div>
+        <div class="meta" style="${aboutTextStyle(styles.value)}">${escapeHtml(value)}</div>
       </div>
     `;
   }).join("");
@@ -270,6 +293,11 @@ function initAboutCarousel(carousel) {
 
   section.hidden = false;
   intro.textContent = safeText(carousel.intro);
+  const carouselTitle = document.getElementById("aboutCarouselTitle");
+  if (carouselTitle) carouselTitle.textContent = safeText(carousel.title) || "Photo Gallery";
+  const carouselStyles = carousel.textStyles && typeof carousel.textStyles === "object" ? carousel.textStyles : {};
+  if (carouselTitle) carouselTitle.style.cssText += ";" + aboutTextStyle(carouselStyles.title);
+  intro.style.cssText += ";" + aboutTextStyle(carouselStyles.intro);
   aboutCarouselState.slides = slides;
   aboutCarouselState.intervalMs = Number(carousel.intervalMs) > 0 ? Number(carousel.intervalMs) : 5000;
 
@@ -278,8 +306,8 @@ function initAboutCarousel(carousel) {
       <img src="${escapeHtml(item.src)}" alt="${escapeHtml(safeText(item.alt))}">
       ${(safeText(item.title) || safeText(item.caption)) ? `
         <div class="aboutSlideCaption">
-          ${safeText(item.title) ? `<h3 class="aboutSlideTitle">${escapeHtml(item.title)}</h3>` : ""}
-          ${safeText(item.caption) ? `<p class="aboutSlideText">${escapeHtml(item.caption)}</p>` : ""}
+          ${safeText(item.title) ? `<h3 class="aboutSlideTitle" style="${aboutTextStyle(item.textStyles && item.textStyles.title)}">${escapeHtml(item.title)}</h3>` : ""}
+          ${safeText(item.caption) ? `<p class="aboutSlideText" style="${aboutTextStyle(item.textStyles && item.textStyles.caption)}">${escapeHtml(item.caption)}</p>` : ""}
         </div>
       ` : ""}
     </div>

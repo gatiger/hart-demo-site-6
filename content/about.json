@@ -39,7 +39,8 @@
       }
     ],
     "gridSpan": 24,
-    "gridRowSpan": 0
+    "gridRowSpan": 0,
+    "title": "Photo Gallery"
   },
   "sections": [
     {
@@ -102,5 +103,6 @@
   "introGridRowSpan": 0,
   "sectionsGridRowSpan": 0,
   "statsGridRowSpan": 0,
-  "textBlocks": []
+  "textBlocks": [],
+  "statsTitle": "County At a Glance"
 }
