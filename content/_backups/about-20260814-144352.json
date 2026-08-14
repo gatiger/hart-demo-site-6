@@ -52,32 +52,7 @@
       "gridRowSpan": 0,
       "textBlocks": [],
       "gridColumnStart": 1,
-      "componentLayout": {
-        "image": {
-          "gridSpan": 24,
-          "gridColumnStart": 1,
-          "gridRowSpan": 0,
-          "order": 0
-        },
-        "title": {
-          "gridSpan": 24,
-          "gridColumnStart": 1,
-          "gridRowSpan": 0,
-          "order": 1
-        },
-        "body": {
-          "gridSpan": 24,
-          "gridColumnStart": 1,
-          "gridRowSpan": 0,
-          "order": 2
-        },
-        "buttons": {
-          "gridSpan": 24,
-          "gridColumnStart": 1,
-          "gridRowSpan": 0,
-          "order": 3
-        }
-      }
+      "componentLayout": {}
     },
     {
       "title": "Geography & Recreation",
@@ -86,33 +61,8 @@
       "gridSpan": 12,
       "gridRowSpan": 0,
       "textBlocks": [],
-      "gridColumnStart": 13,
-      "componentLayout": {
-        "image": {
-          "gridSpan": 24,
-          "gridColumnStart": 1,
-          "gridRowSpan": 0,
-          "order": 0
-        },
-        "title": {
-          "gridSpan": 24,
-          "gridColumnStart": 1,
-          "gridRowSpan": 0,
-          "order": 1
-        },
-        "body": {
-          "gridSpan": 24,
-          "gridColumnStart": 1,
-          "gridRowSpan": 0,
-          "order": 2
-        },
-        "buttons": {
-          "gridSpan": 24,
-          "gridColumnStart": 1,
-          "gridRowSpan": 0,
-          "order": 3
-        }
-      }
+      "gridColumnStart": 1,
+      "componentLayout": {}
     },
     {
       "title": "Government Structure",
@@ -122,32 +72,7 @@
       "gridRowSpan": 0,
       "textBlocks": [],
       "gridColumnStart": 1,
-      "componentLayout": {
-        "image": {
-          "gridSpan": 24,
-          "gridColumnStart": 1,
-          "gridRowSpan": 0,
-          "order": 0
-        },
-        "title": {
-          "gridSpan": 24,
-          "gridColumnStart": 1,
-          "gridRowSpan": 0,
-          "order": 1
-        },
-        "body": {
-          "gridSpan": 24,
-          "gridColumnStart": 1,
-          "gridRowSpan": 0,
-          "order": 2
-        },
-        "buttons": {
-          "gridSpan": 24,
-          "gridColumnStart": 1,
-          "gridRowSpan": 0,
-          "order": 3
-        }
-      }
+      "componentLayout": {}
     },
     {
       "title": "Community & Services",
@@ -156,33 +81,8 @@
       "gridSpan": 12,
       "gridRowSpan": 0,
       "textBlocks": [],
-      "gridColumnStart": 13,
-      "componentLayout": {
-        "image": {
-          "gridSpan": 24,
-          "gridColumnStart": 1,
-          "gridRowSpan": 0,
-          "order": 0
-        },
-        "title": {
-          "gridSpan": 24,
-          "gridColumnStart": 1,
-          "gridRowSpan": 0,
-          "order": 1
-        },
-        "body": {
-          "gridSpan": 24,
-          "gridColumnStart": 1,
-          "gridRowSpan": 0,
-          "order": 2
-        },
-        "buttons": {
-          "gridSpan": 24,
-          "gridColumnStart": 1,
-          "gridRowSpan": 0,
-          "order": 3
-        }
-      }
+      "gridColumnStart": 1,
+      "componentLayout": {}
     }
   ],
   "statsIntro": "Key facts and general county information",
@@ -217,42 +117,5 @@
   "introGridStart": 1,
   "sectionsGridStart": 1,
   "statsGridStart": 1,
-  "componentLayout": {
-    "title": {
-      "gridSpan": 24,
-      "gridColumnStart": 1,
-      "gridRowSpan": 0,
-      "order": 0
-    },
-    "text": {
-      "gridSpan": 24,
-      "gridColumnStart": 1,
-      "gridRowSpan": 0,
-      "order": 1
-    },
-    "image": {
-      "gridSpan": 24,
-      "gridColumnStart": 1,
-      "gridRowSpan": 0,
-      "order": 2
-    },
-    "search": {
-      "gridSpan": 24,
-      "gridColumnStart": 1,
-      "gridRowSpan": 0,
-      "order": 3
-    },
-    "buttons": {
-      "gridSpan": 24,
-      "gridColumnStart": 1,
-      "gridRowSpan": 0,
-      "order": 4
-    },
-    "badges": {
-      "gridSpan": 24,
-      "gridColumnStart": 1,
-      "gridRowSpan": 0,
-      "order": 5
-    }
-  }
+  "componentLayout": {}
 }
