@@ -4,84 +4,38 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Public Transit | Hart County</title>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Quintessential&family=Felipa&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
-
   <link rel="stylesheet" href="/css/base.css" />
   <link rel="stylesheet" href="/css/transit.css" />
-
-  <script defer src="js/alerts.js"></script>
-  <script defer src="js/app.js"></script>
-  <script defer src="js/transit.js"></script>
+  <script defer src="/js/alerts.js"></script>
+  <script defer src="/js/app.js"></script>
+  <script defer src="/js/transit.js"></script>
 </head>
-
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
-
-  <header class="topbar">
-    <div class="navRow">
-      <a class="brand brandLink" href="index.html">
-        <div class="seal">
-          <img src="./assets/hart_seal.svg" alt="Hart County, Georgia official seal">
-        </div>
-        <div class="brandText">
-          <div class="kicker">Hart County, Georgia</div>
-          <div class="title">PAGE TITLE</div>
-        </div>
-      </a>
-
-      <nav class="topNav" aria-label="Primary">
-        <a href="directory.html">Directory</a>
-        <a href="commissioners.html">Commissioners</a>
-        <a href="employment.html">Employment</a>
-        <a href="about.html">About</a>
-        <a href="paynes_creek.html">Paynes Creek</a>
-        <a href="news.html">News</a>
-        <a href="meetings.html">Meetings</a>
-        <a href="accessibility.html">Accessibility</a>
-      </nav>
-
-      <button class="btn menuBtn" type="button"
-              aria-controls="mobileMenu"
-              aria-expanded="false"
-              id="menuBtn">
-        Menu
-      </button>
-    </div>
-  </header>
-
+  <header class="topbar"><div class="navRow">
+    <a class="brand brandLink" href="index.html"><div class="seal"><img src="/assets/hart_seal.svg" alt="Hart County, Georgia official seal"></div><div class="brandText"><div class="kicker">Hart County, Georgia</div><div class="title">Public Transit</div></div></a>
+    <nav class="topNav" aria-label="Primary"><a href="directory.html">Directory</a><a href="commissioners.html">Commissioners</a><a href="employment.html">Employment</a><a href="about.html">About</a><a href="paynes_creek.html">Paynes Creek</a><a href="news.html">News</a><a href="meetings.html">Meetings</a><a href="accessibility.html">Accessibility</a></nav>
+    <button class="btn menuBtn" type="button" aria-controls="mobileMenu" aria-expanded="false" id="menuBtn">Menu</button>
+  </div></header>
   <div class="menuBackdrop" id="menuBackdrop" hidden></div>
-
-  <aside class="menuPanel" id="mobileMenu" hidden aria-label="Mobile navigation">
-    <div class="menuPanelHead">
-      <div class="menuPanelTitle">Menu</div>
-      <button class="btn ghost" type="button" id="menuClose" aria-label="Close menu">Close</button>
-    </div>
-
-    <nav class="menuNav" aria-label="Primary mobile">
-      <a href="directory.html">Directory</a>
-      <a href="commissioners.html">Commissioners</a>
-      <a href="employment.html">Employment</a>
-      <a href="about.html">About</a>
-      <a href="paynes_creek.html">Paynes Creek</a>
-      <hr>
-      <a href="news.html">News</a>
-      <a href="meetings.html">Meetings</a>
-      <a href="accessibility.html">Accessibility</a>
-    </nav>
-  </aside>
-
-  <main id="main" class="container" tabindex="-1">
-    <section class="card comingSoonCard" aria-label="Page status">
-      <p class="comingSoonText">Page coming soon....</p>
+  <aside class="menuPanel" id="mobileMenu" hidden aria-label="Mobile navigation"><div class="menuPanelHead"><div class="menuPanelTitle">Menu</div><button class="btn ghost" type="button" id="menuClose" aria-label="Close menu">Close</button></div><nav class="menuNav" aria-label="Primary mobile"><a href="directory.html">Directory</a><a href="commissioners.html">Commissioners</a><a href="employment.html">Employment</a><a href="about.html">About</a><a href="paynes_creek.html">Paynes Creek</a><hr><a href="news.html">News</a><a href="meetings.html">Meetings</a><a href="accessibility.html">Accessibility</a></nav></aside>
+  <main id="main" class="container transitPage" tabindex="-1">
+    <div id="alertHolder"></div>
+    <section class="card pageIntroCard transitIntroCard" aria-labelledby="transitTitle"><div class="transitIntroLayout">
+      <div class="transitIntroMain"><p id="transitEyebrow" class="pageIntroEyebrow"></p><h1 id="transitTitle" class="pageIntroTitle">Hart County Public Transit</h1><p id="transitDescription" class="pageIntroText"></p></div>
+      <div class="transitIntroContact" aria-labelledby="contactTitle"><h2 id="contactTitle">Transit Office</h2><div id="transitContact"></div></div>
+    </div></section>
+    <section class="transitOverviewGrid" aria-label="Public Transit overview">
+      <figure class="card transitPhotoCard"><img id="transitPhoto" src="/assets/transitbus.jpg" alt="Hart County Public Transit bus" loading="eager"><figcaption id="transitPhotoCaption">Hart County Public Transit</figcaption></figure>
+      <section class="card transitServiceCard" aria-labelledby="serviceTitle"><div class="cardHeader"><div><h2 id="serviceTitle">Service Information</h2></div></div><div id="transitService"></div></section>
     </section>
-
-    <footer class="footer">
-      <div>© 2026 Hart County Board of Commissioners</div>
-    </footer>
+    <section class="card transitFaresCard" aria-labelledby="faresTitle"><div class="cardHeader"><div><h2 id="faresTitle">Passenger Fares</h2><p class="sub">Low-cost, one-way trips for Hart County residents.</p></div></div><div id="transitFares" class="transitFareList"></div></section>
+    <section class="card transitResourcesCard" aria-labelledby="resourcesTitle"><div class="cardHeader"><div><h2 id="resourcesTitle">Accessibility &amp; Civil Rights</h2><p class="sub">Transit policies and complaint resources.</p></div></div><div id="transitResources" class="transitLinkList"></div></section>
+    <footer class="footer"><div>&copy; 2026 Hart County Board of Commissioners</div></footer>
   </main>
 </body>
 </html>

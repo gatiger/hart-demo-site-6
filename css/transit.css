@@ -1,19 +1,19 @@
-/* PAGE TITLE page */
-
-.comingSoonCard{
-  margin-top: 18px;
-  min-height: 260px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 32px 24px;
-}
-
-.comingSoonText{
-  margin: 0;
-  font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 800;
-  color: var(--text);
-  letter-spacing: .02em;
-}
+/* Public Transit page */
+.transitPage{padding-top:230px;padding-bottom:3rem}
+.transitIntroCard,.transitPhotoCard,.transitServiceCard,.transitFaresCard,.transitResourcesCard{padding:1.5rem 1.65rem}
+.transitIntroCard{margin-bottom:18px}
+.transitIntroLayout{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(390px,1fr);gap:2rem;align-items:start}
+.transitIntroMain{align-self:center}.pageIntroEyebrow{margin:0 0 .4rem;font-size:.82rem;font-weight:900;letter-spacing:.11em;text-transform:uppercase;color:rgba(255,255,255,.75)}
+.transitIntroCard .pageIntroTitle{margin-bottom:.55rem}.transitIntroCard .pageIntroText{max-width:720px;margin-bottom:0}
+.transitIntroContact{padding-left:1.5rem;border-left:1px solid rgba(255,255,255,.22)}.transitIntroContact h2{margin:0 0 .7rem;color:#fff;font-size:1.2rem}
+.contactList{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.7rem 1.25rem}.contactItem{min-width:0}
+.contactLabel{display:block;margin-bottom:.15rem;color:rgba(255,255,255,.72);font-size:.72rem;font-weight:900;letter-spacing:.06em;text-transform:uppercase}
+.contactValue{color:#fff;font-size:.9rem;font-weight:700;line-height:1.5;white-space:pre-line;overflow-wrap:anywhere}.transitIntroContact a{color:#fff;text-underline-offset:3px}.phoneDesktop,.emailDesktop{display:inline}.phoneMobile,.emailMobile{display:none}
+.transitOverviewGrid{display:grid;grid-template-columns:minmax(320px,.85fr) minmax(0,1.15fr);gap:18px}
+.transitPhotoCard{margin:0}.transitPhotoCard img{display:block;width:100%;height:100%;max-height:390px;object-fit:cover;border-radius:12px}.transitPhotoCard figcaption{margin-top:.7rem;color:var(--text-muted);font-size:.85rem;font-weight:700;text-align:center}
+.transitServiceCard .cardHeader,.transitFaresCard .cardHeader,.transitResourcesCard .cardHeader{margin-bottom:.95rem}
+.transitServiceList{display:grid;gap:.9rem;margin:0}.transitServiceRow{padding-bottom:.85rem;border-bottom:1px solid var(--border)}.transitServiceRow:last-child{padding-bottom:0;border-bottom:0}.transitServiceLabel{display:block;margin-bottom:.2rem;color:var(--text-muted);font-size:.75rem;font-weight:900;letter-spacing:.07em;text-transform:uppercase}.transitServiceValue{color:var(--text);font-weight:800;line-height:1.5}
+.transitFaresCard,.transitResourcesCard{margin-top:18px}.transitFareList{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}.transitFare{padding:1rem;border:1px solid var(--border);border-radius:12px;background:var(--surface-soft,#f7f8fa)}.transitFareAmount{display:block;margin-bottom:.35rem;color:var(--navy-mid);font-size:1.5rem;font-weight:900}.transitFareDescription{color:var(--text);font-weight:750;line-height:1.45}
+.transitLinkList{display:grid;gap:.75rem}.transitTextLink{width:fit-content;max-width:100%;color:var(--navy-mid);font-weight:800;text-underline-offset:3px;overflow-wrap:anywhere}.transitTextLink:hover{text-decoration-thickness:2px}.transitTextLink:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:3px}
+@media(max-width:900px){.transitIntroLayout,.transitOverviewGrid{grid-template-columns:1fr}.transitIntroContact{padding-left:0;padding-top:1rem;border-left:0;border-top:1px solid rgba(255,255,255,.22)}.transitPhotoCard img{max-height:460px}.transitFareList{grid-template-columns:1fr}}
+@media(max-width:640px){.transitPage{padding-top:150px}.transitIntroCard,.transitPhotoCard,.transitServiceCard,.transitFaresCard,.transitResourcesCard{padding:1.25rem}.contactList{grid-template-columns:1fr}.phoneDesktop,.emailDesktop{display:none}.phoneMobile,.emailMobile{display:inline}}

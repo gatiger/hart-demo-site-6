@@ -1,0 +1,39 @@
+{
+  "intro": {
+    "eyebrow": "Hart County",
+    "title": "Hart County Public Transit",
+    "description": "Low-cost transportation for the citizens of Hart County, operated from the Hart County Senior Center."
+  },
+  "contact": {
+    "location": "Hart County Senior Center",
+    "street_address": "139 Clay Street",
+    "city_state_zip": "Hartwell, GA 30643",
+    "phone": "706-376-3975",
+    "phone_raw": "17063763975",
+    "tty": "TTY 711",
+    "fax": "706-856-5379",
+    "director": "Jacob Jones",
+    "email": "jjones@hartcountyga.gov"
+  },
+  "photo": {
+    "src": "/assets/transitbus.jpg",
+    "alt": "Hart County Public Transit bus",
+    "caption": "Hart County Public Transit"
+  },
+  "service": {
+    "area": "Hart County",
+    "hours": "Monday-Friday, 8:00 AM-4:00 PM",
+    "funding": "Georgia Department of Transportation, local government, and rider fares",
+    "operations": "Operated from the Hart County Senior Center"
+  },
+  "fares": [
+    {"amount": "$2.00", "description": "Per trip within city limits"},
+    {"amount": "$3.00", "description": "Per trip outside the city"},
+    {"amount": "$4.50", "description": "Per medical trip to Franklin County"}
+  ],
+  "resources": [
+    {"title": "ADA Reasonable Modification", "url": "https://hartcountyga.gov/documents/publictransit/ADAReasonableAccomodation01202018.pdf"},
+    {"title": "Hart Transit Title VI Policy", "url": "https://hartcountyga.gov/documents/publictransit/Title%20VI%20Policy.pdf"},
+    {"title": "Hart Transit Title VI Plan Complaint Form", "url": "https://hartcountyga.gov/documents/publictransit/Title%20VI%20Complaint%20Form.pdf"}
+  ]
+}
