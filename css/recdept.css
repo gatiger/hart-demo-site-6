@@ -1,19 +1,14 @@
-/* PAGE TITLE page */
-
-.comingSoonCard{
-  margin-top: 18px;
-  min-height: 260px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 32px 24px;
-}
-
-.comingSoonText{
-  margin: 0;
-  font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 800;
-  color: var(--text);
-  letter-spacing: .02em;
-}
+/* Recreation Department page */
+.recreationPage{padding-top:230px;padding-bottom:3rem}
+.recreationIntroCard,.recreationActionsCard,.recreationAboutCard,.recreationFacilitiesCard,.recreationGalleryCard,.recreationResourcesCard{padding:1.5rem 1.65rem}
+.recreationIntroCard{margin-bottom:18px}.recreationIntroLayout{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(380px,.9fr);gap:2rem;align-items:start}.recreationIntroMain{align-self:center}
+.pageIntroEyebrow{margin:0 0 .4rem;font-size:.82rem;font-weight:900;letter-spacing:.11em;text-transform:uppercase;color:rgba(255,255,255,.75)}.recreationIntroCard .pageIntroTitle{margin-bottom:.55rem}.recreationIntroCard .pageIntroText{max-width:740px;margin-bottom:0}
+.recreationIntroContact{padding-left:1.5rem;border-left:1px solid rgba(255,255,255,.22)}.recreationIntroContact h2{margin:0 0 .7rem;color:#fff;font-size:1.2rem}
+.contactList{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.7rem 1.25rem}.contactItem{min-width:0}.contactLabel{display:block;margin-bottom:.15rem;color:rgba(255,255,255,.72);font-size:.72rem;font-weight:900;letter-spacing:.06em;text-transform:uppercase}.contactValue{color:#fff;font-size:.9rem;font-weight:700;line-height:1.5;white-space:pre-line}.recreationIntroContact a{color:#fff;text-underline-offset:3px}.phoneDesktop{display:inline}.phoneMobile{display:none}
+.recreationActionsCard,.recreationGalleryCard,.recreationResourcesCard{margin-top:18px}.recreationActionsCard .cardHeader,.recreationAboutCard .cardHeader,.recreationFacilitiesCard .cardHeader,.recreationGalleryCard .cardHeader,.recreationResourcesCard .cardHeader{margin-bottom:.95rem}
+.recreationLinkList{display:grid;gap:.75rem}.recreationTextLink{width:fit-content;max-width:100%;color:var(--navy-mid);font-weight:800;text-underline-offset:3px;overflow-wrap:anywhere}.recreationTextLink:hover{text-decoration-thickness:2px}.recreationTextLink:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:3px}
+.recreationInfoGrid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(320px,.85fr);gap:18px;margin-top:18px}.recreationCopy p{margin:0;line-height:1.75;color:var(--text-muted)}
+.recreationFacilityList{display:grid;gap:.65rem;margin:0;padding:0;list-style:none}.recreationFacilityList li{position:relative;padding:.1rem 0 .6rem 1.2rem;border-bottom:1px solid var(--border);color:var(--text);font-weight:750;line-height:1.45}.recreationFacilityList li:last-child{border-bottom:0}.recreationFacilityList li::before{content:"";position:absolute;left:0;top:.65rem;width:.45rem;height:.45rem;border-radius:50%;background:var(--gold)}
+.recreationGallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}.recreationFigure{margin:0;overflow:hidden;border:1px solid var(--border);border-radius:12px;background:#fff}.recreationFigure img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}.recreationFigure figcaption{padding:.7rem .85rem;color:var(--text);font-size:.9rem;font-weight:800}
+@media(max-width:900px){.recreationIntroLayout,.recreationInfoGrid{grid-template-columns:1fr}.recreationIntroContact{padding-left:0;padding-top:1rem;border-left:0;border-top:1px solid rgba(255,255,255,.22)}}
+@media(max-width:640px){.recreationPage{padding-top:150px}.recreationIntroCard,.recreationActionsCard,.recreationAboutCard,.recreationFacilitiesCard,.recreationGalleryCard,.recreationResourcesCard{padding:1.25rem}.contactList,.recreationGallery{grid-template-columns:1fr}.phoneDesktop{display:none}.phoneMobile{display:inline}}

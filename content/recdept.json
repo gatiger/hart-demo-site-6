@@ -1,0 +1,50 @@
+{
+  "intro": {
+    "eyebrow": "Hart County",
+    "title": "Hart County Recreation Department",
+    "description": "Programs, activities, parks, and facilities that support recreation and quality of life for people throughout Hart County."
+  },
+  "contact": {
+    "director": "James A. Owens, CPRP",
+    "street_address": "200 Clay Street",
+    "city_state_zip": "Hartwell, GA 30643",
+    "phone": "706-376-8528",
+    "phone_raw": "17063768528",
+    "fax": "706-856-5344"
+  },
+  "actions": [
+    {"title": "Registration or Rental Portal", "url": "https://secure.rec1.com/GA/hart-county-ga/catalog", "external": true},
+    {"title": "Fall Sports Registration Form", "url": "https://hartcountyga.gov/documents/recdeptforms/Fall%20Sports%20Registration%20Form%202025.pdf", "external": true},
+    {"title": "Facility Rental Forms", "url": "https://hartcountyga.gov/documents/recdeptforms/Facility%20Rental%20Forms%202-2025.pdf", "external": true},
+    {"title": "Facility Rental Information, Signup Sheets, and Other Forms", "url": "https://hartcountyga.gov/RecreationDeptForms.html", "external": true}
+  ],
+  "about": [
+    "The Hart County Recreation Department strives to provide the citizens of Hart County with wholesome, quality leisure activities and facilities for all segments of the population. The department continues to plan future programs and develop facilities that enhance quality of life in Hart County.",
+    "Park facilities are open to the public and may be available to rent for certain functions. Contact the Recreation Department for more information."
+  ],
+  "facilities": [
+    "Four ball fields",
+    "One multipurpose field",
+    "Two large picnic shelters with attached playgrounds",
+    "Three sets of tennis courts",
+    "Two outdoor basketball goals",
+    "Outdoor batting cages",
+    "Multipurpose room"
+  ],
+  "gallery": [
+    {"src": "/assets/recplayground.jpg", "alt": "Playground at Hart County Recreation Park", "caption": "Playground at the Park"},
+    {"src": "/assets/recballfield.jpg", "alt": "Multipurpose ball field at Hart County Recreation Park", "caption": "Multipurpose Ball Field"},
+    {"src": "/assets/reccovplayground.jpg", "alt": "Covered playground area at Hart County Recreation Park", "caption": "Covered Playground Area"},
+    {"src": "/assets/rectennis.jpg", "alt": "Lighted tennis courts at Hart County Recreation Park", "caption": "Lighted Tennis Courts"}
+  ],
+  "resources": [
+    {"title": "Concussion Awareness Policy - Parent or Legal Guardian Acknowledgement", "url": "https://hartcountyga.gov/documents/recdeptforms/Hart%20County%20Concussion%20Awareness%20Policy%20and%20Procedures%20Parent%20Legal%20Guardian%20Acknowledgement.pdf", "external": true},
+    {"title": "Concussion Awareness Policy - Volunteer, Contractor, or Trainer Acknowledgement", "url": "https://hartcountyga.gov/documents/recdeptforms/Hart%20County%20Concussion%20Awareness%20Policy%20and%20Procedures%20Volunteer%20Contractor%20Trainer%20Acknowledgement.pdf", "external": true},
+    {"title": "Background Check Policy and Volunteer Packet", "url": "https://hartcountyga.gov/documents/recdeptforms/HCRD%20Background%20Check%20Policy%20%26%20Volunteer%20Packet%20updated%207-25-24.pdf", "external": true},
+    {"title": "Volunteer Application and Background Check Policy", "url": "https://hartcountyga.gov/documents/recdeptforms/HCRD%20Background%20Check%20Policy%20%26%20Volunteer%20Packet%20updated%208-27-24-2.pdf", "external": true},
+    {"title": "Participant Registration and Medical Release Form", "url": "https://hartcountyga.gov/documents/recdeptforms/Registration%20Form%202021.pdf", "external": true},
+    {"title": "Recreation Department Advisory Board By-laws (Large File)", "url": "https://hartcountyga.gov/documents/recdeptforms/BY-LAWS.doc", "external": true},
+    {"title": "Long-Range Plans", "url": "https://hartcountyga.gov/documents/recdeptforms/HartCountyRecreationDepartmentPlan.pdf", "external": true},
+    {"title": "Hart County Botanical Garden", "url": "https://www.hartcogardens.org", "external": true}
+  ]
+}

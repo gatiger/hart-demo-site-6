@@ -1,9 +1,16 @@
-// PAGE TITLE page
+document.addEventListener("DOMContentLoaded",async()=>{try{const data=await loadJSON("./content/recdept.json");renderRecreationPage(data||{})}catch(err){console.error(err);const main=document.getElementById("main");if(main)main.insertAdjacentHTML("afterbegin",'<div class="card"><p class="sub">Unable to load Recreation Department information at this time.</p></div>')}});
 
-document.addEventListener("DOMContentLoaded", () => {
-  const card = document.querySelector(".comingSoonCard");
-  if (!card) return;
-
-  // Placeholder for future functionality
-  card.setAttribute("data-ready", "true");
-});
+function renderRecreationPage(data){
+  const safe=value=>value===undefined||value===null?"":String(value).trim();
+  const escapeHtml=value=>String(value).replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#39;");
+  const intro=data.intro||{};
+  setText("recreationEyebrow",intro.eyebrow||"Hart County");setText("recreationTitle",intro.title||"Hart County Recreation Department");setText("recreationDescription",intro.description||"");
+  renderContact(data.contact||{});renderLinks("recreationActions",data.actions||[]);renderParagraphs(data.about||[]);renderFacilities(data.facilities||[]);renderGallery(data.gallery||[]);renderLinks("recreationResources",data.resources||[]);
+  function setText(id,value){const el=document.getElementById(id);if(el)el.textContent=safe(value)}
+  function phoneMarkup(phone,raw){const shown=safe(phone),tel=safe(raw||shown.replace(/[^d+]/g,""));return shown?`<span class="phoneDesktop">${escapeHtml(shown)}</span><a class="phoneMobile" href="tel:${escapeHtml(tel)}">${escapeHtml(shown)}</a>`:""}
+  function renderContact(item){const mount=document.getElementById("recreationContact");if(!mount)return;const address=[item.street_address,item.city_state_zip].filter(Boolean).join("\n");mount.innerHTML=`<div class="contactList">${safe(item.director)?`<div class="contactItem"><span class="contactLabel">Director</span><div class="contactValue">${escapeHtml(safe(item.director))}</div></div>`:""}${address?`<div class="contactItem"><span class="contactLabel">Address</span><div class="contactValue">${escapeHtml(address)}</div></div>`:""}${safe(item.phone)?`<div class="contactItem"><span class="contactLabel">Phone</span><div class="contactValue">${phoneMarkup(item.phone,item.phone_raw)}</div></div>`:""}${safe(item.fax)?`<div class="contactItem"><span class="contactLabel">Fax</span><div class="contactValue">${escapeHtml(safe(item.fax))}</div></div>`:""}</div>`}
+  function renderLinks(id,items){const mount=document.getElementById(id);if(!mount)return;mount.innerHTML=items.map(item=>`<a class="recreationTextLink" href="${escapeHtml(safe(item.url))}"${item.external?' target="_blank" rel="noopener noreferrer"':""}>${escapeHtml(safe(item.title))}</a>`).join("")}
+  function renderParagraphs(items){const mount=document.getElementById("recreationAbout");if(mount)mount.innerHTML=items.map(text=>`<p>${escapeHtml(safe(text))}</p>`).join("")}
+  function renderFacilities(items){const mount=document.getElementById("recreationFacilities");if(mount)mount.innerHTML=items.map(item=>`<li>${escapeHtml(safe(item))}</li>`).join("")}
+  function renderGallery(items){const mount=document.getElementById("recreationGallery");if(mount)mount.innerHTML=items.map(item=>`<figure class="recreationFigure"><img src="${escapeHtml(safe(item.src))}" alt="${escapeHtml(safe(item.alt))}" loading="lazy"><figcaption>${escapeHtml(safe(item.caption))}</figcaption></figure>`).join("")}
+}
