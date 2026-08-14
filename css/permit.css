@@ -1,0 +1,241 @@
+/* Permits & Addressing page */
+
+.permitPage{
+  padding-top: 230px;
+  padding-bottom: 3rem;
+}
+
+.permitIntroCard,
+.permitNoticeCard,
+.permitOverviewCard,
+.permitRequirementsCard,
+.permitJurisdictionCard,
+.permitApplicationsCard,
+.permitSummariesCard{
+  padding: 1.5rem 1.65rem;
+}
+
+.permitIntroCard{
+  margin-bottom: 18px;
+}
+
+.permitIntroLayout{
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(350px, .85fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+.permitIntroMain{
+  align-self: center;
+}
+
+.pageIntroEyebrow{
+  margin: 0 0 .4rem;
+  font-size: .82rem;
+  font-weight: 900;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.75);
+}
+
+.permitIntroCard .pageIntroTitle{
+  margin-bottom: .55rem;
+}
+
+.permitIntroCard .pageIntroText{
+  max-width: 760px;
+  margin-bottom: 0;
+}
+
+.permitIntroContact{
+  padding-left: 1.5rem;
+  border-left: 1px solid rgba(255,255,255,.22);
+}
+
+.permitIntroContact h2{
+  margin: 0 0 .7rem;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.contactList{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .7rem 1.25rem;
+}
+
+.contactItem{
+  min-width: 0;
+}
+
+.contactLabel{
+  display: block;
+  margin-bottom: .15rem;
+  color: rgba(255,255,255,.72);
+  font-size: .72rem;
+  font-weight: 900;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.contactValue{
+  color: #fff;
+  font-weight: 700;
+  font-size: .9rem;
+  line-height: 1.45;
+}
+
+.permitIntroContact a{
+  color: #fff;
+  text-underline-offset: 3px;
+}
+
+.phoneDesktop,
+.emailDesktop{
+  display: inline;
+}
+
+.phoneMobile,
+.emailMobile{
+  display: none;
+}
+
+.permitNoticeCard,
+.permitOverviewCard,
+.permitRequirementsCard,
+.permitJurisdictionCard,
+.permitApplicationsCard,
+.permitSummariesCard{
+  margin-top: 18px;
+}
+
+.permitNoticeCard{
+  border-left: 5px solid var(--accent);
+}
+
+.noticeHeading{
+  margin-bottom: .9rem;
+}
+
+.noticeHeading h2{
+  margin: .3rem 0 0;
+}
+
+.noticeLabel{
+  display: inline-block;
+  font-size: .74rem;
+  font-weight: 900;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.permitNoticeCard p,
+.permitOverviewCard p,
+.permitRequirementsCard p,
+.permitJurisdictionCard p{
+  margin: .7rem 0 0;
+  line-height: 1.75;
+}
+
+.permitNoticeCard p:first-child,
+.permitOverviewCard p:first-child,
+.permitRequirementsCard p:first-child,
+.permitJurisdictionCard p:first-child{
+  margin-top: 0;
+}
+
+.permitImportant{
+  margin-top: 1rem !important;
+  font-weight: 900;
+}
+
+.permitLinkList{
+  display: grid;
+  gap: .75rem;
+}
+
+.permitTextLink,
+.permitSummaryLink{
+  width: fit-content;
+  max-width: 100%;
+  color: var(--navy-mid);
+  font-weight: 800;
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
+}
+
+.permitTextLink:hover,
+.permitSummaryLink:hover{
+  text-decoration-thickness: 2px;
+}
+
+.permitTextLink:focus-visible,
+.permitSummaryLink:focus-visible{
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+.permitLinkNote{
+  margin: .15rem 0 .15rem 1rem;
+  color: var(--text-muted);
+  font-size: .9rem;
+  line-height: 1.55;
+}
+
+.permitSummaryGrid{
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: .8rem 1.5rem;
+}
+
+@media (max-width: 900px){
+  .permitIntroLayout{
+    grid-template-columns: 1fr;
+    gap: 1.15rem;
+  }
+
+  .permitIntroContact{
+    padding-left: 0;
+    padding-top: 1rem;
+    border-left: 0;
+    border-top: 1px solid rgba(255,255,255,.22);
+  }
+
+  .permitSummaryGrid{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px){
+  .permitPage{
+    padding-top: 150px;
+  }
+
+  .permitIntroCard,
+  .permitNoticeCard,
+  .permitOverviewCard,
+  .permitRequirementsCard,
+  .permitJurisdictionCard,
+  .permitApplicationsCard,
+  .permitSummariesCard{
+    padding: 1.25rem;
+  }
+
+  .contactList,
+  .permitSummaryGrid{
+    grid-template-columns: 1fr;
+  }
+
+  .phoneDesktop,
+  .emailDesktop{
+    display: none;
+  }
+
+  .phoneMobile,
+  .emailMobile{
+    display: inline;
+  }
+}

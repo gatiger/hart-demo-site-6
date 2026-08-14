@@ -1,0 +1,90 @@
+{
+  "intro": {
+    "eyebrow": "Hart County",
+    "title": "Building Permits & Addressing",
+    "description": "The Hart County Building Permitting Office oversees building and mobile home permits within the unincorporated areas of Hart County and works with E-911 to ensure residences and commercial buildings are properly addressed."
+  },
+  "contact": {
+    "phone": "706-376-1468",
+    "email": "buildingpermitting@hartcountyga.gov"
+  },
+  "public_notice": {
+    "paragraphs": [
+      "In accordance with O.C.G.A. 48-5-264.1, Hart County Appraisal Staff may visit property to review parcel information related to an appeal, return, new construction or additions, parcel review, or conservation use application.",
+      "Field appraisers will have photo identification and will be driving a marked County vehicle."
+    ],
+    "important": "Every parcel in Hart County will be re-evaluated each year."
+  },
+  "overview": [
+    "Building permits are governed by County Ordinance Chapter 18, and mobile home permits are governed by County Ordinance Chapter 50.",
+    "All permit applicants must read, understand, and follow the requirements established in the Hart County Code of Ordinances."
+  ],
+  "residential_requirements": [
+    "Inspections are required for all new residential construction. Permit fees for new residential construction are assessed at $0.20 per heated square foot and $0.10 per unheated square foot, plus $100.00 per trade.",
+    "All other construction, renovations, and outbuildings are permitted as usual. Other permits remain $25.00 unless the value added or cost of construction is less than $2,500.",
+    "Plans and applications are reviewed by Bureau Veritas, and inspections are scheduled through Bureau Veritas. Questions concerning building codes, plan reviews, or inspections should be directed to Bureau Veritas.",
+    "Tiny houses, including converted storage buildings or shipping containers, are not allowed. Permitted residential structures are single-family or multi-family stick-built buildings or approved pre-built mobile homes as defined by County ordinances and approved by the State Fire Marshal."
+  ],
+  "jurisdiction": [
+    "Hart County issues permits only for the unincorporated areas of Hart County.",
+    "If the property is inside the City of Hartwell, you must contact the City Building Inspector. The Hart County Permit Office does not issue permits for the City of Hartwell.",
+    "A Certification of Exemption from the City of Hartwell is required when a project area is adjacent to the Hartwell city limits."
+  ],
+  "applications": [
+    {
+      "title": "New Address Application",
+      "url": "https://hartcountyga.gov/permitting/New%20Address%20Form.pdf"
+    },
+    {
+      "title": "Building Permit Application – New Residential Only",
+      "url": "https://hartcountyga.gov/permitting/New%20Building%20Checklist.pdf"
+    },
+    {
+      "title": "Building Permit Application – All Other Construction",
+      "url": "https://hartcountyga.gov/permitting/PermitApplication_RenovationAdditionOutbuilding.pdf"
+    },
+    {
+      "title": "Mobile Home Transport Permit Application Packet",
+      "url": "https://hartcountyga.gov/permitting/TransportPermitApplicationPacket.pdf"
+    },
+    {
+      "title": "Certification of Exemption from City of Hartwell",
+      "url": "https://hartcountyga.gov/permitting/CoHPermitExemptionCert.pdf",
+      "note": "Needed only when the project area is adjacent to the City of Hartwell city limits."
+    }
+  ],
+  "permit_summaries": [
+    {
+      "year": "2024",
+      "url": "https://hartcountyga.gov/permitting/Copy%20of%20Jan%202024%20to%20present.pdf"
+    },
+    {
+      "year": "2023",
+      "url": "https://hartcountyga.gov/permitting/Copy%20of%20Permits%20for%202023.pdf"
+    },
+    {
+      "year": "2022",
+      "url": "https://hartcountyga.gov/permitting/PermitSummary_2022.pdf"
+    },
+    {
+      "year": "2021",
+      "url": "https://hartcountyga.gov/permitting/PermitSummary_2021.pdf"
+    },
+    {
+      "year": "2020",
+      "url": "https://hartcountyga.gov/permitting/PermitSummary_2020.pdf"
+    },
+    {
+      "year": "2019",
+      "url": "https://hartcountyga.gov/permitting/PermitSummary_2019.pdf"
+    },
+    {
+      "year": "2018",
+      "url": "https://hartcountyga.gov/permitting/PermitSummary_2018.pdf"
+    },
+    {
+      "year": "2017",
+      "url": "https://hartcountyga.gov/permitting/PermitSummary_2017.pdf"
+    }
+  ]
+}
