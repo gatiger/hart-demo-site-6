@@ -1,0 +1,26 @@
+{
+  "intro": {
+    "eyebrow": "Hart County",
+    "title": "Hart County Probate Court",
+    "description": "Serving Hart County residents with estate, guardianship, licensing, records, and other matters within the jurisdiction of Probate Court."
+  },
+  "contact": {
+    "street_address": "Hart County Courthouse Annex\n185 West Franklin Street",
+    "mailing_address": "P.O. Box 1159",
+    "city_state_zip": "Hartwell, GA 30643",
+    "phone": "706-376-2565",
+    "phone_raw": "17063762565",
+    "hours": "Monday-Friday\n8:30 AM-5:00 PM"
+  },
+  "overview": [
+    "The Hart County Probate Court assists with settling estates and guardianships, handles traffic, gaming, and fishing cases, and records and maintains public records such as vital records and marriage certificates."
+  ],
+  "services": [
+    "Administers oaths of elected and appointed officials",
+    "Approves guardianships",
+    "Presides over estate and traffic court",
+    "Issues firearms permits",
+    "Issues marriage licenses",
+    "Issues orders for mental evaluations"
+  ]
+}

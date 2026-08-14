@@ -4,84 +4,37 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Probate Court | Hart County</title>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Quintessential&family=Felipa&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
-
   <link rel="stylesheet" href="/css/base.css" />
   <link rel="stylesheet" href="/css/probate.css" />
-
-  <script defer src="js/alerts.js"></script>
-  <script defer src="js/app.js"></script>
-  <script defer src="js/probate.js"></script>
+  <script defer src="/js/alerts.js"></script>
+  <script defer src="/js/app.js"></script>
+  <script defer src="/js/probate.js"></script>
 </head>
-
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
-
-  <header class="topbar">
-    <div class="navRow">
-      <a class="brand brandLink" href="index.html">
-        <div class="seal">
-          <img src="./assets/hart_seal.svg" alt="Hart County, Georgia official seal">
-        </div>
-        <div class="brandText">
-          <div class="kicker">Hart County, Georgia</div>
-          <div class="title">PAGE TITLE</div>
-        </div>
-      </a>
-
-      <nav class="topNav" aria-label="Primary">
-        <a href="directory.html">Directory</a>
-        <a href="commissioners.html">Commissioners</a>
-        <a href="employment.html">Employment</a>
-        <a href="about.html">About</a>
-        <a href="paynes_creek.html">Paynes Creek</a>
-        <a href="news.html">News</a>
-        <a href="meetings.html">Meetings</a>
-        <a href="accessibility.html">Accessibility</a>
-      </nav>
-
-      <button class="btn menuBtn" type="button"
-              aria-controls="mobileMenu"
-              aria-expanded="false"
-              id="menuBtn">
-        Menu
-      </button>
-    </div>
-  </header>
-
+  <header class="topbar"><div class="navRow">
+    <a class="brand brandLink" href="index.html"><div class="seal"><img src="/assets/hart_seal.svg" alt="Hart County, Georgia official seal"></div><div class="brandText"><div class="kicker">Hart County, Georgia</div><div class="title">Probate Court</div></div></a>
+    <nav class="topNav" aria-label="Primary"><a href="directory.html">Directory</a><a href="commissioners.html">Commissioners</a><a href="employment.html">Employment</a><a href="about.html">About</a><a href="paynes_creek.html">Paynes Creek</a><a href="news.html">News</a><a href="meetings.html">Meetings</a><a href="accessibility.html">Accessibility</a></nav>
+    <button class="btn menuBtn" type="button" aria-controls="mobileMenu" aria-expanded="false" id="menuBtn">Menu</button>
+  </div></header>
   <div class="menuBackdrop" id="menuBackdrop" hidden></div>
-
   <aside class="menuPanel" id="mobileMenu" hidden aria-label="Mobile navigation">
-    <div class="menuPanelHead">
-      <div class="menuPanelTitle">Menu</div>
-      <button class="btn ghost" type="button" id="menuClose" aria-label="Close menu">Close</button>
-    </div>
-
-    <nav class="menuNav" aria-label="Primary mobile">
-      <a href="directory.html">Directory</a>
-      <a href="commissioners.html">Commissioners</a>
-      <a href="employment.html">Employment</a>
-      <a href="about.html">About</a>
-      <a href="paynes_creek.html">Paynes Creek</a>
-      <hr>
-      <a href="news.html">News</a>
-      <a href="meetings.html">Meetings</a>
-      <a href="accessibility.html">Accessibility</a>
-    </nav>
+    <div class="menuPanelHead"><div class="menuPanelTitle">Menu</div><button class="btn ghost" type="button" id="menuClose" aria-label="Close menu">Close</button></div>
+    <nav class="menuNav" aria-label="Primary mobile"><a href="directory.html">Directory</a><a href="commissioners.html">Commissioners</a><a href="employment.html">Employment</a><a href="about.html">About</a><a href="paynes_creek.html">Paynes Creek</a><hr><a href="news.html">News</a><a href="meetings.html">Meetings</a><a href="accessibility.html">Accessibility</a></nav>
   </aside>
-
-  <main id="main" class="container" tabindex="-1">
-    <section class="card comingSoonCard" aria-label="Page status">
-      <p class="comingSoonText">Page coming soon....</p>
-    </section>
-
-    <footer class="footer">
-      <div>© 2026 Hart County Board of Commissioners</div>
-    </footer>
+  <main id="main" class="container probatePage" tabindex="-1">
+    <div id="alertHolder"></div>
+    <section class="card pageIntroCard probateIntroCard" aria-labelledby="probateTitle"><div class="probateIntroLayout">
+      <div class="probateIntroMain"><p id="probateEyebrow" class="pageIntroEyebrow"></p><h1 id="probateTitle" class="pageIntroTitle">Hart County Probate Court</h1><p id="probateDescription" class="pageIntroText"></p></div>
+      <div class="probateIntroContact" aria-labelledby="contactTitle"><h2 id="contactTitle">Court Information</h2><div id="probateContact"></div></div>
+    </div></section>
+    <section class="card probateOverviewCard" aria-labelledby="overviewTitle"><div class="cardHeader"><div><h2 id="overviewTitle">About Probate Court</h2></div></div><div id="probateOverview" class="probateCopy"></div></section>
+    <section class="card probateServicesCard" aria-labelledby="servicesTitle"><div class="cardHeader"><div><h2 id="servicesTitle">Court Services</h2><p class="sub">Services provided by the Hart County Probate Court include:</p></div></div><ul id="probateServices" class="probateServiceList"></ul></section>
+    <footer class="footer"><div>&copy; 2026 Hart County Board of Commissioners</div></footer>
   </main>
 </body>
 </html>
