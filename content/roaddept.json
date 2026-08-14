@@ -1,0 +1,50 @@
+{
+  "intro": {
+    "eyebrow": "Hart County",
+    "title": "Hart County Roads Department",
+    "description": "Maintaining official county roads, rights of way, drainage, signs, bridges, pipes, and other transportation infrastructure throughout Hart County."
+  },
+  "contact": {
+    "work_order_phone": "706-376-1468",
+    "work_order_phone_raw": "17063761468",
+    "email": "roads@hartcountyga.gov"
+  },
+  "emergency": {
+    "text": "For after-hours or weekend emergency road calls, contact EMS Dispatch at",
+    "phone": "706-376-3930",
+    "phone_raw": "17063763930"
+  },
+  "work_orders": [
+    "To report a problem with a county road, including potholes, rough gravel roads, missing signs, or flooding, call the Roads Department. The County will prepare a work order and, when needed, investigate and correct the problem.",
+    "For non-emergency road work or general contact at any time, email the Roads Department."
+  ],
+  "maintenance": [
+    "The Roads Department routinely maintains county roads, correcting potholes, drainage problems, missing signs, and similar issues.",
+    "Gravel roads receive routine scheduled maintenance, currently twice per year. Special projects may include paving and replacing pipes, bridges, or road sections.",
+    "Major-project schedules are proposed calendars. The current month is the most accurate; future months may change."
+  ],
+  "road_inventory": [
+    "The Roads Department may work only on official county roads and within county road rights of way.",
+    "Hart County adopted its first official county road inventory in late 2002. The inventory identifies official county roads, known rights of way, road lengths, and related information.",
+    "Additions, deletions, or changes in official county-road length require a formal resolution of the Hart County Board of Commissioners."
+  ],
+  "mowing": [
+    "Hart County performs bush hogging and mowing along county roads and rights of way. Work generally includes two or three cuts per year, beginning in April and ending in October.",
+    "Tree limbs are also cut back each year as needed."
+  ],
+  "long_range_plan": [
+    "Hart County adopted a long-range plan based on analysis of county road assets to help prioritize limited resources and address several million dollars in deferred maintenance.",
+    "The plan began implementation in 2003 with an initial focus on sealing paved roads and resurfacing tar-and-gravel roads. Later work focused on bridges, pipes, and continued resurfacing.",
+    "The plan also contains condition ratings for paved roads that may be used to help determine resurfacing priorities. This description reflects the historical plan information published by Hart County."
+  ],
+  "resources": [
+    {"title": "Current Road Inventory", "url": "https://hartcountyga.gov/documents/roadinventory.pdf"},
+    {"title": "Five-Year Road Plan - Updated July 2014", "url": "https://hartcountyga.gov/documents/RoadDept5yrplanupdatedJuly2014.pdf"},
+    {"title": "Right-of-Way and Utility Permit Form", "url": "https://hartcountyga.gov/utilpermit.pdf"}
+  ],
+  "gallery": [
+    {"src": "/assets/pwrebuiltloader.gif", "alt": "Rebuilt front-end loader used by Hart County", "caption": "Rebuilt Front-End Loader"},
+    {"src": "/assets/fredkingbr.jpg", "alt": "Fred King Road bridge", "caption": "Fred King Bridge"},
+    {"src": "/assets/pwshoalcrk.jpg", "alt": "View of Shoal Creek from Highway 77", "caption": "Shoal Creek from Highway 77"}
+  ]
+}

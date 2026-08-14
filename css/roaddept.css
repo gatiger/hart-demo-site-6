@@ -1,19 +1,11 @@
-/* PAGE TITLE page */
-
-.comingSoonCard{
-  margin-top: 18px;
-  min-height: 260px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 32px 24px;
-}
-
-.comingSoonText{
-  margin: 0;
-  font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 800;
-  color: var(--text);
-  letter-spacing: .02em;
-}
+/* Roads Department page */
+.roadsPage{padding-top:230px;padding-bottom:3rem}.roadsIntroCard,.roadsEmergencyCard,.roadsWorkCard,.roadsMaintenanceCard,.roadsInventoryCard,.roadsMowingCard,.roadsPlanCard,.roadsResourcesCard,.roadsGalleryCard{padding:1.5rem 1.65rem}
+.roadsIntroCard{margin-bottom:18px}.roadsIntroLayout{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(390px,.9fr);gap:2rem;align-items:start}.roadsIntroMain{align-self:center}.pageIntroEyebrow{margin:0 0 .4rem;font-size:.82rem;font-weight:900;letter-spacing:.11em;text-transform:uppercase;color:rgba(255,255,255,.75)}.roadsIntroCard .pageIntroTitle{margin-bottom:.55rem}.roadsIntroCard .pageIntroText{max-width:740px;margin-bottom:0}
+.roadsIntroContact{padding-left:1.5rem;border-left:1px solid rgba(255,255,255,.22)}.roadsIntroContact h2{margin:0 0 .7rem;color:#fff;font-size:1.2rem}.contactList{display:grid;gap:.7rem}.contactLabel{display:block;margin-bottom:.15rem;color:rgba(255,255,255,.72);font-size:.72rem;font-weight:900;letter-spacing:.06em;text-transform:uppercase}.contactValue{color:#fff;font-size:.9rem;font-weight:700;line-height:1.5;overflow-wrap:anywhere}.roadsIntroContact a{color:#fff;text-underline-offset:3px}.phoneDesktop,.emailDesktop{display:inline}.phoneMobile,.emailMobile{display:none}
+.roadsEmergencyCard{margin-top:18px;border-left:5px solid var(--accent)}.roadsEmergencyLabel{font-size:.74rem;font-weight:900;letter-spacing:.09em;text-transform:uppercase;color:var(--accent)}.roadsEmergencyCard h2{margin:.3rem 0 .55rem}.roadsEmergencyCard p{margin:0;line-height:1.65;font-weight:750}.roadsEmergencyCard a{color:var(--navy-mid);font-weight:900;text-underline-offset:3px}
+.roadsInfoGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:18px}.roadsPlanCard,.roadsResourcesCard,.roadsGalleryCard{margin-top:18px}.roadsWorkCard .cardHeader,.roadsMaintenanceCard .cardHeader,.roadsInventoryCard .cardHeader,.roadsMowingCard .cardHeader,.roadsPlanCard .cardHeader,.roadsResourcesCard .cardHeader,.roadsGalleryCard .cardHeader{margin-bottom:.9rem}.roadsCopy p{margin:.7rem 0 0;line-height:1.75;color:var(--text-muted)}.roadsCopy p:first-child{margin-top:0}
+.roadsLinkList{display:grid;gap:.75rem}.roadsTextLink{width:fit-content;max-width:100%;color:var(--navy-mid);font-weight:800;text-underline-offset:3px;overflow-wrap:anywhere}.roadsTextLink:hover{text-decoration-thickness:2px}.roadsTextLink:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:3px}
+.roadsGallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}.roadsFigure{margin:0;overflow:hidden;border:1px solid var(--border);border-radius:12px;background:#fff}.roadsFigure img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover}.roadsFigure figcaption{padding:.7rem .85rem;color:var(--text);font-size:.9rem;font-weight:800}
+@media(max-width:900px){.roadsIntroLayout,.roadsInfoGrid{grid-template-columns:1fr}.roadsIntroContact{padding-left:0;padding-top:1rem;border-left:0;border-top:1px solid rgba(255,255,255,.22)}}
+@media(max-width:700px){.roadsGallery{grid-template-columns:1fr}.roadsFigure img{aspect-ratio:16/10}}
+@media(max-width:640px){.roadsPage{padding-top:150px}.roadsIntroCard,.roadsEmergencyCard,.roadsWorkCard,.roadsMaintenanceCard,.roadsInventoryCard,.roadsMowingCard,.roadsPlanCard,.roadsResourcesCard,.roadsGalleryCard{padding:1.25rem}.phoneDesktop,.emailDesktop{display:none}.phoneMobile,.emailMobile{display:inline}}
