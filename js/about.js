@@ -111,6 +111,7 @@ function applyIntroComponentLayout(data) {
 function renderAboutIntroComponents(data) {
   const imageHost = document.getElementById("aboutIntroImage");
   const buttonHost = document.getElementById("aboutDynamicButtons");
+  const textBlockHost = document.getElementById("aboutIntroTextBlocks");
 
   if (imageHost) {
     const image = data && data.image && typeof data.image === "object" ? data.image : null;
@@ -125,6 +126,9 @@ function renderAboutIntroComponents(data) {
 
   if (buttonHost) {
     buttonHost.innerHTML = renderAboutButtons(Array.isArray(data && data.buttons) ? data.buttons : []);
+  }
+  if (textBlockHost) {
+    textBlockHost.innerHTML = renderAboutTextBlocks(data && data.textBlocks, data && data.componentLayout, "aboutIntroTextBlock");
   }
   applyIntroComponentLayout(data || {});
 }
@@ -159,6 +163,17 @@ function renderAboutButtons(buttons) {
     const style = safeText(button.style).toLowerCase();
     const styleClass = style === "ghost" || style === "secondary" ? " ghost" : "";
     return `<a class="btn${styleClass} aboutComponentButton" href="${escapeHtml(href)}">${escapeHtml(label)}</a>`;
+  }).join("");
+}
+
+function renderAboutTextBlocks(blocks, layout, className) {
+  return (Array.isArray(blocks) ? blocks : []).map((block, index) => {
+    if (!block || typeof block !== "object") return "";
+    const id = safeText(block.id) || `text-${index + 1}`;
+    const text = safeText(block.text);
+    const style = aboutTextStyle(block.style && typeof block.style === "object" ? block.style : {});
+    const layoutCss = componentStyle(layout || {}, `text:${id}`, 20 + index);
+    return `<div class="aboutTextBlock aboutCardComponent ${escapeHtml(className || "")}" data-text-block-id="${escapeHtml(id)}" style="${layoutCss}${style ? ";" + style : ""}">${escapeHtml(text)}</div>`;
   }).join("");
 }
 
@@ -203,6 +218,7 @@ function renderAboutSections(items) {
         ${imageHtml ? `<div class="aboutCardComponent aboutCardImageComponent" style="${componentStyle(layout, "image", 0)}">${imageHtml}</div>` : ""}
         <h2 class="aboutInfoTitle aboutCardComponent" style="${titleStyle}">${escapeHtml(title)}</h2>
         <p class="aboutInfoText aboutCardComponent" style="${bodyStyle}">${escapeHtml(body)}</p>
+        ${renderAboutTextBlocks(item.textBlocks, layout, "aboutInfoTextBlock")}
         ${buttonsHtml ? `<div class="aboutInfoButtons btnRow aboutCardComponent" style="${componentStyle(layout, "buttons", 3)}">${buttonsHtml}</div>` : ""}
       </article>
     `;

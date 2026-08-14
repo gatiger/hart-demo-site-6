@@ -509,3 +509,22 @@
 
 
 /* v6.25 text appearance values are applied as safe inline styles by about.js. */
+
+
+/* v6.26 reusable text blocks */
+.aboutIntroTextBlocks{
+  display:contents;
+}
+.aboutTextBlock{
+  white-space:pre-wrap;
+  overflow-wrap:anywhere;
+  min-width:0;
+}
+.aboutIntroTextBlock{
+  color:inherit;
+}
+.aboutInfoTextBlock{
+  color:var(--text-muted);
+  font-size:.9375rem;
+  line-height:1.7;
+}
