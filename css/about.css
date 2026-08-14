@@ -471,7 +471,7 @@
 @media(max-width:760px){.aboutPage,.aboutGrid{display:block}.aboutPage>*{margin-bottom:1rem}.aboutInfoCard{margin-bottom:1rem}.aboutComponentImage{width:100%!important;height:auto!important}}
 
 
-/* v6.23 component-level 24-column grid */
+/* v6.24 component-level 24-column grid */
 .pageIntroInner,
 .aboutInfoCard{
   display:grid;
@@ -506,3 +506,6 @@
   .pageIntroInner,.aboutInfoCard{display:block;}
   .pageIntroInner > *, .aboutCardComponent{width:100%!important;min-height:0!important;margin-bottom:.75rem;}
 }
+
+
+/* v6.25 text appearance values are applied as safe inline styles by about.js. */

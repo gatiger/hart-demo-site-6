@@ -74,6 +74,22 @@ function componentStyle(layout, key, fallbackOrder = 0) {
   return `--about-component-span:${item.gridSpan};--about-component-rows:${item.gridRowSpan};order:${item.order}`;
 }
 
+function aboutTextStyle(style) {
+  if (!style || typeof style !== "object") return "";
+  const bits = [];
+  const size = Number(style.fontSize);
+  if (Number.isFinite(size) && size >= 8 && size <= 96) bits.push(`font-size:${size}px`);
+  const color = safeText(style.color);
+  if (/^#[0-9a-f]{6}$/i.test(color)) bits.push(`color:${color}`);
+  const weight = Number(style.fontWeight);
+  if (Number.isFinite(weight) && weight >= 100 && weight <= 900) bits.push(`font-weight:${weight}`);
+  const align = safeText(style.textAlign).toLowerCase();
+  if (["left", "center", "right"].includes(align)) bits.push(`text-align:${align}`);
+  const line = Number(style.lineHeight);
+  if (Number.isFinite(line) && line >= .8 && line <= 3) bits.push(`line-height:${line}`);
+  return bits.join(";");
+}
+
 function applyIntroComponentLayout(data) {
   const layout = data && data.componentLayout ? data.componentLayout : {};
   const mappings = [
@@ -81,9 +97,14 @@ function applyIntroComponentLayout(data) {
     ["aboutIntroImage", "image", 2], ["aboutSearch", "search", 3],
     ["aboutIntroButtonRow", "buttons", 4], ["aboutBadgeRow", "badges", 5]
   ];
+  const textStyles = data && data.textStyles && typeof data.textStyles === "object" ? data.textStyles : {};
   mappings.forEach(([id, key, order]) => {
     const node = document.getElementById(id);
-    if (node) node.setAttribute("style", componentStyle(layout, key, order));
+    if (node) {
+      const textKey = key === "title" || key === "text" ? key : null;
+      const textCss = textKey ? aboutTextStyle(textStyles[textKey]) : "";
+      node.setAttribute("style", componentStyle(layout, key, order) + (textCss ? ";" + textCss : ""));
+    }
   });
 }
 
@@ -174,11 +195,14 @@ function renderAboutSections(items) {
     const buttonsHtml = renderAboutButtons(Array.isArray(item.buttons) ? item.buttons : []);
 
     const layout = item.componentLayout || {};
+    const textStyles = item.textStyles && typeof item.textStyles === "object" ? item.textStyles : {};
+    const titleStyle = [componentStyle(layout, "title", 1), aboutTextStyle(textStyles.title)].filter(Boolean).join(";");
+    const bodyStyle = [componentStyle(layout, "body", 2), aboutTextStyle(textStyles.body)].filter(Boolean).join(";");
     return `
       <article class="card aboutInfoCard aboutSearchItem ${widthClass}" style="--about-card-span:${cardSpan};--about-card-rows:${Math.max(0, Number(item.gridRowSpan) || 0)}" data-search-text="${escapeHtml((title + " " + body).toLowerCase())}">
         ${imageHtml ? `<div class="aboutCardComponent aboutCardImageComponent" style="${componentStyle(layout, "image", 0)}">${imageHtml}</div>` : ""}
-        <h2 class="aboutInfoTitle aboutCardComponent" style="${componentStyle(layout, "title", 1)}">${escapeHtml(title)}</h2>
-        <p class="aboutInfoText aboutCardComponent" style="${componentStyle(layout, "body", 2)}">${escapeHtml(body)}</p>
+        <h2 class="aboutInfoTitle aboutCardComponent" style="${titleStyle}">${escapeHtml(title)}</h2>
+        <p class="aboutInfoText aboutCardComponent" style="${bodyStyle}">${escapeHtml(body)}</p>
         ${buttonsHtml ? `<div class="aboutInfoButtons btnRow aboutCardComponent" style="${componentStyle(layout, "buttons", 3)}">${buttonsHtml}</div>` : ""}
       </article>
     `;
