@@ -1,9 +1,19 @@
-// PAGE TITLE page
+document.addEventListener("DOMContentLoaded",async()=>{try{const data=await loadJSON("./content/seniorcenter.json");renderSeniorPage(data||{})}catch(err){console.error(err);const main=document.getElementById("main");if(main)main.insertAdjacentHTML("afterbegin",'<div class="card"><p class="sub">Unable to load Senior Center information at this time.</p></div>')}});
 
-document.addEventListener("DOMContentLoaded", () => {
-  const card = document.querySelector(".comingSoonCard");
-  if (!card) return;
-
-  // Placeholder for future functionality
-  card.setAttribute("data-ready", "true");
-});
+function renderSeniorPage(data){
+  const safe=value=>value===undefined||value===null?"":String(value).trim();
+  const escapeHtml=value=>String(value).replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#39;");
+  const intro=data.intro||{},exterior=data.exterior||{},meals=data.meals_on_wheels||{};
+  setText("seniorEyebrow",intro.eyebrow||"Hart County");setText("seniorTitle",intro.title||"Hart County Senior Center");setText("seniorDescription",intro.description||"");
+  const image=document.getElementById("seniorExterior");if(image){image.src=safe(exterior.src)||"/assets/seniorcent.jpg";image.alt=safe(exterior.alt)||"Hart County Senior Center exterior"}setText("seniorExteriorCaption",exterior.caption||"Hart County Senior Center");
+  const logo=document.getElementById("mealsLogo");if(logo){logo.src=safe(meals.logo)||"/assets/meals-on-wheels.gif";logo.alt=safe(meals.logo_alt)||"Meals on Wheels logo"}
+  renderContact(data.contact||{});renderParagraphs("seniorAbout",data.about||[]);renderEligibility(data.eligibility||{});renderPrograms(data.programs||[]);renderGallery(data.gallery||[]);renderParagraphs("seniorMeals",meals.paragraphs||[]);
+  function setText(id,value){const el=document.getElementById(id);if(el)el.textContent=safe(value)}
+  function phoneMarkup(phone,raw){const shown=safe(phone),tel=safe(raw||shown.replace(/[^d+]/g,""));return shown?`<span class="phoneDesktop">${escapeHtml(shown)}</span><a class="phoneMobile" href="tel:${escapeHtml(tel)}">${escapeHtml(shown)}</a>`:""}
+  function emailMarkup(email){const shown=safe(email);return shown?`<span class="emailDesktop">${escapeHtml(shown)}</span><a class="emailMobile" href="mailto:${escapeHtml(shown)}">${escapeHtml(shown)}</a>`:""}
+  function renderContact(item){const mount=document.getElementById("seniorContact");if(!mount)return;const address=[item.street_address,item.city_state_zip].filter(Boolean).join("\n");mount.innerHTML=`<div class="contactList">${address?`<div class="contactItem"><span class="contactLabel">Address</span><div class="contactValue">${escapeHtml(address)}</div></div>`:""}${safe(item.hours)?`<div class="contactItem"><span class="contactLabel">Hours</span><div class="contactValue">${escapeHtml(safe(item.hours))}</div></div>`:""}${safe(item.phone)?`<div class="contactItem"><span class="contactLabel">Phone</span><div class="contactValue">${phoneMarkup(item.phone,item.phone_raw)}</div></div>`:""}${safe(item.fax)?`<div class="contactItem"><span class="contactLabel">Fax</span><div class="contactValue">${escapeHtml(safe(item.fax))}</div></div>`:""}${safe(item.email)?`<div class="contactItem"><span class="contactLabel">Email</span><div class="contactValue">${emailMarkup(item.email)}</div></div>`:""}</div>`}
+  function renderParagraphs(id,items){const mount=document.getElementById(id);if(mount)mount.innerHTML=items.map(text=>`<p>${escapeHtml(safe(text))}</p>`).join("")}
+  function renderEligibility(item){const mount=document.getElementById("seniorEligibility");if(mount)mount.innerHTML=`<strong>${escapeHtml(safe(item.title)||"Who May Participate")}</strong><p>${escapeHtml(safe(item.text))}</p>`}
+  function renderPrograms(items){const mount=document.getElementById("seniorPrograms");if(mount)mount.innerHTML=items.map(item=>`<li>${escapeHtml(safe(item))}</li>`).join("")}
+  function renderGallery(items){const mount=document.getElementById("seniorGallery");if(mount)mount.innerHTML=items.map(item=>`<figure class="seniorFigure"><img src="${escapeHtml(safe(item.src))}" alt="${escapeHtml(safe(item.alt))}" loading="lazy"><figcaption>${escapeHtml(safe(item.caption))}</figcaption></figure>`).join("")}
+}

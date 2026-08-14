@@ -1,0 +1,40 @@
+{
+  "intro": {
+    "eyebrow": "Hart County",
+    "title": "Hart County Senior Center",
+    "description": "Programs, activities, excursions, social opportunities, and nutrition services for Hart County's older adults."
+  },
+  "contact": {
+    "street_address": "139 Clay Street",
+    "city_state_zip": "Hartwell, GA 30643",
+    "hours": "Monday-Friday\n8:00 AM-4:00 PM",
+    "phone": "706-376-3975",
+    "phone_raw": "17063763975",
+    "fax": "706-856-5379",
+    "email": "hartseniorcenter@hartcountyga.gov"
+  },
+  "exterior": {
+    "src": "/assets/seniorcent.jpg",
+    "alt": "Exterior of the Hart County Senior Center",
+    "caption": "Hart County Senior Center"
+  },
+  "about": [
+    "The Hart County Senior Center is located within the recreation park. It provides programs, activities, excursions, socialization, and nutrition services to older adults in Hart County."
+  ],
+  "eligibility": {
+    "title": "Who May Participate",
+    "text": "The Senior Center is open to Hart County residents age 60 and older."
+  },
+  "programs": ["Programs", "Activities", "Excursions", "Socialization", "Nutrition Services"],
+  "gallery": [
+    {"src": "/assets/senior-lake-picnic.jpg", "alt": "Hart County Senior Center participants enjoying a lake picnic", "caption": "Lake Picnic"},
+    {"src": "/assets/senior-varsity-trip.jpg", "alt": "Hart County Senior Center group trip to The Varsity", "caption": "Trip to The Varsity"}
+  ],
+  "meals_on_wheels": {
+    "logo": "/assets/meals-on-wheels.gif",
+    "logo_alt": "Meals on Wheels logo",
+    "paragraphs": [
+      "The Meals on Wheels program operates from the Senior Center. It provides a hot noon meal Monday through Friday to homebound people age 60 and older."
+    ]
+  }
+}

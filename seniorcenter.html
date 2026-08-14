@@ -1,87 +1,37 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Senior Center | Hart County</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Quintessential&family=Felipa&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
-
-  <link rel="stylesheet" href="/css/base.css" />
-  <link rel="stylesheet" href="/css/seniorcenter.css" />
-
-  <script defer src="js/alerts.js"></script>
-  <script defer src="js/app.js"></script>
-  <script defer src="js/seniorcenter.js"></script>
+  <link rel="stylesheet" href="/css/base.css" /><link rel="stylesheet" href="/css/seniorcenter.css" />
+  <script defer src="/js/alerts.js"></script><script defer src="/js/app.js"></script><script defer src="/js/seniorcenter.js"></script>
 </head>
-
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
-
-  <header class="topbar">
-    <div class="navRow">
-      <a class="brand brandLink" href="index.html">
-        <div class="seal">
-          <img src="./assets/hart_seal.svg" alt="Hart County, Georgia official seal">
-        </div>
-        <div class="brandText">
-          <div class="kicker">Hart County, Georgia</div>
-          <div class="title">PAGE TITLE</div>
-        </div>
-      </a>
-
-      <nav class="topNav" aria-label="Primary">
-        <a href="directory.html">Directory</a>
-        <a href="commissioners.html">Commissioners</a>
-        <a href="employment.html">Employment</a>
-        <a href="about.html">About</a>
-        <a href="paynes_creek.html">Paynes Creek</a>
-        <a href="news.html">News</a>
-        <a href="meetings.html">Meetings</a>
-        <a href="accessibility.html">Accessibility</a>
-      </nav>
-
-      <button class="btn menuBtn" type="button"
-              aria-controls="mobileMenu"
-              aria-expanded="false"
-              id="menuBtn">
-        Menu
-      </button>
-    </div>
-  </header>
-
+  <header class="topbar"><div class="navRow">
+    <a class="brand brandLink" href="index.html"><div class="seal"><img src="/assets/hart_seal.svg" alt="Hart County, Georgia official seal"></div><div class="brandText"><div class="kicker">Hart County, Georgia</div><div class="title">Senior Center</div></div></a>
+    <nav class="topNav" aria-label="Primary"><a href="directory.html">Directory</a><a href="commissioners.html">Commissioners</a><a href="employment.html">Employment</a><a href="about.html">About</a><a href="paynes_creek.html">Paynes Creek</a><a href="news.html">News</a><a href="meetings.html">Meetings</a><a href="accessibility.html">Accessibility</a></nav>
+    <button class="btn menuBtn" type="button" aria-controls="mobileMenu" aria-expanded="false" id="menuBtn">Menu</button>
+  </div></header>
   <div class="menuBackdrop" id="menuBackdrop" hidden></div>
-
-  <aside class="menuPanel" id="mobileMenu" hidden aria-label="Mobile navigation">
-    <div class="menuPanelHead">
-      <div class="menuPanelTitle">Menu</div>
-      <button class="btn ghost" type="button" id="menuClose" aria-label="Close menu">Close</button>
-    </div>
-
-    <nav class="menuNav" aria-label="Primary mobile">
-      <a href="directory.html">Directory</a>
-      <a href="commissioners.html">Commissioners</a>
-      <a href="employment.html">Employment</a>
-      <a href="about.html">About</a>
-      <a href="paynes_creek.html">Paynes Creek</a>
-      <hr>
-      <a href="news.html">News</a>
-      <a href="meetings.html">Meetings</a>
-      <a href="accessibility.html">Accessibility</a>
-    </nav>
-  </aside>
-
-  <main id="main" class="container" tabindex="-1">
-    <section class="card comingSoonCard" aria-label="Page status">
-      <p class="comingSoonText">Page coming soon....</p>
+  <aside class="menuPanel" id="mobileMenu" hidden aria-label="Mobile navigation"><div class="menuPanelHead"><div class="menuPanelTitle">Menu</div><button class="btn ghost" type="button" id="menuClose" aria-label="Close menu">Close</button></div><nav class="menuNav" aria-label="Primary mobile"><a href="directory.html">Directory</a><a href="commissioners.html">Commissioners</a><a href="employment.html">Employment</a><a href="about.html">About</a><a href="paynes_creek.html">Paynes Creek</a><hr><a href="news.html">News</a><a href="meetings.html">Meetings</a><a href="accessibility.html">Accessibility</a></nav></aside>
+  <main id="main" class="container seniorPage" tabindex="-1">
+    <div id="alertHolder"></div>
+    <section class="card pageIntroCard seniorIntroCard" aria-labelledby="seniorTitle"><div class="seniorIntroLayout">
+      <div class="seniorIntroMain"><p id="seniorEyebrow" class="pageIntroEyebrow"></p><h1 id="seniorTitle" class="pageIntroTitle">Hart County Senior Center</h1><p id="seniorDescription" class="pageIntroText"></p></div>
+      <div class="seniorIntroContact" aria-labelledby="contactTitle"><h2 id="contactTitle">Center Information</h2><div id="seniorContact"></div></div>
+    </div></section>
+    <section class="seniorOverviewGrid" aria-label="Senior Center overview">
+      <figure class="card seniorExteriorCard"><img id="seniorExterior" src="/assets/seniorcent.jpg" alt="Hart County Senior Center exterior" loading="eager"><figcaption id="seniorExteriorCaption">Hart County Senior Center</figcaption></figure>
+      <section class="card seniorAboutCard" aria-labelledby="aboutTitle"><div class="cardHeader"><div><h2 id="aboutTitle">About the Center</h2></div></div><div id="seniorAbout" class="seniorCopy"></div><div id="seniorEligibility" class="seniorEligibility"></div></section>
     </section>
-
-    <footer class="footer">
-      <div>© 2026 Hart County Board of Commissioners</div>
-    </footer>
+    <section class="card seniorProgramsCard" aria-labelledby="programsTitle"><div class="cardHeader"><div><h2 id="programsTitle">Programs &amp; Services</h2><p class="sub">Opportunities that support connection, wellness, and nutrition.</p></div></div><ul id="seniorPrograms" class="seniorProgramList"></ul></section>
+    <section class="card seniorGalleryCard" aria-labelledby="galleryTitle"><div class="cardHeader"><div><h2 id="galleryTitle">Center Activities</h2></div></div><div id="seniorGallery" class="seniorGallery"></div></section>
+    <section class="card seniorMealsCard" aria-labelledby="mealsTitle"><div class="seniorMealsLayout"><div class="seniorMealsLogo"><img id="mealsLogo" src="/assets/meals-on-wheels.gif" alt="Meals on Wheels logo" loading="lazy"></div><div><p class="seniorMealsEyebrow">Nutrition Assistance</p><h2 id="mealsTitle">Meals on Wheels</h2><div id="seniorMeals" class="seniorCopy"></div></div></div></section>
+    <footer class="footer"><div>&copy; 2026 Hart County Board of Commissioners</div></footer>
   </main>
 </body>
 </html>
