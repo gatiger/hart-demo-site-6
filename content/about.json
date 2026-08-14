@@ -40,7 +40,8 @@
     ],
     "gridSpan": 24,
     "gridRowSpan": 0,
-    "title": "Photo Gallery"
+    "title": "Photo Gallery",
+    "gridColumnStart": 1
   },
   "sections": [
     {
@@ -49,7 +50,9 @@
       "width": "half",
       "gridSpan": 12,
       "gridRowSpan": 0,
-      "textBlocks": []
+      "textBlocks": [],
+      "gridColumnStart": 1,
+      "componentLayout": {}
     },
     {
       "title": "Geography & Recreation",
@@ -57,7 +60,9 @@
       "width": "half",
       "gridSpan": 12,
       "gridRowSpan": 0,
-      "textBlocks": []
+      "textBlocks": [],
+      "gridColumnStart": 1,
+      "componentLayout": {}
     },
     {
       "title": "Government Structure",
@@ -65,7 +70,9 @@
       "width": "half",
       "gridSpan": 12,
       "gridRowSpan": 0,
-      "textBlocks": []
+      "textBlocks": [],
+      "gridColumnStart": 1,
+      "componentLayout": {}
     },
     {
       "title": "Community & Services",
@@ -73,7 +80,9 @@
       "width": "half",
       "gridSpan": 12,
       "gridRowSpan": 0,
-      "textBlocks": []
+      "textBlocks": [],
+      "gridColumnStart": 1,
+      "componentLayout": {}
     }
   ],
   "statsIntro": "Key facts and general county information",
@@ -104,5 +113,9 @@
   "sectionsGridRowSpan": 0,
   "statsGridRowSpan": 0,
   "textBlocks": [],
-  "statsTitle": "County At a Glance"
+  "statsTitle": "County At a Glance",
+  "introGridStart": 1,
+  "sectionsGridStart": 1,
+  "statsGridStart": 1,
+  "componentLayout": {}
 }

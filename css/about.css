@@ -21,7 +21,7 @@
 #aboutCarouselSection,
 #aboutInfoGrid,
 #aboutStatsSection{
-  grid-column: span var(--about-section-span, 24);
+  grid-column: var(--about-section-start, 1) / span var(--about-section-span, 24);
   grid-row: span var(--about-section-effective-rows, 1);
   min-width: 0;
 }
@@ -209,7 +209,7 @@
 
 .aboutInfoCard{
   padding: 1.25rem 1.5rem;
-  grid-column: span var(--about-card-span, 12);
+  grid-column: var(--about-card-start, 1) / span var(--about-card-span, 12);
 }
 
 .aboutInfoTitle{
@@ -464,11 +464,11 @@
 }
 .aboutGrid{grid-auto-flow:row;grid-auto-rows:auto;}
 .aboutInfoCard{grid-row:auto;min-height:calc(var(--about-card-rows, 0) * 24px);overflow:visible;}
-.aboutComponentImage{grid-column:span var(--about-image-span,24);min-width:0;}
+.aboutComponentImage{grid-column:var(--about-image-start,1) / span var(--about-image-span,24);min-width:0;}
 .aboutComponentImage[style*="--about-image-rows:0"]{height:auto;}
 .aboutComponentImage:not([style*="--about-image-rows:0"]){height:calc(var(--about-image-rows) * 24px);}
 .aboutComponentImage:not([style*="--about-image-rows:0"]) img{height:100%;object-fit:cover;}
-@media(max-width:760px){.aboutPage,.aboutGrid{display:block}.aboutPage>*{margin-bottom:1rem}.aboutInfoCard{margin-bottom:1rem}.aboutComponentImage{width:100%!important;height:auto!important}}
+@media(max-width:760px){.aboutPage,.aboutGrid{display:block}.aboutPage>*{margin-bottom:1rem}.aboutInfoCard{margin-bottom:1rem}.aboutComponentImage{width:100%!important;height:auto!important;grid-column:auto!important}}
 
 
 /* v6.24 component-level 24-column grid */
@@ -488,7 +488,7 @@
 .pageIntroInner > .aboutPageTools > #aboutIntroButtonRow,
 .pageIntroInner > #aboutBadgeRow,
 .aboutCardComponent{
-  grid-column:span var(--about-component-span,24);
+  grid-column:var(--about-component-start,1) / span var(--about-component-span,24);
   min-height:calc(var(--about-component-rows,0) * 24px);
   min-width:0;
 }

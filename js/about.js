@@ -37,16 +37,23 @@ function clampAboutSpan(value, fallback = 24) {
   return Math.max(1, Math.min(24, Number.isFinite(parsed) ? parsed : fallback));
 }
 
+function clampAboutStart(value, span = 24) {
+  const parsed = Number(value);
+  const safeSpan = clampAboutSpan(span);
+  const maxStart = Math.max(1, 25 - safeSpan);
+  return Math.max(1, Math.min(maxStart, Number.isFinite(parsed) ? parsed : 1));
+}
+
 function applyAboutSectionLayout(data) {
   const intro = document.getElementById("aboutIntroSection");
   const carousel = document.getElementById("aboutCarouselSection");
   const infoGrid = document.getElementById("aboutInfoGrid");
   const stats = document.getElementById("aboutStatsSection");
 
-  if (intro) intro.style.setProperty("--about-section-span", clampAboutSpan(data && data.introGridSpan));
-  if (carousel) carousel.style.setProperty("--about-section-span", clampAboutSpan(data && data.carousel && data.carousel.gridSpan));
-  if (infoGrid) infoGrid.style.setProperty("--about-section-span", clampAboutSpan(data && data.sectionsGridSpan));
-  if (stats) stats.style.setProperty("--about-section-span", clampAboutSpan(data && data.statsGridSpan));
+  if (intro) { const span = clampAboutSpan(data && data.introGridSpan); intro.style.setProperty("--about-section-span", span); intro.style.setProperty("--about-section-start", clampAboutStart(data && data.introGridStart, span)); }
+  if (carousel) { const span = clampAboutSpan(data && data.carousel && data.carousel.gridSpan); carousel.style.setProperty("--about-section-span", span); carousel.style.setProperty("--about-section-start", clampAboutStart(data && data.carousel && data.carousel.gridColumnStart, span)); }
+  if (infoGrid) { const span = clampAboutSpan(data && data.sectionsGridSpan); infoGrid.style.setProperty("--about-section-span", span); infoGrid.style.setProperty("--about-section-start", clampAboutStart(data && data.sectionsGridStart, span)); }
+  if (stats) { const span = clampAboutSpan(data && data.statsGridSpan); stats.style.setProperty("--about-section-span", span); stats.style.setProperty("--about-section-start", clampAboutStart(data && data.statsGridStart, span)); }
   const rowMap = [[intro, data && data.introGridRowSpan], [carousel, data && data.carousel && data.carousel.gridRowSpan], [infoGrid, data && data.sectionsGridRowSpan], [stats, data && data.statsGridRowSpan]];
   rowMap.forEach(([node, rows]) => node && node.style.setProperty("--about-section-rows", Math.max(0, Number(rows) || 0)));
   applyAboutPageOrder(data);
@@ -67,6 +74,7 @@ function getComponentLayout(layout, key, fallbackOrder = 0) {
   const raw = layout && typeof layout[key] === "object" ? layout[key] : {};
   return {
     gridSpan: Math.max(1, Math.min(24, Number(raw.gridSpan) || 24)),
+    gridColumnStart: clampAboutStart(raw.gridColumnStart, Math.max(1, Math.min(24, Number(raw.gridSpan) || 24))),
     gridRowSpan: Math.max(0, Number(raw.gridRowSpan) || 0),
     order: Number.isFinite(Number(raw.order)) ? Number(raw.order) : fallbackOrder
   };
@@ -74,7 +82,7 @@ function getComponentLayout(layout, key, fallbackOrder = 0) {
 
 function componentStyle(layout, key, fallbackOrder = 0) {
   const item = getComponentLayout(layout, key, fallbackOrder);
-  return `--about-component-span:${item.gridSpan};--about-component-rows:${item.gridRowSpan};order:${item.order}`;
+  return `--about-component-span:${item.gridSpan};--about-component-start:${item.gridColumnStart};--about-component-rows:${item.gridRowSpan};order:${item.order}`;
 }
 
 function aboutTextStyle(style) {
@@ -159,6 +167,7 @@ function renderAboutImage(image, className) {
   const title = safeText(image && image.title);
   const caption = safeText(image && image.caption);
   const gridSpan = Math.max(1, Math.min(24, Number(image && image.gridSpan) || 24));
+  const gridStart = clampAboutStart(image && image.gridColumnStart, gridSpan);
 
   const media = src
     ? `<img src="${escapeHtml(src)}" alt="${escapeHtml(alt)}">`
@@ -169,7 +178,7 @@ function renderAboutImage(image, className) {
        </div>`;
 
   return `
-    <figure class="aboutComponentImage ${escapeHtml(className || "")}" style="--about-image-span:${gridSpan};--about-image-rows:${Math.max(0, Number(image && image.gridRowSpan) || 0)}">
+    <figure class="aboutComponentImage ${escapeHtml(className || "")}" style="--about-image-span:${gridSpan};--about-image-start:${gridStart};--about-image-rows:${Math.max(0, Number(image && image.gridRowSpan) || 0)}">
       ${media}
       ${(title || caption) ? `<figcaption>${title ? `<strong>${escapeHtml(title)}</strong>` : ""}${caption ? `<span>${escapeHtml(caption)}</span>` : ""}</figcaption>` : ""}
     </figure>
@@ -225,6 +234,7 @@ function renderAboutSections(items) {
     const body = safeText(item.body);
     const widthClass = getAboutCardWidthClass(item.width);
     const cardSpan = Math.max(1, Math.min(24, Number(item.gridSpan) || ({quarter:6,half:12,"three-quarter":18,full:24}[safeText(item.width).toLowerCase()] || 12)));
+    const cardStart = clampAboutStart(item.gridColumnStart, cardSpan);
 
     const imageHtml = item.image && typeof item.image === "object"
       ? renderAboutImage(item.image, "aboutInfoMedia")
@@ -236,7 +246,7 @@ function renderAboutSections(items) {
     const titleStyle = [componentStyle(layout, "title", 1), aboutTextStyle(textStyles.title)].filter(Boolean).join(";");
     const bodyStyle = [componentStyle(layout, "body", 2), aboutTextStyle(textStyles.body)].filter(Boolean).join(";");
     return `
-      <article class="card aboutInfoCard aboutSearchItem ${widthClass}" style="--about-card-span:${cardSpan};--about-card-rows:${Math.max(0, Number(item.gridRowSpan) || 0)}" data-search-text="${escapeHtml((title + " " + body).toLowerCase())}">
+      <article class="card aboutInfoCard aboutSearchItem ${widthClass}" style="--about-card-span:${cardSpan};--about-card-start:${cardStart};--about-card-rows:${Math.max(0, Number(item.gridRowSpan) || 0)}" data-search-text="${escapeHtml((title + " " + body).toLowerCase())}">
         ${imageHtml ? `<div class="aboutCardComponent aboutCardImageComponent" style="${componentStyle(layout, "image", 0)}">${imageHtml}</div>` : ""}
         <h2 class="aboutInfoTitle aboutCardComponent" style="${titleStyle}">${escapeHtml(title)}</h2>
         <p class="aboutInfoText aboutCardComponent" style="${bodyStyle}">${escapeHtml(body)}</p>
