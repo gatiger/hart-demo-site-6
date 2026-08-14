@@ -1,87 +1,42 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Solid Waste | Hart County</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Quintessential&family=Felipa&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
-
-  <link rel="stylesheet" href="/css/base.css" />
-  <link rel="stylesheet" href="/css/solidwaste.css" />
-
-  <script defer src="js/alerts.js"></script>
-  <script defer src="js/app.js"></script>
-  <script defer src="js/solidwaste.js"></script>
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg"><link rel="stylesheet" href="/css/base.css" /><link rel="stylesheet" href="/css/solidwaste.css" />
+  <script defer src="/js/alerts.js"></script><script defer src="/js/app.js"></script><script defer src="/js/solidwaste.js"></script>
 </head>
-
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
-
-  <header class="topbar">
-    <div class="navRow">
-      <a class="brand brandLink" href="index.html">
-        <div class="seal">
-          <img src="./assets/hart_seal.svg" alt="Hart County, Georgia official seal">
-        </div>
-        <div class="brandText">
-          <div class="kicker">Hart County, Georgia</div>
-          <div class="title">PAGE TITLE</div>
-        </div>
-      </a>
-
-      <nav class="topNav" aria-label="Primary">
-        <a href="directory.html">Directory</a>
-        <a href="commissioners.html">Commissioners</a>
-        <a href="employment.html">Employment</a>
-        <a href="about.html">About</a>
-        <a href="paynes_creek.html">Paynes Creek</a>
-        <a href="news.html">News</a>
-        <a href="meetings.html">Meetings</a>
-        <a href="accessibility.html">Accessibility</a>
-      </nav>
-
-      <button class="btn menuBtn" type="button"
-              aria-controls="mobileMenu"
-              aria-expanded="false"
-              id="menuBtn">
-        Menu
-      </button>
-    </div>
-  </header>
-
+  <header class="topbar"><div class="navRow">
+    <a class="brand brandLink" href="index.html"><div class="seal"><img src="/assets/hart_seal.svg" alt="Hart County, Georgia official seal"></div><div class="brandText"><div class="kicker">Hart County, Georgia</div><div class="title">Solid Waste</div></div></a>
+    <nav class="topNav" aria-label="Primary"><a href="directory.html">Directory</a><a href="commissioners.html">Commissioners</a><a href="employment.html">Employment</a><a href="about.html">About</a><a href="paynes_creek.html">Paynes Creek</a><a href="news.html">News</a><a href="meetings.html">Meetings</a><a href="accessibility.html">Accessibility</a></nav>
+    <button class="btn menuBtn" type="button" aria-controls="mobileMenu" aria-expanded="false" id="menuBtn">Menu</button>
+  </div></header>
   <div class="menuBackdrop" id="menuBackdrop" hidden></div>
-
-  <aside class="menuPanel" id="mobileMenu" hidden aria-label="Mobile navigation">
-    <div class="menuPanelHead">
-      <div class="menuPanelTitle">Menu</div>
-      <button class="btn ghost" type="button" id="menuClose" aria-label="Close menu">Close</button>
-    </div>
-
-    <nav class="menuNav" aria-label="Primary mobile">
-      <a href="directory.html">Directory</a>
-      <a href="commissioners.html">Commissioners</a>
-      <a href="employment.html">Employment</a>
-      <a href="about.html">About</a>
-      <a href="paynes_creek.html">Paynes Creek</a>
-      <hr>
-      <a href="news.html">News</a>
-      <a href="meetings.html">Meetings</a>
-      <a href="accessibility.html">Accessibility</a>
-    </nav>
-  </aside>
-
-  <main id="main" class="container" tabindex="-1">
-    <section class="card comingSoonCard" aria-label="Page status">
-      <p class="comingSoonText">Page coming soon....</p>
+  <aside class="menuPanel" id="mobileMenu" hidden aria-label="Mobile navigation"><div class="menuPanelHead"><div class="menuPanelTitle">Menu</div><button class="btn ghost" type="button" id="menuClose" aria-label="Close menu">Close</button></div><nav class="menuNav" aria-label="Primary mobile"><a href="directory.html">Directory</a><a href="commissioners.html">Commissioners</a><a href="employment.html">Employment</a><a href="about.html">About</a><a href="paynes_creek.html">Paynes Creek</a><hr><a href="news.html">News</a><a href="meetings.html">Meetings</a><a href="accessibility.html">Accessibility</a></nav></aside>
+  <main id="main" class="container solidWastePage" tabindex="-1">
+    <div id="alertHolder"></div>
+    <section class="card pageIntroCard solidWasteIntroCard" aria-labelledby="solidWasteTitle"><div class="solidWasteIntroLayout">
+      <div class="solidWasteIntroMain"><p id="solidWasteEyebrow" class="pageIntroEyebrow"></p><h1 id="solidWasteTitle" class="pageIntroTitle">Hart County Solid Waste</h1><p id="solidWasteDescription" class="pageIntroText"></p></div>
+      <div class="solidWasteIntroContact" aria-labelledby="contactTitle"><h2 id="contactTitle">Transfer Station</h2><div id="solidWasteContact"></div></div>
+    </div></section>
+    <section class="card solidWasteNoticeCard" aria-labelledby="noticeTitle"><div class="noticeLabel">Service Notice</div><h2 id="noticeTitle">Recycling at the Transfer Station</h2><div id="solidWasteNotice" class="solidWasteCopy"></div></section>
+    <section class="solidWasteOverviewGrid" aria-label="Solid Waste overview">
+      <section class="card solidWasteOverviewCard" aria-labelledby="overviewTitle"><div class="cardHeader"><div><h2 id="overviewTitle">Pay-As-You-Throw System</h2></div></div><div id="solidWasteOverview" class="solidWasteCopy"></div></section>
+      <figure class="card solidWastePhotoCard"><img src="/assets/transfer-station-scales.jpg" alt="Scales at the Hart County Transfer Station" loading="eager"><figcaption>Hart County Transfer Station Scales</figcaption></figure>
     </section>
-
-    <footer class="footer">
-      <div>© 2026 Hart County Board of Commissioners</div>
-    </footer>
+    <section class="card solidWasteDisposalCard" aria-labelledby="disposalTitle"><div class="cardHeader"><div><h2 id="disposalTitle">Disposal Restrictions</h2><p class="sub">Items prohibited from general dumping and available alternatives.</p></div></div><div class="solidWasteDisposalGrid"><ul id="solidWasteProhibited" class="solidWasteItemList"></ul><div id="solidWasteAlternatives" class="solidWasteCopy"></div></div></section>
+    <section class="card solidWasteHoursCard" aria-labelledby="hoursTitle"><div class="cardHeader"><div><h2 id="hoursTitle">Normal Hours of Operation</h2></div></div><div id="solidWasteHours" class="solidWasteHoursGrid"></div></section>
+    <section class="card solidWasteRatesCard" aria-labelledby="ratesTitle"><div class="cardHeader"><div><h2 id="ratesTitle">Rates &amp; Payment</h2></div></div><div id="solidWasteRates" class="solidWasteRateList"></div><div id="solidWastePayment" class="solidWastePayment"></div></section>
+    <section class="card solidWasteLocationsCard" aria-labelledby="locationsTitle"><div class="cardHeader"><div><h2 id="locationsTitle">Locations &amp; Directions</h2></div></div><div id="solidWasteLocations" class="solidWasteLinkList"></div></section>
+    <section class="card solidWasteHolidayCard" aria-labelledby="holidayTitle"><div class="cardHeader"><div><h2 id="holidayTitle">Published 2026 Holiday Closures</h2><p class="sub">The following July closures appeared on the county's published Solid Waste page.</p></div></div><div id="solidWasteHoliday" class="solidWasteHolidayGrid"></div></section>
+    <section class="card solidWasteMetalCard" aria-labelledby="metalTitle"><div class="cardHeader"><div><h2 id="metalTitle">Metal Recycler Registration</h2></div></div><div id="solidWasteMetal" class="solidWasteCopy"></div></section>
+    <section class="card solidWasteResourcesCard" aria-labelledby="resourcesTitle"><div class="cardHeader"><div><h2 id="resourcesTitle">Plans &amp; Resources</h2></div></div><div id="solidWasteResources" class="solidWasteLinkList"></div></section>
+    <section class="card solidWasteGalleryCard" aria-labelledby="galleryTitle"><div class="cardHeader"><div><h2 id="galleryTitle">Transfer Station &amp; Public Rating</h2></div></div><div id="solidWasteGallery" class="solidWasteGallery"></div></section>
+    <footer class="footer"><div>&copy; 2026 Hart County Board of Commissioners</div></footer>
   </main>
 </body>
 </html>

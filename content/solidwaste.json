@@ -1,0 +1,75 @@
+{
+  "intro": {
+    "eyebrow": "Hart County",
+    "title": "Hart County Solid Waste",
+    "description": "Managing eight convenience centers and the county transfer station through a pay-as-you-throw disposal system."
+  },
+  "contact": {
+    "street_address": "2318 Hickory Crossing Road",
+    "city_state_zip": "Hartwell, GA",
+    "phone": "706-376-7333",
+    "phone_raw": "17063767333",
+    "email": "transferstation@hartcountyga.gov"
+  },
+  "service_notice": [
+    "The Hart County Transfer Station will not accept recyclables beginning January 12 until further notice due to repairs. Please take recyclable materials to a convenience center."
+  ],
+  "overview": [
+    "Household trash must be placed in special bags purchased at convenience centers throughout Hart County.",
+    "Trash and larger items may also be taken to the transfer station, where disposal charges are based on weight."
+  ],
+  "prohibited_items": ["Liquids", "Oil", "Gasoline", "Liquid paint", "Tires", "Car batteries"],
+  "disposal_alternatives": [
+    "Paint may be disposed of after it has completely dried. Sand or cat litter may be used to dry paint in its container.",
+    "Tires are accepted in a separate disposal area for a fee.",
+    "Car batteries may be recycled."
+  ],
+  "hours": [
+    {
+      "title": "Transfer Station",
+      "schedule": [
+        {"days": "Monday, Wednesday, Friday", "hours": "8:00 AM-7:00 PM"},
+        {"days": "Tuesday, Thursday", "hours": "8:00 AM-4:30 PM"},
+        {"days": "Saturday", "hours": "8:00 AM-1:30 PM"},
+        {"days": "Sunday", "hours": "Closed"}
+      ]
+    },
+    {
+      "title": "Convenience Centers",
+      "schedule": [
+        {"days": "Monday, Wednesday, Friday", "hours": "8:00 AM-7:00 PM"},
+        {"days": "Tuesday, Thursday", "hours": "Closed"},
+        {"days": "Saturday", "hours": "10:00 AM-2:00 PM"},
+        {"days": "Sunday", "hours": "3:00 PM-6:00 PM"}
+      ]
+    }
+  ],
+  "rates": [
+    {"title": "Recyclables", "detail": "Collected and disposed of free of charge at convenience centers."},
+    {"title": "Yard Waste", "detail": "$45 per ton for Hart County residents; $60 per ton for non-residents."},
+    {"title": "Tipping Fees", "detail": "$60 per ton for Hart County residents; $120 per ton for non-residents."}
+  ],
+  "payment_notice": "Yard waste is ground into mulch, available free in three-yard scoops. Payment is by cash or check only; debit and credit cards are not accepted.",
+  "location_links": [
+    {"title": "Transfer Station Map and Directions", "url": "https://hartcountyga.gov/transstatmap.htm"},
+    {"title": "All Convenience Center Locations", "url": "https://hartcountyga.gov/conveniencecenters.html"}
+  ],
+  "holiday_schedule": [
+    {"title": "Transfer Station", "closures": ["Friday, July 3 - Closed", "Saturday, July 4 - Closed"]},
+    {"title": "Convenience Centers", "closures": ["Friday, July 3 - Closed", "Saturday, July 4 - Closed"]}
+  ],
+  "metal_recyclers": {
+    "text": "The Hart County Sheriff's Office handles metal-recycler registrations. Submit the completed registration form to the Sheriff's Office at 890 Vickery Street in Hartwell.",
+    "link_title": "Metal Recycler Registration Form",
+    "url": "https://hartcountyga.gov/documents/MetalRecyclersRegistrationForm.pdf"
+  },
+  "resources": [
+    {"title": "Solid Waste Management Plan", "url": "https://hartcountyga.gov/documents/SWMGMTPLANFY07.doc"},
+    {"title": "Solid Waste Long-Range Plans", "url": "https://hartcountyga.gov/solidwastelongrange.htm"},
+    {"title": "Solid Waste Reduction Strategy", "url": "https://hartcountyga.gov/solidwastestrategy2005.htm"}
+  ],
+  "gallery": [
+    {"src": "/assets/transfer-station.jpg", "alt": "Hart County Transfer Station", "caption": "Hart County Transfer Station"},
+    {"src": "/assets/solid-waste-rating.gif", "alt": "Public survey rating table for Hart County convenience centers", "caption": "Public Survey Rating: 88% Very Good"}
+  ]
+}

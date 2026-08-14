@@ -1,9 +1,19 @@
-// PAGE TITLE page
+document.addEventListener("DOMContentLoaded",async()=>{try{const data=await loadJSON("./content/solidwaste.json");renderSolidWastePage(data||{})}catch(err){console.error(err);const main=document.getElementById("main");if(main)main.insertAdjacentHTML("afterbegin",'<div class="card"><p class="sub">Unable to load Solid Waste information at this time.</p></div>')}});
 
-document.addEventListener("DOMContentLoaded", () => {
-  const card = document.querySelector(".comingSoonCard");
-  if (!card) return;
-
-  // Placeholder for future functionality
-  card.setAttribute("data-ready", "true");
-});
+function renderSolidWastePage(data){
+ const safe=v=>v===undefined||v===null?"":String(v).trim(),esc=v=>String(v).replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#39;"),intro=data.intro||{};
+ setText("solidWasteEyebrow",intro.eyebrow||"Hart County");setText("solidWasteTitle",intro.title||"Hart County Solid Waste");setText("solidWasteDescription",intro.description||"");
+ renderContact(data.contact||{});paragraphs("solidWasteNotice",data.service_notice||[]);paragraphs("solidWasteOverview",data.overview||[]);list("solidWasteProhibited",data.prohibited_items||[]);paragraphs("solidWasteAlternatives",data.disposal_alternatives||[]);hours(data.hours||[]);rates(data.rates||[]);setText("solidWastePayment",data.payment_notice||"");links("solidWasteLocations",data.location_links||[]);holidays(data.holiday_schedule||[]);renderMetal(data.metal_recyclers||{});links("solidWasteResources",data.resources||[]);gallery(data.gallery||[]);
+ function setText(id,v){const e=document.getElementById(id);if(e)e.textContent=safe(v)}
+ function phone(phone,raw){const shown=safe(phone),tel=safe(raw||shown.replace(/[^d+]/g,""));return shown?`<span class="phoneDesktop">${esc(shown)}</span><a class="phoneMobile" href="tel:${esc(tel)}">${esc(shown)}</a>`:""}
+ function email(value){const shown=safe(value);return shown?`<span class="emailDesktop">${esc(shown)}</span><a class="emailMobile" href="mailto:${esc(shown)}">${esc(shown)}</a>`:""}
+ function renderContact(i){const m=document.getElementById("solidWasteContact");if(!m)return;const addr=[i.street_address,i.city_state_zip].filter(Boolean).join("\n");m.innerHTML=`<div class="contactList">${addr?`<div><span class="contactLabel">Address</span><div class="contactValue">${esc(addr)}</div></div>`:""}${safe(i.phone)?`<div><span class="contactLabel">Phone</span><div class="contactValue">${phone(i.phone,i.phone_raw)}</div></div>`:""}${safe(i.email)?`<div><span class="contactLabel">Email</span><div class="contactValue">${email(i.email)}</div></div>`:""}</div>`}
+ function paragraphs(id,items){const m=document.getElementById(id);if(m)m.innerHTML=items.map(v=>`<p>${esc(safe(v))}</p>`).join("")}
+ function list(id,items){const m=document.getElementById(id);if(m)m.innerHTML=items.map(v=>`<li>${esc(safe(v))}</li>`).join("")}
+ function hours(groups){const m=document.getElementById("solidWasteHours");if(m)m.innerHTML=groups.map(g=>`<section class="hoursGroup"><h3>${esc(safe(g.title))}</h3><div class="hoursList">${(g.schedule||[]).map(r=>`<div class="hoursRow"><div class="hoursDays">${esc(safe(r.days))}</div><div class="hoursTime">${esc(safe(r.hours))}</div></div>`).join("")}</div></section>`).join("")}
+ function rates(items){const m=document.getElementById("solidWasteRates");if(m)m.innerHTML=items.map(i=>`<div class="rateItem"><span class="rateTitle">${esc(safe(i.title))}</span><div class="rateDetail">${esc(safe(i.detail))}</div></div>`).join("")}
+ function links(id,items){const m=document.getElementById(id);if(m)m.innerHTML=items.map(i=>`<a class="solidWasteTextLink" href="${esc(safe(i.url))}" target="_blank" rel="noopener noreferrer">${esc(safe(i.title))}</a>`).join("")}
+ function holidays(groups){const m=document.getElementById("solidWasteHoliday");if(m)m.innerHTML=groups.map(g=>`<section class="holidayGroup"><h3>${esc(safe(g.title))}</h3><ul>${(g.closures||[]).map(v=>`<li>${esc(safe(v))}</li>`).join("")}</ul></section>`).join("")}
+ function renderMetal(i){const m=document.getElementById("solidWasteMetal");if(m)m.innerHTML=`<p>${esc(safe(i.text))}</p>${safe(i.url)?`<p><a class="solidWasteTextLink" href="${esc(safe(i.url))}" target="_blank" rel="noopener noreferrer">${esc(safe(i.link_title))}</a></p>`:""}`}
+ function gallery(items){const m=document.getElementById("solidWasteGallery");if(m)m.innerHTML=items.map(i=>`<figure class="solidWasteFigure"><img src="${esc(safe(i.src))}" alt="${esc(safe(i.alt))}" loading="lazy"><figcaption>${esc(safe(i.caption))}</figcaption></figure>`).join("")}
+}
