@@ -549,6 +549,7 @@ function appendRichText(element, text, phrases = [], links = [], initials = [], 
   for (const item of items || []) {
     const li = document.createElement('li');
     const itemData = typeof item === 'object' ? item : { text: item };
+    if (itemData.red?.length) li.classList.add('protocol-red-flow-item');
     let textContainer = li;
     if (itemData.icon) {
       li.className = 'assessment-icon-item';
