@@ -110,7 +110,7 @@ function searchProtocols(term) {
     const title = normalize(p.title);
     const categories = normalize((p.categoryPath || []).join(' '));
     const tags = normalize((p.tags || []).join(' '));
-    const text = normalize(p.plainText || p.pageText || '');
+const text = normalize(`${p.plainText || ''} ${JSON.stringify(p.content || [])}`);
     const haystack = `${title} ${categories} ${tags} ${text}`;
 
     const allMatch = terms.every(t => haystack.includes(t));
@@ -424,7 +424,62 @@ forwardBtn?.addEventListener('click', () => {
   viewHistoryIndex += 1;
   showProtocol(viewHistory[viewHistoryIndex], { recordHistory: false });
 });
+function renderLegalText(block, container) {
+  const section = document.createElement('section');
+  section.className = 'legal-text-block';
+  const rawLines = String(block.text || '').split(/\r?\n/).map(line => line.trim()).filter(Boolean);
+  const entries = [];
+  let current = '';
+
+  const isHeading = line => /^(TITLE|CHAPTER|ARTICLE|OCGA)\b/.test(line);
+  const isClause = line => /^(?:\([a-z]\)(?:\(\d+\))?|\(\d+\)|\([A-Z]\)|\d+\.\s*\(\d+\))/.test(line);
+  const flush = () => {
+    if (current) entries.push({ type: 'text', text: current });
+    current = '';
+  };
+
+  for (const line of rawLines) {
+    if (/^Suspected Abuse \(Continued\)$/i.test(line)) continue;
+    const previous = entries[entries.length - 1];
+    if (!current && previous?.type === 'heading' && /^[A-Z0-9][A-Z0-9\s;:,\-]+$/.test(line) && !isHeading(line)) {
+      previous.text += ` ${line}`;
+    } else if (isHeading(line)) {
+      flush();
+      entries.push({ type: 'heading', text: line });
+    } else if (isClause(line)) {
+      flush();
+      current = line;
+    } else {
+      current = current ? `${current} ${line}` : line;
+    }
+  }
+  flush();
+
+  for (const entry of entries) {
+    if (entry.type === 'heading') {
+      const heading = document.createElement('h4');
+      heading.className = 'legal-source-heading';
+      heading.textContent = entry.text;
+      section.appendChild(heading);
+      continue;
+    }
+
+    const paragraph = document.createElement('p');
+    paragraph.className = 'legal-clause';
+    if (/^\([A-Z]\)/.test(entry.text)) paragraph.classList.add('legal-indent-2');
+    else if (/^(?:\(\d+\)|\d+\.\s*\(\d+\))/.test(entry.text)) paragraph.classList.add('legal-indent-1');
+    paragraph.textContent = entry.text;
+    section.appendChild(paragraph);
+  }
+
+  container.appendChild(section);
+}
 function renderBlock(block, container) {
+  if (block.type === 'legal-text') {
+    renderLegalText(block, container);
+    return;
+  }
+
   if (block.type === 'external-link' || block.type === 'protocol-link') {
     renderReferenceLink(block, container);
     return;

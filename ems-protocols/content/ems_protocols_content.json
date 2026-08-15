@@ -2182,172 +2182,142 @@
       "needsReview": false
     },
     {
-      "id": "suspected-abuse",
-      "title": "Suspected Abuse",
-      "type": "protocol",
-      "categoryPath": [
-        "General Protocols"
-      ],
-      "status": "active",
-      "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 24,
-        "pageEnd": 28,
-        "pageLabel": "24-28"
-      },
-      "summary": "",
-      "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Suspected Abuse"
-        },
-        {
-          "type": "paragraph",
-          "text": "All healthcare providers are obligated by law to report cases of suspected child, elder, or vulnerable adult abuse. Report all alleged or suspected abuse or neglect to the appropriate agency. Georgia Code requires providers to report incidents of abuse to their county’s public children services agency, municipal or county peace officer. Simply notifying hospital personnel about concerns of maltreatment do not meet mandated EMS reporting responsibilities. If any maltreatment is suspected, the EMS provider MUST, by law, notify the local public children’s services agency or law enforcement as soon as possible. Physical abuse and neglect are often difficult to determine – the following indicators of possible abuse: Injuries scattered on many areas of the body. Malnutrition or lack of cleanliness Any fracture in a child under 2 years of age Injuries in various stages of healing More injuries than are usually seen in other children of the same age"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Initial Management"
-        },
-        {
-          "type": "paragraph",
-          "text": "DO NOT confront or become hostile to the parent or caregiver Treat any obvious injuries"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "In cases of suspected sexual abuse or assault"
-        },
-        {
-          "type": "list",
-          "items": [
-            "Discourage patient from washing and/or using the restroom",
-            "If the child/patient has not changed clothes, transport patient in these clothes.",
-            "If clothes have been removed but unwashed, bring clothes and underwear with"
-          ]
-        },
-        {
-          "type": "paragraph",
-          "text": "patient in a paper (not plastic) bag."
-        },
-        {
-          "type": "list",
-          "items": [
-            "Do not delay transport to search for evidence"
-          ]
-        },
-        {
-          "type": "paragraph",
-          "text": "If caregivers refuse to let you transport the child/patient after treatment, remain at the scene and notify law enforcement. Contact Medical Control and advise of questionable injures, but DO NOT report abuse and/or neglect over the radio."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Reporting"
-        },
-        {
-          "type": "paragraph",
-          "text": "Report your suspicions to the ED physician Notify the local public children services agency or law enforcement as soon as possible. You are legally responsible to report your suspicions. DO NOT initiate the report in front of the patient or caregiver. Suspected Abuse (Continued)"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Documentation"
-        },
-        {
-          "type": "paragraph",
-          "text": "Document any statement the child/adult patient makes in their own words. All verbatim statements made by the patient, the parent, or caregiver should be placed in quotation marks along with the source of the statement Document unexplained injuries, discrepant history, delays in seeking medical care, and repeated episodes of suspicious injuries. Document history, physical exam findings, environmental surroundings, and ED notification on the pre-hospital patient care report."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "The Law"
-        },
-        {
-          "type": "paragraph",
-          "text": "TITLE 19: DOMESTIC RELATIONS CHAPTER 7: PARENT AND CHILD RELATIONSHIP GENERALLY ARTICLE 1: GENERAL PROVISIONS OCGA § 19-7-5 (2024) (e)(2) With respect to reporting required by subsection (c) of this Code section, an oral report by telephone or other oral communication or a written report by electronic submission or facsimile shall be made immediately, but in no case later than 24 hours from the time there is reasonable cause to believe that suspected child abuse has occurred. When a report is being made by electronic submission or facsimile to the Division of Family and Children Services of the Department of Human Services, it shall be done in the manner specified by the division. Oral reports shall be followed by a later report in writing, if requested, to a child welfare agency providing protective services, as designated by the Division of Family and Children Services of the Department of Human Services, or, in the absence of such agency, to an appropriate police authority or district attorney. Such report shall be provided to military law enforcement, if applicable. If a report of child abuse is made to the child welfare agency or independently discovered by the agency, and the agency has reasonable cause to believe such report is true or the report contains any allegation or evidence of child abuse, then the agency shall immediately notify the appropriate police authority or district attorney and notify military law enforcement, if applicable. Such reports shall contain the names and addresses of the child and the child's parents or caretakers, if known, the child's age, the nature and extent of the child's injuries, including any evidence of previous injuries, and any other information that the reporting person believes might be helpful in establishing the cause of the injuries and the identity of the perpetrator. Photographs of the child's injuries to be used as documentation in support of allegations by hospital employees or volunteers, physicians, law enforcement personnel, school officials, or employees or volunteers of legally mandated public or private child protective agencies may be taken without the permission of the child's parent or guardian. Such photographs shall be made available as soon as possible to the chief welfare agency providing protective services, the appropriate police authority, and military law enforcement. (f) Any person or persons, partnership, firm, corporation, association, hospital, or other entity participating in the making of a report or causing a report to be made, and individuals who otherwise provide information or assistance, including, but not limited to, medical evaluations or consultations, in connection with a report made to a child welfare agency providing protective services, an appropriate police authority, or military law enforcement pursuant to this Code section or any other law or participating in any judicial proceeding or any other proceeding resulting therefrom shall in so doing be immune from any civil or criminal liability that might otherwise be incurred or imposed, provided that such participation pursuant to this Code section or any other law is made in good faith. Any person making a report, whether required by this Code section or not, shall be immune from liability as provided in this subsection. Suspected Abuse (Continued) TITLE 31: HEALTH CHAPTER 8: CARE AND PROTECTION OF INDIGENT AND ELDERLY PATIENTS ARTICLE 4: REPORTING ABUSE OR EXPLOTATION OF RESIDENTS IN LONG-TERM CARE FACILITIES OCGA § 31-8-82 (2024) REPORTING ABUSE OR EXPLOITIATION; RECORDS (a) Any of the following people who have reasonable cause to believe that any resident or former resident has been abused or exploited while residing in a long-term care facility shall immediately make a report as described in subsection (d) of this Code section by telephone or in person to the department and shall make the report to the appropriate law enforcement agency or prosecuting attorney:"
-        },
-        {
-          "type": "list",
-          "items": [
-            "1. (1) Any person required to report child abuse as provided in subsection (c) of Code"
-          ]
-        },
-        {
-          "type": "paragraph",
-          "text": "Section 19-7-5;"
-        },
-        {
-          "type": "list",
-          "items": [
-            "2. (2) Administrators, managers, or other employees of hospitals or long-term care facilities;",
-            "3. (3) Physical therapists;",
-            "4. (4) Occupational therapists;",
-            "5. (5) Day-care personnel;",
-            "6. (6) Coroners;",
-            "7. (7) Medical examiners;",
-            "8. (8) Emergency medical services personnel, as defined in Code Section 31-11-49;",
-            "9. (9) Any person who has been certified as an emergency medical technician, cardiac"
-          ]
-        },
-        {
-          "type": "paragraph",
-          "text": "technician, paramedic, or first responder pursuant to Chapter 11 of Title 31;"
-        },
-        {
-          "type": "list",
-          "items": [
-            "10. (10) Employees of a public or private agency engaged in professional health related"
-          ]
-        },
-        {
-          "type": "paragraph",
-          "text": "services to residents; and"
-        },
-        {
-          "type": "list",
-          "items": [
-            "11. (11) Clergy members."
-          ]
-        },
-        {
-          "type": "paragraph",
-          "text": "(b) Persons required to make a report pursuant to subsection (a) of this Code section shall also make a written report to the department within 24 hours after making the initial report. (c) Any other person who has knowledge that a resident or former resident has been abused or exploited while residing in a long-term care facility may report or cause a report to be made to the department or the appropriate law enforcement agency. (d) A report of suspected abuse or exploitation shall include the following: (1) The name and address of the person making the report unless such person is not required to make a report; (2) The name and address of the resident or former resident; (3) The name and address of the long-term care facility; (4) The nature and extent of any injuries or the condition resulting from the suspected abuse or exploitation; (5) The suspected cause of the abuse or exploitation; and (6) Any other information which the reporter believes might be helpful in determining the cause of the resident's injuries or condition and in determining the identity of the person or persons responsible for the abuse or exploitation. Suspected Abuse (Continued) TITLE 30: HANDICAPPED PERSONS CHAPTER 5: PROTECTION OF DISABLED ADULST AND ELDER PERSONS OCGA § 30-5-4 (2024) (b) (1) (A) A report that a disabled adult or elder person is in need of protective services or has been the victim of abuse, neglect, or exploitation shall be made to an adult protection agency providing protective services as designated by the department and to an appropriate law enforcement agency or prosecuting attorney. If a report of a disabled adult or elder person abuse, neglect, or exploitation is made to an adult protection agency or independently discovered by the agency, then the agency shall immediately make a reasonable determination based on available information as to whether the incident alleges actions by an individual, other than the disabled adult or elder person, that constitute a crime and include such information in their report. If a crime is suspected, the report shall immediately be forwarded to the appropriate law enforcement agency or prosecuting attorney. During an adult protection agency's investigation, it shall be under a continuing obligation to immediately report the discovery of any evidence that may constitute a crime. (B) If the disabled adult or person is 65 years of age or older and is a resident, a report shall be made in accordance with Article 4 of Chapter 8 of Title 31. If a report made in accordance with the provisions of this Code section alleges that the abuse or exploitation occurred within a long-term care facility, such report shall be investigated in accordance with Articles 3 and 4 of Chapter 8 of Title 31. (2) Reporting required by subparagraph (A) of paragraph (1) of this subsection may be made by oral or written communication. Such report shall include the name and address of the disabled adult or elder person and should include the name and address of the disabled adult's or elder person's caretaker, the age of the disabled adult or elder person, the nature and extent of the disabled adult's or elder person's injury or condition resulting from abuse, exploitation, or neglect, and other pertinent information. (3) When a report of a disabled adult's or elder person's abuse, neglect, or exploitation is originally reported to a law enforcement agency, it shall be forwarded by such agency to the director or his or her designee within 24 hours of receipt. Suspected Abuse (Continued) TITLE 30: HANDICAPPED PERSONS CHAPTER 5: PROTECTION OF DISABLED ADULST AND ELDER PERSONS OCGA § 30-5-4 (2024) (Continued) (c) Anyone who makes a report pursuant to this chapter, who testifies in any judicial proceeding arising from the report, who provides protective services, who participates in a required investigation, or who participates on an Adult Abuse, Neglect, and Exploitation Multidisciplinary Team under the provisions of this chapter shall be immune from any civil liability or criminal prosecution on account of such report or testimony or participation, unless such person acted in bad faith, with a malicious purpose, or was a party to such crime or fraud. Any financial institution or investment company, including without limitation officers and directors thereof, that is an employer of anyone who makes a report pursuant to this chapter in his or her capacity as an employee, or who testifies in any judicial proceeding arising from a report made in his or her capacity as an employee, or who participates in a required investigation under the provisions of this chapter in his or her capacity as an employee, shall be immune from any civil liability or criminal prosecution on account of such report or testimony or participation of its employee, unless such financial institution or investment company knew or should have known that the employee acted in bad faith or with a malicious purpose and failed to take reasonable and available measures to prevent such employee from acting in bad faith or with a malicious purpose. The immunity described in this subsection shall apply not only with respect to the acts of making a report, testifying in a judicial proceeding arising from a report, providing protective services, or participating in a required investigation but also shall apply with respect to the content of the information communicated in such acts."
-        }
-      ],
-      "plainText": "Suspected Abuse\nAll healthcare providers are obligated by law to report cases of suspected child, elder, or\nvulnerable adult abuse.\nReport all alleged or suspected abuse or neglect to the appropriate agency. Georgia Code\nrequires providers to report incidents of abuse to their county’s public children services agency,\nmunicipal or county peace officer.\nSimply notifying hospital personnel about concerns of maltreatment do not meet\nmandated EMS reporting responsibilities. If any maltreatment is suspected, the EMS\nprovider MUST, by law, notify the local public children’s services agency or law\nenforcement as soon as possible.\nPhysical abuse and neglect are often difficult to determine – the following indicators of possible\nabuse:\n•\nInjuries scattered on many areas of the body.\n•\nMalnutrition or lack of cleanliness\n•\nAny fracture in a child under 2 years of age\n•\nInjuries in various stages of healing\n•\nMore injuries than are usually seen in other children of the same age\nInitial Management\n•\nDO NOT confront or become hostile to the parent or caregiver\n•\nTreat any obvious injuries\n•\nIn cases of suspected sexual abuse or assault:\no Discourage patient from washing and/or using the restroom\no If the child/patient has not changed clothes, transport patient in these clothes.\no If clothes have been removed but unwashed, bring clothes and underwear with\npatient in a paper (not plastic) bag.\no Do not delay transport to search for evidence\n•\nIf caregivers refuse to let you transport the child/patient after treatment, remain at the\nscene and notify law enforcement.\n•\nContact Medical Control and advise of questionable injures, but DO NOT report abuse\nand/or neglect over the radio.\nReporting\n•\nReport your suspicions to the ED physician\n•\nNotify the local public children services agency or law enforcement as soon as possible.\nYou are legally responsible to report your suspicions.\n•\nDO NOT initiate the report in front of the patient or caregiver.\nSuspected Abuse (Continued)\nDocumentation:\n•\nDocument any statement the child/adult patient makes in their own words. All verbatim\nstatements made by the patient, the parent, or caregiver should be placed in quotation\nmarks along with the source of the statement\n•\nDocument unexplained injuries, discrepant history, delays in seeking medical care, and\nrepeated episodes of suspicious injuries.\n•\nDocument history, physical exam findings, environmental surroundings, and ED\nnotification on the pre-hospital patient care report.\nThe Law:\nTITLE 19:  DOMESTIC RELATIONS\nCHAPTER 7: PARENT AND CHILD RELATIONSHIP GENERALLY\nARTICLE 1: GENERAL PROVISIONS\nOCGA § 19-7-5 (2024)\n(e)(2) With respect to reporting required by subsection (c) of this Code section, an oral report by telephone\nor other oral communication or a written report by electronic submission or facsimile shall be made\nimmediately, but in no case later than 24 hours from the time there is reasonable cause to believe that\nsuspected child abuse has occurred. When a report is being made by electronic submission or facsimile to\nthe Division of Family and Children Services of the Department of Human Services, it shall be done in the\nmanner specified by the division. Oral reports shall be followed by a later report in writing, if requested, to a\nchild welfare agency providing protective services, as designated by the Division of Family and Children\nServices of the Department of Human Services, or, in the absence of such agency, to an appropriate police\nauthority or district attorney. Such report shall be provided to military law enforcement, if applicable. If a\nreport of child abuse is made to the child welfare agency or independently discovered by the agency, and\nthe agency has reasonable cause to believe such report is true or the report contains any allegation or\nevidence of child abuse, then the agency shall immediately notify the appropriate police authority or district\nattorney and notify military law enforcement, if applicable. Such reports shall contain the names and\naddresses of the child and the child's parents or caretakers, if known, the child's age, the nature and extent\nof the child's injuries, including any evidence of previous injuries, and any other information that the\nreporting person believes might be helpful in establishing the cause of the injuries and the identity of the\nperpetrator. Photographs of the child's injuries to be used as documentation in support of allegations by\nhospital employees or volunteers, physicians, law enforcement personnel, school officials, or employees or\nvolunteers of legally mandated public or private child protective agencies may be taken without the\npermission of the child's parent or guardian. Such photographs shall be made available as soon as\npossible to the chief welfare agency providing protective services, the appropriate police authority, and\nmilitary law enforcement.\n(f) Any person or persons, partnership, firm, corporation, association, hospital, or other entity participating\nin the making of a report or causing a report to be made, and individuals who otherwise provide information\nor assistance, including, but not limited to, medical evaluations or consultations, in connection with a report\nmade to a child welfare agency providing protective services, an appropriate police authority, or military law\nenforcement pursuant to this Code section or any other law or participating in any judicial proceeding or\nany other proceeding resulting therefrom shall in so doing be immune from any civil or criminal liability that\nmight otherwise be incurred or imposed, provided that such participation pursuant to this Code section or\nany other law is made in good faith. Any person making a report, whether required by this Code section or\nnot, shall be immune from liability as provided in this subsection.\nSuspected Abuse (Continued)\nTITLE 31: HEALTH\nCHAPTER 8: CARE AND PROTECTION OF INDIGENT AND ELDERLY PATIENTS\nARTICLE 4: REPORTING ABUSE OR EXPLOTATION OF RESIDENTS IN LONG-TERM CARE\nFACILITIES\nOCGA § 31-8-82 (2024) REPORTING ABUSE OR EXPLOITIATION; RECORDS\n(a) Any of the following people who have reasonable cause to believe that any resident or former resident\nhas been abused or exploited while residing in a long-term care facility shall immediately make a report\nas described in subsection (d) of this Code section by telephone or in person to the department and shall\nmake the report to the appropriate law enforcement agency or prosecuting attorney:\n1. (1) Any person required to report child abuse as provided in subsection (c) of Code\nSection 19-7-5;\n2. (2) Administrators, managers, or other employees of hospitals or long-term care facilities;\n3. (3) Physical therapists;\n4. (4) Occupational therapists;\n5. (5) Day-care personnel;\n6. (6) Coroners;\n7. (7) Medical examiners;\n8. (8) Emergency medical services personnel, as defined in Code Section 31-11-49;\n9. (9) Any person who has been certified as an emergency medical technician, cardiac\ntechnician, paramedic, or first responder pursuant to Chapter 11 of Title 31;\n10. (10) Employees of a public or private agency engaged in professional health related\nservices to residents; and\n11. (11) Clergy members.\n(b) Persons required to make a report pursuant to subsection (a) of this Code section shall also make a\nwritten report to the department within 24 hours after making the initial report.\n(c) Any other person who has knowledge that a resident or former resident has been abused or exploited\nwhile residing in a long-term care facility may report or cause a report to be made to the department or\nthe appropriate law enforcement agency.\n(d) A report of suspected abuse or exploitation shall include the following:\n(1) The name and address of the person making the report unless such person is not required to\nmake a report;\n(2) The name and address of the resident or former resident;\n(3) The name and address of the long-term care facility;\n(4) The nature and extent of any injuries or the condition resulting from the suspected abuse or\nexploitation;\n(5) The suspected cause of the abuse or exploitation; and\n(6) Any other information which the reporter believes might be helpful in determining the cause of\nthe resident's injuries or condition and in determining the identity of the person or persons\nresponsible for the abuse or exploitation.\nSuspected Abuse (Continued)\nTITLE 30: HANDICAPPED PERSONS\nCHAPTER 5: PROTECTION OF DISABLED ADULST AND ELDER PERSONS\nOCGA § 30-5-4 (2024)\n(b)\n(1)\n(A) A report that a disabled adult or elder person is in need of protective services or has\nbeen the victim of abuse, neglect, or exploitation shall be made to an adult protection\nagency providing protective services as designated by the department and to an\nappropriate law enforcement agency or prosecuting attorney. If a report of a disabled adult\nor elder person abuse, neglect, or exploitation is made to an adult protection agency or\nindependently discovered by the agency, then the agency shall immediately make a\nreasonable determination based on available information as to whether the incident\nalleges actions by an individual, other than the disabled adult or elder person, that\nconstitute a crime and include such information in their report. If a crime is suspected, the\nreport shall immediately be forwarded to the appropriate law enforcement agency or\nprosecuting attorney. During an adult protection agency's investigation, it shall be under a\ncontinuing obligation to immediately report the discovery of any evidence that may\nconstitute a crime.\n(B) If the disabled adult or person is 65 years of age or older and is a resident, a report\nshall be made in accordance with Article 4 of Chapter 8 of Title 31. If a report made in\naccordance with the provisions of this Code section alleges that the abuse or exploitation\noccurred within a long-term care facility, such report shall be investigated in accordance\nwith Articles 3 and 4 of Chapter 8 of Title 31.\n(2) Reporting required by subparagraph (A) of paragraph (1) of this subsection may be made by\noral or written communication. Such report shall include the name and address of the disabled\nadult or elder person and should include the name and address of the disabled adult's or elder\nperson's caretaker, the age of the disabled adult or elder person, the nature and extent of the\ndisabled adult's or elder person's injury or condition resulting from abuse, exploitation, or neglect,\nand other pertinent information.\n(3) When a report of a disabled adult's or elder person's abuse, neglect, or exploitation is originally\nreported to a law enforcement agency, it shall be forwarded by such agency to the director or his or\nher designee within 24 hours of receipt.\nSuspected Abuse (Continued)\nTITLE 30: HANDICAPPED PERSONS\nCHAPTER 5: PROTECTION OF DISABLED ADULST AND ELDER PERSONS\nOCGA § 30-5-4 (2024) (Continued)\n(c) Anyone who makes a report pursuant to this chapter, who testifies in any judicial proceeding\narising from the report, who provides protective services, who participates in a required\ninvestigation, or who participates on an Adult Abuse, Neglect, and Exploitation Multidisciplinary\nTeam under the provisions of this chapter shall be immune from any civil liability or criminal\nprosecution on account of such report or testimony or participation, unless such person acted in\nbad faith, with a malicious purpose, or was a party to such crime or fraud. Any financial institution\nor investment company, including without limitation officers and directors thereof, that is an\nemployer of anyone who makes a report pursuant to this chapter in his or her capacity as an\nemployee, or who testifies in any judicial proceeding arising from a report made in his or her\ncapacity as an employee, or who participates in a required investigation under the provisions of\nthis chapter in his or her capacity as an employee, shall be immune from any civil liability or\ncriminal prosecution on account of such report or testimony or participation of its employee, unless\nsuch financial institution or investment company knew or should have known that the employee\nacted in bad faith or with a malicious purpose and failed to take reasonable and available\nmeasures to prevent such employee from acting in bad faith or with a malicious purpose. The\nimmunity described in this subsection shall apply not only with respect to the acts of making a\nreport, testifying in a judicial proceeding arising from a report, providing protective services, or\nparticipating in a required investigation but also shall apply with respect to the content of the\ninformation communicated in such acts.",
-      "pageText": [
-        {
-          "page": 24,
-          "text": "Suspected Abuse\nAll healthcare providers are obligated by law to report cases of suspected child, elder, or\nvulnerable adult abuse.\nReport all alleged or suspected abuse or neglect to the appropriate agency. Georgia Code\nrequires providers to report incidents of abuse to their county’s public children services agency,\nmunicipal or county peace officer.\nSimply notifying hospital personnel about concerns of maltreatment do not meet\nmandated EMS reporting responsibilities. If any maltreatment is suspected, the EMS\nprovider MUST, by law, notify the local public children’s services agency or law\nenforcement as soon as possible.\nPhysical abuse and neglect are often difficult to determine – the following indicators of possible\nabuse:\n•\nInjuries scattered on many areas of the body.\n•\nMalnutrition or lack of cleanliness\n•\nAny fracture in a child under 2 years of age\n•\nInjuries in various stages of healing\n•\nMore injuries than are usually seen in other children of the same age\nInitial Management\n•\nDO NOT confront or become hostile to the parent or caregiver\n•\nTreat any obvious injuries\n•\nIn cases of suspected sexual abuse or assault:\no Discourage patient from washing and/or using the restroom\no If the child/patient has not changed clothes, transport patient in these clothes.\no If clothes have been removed but unwashed, bring clothes and underwear with\npatient in a paper (not plastic) bag.\no Do not delay transport to search for evidence\n•\nIf caregivers refuse to let you transport the child/patient after treatment, remain at the\nscene and notify law enforcement.\n•\nContact Medical Control and advise of questionable injures, but DO NOT report abuse\nand/or neglect over the radio.\nReporting\n•\nReport your suspicions to the ED physician\n•\nNotify the local public children services agency or law enforcement as soon as possible.\nYou are legally responsible to report your suspicions.\n•\nDO NOT initiate the report in front of the patient or caregiver."
-        },
-        {
-          "page": 25,
-          "text": "Suspected Abuse (Continued)\nDocumentation:\n•\nDocument any statement the child/adult patient makes in their own words. All verbatim\nstatements made by the patient, the parent, or caregiver should be placed in quotation\nmarks along with the source of the statement\n•\nDocument unexplained injuries, discrepant history, delays in seeking medical care, and\nrepeated episodes of suspicious injuries.\n•\nDocument history, physical exam findings, environmental surroundings, and ED\nnotification on the pre-hospital patient care report.\nThe Law:\nTITLE 19:  DOMESTIC RELATIONS\nCHAPTER 7: PARENT AND CHILD RELATIONSHIP GENERALLY\nARTICLE 1: GENERAL PROVISIONS\nOCGA § 19-7-5 (2024)\n(e)(2) With respect to reporting required by subsection (c) of this Code section, an oral report by telephone\nor other oral communication or a written report by electronic submission or facsimile shall be made\nimmediately, but in no case later than 24 hours from the time there is reasonable cause to believe that\nsuspected child abuse has occurred. When a report is being made by electronic submission or facsimile to\nthe Division of Family and Children Services of the Department of Human Services, it shall be done in the\nmanner specified by the division. Oral reports shall be followed by a later report in writing, if requested, to a\nchild welfare agency providing protective services, as designated by the Division of Family and Children\nServices of the Department of Human Services, or, in the absence of such agency, to an appropriate police\nauthority or district attorney. Such report shall be provided to military law enforcement, if applicable. If a\nreport of child abuse is made to the child welfare agency or independently discovered by the agency, and\nthe agency has reasonable cause to believe such report is true or the report contains any allegation or\nevidence of child abuse, then the agency shall immediately notify the appropriate police authority or district\nattorney and notify military law enforcement, if applicable. Such reports shall contain the names and\naddresses of the child and the child's parents or caretakers, if known, the child's age, the nature and extent\nof the child's injuries, including any evidence of previous injuries, and any other information that the\nreporting person believes might be helpful in establishing the cause of the injuries and the identity of the\nperpetrator. Photographs of the child's injuries to be used as documentation in support of allegations by\nhospital employees or volunteers, physicians, law enforcement personnel, school officials, or employees or\nvolunteers of legally mandated public or private child protective agencies may be taken without the\npermission of the child's parent or guardian. Such photographs shall be made available as soon as\npossible to the chief welfare agency providing protective services, the appropriate police authority, and\nmilitary law enforcement.\n(f) Any person or persons, partnership, firm, corporation, association, hospital, or other entity participating\nin the making of a report or causing a report to be made, and individuals who otherwise provide information\nor assistance, including, but not limited to, medical evaluations or consultations, in connection with a report\nmade to a child welfare agency providing protective services, an appropriate police authority, or military law\nenforcement pursuant to this Code section or any other law or participating in any judicial proceeding or\nany other proceeding resulting therefrom shall in so doing be immune from any civil or criminal liability that\nmight otherwise be incurred or imposed, provided that such participation pursuant to this Code section or\nany other law is made in good faith. Any person making a report, whether required by this Code section or\nnot, shall be immune from liability as provided in this subsection."
-        },
-        {
-          "page": 26,
-          "text": "Suspected Abuse (Continued)\nTITLE 31: HEALTH\nCHAPTER 8: CARE AND PROTECTION OF INDIGENT AND ELDERLY PATIENTS\nARTICLE 4: REPORTING ABUSE OR EXPLOTATION OF RESIDENTS IN LONG-TERM CARE\nFACILITIES\nOCGA § 31-8-82 (2024) REPORTING ABUSE OR EXPLOITIATION; RECORDS\n(a) Any of the following people who have reasonable cause to believe that any resident or former resident\nhas been abused or exploited while residing in a long-term care facility shall immediately make a report\nas described in subsection (d) of this Code section by telephone or in person to the department and shall\nmake the report to the appropriate law enforcement agency or prosecuting attorney:\n1. (1) Any person required to report child abuse as provided in subsection (c) of Code\nSection 19-7-5;\n2. (2) Administrators, managers, or other employees of hospitals or long-term care facilities;\n3. (3) Physical therapists;\n4. (4) Occupational therapists;\n5. (5) Day-care personnel;\n6. (6) Coroners;\n7. (7) Medical examiners;\n8. (8) Emergency medical services personnel, as defined in Code Section 31-11-49;\n9. (9) Any person who has been certified as an emergency medical technician, cardiac\ntechnician, paramedic, or first responder pursuant to Chapter 11 of Title 31;\n10. (10) Employees of a public or private agency engaged in professional health related\nservices to residents; and\n11. (11) Clergy members.\n(b) Persons required to make a report pursuant to subsection (a) of this Code section shall also make a\nwritten report to the department within 24 hours after making the initial report.\n(c) Any other person who has knowledge that a resident or former resident has been abused or exploited\nwhile residing in a long-term care facility may report or cause a report to be made to the department or\nthe appropriate law enforcement agency.\n(d) A report of suspected abuse or exploitation shall include the following:\n(1) The name and address of the person making the report unless such person is not required to\nmake a report;\n(2) The name and address of the resident or former resident;\n(3) The name and address of the long-term care facility;\n(4) The nature and extent of any injuries or the condition resulting from the suspected abuse or\nexploitation;\n(5) The suspected cause of the abuse or exploitation; and\n(6) Any other information which the reporter believes might be helpful in determining the cause of\nthe resident's injuries or condition and in determining the identity of the person or persons\nresponsible for the abuse or exploitation."
-        },
-        {
-          "page": 27,
-          "text": "Suspected Abuse (Continued)\nTITLE 30: HANDICAPPED PERSONS\nCHAPTER 5: PROTECTION OF DISABLED ADULST AND ELDER PERSONS\nOCGA § 30-5-4 (2024)\n(b)\n(1)\n(A) A report that a disabled adult or elder person is in need of protective services or has\nbeen the victim of abuse, neglect, or exploitation shall be made to an adult protection\nagency providing protective services as designated by the department and to an\nappropriate law enforcement agency or prosecuting attorney. If a report of a disabled adult\nor elder person abuse, neglect, or exploitation is made to an adult protection agency or\nindependently discovered by the agency, then the agency shall immediately make a\nreasonable determination based on available information as to whether the incident\nalleges actions by an individual, other than the disabled adult or elder person, that\nconstitute a crime and include such information in their report. If a crime is suspected, the\nreport shall immediately be forwarded to the appropriate law enforcement agency or\nprosecuting attorney. During an adult protection agency's investigation, it shall be under a\ncontinuing obligation to immediately report the discovery of any evidence that may\nconstitute a crime.\n(B) If the disabled adult or person is 65 years of age or older and is a resident, a report\nshall be made in accordance with Article 4 of Chapter 8 of Title 31. If a report made in\naccordance with the provisions of this Code section alleges that the abuse or exploitation\noccurred within a long-term care facility, such report shall be investigated in accordance\nwith Articles 3 and 4 of Chapter 8 of Title 31.\n(2) Reporting required by subparagraph (A) of paragraph (1) of this subsection may be made by\noral or written communication. Such report shall include the name and address of the disabled\nadult or elder person and should include the name and address of the disabled adult's or elder\nperson's caretaker, the age of the disabled adult or elder person, the nature and extent of the\ndisabled adult's or elder person's injury or condition resulting from abuse, exploitation, or neglect,\nand other pertinent information.\n(3) When a report of a disabled adult's or elder person's abuse, neglect, or exploitation is originally\nreported to a law enforcement agency, it shall be forwarded by such agency to the director or his or\nher designee within 24 hours of receipt."
-        },
-        {
-          "page": 28,
-          "text": "Suspected Abuse (Continued)\nTITLE 30: HANDICAPPED PERSONS\nCHAPTER 5: PROTECTION OF DISABLED ADULST AND ELDER PERSONS\nOCGA § 30-5-4 (2024) (Continued)\n(c) Anyone who makes a report pursuant to this chapter, who testifies in any judicial proceeding\narising from the report, who provides protective services, who participates in a required\ninvestigation, or who participates on an Adult Abuse, Neglect, and Exploitation Multidisciplinary\nTeam under the provisions of this chapter shall be immune from any civil liability or criminal\nprosecution on account of such report or testimony or participation, unless such person acted in\nbad faith, with a malicious purpose, or was a party to such crime or fraud. Any financial institution\nor investment company, including without limitation officers and directors thereof, that is an\nemployer of anyone who makes a report pursuant to this chapter in his or her capacity as an\nemployee, or who testifies in any judicial proceeding arising from a report made in his or her\ncapacity as an employee, or who participates in a required investigation under the provisions of\nthis chapter in his or her capacity as an employee, shall be immune from any civil liability or\ncriminal prosecution on account of such report or testimony or participation of its employee, unless\nsuch financial institution or investment company knew or should have known that the employee\nacted in bad faith or with a malicious purpose and failed to take reasonable and available\nmeasures to prevent such employee from acting in bad faith or with a malicious purpose. The\nimmunity described in this subsection shall apply not only with respect to the acts of making a\nreport, testifying in a judicial proceeding arising from a report, providing protective services, or\nparticipating in a required investigation but also shall apply with respect to the content of the\ninformation communicated in such acts."
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
+    "id":  "suspected-abuse",
+    "title":  "Suspected Abuse",
+    "type":  "protocol",
+    "categoryPath":  [
+                         "General Protocols"
+                     ],
+    "status":  "active",
+    "effectiveDate":  "2026-06-08",
+    "lastRevised":  "",
+    "version":  "2026",
+    "tags":  [
+                 "suspected abuse",
+                 "child abuse",
+                 "elder abuse",
+                 "vulnerable adult",
+                 "mandatory reporting",
+                 "OCGA"
+             ],
+    "summary":  "Mandatory reporting, management, documentation, and statutory requirements for suspected abuse.",
+    "displayMode":  "native",
+    "content":  [
+                    {
+                        "type":  "paragraph",
+                        "text":  "All healthcare providers are obligated by law to report cases of suspected child, elder, or vulnerable adult abuse."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "text":  "Report all alleged or suspected abuse or neglect to the appropriate agency. Georgia Code requires providers to report incidents of abuse to their county\u0027s public children services agency, municipal or county peace officer."
+                    },
+                    {
+                        "type":  "warning",
+                        "text":  "Simply notifying hospital personnel about concerns of maltreatment does not meet mandated EMS reporting responsibilities. If any maltreatment is suspected, the EMS provider MUST, by law, notify the local public children\u0027s services agency or law enforcement as soon as possible."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "text":  "Physical abuse and neglect are often difficult to determine – the following are indicators of possible abuse:"
+                    },
+                    {
+                        "type":  "list",
+                        "items":  [
+                                      "Injuries scattered on many areas of the body.",
+                                      "Malnutrition or lack of cleanliness.",
+                                      "Any fracture in a child under 2 years of age.",
+                                      "Injuries in various stages of healing.",
+                                      "More injuries than are usually seen in other children of the same age."
+                                  ]
+                    },
+                    {
+                        "type":  "heading",
+                        "level":  2,
+                        "text":  "Initial Management"
+                    },
+                    {
+                        "type":  "warning",
+                        "text":  "DO NOT confront or become hostile to the parent or caregiver."
+                    },
+                    {
+                        "type":  "list",
+                        "items":  [
+                                      "Treat any obvious injuries."
+                                  ]
+                    },
+                    {
+                        "type":  "heading",
+                        "level":  3,
+                        "text":  "In Cases of Suspected Sexual Abuse or Assault"
+                    },
+                    {
+                        "type":  "list",
+                        "indent":  1,
+                        "items":  [
+                                      "Discourage patient from washing and/or using the restroom.",
+                                      "If the child/patient has not changed clothes, transport patient in these clothes.",
+                                      "If clothes have been removed but unwashed, bring clothes and underwear with patient in a paper (not plastic) bag.",
+                                      "Do not delay transport to search for evidence."
+                                  ]
+                    },
+                    {
+                        "type":  "warning",
+                        "text":  "If caregivers refuse to let you transport the child/patient after treatment, remain at the scene and notify law enforcement."
+                    },
+                    {
+                        "type":  "warning",
+                        "text":  "Contact Medical Control and advise of questionable injuries, but DO NOT report abuse and/or neglect over the radio."
+                    },
+                    {
+                        "type":  "heading",
+                        "level":  2,
+                        "text":  "Reporting"
+                    },
+                    {
+                        "type":  "list",
+                        "items":  [
+                                      "Report your suspicions to the ED physician.",
+                                      "Notify the local public children services agency or law enforcement as soon as possible. You are legally responsible to report your suspicions.",
+                                      "DO NOT initiate the report in front of the patient or caregiver."
+                                  ]
+                    },
+                    {
+                        "type":  "heading",
+                        "level":  2,
+                        "text":  "Documentation"
+                    },
+                    {
+                        "type":  "list",
+                        "items":  [
+                                      "Document any statement the child/adult patient makes in their own words. All verbatim statements made by the patient, the parent, or caregiver should be placed in quotation marks along with the source of the statement.",
+                                      "Document unexplained injuries, discrepant history, delays in seeking medical care, and repeated episodes of suspicious injuries.",
+                                      "Document history, physical exam findings, environmental surroundings, and ED notification on the pre-hospital patient care report."
+                                  ]
+                    },
+                    {
+                        "type":  "heading",
+                        "level":  2,
+                        "text":  "The Law"
+                    },
+                    {
+                        "type":  "legal-text",
+                        "text":  "TITLE 19:  DOMESTIC RELATIONS\nCHAPTER 7: PARENT AND CHILD RELATIONSHIP GENERALLY\nARTICLE 1: GENERAL PROVISIONS\nOCGA § 19-7-5 (2024)\n(e)(2) With respect to reporting required by subsection (c) of this Code section, an oral report by telephone\nor other oral communication or a written report by electronic submission or facsimile shall be made\nimmediately, but in no case later than 24 hours from the time there is reasonable cause to believe that\nsuspected child abuse has occurred. When a report is being made by electronic submission or facsimile to\nthe Division of Family and Children Services of the Department of Human Services, it shall be done in the\nmanner specified by the division. Oral reports shall be followed by a later report in writing, if requested, to a\nchild welfare agency providing protective services, as designated by the Division of Family and Children\nServices of the Department of Human Services, or, in the absence of such agency, to an appropriate police\nauthority or district attorney. Such report shall be provided to military law enforcement, if applicable. If a\nreport of child abuse is made to the child welfare agency or independently discovered by the agency, and\nthe agency has reasonable cause to believe such report is true or the report contains any allegation or\nevidence of child abuse, then the agency shall immediately notify the appropriate police authority or district\nattorney and notify military law enforcement, if applicable. Such reports shall contain the names and\naddresses of the child and the child\u0027s parents or caretakers, if known, the child\u0027s age, the nature and extent\nof the child\u0027s injuries, including any evidence of previous injuries, and any other information that the\nreporting person believes might be helpful in establishing the cause of the injuries and the identity of the\nperpetrator. Photographs of the child\u0027s injuries to be used as documentation in support of allegations by\nhospital employees or volunteers, physicians, law enforcement personnel, school officials, or employees or\nvolunteers of legally mandated public or private child protective agencies may be taken without the\npermission of the child\u0027s parent or guardian. Such photographs shall be made available as soon as\npossible to the chief welfare agency providing protective services, the appropriate police authority, and\nmilitary law enforcement.\n(f) Any person or persons, partnership, firm, corporation, association, hospital, or other entity participating\nin the making of a report or causing a report to be made, and individuals who otherwise provide information\nor assistance, including, but not limited to, medical evaluations or consultations, in connection with a report\nmade to a child welfare agency providing protective services, an appropriate police authority, or military law\nenforcement pursuant to this Code section or any other law or participating in any judicial proceeding or\nany other proceeding resulting therefrom shall in so doing be immune from any civil or criminal liability that\nmight otherwise be incurred or imposed, provided that such participation pursuant to this Code section or\nany other law is made in good faith. Any person making a report, whether required by this Code section or\nnot, shall be immune from liability as provided in this subsection."
+                    },
+                    {
+                        "type":  "legal-text",
+                        "text":  "TITLE 31: HEALTH\nCHAPTER 8: CARE AND PROTECTION OF INDIGENT AND ELDERLY PATIENTS\nARTICLE 4: REPORTING ABUSE OR EXPLOITATION OF RESIDENTS IN LONG-TERM CARE\nFACILITIES\nOCGA § 31-8-82 (2024) REPORTING ABUSE OR EXPLOITATION; RECORDS\n(a) Any of the following people who have reasonable cause to believe that any resident or former resident\nhas been abused or exploited while residing in a long-term care facility shall immediately make a report\nas described in subsection (d) of this Code section by telephone or in person to the department and shall\nmake the report to the appropriate law enforcement agency or prosecuting attorney:\n1. (1) Any person required to report child abuse as provided in subsection (c) of Code\nSection 19-7-5;\n2. (2) Administrators, managers, or other employees of hospitals or long-term care facilities;\n3. (3) Physical therapists;\n4. (4) Occupational therapists;\n5. (5) Day-care personnel;\n6. (6) Coroners;\n7. (7) Medical examiners;\n8. (8) Emergency medical services personnel, as defined in Code Section 31-11-49;\n9. (9) Any person who has been certified as an emergency medical technician, cardiac\ntechnician, paramedic, or first responder pursuant to Chapter 11 of Title 31;\n10. (10) Employees of a public or private agency engaged in professional health related\nservices to residents; and\n11. (11) Clergy members.\n(b) Persons required to make a report pursuant to subsection (a) of this Code section shall also make a\nwritten report to the department within 24 hours after making the initial report.\n(c) Any other person who has knowledge that a resident or former resident has been abused or exploited\nwhile residing in a long-term care facility may report or cause a report to be made to the department or\nthe appropriate law enforcement agency.\n(d) A report of suspected abuse or exploitation shall include the following:\n(1) The name and address of the person making the report unless such person is not required to\nmake a report;\n(2) The name and address of the resident or former resident;\n(3) The name and address of the long-term care facility;\n(4) The nature and extent of any injuries or the condition resulting from the suspected abuse or\nexploitation;\n(5) The suspected cause of the abuse or exploitation; and\n(6) Any other information which the reporter believes might be helpful in determining the cause of\nthe resident\u0027s injuries or condition and in determining the identity of the person or persons\nresponsible for the abuse or exploitation."
+                    },
+                    {
+                        "type":  "legal-text",
+                        "text":  "TITLE 30: HANDICAPPED PERSONS\nCHAPTER 5: PROTECTION OF DISABLED ADULTS AND ELDER PERSONS\nOCGA § 30-5-4 (2024)\n(b)\n(1)\n(A) A report that a disabled adult or elder person is in need of protective services or has\nbeen the victim of abuse, neglect, or exploitation shall be made to an adult protection\nagency providing protective services as designated by the department and to an\nappropriate law enforcement agency or prosecuting attorney. If a report of a disabled adult\nor elder person abuse, neglect, or exploitation is made to an adult protection agency or\nindependently discovered by the agency, then the agency shall immediately make a\nreasonable determination based on available information as to whether the incident\nalleges actions by an individual, other than the disabled adult or elder person, that\nconstitute a crime and include such information in their report. If a crime is suspected, the\nreport shall immediately be forwarded to the appropriate law enforcement agency or\nprosecuting attorney. During an adult protection agency\u0027s investigation, it shall be under a\ncontinuing obligation to immediately report the discovery of any evidence that may\nconstitute a crime.\n(B) If the disabled adult or person is 65 years of age or older and is a resident, a report\nshall be made in accordance with Article 4 of Chapter 8 of Title 31. If a report made in\naccordance with the provisions of this Code section alleges that the abuse or exploitation\noccurred within a long-term care facility, such report shall be investigated in accordance\nwith Articles 3 and 4 of Chapter 8 of Title 31.\n(2) Reporting required by subparagraph (A) of paragraph (1) of this subsection may be made by\noral or written communication. Such report shall include the name and address of the disabled\nadult or elder person and should include the name and address of the disabled adult\u0027s or elder\nperson\u0027s caretaker, the age of the disabled adult or elder person, the nature and extent of the\ndisabled adult\u0027s or elder person\u0027s injury or condition resulting from abuse, exploitation, or neglect,\nand other pertinent information.\n(3) When a report of a disabled adult\u0027s or elder person\u0027s abuse, neglect, or exploitation is originally\nreported to a law enforcement agency, it shall be forwarded by such agency to the director or his or\nher designee within 24 hours of receipt."
+                    },
+                    {
+                        "type":  "legal-text",
+                        "text":  "TITLE 30: HANDICAPPED PERSONS\nCHAPTER 5: PROTECTION OF DISABLED ADULTS AND ELDER PERSONS\nOCGA § 30-5-4 (2024)\n(c) Anyone who makes a report pursuant to this chapter, who testifies in any judicial proceeding\narising from the report, who provides protective services, who participates in a required\ninvestigation, or who participates on an Adult Abuse, Neglect, and Exploitation Multidisciplinary\nTeam under the provisions of this chapter shall be immune from any civil liability or criminal\nprosecution on account of such report or testimony or participation, unless such person acted in\nbad faith, with a malicious purpose, or was a party to such crime or fraud. Any financial institution\nor investment company, including without limitation officers and directors thereof, that is an\nemployer of anyone who makes a report pursuant to this chapter in his or her capacity as an\nemployee, or who testifies in any judicial proceeding arising from a report made in his or her\ncapacity as an employee, or who participates in a required investigation under the provisions of\nthis chapter in his or her capacity as an employee, shall be immune from any civil liability or\ncriminal prosecution on account of such report or testimony or participation of its employee, unless\nsuch financial institution or investment company knew or should have known that the employee\nacted in bad faith or with a malicious purpose and failed to take reasonable and available\nmeasures to prevent such employee from acting in bad faith or with a malicious purpose. The\nimmunity described in this subsection shall apply not only with respect to the acts of making a\nreport, testifying in a judicial proceeding arising from a report, providing protective services, or\nparticipating in a required investigation but also shall apply with respect to the content of the\ninformation communicated in such acts."
+                    }
+                ],
+    "plainText":  "Suspected Abuse. All healthcare providers are obligated by law to report cases of suspected child, elder, or vulnerable adult abuse.",
+    "needsReview":  false
+},
     {
       "id": "patient-initiated-refusal-of-care",
       "title": "Patient Initiated Refusal of Care",
