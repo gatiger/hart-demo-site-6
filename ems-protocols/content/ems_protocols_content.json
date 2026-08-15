@@ -1772,60 +1772,72 @@
       "id": "communications",
       "title": "Communications",
       "type": "protocol",
-      "categoryPath": [
-        "General Protocols"
-      ],
+      "categoryPath": ["General Protocols"],
       "status": "active",
       "effectiveDate": "2026-06-08",
       "lastRevised": "",
       "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 14,
-        "pageEnd": 14,
-        "pageLabel": "14"
-      },
-      "summary": "",
+      "tags": ["communications", "radio report", "medical control", "receiving facility", "patient privacy"],
+      "summary": "Required content and privacy limitations for radio reports to Medical Control and receiving facilities.",
+      "displayMode": "native",
       "content": [
+        {
+          "type": "paragraph",
+          "text": "When contacting Medical Control or a receiving facility, patient reports should be brief and clear."
+        },
+        {
+          "type": "warning",
+          "text": "Do not use 10-codes or other signals when giving a patient report. Use clear, plain language."
+        },
         {
           "type": "heading",
           "level": 2,
-          "text": "Communications"
+          "text": "Patient Radio Report"
         },
         {
           "type": "paragraph",
-          "text": "When contacting Medical Control and receiving facilities, patient reports should be brief and clear. 10 Codes and other signals should NOT be used. A typical patient radio report should"
+          "text": "A typical patient radio report should include the following information:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Identify the unit by service, unit number, and level of capability (BLS or ALS).",
+            "Specify whether the unit is en route or on scene and whether the response is emergency or non-emergency.",
+            "Patient age and sex.",
+            "Chief complaint or mechanism of injury.",
+            "Level of consciousness using AVPU.",
+            "Vital signs and pertinent clinical findings.",
+            "Pertinent patient medications, allergies, and past medical history.",
+            "Care and treatment provided.",
+            "The patient's response to treatment.",
+            "A request for any needed orders.",
+            "Estimated time of arrival (ETA)."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "According to local protocol and the receiving facility's capabilities, the patient report may be called in as an alert or activation of the Trauma, Cardiac, or Stroke Team."
         },
         {
           "type": "heading",
-          "level": 3,
-          "text": "Include the following"
+          "level": 2,
+          "text": "Information Not Permitted Over the Radio"
         },
         {
           "type": "paragraph",
-          "text": "Identify Unit by service, number, and level of capability (BLS or ALS) Specify enroute or on scene (state whether Emergency or Non-Emergency) Identify patient age and sex Chief Complaint/Mechanism of Injury LOC: AVPU Vital Signs, pertinent clinical findings Pertinent patient medications, allergies, past medical history Care and treatment given Patient’s response to treatment Request for any orders ETA According to local protocol and capability of receiving facility, patient report may be called in as an Alert or Activation of Trauma, Cardiac, or Stroke Team."
+          "text": "The following information should not be transmitted over the radio:"
         },
         {
-          "type": "heading",
-          "level": 3,
-          "text": "The following information SHOULD NOT be transmitted over the radio"
-        },
-        {
-          "type": "paragraph",
-          "text": "Patient name Patient race Personal or Sensitive patient information (e.g., Social Security Number, History of AIDS, etc.)"
+          "type": "list",
+          "items": [
+            "Patient name.",
+            "Patient race.",
+            "Personal or sensitive patient information, including a Social Security number, history of AIDS, or similar protected information."
+          ]
         }
       ],
-      "plainText": "Communications\nWhen contacting Medical Control and receiving facilities, patient reports should be brief and\nclear.  10 Codes and other signals should NOT be used.  A typical patient radio report should\nInclude the following:\n•\nIdentify Unit by service, number, and level of capability (BLS or ALS)\n•\nSpecify enroute or on scene (state whether Emergency or Non-Emergency)\n•\nIdentify patient age and sex\n•\nChief Complaint/Mechanism of Injury\n•\nLOC: AVPU\n•\nVital Signs, pertinent clinical findings\n•\nPertinent patient medications, allergies, past medical history\n•\nCare and treatment given\n•\nPatient’s response to treatment\n•\nRequest for any orders\n•\nETA\nAccording to local protocol and capability of receiving facility, patient report may be called in as\nan Alert or Activation of Trauma, Cardiac, or Stroke Team.\nThe following information SHOULD NOT be transmitted over the radio:\n•\nPatient name\n•\nPatient race\n•\nPersonal or Sensitive patient information (e.g., Social Security Number, History of AIDS,\netc.)",
-      "pageText": [
-        {
-          "page": 14,
-          "text": "Communications\nWhen contacting Medical Control and receiving facilities, patient reports should be brief and\nclear.  10 Codes and other signals should NOT be used.  A typical patient radio report should\nInclude the following:\n•\nIdentify Unit by service, number, and level of capability (BLS or ALS)\n•\nSpecify enroute or on scene (state whether Emergency or Non-Emergency)\n•\nIdentify patient age and sex\n•\nChief Complaint/Mechanism of Injury\n•\nLOC: AVPU\n•\nVital Signs, pertinent clinical findings\n•\nPertinent patient medications, allergies, past medical history\n•\nCare and treatment given\n•\nPatient’s response to treatment\n•\nRequest for any orders\n•\nETA\nAccording to local protocol and capability of receiving facility, patient report may be called in as\nan Alert or Activation of Trauma, Cardiac, or Stroke Team.\nThe following information SHOULD NOT be transmitted over the radio:\n•\nPatient name\n•\nPatient race\n•\nPersonal or Sensitive patient information (e.g., Social Security Number, History of AIDS,\netc.)"
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
+      "plainText": "Communications. Patient reports to Medical Control and receiving facilities should be brief, clear, and given in plain language without 10-codes. Reports should identify the unit, response status, patient demographics, complaint or mechanism, AVPU, vital signs, clinical findings, history, treatment, response, requested orders, and ETA. Do not transmit the patient's name, race, or personal or sensitive information over the radio.",
+      "needsReview": false
     },
     {
       "id": "control-of-patient-care-physician-on-scene",
