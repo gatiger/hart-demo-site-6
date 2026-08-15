@@ -106,7 +106,7 @@
         },
         {
           "id": "handling-patients-personal-property",
-          "title": "Handling Patient’s Personal Property",
+          "title": "Handling Patient Personal Property",
           "type": "protocol",
           "pageStart": 20,
           "pageEnd": 21,
@@ -1998,48 +1998,95 @@
     },
     {
       "id": "handling-patients-personal-property",
-      "title": "Handling Patient’s Personal Property",
+      "title": "Handling Patient Personal Property",
       "type": "protocol",
-      "categoryPath": [
-        "General Protocols"
-      ],
+      "categoryPath": ["General Protocols"],
       "status": "active",
       "effectiveDate": "2026-06-08",
       "lastRevised": "",
       "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 20,
-        "pageEnd": 21,
-        "pageLabel": "20-21"
-      },
-      "summary": "",
+      "tags": ["personal property", "patient valuables", "documentation", "chain of custody", "patient care report"],
+      "summary": "Guidelines for handling, documenting, transporting, and transferring patient personal property.",
+      "displayMode": "native",
       "content": [
         {
-          "type": "heading",
-          "level": 2,
-          "text": "Handling Patient Personal Property"
+          "type": "warning",
+          "text": "EMS Personnel's first responsibility is to treat the patient. Handling a patient's valuables or personal property is secondary to proper pre-hospital emergency care. However, special attention needs to be paid to how a patient's personal property is handled by EMS personnel (when handling it cannot be avoided). In “load and go” situations, patient care and transport are the priority."
         },
         {
           "type": "paragraph",
-          "text": "EMS Personnel’s first responsibility is to treat the patient. Handling a patient’s valuables or personal property is secondary to proper pre-hospital emergency care. However, special attention needs to be paid to how a patient’s personal property is handled by EMS personnel (when handling it cannot be avoided). In “load and go” situations, patient care and transport are the priority. Proper procedure is determined by location of the patient (at home, incident scene, etc.) whether family members or friends of the patient are present, whether law enforcement personnel is present, and other factors. Every situation cannot be described here, but the following will serve as a guideline. Patient’s personal property could include but not be limited to: glasses, dentures, wallets, money, watches, jewelry, clothing, medications and keys. Patient at Home or a Residence Advise and encourage the patient to leave all unnecessary personal items and valuables at home or with a trusted family member or friend. Patient medications, in most cases, will need to go to the hospital either with the patient or carried by a family member or friend. If it is necessary to transport these medications with the patient, they should be treated like any other patient’s valuables. Do not remove a watch, jewelry, or wallet from a patient unless it is necessary to treat the patient, (e.g. start an IV). If it is necessary to do so, tell the patient you are removing the item. Give the item to the patient (if conscious and alert) or to a family member (if present). Document the item(s) and disposition of personal property on the patient care report. If possible, have another medic or law enforcement officer witness what you did with the patient’s personal property. If the patient insists on taking personal items with him/her, the patient must be alert enough to maintain possession of the items. If you are concerned about the security of the patient’s home or the premises you are leaving, notify law enforcement. Patient at Incident Scene or Not at Home If the patient is conscious, encourage the patient to give personal property and valuables to a responsible person of choice. If you have to remove any items from the patient (e.g. watch, jewelry, etc.) to treat the patient, return the items to the patient if possible. Document the details of the situation on the patient care report and have a third-party witness via signature. If law enforcement presents you with a patient’s personal items, request that law enforcement present the items to the patient (if conscious and alert), to the patient’s family (if available), or to hospital staff. If personal items or valuables are handled by first responders or bystanders before they were presented to you, document this with as much detail as possible on the patient care report. Handling Patient Personal Property (cont.) If a patient is disoriented or unconscious, give the patient’s personal items to a family member or law enforcement officer if possible. Document any incident involving valuables on the patient care report and obtain a signature from the person receiving the valuables. If a family member or law enforcement officer is unavailable, transport the valuables with the patient. Taking Responsibility of the Patient’s Personal Property When the medic finds themselves in possession of a patient’s personal property, carefully document the individual items and what was done with those items. If possible, place the item(s) in a container (such as a zip lock bag or plastic garbage bag) used for the sole purpose of containing the patient’s personal property. Make a list of the items placed in each bag, and secure the list in, or on, the bag. Medications should be listed separately. Currency should be listed by amount. Have your partner or a law enforcement officer verify (by signature) the list of items included in the container. Upon arrival at the hospital, turn the container over to the appropriate hospital staff member, verify content, and obtain a signature from the individual receiving the property. Retain a copy of the list (with the signature) and attach to the patient care report. If EMS personnel locate any patient’s property within the ambulance after care of the patient has been transferred to the receiving facility, EMS personnel should make every effort to ensure the patient’s property is returned to the patient. Any property that has been located after transfer of care should be returned to the patient, witnessed by hospital staff, and documented on an addendum to the patient care report."
-        }
-      ],
-      "plainText": "Handling Patient Personal Property\nEMS Personnel’s first responsibility is to treat the patient. Handling a patient’s valuables or\npersonal property is secondary to proper pre-hospital emergency care. However, special\nattention needs to be paid to how a patient’s personal property is handled by EMS personnel\n(when handling it cannot be avoided). In “load and go” situations, patient care and transport are\nthe priority.\nProper procedure is determined by location of the patient (at home, incident scene, etc.) whether\nfamily members or friends of the patient are present, whether law enforcement personnel is\npresent, and other factors. Every situation cannot be described here, but the following will serve\nas a guideline.\nPatient’s personal property could include but not be limited to: glasses, dentures, wallets, money,\nwatches, jewelry, clothing, medications and keys.\nPatient at Home or a Residence\nAdvise and encourage the patient to leave all unnecessary personal items and valuables at\nhome or with a trusted family member or friend.\nPatient medications, in most cases, will need to go to the hospital either with the patient or\ncarried by a family member or friend. If it is necessary to transport these medications with the\npatient, they should be treated like any other patient’s valuables.\nDo not remove a watch, jewelry, or wallet from a patient unless it is necessary to treat the\npatient, (e.g. start an IV). If it is necessary to do so, tell the patient you are removing the item.\nGive the item to the patient (if conscious and alert) or to a family member (if present). Document\nthe item(s) and disposition of personal property on the patient care report. If possible, have\nanother medic or law enforcement officer witness what you did with the patient’s personal\nproperty.\nIf the patient insists on taking personal items with him/her, the patient must be alert enough to\nmaintain possession of the items.\nIf you are concerned about the security of the patient’s home or the premises you are leaving,\nnotify law enforcement.\nPatient at Incident Scene or Not at Home\nIf the patient is conscious, encourage the patient to give personal property and valuables to a\nresponsible person of choice. If you have to remove any items from the patient (e.g. watch,\njewelry, etc.) to treat the patient, return the items to the patient if possible. Document the details\nof the situation on the patient care report and have a third-party witness via signature.\nIf law enforcement presents you with a patient’s personal items, request that law enforcement\npresent the items to the patient (if conscious and alert), to the patient’s family (if available), or to\nhospital staff.\nIf personal items or valuables are handled by first responders or bystanders before they were\npresented to you, document this with as much detail as possible on the patient care report.\nHandling Patient Personal Property (cont.)\nIf a patient is disoriented or unconscious, give the patient’s personal items to a family member or\nlaw enforcement officer if possible. Document any incident involving valuables on the patient care\nreport and obtain a signature from the person receiving the valuables. If a family member or law\nenforcement officer is unavailable, transport the valuables with the patient.\nTaking Responsibility of the Patient’s Personal Property\nWhen the medic finds themselves in possession of a patient’s personal property, carefully\ndocument the individual items and what was done with those items. If possible, place the item(s)\nin a container (such as a zip lock bag or plastic garbage bag) used for the sole purpose of\ncontaining the patient’s personal property. Make a list of the items placed in each bag, and\nsecure the list in, or on, the bag. Medications should be listed separately. Currency should be\nlisted by amount. Have your partner or a law enforcement officer verify (by signature) the list of\nitems included in the container. Upon arrival at the hospital, turn the container over to the\nappropriate hospital staff member, verify content, and obtain a signature from the individual\nreceiving the property.\nRetain a copy of the list (with the signature) and attach to the patient care report.\nIf EMS personnel locate any patient’s property within the ambulance after care of the patient has\nbeen transferred to the receiving facility, EMS personnel should make every effort to ensure the\npatient’s property is returned to the patient. Any property that has been located after transfer of\ncare should be returned to the patient, witnessed by hospital staff, and documented on an\naddendum to the patient care report.",
-      "pageText": [
-        {
-          "page": 20,
-          "text": "Handling Patient Personal Property\nEMS Personnel’s first responsibility is to treat the patient. Handling a patient’s valuables or\npersonal property is secondary to proper pre-hospital emergency care. However, special\nattention needs to be paid to how a patient’s personal property is handled by EMS personnel\n(when handling it cannot be avoided). In “load and go” situations, patient care and transport are\nthe priority.\nProper procedure is determined by location of the patient (at home, incident scene, etc.) whether\nfamily members or friends of the patient are present, whether law enforcement personnel is\npresent, and other factors. Every situation cannot be described here, but the following will serve\nas a guideline.\nPatient’s personal property could include but not be limited to: glasses, dentures, wallets, money,\nwatches, jewelry, clothing, medications and keys.\nPatient at Home or a Residence\nAdvise and encourage the patient to leave all unnecessary personal items and valuables at\nhome or with a trusted family member or friend.\nPatient medications, in most cases, will need to go to the hospital either with the patient or\ncarried by a family member or friend. If it is necessary to transport these medications with the\npatient, they should be treated like any other patient’s valuables.\nDo not remove a watch, jewelry, or wallet from a patient unless it is necessary to treat the\npatient, (e.g. start an IV). If it is necessary to do so, tell the patient you are removing the item.\nGive the item to the patient (if conscious and alert) or to a family member (if present). Document\nthe item(s) and disposition of personal property on the patient care report. If possible, have\nanother medic or law enforcement officer witness what you did with the patient’s personal\nproperty.\nIf the patient insists on taking personal items with him/her, the patient must be alert enough to\nmaintain possession of the items.\nIf you are concerned about the security of the patient’s home or the premises you are leaving,\nnotify law enforcement.\nPatient at Incident Scene or Not at Home\nIf the patient is conscious, encourage the patient to give personal property and valuables to a\nresponsible person of choice. If you have to remove any items from the patient (e.g. watch,\njewelry, etc.) to treat the patient, return the items to the patient if possible. Document the details\nof the situation on the patient care report and have a third-party witness via signature.\nIf law enforcement presents you with a patient’s personal items, request that law enforcement\npresent the items to the patient (if conscious and alert), to the patient’s family (if available), or to\nhospital staff.\nIf personal items or valuables are handled by first responders or bystanders before they were\npresented to you, document this with as much detail as possible on the patient care report."
+          "text": "Proper procedure is determined by location of the patient (at home, incident scene, etc.), whether family members or friends of the patient are present, whether law enforcement personnel is present, and other factors. Every situation cannot be described here, but the following will serve as a guideline."
         },
         {
-          "page": 21,
-          "text": "Handling Patient Personal Property (cont.)\nIf a patient is disoriented or unconscious, give the patient’s personal items to a family member or\nlaw enforcement officer if possible. Document any incident involving valuables on the patient care\nreport and obtain a signature from the person receiving the valuables. If a family member or law\nenforcement officer is unavailable, transport the valuables with the patient.\nTaking Responsibility of the Patient’s Personal Property\nWhen the medic finds themselves in possession of a patient’s personal property, carefully\ndocument the individual items and what was done with those items. If possible, place the item(s)\nin a container (such as a zip lock bag or plastic garbage bag) used for the sole purpose of\ncontaining the patient’s personal property. Make a list of the items placed in each bag, and\nsecure the list in, or on, the bag. Medications should be listed separately. Currency should be\nlisted by amount. Have your partner or a law enforcement officer verify (by signature) the list of\nitems included in the container. Upon arrival at the hospital, turn the container over to the\nappropriate hospital staff member, verify content, and obtain a signature from the individual\nreceiving the property.\nRetain a copy of the list (with the signature) and attach to the patient care report.\nIf EMS personnel locate any patient’s property within the ambulance after care of the patient has\nbeen transferred to the receiving facility, EMS personnel should make every effort to ensure the\npatient’s property is returned to the patient. Any property that has been located after transfer of\ncare should be returned to the patient, witnessed by hospital staff, and documented on an\naddendum to the patient care report."
+          "type": "paragraph",
+          "text": "Patient's personal property could include but not be limited to: glasses, dentures, wallets, money, watches, jewelry, clothing, medications and keys."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Patient at Home or a Residence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Advise and encourage the patient to leave all unnecessary personal items and valuables at home or with a trusted family member or friend."
+        },
+        {
+          "type": "paragraph",
+          "text": "Patient medications, in most cases, will need to go to the hospital either with the patient or carried by a family member or friend. If it is necessary to transport these medications with the patient, they should be treated like any other patient's valuables."
+        },
+        {
+          "type": "paragraph",
+          "text": "Do not remove a watch, jewelry, or wallet from a patient unless it is necessary to treat the patient (e.g. start an IV). If it is necessary to do so, tell the patient you are removing the item. Give the item to the patient (if conscious and alert) or to a family member (if present). Document the item(s) and disposition of personal property on the patient care report. If possible, have another medic or law enforcement officer witness what you did with the patient's personal property."
+        },
+        {
+          "type": "paragraph",
+          "text": "If the patient insists on taking personal items with him/her, the patient must be alert enough to maintain possession of the items."
+        },
+        {
+          "type": "paragraph",
+          "text": "If you are concerned about the security of the patient's home or the premises you are leaving, notify law enforcement."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Patient at Incident Scene or Not at Home"
+        },
+        {
+          "type": "paragraph",
+          "text": "If the patient is conscious, encourage the patient to give personal property and valuables to a responsible person of choice. If you have to remove any items from the patient (e.g. watch, jewelry, etc.) to treat the patient, return the items to the patient if possible. Document the details of the situation on the patient care report and have a third-party witness via signature."
+        },
+        {
+          "type": "paragraph",
+          "text": "If law enforcement presents you with a patient's personal items, request that law enforcement present the items to the patient (if conscious and alert), to the patient's family (if available), or to hospital staff."
+        },
+        {
+          "type": "paragraph",
+          "text": "If personal items or valuables are handled by first responders or bystanders before they were presented to you, document this with as much detail as possible on the patient care report."
+        },
+        {
+          "type": "paragraph",
+          "text": "If a patient is disoriented or unconscious, give the patient's personal items to a family member or law enforcement officer if possible. Document any incident involving valuables on the patient care report and obtain a signature from the person receiving the valuables. If a family member or law enforcement officer is unavailable, transport the valuables with the patient."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Taking Responsibility of the Patient's Personal Property"
+        },
+        {
+          "type": "paragraph",
+          "text": "When the medic finds themselves in possession of a patient's personal property, carefully document the individual items and what was done with those items. If possible, place the item(s) in a container (such as a zip lock bag or plastic garbage bag) used for the sole purpose of containing the patient's personal property. Make a list of the items placed in each bag, and secure the list in, or on, the bag. Medications should be listed separately. Currency should be listed by amount. Have your partner or a law enforcement officer verify (by signature) the list of items included in the container. Upon arrival at the hospital, turn the container over to the appropriate hospital staff member, verify content, and obtain a signature from the individual receiving the property."
+        },
+        {
+          "type": "paragraph",
+          "text": "Retain a copy of the list (with the signature) and attach to the patient care report."
+        },
+        {
+          "type": "paragraph",
+          "text": "If EMS personnel locate any patient's property within the ambulance after care of the patient has been transferred to the receiving facility, EMS personnel should make every effort to ensure the patient's property is returned to the patient. Any property that has been located after transfer of care should be returned to the patient, witnessed by hospital staff, and documented on an addendum to the patient care report."
         }
       ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
+      "plainText": "Handling Patient Personal Property. EMS Personnel's first responsibility is to treat the patient. Handling a patient's valuables or personal property is secondary to proper pre-hospital emergency care.",
+      "needsReview": false
     },
     {
       "id": "safe-transport-of-pediatric-patients",
