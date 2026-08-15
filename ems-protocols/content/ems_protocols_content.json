@@ -2917,7 +2917,7 @@
       "needsReview": false
     },    {
       "id": "pain-management",
-      "title": "Pain Management",
+      "title": "Pediatric Pain Management",
       "type": "protocol",
       "categoryPath": [
         "Pediatric Clinical Protocols"
@@ -2926,50 +2926,324 @@
       "effectiveDate": "2026-06-08",
       "lastRevised": "",
       "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 37,
-        "pageEnd": 38,
-        "pageLabel": "37-38"
-      },
-      "summary": "",
+      "tags": [
+        "pediatric pain",
+        "pain scale",
+        "analgesia",
+        "Wong-Baker FACES"
+      ],
+      "summary": "Pediatric assessment, supportive care, medication options, reassessment, and pain-rating guidance.",
+      "displayMode": "native",
       "content": [
         {
           "type": "heading",
           "level": 2,
-          "text": "Pediatric Pain Management"
+          "text": "First Impression (Pediatric Assessment Triangle)",
+          "links": [
+            {
+              "text": "Pediatric Assessment Triangle",
+              "protocolId": "pediatric-assessment-triangle"
+            }
+          ]
         },
         {
-          "type": "paragraph",
-          "text": "First Impression (Pediatric Assessment Triangle) Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry. Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds. Circulation – observe the skin color for pallor, mottling, and/or cyanosis. Primary Survey Ensure airway- ensure patency and proper positioning. Consider Spinal Motion Restriction if evidence of trauma. Assess Breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%. Assist with BVM if ineffective respiratory effort. Assess Circulation – manage bleeding and/or shock appropriately. Assess Disability – assess LOC. Exposure/Environment – expose injuries as needed. Secondary Assessment and History Monitor vital signs and oxygen saturation. Initiate cardiac monitoring. OPQRST/SAMPLE history Physical Exam Place patient in position of comfort. Immobilize any obvious injuries. Elevate injured extremities, if possible Consider application of cold pack(s) Keep the Patient NPO Initiate IV/IO of Normal Saline KVO. . If fluid resuscitation is needed, 20 ml/kg bolus IV/IO. See Shock Protocol."
+          "type": "list",
+          "items": [
+            "Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.",
+            "Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.",
+            "Circulation – observe the skin color for pallor, mottling, and/or cyanosis."
+          ]
         },
         {
           "type": "heading",
-          "level": 3,
-          "text": "Document"
+          "level": 2,
+          "text": "Primary Survey"
         },
         {
-          "type": "paragraph",
-          "text": "Vital Signs OPQRST/SAMPLE Cardiac rhythm Treatment Pain Scale Communication with Medical Control Pediatric Pain Management (Continued) Assess the patient’s pain Ages 3-8 years – use the Wong-Baker FACES scale (below) Ages 8-18 years – use the numerical 1-10 scale. If pain scale is < 6, consider Toradol. Toradol – 0.5 mg/kg IV or IM slow push. Max Dose – 15 mg. If pain scale is > 6 consider Morphine or Fentanyl Morphine – 0.1 mg/kg IV/IO/IM slow push. Max Dose – 10 mg. Fentanyl – 1 mcg/kg IV/IO/IM/IN slow push. Max Dose – 50 mcg. Consider as a third-tier agent: Contact Medical control prior to administration. Ketamine – 0.1 - 0.2 mg/kg slow push. Max Dose – 25 mg. Monitor respiratory drive and systolic blood pressure. After intervention, reassess mental status, pain level, and signs of respiratory depression every 5 minutes. Have Naloxone available. If respirations become depressed, administer Naloxone 0.01mg/kg IV/IO/IM/IN slow push. (If no clinical improvement, 0.1 mg/kg may be administered. Max Dose – 2 mg. If patient becomes nauseated or vomits, administer Ondansetron (Zofran) 0.1 mg/kg IV/IO slow push. Max Dose – 4 mg"
-        }
-      ],
-      "plainText": "Pediatric Pain Management\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe the skin color for pallor, mottling, and/or cyanosis.\nPrimary Survey\n•\nEnsure airway- ensure patency and proper positioning.\no\nConsider Spinal Motion Restriction if evidence of trauma.\n•\nAssess Breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%.\no\nAssist with BVM if ineffective respiratory effort.\n•\nAssess Circulation – manage bleeding and/or shock appropriately.\n•\nAssess Disability – assess LOC.\n•\nExposure/Environment – expose injuries as needed.\nSecondary Assessment and History\n•\nMonitor vital signs and oxygen saturation.\n•\nInitiate cardiac monitoring.\n•\nOPQRST/SAMPLE history\n•\nPhysical Exam\n•\nPlace patient in position of comfort.\n•\nImmobilize any obvious injuries.\no\nElevate injured extremities, if possible\no\nConsider application of cold pack(s)\n•\nKeep the Patient NPO\n•\nInitiate IV/IO of Normal Saline KVO.\no\n. If fluid resuscitation is needed, 20 ml/kg bolus IV/IO. See Shock Protocol.\nDocument:\n•\nVital Signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment\n•\nPain Scale\n•\nCommunication\nwith Medical\nControl\nPediatric Pain Management (Continued)\nAssess the patient’s pain\no\nAges 3-8 years – use the Wong-Baker FACES scale (below)\no\nAges 8-18 years – use the numerical 1-10 scale.\n•\nIf pain scale is < 6, consider Toradol.\no\nToradol – 0.5 mg/kg IV or IM slow push.  Max Dose – 15 mg.\n•\nIf pain scale is > 6 consider Morphine or Fentanyl\no\nMorphine – 0.1 mg/kg IV/IO/IM slow push.  Max Dose – 10 mg.\no\nFentanyl – 1 mcg/kg IV/IO/IM/IN slow push. Max Dose – 50 mcg.\n•\nConsider as a third-tier agent: Contact Medical control prior to administration.\no\nKetamine – 0.1 - 0.2 mg/kg slow push. Max Dose – 25 mg.\n▪\nMonitor respiratory drive and systolic blood pressure.\nAfter intervention, reassess mental status, pain level, and signs of respiratory\ndepression every 5 minutes.  Have Naloxone available.\n•\nIf respirations become depressed, administer Naloxone 0.01mg/kg IV/IO/IM/IN slow push. (If no\nclinical improvement, 0.1 mg/kg may be administered. Max Dose – 2 mg.\n•\nIf patient becomes nauseated or vomits,\no\nadminister Ondansetron (Zofran) 0.1 mg/kg IV/IO slow push. Max Dose – 4 mg",
-      "pageText": [
-        {
-          "page": 37,
-          "text": "Pediatric Pain Management\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe the skin color for pallor, mottling, and/or cyanosis.\nPrimary Survey\n•\nEnsure airway- ensure patency and proper positioning.\no\nConsider Spinal Motion Restriction if evidence of trauma.\n•\nAssess Breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%.\no\nAssist with BVM if ineffective respiratory effort.\n•\nAssess Circulation – manage bleeding and/or shock appropriately.\n•\nAssess Disability – assess LOC.\n•\nExposure/Environment – expose injuries as needed.\nSecondary Assessment and History\n•\nMonitor vital signs and oxygen saturation.\n•\nInitiate cardiac monitoring.\n•\nOPQRST/SAMPLE history\n•\nPhysical Exam\n•\nPlace patient in position of comfort.\n•\nImmobilize any obvious injuries.\no\nElevate injured extremities, if possible\no\nConsider application of cold pack(s)\n•\nKeep the Patient NPO\n•\nInitiate IV/IO of Normal Saline KVO.\no\n. If fluid resuscitation is needed, 20 ml/kg bolus IV/IO. See Shock Protocol.\nDocument:\n•\nVital Signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment\n•\nPain Scale\n•\nCommunication\nwith Medical\nControl"
+          "type": "list",
+          "items": [
+            {
+              "text": "Ensure airway – ensure patency and proper positioning.",
+              "bold": ["Ensure airway"]
+            }
+          ]
         },
         {
-          "page": 38,
-          "text": "Pediatric Pain Management (Continued)\nAssess the patient’s pain\no\nAges 3-8 years – use the Wong-Baker FACES scale (below)\no\nAges 8-18 years – use the numerical 1-10 scale.\n•\nIf pain scale is < 6, consider Toradol.\no\nToradol – 0.5 mg/kg IV or IM slow push.  Max Dose – 15 mg.\n•\nIf pain scale is > 6 consider Morphine or Fentanyl\no\nMorphine – 0.1 mg/kg IV/IO/IM slow push.  Max Dose – 10 mg.\no\nFentanyl – 1 mcg/kg IV/IO/IM/IN slow push. Max Dose – 50 mcg.\n•\nConsider as a third-tier agent: Contact Medical control prior to administration.\no\nKetamine – 0.1 - 0.2 mg/kg slow push. Max Dose – 25 mg.\n▪\nMonitor respiratory drive and systolic blood pressure.\nAfter intervention, reassess mental status, pain level, and signs of respiratory\ndepression every 5 minutes.  Have Naloxone available.\n•\nIf respirations become depressed, administer Naloxone 0.01mg/kg IV/IO/IM/IN slow push. (If no\nclinical improvement, 0.1 mg/kg may be administered. Max Dose – 2 mg.\n•\nIf patient becomes nauseated or vomits,\no\nadminister Ondansetron (Zofran) 0.1 mg/kg IV/IO slow push. Max Dose – 4 mg"
+          "type": "list",
+          "indent": 1,
+          "items": [
+            {
+              "text": "Consider Spinal Motion Restriction if evidence of trauma.",
+              "links": [
+                {
+                  "text": "Spinal Motion Restriction",
+                  "protocolId": "spinal-motion-restriction"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "text": "Assess Breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 ≥ 94%.",
+              "bold": ["Assess Breathing", "Maintain SpO2 ≥ 94%."]
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "indent": 1,
+          "items": [
+            "Assist with BVM if ineffective respiratory effort."
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "text": "Assess Circulation – manage bleeding and/or shock appropriately.",
+              "bold": ["Assess Circulation"]
+            },
+            {
+              "text": "Assess Disability – assess LOC.",
+              "bold": ["Assess Disability"]
+            },
+            {
+              "text": "Exposure/Environment – expose injuries as needed.",
+              "bold": ["Exposure/Environment"]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Secondary Assessment and History"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Monitor vital signs and oxygen saturation.",
+            "Initiate cardiac monitoring.",
+            "OPQRST/SAMPLE history",
+            "Physical Exam",
+            "Place patient in position of comfort.",
+            {
+              "text": "Immobilize any obvious injuries.",
+              "bold": ["Immobilize any obvious injuries."]
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "indent": 1,
+          "items": [
+            "Elevate injured extremities, if possible",
+            "Consider application of cold pack(s)"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "Keep the Patient NPO",
+            {
+              "text": "Initiate IV/IO of Normal Saline KVO.",
+              "links": [
+                {
+                  "text": "Normal Saline",
+                  "protocolId": "normal-saline"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "indent": 1,
+          "items": [
+            {
+              "text": "If fluid resuscitation is needed, 20 ml/kg bolus IV/IO. See Shock Protocol.",
+              "links": [
+                {
+                  "text": "Shock Protocol",
+                  "protocolId": "shock-sepsis-management"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "documentation-card",
+          "title": "Document:",
+          "image": "assets/legend-documentation.webp",
+          "alt": "Patient care documentation reminder symbol",
+          "items": [
+            "Vital Signs",
+            "OPQRST/SAMPLE",
+            "Cardiac rhythm",
+            "Treatment",
+            "Pain Scale",
+            "Communication with Medical Control"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Assess the patient’s pain"
+        },
+        {
+          "type": "list",
+          "indent": 1,
+          "items": [
+            "Ages 3-8 years – use the Wong-Baker FACES scale (below)",
+            "Ages 8-18 years – use the numerical 1-10 scale."
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "text": "If pain scale is < 6, consider Toradol.",
+              "links": [
+                {
+                  "text": "Toradol",
+                  "protocolId": "ketorolac-toradol"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "indent": 1,
+          "items": [
+            {
+              "text": "Toradol – 0.5 mg/kg IV or IM slow push. Max Dose – 15 mg.",
+              "bold": ["0.5 mg/kg IV or IM slow push.", "Max Dose – 15 mg."],
+              "links": [
+                {
+                  "text": "Toradol",
+                  "protocolId": "ketorolac-toradol"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "If pain scale is > 6 consider Morphine or Fentanyl."
+          ]
+        },
+        {
+          "type": "list",
+          "indent": 1,
+          "items": [
+            {
+              "text": "Morphine – 0.1 mg/kg IV/IO/IM slow push. Max Dose – 10 mg.",
+              "bold": ["0.1 mg/kg IV/IO/IM slow push.", "Max Dose – 10 mg."],
+              "links": [
+                {
+                  "text": "Morphine",
+                  "protocolId": "morphine-sulfate"
+                }
+              ]
+            },
+            {
+              "text": "Fentanyl – 1 mcg/kg IV/IO/IM/IN slow push. Max Dose – 50 mcg.",
+              "bold": ["1 mcg/kg IV/IO/IM/IN slow push.", "Max Dose – 50 mcg."],
+              "links": [
+                {
+                  "text": "Fentanyl",
+                  "protocolId": "fentanyl"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "text": "Consider as a third-tier agent: Contact Medical control prior to administration.",
+              "bold": ["Contact Medical control prior to administration."],
+              "red": ["Contact Medical control prior to administration."]
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "indent": 1,
+          "items": [
+            {
+              "text": "Ketamine – 0.1 - 0.2 mg/kg slow push. Max Dose – 25 mg.",
+              "bold": ["0.1 - 0.2 mg/kg slow push.", "Max Dose – 25 mg."],
+              "links": [
+                {
+                  "text": "Ketamine",
+                  "protocolId": "ketamine"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "indent": 1,
+          "items": [
+            "Monitor respiratory drive and systolic blood pressure."
+          ]
+        },
+        {
+          "type": "icon-note",
+          "image": "assets/legend-important.webp",
+          "alt": "Important protocol information",
+          "text": "After intervention, reassess mental status, pain level, and signs of respiratory depression every 5 minutes. Have Naloxone available.",
+          "bold": ["After intervention, reassess mental status, pain level, and signs of respiratory depression every 5 minutes. Have Naloxone available."],
+          "red": true
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "text": "If respirations become depressed, administer Naloxone 0.01mg/kg IV/IO/IM/IN slow push. (If no clinical improvement, 0.1 mg/kg may be administered.) Max Dose – 2 mg.",
+              "bold": ["0.01mg/kg IV/IO/IM/IN slow push.", "0.1 mg/kg", "Max Dose – 2 mg."],
+              "links": [
+                {
+                  "text": "Naloxone",
+                  "protocolId": "naloxone-narcan"
+                }
+              ]
+            },
+            "If patient becomes nauseated or vomits,"
+          ]
+        },
+        {
+          "type": "list",
+          "indent": 1,
+          "items": [
+            {
+              "text": "administer Ondansetron (Zofran) 0.1 mg/kg IV/IO slow push. Max Dose – 4 mg.",
+              "bold": ["0.1 mg/kg IV/IO slow push.", "Max Dose – 4 mg."],
+              "links": [
+                {
+                  "text": "Ondansetron",
+                  "protocolId": "ondansetron-zofran"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "protocol-image",
+          "image": "assets/pediatric-pain-rating-scale.png",
+          "alt": "Numeric Pain Rating Scale from zero to ten and Wong-Baker FACES Pain Rating Scale from no hurt to hurts worst"
         }
       ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText": "Pediatric Pain Management. First Impression using the Pediatric Assessment Triangle. Primary Survey. Secondary Assessment and History. Assess the patient’s pain using the Wong-Baker FACES scale for ages 3-8 years or the numerical 1-10 scale for ages 8-18 years. Medication options include Toradol, Morphine, Fentanyl, Ketamine, Naloxone, and Ondansetron.",
+      "needsReview": false
+    },    {
       "id": "shock-sepsis-management",
       "title": "Shock / Sepsis Management",
       "type": "protocol",

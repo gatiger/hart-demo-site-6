@@ -492,12 +492,13 @@ function renderDocumentExample(block, container) {
 
   container.appendChild(section);
 }
-function appendRichText(element, text, phrases = [], links = [], initials = []) {
+function appendRichText(element, text, phrases = [], links = [], initials = [], redPhrases = []) {
   const source = String(text || '');
   const boldPhrases = (phrases || []).filter(Boolean);
   const linkedPhrases = (links || []).filter(link => link && link.text && link.protocolId);
   const initialPhrases = (initials || []).filter(Boolean);
-  if (!boldPhrases.length && !linkedPhrases.length && !initialPhrases.length) {
+  const redTextPhrases = (redPhrases || []).filter(Boolean);
+  if (!boldPhrases.length && !linkedPhrases.length && !initialPhrases.length && !redTextPhrases.length) {
     element.textContent = source;
     return;
   }
@@ -505,6 +506,7 @@ function appendRichText(element, text, phrases = [], links = [], initials = []) 
   const tokens = [...new Set([
     ...linkedPhrases.map(link => link.text),
     ...initialPhrases,
+    ...redTextPhrases,
     ...boldPhrases
   ])].sort((a, b) => b.length - a.length);
   const escaped = tokens.map(phrase => phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
@@ -526,6 +528,11 @@ function appendRichText(element, text, phrases = [], links = [], initials = []) 
       initial.textContent = part.charAt(0);
       element.appendChild(initial);
       element.appendChild(document.createTextNode(part.slice(1)));
+    } else if (redTextPhrases.includes(part)) {
+      const red = document.createElement(boldPhrases.includes(part) ? 'strong' : 'span');
+      red.className = 'protocol-red-text';
+      red.textContent = part;
+      element.appendChild(red);
     } else if (boldPhrases.includes(part)) {
       const strong = document.createElement('strong');
       strong.textContent = part;
@@ -550,7 +557,7 @@ function appendRichText(element, text, phrases = [], links = [], initials = []) 
       textContainer = document.createElement('span');
       li.appendChild(textContainer);
     }
-    appendRichText(textContainer, itemData.text || '', itemData.bold || [], itemData.links || [], itemData.emphasizedInitials || []);
+    appendRichText(textContainer, itemData.text || '', itemData.bold || [], itemData.links || [], itemData.emphasizedInitials || [], itemData.red || []);
     if (itemData.children?.length) appendFlowItems(itemData.children, li);
     list.appendChild(li);
   }
@@ -626,7 +633,68 @@ function renderPediatricAssessmentFlow(block, container) {
 
   container.appendChild(flow);
 }
+function renderProtocolImage(block, container) {
+  const figure = document.createElement('figure');
+  figure.className = 'protocol-reference-image';
+  const image = document.createElement('img');
+  image.src = block.image;
+  image.alt = block.alt || '';
+  image.loading = 'lazy';
+  figure.appendChild(image);
+  if (block.caption) {
+    const caption = document.createElement('figcaption');
+    caption.textContent = block.caption;
+    figure.appendChild(caption);
+  }
+  container.appendChild(figure);
+}
+
+function renderIconNote(block, container) {
+  const section = document.createElement('section');
+  section.className = `protocol-icon-note ${block.red ? 'protocol-icon-note-red' : ''}`;
+  const image = document.createElement('img');
+  image.src = block.image;
+  image.alt = block.alt || '';
+  image.loading = 'lazy';
+  section.appendChild(image);
+  const text = document.createElement('p');
+  appendRichText(text, block.text || '', block.bold || [], block.links || [], [], block.red ? [block.text] : []);
+  section.appendChild(text);
+  container.appendChild(section);
+}
+
+function renderDocumentationCard(block, container) {
+  const section = document.createElement('section');
+  section.className = 'protocol-documentation-card';
+  const image = document.createElement('img');
+  image.src = block.image;
+  image.alt = block.alt || '';
+  image.loading = 'lazy';
+  section.appendChild(image);
+  const body = document.createElement('div');
+  const heading = document.createElement('h3');
+  heading.textContent = block.title || 'Document:';
+  body.appendChild(heading);
+  appendFlowItems(block.items || [], body);
+  section.appendChild(body);
+  container.appendChild(section);
+}
 function renderBlock(block, container) {
+  if (block.type === 'protocol-image') {
+    renderProtocolImage(block, container);
+    return;
+  }
+
+  if (block.type === 'icon-note') {
+    renderIconNote(block, container);
+    return;
+  }
+
+  if (block.type === 'documentation-card') {
+    renderDocumentationCard(block, container);
+    return;
+  }
+
   if (block.type === 'pediatric-assessment-flow') {
     renderPediatricAssessmentFlow(block, container);
     return;
@@ -650,7 +718,7 @@ function renderBlock(block, container) {
   if (block.type === 'heading') {
     const level = block.level === 2 ? 'h3' : 'h4';
     const h = document.createElement(level);
-    h.textContent = block.text;
+    appendRichText(h, block.text || '', block.bold || [], block.links || [], [], block.red || []);
     container.appendChild(h);
     return;
   }
@@ -670,7 +738,9 @@ function renderBlock(block, container) {
         li,
         cleanText,
         typeof item === 'object' ? item.bold : [],
-        typeof item === 'object' ? item.links : []
+        typeof item === 'object' ? item.links : [],
+        [],
+        typeof item === 'object' ? item.red : []
       );
       list.appendChild(li);
     }
@@ -691,7 +761,7 @@ function renderBlock(block, container) {
   }
 
   const p = document.createElement('p');
-  p.textContent = block.text || '';
+  appendRichText(p, block.text || '', block.bold || [], block.links || [], [], block.red || []);
   container.appendChild(p);
 }
 
