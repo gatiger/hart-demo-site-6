@@ -693,6 +693,12 @@ function renderStopControl(block, container) {
   image.alt = block.alt || `${block.title || 'STOP'} — ${block.text || 'CONTACT MEDICAL CONTROL'}`;
   image.loading = 'lazy';
   figure.appendChild(image);
+  if (block.note) {
+    const note = document.createElement('figcaption');
+    note.className = 'medical-control-note';
+    note.textContent = block.note;
+    figure.appendChild(note);
+  }
   container.appendChild(figure);
 }
 function renderScoreCallout(block, container) {

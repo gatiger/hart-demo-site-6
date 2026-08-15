@@ -4653,57 +4653,48 @@
       ],
       "plainText":"Pediatric Respiratory Distress. Assessment and treatment including airway management, respiratory medications, Medical Control, CPAP guidance, and documentation.","needsReview":false
     },    {
-      "id": "seizure",
-      "title": "Seizure",
-      "type": "protocol",
-      "categoryPath": [
-        "Pediatric Clinical Protocols",
-        "Pediatric Medical Emergencies"
+      "id":"seizure","title":"Pediatric Seizure","type":"protocol","categoryPath":["Pediatric Clinical Protocols","Pediatric Medical Emergencies"],"status":"active","effectiveDate":"2026-06-08","lastRevised":"","version":"2026",
+      "tags":["pediatric","seizure","midazolam","diazepam"],
+      "summary":"Assessment and treatment of pediatric seizure activity.",
+      "content":[
+        {"type":"heading","level":2,"text":"Pediatric Seizure"},
+        {"type":"paragraph","text":"This protocol applies to pediatric patients actively seizing or those that have a history of seizures prior to EMS arrival."},
+        {"type":"flow-stage","title":"First Impression (Pediatric Assessment Triangle)","links":[{"text":"Pediatric Assessment Triangle","protocolId":"pediatric-assessment-triangle"}],"arrowAfter":true,"items":[
+          "Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.",
+          "Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.",
+          "Circulation – observe skin color for pallor, mottling, and/or cyanosis."
+        ]},
+        {"type":"flow-stage","title":"Primary Survey","arrowAfter":true,"items":[
+          "Ensure airway – ensure patency and positioning.",
+          {"text":"Have suction equipment ready.","indent":1},
+          {"text":"Assess breathing – give O₂ as tolerated by mask or blow-by. Maintain SpO₂ ≥ 94%.","bold":["Maintain SpO₂ ≥ 94%."]},
+          {"text":"Assess circulation – manage shock appropriately. See Shock Protocol.","links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          "Assess disability – assess LOC.",
+          "Exposure/Environment – expose injuries as needed.",
+          {"text":"Altered LOC and signs of poor perfusion could indicate shock and should be managed appropriately.","icon":"assets/legend-important.webp","iconAlt":"Important protocol information","bold":["Altered LOC and signs of poor perfusion could indicate shock and should be managed appropriately."],"red":["Altered LOC and signs of poor perfusion could indicate shock and should be managed appropriately."]}
+        ]},
+        {"type":"flow-stage","title":"Secondary Assessment and Treatment","arrowAfter":true,"items":[
+          "Monitor vital signs and O₂ saturation.",
+          {"text":"Perform blood glucose analysis – treat if BGL is < 60 mg/dl.","bold":["BGL is < 60 mg/dl."]},
+          "Consider cardiac monitoring.",
+          "Physical Exam and OPQRST/SAMPLE history.",
+          {"text":"Obtain a description of seizure activity – duration and severity.","indent":1},
+          {"text":"Note any history of illness or trauma.","indent":1},
+          "Advanced airway/ventilatory management as needed.",
+          "Initiate IV normal saline at KVO rate.",
+          {"text":"If fluid resuscitation is needed, 20 ml/kg bolus IV/IO.","indent":1,"bold":["20 ml/kg"]},
+          {"text":"If evidence of high-grade fever (103°F/39.5°C), initiate Pediatric Fever Protocol.","links":[{"text":"Pediatric Fever Protocol","protocolId":"fever"}]}
+        ]},
+        {"type":"flow-stage","title":"Active Seizure","arrowAfter":true,"items":[
+          {"text":"Midazolam 0.05 mg/kg–0.1 mg/kg IV/IO slowly or 0.2 mg/kg IM/IN. Max Dose – 5mg.","bold":["0.05 mg/kg–0.1 mg/kg IV/IO","0.2 mg/kg IM/IN","Max Dose – 5mg."],"links":[{"text":"Midazolam","protocolId":"midazolam-versed"}]},
+          {"text":"See Versed Dosing Chart.","indent":1,"links":[{"text":"Versed Dosing Chart","protocolId":"midazolam-versed"}]},
+          {"text":"Diazepam – Contact Medical Control for dosing instruction.","links":[{"text":"Diazepam","protocolId":"diazepam"}]}
+        ]},
+        {"type":"stop-control","title":"STOP","text":"CONTACT MEDICAL CONTROL","note":"For Additional Dosing","image":"assets/legend-medical-control.webp","alt":"Stop and contact Medical Control for additional dosing"},
+        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital Signs","OPQRST/SAMPLE","Cardiac rhythm","Treatment(s)","Communication with Medical Control"]}
       ],
-      "status": "active",
-      "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 63,
-        "pageEnd": 63,
-        "pageLabel": "63"
-      },
-      "summary": "",
-      "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Pediatric Seizure"
-        },
-        {
-          "type": "paragraph",
-          "text": "This protocol applies to pediatric patients actively seizing or those that have a history of seizures prior to EMS arrival. First Impression (Pediatric Assessment Triangle) Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry. Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds. Circulation – observe skin color for pallor, mottling and/or cyanosis. Primary Survey Ensure airway – ensure patency and positioning. Have suction equipment ready. Assess breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%. Assess circulation – manage shock appropriately. See Shock Protocol. Assess disability – assess LOC. Exposure/Environment – expose injuries as needed. Altered LOC and signs of poor perfusion could indicate shock and should be managed appropriately. Secondary Assessment and Treatment Monitor vital signs and O2 saturation Perform blood glucose analysis – treat if BGL is < 60 mg/dl. Consider cardiac monitoring Physical Exam and OPQRST/SAMPLE history. Obtain a description of seizure activity – duration and severity. Note any history of illness or trauma. Advanced airway/ventilatory management as needed. Initiate IV normal saline at KVO rate. If fluid resuscitation is needed 20 ml/kg bolus IV/IO If evidence of high-grade fever (103o F/39.5o C), initiate Pediatric Fever Protocol. Active Seizure Midazolam 0.05 mg/kg – 0.1 mg/kg IV/IO slowly or 0.2 mg/kg IM/IN. Max Dose – 5mg. See Versed Dosing Chart. Diazepam – Contact Medical Control for dosing instruction. Contact Medical Control for Additional Dosing"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vital Signs OPQRST/SAMPLE Cardiac rhythm Treatment(s) Communication with Medical Control. Pediatric Seizure"
-        }
-      ],
-      "plainText": "Pediatric Seizure\nThis protocol applies to pediatric patients actively seizing or those that have a history of seizures\nprior to EMS arrival.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis.\nPrimary Survey\n•\nEnsure airway – ensure patency and positioning.\no\nHave suction equipment ready.\n•\nAssess breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%.\n•\nAssess circulation – manage shock appropriately.  See Shock Protocol.\n•\nAssess disability – assess LOC.\n•\nExposure/Environment – expose injuries as needed.\nAltered LOC and signs of poor perfusion could indicate shock and should be managed\nappropriately.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation\n•\nPerform blood glucose analysis – treat if BGL is < 60 mg/dl.\n•\nConsider cardiac monitoring\n•\nPhysical Exam and OPQRST/SAMPLE history.\no\nObtain a description of seizure activity – duration and severity.\no\nNote any history of illness or trauma.\n•\nAdvanced airway/ventilatory management as needed.\n•\nInitiate IV normal saline at KVO rate.\no\nIf fluid resuscitation is needed 20 ml/kg bolus IV/IO\n•\nIf evidence of high-grade fever (103o F/39.5o C), initiate Pediatric Fever Protocol.\nActive Seizure\n•\nMidazolam 0.05 mg/kg – 0.1 mg/kg IV/IO slowly or 0.2 mg/kg IM/IN. Max Dose – 5mg.\no\nSee Versed Dosing Chart.\n•\nDiazepam – Contact Medical Control for dosing instruction.\nContact Medical\nControl for\nAdditional Dosing\nDocument:\n•\nVital Signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control.\nPediatric Seizure",
-      "pageText": [
-        {
-          "page": 63,
-          "text": "Pediatric Seizure\nThis protocol applies to pediatric patients actively seizing or those that have a history of seizures\nprior to EMS arrival.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis.\nPrimary Survey\n•\nEnsure airway – ensure patency and positioning.\no\nHave suction equipment ready.\n•\nAssess breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%.\n•\nAssess circulation – manage shock appropriately.  See Shock Protocol.\n•\nAssess disability – assess LOC.\n•\nExposure/Environment – expose injuries as needed.\nAltered LOC and signs of poor perfusion could indicate shock and should be managed\nappropriately.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation\n•\nPerform blood glucose analysis – treat if BGL is < 60 mg/dl.\n•\nConsider cardiac monitoring\n•\nPhysical Exam and OPQRST/SAMPLE history.\no\nObtain a description of seizure activity – duration and severity.\no\nNote any history of illness or trauma.\n•\nAdvanced airway/ventilatory management as needed.\n•\nInitiate IV normal saline at KVO rate.\no\nIf fluid resuscitation is needed 20 ml/kg bolus IV/IO\n•\nIf evidence of high-grade fever (103o F/39.5o C), initiate Pediatric Fever Protocol.\nActive Seizure\n•\nMidazolam 0.05 mg/kg – 0.1 mg/kg IV/IO slowly or 0.2 mg/kg IM/IN. Max Dose – 5mg.\no\nSee Versed Dosing Chart.\n•\nDiazepam – Contact Medical Control for dosing instruction.\nContact Medical\nControl for\nAdditional Dosing\nDocument:\n•\nVital Signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control.\nPediatric Seizure"
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Pediatric Seizure. Assessment and treatment including Midazolam, Diazepam, Medical Control consultation, and documentation.","needsReview":false
+    },    {
       "id": "sickle-cell-crisis",
       "title": "Sickle Cell Crisis",
       "type": "protocol",
