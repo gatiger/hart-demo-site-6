@@ -2144,51 +2144,42 @@
       "id": "patients-with-special-healthcare-needs",
       "title": "Patients with Special Healthcare Needs",
       "type": "protocol",
-      "categoryPath": [
-        "General Protocols"
-      ],
+      "categoryPath": ["General Protocols"],
       "status": "active",
       "effectiveDate": "2026-06-08",
       "lastRevised": "",
       "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 23,
-        "pageEnd": 23,
-        "pageLabel": "23"
-      },
-      "summary": "",
+      "tags": ["special healthcare needs", "ventilator", "tracheotomy", "LVAD", "bariatric", "go bag"],
+      "summary": "General considerations for children and adults with special healthcare needs.",
+      "displayMode": "native",
       "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Patients with Special Healthcare Needs"
-        },
         {
           "type": "paragraph",
           "text": "Children and adults with special healthcare needs include those on ventilators, tracheotomies, indwelling catheters, gastrostomy tubes, left ventricular assist devices (LVAD), and bariatric patients. As medical technology advances and home health capabilities increase, new equipment and patient needs will appear."
         },
         {
           "type": "heading",
-          "level": 3,
+          "level": 2,
           "text": "General Considerations"
         },
         {
-          "type": "paragraph",
-          "text": "Do not be overwhelmed by equipment. Treat the ABC’s first. Treat the patient, not the equipment. If the emergency is due to an equipment malfunction, manage the patient using your own equipment. Parents and caregivers are usually trained in device management and can assist EMS personnel. Ask for guidance. When moving a special needs patient, use slow, careful transfer. Transfer of bariatric patients will require additional manpower. Do not use excessive force to straighten or manipulate contracted extremities, as this may cause injury or pain to the patient. Transfer the patient, if possible, to their medical “home” hospital. This may involve bypassing the closest facility. Ask for the “go bag”, which generally has the patient’s spare equipment and supplies, and bring this with you during transport. Physical handicaps do not necessarily imply mental deficits. Remember to communicate with the patient. Find out the patient’s baseline vital signs, medications, allergies, and other medical information, which may not be typical."
-        }
-      ],
-      "plainText": "Patients with Special Healthcare Needs\nChildren and adults with special healthcare needs include those on ventilators, tracheotomies,\nindwelling catheters, gastrostomy tubes, left ventricular assist devices (LVAD), and bariatric\npatients.  As medical technology advances and home health capabilities increase, new\nequipment and patient needs will appear.\nGeneral Considerations:\n•\nDo not be overwhelmed by equipment. Treat the ABC’s first. Treat the patient, not the\nequipment. If the emergency is due to an equipment malfunction, manage the patient\nusing your own equipment.\n•\nParents and caregivers are usually trained in device management and can assist EMS\npersonnel. Ask for guidance.\n•\nWhen moving a special needs patient, use slow, careful transfer. Transfer of bariatric\npatients will require additional manpower.  Do not use excessive force to straighten or\nmanipulate contracted extremities, as this may cause injury or pain to the patient.\n•\nTransfer the patient, if possible, to their medical “home” hospital. This may involve\nbypassing the closest facility.\n•\nAsk for the “go bag”, which generally has the patient’s spare equipment and supplies,\nand bring this with you during transport.\n•\nPhysical handicaps do not necessarily imply mental deficits. Remember to communicate\nwith the patient.\n•\nFind out the patient’s baseline vital signs, medications, allergies, and other medical\ninformation, which may not be typical.",
-      "pageText": [
+          "type": "warning",
+          "text": "Do not be overwhelmed by equipment. Treat the ABCs first. Treat the patient, not the equipment. If the emergency is due to an equipment malfunction, manage the patient using your own equipment."
+        },
         {
-          "page": 23,
-          "text": "Patients with Special Healthcare Needs\nChildren and adults with special healthcare needs include those on ventilators, tracheotomies,\nindwelling catheters, gastrostomy tubes, left ventricular assist devices (LVAD), and bariatric\npatients.  As medical technology advances and home health capabilities increase, new\nequipment and patient needs will appear.\nGeneral Considerations:\n•\nDo not be overwhelmed by equipment. Treat the ABC’s first. Treat the patient, not the\nequipment. If the emergency is due to an equipment malfunction, manage the patient\nusing your own equipment.\n•\nParents and caregivers are usually trained in device management and can assist EMS\npersonnel. Ask for guidance.\n•\nWhen moving a special needs patient, use slow, careful transfer. Transfer of bariatric\npatients will require additional manpower.  Do not use excessive force to straighten or\nmanipulate contracted extremities, as this may cause injury or pain to the patient.\n•\nTransfer the patient, if possible, to their medical “home” hospital. This may involve\nbypassing the closest facility.\n•\nAsk for the “go bag”, which generally has the patient’s spare equipment and supplies,\nand bring this with you during transport.\n•\nPhysical handicaps do not necessarily imply mental deficits. Remember to communicate\nwith the patient.\n•\nFind out the patient’s baseline vital signs, medications, allergies, and other medical\ninformation, which may not be typical."
+          "type": "list",
+          "items": [
+            "Parents and caregivers are usually trained in device management and can assist EMS personnel. Ask for guidance.",
+            "When moving a special needs patient, use slow, careful transfer. Transfer of bariatric patients will require additional manpower. Do not use excessive force to straighten or manipulate contracted extremities, as this may cause injury or pain to the patient.",
+            "Transfer the patient, if possible, to their medical “home” hospital. This may involve bypassing the closest facility.",
+            "Ask for the “go bag”, which generally has the patient's spare equipment and supplies, and bring this with you during transport.",
+            "Physical handicaps do not necessarily imply mental deficits. Remember to communicate with the patient.",
+            "Find out the patient's baseline vital signs, medications, allergies, and other medical information, which may not be typical."
+          ]
         }
       ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
+      "plainText": "Patients with Special Healthcare Needs. Children and adults with special healthcare needs include those on ventilators, tracheotomies, indwelling catheters, gastrostomy tubes, left ventricular assist devices (LVAD), and bariatric patients.",
+      "needsReview": false
     },
     {
       "id": "suspected-abuse",
