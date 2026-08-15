@@ -4564,48 +4564,43 @@
       ],
       "plainText":"Pediatric Heat Related Emergencies. Assessment, cooling, seizure preparation, and documentation for pediatric environmental heat exposure.","needsReview":false
     },    {
-      "id": "nausea-and-vomiting",
-      "title": "Nausea and Vomiting",
-      "type": "protocol",
-      "categoryPath": [
-        "Pediatric Clinical Protocols",
-        "Pediatric Medical Emergencies"
+      "id":"nausea-and-vomiting","title":"Pediatric Nausea/Vomiting","type":"protocol","categoryPath":["Pediatric Clinical Protocols","Pediatric Medical Emergencies"],"status":"active","effectiveDate":"2026-06-08","lastRevised":"","version":"2026",
+      "tags":["pediatric","nausea","vomiting","ondansetron"],
+      "summary":"Assessment and treatment of pediatric nausea and vomiting.",
+      "content":[
+        {"type":"heading","level":2,"text":"Pediatric Nausea/Vomiting"},
+        {"type":"paragraph","text":"This protocol applies to pediatric patients presenting with prolonged vomiting, or those actively vomiting after EMS arrival with no other symptoms or complaints present. Assess any acute abdominal pain prior to resolving nausea/vomiting."},
+        {"type":"flow-stage","title":"First Impression (Pediatric Assessment Triangle)","links":[{"text":"Pediatric Assessment Triangle","protocolId":"pediatric-assessment-triangle"}],"arrowAfter":true,"items":[
+          "Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.",
+          "Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.",
+          "Circulation – observe skin color for pallor, mottling, and/or cyanosis."
+        ]},
+        {"type":"flow-stage","title":"Primary Survey","arrowAfter":true,"items":[
+          "Ensure airway – ensure patency and positioning.",
+          {"text":"Have suction ready.","indent":1},
+          {"text":"Assess breathing – give O₂ as tolerated by mask or blow-by. Maintain SpO₂ ≥ 94%.","bold":["Maintain SpO₂ ≥ 94%."]},
+          {"text":"Assess circulation – if needed, manage shock using the Shock Protocol.","links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          "Assess disability – assess LOC.",
+          "Exposure/Environment – expose injuries as needed."
+        ]},
+        {"type":"flow-stage","title":"Secondary Assessment and History","arrowAfter":true,"items":[
+          "Monitor vital signs and O₂ saturation.",
+          {"text":"Perform blood glucose analysis – treat if BGL is < 60 mg/dl.","bold":["BGL is < 60 mg/dl."]},
+          "Consider cardiac monitoring.",
+          "Physical Exam and OPQRST/SAMPLE history.",
+          "Keep the patient NPO.",
+          "Consider IV normal saline KVO rate.",
+          {"text":"If fluid resuscitation is needed, 20 ml/kg bolus IV/IO normal saline.","indent":1,"bold":["20 ml/kg"]}
+        ]},
+        {"type":"flow-stage","title":"Treatment","items":[
+          "Patients 1 year old and up to 18 years old:",
+          {"text":"Ondansetron (Zofran) 0.15 mg/kg IV/IO slowly or IM/IN/ODT. Max Dose: 4 mg","indent":1,"bold":["0.15 mg/kg IV/IO","Max Dose: 4 mg"],"links":[{"text":"Ondansetron","protocolId":"ondansetron-zofran"}]},
+          "Under 1 year of age:",
+          {"text":"Contact Medical Control for orders.","indent":1}
+        ]}
       ],
-      "status": "active",
-      "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 60,
-        "pageEnd": 60,
-        "pageLabel": "60"
-      },
-      "summary": "",
-      "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Pediatric Nausea/Vomiting"
-        },
-        {
-          "type": "paragraph",
-          "text": "This protocol applies to pediatric patients presenting with prolonged vomiting, or those actively vomiting after EMS arrival with no other symptoms or complaints present. Assess any acute abdominal pain prior to resolving nausea/vomiting. First Impression (Pediatric Assessment Triangle) Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry. Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds. Circulation – observe skin color for pallor, mottling and/or cyanosis. Primary Survey Ensure airway – ensure patency and positioning Have suction ready Assess breathing – Give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%. Assess circulation – if needed, manage shock using the Shock Protocol. Assess disability – assess LOC Exposure/Environment – expose injuries as needed. Secondary Assessment and History Monitor vital signs and O2 saturation. Perform blood glucose analysis – treat if BGL is < 60 mg/dl. Consider cardiac monitoring. Physical Exam and OPQRST/SAMPLE history. Keep the patient NPO. Consider IV normal saline KVO rate. If fluid resuscitation is needed, 20 ml/kg bolus IV/IO normal saline. Treatment Patients 1 year old and up to 18 years old: Ondansetron (Zofran) 0.15 mg/kg IV/IO slowly or IM/IN/ODT. Max Dose: 4 mg Under 1 year of age: Contact Medical Control for orders."
-        }
-      ],
-      "plainText": "Pediatric Nausea/Vomiting\nThis protocol applies to pediatric patients presenting with prolonged vomiting, or those actively\nvomiting after EMS arrival with no other symptoms or complaints present. Assess any acute\nabdominal pain prior to resolving nausea/vomiting.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis.\nPrimary Survey\n•\nEnsure airway – ensure patency and positioning\no\nHave suction ready\n•\nAssess breathing – Give O2  as tolerated by mask or blow-by. Maintain SpO2 > 94%.\n•\nAssess circulation – if needed, manage shock using the Shock Protocol.\n•\nAssess disability – assess LOC\n•\nExposure/Environment – expose injuries as needed.\nSecondary Assessment and History\n•\nMonitor vital signs and O2 saturation.\n•\nPerform blood glucose analysis – treat if BGL is < 60 mg/dl.\n•\nConsider cardiac monitoring.\n•\nPhysical Exam and OPQRST/SAMPLE history.\n•\nKeep the patient NPO.\n•\nConsider IV normal saline KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg bolus IV/IO normal saline.\nTreatment\n•\nPatients 1 year old and up to 18 years old:\no\nOndansetron (Zofran) 0.15 mg/kg IV/IO slowly or IM/IN/ODT.  Max Dose: 4 mg\n•\nUnder 1 year of age:\no\nContact Medical Control for orders.",
-      "pageText": [
-        {
-          "page": 60,
-          "text": "Pediatric Nausea/Vomiting\nThis protocol applies to pediatric patients presenting with prolonged vomiting, or those actively\nvomiting after EMS arrival with no other symptoms or complaints present. Assess any acute\nabdominal pain prior to resolving nausea/vomiting.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis.\nPrimary Survey\n•\nEnsure airway – ensure patency and positioning\no\nHave suction ready\n•\nAssess breathing – Give O2  as tolerated by mask or blow-by. Maintain SpO2 > 94%.\n•\nAssess circulation – if needed, manage shock using the Shock Protocol.\n•\nAssess disability – assess LOC\n•\nExposure/Environment – expose injuries as needed.\nSecondary Assessment and History\n•\nMonitor vital signs and O2 saturation.\n•\nPerform blood glucose analysis – treat if BGL is < 60 mg/dl.\n•\nConsider cardiac monitoring.\n•\nPhysical Exam and OPQRST/SAMPLE history.\n•\nKeep the patient NPO.\n•\nConsider IV normal saline KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg bolus IV/IO normal saline.\nTreatment\n•\nPatients 1 year old and up to 18 years old:\no\nOndansetron (Zofran) 0.15 mg/kg IV/IO slowly or IM/IN/ODT.  Max Dose: 4 mg\n•\nUnder 1 year of age:\no\nContact Medical Control for orders."
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Pediatric Nausea/Vomiting. Assessment and Ondansetron treatment for pediatric patients with prolonged or active vomiting.","needsReview":false
+    },    {
       "id": "respiratory-distress",
       "title": "Respiratory Distress",
       "type": "protocol",
