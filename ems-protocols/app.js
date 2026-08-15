@@ -530,7 +530,18 @@ function appendFlowItems(items, container) {
   for (const item of items || []) {
     const li = document.createElement('li');
     const itemData = typeof item === 'object' ? item : { text: item };
-    appendRichText(li, itemData.text || '', itemData.bold || [], itemData.links || []);
+    let textContainer = li;
+    if (itemData.icon) {
+      li.className = 'assessment-icon-item';
+      const icon = document.createElement('img');
+      icon.src = itemData.icon;
+      icon.alt = itemData.iconAlt || '';
+      icon.loading = 'lazy';
+      li.appendChild(icon);
+      textContainer = document.createElement('span');
+      li.appendChild(textContainer);
+    }
+    appendRichText(textContainer, itemData.text || '', itemData.bold || [], itemData.links || []);
     if (itemData.children?.length) appendFlowItems(itemData.children, li);
     list.appendChild(li);
   }

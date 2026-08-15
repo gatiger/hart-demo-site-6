@@ -2867,7 +2867,11 @@
               "kind": "not-urgent",
               "intro": [
                 "Proceed systematically with the patient assessment.",
-                "Though they may not appear sick, trauma patients should receive a rapid primary survey and rapid transport when significant mechanism of injury exists. These patients may appear well despite their emergent condition."
+                {
+                  "text": "Though they may not appear sick, trauma patients should receive a rapid primary survey and rapid transport when significant mechanism of injury exists. These patients may appear well despite their emergent condition.",
+                  "icon": "assets/legend-important.webp",
+                  "iconAlt": "Important protocol information"
+                }
               ],
               "stages": [
                 {
