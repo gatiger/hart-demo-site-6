@@ -37,7 +37,6 @@ function showSplash() {
 
   const meta = protocolData.meta || {};
   document.getElementById('protocolType').textContent = 'Welcome';
-  document.getElementById('protocolPages').textContent = '';
   document.getElementById('protocol-title').textContent = 'Hart County EMS Protocols';
   document.getElementById('protocolPath').textContent = '';
 
@@ -243,7 +242,6 @@ function showProtocol(id) {
   markActiveButton();
 
   document.getElementById('protocolType').textContent = protocol.type;
-  document.getElementById('protocolPages').textContent = `PDF page ${protocol.source.pageLabel}`;
   document.getElementById('protocol-title').textContent = protocol.title;
   document.getElementById('protocolPath').textContent = protocol.categoryPath.join(' › ');
 
@@ -251,12 +249,6 @@ function showProtocol(id) {
   content.innerHTML = '';
 
   if ((protocol.displayMode === 'pdf-page' && !(protocol.content || []).length) || protocol.id === 'approval-statement') {
-    const note = document.createElement('p');
-    note.className = 'signature-note';
-    note.textContent = protocol.id === 'approval-statement'
-      ? 'This page is displayed from the official PDF because it contains signatures.'
-      : 'This entry is displayed from the official PDF because it contains tables, charts, forms, algorithms, or visual formatting that should not be flattened into plain text.';
-    content.appendChild(note);
 
     const imageWrap = document.createElement('div');
     imageWrap.className = 'pdf-page-image-wrap';
@@ -268,12 +260,9 @@ function showProtocol(id) {
         const img = document.createElement('img');
         img.className = 'pdf-page-image';
         img.src = pageInfo.url;
-        img.alt = `${protocol.title} - PDF page ${pageInfo.page}`;
+        img.alt = protocol.title;
         img.loading = 'lazy';
-        const cap = document.createElement('figcaption');
-        cap.textContent = `PDF page ${pageInfo.page}`;
         figure.appendChild(img);
-        figure.appendChild(cap);
         imageWrap.appendChild(figure);
       }
     } else {
