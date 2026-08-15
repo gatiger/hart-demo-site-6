@@ -2623,131 +2623,156 @@
       "lastRevised": "",
       "version": "2026",
       "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 33,
-        "pageEnd": 33,
-        "pageLabel": "33"
-      },
       "summary": "",
+      "displayMode": "native",
       "content": [
         {
           "type": "heading",
           "level": 2,
-          "text": "Intraosseous Access"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "If the patient exhibits one or more of the following"
-        },
-        {
-          "type": "paragraph",
-          "text": "An altered mental status (GCS of < 8) Respiratory compromise (decreased SpO2 after appropriate O2 therapy, respiratory rate of <10/min or >40/min. Hemodynamic instability (Systolic BP <90 mmHg)"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "IO can be considered prior to peripheral IV attempts in the following situations"
-        },
-        {
-          "type": "paragraph",
-          "text": "Cardiac arrest (medical or trauma) Trauma and unable to access peripheral IV sites."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Contraindications to IO access"
-        },
-        {
-          "type": "paragraph",
-          "text": "Fracture of the bone selected for IO infusion (Consider alternate site) Excessive tissue at insertion site with absence of anatomical landmarks (Consider alternate site) Previous significant orthopedic procedures (IO within 24 hours, prosthesis (Consider alternate site) Infection at the site selected for insertion (Consider alternate site)"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Considerations for IO access"
-        },
-        {
-          "type": "paragraph",
-          "text": "Flow rate"
+          "text": "If the patient exhibits one or more of the following:"
         },
         {
           "type": "list",
           "items": [
-            "Due to the anatomy of the IO space, flow rates may appear to be slower than those"
+            "An altered mental status (GCS of < 8)",
+            "Respiratory compromise (decreased SpO2 after appropriate O2 therapy, respiratory rate of <10/min or >40/min.)",
+            "Hemodynamic instability (Systolic BP <90 mmHg)"
           ]
         },
         {
-          "type": "paragraph",
-          "text": "with an IV catheter."
+          "type": "heading",
+          "level": 2,
+          "text": "IO can be considered prior to peripheral IV attempts in the following situations:"
         },
         {
           "type": "list",
           "items": [
-            "Ensure administration of an appropriate rapid syringe bolus (flush) prior to infusion."
+            "Cardiac arrest (medical or trauma)",
+            "Trauma and unable to access peripheral IV sites."
           ]
         },
         {
-          "type": "paragraph",
-          "text": "(NO FLUSH = NO FLOW)"
+          "type": "heading",
+          "level": 2,
+          "text": "Contraindications to IO access:"
         },
         {
           "type": "list",
           "items": [
-            "Rapid syringe bolus (flush) with EZ-IO Pedi with 5ml of Normal Saline",
+            "Fracture of the bone selected for IO infusion (Consider alternate site)",
+            "Excessive tissue at insertion site with absence of anatomical landmarks (Consider alternate site)",
+            "Previous significant orthopedic procedures (IO within 24 hours, prosthesis) (Consider alternate site)",
+            "Infection at the site selected for insertion (Consider alternate site)"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Considerations for IO access:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Flow rate"
+          ]
+        },
+        {
+          "type": "list",
+          "indent": 1,
+          "items": [
+            "Due to the anatomy of the IO space, flow rates may appear to be slower than those with an IV catheter.",
+            "Ensure administration of an appropriate rapid syringe bolus (flush) prior to infusion.",
+            {
+              "text": "(NO FLUSH = NO FLOW)",
+              "bold": [
+                "(NO FLUSH = NO FLOW)"
+              ]
+            },
+            {
+              "text": "Rapid syringe bolus (flush) with EZ-IO Pedi with 5ml of Normal Saline",
+              "links": [
+                {
+                  "text": "EZ-IO Pedi",
+                  "protocolId": "ez-io-drill"
+                },
+                {
+                  "text": "Normal Saline",
+                  "protocolId": "normal-saline"
+                }
+              ]
+            },
             "Repeat syringe bolus as necessary"
           ]
         },
         {
-          "type": "paragraph",
-          "text": "Pain"
-        },
-        {
           "type": "list",
           "items": [
-            "Insertion of the EZ-IO in an unconscious patient has been noted to cause mild to"
+            "Pain"
           ]
         },
         {
-          "type": "paragraph",
-          "text": "moderate discomfort (usually no more painful than a large bore IV). However, IO infusions for conscious patients have been noted to cause severe discomfort."
-        },
-        {
           "type": "list",
+          "indent": 1,
           "items": [
-            "Prior to IO syringe bolus (flush) or continuous infusion in alert patients, slowly"
+            {
+              "text": "Insertion of the EZ-IO in an unconscious patient has been noted to cause mild to moderate discomfort (usually no more painful than a large bore IV). However, IO infusions for conscious patients have been noted to cause severe discomfort.",
+              "links": [
+                {
+                  "text": "EZ-IO",
+                  "protocolId": "ez-io-drill"
+                }
+              ]
+            },
+            {
+              "text": "Prior to IO syringe bolus (flush) or continuous infusion in alert patients, slowly administer Lidocaine 2% (preservative free through IO hub). Ensure that the patient does not have allergies or sensitivity to Lidocaine.",
+              "links": [
+                {
+                  "text": "Lidocaine 2%",
+                  "protocolId": "lidocaine-xylocaine"
+                },
+                {
+                  "text": "Lidocaine",
+                  "protocolId": "lidocaine-xylocaine"
+                }
+              ]
+            },
+            {
+              "text": "Adult – Slowly administer 20-40mg of Lidocaine 2%.",
+              "links": [
+                {
+                  "text": "Lidocaine 2%",
+                  "protocolId": "lidocaine-xylocaine"
+                }
+              ]
+            },
+            {
+              "text": "Pedi – Slowly administer 0.5mg/kg of Lidocaine 2%.",
+              "links": [
+                {
+                  "text": "Lidocaine 2%",
+                  "protocolId": "lidocaine-xylocaine"
+                }
+              ]
+            },
+            {
+              "text": "EMTs will only use the EZ-IO on unconscious patients due to need for Lidocaine administration for conscious patients.",
+              "links": [
+                {
+                  "text": "EZ-IO",
+                  "protocolId": "ez-io-drill"
+                },
+                {
+                  "text": "Lidocaine",
+                  "protocolId": "lidocaine-xylocaine"
+                }
+              ]
+            }
           ]
-        },
-        {
-          "type": "paragraph",
-          "text": "administer Lidocaine 2% (preservative free through IO hub). Ensure that the patient does not have allergies or sensitivity to Lidocaine."
-        },
-        {
-          "type": "list",
-          "items": [
-            "Adult – Slowly administer 20-40mg of Lidocaine 2%.",
-            "Pedi – Slowly administer 0.5mg/kg of Lidocaine 2%.",
-            "EMTs will only use the EZ-IO on unconscious patients due to need for Lidocaine"
-          ]
-        },
-        {
-          "type": "paragraph",
-          "text": "administration for conscious patients."
         }
       ],
-      "plainText": "Intraosseous Access\nIf the patient exhibits one or more of the following:\n•\nAn altered mental status (GCS of < 8)\n•\nRespiratory compromise (decreased SpO2 after appropriate O2 therapy, respiratory rate\nof <10/min or >40/min.\n•\nHemodynamic instability (Systolic BP <90 mmHg)\nIO can be considered prior to peripheral IV attempts in the following situations:\n•\nCardiac arrest (medical or trauma)\n•\nTrauma and unable to access peripheral IV sites.\nContraindications to IO access:\n•\nFracture of the bone selected for IO infusion (Consider alternate site)\n•\nExcessive tissue at insertion site with absence of anatomical landmarks (Consider\nalternate site)\n•\nPrevious significant orthopedic procedures (IO within 24 hours, prosthesis (Consider\nalternate site)\n•\nInfection at the site selected for insertion (Consider alternate site)\nConsiderations for IO access:\n•\nFlow rate\no Due to the anatomy of the IO space, flow rates may appear to be slower than those\nwith an IV catheter.\no Ensure administration of an appropriate rapid syringe bolus (flush) prior to infusion.\n(NO FLUSH = NO FLOW)\no Rapid syringe bolus (flush) with EZ-IO Pedi with 5ml of Normal Saline\no Repeat syringe bolus as necessary\n•\nPain\no Insertion of the EZ-IO in an unconscious patient has been noted to cause mild to\nmoderate discomfort (usually no more painful than a large bore IV). However, IO\ninfusions for conscious patients have been noted to cause severe discomfort.\no Prior to IO syringe bolus (flush) or continuous infusion in alert patients, slowly\nadminister Lidocaine 2% (preservative free through IO hub). Ensure that the\npatient does not have allergies or sensitivity to Lidocaine.\no Adult – Slowly administer 20-40mg of Lidocaine 2%.\no Pedi – Slowly administer 0.5mg/kg of Lidocaine 2%.\no EMTs will only use the EZ-IO on unconscious patients due to need for Lidocaine\nadministration for conscious patients.",
-      "pageText": [
-        {
-          "page": 33,
-          "text": "Intraosseous Access\nIf the patient exhibits one or more of the following:\n•\nAn altered mental status (GCS of < 8)\n•\nRespiratory compromise (decreased SpO2 after appropriate O2 therapy, respiratory rate\nof <10/min or >40/min.\n•\nHemodynamic instability (Systolic BP <90 mmHg)\nIO can be considered prior to peripheral IV attempts in the following situations:\n•\nCardiac arrest (medical or trauma)\n•\nTrauma and unable to access peripheral IV sites.\nContraindications to IO access:\n•\nFracture of the bone selected for IO infusion (Consider alternate site)\n•\nExcessive tissue at insertion site with absence of anatomical landmarks (Consider\nalternate site)\n•\nPrevious significant orthopedic procedures (IO within 24 hours, prosthesis (Consider\nalternate site)\n•\nInfection at the site selected for insertion (Consider alternate site)\nConsiderations for IO access:\n•\nFlow rate\no Due to the anatomy of the IO space, flow rates may appear to be slower than those\nwith an IV catheter.\no Ensure administration of an appropriate rapid syringe bolus (flush) prior to infusion.\n(NO FLUSH = NO FLOW)\no Rapid syringe bolus (flush) with EZ-IO Pedi with 5ml of Normal Saline\no Repeat syringe bolus as necessary\n•\nPain\no Insertion of the EZ-IO in an unconscious patient has been noted to cause mild to\nmoderate discomfort (usually no more painful than a large bore IV). However, IO\ninfusions for conscious patients have been noted to cause severe discomfort.\no Prior to IO syringe bolus (flush) or continuous infusion in alert patients, slowly\nadminister Lidocaine 2% (preservative free through IO hub). Ensure that the\npatient does not have allergies or sensitivity to Lidocaine.\no Adult – Slowly administer 20-40mg of Lidocaine 2%.\no Pedi – Slowly administer 0.5mg/kg of Lidocaine 2%.\no EMTs will only use the EZ-IO on unconscious patients due to need for Lidocaine\nadministration for conscious patients."
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText": "Intraosseous Access. If the patient exhibits one or more of the following: An altered mental status; respiratory compromise; or hemodynamic instability. IO can be considered prior to peripheral IV attempts in cardiac arrest or trauma when unable to access peripheral IV sites. Contraindications and considerations include flow rate, flushing, and pain management with Lidocaine 2%.",
+      "needsReview": false
+    },    {
       "id": "pediatric-assessment",
       "title": "Pediatric Assessment",
       "type": "protocol",

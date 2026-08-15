@@ -492,19 +492,31 @@ function renderDocumentExample(block, container) {
 
   container.appendChild(section);
 }
-function appendTextWithBold(element, text, phrases = []) {
+function appendRichText(element, text, phrases = [], links = []) {
   const source = String(text || '');
   const boldPhrases = (phrases || []).filter(Boolean);
-  if (!boldPhrases.length) {
+  const linkedPhrases = (links || []).filter(link => link && link.text && link.protocolId);
+  if (!boldPhrases.length && !linkedPhrases.length) {
     element.textContent = source;
     return;
   }
 
-  const escaped = boldPhrases.map(phrase => phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+  const tokens = [...new Set([...linkedPhrases.map(link => link.text), ...boldPhrases])]
+    .sort((a, b) => b.length - a.length);
+  const escaped = tokens.map(phrase => phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
   const matcher = new RegExp(`(${escaped.join('|')})`, 'g');
   for (const part of source.split(matcher)) {
     if (!part) continue;
-    if (boldPhrases.includes(part)) {
+    const linkedPhrase = linkedPhrases.find(link => link.text === part);
+    if (linkedPhrase) {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'inline-protocol-link';
+      button.textContent = part;
+      if (boldPhrases.includes(part)) button.classList.add('inline-protocol-link-bold');
+      button.addEventListener('click', () => showProtocol(linkedPhrase.protocolId));
+      element.appendChild(button);
+    } else if (boldPhrases.includes(part)) {
       const strong = document.createElement('strong');
       strong.textContent = part;
       element.appendChild(strong);
@@ -548,7 +560,12 @@ function renderBlock(block, container) {
       const li = document.createElement('li');
       const rawText = itemText(item);
       const cleanText = ordered ? rawText.replace(/^\s*\d+[\).]\s*/, '') : rawText.replace(/^\s*[â€¢\-o]\s*/, '');
-      appendTextWithBold(li, cleanText, typeof item === 'object' ? item.bold : []);
+      appendRichText(
+        li,
+        cleanText,
+        typeof item === 'object' ? item.bold : [],
+        typeof item === 'object' ? item.links : []
+      );
       list.appendChild(li);
     }
     container.appendChild(list);

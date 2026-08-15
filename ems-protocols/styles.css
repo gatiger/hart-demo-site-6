@@ -482,6 +482,10 @@ details[open] > .tree-heading.tree-toggle::before {
 /* Preserve nested protocol indentation from the source document */
 .protocol-content .nested-list { margin-left: clamp(1.25rem, 4vw, 2.5rem); }
 @media (max-width: 520px) { .protocol-content .nested-list { margin-left: .8rem; } }
+.inline-protocol-link { display: inline; margin: 0; padding: 0; border: 0; background: transparent; color: #173a5e; font: inherit; font-weight: 800; text-decoration: underline; cursor: pointer; }
+.inline-protocol-link:hover { color: #0b6b75; }
+.inline-protocol-link:focus-visible { outline: 3px solid #d7a62a; outline-offset: 2px; border-radius: .15rem; }
+.inline-protocol-link-bold { font-weight: 900; }
 
 /* Protocol history and cross-references */
 .protocol-history { display: flex; gap: .45rem; }
