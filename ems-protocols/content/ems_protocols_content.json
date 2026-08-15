@@ -48,24 +48,7 @@
     {
       "id": "general-protocols",
       "title": "General Protocols",
-      "children": [
-        {
-          "id": "general-guidelines-divider",
-          "title": "General Guidelines Divider",
-          "type": "administrative",
-          "pageStart": 11,
-          "pageEnd": 11,
-          "status": "active"
-        },
-        {
-          "id": "general-guidelines-table-of-contents",
-          "title": "General Guidelines Table of Contents",
-          "type": "administrative",
-          "pageStart": 12,
-          "pageEnd": 12,
-          "status": "active"
-        },
-        {
+      "children": [        {
           "id": "administration-disposal-of-medication",
           "title": "Administration/Disposal of Medication",
           "type": "protocol",
@@ -1576,60 +1559,7 @@
       ]
     }
   ],
-  "protocols": [
-    {
-      "id": "general-guidelines-divider",
-      "title": "General Guidelines Divider",
-      "type": "administrative",
-      "categoryPath": [
-        "Administrative"
-      ],
-      "status": "active",
-      "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 11,
-        "pageEnd": 11,
-        "pageLabel": "11"
-      },
-      "summary": "General Guidelines section divider page.",
-      "content": [],
-      "plainText": "",
-      "pageText": [],
-      "needsReview": true,
-      "extractionNote": "Displayed from the official PDF because this is a cover/table-of-contents/divider/signature page.",
-      "displayMode": "pdf-page"
-    },
-    {
-      "id": "general-guidelines-table-of-contents",
-      "title": "General Guidelines Table of Contents",
-      "type": "administrative",
-      "categoryPath": [
-        "Administrative"
-      ],
-      "status": "active",
-      "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 12,
-        "pageEnd": 12,
-        "pageLabel": "12"
-      },
-      "summary": "General Guidelines table of contents.",
-      "content": [],
-      "plainText": "",
-      "pageText": [],
-      "needsReview": true,
-      "extractionNote": "Displayed from the official PDF because this is a cover/table-of-contents/divider/signature page.",
-      "displayMode": "pdf-page"
-    },
-    {
+  "protocols": [    {
       "id": "approval-statement",
       "title": "Approval Statement",
       "type": "administrative",
