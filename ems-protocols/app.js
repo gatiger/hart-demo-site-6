@@ -396,6 +396,7 @@ function renderBlock(block, container) {
     const ordered = (block.ordered === true) || (block.items || []).every(item => /^\s*\d+[\).]/.test(item));
     const list = document.createElement(ordered ? 'ol' : 'ul');
     if (ordered && block.start) list.start = Number(block.start);
+    if (ordered && block.listStyle) list.style.listStyleType = block.listStyle;
     for (const item of block.items || []) {
       const li = document.createElement('li');
       li.textContent = ordered ? item.replace(/^\s*\d+[\).]\s*/, '') : item.replace(/^\s*[•\-o]\s*/, '');

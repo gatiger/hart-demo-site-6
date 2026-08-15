@@ -1796,80 +1796,62 @@
       "id": "destination-decision",
       "title": "Destination Decision",
       "type": "protocol",
-      "categoryPath": [
-        "General Protocols"
-      ],
+      "categoryPath": ["General Protocols"],
       "status": "active",
       "effectiveDate": "2026-06-08",
       "lastRevised": "",
       "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 17,
-        "pageEnd": 17,
-        "pageLabel": "17"
-      },
-      "summary": "",
+      "tags": ["destination decision", "hospital destination", "medical control", "patient choice", "reasonable distance"],
+      "summary": "Requirements for selecting the hospital destination of prehospital patients.",
+      "displayMode": "native",
       "content": [
         {
           "type": "heading",
           "level": 2,
-          "text": "Destination Decision"
-        },
-        {
-          "type": "paragraph",
           "text": "Hospital Destination of Prehospital Patients"
         },
         {
           "type": "list",
+          "ordered": true,
           "items": [
-            "1. When a patient requires initial transport to a hospital, the patient shall be"
+            "1. When a patient requires initial transport to a hospital, the patient shall be transported by the ambulance service to the hospital of his or her choice provided:"
           ]
-        },
-        {
-          "type": "paragraph",
-          "text": "transported by the ambulance service to the hospital of his or her choice provided: i. The hospital chosen can meet the patient’s immediate needs ii. The hospital chosen is within a reasonable distance as determined by the EMS personnel’s assessment in collaboration with medical control to not further jeopardize the patient’s health or compromise the ability of the EMS system to function in a normal manner. iii. The hospital chosen is within a usual and customary patient transport or referral are as determined by the local medical director; and iv. The patient does not, in the judgement of the medical director or an attending physician, lack sufficient understanding or capacity to make a reasonable decision regarding the choice of hospital."
         },
         {
           "type": "list",
+          "ordered": true,
+          "listStyle": "lower-roman",
           "items": [
-            "2. If the patient's choice of hospital is not appropriate or if the patient does not,"
+            "The hospital chosen can meet the patient's immediate needs",
+            "The hospital chosen is within a reasonable distance as determined by the EMS personnel's assessment in collaboration with medical control to not further jeopardize the patient's health or compromise the ability of the EMS system to function in a normal manner.",
+            "The hospital chosen is within a usual and customary patient transport or referral area as determined by the local medical director; and",
+            "The patient does not, in the judgment of the medical director or an attending physician, lack sufficient understanding or capacity to make a reasonable decision regarding the choice of hospital."
           ]
-        },
-        {
-          "type": "paragraph",
-          "text": "cannot, or will not express a choice, the patient's destination will be determined by pre-established guidelines. If for any reason the pre-established guidelines are unclear or not applicable to the specific case, then medical control shall be consulted for a definitive decision."
         },
         {
           "type": "list",
+          "ordered": true,
+          "start": 2,
           "items": [
-            "3. If the patient continues to insist on being transported to the hospital he or"
+            "2. If the patient's choice of hospital is not appropriate or if the patient does not, cannot, or will not express a choice, the patient's destination will be determined by pre-established guidelines. If for any reason the pre-established guidelines are unclear or not applicable to the specific case, then medical control shall be consulted for a definitive decision.",
+            "3. If the patient continues to insist on being transported to the hospital he or she has chosen, and it is within a reasonable distance as determined by the local medical director, then the patient shall be transported to that hospital after notifying local medical control of the patient's decision.",
+            "4. If the patient does not, cannot, or will not express a choice of hospitals, the ambulance service shall transport the patient to the nearest hospital believed capable of meeting the patient's immediate medical needs without regard to other factors, e.g., patient's ability to pay, hospital charges, county or city limits, etc."
           ]
         },
         {
-          "type": "paragraph",
-          "text": "she has chosen, and it is within a reasonable distance as determined by the local medical director, then the patient shall be transported to that hospital after notifying local medical control of the patient's decision."
-        },
-        {
-          "type": "list",
-          "items": [
-            "4. If the patient does not, cannot, or will not express a choice of hospitals, the"
-          ]
-        },
-        {
-          "type": "paragraph",
-          "text": "ambulance service shall transport the patient to the nearest hospital believed capable of meeting the patient's immediate medical needs without regard to other factors, e.g., patient's ability to pay, hospital charges, county or city limits, etc. Reference: DPH Rule 511-9-2-.07 (6) (k)"
+          "type": "note",
+          "text": "Reference: DPH Rule 511-9-2-.07 (6) (k)"
         },
         {
           "type": "heading",
-          "level": 3,
-          "text": "Reasonable Distances can be established based on"
+          "level": 2,
+          "text": "Reasonable Distances Can Be Established Based On"
         },
         {
           "type": "list",
+          "ordered": true,
           "items": [
-            "1. The patient’s emergency",
+            "1. The patient's emergency",
             "2. Resources at the local and surrounding facilities",
             "3. Geographic location of the various facilities",
             "4. EMS agency resources",
@@ -1879,16 +1861,8 @@
           ]
         }
       ],
-      "plainText": "Destination Decision\nHospital Destination of Prehospital Patients\n1. When a patient requires initial transport to a hospital, the patient shall be\ntransported by the ambulance service to the hospital of his or her choice\nprovided:\ni.\nThe hospital chosen can meet the patient’s immediate needs\nii.\nThe hospital chosen is within a reasonable distance as determined by the\nEMS personnel’s assessment in collaboration with medical control to not\nfurther jeopardize the patient’s health or compromise the ability of the\nEMS system to function in a normal manner.\niii.\nThe hospital chosen is within a usual and customary patient transport or\nreferral are as determined by the local medical director; and\niv.\nThe patient does not, in the judgement of the medical director or an\nattending physician, lack sufficient understanding or capacity to make a\nreasonable decision regarding the choice of hospital.\n2.  If the patient's choice of hospital is not appropriate or if the patient does not,\ncannot, or will not express a choice, the patient's destination will be determined\nby pre-established guidelines. If for any reason the pre-established guidelines\nare unclear or not applicable to the specific case, then medical control shall be\nconsulted for a definitive decision.\n3.  If the patient continues to insist on being transported to the hospital he or\nshe has chosen,  and  it is within  a reasonable  distance  as  determined by\nthe local medical director, then the patient shall be transported to that hospital\nafter notifying local medical control of the patient's decision.\n4.  If the patient does not, cannot, or will not express a choice of hospitals, the\nambulance service shall transport the patient to the nearest hospital believed\ncapable of meeting the patient's immediate medical needs without regard to\nother factors, e.g., patient's ability to pay, hospital charges, county or city limits,\netc.\nReference: DPH Rule 511-9-2-.07 (6) (k)\nReasonable Distances can be established based on:\n1. The patient’s emergency\n2. Resources at the local and surrounding facilities\n3. Geographic location of the various facilities\n4. EMS agency resources\n5. Obligation to provide emergency services in the assigned ambulance zone\n6. Availability of mutual aid\n7. The usual and customary hospital destinations of that EMS agency",
-      "pageText": [
-        {
-          "page": 17,
-          "text": "Destination Decision\nHospital Destination of Prehospital Patients\n1. When a patient requires initial transport to a hospital, the patient shall be\ntransported by the ambulance service to the hospital of his or her choice\nprovided:\ni.\nThe hospital chosen can meet the patient’s immediate needs\nii.\nThe hospital chosen is within a reasonable distance as determined by the\nEMS personnel’s assessment in collaboration with medical control to not\nfurther jeopardize the patient’s health or compromise the ability of the\nEMS system to function in a normal manner.\niii.\nThe hospital chosen is within a usual and customary patient transport or\nreferral are as determined by the local medical director; and\niv.\nThe patient does not, in the judgement of the medical director or an\nattending physician, lack sufficient understanding or capacity to make a\nreasonable decision regarding the choice of hospital.\n2.  If the patient's choice of hospital is not appropriate or if the patient does not,\ncannot, or will not express a choice, the patient's destination will be determined\nby pre-established guidelines. If for any reason the pre-established guidelines\nare unclear or not applicable to the specific case, then medical control shall be\nconsulted for a definitive decision.\n3.  If the patient continues to insist on being transported to the hospital he or\nshe has chosen,  and  it is within  a reasonable  distance  as  determined by\nthe local medical director, then the patient shall be transported to that hospital\nafter notifying local medical control of the patient's decision.\n4.  If the patient does not, cannot, or will not express a choice of hospitals, the\nambulance service shall transport the patient to the nearest hospital believed\ncapable of meeting the patient's immediate medical needs without regard to\nother factors, e.g., patient's ability to pay, hospital charges, county or city limits,\netc.\nReference: DPH Rule 511-9-2-.07 (6) (k)\nReasonable Distances can be established based on:\n1. The patient’s emergency\n2. Resources at the local and surrounding facilities\n3. Geographic location of the various facilities\n4. EMS agency resources\n5. Obligation to provide emergency services in the assigned ambulance zone\n6. Availability of mutual aid\n7. The usual and customary hospital destinations of that EMS agency"
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
+      "plainText": "Destination Decision. Hospital Destination of Prehospital Patients. When a patient requires initial transport to a hospital, the patient shall be transported by the ambulance service to the hospital of his or her choice provided the requirements of this protocol are met.",
+      "needsReview": false
     },
     {
       "id": "documentation",
