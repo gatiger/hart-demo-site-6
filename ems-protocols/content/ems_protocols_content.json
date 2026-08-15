@@ -4439,61 +4439,55 @@
       ],
       "plainText":"Pediatric Altered Level of Consciousness. Assessment and treatment including glucose analysis, oral glucose, dextrose, glucagon, naloxone, Medical Control consultation, altered mental status causes, and pediatric dextrose mixing instructions.","needsReview":false
     },    {
-      "id": "cold-related-emergencies",
-      "title": "Cold Related Emergencies",
-      "type": "protocol",
-      "categoryPath": [
-        "Pediatric Clinical Protocols",
-        "Pediatric Medical Emergencies"
+      "id":"cold-related-emergencies","title":"Pediatric Cold Related Emergencies","type":"protocol","categoryPath":["Pediatric Clinical Protocols","Pediatric Medical Emergencies"],"status":"active","effectiveDate":"2026-06-08","lastRevised":"","version":"2026",
+      "tags":["pediatric","cold","hypothermia","frostbite"],
+      "summary":"Assessment and treatment of pediatric hypothermia and frostbite.",
+      "content":[
+        {"type":"heading","level":2,"text":"Pediatric Cold Related Emergencies"},
+        {"type":"paragraph","text":"This protocol applies to a pediatric patient having a body temperature below 95°F (35°C) secondary to environmental exposure."},
+        {"type":"flow-stage","title":"First Impression (Pediatric Assessment Triangle)","links":[{"text":"Pediatric Assessment Triangle","protocolId":"pediatric-assessment-triangle"}],"arrowAfter":true,"items":[
+          "Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.",
+          "Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.",
+          "Circulation – observe skin color for pallor, mottling, and/or cyanosis."
+        ]},
+        {"type":"flow-stage","title":"Primary Survey","arrowAfter":true,"items":[
+          "Ensure airway – use least invasive means possible to secure airway.",
+          {"text":"Intubate only, if necessary, as gently as possible.","indent":1},
+          {"text":"Assess breathing – give O₂ as tolerated by mask or blow-by. Maintain SpO₂ ≥ 94%.","bold":["Maintain SpO₂ ≥ 94%."]},
+          {"text":"Assist with bag valve mask if ineffective respiratory effort.","indent":1},
+          "Assess circulation – check for pulse, if no pulse, begin CPR.",
+          {"text":"It may be necessary to assess pulse and respirations for up to 30–45 seconds to confirm arrest.","icon":"assets/legend-important.webp","iconAlt":"Important protocol information","bold":["It may be necessary to assess pulse and respirations for up to 30–45 seconds to confirm arrest."],"red":["It may be necessary to assess pulse and respirations for up to 30–45 seconds to confirm arrest."]},
+          "If no pulse, initiate CPR in conjunction with an AED/defibrillator. Use the most current American Heart Association guidelines.",
+          {"text":"If severe hypothermia (< 86°F/30°C) is strongly suspected, limit defibrillation attempts to 1 and withhold medications.","indent":1,"bold":["limit defibrillation attempts to 1 and withhold medications."]},
+          {"text":"If body temperature is > 86°F/30°C treat in accordance with the Pulseless Arrest Guideline.","indent":1,"links":[{"text":"Pulseless Arrest Guideline","protocolId":"pulseless-arrest"}]},
+          {"text":"Resuscitation efforts should continue until core temperature approaches normal range.","indent":1},
+          {"text":"If pulse is present, DO NOT initiate CPR, no matter how slow the rate.","bold":["DO NOT initiate CPR"]},
+          {"text":"Treat Bradycardia only if patient is hypotensive.","indent":1,"links":[{"text":"Bradycardia","protocolId":"bradycardia"}]},
+          "Assess disability – assess LOC.",
+          "Exposure/Environment – carefully move patient to a warm environment, remove all wet clothing, dry the patient and cover with blankets.",
+          {"text":"Avoid any rough movement that may cause cardiac dysrhythmias. It may be beneficial to immobilize the patient on a backboard.","icon":"assets/legend-important.webp","iconAlt":"Important protocol information","bold":["Avoid any rough movement that may cause cardiac dysrhythmias. It may be beneficial to immobilize the patient on a backboard."],"red":["Avoid any rough movement that may cause cardiac dysrhythmias. It may be beneficial to immobilize the patient on a backboard."]}
+        ]},
+        {"type":"flow-stage","title":"Secondary Assessment and Treatment","arrowAfter":true,"items":[
+          "Monitor vital signs and O₂ saturation.",
+          {"text":"Perform blood glucose analysis – Treat if BGL is < 60 mg/dl.","bold":["BGL is < 60 mg/dl."]},
+          "Initiate cardiac monitoring.",
+          "Physical exam and OPQRST/SAMPLE history.",
+          {"text":"Initiate WARM IV/IO normal saline – administer 20 ml/kg bolus if signs of shock are present.","bold":["WARM"]},
+          "Apply warm packs to groin, axilla, neck and chest."
+        ]},
+        {"type":"flow-stage","title":"Frostbite","items":[
+          "Protect injured, frostbitten areas, do not rub or place on any heated surface.",
+          {"text":"Remove clothing and jewelry from injured body parts.","indent":1},
+          {"text":"Do not attempt to thaw injured part with local heat.","indent":1},
+          {"text":"Severe frostbite injuries should be transported to a trauma center.","indent":1}
+        ]},
+        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital Signs","OPQRST/SAMPLE","Cardiac rhythm","Treatment(s)","Communication with Medical Control"]},
+        {"type":"flow-stage","title":"Consider Morphine for pain relief when the patient is conscious, alert, not hypotensive and complaining of severe pain.","links":[{"text":"Morphine","protocolId":"morphine-sulfate"}],"items":[
+          {"text":"See Pediatric Pain Management Protocol.","indent":1,"links":[{"text":"Pediatric Pain Management Protocol","protocolId":"pain-management"}]}
+        ]}
       ],
-      "status": "active",
-      "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 56,
-        "pageEnd": 57,
-        "pageLabel": "56-57"
-      },
-      "summary": "",
-      "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Pediatric Cold Related Emergencies"
-        },
-        {
-          "type": "paragraph",
-          "text": "This protocol applies to a pediatric patient having a body temperature below 95o F (35o C) secondary to environmental exposure. First Impression (Pediatric Assessment Triangle) Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry. Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds. Circulation – observe skin color for pallor, mottling and/or cyanosis. Primary Survey Ensure airway – use least invasive means possible to secure airway. Intubate only, if necessary, as gently as possible. Assess breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%. Assist with bag valve mask if ineffective respiratory effort. Assess circulation – check for pulse, if no pulse, begin CPR. It may be necessary to assess pulse and respirations for up to 30-45 seconds to confirm arrest. If no pulse, initiate CPR in conjunction with an AED/defibrillator. Use the most current American Heart Association guidelines. If severe hypothermia (< 86o F/30o C) is strongly suspected, limit defibrillation attempts to 1 and withhold medications. If body temperature is >86o F/30o C treat in accordance with the Pulseless Arrest Guideline. Resuscitation efforts should continue until core temperature approaches normal range. If pulse is present, DO NOT initiate CPR, no matter how slow the rate. Treat Bradycardia only if patient is hypotensive. Assess disability – assess LOC Exposure/Environment – carefully move patient to a warm environment, remove all wet clothing, dry the patient and cover with blankets. Avoid any rough movement that may cause cardiac dysrhythmias. It may be beneficial to immobilize the patient on a backboard. Secondary Assessment and Treatment Monitor vital signs and O2 saturation. Perform blood glucose analysis – Treat if BGL is < 60 mg/dl. Initiate cardiac monitoring. Physical exam and OPQRST/SAMPLE history Initiate WARM IV/IO normal saline – administer 20 ml/kg bolus if signs of shock are present. Apply warm packs to groin, axilla, neck and chest. Pediatric Cold Related Emergencies (Continued) Frostbite Protect injured, frostbitten areas, do not rub or place on any heated surface. Remove clothing and jewelry from injured body parts. Do not attempt to thaw injured part with local heat. Severe frostbite injuries should be transported to a trauma center. Consider Morphine for pain relief when the patient is conscious, alert, not hypotensive and complaining of severe pain. See Pediatric Pain Management Protocol."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vital Signs OPQRST/SAMPLE Cardiac rhythm Treatment(s) Communication with Medical Control"
-        }
-      ],
-      "plainText": "Pediatric Cold Related Emergencies\nThis protocol applies to a pediatric patient having a body temperature below 95o F (35o C)\nsecondary to environmental exposure.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis.\nPrimary Survey\n•\nEnsure airway – use least invasive means possible to secure airway.\no\nIntubate only, if necessary, as gently as possible.\n•\nAssess breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2  > 94%.\no\nAssist with bag valve mask if ineffective respiratory effort.\n•\nAssess circulation – check for pulse, if no pulse, begin CPR.\nIt may be necessary to assess pulse and respirations for up to 30-45 seconds to confirm\narrest.\n•\nIf no pulse, initiate CPR in conjunction with an AED/defibrillator. Use the most current American\nHeart Association guidelines.\no\nIf severe hypothermia (< 86o F/30o C) is strongly suspected, limit defibrillation attempts to\n1  and withhold medications.\no\nIf body temperature is >86o F/30o C treat in accordance with the Pulseless Arrest\nGuideline.\no\nResuscitation efforts should continue until core temperature approaches normal range.\n•\nIf pulse is present, DO NOT initiate CPR, no matter how slow the rate.\no\nTreat Bradycardia only if patient is hypotensive.\n•\nAssess disability – assess LOC\n•\nExposure/Environment – carefully move patient to a warm environment, remove all wet clothing,\ndry the patient and cover with blankets.\nAvoid any rough movement that may cause cardiac dysrhythmias. It may be beneficial to\nimmobilize the patient on a backboard.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation.\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nInitiate cardiac monitoring.\n•\nPhysical exam and OPQRST/SAMPLE history\n•\nInitiate WARM IV/IO normal saline – administer 20 ml/kg bolus if signs of shock are present.\n•\nApply warm packs to groin, axilla, neck and chest.\nPediatric Cold Related Emergencies (Continued)\nFrostbite\n•\nProtect injured, frostbitten areas, do not rub or place on any heated surface.\no\nRemove clothing and jewelry from injured body parts.\no\nDo not attempt to thaw injured part with local heat.\no\nSevere frostbite injuries should be transported to a trauma center.\nConsider Morphine for pain relief when the patient is conscious, alert, not hypotensive and complaining\nof severe pain.\no\nSee Pediatric Pain Management Protocol.\nDocument:\n•\nVital Signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control",
-      "pageText": [
-        {
-          "page": 56,
-          "text": "Pediatric Cold Related Emergencies\nThis protocol applies to a pediatric patient having a body temperature below 95o F (35o C)\nsecondary to environmental exposure.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis.\nPrimary Survey\n•\nEnsure airway – use least invasive means possible to secure airway.\no\nIntubate only, if necessary, as gently as possible.\n•\nAssess breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2  > 94%.\no\nAssist with bag valve mask if ineffective respiratory effort.\n•\nAssess circulation – check for pulse, if no pulse, begin CPR.\nIt may be necessary to assess pulse and respirations for up to 30-45 seconds to confirm\narrest.\n•\nIf no pulse, initiate CPR in conjunction with an AED/defibrillator. Use the most current American\nHeart Association guidelines.\no\nIf severe hypothermia (< 86o F/30o C) is strongly suspected, limit defibrillation attempts to\n1  and withhold medications.\no\nIf body temperature is >86o F/30o C treat in accordance with the Pulseless Arrest\nGuideline.\no\nResuscitation efforts should continue until core temperature approaches normal range.\n•\nIf pulse is present, DO NOT initiate CPR, no matter how slow the rate.\no\nTreat Bradycardia only if patient is hypotensive.\n•\nAssess disability – assess LOC\n•\nExposure/Environment – carefully move patient to a warm environment, remove all wet clothing,\ndry the patient and cover with blankets.\nAvoid any rough movement that may cause cardiac dysrhythmias. It may be beneficial to\nimmobilize the patient on a backboard.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation.\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nInitiate cardiac monitoring.\n•\nPhysical exam and OPQRST/SAMPLE history\n•\nInitiate WARM IV/IO normal saline – administer 20 ml/kg bolus if signs of shock are present.\n•\nApply warm packs to groin, axilla, neck and chest."
-        },
-        {
-          "page": 57,
-          "text": "Pediatric Cold Related Emergencies (Continued)\nFrostbite\n•\nProtect injured, frostbitten areas, do not rub or place on any heated surface.\no\nRemove clothing and jewelry from injured body parts.\no\nDo not attempt to thaw injured part with local heat.\no\nSevere frostbite injuries should be transported to a trauma center.\nConsider Morphine for pain relief when the patient is conscious, alert, not hypotensive and complaining\nof severe pain.\no\nSee Pediatric Pain Management Protocol.\nDocument:\n•\nVital Signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control"
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Pediatric Cold Related Emergencies. Assessment and treatment of pediatric hypothermia and frostbite, including resuscitation guidance, warming, documentation, and pain relief.","needsReview":false
+    },    {
       "id": "fever",
       "title": "Fever",
       "type": "protocol",
