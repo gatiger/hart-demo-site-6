@@ -1680,16 +1680,10 @@
             "description": "Emphasizes important points that should be included in patient care documentation.",
             "image": "assets/legend-documentation.webp",
             "alt": "Patient care documentation reminder symbol"
-          },
-          {
-            "title": "Continued on Next Page",
-            "description": "Indicates that the guideline or resource continues on the next page.",
-            "image": "assets/legend-continued.webp",
-            "alt": "Continued on next page symbol"
           }
         ]
       },
-      "plainText": "Legend. Important Point or Reminder. Contact Medical Control. Documentation Reminder. Continued on Next Page.",
+      "plainText": "Legend. Important Point or Reminder. Contact Medical Control. Documentation Reminder.",
       "needsReview": false
     },
     {
