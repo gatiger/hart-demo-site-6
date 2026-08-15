@@ -4124,79 +4124,48 @@
       ],
       "plainText":"Newborn Resuscitation. This protocol applies to term and pre-term newborn patients who fail to respond to initial stimulation and are in need of resuscitation efforts. Initial care, ventilation, compressions, advanced resuscitation, medication, APGAR scoring, and documentation guidance are included.","needsReview":false
     },    {
-      "id": "bradycardia",
-      "title": "Bradycardia",
-      "type": "protocol",
-      "categoryPath": [
-        "Pediatric Clinical Protocols",
-        "Pediatric Cardiac Emergencies"
+      "id":"bradycardia","title":"Pediatric Bradycardia","type":"protocol","categoryPath":["Pediatric Clinical Protocols","Pediatric Cardiac Emergencies"],"status":"active","effectiveDate":"2026-06-08","lastRevised":"","version":"2026",
+      "tags":["pediatric bradycardia","cardiac emergency","hypoxia","pacing"],
+      "summary":"Pediatric bradycardia assessment, treatment, Medical Control consultation, and documentation guidance.","displayMode":"native",
+      "content":[
+        {"type":"paragraph","text":"This protocol applies to pediatric patients with a heart rate < 60 beats per minute."},
+        {"type":"heading","level":2,"text":"First Impression (Pediatric Assessment Triangle)","links":[{"text":"Pediatric Assessment Triangle","protocolId":"pediatric-assessment-triangle"}]},
+        {"type":"list","items":["Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.","Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.","Circulation – observe skin color for pallor, mottling and/or cyanosis."]},
+        {"type":"heading","level":2,"text":"Primary Survey"},
+        {"type":"list","items":[
+          {"text":"Ensure airway – ensure patency and proper positioning","bold":["Ensure airway"]},
+          {"text":"Assess breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 ≥ 94%.","bold":["Assess breathing","Maintain SpO2 ≥ 94%."]}
+        ]},
+        {"type":"list","indent":1,"items":["Ventilate with BVM and 100% O2 if ineffective respiratory effort.","Avoid hyperventilation."]},
+        {"type":"icon-note","image":"assets/legend-important.webp","alt":"Important protocol information","text":"The most common cause of bradycardia in an infant/child is hypoxia. Ensure airway is patent and ventilation is adequate.","bold":["The most common cause of bradycardia in an infant/child is hypoxia. Ensure airway is patent and ventilation is adequate."],"red":true},
+        {"type":"list","items":[{"text":"Assess circulation – peripheral pulses, CRT, skin color and temp.","bold":["Assess circulation"]}]},
+        {"type":"list","indent":1,"items":["If patient is stable, monitor and transport.","If heart rate < 60 beats per minute with signs of shock after adequate ventilation, start CPR"]},
+        {"type":"list","items":[{"text":"Assess disability – assess LOC.","bold":["Assess disability"]},{"text":"Exposure/Environment – expose injuries as needed.","bold":["Exposure/Environment"]}]},
+        {"type":"heading","level":2,"text":"Secondary Survey and History"},
+        {"type":"list","items":[
+          "Monitor vital signs and O2 saturation.",
+          {"text":"Perform blood glucose analysis – Treat if BGL is <60 mg/dl.","bold":["BGL is <60 mg/dl."]},
+          "Initiate cardiac monitoring.",
+          "Physical exam and OPQRST/SAMPLE history"
+        ]},
+        {"type":"icon-note","image":"assets/legend-important.webp","alt":"Important protocol information","text":"Signs and symptoms may be non-specific, such as dizzy or weak, or may be dramatic with shock, altered level of consciousness, difficulty breathing or collapse.","bold":["Signs and symptoms may be non-specific, such as dizzy or weak, or may be dramatic with shock, altered level of consciousness, difficulty breathing or collapse."],"red":true},
+        {"type":"list","items":["Initiate IV/IO of normal saline – administer 20ml/kg bolus if signs of shock are present.","If bradycardia and signs of cardiopulmonary compromise persist:"]},
+        {"type":"list","indent":1,"items":[
+          {"text":"Epinephrine 1:10,000: 0.01 mg/kg IV/IO Max Dose – 1 mg","bold":["0.01 mg/kg IV/IO","Max Dose – 1 mg"],"links":[{"text":"Epinephrine","protocolId":"epinephrine-1-1000-and-1-10-000"}]},
+          "May repeat every 3-5 minutes.",
+          {"text":"Atropine 0.02 mg/kg IV/IO – Minimum Dose: 0.1 mg Max Dose – 0.5 mg","bold":["0.02 mg/kg IV/IO","Minimum Dose: 0.1 mg","Max Dose – 0.5 mg"],"links":[{"text":"Atropine","protocolId":"atropine"}]},
+          "May repeat once in 5 minutes."
+        ]},
+        {"type":"stop-control","title":"STOP","text":"CONTACT MEDICAL CONTROL","image":"assets/legend-medical-control.webp","alt":"Stop and contact Medical Control"},
+        {"type":"heading","level":2,"text":"If no response:"},
+        {"type":"list","items":[
+          {"text":"Consider transcutaneous pacing. See Transcutaneous Pacing Guideline.","links":[{"text":"Transcutaneous Pacing Guideline","protocolId":"transcutaneous-pacing"}]},
+          "If suspected beta-blocker or calcium channel blocker ingestion consult Medical Control for treatment."
+        ]},
+        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital Signs","Pertinent assessment findings","Onset/duration of event","Treatment","Communication with Medical Control"]}
       ],
-      "status": "active",
-      "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 46,
-        "pageEnd": 47,
-        "pageLabel": "46-47"
-      },
-      "summary": "",
-      "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Pediatric Bradycardia"
-        },
-        {
-          "type": "paragraph",
-          "text": "This protocol applies to pediatric patients with a heart rate < 60 beats per minute. First Impression (Pediatric Assessment Triangle) Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry. Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds. Circulation – observe skin color for pallor, mottling and/or cyanosis. Primary Survey Ensure airway – ensure patency and proper positioning Assess breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%. Ventilate with BVM and 100% O2 if ineffective respiratory effort. Avoid hyperventilation. The most common cause of bradycardia in an infant/child is hypoxia. Ensure airway is patent and ventilation is adequate. Assess circulation – peripheral pulses, CRT, skin color and temp. If patient is stable, monitor and transport. If heart rate < 60 beats per minute with signs of shock after adequate ventilation, start CPR Assess disability – assess LOC. Exposure/Environment – expose injuries as needed. Secondary Survey and History Monitor vital signs and O2 saturation. Perform blood glucose analysis. – Treat if BGL is <60 mg/dl. Initiate cardiac monitoring. Physical exam and OPQRST/SAMPLE history Signs and symptoms may be non-specific, such as dizzy or weak, or may be dramatic with shock, altered level of consciousness, difficulty breathing or collapse. Initiate IV/IO of normal saline – administer 20ml/kg bolus if signs of shock are present."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "If bradycardia and signs of cardiopulmonary compromise persist"
-        },
-        {
-          "type": "paragraph",
-          "text": "Epinephrine 1:10,000; 0.01 mg/kg IV/IO Max Dose – 1 mg May repeat every 3-5 minutes. Atropine 0.02 mg/kg IV/IO – Minimum Dose: 0.1 mg Max Dose – 0.5 mg May repeat once in 5 minutes."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vital Signs Pertinent assessment findings Onset/duration of event Treatment Communication with medical control Contact Medical Control Pediatric Bradycardia (Continued)"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "If no response"
-        },
-        {
-          "type": "paragraph",
-          "text": "Consider transcutaneous pacing. See Transcutaneous Pacing Guideline. If suspected beta-blocker or calcium channel blocker ingestion consult Medical Control for treatment."
-        }
-      ],
-      "plainText": "Pediatric Bradycardia\nThis protocol applies to pediatric patients with a heart rate < 60 beats per minute.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis.\nPrimary Survey\n•\nEnsure airway – ensure patency and proper positioning\n•\nAssess breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%.\no\nVentilate with BVM and 100% O2 if ineffective respiratory effort.\no\nAvoid hyperventilation.\nThe most common cause of bradycardia in an infant/child is hypoxia.  Ensure airway is\npatent and ventilation is adequate.\n•\nAssess circulation – peripheral pulses, CRT, skin color and temp.\no\nIf patient is stable, monitor and transport.\no\nIf heart rate < 60 beats per minute with signs of shock after adequate ventilation, start CPR\n•\nAssess disability – assess LOC.\n•\nExposure/Environment – expose injuries as needed.\nSecondary Survey and History\n•\nMonitor vital signs and O2 saturation.\n•\nPerform blood glucose analysis. – Treat if BGL is <60 mg/dl.\n•\nInitiate cardiac monitoring.\n•\nPhysical exam and OPQRST/SAMPLE history\nSigns and symptoms may be non-specific, such as dizzy or weak, or may be dramatic with\nshock, altered level of consciousness, difficulty breathing or collapse.\n•\nInitiate IV/IO of normal saline – administer 20ml/kg bolus if signs of shock are present.\n•\nIf bradycardia and signs of cardiopulmonary compromise persist:\no\nEpinephrine 1:10,000; 0.01 mg/kg IV/IO       Max Dose – 1 mg\n▪\nMay repeat every 3-5 minutes.\no\nAtropine 0.02 mg/kg IV/IO – Minimum Dose: 0.1 mg   Max Dose – 0.5 mg\n▪\nMay repeat once in 5 minutes.\nDocument:\n•\nVital Signs\n•\nPertinent assessment\nfindings\n•\nOnset/duration of\nevent\n•\nTreatment\n•\nCommunication with\nmedical control\nContact Medical\nControl\nPediatric Bradycardia (Continued)\nIf no response:\n•\nConsider transcutaneous pacing.  See Transcutaneous Pacing Guideline.\n•\nIf suspected beta-blocker or calcium channel blocker ingestion consult Medical Control for\ntreatment.",
-      "pageText": [
-        {
-          "page": 46,
-          "text": "Pediatric Bradycardia\nThis protocol applies to pediatric patients with a heart rate < 60 beats per minute.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis.\nPrimary Survey\n•\nEnsure airway – ensure patency and proper positioning\n•\nAssess breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%.\no\nVentilate with BVM and 100% O2 if ineffective respiratory effort.\no\nAvoid hyperventilation.\nThe most common cause of bradycardia in an infant/child is hypoxia.  Ensure airway is\npatent and ventilation is adequate.\n•\nAssess circulation – peripheral pulses, CRT, skin color and temp.\no\nIf patient is stable, monitor and transport.\no\nIf heart rate < 60 beats per minute with signs of shock after adequate ventilation, start CPR\n•\nAssess disability – assess LOC.\n•\nExposure/Environment – expose injuries as needed.\nSecondary Survey and History\n•\nMonitor vital signs and O2 saturation.\n•\nPerform blood glucose analysis. – Treat if BGL is <60 mg/dl.\n•\nInitiate cardiac monitoring.\n•\nPhysical exam and OPQRST/SAMPLE history\nSigns and symptoms may be non-specific, such as dizzy or weak, or may be dramatic with\nshock, altered level of consciousness, difficulty breathing or collapse.\n•\nInitiate IV/IO of normal saline – administer 20ml/kg bolus if signs of shock are present.\n•\nIf bradycardia and signs of cardiopulmonary compromise persist:\no\nEpinephrine 1:10,000; 0.01 mg/kg IV/IO       Max Dose – 1 mg\n▪\nMay repeat every 3-5 minutes.\no\nAtropine 0.02 mg/kg IV/IO – Minimum Dose: 0.1 mg   Max Dose – 0.5 mg\n▪\nMay repeat once in 5 minutes."
-        },
-        {
-          "page": 47,
-          "text": "Document:\n•\nVital Signs\n•\nPertinent assessment\nfindings\n•\nOnset/duration of\nevent\n•\nTreatment\n•\nCommunication with\nmedical control\nContact Medical\nControl\nPediatric Bradycardia (Continued)\nIf no response:\n•\nConsider transcutaneous pacing.  See Transcutaneous Pacing Guideline.\n•\nIf suspected beta-blocker or calcium channel blocker ingestion consult Medical Control for\ntreatment."
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Pediatric Bradycardia. This protocol applies to pediatric patients with a heart rate less than 60 beats per minute. Assessment, treatment, Medical Control consultation, pacing, and documentation guidance are included.","needsReview":false
+    },    {
       "id": "tachycardia",
       "title": "Tachycardia",
       "type": "protocol",
