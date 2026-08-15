@@ -248,7 +248,12 @@ function showProtocol(id) {
   const content = document.getElementById('protocolContent');
   content.innerHTML = '';
 
-  if ((protocol.displayMode === 'pdf-page' && !(protocol.content || []).length) || protocol.id === 'approval-statement') {
+  if (protocol.displayMode === 'native-approval') {
+    renderApprovalStatement(protocol.approval || {}, content);
+    return;
+  }
+
+  if (protocol.displayMode === 'pdf-page' && !(protocol.content || []).length) {
 
     const imageWrap = document.createElement('div');
     imageWrap.className = 'pdf-page-image-wrap';
@@ -298,6 +303,41 @@ function showProtocol(id) {
   }
 }
 
+function renderApprovalStatement(approval, container) {
+  const approvers = Array.isArray(approval.approvers) ? approval.approvers : [];
+  const section = document.createElement('section');
+  section.className = 'approval-page';
+  section.setAttribute('aria-labelledby', 'approval-page-heading');
+
+  section.innerHTML = `
+    <div class="approval-mark" aria-hidden="true">
+      <img src="icons/ems-192.png" alt="">
+    </div>
+    <p class="approval-kicker">Hart County Emergency Medical Services</p>
+    <h3 id="approval-page-heading">Official Protocol Approval</h3>
+    <div class="approval-statement-copy">
+      ${approval.statement ? `<p>${escapeHtml(approval.statement)}</p>` : ''}
+      ${approval.effectiveStatement ? `<p>${escapeHtml(approval.effectiveStatement)}</p>` : ''}
+    </div>
+    <div class="approval-divider" aria-hidden="true"></div>
+    <h4>Approved By</h4>
+    <div class="approval-signers">
+      ${approvers.map(person => `
+        <article class="approval-signer">
+          <p class="approval-name">${escapeHtml(person.name || '')}</p>
+          <p class="approval-title">${escapeHtml(person.title || '')}</p>
+          <p class="approval-status">${escapeHtml(person.status || 'Signature on file')}</p>
+        </article>
+      `).join('')}
+    </div>
+    <aside class="approval-record" aria-labelledby="approval-record-title">
+      <h4 id="approval-record-title">${escapeHtml(approval.recordsTitle || 'Official Record')}</h4>
+      <p>${escapeHtml(approval.recordsNotice || '')}</p>
+    </aside>
+  `;
+
+  container.appendChild(section);
+}
 function renderBlock(block, container) {
   if (block.type === 'heading') {
     const level = block.level === 2 ? 'h3' : 'h4';

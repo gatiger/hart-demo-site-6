@@ -1633,32 +1633,25 @@
       "id": "approval-statement",
       "title": "Approval Statement",
       "type": "administrative",
-      "categoryPath": [
-        "Administrative"
-      ],
+      "categoryPath": ["Administrative"],
       "status": "active",
       "effectiveDate": "2026-06-08",
       "lastRevised": "",
       "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 8,
-        "pageEnd": 8,
-        "pageLabel": "8"
+      "tags": ["approval", "administrative"],
+      "displayMode": "native-approval",
+      "approval": {
+        "statement": "The clinical operating protocols, standing orders, procedures, and related guidance contained within the 2026 Hart County EMS Protocols have been reviewed and approved for use by Hart County Emergency Medical Services.",
+        "effectiveStatement": "These protocols are effective June 8, 2026, and remain in effect until revised, replaced, or withdrawn by the appropriate approving authority.",
+        "approvers": [
+          {"name": "Morgan Wood, MD", "title": "Medical Director", "status": "Signature on file"},
+          {"name": "Mike Adams", "title": "EMS Director", "status": "Signature on file"}
+        ],
+        "recordsTitle": "Official Record",
+        "recordsNotice": "Original signatures approving these protocols are maintained on file at Hart County Emergency Medical Services headquarters. This electronic version is provided as an operational reference for authorized personnel."
       },
-      "summary": "Displayed from the official PDF because the page contains approval signatures.",
-      "content": [],
-      "plainText": "",
-      "pageText": [
-        {
-          "page": 8,
-          "text": ""
-        }
-      ],
-      "needsReview": true,
-      "extractionNote": "Displayed from the official PDF by default because this page may contain tables, charts, forms, signatures, algorithms, or visual formatting that should not be flattened into text. Convert to structured table/blocks only after manual review.",
-      "displayMode": "pdf-page"
+      "plainText": "Approval Statement. The clinical operating protocols, standing orders, procedures, and related guidance contained within the 2026 Hart County EMS Protocols have been reviewed and approved for use by Hart County Emergency Medical Services. Effective June 8, 2026. Approved by Morgan Wood, MD, Medical Director, and Mike Adams, EMS Director. Original signatures are maintained on file at Hart County Emergency Medical Services headquarters.",
+      "needsReview": false
     },
     {
       "id": "general-information",
