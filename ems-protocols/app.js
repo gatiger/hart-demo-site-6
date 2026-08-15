@@ -24,7 +24,7 @@ installBtn?.addEventListener('click', async () => {
 async function init() {
   const response = await fetch('content/ems_protocols_content.json', { cache: 'no-cache' });
   protocolData = await response.json();
-  document.getElementById('metaLine').textContent = `Effective ${formatDate(protocolData.meta.effectiveDate)} • ${protocolData.protocols.length} entries`;
+  document.getElementById('metaLine').textContent = `Effective ${formatDate(protocolData.meta.effectiveDate)} • ${protocolData.protocols.filter(isVisibleProtocol).length} entries`;
   renderTree(protocolData.navigation);
   showSplash();
   if ('serviceWorker' in navigator) navigator.serviceWorker.register('service-worker.js').catch(() => {});
@@ -95,6 +95,16 @@ function pageImageUrlsFor(protocol) {
   return urls;
 }
 
+function isVisibleProtocol(protocol) {
+  const page = Number(protocol?.source?.pageStart || 0);
+  return !page || page >= 8;
+}
+
+function isVisibleNavigationItem(item) {
+  const page = Number(item?.pageStart || 0);
+  return !page || page >= 8;
+}
+
 function normalize(value) {
   return (value || '').toString().toLowerCase();
 }
@@ -105,7 +115,7 @@ function searchProtocols(term) {
   const terms = clean.split(/\s+/).filter(Boolean);
   const results = [];
 
-  for (const p of protocolData.protocols) {
+  for (const p of protocolData.protocols.filter(isVisibleProtocol)) {
     const title = normalize(p.title);
     const categories = normalize((p.categoryPath || []).join(' '));
     const tags = normalize((p.tags || []).join(' '));
@@ -200,6 +210,7 @@ function renderTree(sections, filter = '') {
 function sectionHasMatch(section, matches) {
   const items = section.children || [];
   for (const item of items) {
+    if (!item.children && !isVisibleNavigationItem(item)) continue;
     if (item.children && sectionHasMatch(item, matches)) return true;
     if (item.id && matches.has(item.id)) return true;
   }
@@ -208,6 +219,7 @@ function sectionHasMatch(section, matches) {
 
 function renderItems(items, container, matches, term) {
   for (const item of items) {
+    if (!item.children && !isVisibleNavigationItem(item)) continue;
     if (item.children) {
       const details = document.createElement('details');
       details.className = 'tree-group';
