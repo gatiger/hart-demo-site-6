@@ -677,3 +677,5 @@ details[open] > .tree-heading.tree-toggle::before {
   .flow-stage-with-documentation.layout-below-right.flow-arrow-after::before,
   .flow-stage-with-documentation.layout-below-right.flow-arrow-after::after { left: 11%; }
 }
+.protocol-icon-note.flow-arrow-after { position: relative; margin-bottom: 3rem; }
+.protocol-icon-note.flow-arrow-after::before { content: ""; position: absolute; left: 50%; bottom: -2.15rem; width: 10px; height: 2.15rem; transform: translateX(-50%); background: #050505; }

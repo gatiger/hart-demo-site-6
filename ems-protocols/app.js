@@ -657,7 +657,7 @@ function renderProtocolImage(block, container) {
 
 function renderIconNote(block, container) {
   const section = document.createElement('section');
-  section.className = `protocol-icon-note ${block.red ? 'protocol-icon-note-red' : ''}`;
+  section.className = `protocol-icon-note ${block.red ? 'protocol-icon-note-red' : ''} ${block.arrowAfter ? 'flow-arrow-after' : ''}`;
   const image = document.createElement('img');
   image.src = block.image;
   image.alt = block.alt || '';

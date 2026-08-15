@@ -4601,70 +4601,58 @@
       ],
       "plainText":"Pediatric Nausea/Vomiting. Assessment and Ondansetron treatment for pediatric patients with prolonged or active vomiting.","needsReview":false
     },    {
-      "id": "respiratory-distress",
-      "title": "Respiratory Distress",
-      "type": "protocol",
-      "categoryPath": [
-        "Pediatric Clinical Protocols",
-        "Pediatric Medical Emergencies"
+      "id":"respiratory-distress","title":"Pediatric Respiratory Distress","type":"protocol","categoryPath":["Pediatric Clinical Protocols","Pediatric Medical Emergencies"],"status":"active","effectiveDate":"2026-06-08","lastRevised":"","version":"2026",
+      "tags":["pediatric","respiratory distress","croup","epiglottitis","CPAP"],
+      "summary":"Assessment and treatment of pediatric respiratory distress.",
+      "content":[
+        {"type":"heading","level":2,"text":"Pediatric Respiratory Distress"},
+        {"type":"paragraph","text":"This protocol applies to pediatric patients presenting with inadequate ventilation or oxygenation; which may include increased or decreased respirations, cyanosis, nasal flaring, grunting, retractions, absent or diminished breath sounds, or decreased responsiveness."},
+        {"type":"flow-stage","title":"First Impression (Pediatric Assessment Triangle)","links":[{"text":"Pediatric Assessment Triangle","protocolId":"pediatric-assessment-triangle"}],"arrowAfter":true,"items":[
+          "Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.",
+          "Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.",
+          "Circulation – observe skin color for pallor, mottling, and/or cyanosis."
+        ]},
+        {"type":"flow-stage","title":"Primary Survey","arrowAfter":true,"items":[
+          "Ensure airway – ensure patency and proper positioning.",
+          {"text":"Assess breathing – give O₂ as tolerated by mask or blow-by. Maintain SpO₂ ≥ 94%.","bold":["Maintain SpO₂ ≥ 94%."]},
+          {"text":"Assist with bag valve mask if ineffective respiratory effort.","indent":1},
+          {"text":"Assess circulation – if needed, manage shock using the Shock Protocol.","links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          "Assess disability – assess LOC.",
+          "Exposure/Environment – expose injuries as needed."
+        ]},
+        {"type":"flow-stage","title":"Secondary Assessment and Treatment","arrowAfter":true,"items":[
+          "Monitor vital signs and O₂ saturation.",
+          "Auscultate breath sounds.",
+          "Apply and monitor capnography.",
+          "Initiate cardiac monitoring.",
+          "Physical exam and OPQRST/SAMPLE history.",
+          {"text":"If fever is present with any respiratory signs and symptoms or if the patient is coughing, sneezing or generating airborne droplets, a HEPA mask should be worn by EMS personnel to avoid transmission and infection.","icon":"assets/legend-important.webp","iconAlt":"Important protocol information","bold":["If fever is present with any respiratory signs and symptoms or if the patient is coughing, sneezing or generating airborne droplets, a HEPA mask should be worn by EMS personnel to avoid transmission and infection."],"red":["If fever is present with any respiratory signs and symptoms or if the patient is coughing, sneezing or generating airborne droplets, a HEPA mask should be worn by EMS personnel to avoid transmission and infection."]},
+          "Consider IV of normal saline at KVO rate.",
+          "If wheezing or capnography indicates bronchospasm:",
+          {"text":"Nebulize DuoNeb 1.5–3 ml (may repeat once after 20 minutes if needed).","indent":1,"bold":["1.5–3 ml"],"links":[{"text":"DuoNeb","protocolId":"duoneb"}]},
+          {"text":"Administer Solu-Medrol 2 mg/kg IV for pediatric patients. Max Dose: 125 mg.","indent":1,"bold":["2 mg/kg IV","Max Dose: 125 mg."],"links":[{"text":"Solu-Medrol","protocolId":"methylprednisolone-solu-medrol"}]},
+          "If stridor, history and exam are suggestive of croup:",
+          {"text":"Nebulize Epinephrine 1:1,000 2.5 mg (in 3 ml of saline) < 15kg; if greater than 15kg – 5 mg.","indent":1,"bold":["2.5 mg","< 15kg","5 mg."],"links":[{"text":"Epinephrine","protocolId":"epinephrine-1-1000-and-1-10-000"}]},
+          "If laryngeal edema, obstruction, history and/or exam is suggestive of epiglottitis:",
+          {"text":"Use removal techniques if FBAO.","indent":1},
+          {"text":"Needle Cricothyrotomy (only if bag valve mask and/or other non-invasive procedures are ineffective).","indent":1,"bold":["Needle Cricothyrotomy"]},
+          {"text":"CROUP signs and symptoms may include: < 4 years old, low-grade fever, inspiratory stridor, hoarseness, bark-like cough, recent upper respiratory infection.","icon":"assets/legend-important.webp","iconAlt":"Important protocol information","bold":["CROUP signs and symptoms may include: < 4 years old, low-grade fever, inspiratory stridor, hoarseness, bark-like cough, recent upper respiratory infection."],"red":["CROUP signs and symptoms may include: < 4 years old, low-grade fever, inspiratory stridor, hoarseness, bark-like cough, recent upper respiratory infection."]},
+          {"text":"EPIGLOTTITIS signs and symptoms may include: > 3 years old, high-grade fever, stridor, drooling, sore throat, dysphagia, rapid onset of distress.","icon":"assets/legend-important.webp","iconAlt":"Important protocol information","bold":["EPIGLOTTITIS signs and symptoms may include: > 3 years old, high-grade fever, stridor, drooling, sore throat, dysphagia, rapid onset of distress."],"red":["EPIGLOTTITIS signs and symptoms may include: > 3 years old, high-grade fever, stridor, drooling, sore throat, dysphagia, rapid onset of distress."]}
+        ]},
+        {"type":"icon-note","image":"assets/legend-important.webp","alt":"Important protocol information","text":"Consider advanced airway placement if patient presents with a decreased level of consciousness with respiratory failure or poor ventilatory effort (with hypoxia not responding to supplemental O₂ at 100%) or is unable to maintain a patent airway.","bold":[],"red":true,"arrowAfter":true},
+        {"type":"stop-control","title":"STOP","text":"CONTACT MEDICAL CONTROL","image":"assets/legend-medical-control.webp","alt":"Stop and contact Medical Control","arrowAfter":true},
+        {"type":"flow-stage","title":"Additional doses of Albuterol every 5–10 minutes or continuous","links":[{"text":"Albuterol","protocolId":"albuterol"}],"items":[
+          {"text":"Consider CPAP – See CPAP Protocol (If you can obtain a good mask seal with adult mask).","links":[{"text":"CPAP Protocol","protocolId":"continuous-positive-pressure-airway"}],"bold":["If you can obtain a good mask seal with adult mask"]}
+        ]},
+        {"type":"flow-stage","title":"IMPORTANT","items":[
+          {"text":"Patients must be alert and able to maintain their own airway for CPAP. With CPAP, most patients will improve in 5–10 minutes. If no improvement within this time consider ventilation with a BVM.","icon":"assets/legend-important.webp","iconAlt":"Important protocol information","bold":["Patients must be alert and able to maintain their own airway for CPAP. With CPAP, most patients will improve in 5–10 minutes. If no improvement within this time consider ventilation with a BVM."],"red":["Patients must be alert and able to maintain their own airway for CPAP. With CPAP, most patients will improve in 5–10 minutes. If no improvement within this time consider ventilation with a BVM."]},
+          {"text":"Indications for CPAP are constantly broadening.","icon":"assets/legend-important.webp","iconAlt":"Important protocol information","bold":["Indications for CPAP are constantly broadening."],"red":["Indications for CPAP are constantly broadening."]},
+          {"text":"Local medical directors may also authorize the use of steroids, magnesium sulfate for management of respiratory distress.","icon":"assets/legend-important.webp","iconAlt":"Important protocol information","bold":["Local medical directors may also authorize the use of steroids, magnesium sulfate for management of respiratory distress."],"red":["Local medical directors may also authorize the use of steroids, magnesium sulfate for management of respiratory distress."]}
+        ]},
+        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital Signs","OPQRST/SAMPLE","Cardiac rhythm","Treatment(s)","Communication with Medical Control"]}
       ],
-      "status": "active",
-      "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 61,
-        "pageEnd": 62,
-        "pageLabel": "61-62"
-      },
-      "summary": "",
-      "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Pediatric Respiratory Distress"
-        },
-        {
-          "type": "paragraph",
-          "text": "This protocol applies to pediatric patients presenting with inadequate ventilation or oxygenation; which may include increased or decreased respirations, cyanosis, nasal flaring, grunting, retractions, absent or diminished breath sounds, or decreased responsiveness. First Impression (Pediatric Assessment Triangle) Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry. Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds. Circulation – observe skin color for pallor, mottling and/or cyanosis. Primary Survey Ensure airway – Ensure patency and proper positioning. Assess breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%. Assist with bag valve mask if ineffective respiratory effort. Assess circulation – if needed, manage shock using the Shock Protocol. Assess disability – assess LOC. Exposure/Environment – expose injuries as needed. Secondary Assessment and Treatment Monitor vital signs and O2 saturation. Auscultate breath sounds. Apply and monitor capnography. Initiate cardiac monitoring Physical exam and OPQRST/SAMPLE history. If fever is present with any respiratory signs and symptoms or if the patient is coughing, sneezing or generating airborne droplets, a HEPA mask should be worn by EMS personnel to avoid transmission and infection. Consider IV of normal saline at KVO rate."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "If wheezing or capnography indicates bronchospasm"
-        },
-        {
-          "type": "paragraph",
-          "text": "Nebulize DuoNeb 1.5-3 ml (may repeat once after 20 minutes if needed) Administer Solu-Medrol 2 mg/kg IV for pediatric patients. Max Dose: 125 mg If stridor, history and exam are suggestive of croup: Nebulize Epinephrine 1:1,000 2.5 mg (in 3 ml of saline) < 15kg, if greater than 15kg – 5 mg If laryngeal edema, obstruction, history and/or exam is suggestive of epiglottitis: Use removal techniques if FBAO Needle cricothyrotomy (only if bag valve mask and/or other non-invasive procedures are ineffective) CROUP signs and symptoms may include: < 4 years old, low-grade fever, inspiratory stridor, hoarseness, bark-like cough, recent upper respiratory infection. EPIGLOTTITIS signs and symptoms may include: > 3 years old, high-grade fever, stridor, drooling, sore throat, dysphagia, rapid onset of distress. Pediatric Respiratory Distress (Continued) Consider advanced airway placement if patient presents with a decreased level of consciousness with respiratory failure or poor ventilatory effort (with hypoxia not responding to supplemental O2 at 100%.) or unable to maintain a patent airway. Contact Medical Control Additional doses of Albuterol every 5 – 10 minutes or continuous Consider CPAP – See CPAP Protocol (If you can obtain a good mask seal with adult mask) IMPORTANT Patients must be alert and able to maintain their own airway for CPAP With CPAP, most patients will improve in 5-10 minutes. If no improvement within this time consider ventilation with a BVM. Indications for CPAP are constantly broadening. Local medical directors may also authorize the use of steroids, magnesium sulfate for management of respiratory distress."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vital Signs OPQRST/SAMPLE Cardiac rhythm Treatment(s) Communication with Medical Control"
-        }
-      ],
-      "plainText": "Pediatric Respiratory Distress\nThis protocol applies to pediatric patients presenting with inadequate ventilation or oxygenation;\nwhich may include increased or decreased respirations, cyanosis, nasal flaring, grunting,\nretractions, absent or diminished breath sounds, or decreased responsiveness.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis.\nPrimary Survey\n•\nEnsure airway – Ensure patency and proper positioning.\n•\nAssess breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%.\no\nAssist with bag valve mask if ineffective respiratory effort.\n•\nAssess circulation – if needed, manage shock using the Shock Protocol.\n•\nAssess disability – assess LOC.\n•\nExposure/Environment – expose injuries as needed.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation.\n•\nAuscultate breath sounds.\n•\nApply and monitor capnography.\n•\nInitiate cardiac monitoring\n•\nPhysical exam and OPQRST/SAMPLE history.\nIf fever is present with any respiratory signs and symptoms or if the patient is coughing,\nsneezing or generating airborne droplets, a HEPA mask should be worn by EMS personnel to\navoid transmission and infection.\n•\nConsider IV of normal saline at KVO rate.\n•\nIf wheezing or capnography indicates bronchospasm:\no\nNebulize DuoNeb 1.5-3 ml (may repeat once after 20 minutes if needed)\no\nAdminister Solu-Medrol 2 mg/kg IV for pediatric patients.  Max Dose: 125 mg\n•\nIf stridor, history and exam are suggestive of croup:\no\nNebulize Epinephrine 1:1,000 2.5 mg (in 3 ml of saline) < 15kg, if greater than 15kg – 5 mg\n•\nIf laryngeal edema, obstruction, history and/or exam is suggestive of epiglottitis:\no\nUse removal techniques if FBAO\no\nNeedle cricothyrotomy (only if bag valve mask and/or other non-invasive procedures are\nineffective)\nCROUP signs and symptoms may include: < 4 years old, low-grade fever, inspiratory stridor,\nhoarseness, bark-like cough, recent upper respiratory infection.\nEPIGLOTTITIS signs and symptoms may include: > 3 years old, high-grade fever, stridor,\ndrooling, sore throat, dysphagia, rapid onset of distress.\nPediatric Respiratory Distress (Continued)\nConsider advanced airway placement if patient presents with a decreased level of\nconsciousness with respiratory failure or poor ventilatory effort (with hypoxia not responding\nto supplemental O2 at 100%.) or unable to maintain a patent airway.\nContact Medical\nControl\n•\nAdditional doses of Albuterol every 5 – 10 minutes or continuous\n•\nConsider CPAP – See CPAP Protocol (If you can obtain a good mask seal with adult mask)\nIMPORTANT\nPatients must be alert and able to maintain their own airway for CPAP\nWith CPAP, most patients will improve in 5-10 minutes.  If no improvement within this time\nconsider ventilation with a BVM.\nIndications for CPAP are constantly broadening.\nLocal medical directors may also authorize the use of steroids, magnesium sulfate for\nmanagement of respiratory distress.\nDocument:\n•\nVital Signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control",
-      "pageText": [
-        {
-          "page": 61,
-          "text": "Pediatric Respiratory Distress\nThis protocol applies to pediatric patients presenting with inadequate ventilation or oxygenation;\nwhich may include increased or decreased respirations, cyanosis, nasal flaring, grunting,\nretractions, absent or diminished breath sounds, or decreased responsiveness.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis.\nPrimary Survey\n•\nEnsure airway – Ensure patency and proper positioning.\n•\nAssess breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%.\no\nAssist with bag valve mask if ineffective respiratory effort.\n•\nAssess circulation – if needed, manage shock using the Shock Protocol.\n•\nAssess disability – assess LOC.\n•\nExposure/Environment – expose injuries as needed.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation.\n•\nAuscultate breath sounds.\n•\nApply and monitor capnography.\n•\nInitiate cardiac monitoring\n•\nPhysical exam and OPQRST/SAMPLE history.\nIf fever is present with any respiratory signs and symptoms or if the patient is coughing,\nsneezing or generating airborne droplets, a HEPA mask should be worn by EMS personnel to\navoid transmission and infection.\n•\nConsider IV of normal saline at KVO rate.\n•\nIf wheezing or capnography indicates bronchospasm:\no\nNebulize DuoNeb 1.5-3 ml (may repeat once after 20 minutes if needed)\no\nAdminister Solu-Medrol 2 mg/kg IV for pediatric patients.  Max Dose: 125 mg\n•\nIf stridor, history and exam are suggestive of croup:\no\nNebulize Epinephrine 1:1,000 2.5 mg (in 3 ml of saline) < 15kg, if greater than 15kg – 5 mg\n•\nIf laryngeal edema, obstruction, history and/or exam is suggestive of epiglottitis:\no\nUse removal techniques if FBAO\no\nNeedle cricothyrotomy (only if bag valve mask and/or other non-invasive procedures are\nineffective)\nCROUP signs and symptoms may include: < 4 years old, low-grade fever, inspiratory stridor,\nhoarseness, bark-like cough, recent upper respiratory infection.\nEPIGLOTTITIS signs and symptoms may include: > 3 years old, high-grade fever, stridor,\ndrooling, sore throat, dysphagia, rapid onset of distress."
-        },
-        {
-          "page": 62,
-          "text": "Pediatric Respiratory Distress (Continued)\nConsider advanced airway placement if patient presents with a decreased level of\nconsciousness with respiratory failure or poor ventilatory effort (with hypoxia not responding\nto supplemental O2 at 100%.) or unable to maintain a patent airway.\nContact Medical\nControl\n•\nAdditional doses of Albuterol every 5 – 10 minutes or continuous\n•\nConsider CPAP – See CPAP Protocol (If you can obtain a good mask seal with adult mask)\nIMPORTANT\nPatients must be alert and able to maintain their own airway for CPAP\nWith CPAP, most patients will improve in 5-10 minutes.  If no improvement within this time\nconsider ventilation with a BVM.\nIndications for CPAP are constantly broadening.\nLocal medical directors may also authorize the use of steroids, magnesium sulfate for\nmanagement of respiratory distress.\nDocument:\n•\nVital Signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control"
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Pediatric Respiratory Distress. Assessment and treatment including airway management, respiratory medications, Medical Control, CPAP guidance, and documentation.","needsReview":false
+    },    {
       "id": "seizure",
       "title": "Seizure",
       "type": "protocol",
