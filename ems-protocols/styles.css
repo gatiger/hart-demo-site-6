@@ -507,3 +507,7 @@ details[open] > .tree-heading.tree-toggle::before {
   .legal-indent-1 { margin-left: .65rem; }
   .legal-indent-2 { margin-left: 1.25rem; }
 }
+/* Native document and order examples */
+.document-example { max-width: 760px; margin: 1.25rem auto; padding: clamp(1rem, 4vw, 2rem); border: 2px solid #173a5e; border-radius: .65rem; background: #fff; box-shadow: 0 8px 22px rgba(23,58,94,.08); }
+.protocol-content .document-example-title { margin: 0 0 1.25rem; padding-bottom: .65rem; border-bottom: 2px solid #173a5e; color: #172b3f; font-size: 1.15rem; font-weight: 900; letter-spacing: .045em; text-align: center; }
+.document-example p { margin: .8rem 0 0; color: #172b3f; font-weight: 800; line-height: 1.55; white-space: pre-wrap; overflow-wrap: anywhere; }

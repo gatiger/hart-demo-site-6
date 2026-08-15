@@ -2417,51 +2417,51 @@
       "id": "withholding-or-termination-of-resuscitation",
       "title": "Withholding or Termination of Resuscitation",
       "type": "protocol",
-      "categoryPath": [
-        "General Protocols"
-      ],
+      "categoryPath": ["General Protocols"],
       "status": "active",
       "effectiveDate": "2026-06-08",
       "lastRevised": "",
       "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 30,
-        "pageEnd": 31,
-        "pageLabel": "30-31"
-      },
-      "summary": "",
+      "tags": ["resuscitation", "termination", "DNR", "advanced directives", "medical control", "OCGA 31-39-6.1"],
+      "summary": "Criteria for withholding or terminating resuscitation and requirements for out-of-hospital DNR orders.",
+      "displayMode": "native",
       "content": [
         {
-          "type": "heading",
-          "level": 2,
-          "text": "Withholding or Termination of Resuscitation"
-        },
-        {
-          "type": "paragraph",
+          "type": "warning",
           "text": "In all situations where any possibility of life exists, make every effort to resuscitate."
         },
         {
           "type": "heading",
-          "level": 3,
-          "text": "DO NOT TERMINATE resuscitation efforts if"
-        },
-        {
-          "type": "paragraph",
-          "text": "Patient is under 18 years of age Patient is visibly pregnant Arrest may be due to hypothermia, drug overdose, toxins, or electrocution Any ROSC or neurological signs Termination of resuscitative efforts for trauma victims (blunt or penetrating) should be determined by the local EMS Medical Director, based on local resources. Typically, victims of traumatic cardiac arrest do not survive if no EMS witnessed signs of life were ever present and the patient is asystolic."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "DO NOT INITIATE resuscitation if"
-        },
-        {
-          "type": "paragraph",
-          "text": "Obvious death in the field: absence of vital signs AND any of the following:"
+          "level": 2,
+          "text": "DO NOT TERMINATE Resuscitation Efforts If"
         },
         {
           "type": "list",
+          "items": [
+            "Patient is under 18 years of age",
+            "Patient is visibly pregnant",
+            "Arrest may be due to hypothermia, drug overdose, toxins, or electrocution",
+            "Any ROSC or neurological signs"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Termination of resuscitative efforts for trauma victims (blunt or penetrating) should be determined by the local EMS Medical Director, based on local resources. Typically, victims of traumatic cardiac arrest do not survive if no EMS witnessed signs of life were ever present and the patient is asystolic."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "DO NOT INITIATE Resuscitation If"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Obvious death in the field: absence of vital signs AND any of the following:"
+          ]
+        },
+        {
+          "type": "list",
+          "indent": 1,
           "items": [
             "Decapitation",
             "Decomposition",
@@ -2472,33 +2472,70 @@
           ]
         },
         {
-          "type": "paragraph",
-          "text": "The Individual has been pronounced dead by a Georgia Licensed Physician, Medical Examiner, or Coroner. Valid DNR order DNR Orders and other Advanced Directives Advanced directives and Living Wills are addressed in State Code OCGA Chapter 32 Title 31 If a family member does not want the DNR Order to be honored, continue BLS until Medical Control is contacted for guidance. If EMS personnel are advised that the patient has an existing DNR Order, but the document IS NOT PRESENT AT THE SCENE, initiate BLS and contact Medical Control. A living will is intended to address patients who have been admitted to a healthcare facility. Living wills will rarely, if ever, have application in the pre-hospital environment. If presented with a document other than a valid DNR Order, such as a Living Will or Durable Power of Attorney, which appears to be an Advanced Directive, regarding resuscitation, initiate BLS until Medical Control is contacted for guidance. Withholding or Termination of Resuscitation (Continued) OCGA § 31-39-6.1 (2024) (a) In addition to those orders not to resuscitate authorized elsewhere in this chapter, any physician, health care professional, nurse, physician assistant, caregiver, or emergency medical technician shall be authorized to effectuate an order not to resuscitate for a person who is not a patient in a hospital, nursing home, or licensed hospice if the order is evidenced in writing containing the patient's name, date of the form, printed name of the attending physician, and signature of the attending physician on a form substantially similar to the following: \"DO NOT RESUSCITATE ORDER NAME OF PATIENT: __________________ THIS CERTIFIES THAT AN ORDER NOT TO RESUSCITATE HAS BEEN ENTERED ON THE ABOVE-NAMED PATIENT."
+          "type": "list",
+          "items": [
+            "The individual has been pronounced dead by a Georgia Licensed Physician, Medical Examiner, or Coroner.",
+            "Valid DNR order"
+          ]
         },
         {
           "type": "heading",
-          "level": 3,
-          "text": "SIGNED"
+          "level": 2,
+          "text": "DNR Orders and Other Advanced Directives"
         },
         {
-          "type": "paragraph",
-          "text": "__________________ ATTENDING PHYSICIAN PRINTED OR TYPED NAME OF ATTENDING PHYSICIAN: __________________ ATTENDING PHYSICIAN'S TELEPHONE NUMBER: __________________ DATE: __________________\" (b) A person who is not a patient in a hospital, nursing home, or licensed hospice and who has an order not to resuscitate pursuant to this Code section may wear an identifying bracelet on either the wrist or the ankle or an identifying necklace and shall post or place a prominent notice in such person's home. The bracelet shall be substantially similar to identification bracelets worn in hospitals. The bracelet, necklace, or notice shall provide the following information in boldface type: \"DO NOT RESUSCITATE ORDER Patient's name: __________________ Authorized person's name and telephone number, if applicable: __________________ Patient's physician's printed name and telephone number: __________________ Date of order not to resuscitate: __________________\""
-        }
-      ],
-      "plainText": "Withholding or Termination of Resuscitation\nIn all situations where any possibility of life exists, make every effort to resuscitate.\nDO NOT TERMINATE resuscitation efforts if:\n•\nPatient is under 18 years of age\n•\nPatient is visibly pregnant\n•\nArrest may be due to hypothermia, drug overdose, toxins, or electrocution\n•\nAny ROSC or neurological signs\nTermination of resuscitative efforts for trauma victims (blunt or penetrating) should be\ndetermined by the local EMS Medical Director, based on local resources. Typically, victims of\ntraumatic cardiac arrest do not survive if no EMS witnessed signs of life were ever present and\nthe patient is asystolic.\nDO NOT INITIATE resuscitation if:\n•\nObvious death in the field: absence of vital signs AND any of the following:\no Decapitation\no Decomposition\no Rigor Mortis\no Dependent Lividity\no Incineration\no Visual massive trauma to brain or heart, incompatible with life\n•\nThe Individual has been pronounced dead by a Georgia Licensed Physician, Medical\nExaminer, or Coroner.\n•\nValid DNR order\nDNR Orders and other Advanced Directives\n•\nAdvanced directives and Living Wills are addressed in State Code OCGA Chapter 32\nTitle 31\n•\nIf a family member does not want the DNR Order to be honored, continue BLS until\nMedical Control is contacted for guidance.\n•\nIf EMS personnel are advised that the patient has an existing DNR Order, but the\ndocument IS NOT PRESENT AT THE SCENE, initiate BLS and contact Medical Control.\n•\nA living will is intended to address patients who have been admitted to a healthcare\nfacility. Living wills will rarely, if ever, have application in the pre-hospital environment.\n•\nIf presented with a document other than a valid DNR Order, such as a Living Will or\nDurable Power of Attorney, which appears to be an Advanced Directive, regarding\nresuscitation, initiate BLS until Medical Control is contacted for guidance.\nWithholding or Termination of Resuscitation (Continued)\nOCGA § 31-39-6.1 (2024)\n•\n(a) In addition to those orders not to resuscitate authorized elsewhere in this chapter, any physician,\nhealth care professional, nurse, physician assistant, caregiver, or emergency medical technician shall\nbe authorized to effectuate an order not to resuscitate for a person who is not a patient in a hospital,\nnursing home, or licensed hospice if the order is evidenced in writing containing the patient's name,\ndate of the form, printed name of the attending physician, and signature of the attending physician on a\nform substantially similar to the following:\n\"DO NOT RESUSCITATE ORDER\nNAME OF PATIENT: __________________\nTHIS CERTIFIES THAT AN ORDER NOT TO\nRESUSCITATE HAS BEEN ENTERED ON THE\nABOVE-NAMED PATIENT.\nSIGNED:\n__________________\nATTENDING\nPHYSICIAN\nPRINTED OR TYPED NAME OF ATTENDING\nPHYSICIAN: __________________\nATTENDING PHYSICIAN'S TELEPHONE NUMBER:\n__________________\nDATE: __________________\"\n•\n(b) A person who is not a patient in a hospital, nursing home, or licensed hospice and who has an\norder not to resuscitate pursuant to this Code section may wear an identifying bracelet on either the\nwrist or the ankle or an identifying necklace and shall post or place a prominent notice in such\nperson's home. The bracelet shall be substantially similar to identification bracelets worn in hospitals.\nThe bracelet, necklace, or notice shall provide the following information in boldface type:\n\"DO NOT RESUSCITATE ORDER\nPatient's name: __________________\nAuthorized person's name and telephone number, if applicable: __________________\nPatient's physician's printed name and telephone number: __________________\nDate of order not to resuscitate: __________________\"",
-      "pageText": [
-        {
-          "page": 30,
-          "text": "Withholding or Termination of Resuscitation\nIn all situations where any possibility of life exists, make every effort to resuscitate.\nDO NOT TERMINATE resuscitation efforts if:\n•\nPatient is under 18 years of age\n•\nPatient is visibly pregnant\n•\nArrest may be due to hypothermia, drug overdose, toxins, or electrocution\n•\nAny ROSC or neurological signs\nTermination of resuscitative efforts for trauma victims (blunt or penetrating) should be\ndetermined by the local EMS Medical Director, based on local resources. Typically, victims of\ntraumatic cardiac arrest do not survive if no EMS witnessed signs of life were ever present and\nthe patient is asystolic.\nDO NOT INITIATE resuscitation if:\n•\nObvious death in the field: absence of vital signs AND any of the following:\no Decapitation\no Decomposition\no Rigor Mortis\no Dependent Lividity\no Incineration\no Visual massive trauma to brain or heart, incompatible with life\n•\nThe Individual has been pronounced dead by a Georgia Licensed Physician, Medical\nExaminer, or Coroner.\n•\nValid DNR order\nDNR Orders and other Advanced Directives\n•\nAdvanced directives and Living Wills are addressed in State Code OCGA Chapter 32\nTitle 31\n•\nIf a family member does not want the DNR Order to be honored, continue BLS until\nMedical Control is contacted for guidance.\n•\nIf EMS personnel are advised that the patient has an existing DNR Order, but the\ndocument IS NOT PRESENT AT THE SCENE, initiate BLS and contact Medical Control.\n•\nA living will is intended to address patients who have been admitted to a healthcare\nfacility. Living wills will rarely, if ever, have application in the pre-hospital environment.\n•\nIf presented with a document other than a valid DNR Order, such as a Living Will or\nDurable Power of Attorney, which appears to be an Advanced Directive, regarding\nresuscitation, initiate BLS until Medical Control is contacted for guidance."
+          "type": "list",
+          "items": [
+            "Advanced directives and Living Wills are addressed in State Code OCGA Chapter 32 Title 31",
+            "If a family member does not want the DNR Order to be honored, continue BLS until Medical Control is contacted for guidance.",
+            "If EMS personnel are advised that the patient has an existing DNR Order, but the document IS NOT PRESENT AT THE SCENE, initiate BLS and contact Medical Control.",
+            "A living will is intended to address patients who have been admitted to a healthcare facility. Living wills will rarely, if ever, have application in the pre-hospital environment.",
+            "If presented with a document other than a valid DNR Order, such as a Living Will or Durable Power of Attorney, which appears to be an Advanced Directive regarding resuscitation, initiate BLS until Medical Control is contacted for guidance."
+          ]
         },
         {
-          "page": 31,
-          "text": "Withholding or Termination of Resuscitation (Continued)\nOCGA § 31-39-6.1 (2024)\n•\n(a) In addition to those orders not to resuscitate authorized elsewhere in this chapter, any physician,\nhealth care professional, nurse, physician assistant, caregiver, or emergency medical technician shall\nbe authorized to effectuate an order not to resuscitate for a person who is not a patient in a hospital,\nnursing home, or licensed hospice if the order is evidenced in writing containing the patient's name,\ndate of the form, printed name of the attending physician, and signature of the attending physician on a\nform substantially similar to the following:\n\"DO NOT RESUSCITATE ORDER\nNAME OF PATIENT: __________________\nTHIS CERTIFIES THAT AN ORDER NOT TO\nRESUSCITATE HAS BEEN ENTERED ON THE\nABOVE-NAMED PATIENT.\nSIGNED:\n__________________\nATTENDING\nPHYSICIAN\nPRINTED OR TYPED NAME OF ATTENDING\nPHYSICIAN: __________________\nATTENDING PHYSICIAN'S TELEPHONE NUMBER:\n__________________\nDATE: __________________\"\n•\n(b) A person who is not a patient in a hospital, nursing home, or licensed hospice and who has an\norder not to resuscitate pursuant to this Code section may wear an identifying bracelet on either the\nwrist or the ankle or an identifying necklace and shall post or place a prominent notice in such\nperson's home. The bracelet shall be substantially similar to identification bracelets worn in hospitals.\nThe bracelet, necklace, or notice shall provide the following information in boldface type:\n\"DO NOT RESUSCITATE ORDER\nPatient's name: __________________\nAuthorized person's name and telephone number, if applicable: __________________\nPatient's physician's printed name and telephone number: __________________\nDate of order not to resuscitate: __________________\""
+          "type": "heading",
+          "level": 2,
+          "text": "The Law"
+        },
+        {
+          "type": "note",
+          "text": "OCGA § 31-39-6.1 (2024)"
+        },
+        {
+          "type": "legal-text",
+          "text": "(a) In addition to those orders not to resuscitate authorized elsewhere in this chapter, any physician, health care professional, nurse, physician assistant, caregiver, or emergency medical technician shall be authorized to effectuate an order not to resuscitate for a person who is not a patient in a hospital, nursing home, or licensed hospice if the order is evidenced in writing containing the patient's name, date of the form, printed name of the attending physician, and signature of the attending physician on a form substantially similar to the following:"
+        },
+        {
+          "type": "document-example",
+          "title": "DO NOT RESUSCITATE ORDER",
+          "lines": [
+            "NAME OF PATIENT: __________________",
+            "THIS CERTIFIES THAT AN ORDER NOT TO RESUSCITATE HAS BEEN ENTERED ON THE ABOVE-NAMED PATIENT.",
+            "SIGNED: __________________",
+            "ATTENDING PHYSICIAN",
+            "PRINTED OR TYPED NAME OF ATTENDING PHYSICIAN: __________________",
+            "ATTENDING PHYSICIAN'S TELEPHONE NUMBER: __________________",
+            "DATE: __________________"
+          ]
+        },
+        {
+          "type": "legal-text",
+          "text": "(b) A person who is not a patient in a hospital, nursing home, or licensed hospice and who has an order not to resuscitate pursuant to this Code section may wear an identifying bracelet on either the wrist or the ankle or an identifying necklace and shall post or place a prominent notice in such person's home. The bracelet shall be substantially similar to identification bracelets worn in hospitals. The bracelet, necklace, or notice shall provide the following information in boldface type:"
+        },
+        {
+          "type": "document-example",
+          "title": "DO NOT RESUSCITATE ORDER",
+          "lines": [
+            "Patient's name: __________________",
+            "Authorized person's name and telephone number, if applicable: __________________",
+            "Patient's physician's printed name and telephone number: __________________",
+            "Date of order not to resuscitate: __________________"
+          ]
         }
       ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
+      "plainText": "Withholding or Termination of Resuscitation. In all situations where any possibility of life exists, make every effort to resuscitate. DNR Orders and other Advanced Directives are addressed in this protocol.",
+      "needsReview": false
     },
     {
       "id": "intravenous-access",

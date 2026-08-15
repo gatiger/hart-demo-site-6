@@ -474,7 +474,30 @@ function renderLegalText(block, container) {
 
   container.appendChild(section);
 }
+function renderDocumentExample(block, container) {
+  const section = document.createElement('section');
+  section.className = 'document-example';
+  section.setAttribute('aria-label', block.title || 'Document example');
+
+  const title = document.createElement('h4');
+  title.className = 'document-example-title';
+  title.textContent = block.title || '';
+  section.appendChild(title);
+
+  for (const line of block.lines || []) {
+    const paragraph = document.createElement('p');
+    paragraph.textContent = line;
+    section.appendChild(paragraph);
+  }
+
+  container.appendChild(section);
+}
 function renderBlock(block, container) {
+  if (block.type === 'document-example') {
+    renderDocumentExample(block, container);
+    return;
+  }
+
   if (block.type === 'legal-text') {
     renderLegalText(block, container);
     return;
