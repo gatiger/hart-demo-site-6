@@ -492,17 +492,21 @@ function renderDocumentExample(block, container) {
 
   container.appendChild(section);
 }
-function appendRichText(element, text, phrases = [], links = []) {
+function appendRichText(element, text, phrases = [], links = [], initials = []) {
   const source = String(text || '');
   const boldPhrases = (phrases || []).filter(Boolean);
   const linkedPhrases = (links || []).filter(link => link && link.text && link.protocolId);
-  if (!boldPhrases.length && !linkedPhrases.length) {
+  const initialPhrases = (initials || []).filter(Boolean);
+  if (!boldPhrases.length && !linkedPhrases.length && !initialPhrases.length) {
     element.textContent = source;
     return;
   }
 
-  const tokens = [...new Set([...linkedPhrases.map(link => link.text), ...boldPhrases])]
-    .sort((a, b) => b.length - a.length);
+  const tokens = [...new Set([
+    ...linkedPhrases.map(link => link.text),
+    ...initialPhrases,
+    ...boldPhrases
+  ])].sort((a, b) => b.length - a.length);
   const escaped = tokens.map(phrase => phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
   const matcher = new RegExp(`(${escaped.join('|')})`, 'g');
   for (const part of source.split(matcher)) {
@@ -516,6 +520,12 @@ function appendRichText(element, text, phrases = [], links = []) {
       if (boldPhrases.includes(part)) button.classList.add('inline-protocol-link-bold');
       button.addEventListener('click', () => showProtocol(linkedPhrase.protocolId));
       element.appendChild(button);
+    } else if (initialPhrases.includes(part)) {
+      const initial = document.createElement('strong');
+      initial.className = 'assessment-emphasized-initial';
+      initial.textContent = part.charAt(0);
+      element.appendChild(initial);
+      element.appendChild(document.createTextNode(part.slice(1)));
     } else if (boldPhrases.includes(part)) {
       const strong = document.createElement('strong');
       strong.textContent = part;
@@ -524,8 +534,7 @@ function appendRichText(element, text, phrases = [], links = []) {
       element.appendChild(document.createTextNode(part));
     }
   }
-}
-function appendFlowItems(items, container) {
+}function appendFlowItems(items, container) {
   const list = document.createElement('ul');
   for (const item of items || []) {
     const li = document.createElement('li');
@@ -541,7 +550,7 @@ function appendFlowItems(items, container) {
       textContainer = document.createElement('span');
       li.appendChild(textContainer);
     }
-    appendRichText(textContainer, itemData.text || '', itemData.bold || [], itemData.links || []);
+    appendRichText(textContainer, itemData.text || '', itemData.bold || [], itemData.links || [], itemData.emphasizedInitials || []);
     if (itemData.children?.length) appendFlowItems(itemData.children, li);
     list.appendChild(li);
   }

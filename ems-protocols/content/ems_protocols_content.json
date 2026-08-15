@@ -2798,15 +2798,15 @@
             "items": [
               {
                 "text": "Appearance – Observe muscle tone, interactivity, Consolability, look/gaze, and speech/cry",
-                "bold": ["Appearance"]
+                "emphasizedInitials": ["Appearance"]
               },
               {
                 "text": "Breathing – Observe chest wall movement, accessory muscle use, abnormal airway sounds.",
-                "bold": ["Breathing"]
+                "emphasizedInitials": ["Breathing"]
               },
               {
                 "text": "Circulation – Observe the skin color for pallor, mottling, or cyanosis.",
-                "bold": ["Circulation"]
+                "emphasizedInitials": ["Circulation"]
               }
             ]
           },
@@ -2826,27 +2826,27 @@
                   "items": [
                     {
                       "text": "Airway – assess airway patency.",
-                      "bold": ["Airway"],
+                      "emphasizedInitials": ["Airway"],
                       "children": ["Open, clear and maintain airway."]
                     },
                     {
                       "text": "Breathing – assess rate and quality of breathing.",
-                      "bold": ["Breathing"],
+                      "emphasizedInitials": ["Breathing"],
                       "children": ["Ensure adequate ventilation.", "Initiate appropriate O2 therapy."]
                     },
                     {
                       "text": "Circulation – assess perfusion status.",
-                      "bold": ["Circulation"],
+                      "emphasizedInitials": ["Circulation"],
                       "children": ["Control major bleeding.", "Manage shock appropriately."]
                     },
                     {
                       "text": "Disability – assess LOC.",
-                      "bold": ["Disability"],
+                      "emphasizedInitials": ["Disability"],
                       "children": ["Is the child responding and acting appropriately?"]
                     },
                     {
                       "text": "Exposure/Environment – expose injuries as needed.",
-                      "bold": ["Exposure/Environment"],
+                      "emphasizedInitials": ["Exposure/Environment"],
                       "children": [
                         "Evaluate body temperature.",
                         "Examine the skin for rashes, discoloration, and trauma.",
@@ -2876,7 +2876,13 @@
               "stages": [
                 {
                   "title": "Primary Survey (ABCDE)",
-                  "items": ["Airway", "Breathing", "Circulation", "Disability", "Exposure/Environment"]
+                  "items": [
+                    { "text": "Airway", "emphasizedInitials": ["Airway"] },
+                    { "text": "Breathing", "emphasizedInitials": ["Breathing"] },
+                    { "text": "Circulation", "emphasizedInitials": ["Circulation"] },
+                    { "text": "Disability", "emphasizedInitials": ["Disability"] },
+                    { "text": "Exposure/Environment", "emphasizedInitials": ["Exposure/Environment"] }
+                  ]
                 },
                 {
                   "title": "Secondary Assessment",
