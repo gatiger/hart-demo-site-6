@@ -4742,70 +4742,66 @@
       ],
       "plainText":"Pediatric Sickle Cell Crisis. Assessment, Medical Control consultation, pain management, pain rating scale, and documentation.","needsReview":false
     },    {
-      "id": "toxic-exposure",
-      "title": "Toxic Exposure",
-      "type": "protocol",
-      "categoryPath": [
-        "Pediatric Clinical Protocols",
-        "Pediatric Medical Emergencies"
+      "id":"toxic-exposure","title":"Pediatric Toxic Exposure","type":"protocol","categoryPath":["Pediatric Clinical Protocols","Pediatric Medical Emergencies"],"status":"active","effectiveDate":"2026-06-08","lastRevised":"","version":"2026",
+      "tags":["pediatric","toxic exposure","poison control","hazmat"],
+      "summary":"Scene safety, assessment, and treatment for pediatric toxic exposure.",
+      "content":[
+        {"type":"heading","level":2,"text":"Pediatric Toxic Exposure"},
+        {"type":"paragraph","text":"This protocol applies to pediatric patients with toxic exposure secondary to the ingestion, inhalation, contact or intravenous administration of a potentially toxic substance."},
+        {"type":"flow-stage","title":"Scene Safety and Initial Management","arrowAfter":true,"items":[
+          {"text":"Prevent exposure of EMS personnel. Assess and ensure scene security prior to proceeding with this protocol.","icon":"assets/legend-important.webp","iconAlt":"Important protocol information","bold":["Prevent exposure of EMS personnel. Assess and ensure scene security prior to proceeding with this protocol."],"red":["Prevent exposure of EMS personnel. Assess and ensure scene security prior to proceeding with this protocol."]},
+          "If patient is still located within toxic environment, have the patient moved to safety by appropriately trained personnel using the proper level of PPE.",
+          "If signs of hazardous materials incident, call for HazMat team, keep patient(s) isolated in contaminated zone until HazMat team arrives.",
+          {"text":"Coordinate efforts with HazMat personnel.","indent":1},
+          "Identify agent and mechanism/route of exposure. (Inhaled, contact, etc.)",
+          "Decontaminate as appropriate – EMS personnel must be wearing PPE prior to helping with the decontamination process."
+        ]},
+        {"type":"flow-stage","title":"First Impression (Pediatric Assessment Triangle)","links":[{"text":"Pediatric Assessment Triangle","protocolId":"pediatric-assessment-triangle"}],"arrowAfter":true,"items":[
+          "Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.",
+          "Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.",
+          "Circulation – observe skin color for pallor, mottling, and/or cyanosis."
+        ]},
+        {"type":"flow-stage","title":"Primary Survey","arrowAfter":true,"items":[
+          "Ensure airway – ensure patency and positioning.",
+          {"text":"Have suction equipment ready.","indent":1},
+          {"text":"Keep patient NPO.","indent":1},
+          {"text":"Assess breathing – give O₂ as tolerated by mask or blow-by. Maintain SpO₂ ≥ 94%.","bold":["Maintain SpO₂ ≥ 94%."]},
+          {"text":"Assist with bag valve mask if ineffective respiratory effort.","indent":1},
+          {"text":"Assess circulation – manage shock appropriately. See Shock Protocol.","links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          "Assess disability – assess LOC.",
+          "Exposure/Environment – expose injuries as needed.",
+          {"text":"Take measures to prevent hypothermia, especially following decontamination.","indent":1}
+        ]},
+        {"type":"flow-stage","title":"Secondary Assessment and Treatment","arrowAfter":true,"items":[
+          "Monitor vital signs and O₂ saturation.",
+          {"text":"Pulse oximetry may not be accurate for toxic inhalation victims.","indent":1,"bold":["Pulse oximetry may not be accurate for toxic inhalation victims."],"red":["Pulse oximetry may not be accurate for toxic inhalation victims."]},
+          {"text":"Perform blood glucose analysis – treat if BGL is < 60 mg/dl.","bold":["BGL is < 60 mg/dl."]},
+          "Initiate cardiac monitoring.",
+          "Physical exam and OPQRST/SAMPLE history.",
+          {"text":"Identify substance/toxin and amount of exposure.","indent":1},
+          {"text":"Determine mechanism, time, and duration of exposure.","indent":1},
+          {"text":"If ingestion, see Poisoning/Overdose Protocol.","indent":1,"links":[{"text":"Poisoning/Overdose Protocol","protocolId":"toxic-ingestion"}]},
+          "Initiate IV/IO of normal saline at KVO rate.",
+          {"text":"If signs of shock, administer 20 ml/kg bolus. See Shock Protocol.","indent":1,"bold":["20 ml/kg"],"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          "If known or suspected carbon monoxide poisoning:",
+          {"text":"Provide 100% O₂, if not yet initiated.","indent":1},
+          {"text":"Monitor carbon monoxide saturation.","indent":1},
+          {"text":"Consult Medical Control for destination choice, including consideration of medical facilities equipped with hyperbaric capability.","indent":1},
+          "If organophosphate, carbamate, or nerve agent poisoning:",
+          {"text":"Administer Atropine 0.02 mg/kg IV/IO/IM every 3–5 minutes.","indent":1,"bold":["0.02 mg/kg","every 3–5 minutes."],"links":[{"text":"Atropine","protocolId":"atropine"}]},
+          {"text":"Titrate to clinical symptoms (drying of secretions).","indent":2},
+          {"text":"Contact Georgia Poison Control (1-800-222-1222) for consultation and/or Chempack deployment. See Chempack in resources.","indent":1,"links":[{"text":"Chempack","protocolId":"chempack-fact-sheet"}]},
+          "If patient is asymptomatic, monitor for delayed effects.",
+          {"text":"Frequently reassess patient, manage any presenting respiratory distress, seizures, and/or dysrhythmias in accordance with the appropriate protocol.","icon":"assets/legend-important.webp","iconAlt":"Important protocol information","bold":["Frequently reassess patient, manage any presenting respiratory distress, seizures, and/or dysrhythmias in accordance with the appropriate protocol."],"red":["Frequently reassess patient, manage any presenting respiratory distress, seizures, and/or dysrhythmias in accordance with the appropriate protocol."]}
+        ]},
+        {"type":"flow-stage","title":"Reporting and Poison Control","items":[
+          {"text":"All suspected suicide attempts must be reported before leaving the scene.","icon":"assets/legend-important.webp","iconAlt":"Important protocol information","bold":["All suspected suicide attempts must be reported before leaving the scene."],"red":["All suspected suicide attempts must be reported before leaving the scene."]},
+          {"text":"EMS personnel may contact Poison Control directly. EMS personnel are directed to follow the advice offered by the Poison Control Center as if it came directly from Medical Control. Georgia Poison Control: 1-800-222-1222.","icon":"assets/legend-important.webp","iconAlt":"Important protocol information","bold":["EMS personnel may contact Poison Control directly. EMS personnel are directed to follow the advice offered by the Poison Control Center as if it came directly from Medical Control. Georgia Poison Control: 1-800-222-1222."],"red":["EMS personnel may contact Poison Control directly. EMS personnel are directed to follow the advice offered by the Poison Control Center as if it came directly from Medical Control. Georgia Poison Control: 1-800-222-1222."]}
+        ]},
+        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital Signs","Agent/mechanism of exposure","Cardiac rhythm","Treatment(s)","Communication with Medical Control"]}
       ],
-      "status": "active",
-      "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 66,
-        "pageEnd": 67,
-        "pageLabel": "66-67"
-      },
-      "summary": "",
-      "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Pediatric Toxic Exposure"
-        },
-        {
-          "type": "paragraph",
-          "text": "This protocol applies to pediatric patients with toxic exposure secondary to the ingestion, inhalation, contact or intravenous administration of a potentially toxic substance. Scene Safety and Initial Management Prevent exposure of EMS personnel. Assess and ensure scene security prior to proceeding with this protocol. If patient is still located within toxic environment, have the patient moved to safety by appropriately trained personnel using the proper level of PPE. If signs of hazardous materials incident, call for HazMat team, keep patient(s) isolated in contaminated zone until HazMat team arrives. Coordinate efforts with HazMat personnel. Identify agent and mechanism/route of exposure. (Inhaled, contact, etc.) Decontaminate as appropriate – EMS personnel must be wearing PPE prior to helping with the decontamination process. Primary Survey Ensure airway – ensure patency and positioning. Have suction equipment ready. Keep patient NPO. Assess breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%. Assist with bag valve mask if ineffective respiratory effort. Assess circulation – manage shock appropriately. See Shock Protocol. Assess disability – assess LOC. Exposure/Environment – expose injuries as needed. Take measures to prevent hypothermia, especially following decontamination. Secondary Assessment and Treatment Monitor vital signs and O2 saturation. Pulse oximetry may not be accurate for toxic inhalation victims. Perform blood glucose analysis – Treat if BGL is < 60 mg/dl. Initiate cardiac monitoring Physical exam and OPQRST/SAMPLE history. Identify substance/toxin and amount of exposure Determine mechanism, time, and duration of exposure. If ingestion, See Poisoning/Overdose Protocol. Initiate IV/IO of normal saline at KVO rate. If signs of shock, administer 20 ml/kg bolus. See Shock Protocol. First Impression (Pediatric Assessment Triangle) Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry. Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds. Circulation – observe skin color for pallor, mottling and/or cyanosis. Pediatric Toxic Exposure (Continued) Secondary Assessment and Treatment (Continued)"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "If known or suspected carbon monoxide poisoning"
-        },
-        {
-          "type": "paragraph",
-          "text": "Provide 100% O2, if not yet initiated. Monitor carbon monoxide saturation. Consult Medical Control for destination choice, including consideration of medical facilities equipped with hyperbaric capability. If organophosphate, carbamate, or nerve agent poisoning: Administer Atropine 0.02 mg/kg IV/IO/IM every 3-5 minutes. Titrate to clinical symptoms (drying of secretions) Contact Georgia Poison Control (1-800-222-1222) for consultation and/or Chempack deployment. See Chempack in resources. If patient is asymptomatic, monitor for delayed effects. Frequently reassess patient, manage any presenting respiratory distress, seizures, and/or dysrhythmias in accordance with the appropriate protocol. All suspected suicide attempts must be reported before leaving the scene. EMS personnel may contact Poison Control directly. EMS personnel are directed to follow the advice offered by the Poison Control Center as if it came directly from medical Control. Georgia Poison Control: 1-800-222-1222"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vital Signs Agent/mechanism of exposure Cardiac rhythm Treatment(s) Communication with Medical Control"
-        }
-      ],
-      "plainText": "Pediatric Toxic Exposure\nThis protocol applies to pediatric patients with toxic exposure secondary to the ingestion,\ninhalation, contact or intravenous administration of a potentially toxic substance.\nScene Safety and Initial Management\nPrevent exposure of EMS personnel. Assess and ensure scene security prior to proceeding\nwith this protocol.\n•\nIf patient is still located within toxic environment, have the patient moved to safety by appropriately\ntrained personnel using the proper level of PPE.\n•\nIf signs of hazardous materials incident, call for HazMat team, keep patient(s) isolated in\ncontaminated zone until HazMat team arrives.\no\nCoordinate efforts with HazMat personnel.\n•\nIdentify agent and mechanism/route of exposure. (Inhaled, contact, etc.)\n•\nDecontaminate as appropriate – EMS personnel must be wearing PPE prior to helping with the\ndecontamination process.\nPrimary Survey\n•\nEnsure airway – ensure patency and positioning.\no\nHave suction equipment ready.\no\nKeep patient NPO.\n•\nAssess breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%.\no\nAssist with bag valve mask if ineffective respiratory effort.\n•\nAssess circulation – manage shock appropriately. See Shock Protocol.\n•\nAssess disability – assess LOC.\n•\nExposure/Environment – expose injuries as needed.\no\nTake measures to prevent hypothermia, especially following decontamination.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation.\no\nPulse oximetry may not be accurate for toxic inhalation victims.\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nInitiate cardiac monitoring\n•\nPhysical exam and OPQRST/SAMPLE history.\no\nIdentify substance/toxin and amount of exposure\no\nDetermine mechanism, time, and duration of exposure.\no\nIf ingestion, See Poisoning/Overdose Protocol.\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nIf signs of shock, administer 20 ml/kg bolus.  See Shock Protocol.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis.\nPediatric Toxic Exposure (Continued)\nSecondary Assessment and Treatment (Continued)\n•\nIf known or suspected carbon monoxide poisoning:\no\nProvide 100% O2, if not yet initiated.\no\nMonitor carbon monoxide saturation.\no\nConsult Medical Control for destination choice, including consideration of medical facilities\nequipped with hyperbaric capability.\n•\nIf organophosphate, carbamate, or nerve agent poisoning:\no\nAdminister Atropine 0.02 mg/kg IV/IO/IM every 3-5 minutes.\n▪\nTitrate to clinical symptoms (drying of secretions)\no\nContact Georgia Poison Control (1-800-222-1222) for consultation and/or Chempack\ndeployment.  See Chempack in resources.\n•\nIf patient is asymptomatic, monitor for delayed effects.\nFrequently reassess patient, manage any presenting respiratory distress, seizures, and/or\ndysrhythmias in accordance with the appropriate protocol.\nAll suspected suicide attempts must be reported before leaving the scene.\nEMS personnel may contact Poison Control directly. EMS personnel are directed to follow\nthe advice offered by the Poison Control Center as if it came directly from medical Control.\nGeorgia Poison Control: 1-800-222-1222\nDocument:\n•\nVital Signs\n•\nAgent/mechanism of\nexposure\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with Medical\nControl",
-      "pageText": [
-        {
-          "page": 66,
-          "text": "Pediatric Toxic Exposure\nThis protocol applies to pediatric patients with toxic exposure secondary to the ingestion,\ninhalation, contact or intravenous administration of a potentially toxic substance.\nScene Safety and Initial Management\nPrevent exposure of EMS personnel. Assess and ensure scene security prior to proceeding\nwith this protocol.\n•\nIf patient is still located within toxic environment, have the patient moved to safety by appropriately\ntrained personnel using the proper level of PPE.\n•\nIf signs of hazardous materials incident, call for HazMat team, keep patient(s) isolated in\ncontaminated zone until HazMat team arrives.\no\nCoordinate efforts with HazMat personnel.\n•\nIdentify agent and mechanism/route of exposure. (Inhaled, contact, etc.)\n•\nDecontaminate as appropriate – EMS personnel must be wearing PPE prior to helping with the\ndecontamination process.\nPrimary Survey\n•\nEnsure airway – ensure patency and positioning.\no\nHave suction equipment ready.\no\nKeep patient NPO.\n•\nAssess breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%.\no\nAssist with bag valve mask if ineffective respiratory effort.\n•\nAssess circulation – manage shock appropriately. See Shock Protocol.\n•\nAssess disability – assess LOC.\n•\nExposure/Environment – expose injuries as needed.\no\nTake measures to prevent hypothermia, especially following decontamination.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation.\no\nPulse oximetry may not be accurate for toxic inhalation victims.\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nInitiate cardiac monitoring\n•\nPhysical exam and OPQRST/SAMPLE history.\no\nIdentify substance/toxin and amount of exposure\no\nDetermine mechanism, time, and duration of exposure.\no\nIf ingestion, See Poisoning/Overdose Protocol.\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nIf signs of shock, administer 20 ml/kg bolus.  See Shock Protocol.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis."
-        },
-        {
-          "page": 67,
-          "text": "Pediatric Toxic Exposure (Continued)\nSecondary Assessment and Treatment (Continued)\n•\nIf known or suspected carbon monoxide poisoning:\no\nProvide 100% O2, if not yet initiated.\no\nMonitor carbon monoxide saturation.\no\nConsult Medical Control for destination choice, including consideration of medical facilities\nequipped with hyperbaric capability.\n•\nIf organophosphate, carbamate, or nerve agent poisoning:\no\nAdminister Atropine 0.02 mg/kg IV/IO/IM every 3-5 minutes.\n▪\nTitrate to clinical symptoms (drying of secretions)\no\nContact Georgia Poison Control (1-800-222-1222) for consultation and/or Chempack\ndeployment.  See Chempack in resources.\n•\nIf patient is asymptomatic, monitor for delayed effects.\nFrequently reassess patient, manage any presenting respiratory distress, seizures, and/or\ndysrhythmias in accordance with the appropriate protocol.\nAll suspected suicide attempts must be reported before leaving the scene.\nEMS personnel may contact Poison Control directly. EMS personnel are directed to follow\nthe advice offered by the Poison Control Center as if it came directly from medical Control.\nGeorgia Poison Control: 1-800-222-1222\nDocument:\n•\nVital Signs\n•\nAgent/mechanism of\nexposure\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with Medical\nControl"
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Pediatric Toxic Exposure. Scene safety, assessment, treatment, Poison Control guidance, reporting requirements, and documentation.","needsReview":false
+    },    {
       "id": "toxic-ingestion",
       "title": "Toxic Ingestion",
       "type": "protocol",
