@@ -698,7 +698,48 @@ function renderScoreCallout(block, container) {
   appendRichText(callout, block.text || '', block.bold || [], block.links || []);
   container.appendChild(callout);
 }
+function renderFlowStage(block, container) {
+  const section = document.createElement('section');
+  section.className = `protocol-flow-stage ${block.arrowAfter ? 'flow-arrow-after' : ''}`;
+  const heading = document.createElement('h3');
+  appendRichText(heading, block.title || '', block.bold || [], block.links || []);
+  section.appendChild(heading);
+  appendFlowItems(block.items || [], section);
+  container.appendChild(section);
+}
+
+function renderThreeWayFlow(block, container) {
+  const flow = document.createElement('section');
+  flow.className = `three-way-flow ${block.arrowAfter ? 'flow-arrow-after' : ''}`;
+  const connector = document.createElement('div');
+  connector.className = 'three-way-connector';
+  connector.setAttribute('aria-hidden', 'true');
+  flow.appendChild(connector);
+  const grid = document.createElement('div');
+  grid.className = 'three-way-grid';
+  for (const path of block.paths || []) {
+    const card = document.createElement('section');
+    card.className = 'three-way-card';
+    const heading = document.createElement('h3');
+    heading.textContent = path.title || '';
+    card.appendChild(heading);
+    appendFlowItems(path.items || [], card);
+    grid.appendChild(card);
+  }
+  flow.appendChild(grid);
+  container.appendChild(flow);
+}
 function renderBlock(block, container) {
+  if (block.type === 'flow-stage') {
+    renderFlowStage(block, container);
+    return;
+  }
+
+  if (block.type === 'three-way-flow') {
+    renderThreeWayFlow(block, container);
+    return;
+  }
+
   if (block.type === 'score-callout') {
     renderScoreCallout(block, container);
     return;

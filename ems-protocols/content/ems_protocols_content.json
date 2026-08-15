@@ -4166,79 +4166,80 @@
       ],
       "plainText":"Pediatric Bradycardia. This protocol applies to pediatric patients with a heart rate less than 60 beats per minute. Assessment, treatment, Medical Control consultation, pacing, and documentation guidance are included.","needsReview":false
     },    {
-      "id": "tachycardia",
-      "title": "Tachycardia",
-      "type": "protocol",
-      "categoryPath": [
-        "Pediatric Clinical Protocols",
-        "Pediatric Cardiac Emergencies"
+      "id":"tachycardia","title":"Pediatric Tachycardia","type":"protocol","categoryPath":["Pediatric Clinical Protocols","Pediatric Cardiac Emergencies"],"status":"active","effectiveDate":"2026-06-08","lastRevised":"","version":"2026",
+      "tags":["pediatric tachycardia","SVT","wide complex tachycardia","cardioversion"],
+      "summary":"Pediatric tachycardia assessment and treatment pathways for sinus tachycardia, SVT, and wide complex tachycardia.","displayMode":"native",
+      "content":[
+        {"type":"paragraph","text":"This protocol applies to pediatric patients with a heart rate that is fast compared to normal for patient’s age; and too fast for the child’s level of activity and clinical condition."},
+        {"type":"flow-stage","title":"First Impression (Pediatric Assessment Triangle)","links":[{"text":"Pediatric Assessment Triangle","protocolId":"pediatric-assessment-triangle"}],"arrowAfter":true,"items":[
+          "Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.",
+          "Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.",
+          "Circulation – observe skin color for pallor, mottling and/or cyanosis."
+        ]},
+        {"type":"flow-stage","title":"Primary Survey:","arrowAfter":true,"items":[
+          {"text":"Ensure airway – ensure patency and proper positioning","bold":["Ensure airway"]},
+          {"text":"Assess breathing – provide O2 as tolerated by mask or blow-by. Maintain SpO2 ≥ 94%.","bold":["Assess breathing","Maintain SpO2 ≥ 94%."] ,"children":["Ventilate with bag valve mask and 100% O2 if ineffective respiratory effort."]},
+          {"text":"Assess circulation – evaluate peripheral pulses, verify heart rate","bold":["Assess circulation"],"children":[{"text":"If no pulse, start CPR. Treat according to Pulseless Arrest Guidelines.","links":[{"text":"Pulseless Arrest Guidelines","protocolId":"pulseless-arrest"}]}]},
+          {"text":"Assess disability – assess LOC.","bold":["Assess disability"]},
+          {"text":"Expose/Environment – expose injuries as needed.","bold":["Expose/Environment"]},
+          {"text":"Altered level of consciousness and signs of poor perfusion could be an indication of shock and should be managed appropriately. See Shock Protocol.","bold":["Altered level of consciousness and signs of poor perfusion could be an indication of shock and should be managed appropriately."],"red":["Altered level of consciousness and signs of poor perfusion could be an indication of shock and should be managed appropriately."],"links":[{"text":"Shock Protocol","protocolId":"shock-management"}],"icon":"assets/legend-important.webp","iconAlt":"Important protocol information"}
+        ]},
+        {"type":"flow-stage","title":"Secondary Assessment and History:","arrowAfter":true,"items":[
+          "Monitor vital signs and O2 saturation.",
+          {"text":"Perform blood glucose analysis – Treat if BGL is < 60 mg/dl.","bold":["BGL is < 60 mg/dl."]},
+          "Initiate cardiac monitoring.",
+          {"text":"Record and evaluate 12-Lead ECG – DO NOT delay treatment.","bold":["DO NOT"]},
+          "Physical exam and OPQRST/SAMPLE history",
+          {"text":"Signs and symptoms: may be non-specific, such as dizzy or weak, or may be dramatic with shock, altered level of consciousness, difficulty breathing and collapse.","bold":["Signs and symptoms: may be non-specific, such as dizzy or weak, or may be dramatic with shock, altered level of consciousness, difficulty breathing and collapse."],"red":["Signs and symptoms: may be non-specific, such as dizzy or weak, or may be dramatic with shock, altered level of consciousness, difficulty breathing and collapse."],"icon":"assets/legend-important.webp","iconAlt":"Important protocol information"}
+        ]},
+        {"type":"three-way-flow","arrowAfter":true,"paths":[
+          {"title":"Sinus Tachycardia","items":[
+            {"text":"HR <180 bpm in children","bold":["HR <180 bpm in children"],"icon":"assets/legend-important.webp","iconAlt":"Important protocol information"},
+            {"text":"HR < 220 in infants","bold":["HR < 220 in infants"],"icon":"assets/legend-important.webp","iconAlt":"Important protocol information"},
+            {"text":"QRS < 0.08 seconds","bold":["QRS < 0.08 seconds"],"icon":"assets/legend-important.webp","iconAlt":"Important protocol information"},
+            "If signs of cardiopulmonary compromise, IV/IO NS 20ml/kg.",
+            "Search for and treat causes – hypovolemia, dehydration, etc."
+          ]},
+          {"title":"SVT","items":[
+            {"text":"HR > 180 in children","bold":["HR > 180 in children"],"icon":"assets/legend-important.webp","iconAlt":"Important protocol information"},
+            {"text":"HR > 220 in infants","bold":["HR > 220 in infants"],"icon":"assets/legend-important.webp","iconAlt":"Important protocol information"},
+            "If signs of cardiopulmonary compromise, IV/IO 20 ml/kg",
+            "Consider vagal maneuvers",
+            {"text":"Adenosine IV/IO 0.2 mg/kg","links":[{"text":"Adenosine","protocolId":"adenosine-adenocard"}]}
+          ]},
+          {"title":"Wide Complex Tachycardia","items":[
+            {"text":"QRS > 0.08 seconds","bold":["QRS > 0.08 seconds"],"icon":"assets/legend-important.webp","iconAlt":"Important protocol information"},
+            "If signs of cardiopulmonary compromise, IV/IO 20 ml/kg",
+            {"text":"Consider sedation – DO NOT delay cardioversion","bold":["DO NOT"]},
+            {"text":"Synchronized cardioversion with 0.5 – 1 J/kg; may repeat with 2 J/kg.","bold":["0.5 – 1 J/kg","2 J/kg"]}
+          ]}
+        ]},
+        {"type":"flow-stage","title":"Advanced airway management; ventilate with 100% O2 if indicated.","arrowAfter":true,"items":["If at any time a cardiac rhythm other than tachycardia is noted, treat based on the appropriate protocol."]},
+        {"type":"three-way-flow","paths":[
+          {"title":"Sinus Tachycardia","items":[
+            {"text":"HR < 180/min in children","bold":["HR < 180/min in children"],"icon":"assets/legend-important.webp","iconAlt":"Important protocol information"},
+            {"text":"HR < 220/min in infants","bold":["HR < 220/min in infants"],"icon":"assets/legend-important.webp","iconAlt":"Important protocol information"},
+            {"text":"QRS < 0.08 seconds","bold":["QRS < 0.08 seconds"],"icon":"assets/legend-important.webp","iconAlt":"Important protocol information"},
+            {"text":"The most common causes of sinus tachycardia in children are hypovolemia and dehydration.","bold":["The most common causes of sinus tachycardia in children are hypovolemia and dehydration."],"red":["The most common causes of sinus tachycardia in children are hypovolemia and dehydration."]}
+          ]},
+          {"title":"SVT","items":[
+            {"text":"HR > 180/min in children","bold":["HR > 180/min in children"],"icon":"assets/legend-important.webp","iconAlt":"Important protocol information"},
+            {"text":"HR > 220/min in infants","bold":["HR > 220/min in infants"],"icon":"assets/legend-important.webp","iconAlt":"Important protocol information"},
+            {"text":"If Adenosine is ineffective and shock persists","links":[{"text":"Adenosine","protocolId":"adenosine-adenocard"}]},
+            {"text":"Consider sedation – DO NOT delay cardioversion","bold":["DO NOT"]},
+            {"text":"Synchronized cardioversion with 0.5-1 J/kg","bold":["0.5-1 J/kg"]},
+            {"text":"May repeat with 2 J/kg","bold":["2 J/kg"]}
+          ]},
+          {"title":"Wide Complex Tachycardia","items":[
+            {"text":"QRS > 0.08 seconds","bold":["QRS > 0.08 seconds"],"icon":"assets/legend-important.webp","iconAlt":"Important protocol information"},
+            "If cardioversion is ineffective and shock persists consider anti-dysrhythmic.",
+            {"text":"Amiodarone – 5 mg/kg over 20-60 minutes.","bold":["5 mg/kg over 20-60 minutes."],"links":[{"text":"Amiodarone","protocolId":"amiodarone-cordarone"}]}
+          ]}
+        ]},
+        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital Signs","History","Cardiac rhythm","Treatment(s)","Communication with Medical Control"]}
       ],
-      "status": "active",
-      "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 48,
-        "pageEnd": 49,
-        "pageLabel": "48-49"
-      },
-      "summary": "",
-      "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Pediatric Tachycardia"
-        },
-        {
-          "type": "paragraph",
-          "text": "This protocol applies to pediatric patients with a heart rate that is fast compared to normal for patient’s age; and too fast for the child’s level of activity and clinical condition. First Impression (Pediatric Assessment Triangle) Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry. Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds. Circulation – observe skin color for pallor, mottling and/or cyanosis."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Primary Survey"
-        },
-        {
-          "type": "paragraph",
-          "text": "Ensure airway – ensure patency and proper positioning Assess breathing – provide O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%. Ventilate with bag valve mask and 100% O2 if ineffective respiratory effort. Assess circulation – evaluate peripheral pulses, verify heart rate If no pulse, start CPR. Treat according to Pulseless Arrest Guidelines Assess disability – assess LOC. Expose/Environment – expose injuries as needed. Altered level of consciousness and signs of poor perfusion could be an indication of shock and should be managed appropriately. See Shock Protocol."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Secondary Assessment and History"
-        },
-        {
-          "type": "paragraph",
-          "text": "Monitor vital signs and O2 saturation. Perform blood glucose analysis – Treat if BGL is < 60 mg/dl. Initiate cardiac monitoring. Record and evaluate 12-Lead ECG – DO NOT delay treatment. Physical exam and OPQRST/SAMPLE history Signs and symptoms: may be non-specific, such as dizzy or weak, or may be dramatic with shock, altered level of consciousness, difficulty breathing and collapse. Sinus Tachycardia HR <180 bpm in children HR < 220 in infants ORS < 0.08 seconds If signs of cardiopulmonary compromise, IV/IO NS 20ml/kg. Search for and treat causes – hypovolemia, dehydration, etc. SVT HR > 180 in children HR > 220 in infants If signs of cardiopulmonary compromise, IV/IO 20 ml/kg Consider vagal maneuvers Adenosine IV/IO 0.2 mg/kg Wide Complex Tachycardia QRS > 0.08 seconds If signs of cardiopulmonary compromise, IV/IO 20 ml/kg Consider sedation – DO NOT delay cardioversion Synchronized cardioversion with 0.5 – 1 J/kg; may repeat with 2 J/kg. Pediatric Tachycardia (Continued) Advanced airway management; ventilate with 100% O2 if indicated. If at any time a cardiac rhythm other than tachycardia is noted, treat based on the appropriate protocol. Sinus Tachycardia HR < 180/min children HR < 220/min infants ORS < 0.08 seconds The most common causes of sinus tachycardia in children are hypovolemia and dehydration. SVT HR > 180/min in children HR > 220/min in infants If Adenosine is ineffective and shock persist Consider sedation – DO NOT delay cardioversion Synchronized cardioversion with 0.5-1 J/kg May repeat with 2 J/kg Wide Complex Tachycardia QRS > 0.08 seconds If cardioversion is ineffective and shock persist consider anti- dysrhythmic. Amiodarone – 5 mg/kg over 20-60 minutes."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vital Signs History Cardiac rhythm Treatment(s) Communication with Medical Control"
-        }
-      ],
-      "plainText": "Pediatric Tachycardia\nThis protocol applies to pediatric patients with a heart rate that is fast compared to normal for\npatient’s age; and too fast for the child’s level of activity and clinical condition.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis.\nPrimary Survey:\n•\nEnsure airway – ensure patency and proper positioning\n•\nAssess breathing – provide O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%.\no\nVentilate with bag valve mask and 100% O2 if ineffective respiratory effort.\n•\nAssess circulation – evaluate peripheral pulses, verify heart rate\no\nIf no pulse, start CPR.  Treat according to Pulseless Arrest Guidelines\n•\nAssess disability – assess LOC.\n•\nExpose/Environment – expose injuries as needed.\nAltered level of consciousness and signs of poor perfusion could be an indication of\nshock and should be managed appropriately.  See Shock Protocol.\nSecondary Assessment and History:\n•\nMonitor vital signs and O2 saturation.\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nInitiate cardiac monitoring.\n•\nRecord and evaluate 12-Lead ECG – DO NOT delay treatment.\n•\nPhysical exam and OPQRST/SAMPLE history\nSigns and symptoms: may be non-specific, such as dizzy or weak, or may be dramatic with\nshock, altered level of consciousness, difficulty breathing and collapse.\nSinus Tachycardia\nHR <180 bpm in children\nHR < 220 in infants\nORS < 0.08 seconds\nIf signs of cardiopulmonary\ncompromise, IV/IO NS 20ml/kg.\nSearch for and treat causes –\nhypovolemia, dehydration, etc.\nSVT\nHR > 180 in children\nHR > 220 in infants\nIf signs of cardiopulmonary\ncompromise, IV/IO 20 ml/kg\n•\nConsider vagal maneuvers\n•\nAdenosine IV/IO\no\n0.2 mg/kg\nWide Complex Tachycardia\nQRS > 0.08 seconds\nIf signs of cardiopulmonary\ncompromise, IV/IO 20 ml/kg\n•\nConsider sedation – DO\nNOT delay cardioversion\n•\nSynchronized cardioversion\nwith 0.5 – 1 J/kg; may\nrepeat with 2 J/kg.\nPediatric Tachycardia (Continued)\nAdvanced airway management; ventilate with 100% O2 if indicated.\n•\nIf at any time a cardiac rhythm other than tachycardia is noted, treat based on the appropriate\nprotocol.\nSinus Tachycardia\nHR < 180/min children\nHR < 220/min infants\nORS < 0.08 seconds\nThe most common\ncauses of sinus\ntachycardia in\nchildren are\nhypovolemia and\ndehydration.\nSVT\nHR > 180/min in children\nHR > 220/min in infants\n•\nIf Adenosine is ineffective\nand shock persist\n•\nConsider sedation – DO\nNOT delay cardioversion\n•\nSynchronized\ncardioversion with 0.5-1\nJ/kg\n•\nMay repeat with 2 J/kg\nWide Complex Tachycardia\nQRS > 0.08 seconds\n•\nIf cardioversion is\nineffective and shock\npersist consider anti-\ndysrhythmic.\n•\nAmiodarone – 5 mg/kg\nover 20-60 minutes.\nDocument:\n•\nVital Signs\n•\nHistory\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control",
-      "pageText": [
-        {
-          "page": 48,
-          "text": "Pediatric Tachycardia\nThis protocol applies to pediatric patients with a heart rate that is fast compared to normal for\npatient’s age; and too fast for the child’s level of activity and clinical condition.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis.\nPrimary Survey:\n•\nEnsure airway – ensure patency and proper positioning\n•\nAssess breathing – provide O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%.\no\nVentilate with bag valve mask and 100% O2 if ineffective respiratory effort.\n•\nAssess circulation – evaluate peripheral pulses, verify heart rate\no\nIf no pulse, start CPR.  Treat according to Pulseless Arrest Guidelines\n•\nAssess disability – assess LOC.\n•\nExpose/Environment – expose injuries as needed.\nAltered level of consciousness and signs of poor perfusion could be an indication of\nshock and should be managed appropriately.  See Shock Protocol.\nSecondary Assessment and History:\n•\nMonitor vital signs and O2 saturation.\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nInitiate cardiac monitoring.\n•\nRecord and evaluate 12-Lead ECG – DO NOT delay treatment.\n•\nPhysical exam and OPQRST/SAMPLE history\nSigns and symptoms: may be non-specific, such as dizzy or weak, or may be dramatic with\nshock, altered level of consciousness, difficulty breathing and collapse.\nSinus Tachycardia\nHR <180 bpm in children\nHR < 220 in infants\nORS < 0.08 seconds\nIf signs of cardiopulmonary\ncompromise, IV/IO NS 20ml/kg.\nSearch for and treat causes –\nhypovolemia, dehydration, etc.\nSVT\nHR > 180 in children\nHR > 220 in infants\nIf signs of cardiopulmonary\ncompromise, IV/IO 20 ml/kg\n•\nConsider vagal maneuvers\n•\nAdenosine IV/IO\no\n0.2 mg/kg\nWide Complex Tachycardia\nQRS > 0.08 seconds\nIf signs of cardiopulmonary\ncompromise, IV/IO 20 ml/kg\n•\nConsider sedation – DO\nNOT delay cardioversion\n•\nSynchronized cardioversion\nwith 0.5 – 1 J/kg; may\nrepeat with 2 J/kg."
-        },
-        {
-          "page": 49,
-          "text": "Pediatric Tachycardia (Continued)\nAdvanced airway management; ventilate with 100% O2 if indicated.\n•\nIf at any time a cardiac rhythm other than tachycardia is noted, treat based on the appropriate\nprotocol.\nSinus Tachycardia\nHR < 180/min children\nHR < 220/min infants\nORS < 0.08 seconds\nThe most common\ncauses of sinus\ntachycardia in\nchildren are\nhypovolemia and\ndehydration.\nSVT\nHR > 180/min in children\nHR > 220/min in infants\n•\nIf Adenosine is ineffective\nand shock persist\n•\nConsider sedation – DO\nNOT delay cardioversion\n•\nSynchronized\ncardioversion with 0.5-1\nJ/kg\n•\nMay repeat with 2 J/kg\nWide Complex Tachycardia\nQRS > 0.08 seconds\n•\nIf cardioversion is\nineffective and shock\npersist consider anti-\ndysrhythmic.\n•\nAmiodarone – 5 mg/kg\nover 20-60 minutes.\nDocument:\n•\nVital Signs\n•\nHistory\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control"
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Pediatric Tachycardia. Assessment and treatment pathways for sinus tachycardia, supraventricular tachycardia, and wide complex tachycardia, including cardioversion and medication guidance.","needsReview":false
+    },    {
       "id": "pulseless-arrest",
       "title": "Pulseless Arrest",
       "type": "protocol",
