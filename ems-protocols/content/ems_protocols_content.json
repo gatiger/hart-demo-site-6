@@ -2322,33 +2322,39 @@
       "id": "patient-initiated-refusal-of-care",
       "title": "Patient Initiated Refusal of Care",
       "type": "protocol",
-      "categoryPath": [
-        "General Protocols"
-      ],
+      "categoryPath": ["General Protocols"],
       "status": "active",
       "effectiveDate": "2026-06-08",
       "lastRevised": "",
       "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 29,
-        "pageEnd": 29,
-        "pageLabel": "29"
-      },
-      "summary": "",
+      "tags": ["refusal of care", "capacity", "medical control", "transport refusal", "documentation"],
+      "summary": "Capacity determination and documentation requirements for patient-initiated refusal of care.",
+      "displayMode": "native",
       "content": [
         {
-          "type": "heading",
-          "level": 2,
-          "text": "Patient Initiated Refusal of Care"
+          "type": "paragraph",
+          "text": "Persons identified by EMS as a patient may have requested an EMS response or may have had an EMS response requested for them."
+        },
+        {
+          "type": "warning",
+          "text": "An assessment must be offered and performed, to the extent permitted, on all patients. For patients initially refusing care, attempt to ask them, “Would you allow us to check you out and evaluate whether you're OK?”"
         },
         {
           "type": "paragraph",
-          "text": "Persons identified by EMS as a patient may have requested an EMS response or may have had an EMS response requested for them. An assessment must be offered and performed, to the extent permitted, on all patients. For patients initially refusing care, attempt to ask them, “would you allow us to check you out and evaluate whether you’re OK ?” Adult patients may refuse evaluation, treatment, and/or transport. Similarly, a patient’s parent or guardian my make these same refusals. Determination of capacity to refuse has 4 components: Legal capacity to refuse."
+          "text": "Adult patients may refuse evaluation, treatment, and/or transport. Similarly, a patient's parent or guardian may make these same refusals."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Determination of Capacity to Refuse Has 4 Components"
         },
         {
           "type": "list",
+          "items": ["Legal capacity to refuse."]
+        },
+        {
+          "type": "list",
+          "indent": 1,
           "items": [
             "Age 18 years or older",
             "Emancipated minor (married, pregnant, or the parent of a child)",
@@ -2356,11 +2362,12 @@
           ]
         },
         {
-          "type": "paragraph",
-          "text": "Mental capacity to refuse."
+          "type": "list",
+          "items": ["Mental capacity to refuse."]
         },
         {
           "type": "list",
+          "indent": 1,
           "items": [
             "Oriented x 3 (Person, Place, & Time/Event)",
             "Any language barrier has been removed.",
@@ -2368,44 +2375,43 @@
           ]
         },
         {
-          "type": "paragraph",
-          "text": "Medical capacity to refuse."
+          "type": "list",
+          "items": ["Medical capacity to refuse."]
         },
         {
           "type": "list",
+          "indent": 1,
           "items": [
             "No altered level of consciousness, by injury, illness, or substance",
             "Not under the obvious effects of alcohol and/or drugs",
             "No abnormal blood glucose",
             "No abnormal pulse oximetry or signs of hypoxia",
-            "No serious chief complaint (chest pain, difficulty breathing, syncope, etc.,)",
+            "No serious chief complaint (chest pain, difficulty breathing, syncope, etc.)",
             "No serious mechanism of injury"
           ]
         },
         {
-          "type": "paragraph",
+          "type": "warning",
           "text": "Medical Control Contacted"
         },
         {
           "type": "heading",
-          "level": 3,
-          "text": "Documentation should include"
+          "level": 2,
+          "text": "Documentation Should Include"
         },
         {
-          "type": "paragraph",
-          "text": "Signature of patient/parent/guardian. If refusal to sign, documentation of refusal should be signed by a witness, including EMS crew member(s). Vital signs and evaluation as allowed by patient. Description of possible consequences of refusal, as described to patient. Statement that the patient may call 9-1-1 at any time if assistance or treatment is desired or required. Patient advised of the risk of refusing medical treatment and patient understands the risk of refusal of transport/medical treatment, including death and permanent disability."
+          "type": "list",
+          "items": [
+            "Signature of patient/parent/guardian. If refusal to sign, documentation of refusal should be signed by a witness, including EMS crew member(s).",
+            "Vital signs and evaluation as allowed by patient.",
+            "Description of possible consequences of refusal, as described to patient.",
+            "Statement that the patient may call 9-1-1 at any time if assistance or treatment is desired or required.",
+            "Patient advised of the risk of refusing medical treatment and patient understands the risk of refusal of transport/medical treatment, including death and permanent disability."
+          ]
         }
       ],
-      "plainText": "Patient Initiated Refusal of Care\nPersons identified by EMS as a patient may have requested an EMS response or may have had\nan EMS response requested for them. An assessment must be offered and performed, to the\nextent permitted, on all patients.  For patients initially refusing care, attempt to ask them, “would\nyou allow us to check you out and evaluate whether you’re OK ?”\nAdult patients may refuse evaluation, treatment, and/or transport. Similarly, a patient’s parent or\nguardian my make these same refusals.\nDetermination of capacity to refuse has 4 components:\n•\nLegal capacity to refuse.\no Age 18 years or older\no Emancipated minor (married, pregnant, or the parent of a child)\no No suicidal or homicidal intent expressed.\n•\nMental capacity to refuse.\no Oriented x 3 (Person, Place, & Time/Event)\no Any language barrier has been removed.\no Able to understand and sign the transport refusal form.\n•\nMedical capacity to refuse.\no No altered level of consciousness, by injury, illness, or substance\no Not under the obvious effects of alcohol and/or drugs\no No abnormal blood glucose\no No abnormal pulse oximetry or signs of hypoxia\no No serious chief complaint (chest pain, difficulty breathing, syncope, etc.,)\no No serious mechanism of injury\n•\nMedical Control Contacted\nDocumentation should include:\n•\nSignature of patient/parent/guardian. If refusal to sign, documentation of refusal should be\nsigned by a witness, including EMS crew member(s).\n•\nVital signs and evaluation as allowed by patient.\n•\nDescription of possible consequences of refusal, as described to patient.\n•\nStatement that the patient may call 9-1-1 at any time if assistance or treatment is desired\nor required.\n•\nPatient advised of the risk of refusing medical treatment and patient understands the risk\nof refusal of transport/medical treatment, including death and permanent disability.",
-      "pageText": [
-        {
-          "page": 29,
-          "text": "Patient Initiated Refusal of Care\nPersons identified by EMS as a patient may have requested an EMS response or may have had\nan EMS response requested for them. An assessment must be offered and performed, to the\nextent permitted, on all patients.  For patients initially refusing care, attempt to ask them, “would\nyou allow us to check you out and evaluate whether you’re OK ?”\nAdult patients may refuse evaluation, treatment, and/or transport. Similarly, a patient’s parent or\nguardian my make these same refusals.\nDetermination of capacity to refuse has 4 components:\n•\nLegal capacity to refuse.\no Age 18 years or older\no Emancipated minor (married, pregnant, or the parent of a child)\no No suicidal or homicidal intent expressed.\n•\nMental capacity to refuse.\no Oriented x 3 (Person, Place, & Time/Event)\no Any language barrier has been removed.\no Able to understand and sign the transport refusal form.\n•\nMedical capacity to refuse.\no No altered level of consciousness, by injury, illness, or substance\no Not under the obvious effects of alcohol and/or drugs\no No abnormal blood glucose\no No abnormal pulse oximetry or signs of hypoxia\no No serious chief complaint (chest pain, difficulty breathing, syncope, etc.,)\no No serious mechanism of injury\n•\nMedical Control Contacted\nDocumentation should include:\n•\nSignature of patient/parent/guardian. If refusal to sign, documentation of refusal should be\nsigned by a witness, including EMS crew member(s).\n•\nVital signs and evaluation as allowed by patient.\n•\nDescription of possible consequences of refusal, as described to patient.\n•\nStatement that the patient may call 9-1-1 at any time if assistance or treatment is desired\nor required.\n•\nPatient advised of the risk of refusing medical treatment and patient understands the risk\nof refusal of transport/medical treatment, including death and permanent disability."
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
+      "plainText": "Patient Initiated Refusal of Care. An assessment must be offered and performed, to the extent permitted, on all patients. Determination of capacity to refuse has 4 components: legal capacity, mental capacity, medical capacity, and Medical Control contacted.",
+      "needsReview": false
     },
     {
       "id": "withholding-or-termination-of-resuscitation",
