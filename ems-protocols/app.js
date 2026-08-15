@@ -549,10 +549,12 @@ function appendRichText(element, text, phrases = [], links = [], initials = [], 
   for (const item of items || []) {
     const li = document.createElement('li');
     const itemData = typeof item === 'object' ? item : { text: item };
-    if (itemData.red?.length) li.classList.add('protocol-red-flow-item');
+    const redPhrases = itemData.red === true ? [itemData.text || ''] : (itemData.red || []);
+    if (redPhrases.length) li.classList.add('protocol-red-flow-item');
+    if (itemData.indent) li.classList.add(`flow-item-indent-${Math.min(Number(itemData.indent) || 1, 3)}`);
     let textContainer = li;
     if (itemData.icon) {
-      li.className = 'assessment-icon-item';
+      li.classList.add('assessment-icon-item');
       const icon = document.createElement('img');
       icon.src = itemData.icon;
       icon.alt = itemData.iconAlt || '';
@@ -561,7 +563,7 @@ function appendRichText(element, text, phrases = [], links = [], initials = [], 
       textContainer = document.createElement('span');
       li.appendChild(textContainer);
     }
-    appendRichText(textContainer, itemData.text || '', itemData.bold || [], itemData.links || [], itemData.emphasizedInitials || [], itemData.red || []);
+    appendRichText(textContainer, itemData.text || '', itemData.bold || [], itemData.links || [], itemData.emphasizedInitials || [], redPhrases);
     if (itemData.children?.length) appendFlowItems(itemData.children, li);
     list.appendChild(li);
   }

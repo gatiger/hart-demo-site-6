@@ -635,3 +635,11 @@ details[open] > .tree-heading.tree-toggle::before {
 .epinephrine-drip-table .epi-yellow { background: #fff200 !important; color: #050505; }
 .epinephrine-drip-table .epi-blue { background: #00a8e8 !important; color: #050505; }
 .epinephrine-drip-table .epi-green { background: #00b85a !important; color: #050505; }
+.protocol-flow-stage li.flow-item-indent-1 { margin-left: 1.5rem; }
+.protocol-flow-stage li.flow-item-indent-2 { margin-left: 3rem; }
+.protocol-flow-stage li.flow-item-indent-3 { margin-left: 4.5rem; }
+@media (max-width: 640px) {
+  .protocol-flow-stage li.flow-item-indent-1 { margin-left: .75rem; }
+  .protocol-flow-stage li.flow-item-indent-2 { margin-left: 1.5rem; }
+  .protocol-flow-stage li.flow-item-indent-3 { margin-left: 2.25rem; }
+}
