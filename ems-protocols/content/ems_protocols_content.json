@@ -1696,143 +1696,77 @@
       "id": "administration-disposal-of-medication",
       "title": "Administration/Disposal of Medication",
       "type": "protocol",
-      "categoryPath": [
-        "General Protocols"
-      ],
+      "categoryPath": ["General Protocols"],
       "status": "active",
       "effectiveDate": "2026-06-08",
       "lastRevised": "",
       "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 13,
-        "pageEnd": 13,
-        "pageLabel": "13"
-      },
-      "summary": "",
+      "tags": ["medication administration", "medication disposal", "medication safety", "documentation", "narcotics"],
+      "summary": "Requirements for safe medication administration, documentation, pharmacy replacement, and disposal of unused medication.",
+      "displayMode": "native",
       "content": [
         {
           "type": "heading",
           "level": 2,
-          "text": "Hart Co. EMS Medication Administration and Disposal"
-        },
-        {
-          "type": "paragraph",
-          "text": "Protocol"
-        },
-        {
-          "type": "list",
-          "items": [
-            "1. Medications shall only be administered as per protocol and/or orders from Medical"
-          ]
-        },
-        {
-          "type": "paragraph",
-          "text": "Control."
-        },
-        {
-          "type": "list",
-          "items": [
-            "2. You may only administer medications that fall within your SCOPE of practice.",
-            "3. Remember to confirm that you ensure the patient’s safety and effective medication"
-          ]
-        },
-        {
-          "type": "paragraph",
-          "text": "delivery by confirming all of the following:"
-        },
-        {
-          "type": "list",
-          "items": [
-            "1) Right Patient",
-            "2) Right Drug",
-            "3) Right Dose",
-            "4) Right Route",
-            "5) Right Time",
-            "6) Right Reason",
-            "7) Right Documentation",
-            "8) Right Response",
-            "9) Right to Refuse",
-            "4. After administering the medication make sure to properly document the medication"
-          ]
-        },
-        {
-          "type": "paragraph",
-          "text": "given, what you gave the medication for, the dose you gave, and the concentration of medication."
-        },
-        {
-          "type": "list",
-          "items": [
-            "5. If the protocols call for a medication to be given and you chose not to, make sure you"
-          ]
-        },
-        {
-          "type": "paragraph",
-          "text": "document the reason you did not administer the medication."
-        },
-        {
-          "type": "list",
-          "items": [
-            "6. Even though you may have standing orders, you must still obtain a physician’s"
-          ]
-        },
-        {
-          "type": "paragraph",
-          "text": "signature for the narcotic medications administered and all medication orders received from online Medical Control in order to get the medication replaced at the pharmacy. This is a pharmacy requirement."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Disposal of Medication"
-        },
-        {
-          "type": "heading",
-          "level": 3,
           "text": "Administration of Medication"
         },
         {
           "type": "list",
+          "ordered": true,
           "items": [
-            "1. After you have completed the call, any remaining medication must be properly"
+            "1. Medications shall only be administered according to protocol and/or orders from Medical Control.",
+            "2. You may only administer medications that fall within your scope of practice.",
+            "3. Ensure patient safety and effective medication delivery by confirming all nine medication rights."
           ]
         },
         {
-          "type": "paragraph",
-          "text": "disposed of."
+          "type": "heading",
+          "level": 3,
+          "text": "Nine Rights of Medication Administration"
         },
         {
           "type": "list",
+          "ordered": true,
           "items": [
+            "Right patient",
+            "Right drug",
+            "Right dose",
+            "Right route",
+            "Right time",
+            "Right reason",
+            "Right documentation",
+            "Right response",
+            "Right to refuse"
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "start": 4,
+          "items": [
+            "4. After administering a medication, properly document the medication given, the reason it was administered, the dose, and the medication concentration.",
+            "5. If a protocol calls for a medication and you choose not to administer it, document the reason it was not administered.",
+            "6. Even when operating under standing orders, you must obtain a physician's signature for administered narcotic medications and for all medication orders received from online Medical Control before the medication can be replaced by the pharmacy. This is a pharmacy requirement."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Disposal of Medication"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "1. After completing the call, properly dispose of any remaining medication.",
             "2. Have your partner or supervisor witness the disposal of the remaining medication.",
-            "3. If the medication is a narcotic, you must also complete the narcotic sheet for the"
+            "3. If the medication is a narcotic, also complete the narcotic sheet for the pharmacy.",
+            "4. In the patient care report, document how much medication was administered and how much was wasted."
           ]
-        },
-        {
-          "type": "paragraph",
-          "text": "pharmacy."
-        },
-        {
-          "type": "list",
-          "items": [
-            "4. In your patient care report, make sure to document how much of the medication was"
-          ]
-        },
-        {
-          "type": "paragraph",
-          "text": "given and how much of the medication was wasted."
         }
       ],
-      "plainText": "Hart Co. EMS Medication Administration and Disposal\nProtocol\n1. Medications shall only be administered as per protocol and/or orders from Medical\nControl.\n2. You may only administer medications that fall within your SCOPE of practice.\n3. Remember to confirm that you ensure the patient’s safety and effective medication\ndelivery by confirming all of the following:\n1) Right Patient\n2) Right Drug\n3) Right Dose\n4) Right Route\n5) Right Time\n6) Right Reason\n7) Right Documentation\n8) Right Response\n9) Right to Refuse\n4. After administering the medication make sure to properly document the medication\ngiven, what you gave the medication for, the dose you gave, and the concentration of\nmedication.\n5. If the protocols call for a medication to be given and you chose not to, make sure you\ndocument the reason you did not administer the medication.\n6. Even though you may have standing orders, you must still obtain a physician’s\nsignature for the narcotic medications administered and all medication orders\nreceived from online Medical Control in order to get the medication replaced at the\npharmacy.  This is a pharmacy requirement.\nDisposal of Medication\nAdministration of Medication\n1. After you have completed the call, any remaining medication must be properly\ndisposed of.\n2. Have your partner or supervisor witness the disposal of the remaining medication.\n3. If the medication is a narcotic, you must also complete the narcotic sheet for the\npharmacy.\n4. In your patient care report, make sure to document how much of the medication was\ngiven and how much of the medication was wasted.",
-      "pageText": [
-        {
-          "page": 13,
-          "text": "Hart Co. EMS Medication Administration and Disposal\nProtocol\n1. Medications shall only be administered as per protocol and/or orders from Medical\nControl.\n2. You may only administer medications that fall within your SCOPE of practice.\n3. Remember to confirm that you ensure the patient’s safety and effective medication\ndelivery by confirming all of the following:\n1) Right Patient\n2) Right Drug\n3) Right Dose\n4) Right Route\n5) Right Time\n6) Right Reason\n7) Right Documentation\n8) Right Response\n9) Right to Refuse\n4. After administering the medication make sure to properly document the medication\ngiven, what you gave the medication for, the dose you gave, and the concentration of\nmedication.\n5. If the protocols call for a medication to be given and you chose not to, make sure you\ndocument the reason you did not administer the medication.\n6. Even though you may have standing orders, you must still obtain a physician’s\nsignature for the narcotic medications administered and all medication orders\nreceived from online Medical Control in order to get the medication replaced at the\npharmacy.  This is a pharmacy requirement.\nDisposal of Medication\nAdministration of Medication\n1. After you have completed the call, any remaining medication must be properly\ndisposed of.\n2. Have your partner or supervisor witness the disposal of the remaining medication.\n3. If the medication is a narcotic, you must also complete the narcotic sheet for the\npharmacy.\n4. In your patient care report, make sure to document how much of the medication was\ngiven and how much of the medication was wasted."
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
+      "plainText": "Administration of Medication. Medications shall only be administered according to protocol and/or orders from Medical Control and within the provider's scope of practice. Confirm the nine rights of medication administration. Document medications administered or withheld. Obtain required physician signatures for narcotics and online Medical Control orders. Disposal of Medication. Properly dispose of remaining medication with a witness and document medication administered and wasted.",
+      "needsReview": false
     },
     {
       "id": "communications",
