@@ -525,7 +525,93 @@ function appendRichText(element, text, phrases = [], links = []) {
     }
   }
 }
+function appendFlowItems(items, container) {
+  const list = document.createElement('ul');
+  for (const item of items || []) {
+    const li = document.createElement('li');
+    const itemData = typeof item === 'object' ? item : { text: item };
+    appendRichText(li, itemData.text || '', itemData.bold || [], itemData.links || []);
+    if (itemData.children?.length) appendFlowItems(itemData.children, li);
+    list.appendChild(li);
+  }
+  container.appendChild(list);
+}
+
+function appendAssessmentStage(stage, container) {
+  const section = document.createElement('section');
+  section.className = 'assessment-stage';
+  const heading = document.createElement('h4');
+  heading.textContent = stage.title || '';
+  section.appendChild(heading);
+  if (stage.items?.length) appendFlowItems(stage.items, section);
+  container.appendChild(section);
+}
+
+function renderPediatricAssessmentFlow(block, container) {
+  const flow = document.createElement('section');
+  flow.className = 'pediatric-assessment-flow';
+
+  const first = document.createElement('section');
+  first.className = 'assessment-stage assessment-first-impression';
+  const firstHeading = document.createElement('h3');
+  firstHeading.textContent = block.firstImpression.title;
+  first.appendChild(firstHeading);
+  appendFlowItems(block.firstImpression.items, first);
+  flow.appendChild(first);
+
+  const question = document.createElement('div');
+  question.className = 'assessment-decision';
+  question.textContent = block.question;
+  flow.appendChild(question);
+
+  const branches = document.createElement('div');
+  branches.className = 'assessment-branches';
+  for (const branchData of block.branches || []) {
+    const branch = document.createElement('section');
+    branch.className = `assessment-branch assessment-branch-${branchData.kind || 'standard'}`;
+    const answer = document.createElement('p');
+    answer.className = 'assessment-answer';
+    answer.textContent = branchData.answer;
+    branch.appendChild(answer);
+    const title = document.createElement('h3');
+    title.textContent = branchData.title;
+    branch.appendChild(title);
+    if (branchData.intro?.length) appendFlowItems(branchData.intro, branch);
+    for (const stage of branchData.stages || []) appendAssessmentStage(stage, branch);
+    branches.appendChild(branch);
+  }
+  flow.appendChild(branches);
+
+  const documentation = document.createElement('section');
+  documentation.className = 'assessment-documentation';
+  const image = document.createElement('img');
+  image.src = block.documentation.image;
+  image.alt = block.documentation.alt || '';
+  image.loading = 'lazy';
+  documentation.appendChild(image);
+  const documentationBody = document.createElement('div');
+  const documentationHeading = document.createElement('h3');
+  documentationHeading.textContent = block.documentation.title;
+  documentationBody.appendChild(documentationHeading);
+  appendFlowItems(block.documentation.items, documentationBody);
+  documentation.appendChild(documentationBody);
+  flow.appendChild(documentation);
+
+  if (block.note) {
+    const note = document.createElement('div');
+    note.className = 'note-block assessment-note';
+    note.textContent = block.note;
+    flow.appendChild(note);
+  }
+
+  container.appendChild(flow);
+}
 function renderBlock(block, container) {
+  if (block.type === 'pediatric-assessment-flow') {
+    renderPediatricAssessmentFlow(block, container);
+    return;
+  }
+
   if (block.type === 'document-example') {
     renderDocumentExample(block, container);
     return;

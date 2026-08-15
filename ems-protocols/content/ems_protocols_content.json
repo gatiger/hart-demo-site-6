@@ -2681,9 +2681,8 @@
           "indent": 1,
           "items": [
             "Due to the anatomy of the IO space, flow rates may appear to be slower than those with an IV catheter.",
-            "Ensure administration of an appropriate rapid syringe bolus (flush) prior to infusion.",
             {
-              "text": "(NO FLUSH = NO FLOW)",
+              "text": "Ensure administration of an appropriate rapid syringe bolus (flush) prior to infusion. (NO FLUSH = NO FLOW)",
               "bold": [
                 "(NO FLUSH = NO FLOW)"
               ]
@@ -2783,46 +2782,127 @@
       "effectiveDate": "2026-06-08",
       "lastRevised": "",
       "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 36,
-        "pageEnd": 36,
-        "pageLabel": "36"
-      },
-      "summary": "",
+      "tags": [
+        "pediatric assessment",
+        "assessment triangle",
+        "primary survey",
+        "documentation"
+      ],
+      "summary": "Pediatric first impression, urgency decision, primary survey, secondary assessment, and documentation guidance.",
+      "displayMode": "native",
       "content": [
         {
-          "type": "heading",
-          "level": 2,
-          "text": "Pediatric Assessment"
-        },
-        {
-          "type": "paragraph",
-          "text": "First Impression (Pediatric Assessment Triangle) Appearance – Observe muscle tone, interactivity, Consolability, look/gaze, and speech/cry Breathing – Observe chest wall movement, accessory muscle use, abnormal airway sounds. Circulation – Observe the skin color for pallor, mottling, or cyanosis. Based on your first impression, does the child appear sick? Urgent Proceed immediately with evaluation of the Primary Survey (ABCDE). If a problem is identified, perform necessary interventions. Primary Survey (ABCDE) Airway – assess airway patency. open, clear and maintain airway. Breathing – assess rate and quality of breathing. Ensure adequate ventilation. Initiate appropriate O2 therapy. Circulation – assess perfusion status. Control major bleeding. Manage shock appropriately. Disability – assess LOC. Is the child responding and acting appropriately? Exposure/Environment – expose injuries as needed. Evaluate body temperature. Examine the skin for rashes, discoloration, and trauma. Assess the behavior of adults, appearance of other children, and safety of the home. Secondary Assessment Not Urgent Proceed systematically with the patient assessment. Though they may not appear sick, trauma patients should receive a rapid primary survey and rapid transport when significant mechanism of injury exist. These patients may appear well despite their emergent condition. Primary Survey (ABCDE) Airway Breathing Circulation Disability Exposure/Environment Secondary Assessment Vital signs Focused History Physical Examination Ongoing Assessment YES NO"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vital Signs OPQRST/SAMPLE Environmental observations Treatment Communications with Medical Control For the non-urgent child, a head-to-toe assessment, with the least invasive parts of the examination being performed first, will allow the child some time to become accustomed to you and will help maximize the information gained from the assessment."
+          "type": "pediatric-assessment-flow",
+          "firstImpression": {
+            "title": "First Impression (Pediatric Assessment Triangle)",
+            "items": [
+              {
+                "text": "Appearance – Observe muscle tone, interactivity, Consolability, look/gaze, and speech/cry",
+                "bold": ["Appearance"]
+              },
+              {
+                "text": "Breathing – Observe chest wall movement, accessory muscle use, abnormal airway sounds.",
+                "bold": ["Breathing"]
+              },
+              {
+                "text": "Circulation – Observe the skin color for pallor, mottling, or cyanosis.",
+                "bold": ["Circulation"]
+              }
+            ]
+          },
+          "question": "Based on your first impression, does the child appear sick?",
+          "branches": [
+            {
+              "answer": "Yes",
+              "title": "Urgent",
+              "kind": "urgent",
+              "intro": [
+                "Proceed immediately with evaluation of the Primary Survey (ABCDE).",
+                "If a problem is identified, perform necessary interventions."
+              ],
+              "stages": [
+                {
+                  "title": "Primary Survey (ABCDE)",
+                  "items": [
+                    {
+                      "text": "Airway – assess airway patency.",
+                      "bold": ["Airway"],
+                      "children": ["Open, clear and maintain airway."]
+                    },
+                    {
+                      "text": "Breathing – assess rate and quality of breathing.",
+                      "bold": ["Breathing"],
+                      "children": ["Ensure adequate ventilation.", "Initiate appropriate O2 therapy."]
+                    },
+                    {
+                      "text": "Circulation – assess perfusion status.",
+                      "bold": ["Circulation"],
+                      "children": ["Control major bleeding.", "Manage shock appropriately."]
+                    },
+                    {
+                      "text": "Disability – assess LOC.",
+                      "bold": ["Disability"],
+                      "children": ["Is the child responding and acting appropriately?"]
+                    },
+                    {
+                      "text": "Exposure/Environment – expose injuries as needed.",
+                      "bold": ["Exposure/Environment"],
+                      "children": [
+                        "Evaluate body temperature.",
+                        "Examine the skin for rashes, discoloration, and trauma.",
+                        "Assess the behavior of adults, appearance of other children, and safety of the home."
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "Secondary Assessment",
+                  "items": []
+                }
+              ]
+            },
+            {
+              "answer": "No",
+              "title": "Not Urgent",
+              "kind": "not-urgent",
+              "intro": [
+                "Proceed systematically with the patient assessment.",
+                "Though they may not appear sick, trauma patients should receive a rapid primary survey and rapid transport when significant mechanism of injury exists. These patients may appear well despite their emergent condition."
+              ],
+              "stages": [
+                {
+                  "title": "Primary Survey (ABCDE)",
+                  "items": ["Airway", "Breathing", "Circulation", "Disability", "Exposure/Environment"]
+                },
+                {
+                  "title": "Secondary Assessment",
+                  "items": ["Vital signs", "Focused History", "Physical Examination"]
+                },
+                {
+                  "title": "Ongoing Assessment",
+                  "items": []
+                }
+              ]
+            }
+          ],
+          "documentation": {
+            "title": "Document:",
+            "image": "assets/legend-documentation.webp",
+            "alt": "Patient care documentation reminder symbol",
+            "items": [
+              "Vital Signs",
+              "OPQRST/SAMPLE",
+              "Environmental observations",
+              "Treatment",
+              "Communications with Medical Control"
+            ]
+          },
+          "note": "For the non-urgent child, a head-to-toe assessment, with the least invasive parts of the examination being performed first, will allow the child some time to become accustomed to you and will help maximize the information gained from the assessment."
         }
       ],
-      "plainText": "Pediatric Assessment\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – Observe muscle tone, interactivity, Consolability, look/gaze, and speech/cry\n•\nBreathing – Observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – Observe the skin color for pallor, mottling, or cyanosis.\nBased on your first impression, does the\nchild appear sick?\nUrgent\n•\nProceed immediately with evaluation of the\nPrimary Survey (ABCDE).\n•\nIf a problem is identified, perform necessary\ninterventions.\nPrimary Survey (ABCDE)\n•\nAirway – assess airway patency.\no\nopen, clear and maintain airway.\n•\nBreathing – assess rate and quality of breathing.\no\nEnsure adequate ventilation.\no\nInitiate appropriate O2 therapy.\n•\nCirculation – assess perfusion status.\no\nControl major bleeding.\no\nManage shock appropriately.\n•\nDisability – assess LOC.\no\nIs the child responding and acting\nappropriately?\n•\nExposure/Environment – expose injuries as\nneeded.\no\nEvaluate body temperature.\no\nExamine the skin for rashes,\ndiscoloration, and trauma.\no\nAssess the behavior of adults,\nappearance of other children, and safety\nof the home.\nSecondary Assessment\nNot Urgent\n•\nProceed systematically with the patient\nassessment.\nThough they may not appear sick, trauma\npatients should receive a rapid primary survey\nand rapid transport when significant\nmechanism of injury exist. These patients may\nappear well despite their emergent condition.\nPrimary Survey (ABCDE)\n•\nAirway\n•\nBreathing\n•\nCirculation\n•\nDisability\n•\nExposure/Environment\nSecondary Assessment\n•\nVital signs\n•\nFocused History\n•\nPhysical Examination\nOngoing Assessment\nYES\nNO\nDocument:\n•\nVital Signs\n•\nOPQRST/SAMPLE\n•\nEnvironmental\nobservations\n•\nTreatment\n•\nCommunications\nwith Medical Control\nFor the non-urgent child, a head-to-toe assessment, with the least\ninvasive parts of the examination being performed first, will allow the\nchild some time to become accustomed to you and will help maximize\nthe information gained from the assessment.",
-      "pageText": [
-        {
-          "page": 36,
-          "text": "Pediatric Assessment\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – Observe muscle tone, interactivity, Consolability, look/gaze, and speech/cry\n•\nBreathing – Observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – Observe the skin color for pallor, mottling, or cyanosis.\nBased on your first impression, does the\nchild appear sick?\nUrgent\n•\nProceed immediately with evaluation of the\nPrimary Survey (ABCDE).\n•\nIf a problem is identified, perform necessary\ninterventions.\nPrimary Survey (ABCDE)\n•\nAirway – assess airway patency.\no\nopen, clear and maintain airway.\n•\nBreathing – assess rate and quality of breathing.\no\nEnsure adequate ventilation.\no\nInitiate appropriate O2 therapy.\n•\nCirculation – assess perfusion status.\no\nControl major bleeding.\no\nManage shock appropriately.\n•\nDisability – assess LOC.\no\nIs the child responding and acting\nappropriately?\n•\nExposure/Environment – expose injuries as\nneeded.\no\nEvaluate body temperature.\no\nExamine the skin for rashes,\ndiscoloration, and trauma.\no\nAssess the behavior of adults,\nappearance of other children, and safety\nof the home.\nSecondary Assessment\nNot Urgent\n•\nProceed systematically with the patient\nassessment.\nThough they may not appear sick, trauma\npatients should receive a rapid primary survey\nand rapid transport when significant\nmechanism of injury exist. These patients may\nappear well despite their emergent condition.\nPrimary Survey (ABCDE)\n•\nAirway\n•\nBreathing\n•\nCirculation\n•\nDisability\n•\nExposure/Environment\nSecondary Assessment\n•\nVital signs\n•\nFocused History\n•\nPhysical Examination\nOngoing Assessment\nYES\nNO\nDocument:\n•\nVital Signs\n•\nOPQRST/SAMPLE\n•\nEnvironmental\nobservations\n•\nTreatment\n•\nCommunications\nwith Medical Control\nFor the non-urgent child, a head-to-toe assessment, with the least\ninvasive parts of the examination being performed first, will allow the\nchild some time to become accustomed to you and will help maximize\nthe information gained from the assessment."
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText": "Pediatric Assessment. First Impression (Pediatric Assessment Triangle): Appearance, Breathing, and Circulation. Based on your first impression, does the child appear sick? Urgent and Not Urgent assessment pathways include Primary Survey, Secondary Assessment, Ongoing Assessment, and documentation.",
+      "needsReview": false
+    },    {
       "id": "pain-management",
       "title": "Pain Management",
       "type": "protocol",
