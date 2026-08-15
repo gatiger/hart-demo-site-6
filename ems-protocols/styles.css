@@ -530,9 +530,8 @@ details[open] > .tree-heading.tree-toggle::before {
 .protocol-reference-image img { display: block; width: 100%; height: auto; }
 .protocol-reference-image figcaption { margin-top: .45rem; color: #52697b; font-size: .9rem; text-align: center; }
 @media (max-width: 520px) { .protocol-documentation-card { grid-template-columns: 86px 1fr; padding: .8rem; } .protocol-icon-note { grid-template-columns: 2.75rem 1fr; } .protocol-icon-note img { width: 2.75rem; height: 2.75rem; } }
-.stop-medical-control { display: grid; place-items: center; width: min(16rem, 80%); min-height: 7.5rem; margin: 1.5rem auto; padding: 1.1rem 2rem; clip-path: polygon(29% 0, 71% 0, 100% 29%, 100% 71%, 71% 100%, 29% 100%, 0 71%, 0 29%); background: #e50909; color: #fff; text-align: center; text-transform: uppercase; }
-.stop-medical-control strong { font-size: 1.45rem; line-height: 1; text-decoration: underline; }
-.stop-medical-control span { font-weight: 900; line-height: 1.2; }
+.medical-control-reference { margin: 1.5rem auto; text-align: center; }
+.medical-control-reference img { display: block; width: min(18rem, 80%); height: auto; margin: 0 auto; object-fit: contain; }
 .dopamine-dose-table caption { padding: .45rem .65rem; background: #050505; color: #fff; text-align: center; }
 .dopamine-dose-table .table-caption-subtitle { display: block; margin-top: .15rem; font-size: .78rem; font-weight: 800; }
 .dopamine-dose-table th, .dopamine-dose-table td { padding: .28rem .38rem; text-align: center; vertical-align: middle; }

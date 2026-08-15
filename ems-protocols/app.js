@@ -680,15 +680,14 @@ function renderDocumentationCard(block, container) {
   container.appendChild(section);
 }
 function renderStopControl(block, container) {
-  const section = document.createElement('section');
-  section.className = 'stop-medical-control';
-  const stop = document.createElement('strong');
-  stop.textContent = block.title || 'STOP';
-  section.appendChild(stop);
-  const instruction = document.createElement('span');
-  instruction.textContent = block.text || 'CONTACT MEDICAL CONTROL';
-  section.appendChild(instruction);
-  container.appendChild(section);
+  const figure = document.createElement('figure');
+  figure.className = 'medical-control-reference';
+  const image = document.createElement('img');
+  image.src = block.image || 'assets/legend-medical-control.webp';
+  image.alt = block.alt || `${block.title || 'STOP'} — ${block.text || 'CONTACT MEDICAL CONTROL'}`;
+  image.loading = 'lazy';
+  figure.appendChild(image);
+  container.appendChild(figure);
 }
 function renderBlock(block, container) {
   if (block.type === 'stop-control') {
@@ -852,7 +851,7 @@ function renderPdfStyleTable(block, container) {
   (block.rows || []).forEach((rowData, index) => {
     const row = Array.isArray(rowData) ? rowData : (rowData.cells || []);
     const tr = document.createElement('tr');
-    if (!Array.isArray(rowData) && rowData.background) tr.classList.add(`table-row-`);
+    if (!Array.isArray(rowData) && rowData.background) tr.classList.add(`table-row-${rowData.background}`);
     if (looksLikeUnitRow(row) && index === 0 && block.headers?.length) tr.classList.add('unit-row');
     for (const rawCell of row) {
       const cell = normalizeCell(rawCell);

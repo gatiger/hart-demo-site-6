@@ -3450,7 +3450,9 @@
         {
           "type": "stop-control",
           "title": "STOP",
-          "text": "CONTACT MEDICAL CONTROL"
+          "text": "CONTACT MEDICAL CONTROL",
+          "image": "assets/legend-medical-control.webp",
+          "alt": "Stop and contact Medical Control"
         },
         {
           "type": "list",

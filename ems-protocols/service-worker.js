@@ -1,4 +1,4 @@
-const CACHE_NAME = 'hcems-protocols-v47';
+const CACHE_NAME = 'hcems-protocols-v48';
 const APP_SHELL = [
   './',
   './index.html',
@@ -8,6 +8,7 @@ const APP_SHELL = [
   './assets/Hart_EMS_Banner.webp',
   './assets/legend-documentation.webp',
   './assets/legend-important.webp',
+  './assets/legend-medical-control.webp',
   './assets/pediatric-pain-rating-scale.png',
   './page-images/page-211.jpg',
   './content/ems_protocols_content.json',
