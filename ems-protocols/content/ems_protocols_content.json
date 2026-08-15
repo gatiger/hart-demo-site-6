@@ -4480,7 +4480,7 @@
           {"text":"Remove clothing and jewelry from injured body parts.","indent":1},
           {"text":"Do not attempt to thaw injured part with local heat.","indent":1},
           {"text":"Severe frostbite injuries should be transported to a trauma center.","indent":1}
-        ],"sideDocumentation":{"title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital Signs","OPQRST/SAMPLE","Cardiac rhythm","Treatment(s)","Communication with Medical Control"]}},
+        ],"sideDocumentationLayout":"below-right","sideDocumentation":{"title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital Signs","OPQRST/SAMPLE","Cardiac rhythm","Treatment(s)","Communication with Medical Control"]}},
         {"type":"flow-stage","title":"Consider Morphine for pain relief when the patient is conscious, alert, not hypotensive and complaining of severe pain.","links":[{"text":"Morphine","protocolId":"morphine-sulfate"}],"items":[
           {"text":"See Pediatric Pain Management Protocol.","indent":1,"links":[{"text":"Pediatric Pain Management Protocol","protocolId":"pain-management"}]}
         ]}

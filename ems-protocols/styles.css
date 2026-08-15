@@ -666,3 +666,14 @@ details[open] > .tree-heading.tree-toggle::before {
   .flow-stage-with-documentation { grid-template-columns: 1fr; }
   .flow-stage-with-documentation > .protocol-documentation-card { width: min(22rem, 100%); justify-self: end; }
 }
+.flow-stage-with-documentation.layout-below-right { display: block; min-height: 0; padding-bottom: 9.5rem; }
+.flow-stage-with-documentation.layout-below-right > .protocol-flow-stage { width: 100%; }
+.flow-stage-with-documentation.layout-below-right > .protocol-documentation-card { position: absolute; z-index: 1; right: 2%; bottom: 0; width: min(18rem, 42%); min-height: 8.5rem; background: #f8fbfd; }
+.flow-stage-with-documentation.layout-below-right.flow-arrow-after::before { left: 20%; bottom: 0; height: 9.5rem; }
+.flow-stage-with-documentation.layout-below-right.flow-arrow-after::after { left: 20%; }
+@media (max-width: 720px) {
+  .flow-stage-with-documentation.layout-below-right { display: block; padding-bottom: 10.5rem; }
+  .flow-stage-with-documentation.layout-below-right > .protocol-documentation-card { right: 0; bottom: 0; width: min(19rem, 72%); }
+  .flow-stage-with-documentation.layout-below-right.flow-arrow-after::before,
+  .flow-stage-with-documentation.layout-below-right.flow-arrow-after::after { left: 11%; }
+}

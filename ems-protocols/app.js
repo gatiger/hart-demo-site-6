@@ -710,7 +710,7 @@ function renderFlowStage(block, container) {
   appendFlowItems(block.items || [], section);
   if (block.sideDocumentation) {
     const row = document.createElement('div');
-    row.className = `flow-stage-with-documentation ${block.arrowAfter ? 'flow-arrow-after' : ''}`;
+    row.className = `flow-stage-with-documentation ${block.sideDocumentationLayout ? `layout-${block.sideDocumentationLayout}` : ''} ${block.arrowAfter ? 'flow-arrow-after' : ''}`;
     row.appendChild(section);
     renderDocumentationCard(block.sideDocumentation, row);
     container.appendChild(row);
