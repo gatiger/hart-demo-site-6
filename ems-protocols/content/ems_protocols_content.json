@@ -7,10 +7,11 @@
     "emsDirector": "Mike Adams",
     "sourcePdf": "documents/ems/2026-hcems-protocols.pdf",
     "sourcePdfPages": 287,
+    "navigationStartPage": 8,
     "contentFormatVersion": 2,
     "generatedFrom": "2026 HCEMS Protocols.pdf",
-    "generatedNote": "First-pass extraction for EMS Protocol PWA/Site Manager. This is not a medical review or official publication until reviewed/approved by Hart County EMS leadership. Version 2 adds PDF-page default display for visual/table/chart-heavy entries. Version 6 fixes PDF paths to be relative and adds cover/TOC/divider pages for page-by-page review.",
-    "prototypeVersion": "v6-relative-pdf-cover",
+    "generatedNote": "First-pass extraction for EMS Protocol PWA/Site Manager. This is not a medical review or official publication until reviewed/approved by Hart County EMS leadership. Version 2 adds PDF-page default display for visual/table/chart-heavy entries. Navigation begins with the Approval Statement on PDF page 8.",
+    "prototypeVersion": "v7-native-splash",
     "tableConversionNote": "This version renders detected PDF tables as in-page HTML tables. Visual algorithms/signatures may still use PDF view if no extractable table was found."
   },
   "navigation": [
@@ -18,30 +19,6 @@
       "id": "administrative",
       "title": "Administrative",
       "children": [
-        {
-          "id": "cover",
-          "title": "Cover",
-          "type": "administrative",
-          "pageStart": 1,
-          "pageEnd": 1,
-          "status": "active"
-        },
-        {
-          "id": "table-of-contents",
-          "title": "Table of Contents",
-          "type": "administrative",
-          "pageStart": 2,
-          "pageEnd": 6,
-          "status": "active"
-        },
-        {
-          "id": "administrative-divider",
-          "title": "Administrative Divider",
-          "type": "administrative",
-          "pageStart": 7,
-          "pageEnd": 7,
-          "status": "active"
-        },
         {
           "id": "approval-statement",
           "title": "Approval Statement",
@@ -1600,84 +1577,6 @@
     }
   ],
   "protocols": [
-    {
-      "id": "cover",
-      "title": "Cover",
-      "type": "administrative",
-      "categoryPath": [
-        "Administrative"
-      ],
-      "status": "active",
-      "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 1,
-        "pageEnd": 1,
-        "pageLabel": "1"
-      },
-      "summary": "Official cover page for the 2026 Hart County EMS protocols.",
-      "content": [],
-      "plainText": "",
-      "pageText": [],
-      "needsReview": true,
-      "extractionNote": "Displayed from the official PDF because this is a cover/table-of-contents/divider/signature page.",
-      "displayMode": "pdf-page"
-    },
-    {
-      "id": "table-of-contents",
-      "title": "Table of Contents",
-      "type": "administrative",
-      "categoryPath": [
-        "Administrative"
-      ],
-      "status": "active",
-      "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 2,
-        "pageEnd": 6,
-        "pageLabel": "2-6"
-      },
-      "summary": "Official table of contents pages.",
-      "content": [],
-      "plainText": "",
-      "pageText": [],
-      "needsReview": true,
-      "extractionNote": "Displayed from the official PDF because this is a cover/table-of-contents/divider/signature page.",
-      "displayMode": "pdf-page"
-    },
-    {
-      "id": "administrative-divider",
-      "title": "Administrative Divider",
-      "type": "administrative",
-      "categoryPath": [
-        "Administrative"
-      ],
-      "status": "active",
-      "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 7,
-        "pageEnd": 7,
-        "pageLabel": "7"
-      },
-      "summary": "Administrative section divider page.",
-      "content": [],
-      "plainText": "",
-      "pageText": [],
-      "needsReview": true,
-      "extractionNote": "Displayed from the official PDF because this is a cover/table-of-contents/divider/signature page.",
-      "displayMode": "pdf-page"
-    },
     {
       "id": "general-guidelines-divider",
       "title": "General Guidelines Divider",
