@@ -231,7 +231,7 @@ function renderItems(items, container, matches, term) {
     const btn = document.createElement('button');
     btn.className = 'tree-btn';
     btn.type = 'button';
-    btn.textContent = `${item.title} ${item.pageStart ? `(p. ${item.pageStart}${item.pageEnd && item.pageEnd !== item.pageStart ? '-' + item.pageEnd : ''})` : ''}`;
+    btn.textContent = item.title;
     btn.dataset.id = item.id;
     btn.addEventListener('click', () => showProtocol(item.id));
     container.appendChild(btn);
