@@ -4528,57 +4528,42 @@
       ],
       "plainText":"Pediatric Fever. Assessment, cooling, acetaminophen, seizure preparation, and documentation for pediatric patients with fever.","needsReview":false
     },    {
-      "id": "heat-related-emergencies",
-      "title": "Heat Related Emergencies",
-      "type": "protocol",
-      "categoryPath": [
-        "Pediatric Clinical Protocols",
-        "Pediatric Medical Emergencies"
+      "id":"heat-related-emergencies","title":"Pediatric Heat Related Emergencies","type":"protocol","categoryPath":["Pediatric Clinical Protocols","Pediatric Medical Emergencies"],"status":"active","effectiveDate":"2026-06-08","lastRevised":"","version":"2026",
+      "tags":["pediatric","heat","heat stroke","hyperthermia"],
+      "summary":"Assessment and treatment of pediatric environmental heat exposure.",
+      "content":[
+        {"type":"heading","level":2,"text":"Pediatric Heat Related Emergencies"},
+        {"type":"paragraph","text":"This protocol applies to pediatric patients with fatigue or altered level of consciousness secondary to environmental heat exposure."},
+        {"type":"flow-stage","title":"First Impression (Pediatric Assessment Triangle)","links":[{"text":"Pediatric Assessment Triangle","protocolId":"pediatric-assessment-triangle"}],"arrowAfter":true,"items":[
+          "Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.",
+          "Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.",
+          "Circulation – observe skin color for pallor, mottling, and/or cyanosis."
+        ]},
+        {"type":"flow-stage","title":"Primary Survey","arrowAfter":true,"items":[
+          "Ensure airway – ensure patency and proper positioning.",
+          {"text":"Assess breathing – give O₂ as tolerated by mask or blow-by. Maintain SpO₂ ≥ 94%.","bold":["Maintain SpO₂ ≥ 94%."]},
+          {"text":"Assist with bag valve mask if ineffective respiratory effort.","indent":1},
+          "Assess circulation – manage shock appropriately.",
+          "Assess disability – assess LOC.",
+          "Exposure/Environment – remove the patient from the environment.",
+          {"text":"Expose injuries as needed.","indent":1},
+          {"text":"Altered LOC and signs of poor perfusion could indicate shock and should be managed appropriately. See Shock Protocol.","icon":"assets/legend-important.webp","iconAlt":"Important protocol information","bold":["Altered LOC and signs of poor perfusion could indicate shock and should be managed appropriately."],"red":["Altered LOC and signs of poor perfusion could indicate shock and should be managed appropriately."],"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]}
+        ]},
+        {"type":"flow-stage","title":"Secondary Assessment and Treatment","arrowAfter":true,"items":[
+          "Monitor vital signs and O₂ saturation.",
+          "Initiate cardiac monitoring.",
+          {"text":"Perform blood glucose analysis – treat if BGL is < 60 mg/dl.","bold":["BGL is < 60 mg/dl."]},
+          "Physical Exam and OPQRST/SAMPLE history.",
+          {"text":"Initiate IV/IO normal saline – administer 20 ml/kg bolus if signs of shock, dehydration and/or hypotension. See Shock Protocol.","links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          "If conscious and not vomiting or extremely nauseous provide oral fluids.",
+          "If heat stroke is suspected, active cooling with cold packs, water, and a fan.",
+          {"text":"Signs and symptoms of a heat stroke may include hot, dry skin (25% of patients will still be moist), seizures, altered mental status, dilated pupils, rapid heart rate, and/or arrhythmia.","icon":"assets/legend-important.webp","iconAlt":"Important protocol information","bold":["Signs and symptoms of a heat stroke may include hot, dry skin (25% of patients will still be moist), seizures, altered mental status, dilated pupils, rapid heart rate, and/or arrhythmia."],"red":["Signs and symptoms of a heat stroke may include hot, dry skin (25% of patients will still be moist), seizures, altered mental status, dilated pupils, rapid heart rate, and/or arrhythmia."]}
+        ]},
+        {"type":"flow-stage","title":"Prepare for seizures, see Seizure Protocol for management of seizures.","links":[{"text":"Seizure Protocol","protocolId":"seizure"}]},
+        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital Signs","OPQRST/SAMPLE","Cardiac rhythm","Treatment(s)","Communication with Medical Control"]}
       ],
-      "status": "active",
-      "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 59,
-        "pageEnd": 59,
-        "pageLabel": "59"
-      },
-      "summary": "",
-      "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Pediatric Heat Related Emergencies"
-        },
-        {
-          "type": "paragraph",
-          "text": "This protocol applies to pediatric patients with fatigue or altered level of consciousness secondary to environmental heat exposure. First Impression (Pediatric Assessment Triangle) Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry. Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds. Circulation – observe skin color for pallor, mottling and/or cyanosis. Primary Survey Ensure airway – ensure patency and proper positioning. Assess breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%. Assist with bag valve mask if ineffective respiratory effort. Assess circulation – manage shock appropriately. Assess disability – assess LOC Exposure/Environment – remove the patient from the environment Expose injuries as needed. Altered LOC and signs of poor perfusion could indicate shock and should be managed appropriately. See Shock Protocol. Secondary Assessment and Treatment Monitor vital signs and O2 saturation. Initiate cardiac monitoring. Perform blood glucose analysis – treat if BGL is < 60 mg/dl. Physical Exam and OPQRST/SAMPLE history. Initiate IV/IO normal saline – administer 20 ml/kg bolus if signs of shock, dehydration and/or hypotension. See Shock Protocol. If conscious and not vomiting or extremely nauseous provide oral fluids. If heat stroke is suspected, active cooling with cold packs water and a fan. Signs and symptoms of a heat stroke may include hot, dry skin (25% of patients will still be moist), seizures, altered mental status, dilated pupils, rapid heart rate, and/or arrythmia."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vital Signs OPQRST/SAMPLE Cardiac rhythm Treatment(s) Communication with medical control Prepare for seizures, see Seizure Protocol for management of seizures."
-        }
-      ],
-      "plainText": "Pediatric Heat Related Emergencies\nThis protocol applies to pediatric patients with fatigue or altered level of consciousness\nsecondary to environmental heat exposure.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis.\nPrimary Survey\n•\nEnsure airway – ensure patency and proper positioning.\n•\nAssess breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%.\no\nAssist with bag valve mask if ineffective respiratory effort.\n•\nAssess circulation – manage shock appropriately.\n•\nAssess disability – assess LOC\n•\nExposure/Environment – remove the patient from the environment\no\nExpose injuries as needed.\nAltered LOC and signs of poor perfusion could indicate shock and should be managed\nappropriately.  See Shock Protocol.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation.\n•\nInitiate cardiac monitoring.\n•\nPerform blood glucose analysis – treat if BGL is < 60 mg/dl.\n•\nPhysical Exam and OPQRST/SAMPLE history.\n•\nInitiate IV/IO normal saline – administer 20 ml/kg bolus if signs of shock, dehydration and/or\nhypotension. See Shock Protocol.\n•\nIf conscious and not vomiting or extremely nauseous provide oral fluids.\n•\nIf heat stroke is suspected, active cooling with cold packs water and a fan.\nSigns and symptoms of a heat stroke may include hot, dry skin (25% of patients will still be\nmoist), seizures, altered mental status, dilated pupils, rapid heart rate, and/or arrythmia.\nDocument:\n•\nVital Signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nmedical control\nPrepare for seizures, see Seizure Protocol for management of seizures.",
-      "pageText": [
-        {
-          "page": 59,
-          "text": "Pediatric Heat Related Emergencies\nThis protocol applies to pediatric patients with fatigue or altered level of consciousness\nsecondary to environmental heat exposure.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis.\nPrimary Survey\n•\nEnsure airway – ensure patency and proper positioning.\n•\nAssess breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%.\no\nAssist with bag valve mask if ineffective respiratory effort.\n•\nAssess circulation – manage shock appropriately.\n•\nAssess disability – assess LOC\n•\nExposure/Environment – remove the patient from the environment\no\nExpose injuries as needed.\nAltered LOC and signs of poor perfusion could indicate shock and should be managed\nappropriately.  See Shock Protocol.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation.\n•\nInitiate cardiac monitoring.\n•\nPerform blood glucose analysis – treat if BGL is < 60 mg/dl.\n•\nPhysical Exam and OPQRST/SAMPLE history.\n•\nInitiate IV/IO normal saline – administer 20 ml/kg bolus if signs of shock, dehydration and/or\nhypotension. See Shock Protocol.\n•\nIf conscious and not vomiting or extremely nauseous provide oral fluids.\n•\nIf heat stroke is suspected, active cooling with cold packs water and a fan.\nSigns and symptoms of a heat stroke may include hot, dry skin (25% of patients will still be\nmoist), seizures, altered mental status, dilated pupils, rapid heart rate, and/or arrythmia.\nDocument:\n•\nVital Signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nmedical control\nPrepare for seizures, see Seizure Protocol for management of seizures."
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Pediatric Heat Related Emergencies. Assessment, cooling, seizure preparation, and documentation for pediatric environmental heat exposure.","needsReview":false
+    },    {
       "id": "nausea-and-vomiting",
       "title": "Nausea and Vomiting",
       "type": "protocol",
