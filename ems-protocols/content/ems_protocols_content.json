@@ -4377,70 +4377,68 @@
       ],
       "plainText":"Pediatric Allergic Reaction/Anaphylaxis. Assessment and treatment of pediatric allergic reactions and anaphylaxis, including epinephrine dosing, Medical Control consultation, documentation, and the Pediatric Epinephrine Drip Chart.","needsReview":false
     },    {
-      "id": "altered-level-of-consciousness",
-      "title": "Altered Level of Consciousness",
-      "type": "protocol",
-      "categoryPath": [
-        "Pediatric Clinical Protocols",
-        "Pediatric Medical Emergencies"
+      "id":"altered-level-of-consciousness","title":"Pediatric Altered Level of Consciousness","type":"protocol","categoryPath":["Pediatric Clinical Protocols","Pediatric Medical Emergencies"],"status":"active","effectiveDate":"2026-06-08","lastRevised":"","version":"2026",
+      "tags":["pediatric","altered level of consciousness","hypoglycemia","dextrose","naloxone"],
+      "summary":"Assessment and treatment of pediatric patients with altered level of consciousness.",
+      "content":[
+        {"type":"heading","level":2,"text":"Pediatric Altered Level of Consciousness"},
+        {"type":"paragraph","text":"This protocol applies to pediatric patients who are disoriented, weak, dizzy, confused, agitated, exhibit bizarre behavior, have had a syncopal episode, or are unconscious."},
+        {"type":"flow-stage","title":"First Impression (Pediatric Assessment Triangle)","links":[{"text":"Pediatric Assessment Triangle","protocolId":"pediatric-assessment-triangle"}],"arrowAfter":true,"items":[
+          "Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.",
+          "Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.",
+          "Circulation – observe skin color for pallor, mottling, and/or cyanosis."
+        ]},
+        {"type":"flow-stage","title":"Primary Survey","arrowAfter":true,"items":[
+          "Ensure airway – ensure patency and proper positioning.",
+          {"text":"Consider spinal motion restriction if evidence of trauma.","indent":1},
+          {"text":"Assess breathing – give O₂ as tolerated by mask or blow-by. Maintain SpO₂ ≥ 94%.","bold":["Maintain SpO₂ ≥ 94%."]},
+          {"text":"Assist with bag valve mask if ineffective respiratory effort.","indent":1},
+          "Assess circulation – manage shock appropriately.",
+          "Assess disability – assess LOC.",
+          "Exposure/Environment – expose injuries as needed.",
+          {"text":"Altered LOC and signs of poor perfusion could indicate shock and should be managed appropriately. See Shock Protocol.","icon":"assets/legend-important.webp","iconAlt":"Important protocol information","bold":["Altered LOC and signs of poor perfusion could indicate shock and should be managed appropriately."],"red":["Altered LOC and signs of poor perfusion could indicate shock and should be managed appropriately."],"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]}
+        ]},
+        {"type":"flow-stage","title":"Secondary Assessment and Treatment","arrowAfter":true,"items":[
+          "Monitor vital signs and O₂ saturation.",
+          "Initiate cardiac monitoring.",
+          "Physical Exam and OPQRST/SAMPLE history.",
+          "Advanced airway/ventilatory management as needed.",
+          "Initiate IV/IO of normal saline – administer 20 ml/kg bolus if signs of shock are present.",
+          {"text":"Perform blood glucose analysis – Treat if BGL is < 60 mg/dl.","bold":["BGL is < 60 mg/dl."]},
+          "If the patient is able to protect and maintain their own airway, administer:",
+          {"text":"Oral Glucose 15g PO (Use with caution in pediatric patients).","indent":1,"bold":["15g PO"],"links":[{"text":"Oral Glucose","protocolId":"oral-glucose"}]},
+          {"text":"If the patient is not able to protect their own airway, give Dextrose IV/IO.","links":[{"text":"Dextrose","protocolId":"dextrose-d10-25-50"}]},
+          {"text":"< 6 months old: 5 ml/kg of D₁₀W IV/IO","indent":1,"bold":["5 ml/kg of "],"links":[{"text":"D₁₀W","protocolId":"dextrose-d10-25-50"}]},
+          {"text":"6 months old – 2 yrs: 2 ml/kg of D₂₅W IV/IO","indent":1,"bold":["2 ml/kg of "],"links":[{"text":"D₂₅W","protocolId":"dextrose-d10-25-50"}]},
+          {"text":"> 2 yrs old: 1 ml/kg of D₅₀W IV/IO","indent":1,"bold":["1 ml/kg of "],"links":[{"text":"D₅₀W","protocolId":"dextrose-d10-25-50"}]},
+          {"text":"If IV/IO cannot be established, give Glucagon 0.1 mg/kg IM or IN.","bold":["0.1 mg/kg"],"links":[{"text":"Glucagon","protocolId":"glucagon"}]},
+          "Consider toxic exposure or ingestion: Contact Medical Control and/or the Georgia Poison Center at 1-800-222-1222.",
+          "If patient shows continued respiratory depression, consider administration of:",
+          {"text":"Naloxone 0.01 mg/kg IV/IO slow or IN.","indent":1,"bold":["0.01 mg/kg"],"links":[{"text":"Naloxone","protocolId":"naloxone-narcan"}]},
+          {"text":"If no clinical improvement, 0.1 mg/kg. Max Dose: 2 mg.","indent":2,"bold":["0.1 mg/kg.","Max Dose: 2 mg."]},
+          {"text":"Titrate naloxone administration to patient’s respiratory status.","indent":2},
+          "Contact Medical Control for possible orders if patient appears agitated or violent."
+        ]},
+        {"type":"paragraph","text":"If no change in LOC","bold":["If no change in LOC"]},
+        {"type":"stop-control","title":"STOP","text":"CONTACT MEDICAL CONTROL — IF NO CHANGE IN LOC","image":"assets/legend-medical-control.webp","alt":"Stop and contact Medical Control if there is no change in level of consciousness"},
+        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital Signs","OPQRST/SAMPLE","Cardiac rhythm","Treatment(s)","Communication with Medical Control"]},
+        {"type":"table","className":"mental-status-causes-table","caption":"Possible Causes of Altered Mental Status (AEIOU TIPPS)","rows":[
+          [{"text":"A: Alcohol","bold":true},{"text":"T: Trauma","bold":true}],
+          [{"text":"E: Electrolytes","bold":true},{"text":"I: Infection","bold":true}],
+          [{"text":"I: Insulin (hypoglycemia)","bold":true},{"text":"P: Poison","bold":true}],
+          [{"text":"O: Opiates","bold":true},{"text":"P: Psychogenic","bold":true}],
+          [{"text":"U: Uremia","bold":true},{"text":"S: Seizure or Shock","bold":true}]
+        ]},
+        {"type":"heading","level":3,"text":"Mixing D₂₅W and D₁₀W for Pediatric Patients"},
+        {"type":"table","className":"pediatric-dextrose-mixing-table","headers":["D₅₀W to D₁₀W","D₅₀W to D₂₅W"],"rows":[
+          [
+            {"text":"Expel 40 ml of 50% solution and draw up 40 ml of Normal Saline. = 10% solution","bold":true},
+            {"text":"Expel 25 ml of 50% solution and draw up 25 ml of Normal Saline. = 25% solution","bold":true}
+          ]
+        ]}
       ],
-      "status": "active",
-      "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 54,
-        "pageEnd": 55,
-        "pageLabel": "54-55"
-      },
-      "summary": "",
-      "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Pediatric Altered Level of Consciousness"
-        },
-        {
-          "type": "paragraph",
-          "text": "This protocol applies to pediatric patients who are disoriented, weak, dizzy, confused, agitated, exhibit bizarre behavior, have had a syncopal episode, or are unconscious. First Impression (Pediatric Assessment Triangle) Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry. Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds. Circulation – observe skin color for pallor, mottling and/or cyanosis. Primary Survey Ensure airway – ensure patency and proper positioning. Consider spinal motion restriction if evidence of trauma. Assess breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%. Assist with bag valve mask if ineffective respiratory effort. Assess circulation – manage shock appropriately. Assess disability – assess LOC Exposure/Environment – expose injuries as needed. Altered LOC and signs of poor perfusion could indicate shock and should be managed appropriately. See Shock Protocol. Secondary Assessment and Treatment Monitor vital signs and O2 saturation. Initiate cardiac monitoring. Physical Exam and OPQRST/SAMPLE history. Advanced airway/ventilatory management as needed. Initiate IV/IO of normal saline – administer 20 ml/kg bolus if signs of shock are present. Perform blood glucose analysis – Treat if BGL is < 60 mg/dl. If the patient is able to protect and maintain their own airway, administer: Oral Glucose 15g PO (Use with caution in pediatric patients). If the patient is not able to protect their own airway, given Dextrose IV/IO. < 6 months old: 5 ml/kg of D10W IV/IO 6 months old – 2 yrs: 2 ml/kg of D25W IV/IO > 2 yrs old: 1 ml/kg of D50W IV/IO If IV/IO cannot be established, give Glucagon 0.1 mg/kg IM or IN. Consider toxic exposure or ingestion: Contact Medical Control and/or the Georgia Poison Center at 1-800-222-1222."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vital Signs OPQRST/SAMPLE Cardiac rhythm Treatment(s) Communication with Medical Control Possible Causes of Altered Mental Status (AEIOU TIPPS) A: Alcohol T; Trauma E: Electrolytes I: Infection I: Insulin (hypoglycemia) P: Poison O: Opiates P: Psychogenic U: Uremia S: Seizure or Shock D50W to D10W D50W to D25W Expel 40 ml of 50% solution and draw up 40 ml of Normal Saline. = 10% solution Expel 25 ml of 50% solution and draw up 25 ml of Normal Saline. = 25% solution Pediatric Altered Level of Consciousness (Continued) Secondary Assessment and Treatment (Continued) If patient shows continued respiratory depression, consider administration of: Naloxone 0.01 mg/kg IV/IO slow or IN. If no clinical improvement, 0.1 mg/kg. Max Dose: 2 mg. Titrate naloxone administration to patient’s respiratory status. Contact Medical Control for possible orders if patient appears agitated or violent. Contact Medical Control If no change in LOC"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vital Signs OPQRST/SAMPLE Cardiac rhythm Treatment(s) Communication with Medical Control Mixing D25W and D10W for Pediatric Patients"
-        }
-      ],
-      "plainText": "Pediatric Altered Level of Consciousness\nThis protocol applies to pediatric patients who are disoriented, weak, dizzy, confused, agitated,\nexhibit bizarre behavior, have had a syncopal episode, or are unconscious.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis.\nPrimary Survey\n•\nEnsure airway – ensure patency and proper positioning.\no\nConsider spinal motion restriction if evidence of trauma.\n•\nAssess breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%.\no\nAssist with bag valve mask if ineffective respiratory effort.\n•\nAssess circulation – manage shock appropriately.\n•\nAssess disability – assess LOC\n•\nExposure/Environment – expose injuries as needed.\nAltered LOC and signs of poor perfusion could indicate shock and should be managed\nappropriately.  See Shock Protocol.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation.\n•\nInitiate cardiac monitoring.\n•\nPhysical Exam and OPQRST/SAMPLE history.\n•\nAdvanced airway/ventilatory management as needed.\n•\nInitiate IV/IO of normal saline – administer 20 ml/kg bolus if signs of shock are present.\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\no\nIf the patient is able to protect and maintain their own airway, administer:\n▪\nOral Glucose 15g PO (Use with caution in pediatric patients).\no\nIf the patient is not able to protect their own airway, given Dextrose IV/IO.\n▪\n< 6 months old:\n5 ml/kg of D10W IV/IO\n▪\n6 months old – 2 yrs:\n2 ml/kg of D25W IV/IO\n▪\n> 2 yrs old:\n1 ml/kg of D50W IV/IO\n•\nIf IV/IO cannot be established, give Glucagon 0.1 mg/kg IM or IN.\n•\nConsider toxic exposure or ingestion: Contact Medical Control and/or the Georgia Poison Center at\n1-800-222-1222.\nDocument:\n•\nVital Signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control\nPossible Causes of Altered Mental Status (AEIOU TIPPS)\nA: Alcohol\nT; Trauma\nE: Electrolytes\nI: Infection\nI: Insulin (hypoglycemia)\nP: Poison\nO: Opiates\nP: Psychogenic\nU: Uremia\nS: Seizure or Shock\nD50W to D10W\nD50W to D25W\nExpel 40 ml of 50% solution and draw up 40 ml\nof Normal Saline. = 10% solution\nExpel 25 ml of 50% solution and draw up 25 ml of\nNormal Saline. = 25% solution\nPediatric Altered Level of Consciousness (Continued)\nSecondary Assessment and Treatment (Continued)\nIf patient shows continued respiratory depression, consider administration of:\n•\nNaloxone 0.01 mg/kg IV/IO slow or IN.\no\nIf no clinical improvement, 0.1 mg/kg.   Max Dose: 2 mg.\no\nTitrate naloxone administration to patient’s respiratory status.\n•\nContact Medical Control for possible orders if patient appears agitated or violent.\nContact Medical Control\nIf no change in LOC\nDocument:\n•\nVital Signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control\nMixing D25W and D10W for Pediatric Patients",
-      "pageText": [
-        {
-          "page": 54,
-          "text": "Pediatric Altered Level of Consciousness\nThis protocol applies to pediatric patients who are disoriented, weak, dizzy, confused, agitated,\nexhibit bizarre behavior, have had a syncopal episode, or are unconscious.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis.\nPrimary Survey\n•\nEnsure airway – ensure patency and proper positioning.\no\nConsider spinal motion restriction if evidence of trauma.\n•\nAssess breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%.\no\nAssist with bag valve mask if ineffective respiratory effort.\n•\nAssess circulation – manage shock appropriately.\n•\nAssess disability – assess LOC\n•\nExposure/Environment – expose injuries as needed.\nAltered LOC and signs of poor perfusion could indicate shock and should be managed\nappropriately.  See Shock Protocol.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation.\n•\nInitiate cardiac monitoring.\n•\nPhysical Exam and OPQRST/SAMPLE history.\n•\nAdvanced airway/ventilatory management as needed.\n•\nInitiate IV/IO of normal saline – administer 20 ml/kg bolus if signs of shock are present.\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\no\nIf the patient is able to protect and maintain their own airway, administer:\n▪\nOral Glucose 15g PO (Use with caution in pediatric patients).\no\nIf the patient is not able to protect their own airway, given Dextrose IV/IO.\n▪\n< 6 months old:\n5 ml/kg of D10W IV/IO\n▪\n6 months old – 2 yrs:\n2 ml/kg of D25W IV/IO\n▪\n> 2 yrs old:\n1 ml/kg of D50W IV/IO\n•\nIf IV/IO cannot be established, give Glucagon 0.1 mg/kg IM or IN.\n•\nConsider toxic exposure or ingestion: Contact Medical Control and/or the Georgia Poison Center at\n1-800-222-1222.\nDocument:\n•\nVital Signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control"
-        },
-        {
-          "page": 55,
-          "text": "Possible Causes of Altered Mental Status (AEIOU TIPPS)\nA: Alcohol\nT; Trauma\nE: Electrolytes\nI: Infection\nI: Insulin (hypoglycemia)\nP: Poison\nO: Opiates\nP: Psychogenic\nU: Uremia\nS: Seizure or Shock\nD50W to D10W\nD50W to D25W\nExpel 40 ml of 50% solution and draw up 40 ml\nof Normal Saline. = 10% solution\nExpel 25 ml of 50% solution and draw up 25 ml of\nNormal Saline. = 25% solution\nPediatric Altered Level of Consciousness (Continued)\nSecondary Assessment and Treatment (Continued)\nIf patient shows continued respiratory depression, consider administration of:\n•\nNaloxone 0.01 mg/kg IV/IO slow or IN.\no\nIf no clinical improvement, 0.1 mg/kg.   Max Dose: 2 mg.\no\nTitrate naloxone administration to patient’s respiratory status.\n•\nContact Medical Control for possible orders if patient appears agitated or violent.\nContact Medical Control\nIf no change in LOC\nDocument:\n•\nVital Signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control\nMixing D25W and D10W for Pediatric Patients"
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Pediatric Altered Level of Consciousness. Assessment and treatment including glucose analysis, oral glucose, dextrose, glucagon, naloxone, Medical Control consultation, altered mental status causes, and pediatric dextrose mixing instructions.","needsReview":false
+    },    {
       "id": "cold-related-emergencies",
       "title": "Cold Related Emergencies",
       "type": "protocol",

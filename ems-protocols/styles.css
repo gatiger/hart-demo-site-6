@@ -647,3 +647,11 @@ details[open] > .tree-heading.tree-toggle::before {
 .epinephrine-drip-table .epi-dosing-heading { padding-bottom: .12rem; border-bottom: 0; background: #fff !important; }
 .epinephrine-drip-table .epi-concentration { padding-top: .12rem; border-top: 0; background: #fff !important; }
 .epinephrine-drip-table .epi-pump-note { padding: .3rem .55rem; background: #fff !important; }
+.mental-status-causes-table caption { padding: .45rem .65rem; border: 1px solid #050505; border-bottom: 0; background: #fff; color: #050505; font-weight: 900; text-align: center; }
+.mental-status-causes-table td { width: 50%; padding: .45rem .65rem; border-color: #050505; background: #fff !important; }
+.pediatric-dextrose-mixing-table th { padding: .55rem; border-color: #050505; background: #5597d2; color: #050505; font-size: clamp(1.25rem, 3vw, 2rem); font-weight: 900; text-align: center; }
+.pediatric-dextrose-mixing-table td { width: 50%; padding: .75rem; border-color: #050505; background: #e8f2fb !important; text-align: center; }
+@media (max-width: 640px) {
+  .pediatric-dextrose-mixing-table th { font-size: 1.05rem; }
+  .pediatric-dextrose-mixing-table th, .pediatric-dextrose-mixing-table td { min-width: 12rem; }
+}
