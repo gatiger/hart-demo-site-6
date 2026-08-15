@@ -1693,233 +1693,43 @@
       "needsReview": false
     },
     {
-      "id": "administration-disposal-of-medication",
-      "title": "Administration/Disposal of Medication",
-      "type": "protocol",
-      "categoryPath": ["General Protocols"],
-      "status": "active",
-      "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": ["medication administration", "medication disposal", "medication safety", "documentation", "narcotics"],
-      "summary": "Requirements for safe medication administration, documentation, pharmacy replacement, and disposal of unused medication.",
-      "displayMode": "native",
-      "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Administration of Medication"
-        },
-        {
-          "type": "list",
-          "ordered": true,
-          "items": [
-            "1. Medications shall only be administered according to protocol and/or orders from Medical Control.",
-            "2. You may only administer medications that fall within your scope of practice.",
-            "3. Ensure patient safety and effective medication delivery by confirming all nine medication rights."
-          ]
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Nine Rights of Medication Administration"
-        },
-        {
-          "type": "list",
-          "ordered": true,
-          "items": [
-            "Right patient",
-            "Right drug",
-            "Right dose",
-            "Right route",
-            "Right time",
-            "Right reason",
-            "Right documentation",
-            "Right response",
-            "Right to refuse"
-          ]
-        },
-        {
-          "type": "list",
-          "ordered": true,
-          "start": 4,
-          "items": [
-            "4. After administering a medication, properly document the medication given, the reason it was administered, the dose, and the medication concentration.",
-            "5. If a protocol calls for a medication and you choose not to administer it, document the reason it was not administered.",
-            "6. Even when operating under standing orders, you must obtain a physician's signature for administered narcotic medications and for all medication orders received from online Medical Control before the medication can be replaced by the pharmacy. This is a pharmacy requirement."
-          ]
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Disposal of Medication"
-        },
-        {
-          "type": "list",
-          "ordered": true,
-          "items": [
-            "1. After completing the call, properly dispose of any remaining medication.",
-            "2. Have your partner or supervisor witness the disposal of the remaining medication.",
-            "3. If the medication is a narcotic, also complete the narcotic sheet for the pharmacy.",
-            "4. In the patient care report, document how much medication was administered and how much was wasted."
-          ]
-        }
-      ],
-      "plainText": "Administration of Medication. Medications shall only be administered according to protocol and/or orders from Medical Control and within the provider's scope of practice. Confirm the nine rights of medication administration. Document medications administered or withheld. Obtain required physician signatures for narcotics and online Medical Control orders. Disposal of Medication. Properly dispose of remaining medication with a witness and document medication administered and wasted.",
-      "needsReview": false
-    },
+  "id":"administration-disposal-of-medication","title":"Administration/Disposal of Medication","type":"protocol","categoryPath":["General Protocols"],"status":"active","effectiveDate":"2026-06-08","lastRevised":"","version":"2026","tags":["medication administration","medication disposal","medication safety","documentation","narcotics"],"summary":"Medication administration and disposal requirements.","displayMode":"native","content":[
+    {"type":"heading","level":2,"text":"Administration of Medication"},
+    {"type":"list","ordered":true,"items":["1. Medications shall only be administered as per protocol and/or orders from Medical Control.","2. You may only administer medications that fall within your SCOPE of practice.","3. Remember to confirm that you ensure the patient's safety and effective medication delivery by confirming all of the following:"]},
+    {"type":"list","ordered":true,"items":["Right Patient","Right Drug","Right Dose","Right Route","Right Time","Right Reason","Right Documentation","Right Response","Right to Refuse"]},
+    {"type":"list","ordered":true,"start":4,"items":["4. After administering the medication make sure to properly document the medication given, what you gave the medication for, the dose you gave, and the concentration of medication.","5. If the protocols call for a medication to be given and you chose not to, make sure you document the reason you did not administer the medication.","6. Even though you may have standing orders, you must still obtain a physician's signature for the narcotic medications administered and all medication orders received from online Medical Control in order to get the medication replaced at the pharmacy. This is a pharmacy requirement."]},
+    {"type":"heading","level":2,"text":"Disposal of Medication"},
+    {"type":"list","ordered":true,"items":["1. After you have completed the call, any remaining medication must be properly disposed of.","2. Have your partner or supervisor witness the disposal of the remaining medication.","3. If the medication is a narcotic, you must also complete the narcotic sheet for the pharmacy.","4. In your patient care report, make sure to document how much of the medication was given and how much of the medication was wasted."]}
+  ],"plainText":"Hart Co. EMS Medication Administration and Disposal Protocol. Medications shall only be administered as per protocol and/or orders from Medical Control.","needsReview":false
+},
     {
-      "id": "communications",
-      "title": "Communications",
-      "type": "protocol",
-      "categoryPath": ["General Protocols"],
-      "status": "active",
-      "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": ["communications", "radio report", "medical control", "receiving facility", "patient privacy"],
-      "summary": "Required content and privacy limitations for radio reports to Medical Control and receiving facilities.",
-      "displayMode": "native",
-      "content": [
-        {
-          "type": "paragraph",
-          "text": "When contacting Medical Control or a receiving facility, patient reports should be brief and clear."
-        },
-        {
-          "type": "warning",
-          "text": "Do not use 10-codes or other signals when giving a patient report. Use clear, plain language."
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Patient Radio Report"
-        },
-        {
-          "type": "paragraph",
-          "text": "A typical patient radio report should include the following information:"
-        },
-        {
-          "type": "list",
-          "items": [
-            "Identify the unit by service, unit number, and level of capability (BLS or ALS).",
-            "Specify whether the unit is en route or on scene and whether the response is emergency or non-emergency.",
-            "Patient age and sex.",
-            "Chief complaint or mechanism of injury.",
-            "Level of consciousness using AVPU.",
-            "Vital signs and pertinent clinical findings.",
-            "Pertinent patient medications, allergies, and past medical history.",
-            "Care and treatment provided.",
-            "The patient's response to treatment.",
-            "A request for any needed orders.",
-            "Estimated time of arrival (ETA)."
-          ]
-        },
-        {
-          "type": "note",
-          "text": "According to local protocol and the receiving facility's capabilities, the patient report may be called in as an alert or activation of the Trauma, Cardiac, or Stroke Team."
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Information Not Permitted Over the Radio"
-        },
-        {
-          "type": "paragraph",
-          "text": "The following information should not be transmitted over the radio:"
-        },
-        {
-          "type": "list",
-          "items": [
-            "Patient name.",
-            "Patient race.",
-            "Personal or sensitive patient information, including a Social Security number, history of AIDS, or similar protected information."
-          ]
-        }
-      ],
-      "plainText": "Communications. Patient reports to Medical Control and receiving facilities should be brief, clear, and given in plain language without 10-codes. Reports should identify the unit, response status, patient demographics, complaint or mechanism, AVPU, vital signs, clinical findings, history, treatment, response, requested orders, and ETA. Do not transmit the patient's name, race, or personal or sensitive information over the radio.",
-      "needsReview": false
-    },
+  "id":"communications","title":"Communications","type":"protocol","categoryPath":["General Protocols"],"status":"active","effectiveDate":"2026-06-08","lastRevised":"","version":"2026","tags":["communications","radio report","medical control","receiving facility","patient privacy"],"summary":"Patient radio report requirements and information that should not be transmitted.","displayMode":"native","content":[
+    {"type":"paragraph","text":"When contacting Medical Control and receiving facilities, patient reports should be brief and clear."},
+    {"type":"warning","text":"10 Codes and other signals should NOT be used."},
+    {"type":"heading","level":2,"text":"A Typical Patient Radio Report Should Include the Following"},
+    {"type":"list","items":["Identify Unit by service, number, and level of capability (BLS or ALS)","Specify enroute or on scene (state whether Emergency or Non-Emergency)","Identify patient age and sex","Chief Complaint/Mechanism of Injury","LOC: AVPU","Vital Signs, pertinent clinical findings","Pertinent patient medications, allergies, past medical history","Care and treatment given","Patient's response to treatment","Request for any orders","ETA"]},
+    {"type":"paragraph","text":"According to local protocol and capability of receiving facility, patient report may be called in as an Alert or Activation of Trauma, Cardiac, or Stroke Team."},
+    {"type":"heading","level":2,"text":"The Following Information SHOULD NOT Be Transmitted Over the Radio"},
+    {"type":"list","items":["Patient name","Patient race","Personal or Sensitive patient information (e.g., Social Security Number, History of AIDS, etc.)"]}
+  ],"plainText":"Communications. When contacting Medical Control and receiving facilities, patient reports should be brief and clear. 10 Codes and other signals should NOT be used.","needsReview":false
+},
     {
-      "id": "control-of-patient-care-physician-on-scene",
-      "title": "Control of Patient Care: Physician on Scene",
-      "type": "protocol",
-      "categoryPath": ["General Protocols"],
-      "status": "active",
-      "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": ["patient care", "physician on scene", "intervener physician", "medical control", "scope of practice"],
-      "summary": "Direction for control of patient care when a physician is present at an emergency scene or supervising care from an office.",
-      "displayMode": "native",
-      "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Control of Care at the Scene"
-        },
-        {
-          "type": "paragraph",
-          "text": "Control of patient care at the scene of an emergency shall be the responsibility of the person in attendance who is most appropriately trained and knowledgeable in providing prehospital emergency stabilization and transport."
-        },
-        {
-          "type": "paragraph",
-          "text": "When EMS personnel arrive at a medical emergency and contact Medical Control, a physician-patient relationship is established between the patient and the physician providing Medical Control. The Medical Control physician is responsible for management of the patient, and EMS personnel act as an agent of Medical Control unless the patient's physician is present."
-        },
-        {
-          "type": "paragraph",
-          "text": "When another physician at the scene properly identifies themselves, is willing to assume responsibility for patient management, and agrees to document their interventions by signing the patient care report, EMS personnel should place that physician in communication with Medical Control."
-        },
-        {
-          "type": "warning",
-          "text": "If the physician at the scene disagrees with the Medical Control physician or refuses to communicate with Medical Control, EMS personnel shall continue to follow orders from the Medical Control physician."
-        },
-        {
-          "type": "note",
-          "text": "Reference: Georgia Department of Public Health Rule 511-9-2-.07(6)(i), Control of Patient Care at the Scene."
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Intervener Physician"
-        },
-        {
-          "type": "paragraph",
-          "text": "An intervener physician is a physician at the scene who has no previous connection with the patient. To assume control of the patient, the physician must:"
-        },
-        {
-          "type": "list",
-          "items": [
-            "Provide proof of licensure in Georgia.",
-            "Accept responsibility for the patient at the scene and during transport to the hospital, including accompanying the patient during transport except in a multiple-casualty situation.",
-            "Personally perform any procedures that are outside the EMS protocol or the EMS provider's scope of practice."
-          ]
-        },
-        {
-          "type": "warning",
-          "text": "If the intervener physician is unwilling to meet these requirements, respectfully decline the physician's assistance."
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Physician in Their Office"
-        },
-        {
-          "type": "list",
-          "ordered": true,
-          "items": [
-            "1. EMS shall perform its duties according to protocol.",
-            "2. The physician may elect to supervise the care provided by EMS.",
-            "3. If the physician directs EMS personnel to perform a procedure or administer a medication that is outside the EMS scope of practice or local protocol, EMS shall advise the physician that the provider cannot perform it. The EMS provider may assist the physician while the physician personally performs the procedure."
-          ]
-        },
-        {
-          "type": "warning",
-          "text": "If the physician initiates a medication that must continue during transport and that medication is outside the EMS scope of practice or local protocol, the physician is expected to accompany the patient to the hospital."
-        }
-      ],
-      "plainText": "Control of Patient Care: Physician on Scene. Medical Control directs patient management after contact is established. A qualified physician at the scene may assume responsibility when properly identified, in communication with Medical Control, willing to sign the patient care report, and willing to accompany the patient when required. EMS providers shall not perform procedures or administer medications outside their scope of practice or local protocol.",
-      "needsReview": false
-    },
+  "id":"control-of-patient-care-physician-on-scene","title":"Control of Patient Care: Physician on Scene","type":"protocol","categoryPath":["General Protocols"],"status":"active","effectiveDate":"2026-06-08","lastRevised":"","version":"2026","tags":["patient care","physician on scene","intervener physician","medical control","scope of practice"],"summary":"Control of patient care when a physician is present at an emergency scene or office.","displayMode":"native","content":[
+    {"type":"heading","level":2,"text":"Control of Patient Care: Physician on Scene"},
+    {"type":"paragraph","text":"Control of patient care at the scene of an emergency shall be the responsibility of the individual in attendance most appropriately trained and knowledgeable in providing pre-hospital emergency stabilization and transport."},
+    {"type":"paragraph","text":"When EMS personnel arrive at the scene of a medical emergency, and contact is made with medical control by EMS personnel, a physician/patient relationship is established between the patient and the physician providing medical control. The physician is responsible for the management of the patient and EMS personnel act as an agent of medical control unless the patient's physician is present."},
+    {"type":"paragraph","text":"When a physician, other than the patient's physician, on the scene of a medical emergency, properly identifies himself and demonstrates his willingness to assume responsibility for patient management and documents his interventions by signing the patient care report, EMS personnel should place the intervening physician in communication with medical control."},
+    {"type":"warning","text":"If there is a disagreement between the intervening physician and the medical control physician, or if the intervening physician refuses to speak with medical control, EMS personnel should continue to take orders from the medical control physician."},
+    {"type":"note","text":"Reference: DPH Rule 511-9-2-.07 (6) (i) Control of Patient care at the scene"},
+    {"type":"heading","level":2,"text":"Intervener Physician"},
+    {"type":"paragraph","text":"An Intervener physician is a physician on the scene who has no previous connection with the patient. For the Good Samaritan physician to assume control of the patient, he/she must:"},
+    {"type":"list","items":["Provide proof of licensure in Georgia","Be willing to assume responsibility for the patient at the scene and during patient transportation to the hospital. This includes accompanying the patient during transportation. (except multi-casualty situations)","Perform procedures outside the scope of EMS protocol his or herself"]},
+    {"type":"warning","text":"If the physician is unwilling to comply with these requirements, then his/her assistance should be respectfully declined."},
+    {"type":"heading","level":2,"text":"Physician in His/her Office"},
+    {"type":"list","ordered":true,"items":["1. EMS shall perform its duties per protocol","2. The physician may elect to supervise care provided by EMS.","3. If the physician directs the EMS personnel to perform a procedure or administer a medication which is not covered by EMS Scope of Practice or local protocol, then EMS will advise the physician of such. The EMS provider will not perform this procedure. The EMS provider may assist the physician in performing said procedure."]},
+    {"type":"warning","text":"If the physician initiates a medication which is to be continued during patient transport, which is not covered by scope or protocol, then the physician is expected to accompany the patient to the hospital."}
+  ],"plainText":"Control of Patient Care: Physician on Scene. Control of patient care at the scene of an emergency shall be the responsibility of the individual in attendance most appropriately trained and knowledgeable in providing pre-hospital emergency stabilization and transport.","needsReview":false
+},
     {
       "id": "crime-scene",
       "title": "Crime Scene",
