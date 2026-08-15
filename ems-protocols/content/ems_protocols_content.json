@@ -4695,70 +4695,53 @@
       ],
       "plainText":"Pediatric Seizure. Assessment and treatment including Midazolam, Diazepam, Medical Control consultation, and documentation.","needsReview":false
     },    {
-      "id": "sickle-cell-crisis",
-      "title": "Sickle Cell Crisis",
-      "type": "protocol",
-      "categoryPath": [
-        "Pediatric Clinical Protocols",
-        "Pediatric Medical Emergencies"
+      "id":"sickle-cell-crisis","title":"Pediatric Sickle Cell Crisis","type":"protocol","categoryPath":["Pediatric Clinical Protocols","Pediatric Medical Emergencies"],"status":"active","effectiveDate":"2026-06-08","lastRevised":"","version":"2026",
+      "tags":["pediatric","sickle cell","pain","morphine"],
+      "summary":"Assessment and pain management for pediatric sickle cell crisis.",
+      "content":[
+        {"type":"heading","level":2,"text":"Pediatric Sickle Cell Crisis"},
+        {"type":"paragraph","text":"This protocol applies to pediatric patients presenting with sickle cell crisis. The typical sickle cell EMS call in children is severe pain in the abdomen, chest, joints, and/or difficulty breathing with hypoxia. Many of these patients are dehydrated."},
+        {"type":"flow-stage","title":"First Impression (Pediatric Assessment Triangle)","links":[{"text":"Pediatric Assessment Triangle","protocolId":"pediatric-assessment-triangle"}],"arrowAfter":true,"items":[
+          "Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.",
+          "Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.",
+          "Circulation – observe skin color for pallor, mottling, and/or cyanosis."
+        ]},
+        {"type":"flow-stage","title":"Primary Survey","arrowAfter":true,"items":[
+          "Ensure airway – ensure patency and proper positioning.",
+          {"text":"Assess breathing – give O₂ as tolerated by mask or blow-by. Maintain SpO₂ ≥ 94%.","bold":["Maintain SpO₂ ≥ 94%."]},
+          {"text":"Assist with bag valve mask if ineffective respiratory effort.","indent":1},
+          {"text":"Assess circulation – manage shock appropriately. See Shock Protocol.","links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          "Assess disability – assess LOC.",
+          "Exposure/Environment – expose injuries as needed."
+        ]},
+        {"type":"flow-stage","title":"Secondary Assessment and Treatment","arrowAfter":true,"items":[
+          "Vital signs and O₂ saturation.",
+          "Initiate cardiac monitoring.",
+          "Physical exam and OPQRST/SAMPLE history.",
+          "Initiate IV/IO of normal saline at KVO rate.",
+          {"text":"If signs of shock, administer 20 ml/kg bolus. See Shock Protocol.","indent":1,"bold":["20 ml/kg"],"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          "Comfort measures, such as support for painful joints.",
+          "Assess patient’s pain level.",
+          {"text":"Ages 3–8 years – use Wong-Baker FACES scale.","indent":1},
+          {"text":"Ages 8–18 years – use numerical scale.","indent":1}
+        ]},
+        {"type":"stop-control","title":"STOP","text":"CONTACT MEDICAL CONTROL","image":"assets/legend-medical-control.webp","alt":"Stop and contact Medical Control","arrowAfter":true},
+        {"type":"flow-stage","title":"Pain Management","items":[
+          {"text":"If pain scale is ≥ 6, consider Morphine.","links":[{"text":"Morphine","protocolId":"morphine-sulfate"}]},
+          {"text":"Morphine 0.1 mg/kg IV/IO/IM. Max Dose – 4 mg.","indent":1,"bold":["0.1 mg/kg","Max Dose – 4 mg."],"links":[{"text":"Morphine","protocolId":"morphine-sulfate"}]},
+          {"text":"After intervention, reassess mental status, pain level, and signs of respiratory depression every 5 minutes.","indent":1},
+          {"text":"If respirations become depressed:","indent":1},
+          {"text":"Administer Naloxone 0.01 mg/kg IV/IO slow push or IN.","indent":2,"bold":["0.01 mg/kg"],"links":[{"text":"Naloxone","protocolId":"naloxone-narcan"}]},
+          {"text":"If no clinical improvement, 0.1 mg/kg. Max Dose – 2 mg.","indent":2,"bold":["0.1 mg/kg.","Max Dose – 2 mg."]},
+          {"text":"Titrate Naloxone administration to patient’s respirations.","indent":2},
+          "If patient becomes nauseated or vomits, consider administering:",
+          {"text":"Ondansetron (Zofran) 0.1 mg/kg IV/IM/ODT. Max Dose – 4 mg.","indent":1,"bold":["0.1 mg/kg","Max Dose – 4 mg."],"links":[{"text":"Ondansetron","protocolId":"ondansetron-zofran"}]}
+        ]},
+        {"type":"protocol-image","image":"assets/pediatric-pain-rating-scale.png","alt":"Numeric Pain Rating Scale and Wong-Baker FACES Pain Rating Scale"},
+        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital Signs","OPQRST/SAMPLE","Cardiac rhythm","Treatment(s)","Pain scale","Communication with Medical Control"]}
       ],
-      "status": "active",
-      "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 64,
-        "pageEnd": 65,
-        "pageLabel": "64-65"
-      },
-      "summary": "",
-      "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Pediatric Sickle Cell Crisis"
-        },
-        {
-          "type": "paragraph",
-          "text": "This protocol applies to pediatric patients presenting with sickle cell crisis. The typical sickle cell EMS call in children is severe pain in the abdomen, chest, joints, and/or difficulty breathing with hypoxia. Many of these patients are dehydrated. First Impression (Pediatric Assessment Triangle) Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry. Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds. Circulation – observe skin color for pallor, mottling and/or cyanosis. Primary Survey Ensure airway – ensure patency and proper positioning. Assess breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%. Assist with bag valve mask if ineffective respiratory effort. Assess circulation – manage shock appropriately. See Shock Protocol. Assess disability – assess LOC Exposure/Environment – expose injuries as needed. Secondary Assessment and Treatment Vital signs and O2 saturation. Initiate cardiac monitoring. Physical exam and OPQRST/SAMPLE history. Initiate IV/IO of normal saline at KVO rate If signs of shock, administer 20 ml/kg bolus. See Shock Protocol. Comfort measures, such as support for painful joints. Assess patient’s pain level Ages 3-8 years – use Wong-Baker FACES scale (next page). Ages 8-18 years – use numerical scale. Contact Medical Control"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vital Signs OPQRST/SAMPLE Cardiac rhythm Treatment(s) Pain scale Communication with Medical Control Pediatric Sickle Cell Crisis (Continued) Pain Management If pain scale is > 6, consider Morphine Morphine 0.1 mg/kg IV/IO/IM. Max Dose – 4 mg. After intervention, reassess mental status, pain level, and signs of respiratory depression every 5 minutes."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "If respirations become depressed"
-        },
-        {
-          "type": "paragraph",
-          "text": "Administer Naloxone 0.01 mg/kg IV/IO slow push or IN. If no clinical improvement, 0.1 mg/kg. Max Dose – 2 mg. Titrate Naloxone administration to patient’s respirations. If patient becomes nauseated or vomits, consider administering: Ondansetron (Zofran) 0.1 mg/kg IV/IM/ODT. Max Dose – 4 mg."
-        }
-      ],
-      "plainText": "Pediatric Sickle Cell Crisis\nThis protocol applies to pediatric patients presenting with sickle cell crisis. The typical sickle cell\nEMS call in children is severe pain in the abdomen, chest, joints, and/or difficulty breathing with\nhypoxia. Many of these patients are dehydrated.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis.\nPrimary Survey\n•\nEnsure airway – ensure patency and proper positioning.\n•\nAssess breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%.\no\nAssist with bag valve mask if ineffective respiratory effort.\n•\nAssess circulation – manage shock appropriately. See Shock Protocol.\n•\nAssess disability – assess LOC\n•\nExposure/Environment – expose injuries as needed.\nSecondary Assessment and Treatment\n•\nVital signs and O2 saturation.\n•\nInitiate cardiac monitoring.\n•\nPhysical exam and OPQRST/SAMPLE history.\n•\nInitiate IV/IO of normal saline at KVO rate\no\nIf signs of shock, administer 20 ml/kg bolus. See Shock Protocol.\n•\nComfort measures, such as support for painful joints.\n•\nAssess patient’s pain level\no\nAges 3-8 years – use Wong-Baker FACES scale (next page).\no\nAges 8-18 years – use numerical scale.\nContact Medical\nControl\nDocument:\n•\nVital Signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nPain scale\n•\nCommunication with\nMedical Control\nPediatric Sickle Cell Crisis (Continued)\nPain Management\n•\nIf pain scale is > 6, consider Morphine\no\nMorphine 0.1 mg/kg IV/IO/IM.  Max Dose – 4 mg.\no\nAfter intervention, reassess mental status, pain level, and signs of respiratory depression\nevery 5 minutes.\no\nIf respirations become depressed:\n▪\nAdminister Naloxone 0.01 mg/kg IV/IO slow push or IN.\n▪\nIf no clinical improvement, 0.1 mg/kg.  Max Dose – 2 mg.\n▪\nTitrate Naloxone administration to patient’s respirations.\n•\nIf patient becomes nauseated or vomits, consider administering:\no\nOndansetron (Zofran) 0.1 mg/kg IV/IM/ODT.  Max Dose – 4 mg.",
-      "pageText": [
-        {
-          "page": 64,
-          "text": "Pediatric Sickle Cell Crisis\nThis protocol applies to pediatric patients presenting with sickle cell crisis. The typical sickle cell\nEMS call in children is severe pain in the abdomen, chest, joints, and/or difficulty breathing with\nhypoxia. Many of these patients are dehydrated.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis.\nPrimary Survey\n•\nEnsure airway – ensure patency and proper positioning.\n•\nAssess breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%.\no\nAssist with bag valve mask if ineffective respiratory effort.\n•\nAssess circulation – manage shock appropriately. See Shock Protocol.\n•\nAssess disability – assess LOC\n•\nExposure/Environment – expose injuries as needed.\nSecondary Assessment and Treatment\n•\nVital signs and O2 saturation.\n•\nInitiate cardiac monitoring.\n•\nPhysical exam and OPQRST/SAMPLE history.\n•\nInitiate IV/IO of normal saline at KVO rate\no\nIf signs of shock, administer 20 ml/kg bolus. See Shock Protocol.\n•\nComfort measures, such as support for painful joints.\n•\nAssess patient’s pain level\no\nAges 3-8 years – use Wong-Baker FACES scale (next page).\no\nAges 8-18 years – use numerical scale.\nContact Medical\nControl\nDocument:\n•\nVital Signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nPain scale\n•\nCommunication with\nMedical Control"
-        },
-        {
-          "page": 65,
-          "text": "Pediatric Sickle Cell Crisis (Continued)\nPain Management\n•\nIf pain scale is > 6, consider Morphine\no\nMorphine 0.1 mg/kg IV/IO/IM.  Max Dose – 4 mg.\no\nAfter intervention, reassess mental status, pain level, and signs of respiratory depression\nevery 5 minutes.\no\nIf respirations become depressed:\n▪\nAdminister Naloxone 0.01 mg/kg IV/IO slow push or IN.\n▪\nIf no clinical improvement, 0.1 mg/kg.  Max Dose – 2 mg.\n▪\nTitrate Naloxone administration to patient’s respirations.\n•\nIf patient becomes nauseated or vomits, consider administering:\no\nOndansetron (Zofran) 0.1 mg/kg IV/IM/ODT.  Max Dose – 4 mg."
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Pediatric Sickle Cell Crisis. Assessment, Medical Control consultation, pain management, pain rating scale, and documentation.","needsReview":false
+    },    {
       "id": "toxic-exposure",
       "title": "Toxic Exposure",
       "type": "protocol",
