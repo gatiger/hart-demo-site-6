@@ -1734,62 +1734,63 @@
       "id": "crime-scene",
       "title": "Crime Scene",
       "type": "protocol",
-      "categoryPath": [
-        "General Protocols"
-      ],
+      "categoryPath": ["General Protocols"],
       "status": "active",
       "effectiveDate": "2026-06-08",
       "lastRevised": "",
       "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 16,
-        "pageEnd": 16,
-        "pageLabel": "16"
-      },
-      "summary": "",
+      "tags": ["crime scene", "scene safety", "law enforcement", "evidence preservation", "patient care"],
+      "summary": "Scene-safety, patient-care, and evidence-preservation requirements at a suspected crime scene.",
+      "displayMode": "native",
       "content": [
+        {
+          "type": "paragraph",
+          "text": "If you believe a crime has been committed, immediately contact law enforcement."
+        },
+        {
+          "type": "warning",
+          "text": "Scene safety is paramount. Protect yourself and other EMS personnel."
+        },
+        {
+          "type": "paragraph",
+          "text": "Once a crime scene is deemed safe by law enforcement, initiate patient contact and medical care."
+        },
         {
           "type": "heading",
           "level": 2,
-          "text": "Crime Scene"
-        },
-        {
-          "type": "paragraph",
-          "text": "If you believe a crime has been committed, immediately contact law enforcement. Scene safety is paramount. Protect yourself and other EMS personnel. Once a crime scene is deemed safe by law enforcement, initiate patient contact and medical care. Do not touch or move anything at a crime scene unless it is necessary to do so for patient care. Have all EMS providers use the same path of entry and exit. Do not walk through fluids on the floor. Observe and document original location of items moved by crew. When removing patient clothing, leave it intact as possible. Do not cut through clothing holes made by gunshot or stabbing. If you remove any items from the scene, such as impaled objects or medication bottles, document your actions and advise investigating officers Do not sacrifice patient care to preserve evidence. Do not go through the patient’s personal effects. If transporting, inform staff at the receiving hospital that this is a “crime scene” patient. If the patient is obviously dead, contact Medical Control for directions to withhold resuscitative measures, and do not touch the body. If family is present, instruct them to move outside if weather is permissible. If not instruct them to a room away from the scene and remain with them. DO NOT let any other family member enter the residence."
+          "text": "Crime Scene Procedures"
         },
         {
           "type": "list",
           "items": [
-            "In the event of unruly family member(s) that refuse to follow verbal directions to"
+            "Do not touch or move anything at a crime scene unless it is necessary to do so for patient care.",
+            "Have all EMS providers use the same path of entry and exit.",
+            "Do not walk through fluids on the floor.",
+            "Observe and document original location of items moved by crew.",
+            "When removing patient clothing, leave it as intact as possible.",
+            "Do not cut through clothing holes made by gunshot or stabbing.",
+            "If you remove any items from the scene, such as impaled objects or medication bottles, document your actions and advise investigating officers.",
+            "Do not sacrifice patient care to preserve evidence.",
+            "Do not go through the patient's personal effects.",
+            "If transporting, inform staff at the receiving hospital that this is a “crime scene” patient.",
+            "If the patient is obviously dead, contact Medical Control for directions to withhold resuscitative measures, and do not touch the body.",
+            "If family is present, instruct them to move outside if weather is permissible. If not, instruct them to a room away from the scene and remain with them."
           ]
         },
         {
-          "type": "paragraph",
-          "text": "stay clear of the scene, HCEMS personnel should defer to law enforcement on scene for scene control."
+          "type": "warning",
+          "text": "DO NOT let any other family member enter the residence."
         },
         {
           "type": "list",
           "items": [
-            "If law enforcement is not present, request law enforcement response and exit"
+            "In the event of unruly family member(s) that refuse to follow verbal directions to stay clear of the scene, HCEMS personnel should defer to law enforcement on scene for scene control.",
+            "If law enforcement is not present, request law enforcement response and exit the scene safely and quickly."
           ]
-        },
-        {
-          "type": "paragraph",
-          "text": "the scene safely and quickly."
         }
       ],
-      "plainText": "Crime Scene\nIf you believe a crime has been committed, immediately contact law enforcement.  Scene\nsafety is paramount.  Protect yourself and other EMS personnel.  Once a crime scene is\ndeemed safe by law enforcement, initiate patient contact and medical care.\n•\nDo not touch or move anything at a crime scene unless it is necessary to do so for\npatient care.\n•\nHave all EMS providers use the same path of entry and exit.\n•\nDo not walk through fluids on the floor.\n•\nObserve and document original location of items moved by crew.\n•\nWhen removing patient clothing, leave it intact as possible.\n•\nDo not cut through clothing holes made by gunshot or stabbing.\n•\nIf you remove any items from the scene, such as impaled objects or medication bottles,\ndocument your actions and advise investigating officers\n•\nDo not sacrifice patient care to preserve evidence.\n•\nDo not go through the patient’s personal effects.\n•\nIf transporting, inform staff at the receiving hospital that this is a “crime scene” patient.\n•\nIf the patient is obviously dead, contact Medical Control for directions to withhold\nresuscitative measures, and do not  touch the body.\n•\nIf family is present, instruct them to move outside if weather is permissible.  If not\ninstruct them to a room away from the scene and remain with them.\n•\nDO NOT let any other family member enter the residence.\no In the event of unruly family member(s) that refuse to follow verbal directions to\nstay clear of the scene, HCEMS personnel should defer to law enforcement on\nscene for scene control.\no If law enforcement is not present, request law enforcement response and exit\nthe scene safely and quickly.",
-      "pageText": [
-        {
-          "page": 16,
-          "text": "Crime Scene\nIf you believe a crime has been committed, immediately contact law enforcement.  Scene\nsafety is paramount.  Protect yourself and other EMS personnel.  Once a crime scene is\ndeemed safe by law enforcement, initiate patient contact and medical care.\n•\nDo not touch or move anything at a crime scene unless it is necessary to do so for\npatient care.\n•\nHave all EMS providers use the same path of entry and exit.\n•\nDo not walk through fluids on the floor.\n•\nObserve and document original location of items moved by crew.\n•\nWhen removing patient clothing, leave it intact as possible.\n•\nDo not cut through clothing holes made by gunshot or stabbing.\n•\nIf you remove any items from the scene, such as impaled objects or medication bottles,\ndocument your actions and advise investigating officers\n•\nDo not sacrifice patient care to preserve evidence.\n•\nDo not go through the patient’s personal effects.\n•\nIf transporting, inform staff at the receiving hospital that this is a “crime scene” patient.\n•\nIf the patient is obviously dead, contact Medical Control for directions to withhold\nresuscitative measures, and do not  touch the body.\n•\nIf family is present, instruct them to move outside if weather is permissible.  If not\ninstruct them to a room away from the scene and remain with them.\n•\nDO NOT let any other family member enter the residence.\no In the event of unruly family member(s) that refuse to follow verbal directions to\nstay clear of the scene, HCEMS personnel should defer to law enforcement on\nscene for scene control.\no If law enforcement is not present, request law enforcement response and exit\nthe scene safely and quickly."
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
+      "plainText": "Crime Scene. If you believe a crime has been committed, immediately contact law enforcement. Scene safety is paramount. Protect yourself and other EMS personnel. Once a crime scene is deemed safe by law enforcement, initiate patient contact and medical care.",
+      "needsReview": false
     },
     {
       "id": "destination-decision",
