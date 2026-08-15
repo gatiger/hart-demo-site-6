@@ -4240,80 +4240,47 @@
       ],
       "plainText":"Pediatric Tachycardia. Assessment and treatment pathways for sinus tachycardia, supraventricular tachycardia, and wide complex tachycardia, including cardioversion and medication guidance.","needsReview":false
     },    {
-      "id": "pulseless-arrest",
-      "title": "Pulseless Arrest",
-      "type": "protocol",
-      "categoryPath": [
-        "Pediatric Clinical Protocols",
-        "Pediatric Cardiac Emergencies"
+      "id":"pulseless-arrest","title":"Pediatric Pulseless Arrest","type":"protocol","categoryPath":["Pediatric Clinical Protocols","Pediatric Cardiac Emergencies"],"status":"active","effectiveDate":"2026-06-08","lastRevised":"","version":"2026",
+      "tags":["pediatric arrest","VF","pulseless VT","asystole","PEA","resuscitation"],
+      "summary":"Pediatric pulseless arrest resuscitation pathways for shockable and non-shockable rhythms.","displayMode":"native",
+      "content":[
+        {"type":"flow-stage","title":"Resuscitation","arrowAfter":true,"items":[
+          "Assess patient for respiratory and cardiac arrest.",
+          "Initiate CPR and AED/Defibrillator using most current American Heart Association guidelines.",
+          "Provide high-quality compressions, minimizing interruptions.",
+          "Compressions should be at a rate of 100-120 compressions per minute.",
+          "Ventilate with bag valve mask and 100% O2, consider OPA/NPA.",
+          {"text":"Consider advanced airway management.","children":["Do Not delay resuscitation for advanced airway placement.","If advanced airway is utilized, initiate EtCO2 monitoring."]}
+        ]},
+        {"type":"two-way-decision","question":"Shockable Rhythm","paths":[
+          {"answer":"YES","title":"VF/Pulseless VT","items":[
+            "Defibrillate at 2 joules/kg.",
+            "Resume CPR for 2 minutes.",
+            "Initiate IV/IO of normal saline.",
+            {"text":"1:10,000 Epinephrine 0.01 mg/kg (0.1 ml/kg) IV/IO, repeat every 3-5 minutes","bold":["0.01 mg/kg (0.1 ml/kg) IV/IO","every 3-5 minutes"],"links":[{"text":"Epinephrine","protocolId":"epinephrine-1-1000-and-1-10-000"}]},
+            "Reassess rhythm every 2 minutes, if rhythm is organized, check pulse.",
+            "Defibrillate at 4 joules/kg.",
+            "Resume CPR for 2 minutes.",
+            {"text":"Amiodarone 5mg/kg bolus, may repeat up to 2 times for refractory VF/VT.","bold":["5mg/kg bolus"],"links":[{"text":"Amiodarone","protocolId":"amiodarone-cordarone"}]},
+            "Continue CPR/treatment as indicated.",
+            "Consider and treat reversible causes."
+          ]},
+          {"answer":"NO","title":"Asystole/PEA","items":[
+            "Initiate IV/IO of normal saline.",
+            {"text":"1:10,000 Epinephrine 0.01mg/kg (0.1ml/kg) IV/IO, repeat every 3-5 minutes.","bold":["0.01mg/kg (0.1ml/kg) IV/IO","every 3-5 minutes"],"links":[{"text":"Epinephrine","protocolId":"epinephrine-1-1000-and-1-10-000"}]},
+            "Reassess rhythm every 2 minutes, if rhythm is organized, check pulse.",
+            "Continue CPR/treatment as indicated",
+            {"text":"Consider and treat reversible causes:","children":["Hypovolemia    Tension Pneumothorax","Hypoxia    Tamponade","Hydrogen Ion    Toxins","Hypoglycemia    Thrombosis","Hypokalemia","Hyperkalemia","Hypothermia"]}
+          ]}
+        ],"footer":{"items":[
+          {"text":"Transport to the closest appropriate facility.","bold":["Transport to the closest appropriate facility."]},
+          {"text":"If cardiac rhythm change is noted, treat based on the appropriate guideline.","bold":["If cardiac rhythm change is noted, treat based on the appropriate guideline."]}
+        ]}},
+        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Events preceding arrest.","Code summary","Treatment(s)","Communication with Medical Control."]},
+        {"type":"icon-note","image":"assets/legend-important.webp","alt":"Important protocol information","text":"Lidocaine may be utilized to replace Amiodarone. Dose – 1mg/kg IV/IO.","bold":["Lidocaine may be utilized to replace Amiodarone. Dose – 1mg/kg IV/IO."],"links":[{"text":"Lidocaine","protocolId":"lidocaine-xylocaine"}],"red":true}
       ],
-      "status": "active",
-      "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 50,
-        "pageEnd": 50,
-        "pageLabel": "50"
-      },
-      "summary": "",
-      "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Pediatric Pulseless Arrest"
-        },
-        {
-          "type": "paragraph",
-          "text": "Resuscitation Assess patient for respiratory and cardiac arrest. Initiate CPR and AED/Defibrillator using most current American Heart Association guidelines. Provide high-quality compressions, minimizing interruptions. Compressions should be at a rate of 100-120 compressions per minute. Ventilate with bag valve mask and 100% O2, consider OPA/NPA. Consider advanced airway management. Do Not delay resuscitation for advanced airway placement. If advanced airway is utilized, initiate EtCO2 monitoring. Shockable Rhythm YES NO VF/Pulseless VT Defibrillate at 2 joules/kg. Resume CPR for 2 minutes. Initiate IV/IO of normal saline. 1:10,000 Epinephrine 0.01 mg/kg (0.1 ml/kg) IV/IO, repeat every 3-5 minutes Reassess rhythm every 2 minutes, if rhythm is organized, check pulse. Defibrillate at 4 joules/kg. Resume CPR for 2 minutes. Amiodarone* 5mg/kg bolus, may repeat up to 2 times for refractory VF/VT. Continue CPR/treatment as indicated. Consider and treat reversible causes. Asystole/PEA Initiate IV/IO of normal saline. 1:10,000 Epinephrine 0.01mg/kg (0.1ml/kg) IV/IO, repeat every 3-5 minutes. Reassess rhythm every 2 minutes, if rhythm is organized, check pulse. Continue CPR/treatment as indicated"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Consider and treat reversible causes"
-        },
-        {
-          "type": "list",
-          "items": [
-            "Hypovolemia",
-            "Tension Pneumothorax",
-            "Hypoxia",
-            "Tamponade",
-            "Hydrogen Ion -Toxins",
-            "Hypoglycemia -Thrombosis",
-            "Hypokalemia",
-            "Hyperkalemia",
-            "Hypothermia"
-          ]
-        },
-        {
-          "type": "paragraph",
-          "text": "Transport to the closest appropriate facility. If cardiac rhythm change is noted, treat based on the appropriate guideline."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Events preceding arrest. Code summary Treatment(s) Communication with Medical Control. *Lidocaine may be utilized to replace Amiodarone. Dose – 1mg/kg IV/IO."
-        }
-      ],
-      "plainText": "Pediatric Pulseless Arrest\nResuscitation\n•\nAssess patient for respiratory and cardiac arrest.\n•\nInitiate CPR and AED/Defibrillator using most current American Heart Association guidelines.\n•\nProvide high-quality compressions, minimizing interruptions.\n•\nCompressions should be at a rate of 100-120 compressions per minute.\n•\nVentilate with bag valve mask and 100% O2, consider OPA/NPA.\n•\nConsider advanced airway management.\no\nDo Not delay resuscitation for advanced airway placement.\no\nIf advanced airway is utilized, initiate EtCO2 monitoring.\nShockable Rhythm\nYES\nNO\nVF/Pulseless VT\n•\nDefibrillate at 2 joules/kg.\n•\nResume CPR for 2 minutes.\n•\nInitiate IV/IO of normal saline.\n•\n1:10,000 Epinephrine 0.01 mg/kg (0.1\nml/kg) IV/IO, repeat every 3-5 minutes\n•\nReassess rhythm every 2 minutes, if rhythm\nis organized, check pulse.\n•\nDefibrillate at 4 joules/kg.\n•\nResume CPR for 2 minutes.\n•\nAmiodarone* 5mg/kg bolus, may repeat up\nto 2 times for refractory VF/VT.\n•\nContinue CPR/treatment as indicated.\n•\nConsider and treat reversible causes.\nAsystole/PEA\n•\nInitiate IV/IO of normal saline.\n•\n1:10,000 Epinephrine 0.01mg/kg (0.1ml/kg)\nIV/IO, repeat every 3-5 minutes.\n•\nReassess rhythm every 2 minutes, if rhythm is\norganized, check pulse.\n•\nContinue CPR/treatment as indicated\n•\nConsider and treat reversible causes:\n-Hypovolemia\n-Tension Pneumothorax\n-Hypoxia\n-Tamponade\n-Hydrogen Ion -Toxins\n-Hypoglycemia -Thrombosis\n-Hypokalemia\n-Hyperkalemia\n-Hypothermia\n•\nTransport to the closest appropriate facility.\n•\nIf cardiac rhythm change is noted, treat based on the\nappropriate guideline.\nDocument:\n•\nEvents preceding\narrest.\n•\nCode summary\n•\nTreatment(s)\n•\nCommunication\nwith Medical\nControl.\n*Lidocaine may be utilized to replace Amiodarone. Dose – 1mg/kg IV/IO.",
-      "pageText": [
-        {
-          "page": 50,
-          "text": "Pediatric Pulseless Arrest\nResuscitation\n•\nAssess patient for respiratory and cardiac arrest.\n•\nInitiate CPR and AED/Defibrillator using most current American Heart Association guidelines.\n•\nProvide high-quality compressions, minimizing interruptions.\n•\nCompressions should be at a rate of 100-120 compressions per minute.\n•\nVentilate with bag valve mask and 100% O2, consider OPA/NPA.\n•\nConsider advanced airway management.\no\nDo Not delay resuscitation for advanced airway placement.\no\nIf advanced airway is utilized, initiate EtCO2 monitoring.\nShockable Rhythm\nYES\nNO\nVF/Pulseless VT\n•\nDefibrillate at 2 joules/kg.\n•\nResume CPR for 2 minutes.\n•\nInitiate IV/IO of normal saline.\n•\n1:10,000 Epinephrine 0.01 mg/kg (0.1\nml/kg) IV/IO, repeat every 3-5 minutes\n•\nReassess rhythm every 2 minutes, if rhythm\nis organized, check pulse.\n•\nDefibrillate at 4 joules/kg.\n•\nResume CPR for 2 minutes.\n•\nAmiodarone* 5mg/kg bolus, may repeat up\nto 2 times for refractory VF/VT.\n•\nContinue CPR/treatment as indicated.\n•\nConsider and treat reversible causes.\nAsystole/PEA\n•\nInitiate IV/IO of normal saline.\n•\n1:10,000 Epinephrine 0.01mg/kg (0.1ml/kg)\nIV/IO, repeat every 3-5 minutes.\n•\nReassess rhythm every 2 minutes, if rhythm is\norganized, check pulse.\n•\nContinue CPR/treatment as indicated\n•\nConsider and treat reversible causes:\n-Hypovolemia\n-Tension Pneumothorax\n-Hypoxia\n-Tamponade\n-Hydrogen Ion -Toxins\n-Hypoglycemia -Thrombosis\n-Hypokalemia\n-Hyperkalemia\n-Hypothermia\n•\nTransport to the closest appropriate facility.\n•\nIf cardiac rhythm change is noted, treat based on the\nappropriate guideline.\nDocument:\n•\nEvents preceding\narrest.\n•\nCode summary\n•\nTreatment(s)\n•\nCommunication\nwith Medical\nControl.\n*Lidocaine may be utilized to replace Amiodarone. Dose – 1mg/kg IV/IO."
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Pediatric Pulseless Arrest. Resuscitation pathways for shockable VF/pulseless VT and non-shockable asystole/PEA rhythms, including medications, defibrillation, transport, and documentation.","needsReview":false
+    },    {
       "id": "abdominal-discomfort",
       "title": "Abdominal Discomfort",
       "type": "protocol",

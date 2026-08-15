@@ -730,7 +730,52 @@ function renderThreeWayFlow(block, container) {
   flow.appendChild(grid);
   container.appendChild(flow);
 }
+function renderTwoWayDecision(block, container) {
+  const flow = document.createElement('section');
+  flow.className = 'two-way-decision';
+  const connector = document.createElement('div');
+  connector.className = 'two-way-connector';
+  const label = document.createElement('strong');
+  label.textContent = block.question || '';
+  connector.appendChild(label);
+  flow.appendChild(connector);
+  const grid = document.createElement('div');
+  grid.className = 'two-way-grid';
+  for (const path of block.paths || []) {
+    const column = document.createElement('div');
+    column.className = 'two-way-column';
+    const answer = document.createElement('span');
+    answer.className = 'two-way-answer';
+    answer.textContent = path.answer || '';
+    column.appendChild(answer);
+    const card = document.createElement('section');
+    card.className = 'two-way-card';
+    const heading = document.createElement('h3');
+    heading.textContent = path.title || '';
+    card.appendChild(heading);
+    appendFlowItems(path.items || [], card);
+    column.appendChild(card);
+    grid.appendChild(column);
+  }
+  flow.appendChild(grid);
+  const join = document.createElement('div');
+  join.className = 'two-way-join';
+  join.setAttribute('aria-hidden', 'true');
+  flow.appendChild(join);
+  if (block.footer) {
+    const footer = document.createElement('section');
+    footer.className = 'two-way-footer';
+    appendFlowItems(block.footer.items || [], footer);
+    flow.appendChild(footer);
+  }
+  container.appendChild(flow);
+}
 function renderBlock(block, container) {
+  if (block.type === 'two-way-decision') {
+    renderTwoWayDecision(block, container);
+    return;
+  }
+
   if (block.type === 'flow-stage') {
     renderFlowStage(block, container);
     return;
