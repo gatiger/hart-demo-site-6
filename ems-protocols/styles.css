@@ -655,3 +655,14 @@ details[open] > .tree-heading.tree-toggle::before {
   .pediatric-dextrose-mixing-table th { font-size: 1.05rem; }
   .pediatric-dextrose-mixing-table th, .pediatric-dextrose-mixing-table td { min-width: 12rem; }
 }
+.flow-stage-with-documentation { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(220px, 28%); align-items: start; gap: 1rem; margin: 1.25rem 0 3.4rem; }
+.flow-stage-with-documentation > .protocol-flow-stage { margin: 0; }
+.flow-stage-with-documentation > .protocol-documentation-card { grid-template-columns: 3rem minmax(0, 1fr); gap: .55rem; margin: 0; padding: .65rem .7rem; font-size: .78rem; line-height: 1.25; }
+.flow-stage-with-documentation > .protocol-documentation-card img { width: 3rem; max-height: 3rem; align-self: start; }
+.flow-stage-with-documentation > .protocol-documentation-card h3 { margin: 0 0 .25rem; font-size: .9rem; }
+.flow-stage-with-documentation > .protocol-documentation-card ul { margin: 0; padding-left: 1.1rem; }
+.flow-stage-with-documentation.flow-arrow-after::before { content: ""; position: absolute; left: 50%; bottom: -1.35rem; width: 10px; height: 1.35rem; transform: translateX(-50%); background: #050505; }
+@media (max-width: 720px) {
+  .flow-stage-with-documentation { grid-template-columns: 1fr; }
+  .flow-stage-with-documentation > .protocol-documentation-card { width: min(22rem, 100%); justify-self: end; }
+}

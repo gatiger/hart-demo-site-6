@@ -4475,13 +4475,12 @@
           {"text":"Initiate WARM IV/IO normal saline – administer 20 ml/kg bolus if signs of shock are present.","bold":["WARM"]},
           "Apply warm packs to groin, axilla, neck and chest."
         ]},
-        {"type":"flow-stage","title":"Frostbite","items":[
+        {"type":"flow-stage","title":"Frostbite","arrowAfter":true,"items":[
           "Protect injured, frostbitten areas, do not rub or place on any heated surface.",
           {"text":"Remove clothing and jewelry from injured body parts.","indent":1},
           {"text":"Do not attempt to thaw injured part with local heat.","indent":1},
           {"text":"Severe frostbite injuries should be transported to a trauma center.","indent":1}
-        ]},
-        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital Signs","OPQRST/SAMPLE","Cardiac rhythm","Treatment(s)","Communication with Medical Control"]},
+        ],"sideDocumentation":{"title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital Signs","OPQRST/SAMPLE","Cardiac rhythm","Treatment(s)","Communication with Medical Control"]}},
         {"type":"flow-stage","title":"Consider Morphine for pain relief when the patient is conscious, alert, not hypotensive and complaining of severe pain.","links":[{"text":"Morphine","protocolId":"morphine-sulfate"}],"items":[
           {"text":"See Pediatric Pain Management Protocol.","indent":1,"links":[{"text":"Pediatric Pain Management Protocol","protocolId":"pain-management"}]}
         ]}

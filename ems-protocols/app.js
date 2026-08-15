@@ -703,11 +703,19 @@ function renderScoreCallout(block, container) {
 }
 function renderFlowStage(block, container) {
   const section = document.createElement('section');
-  section.className = `protocol-flow-stage ${block.arrowAfter ? 'flow-arrow-after' : ''}`;
+  section.className = `protocol-flow-stage ${block.arrowAfter && !block.sideDocumentation ? 'flow-arrow-after' : ''}`;
   const heading = document.createElement('h3');
   appendRichText(heading, block.title || '', block.bold || [], block.links || []);
   section.appendChild(heading);
   appendFlowItems(block.items || [], section);
+  if (block.sideDocumentation) {
+    const row = document.createElement('div');
+    row.className = `flow-stage-with-documentation ${block.arrowAfter ? 'flow-arrow-after' : ''}`;
+    row.appendChild(section);
+    renderDocumentationCard(block.sideDocumentation, row);
+    container.appendChild(row);
+    return;
+  }
   container.appendChild(section);
 }
 
