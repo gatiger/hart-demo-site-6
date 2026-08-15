@@ -4488,57 +4488,46 @@
       ],
       "plainText":"Pediatric Cold Related Emergencies. Assessment and treatment of pediatric hypothermia and frostbite, including resuscitation guidance, warming, documentation, and pain relief.","needsReview":false
     },    {
-      "id": "fever",
-      "title": "Fever",
-      "type": "protocol",
-      "categoryPath": [
-        "Pediatric Clinical Protocols",
-        "Pediatric Medical Emergencies"
+      "id":"fever","title":"Pediatric Fever","type":"protocol","categoryPath":["Pediatric Clinical Protocols","Pediatric Medical Emergencies"],"status":"active","effectiveDate":"2026-06-08","lastRevised":"","version":"2026",
+      "tags":["pediatric","fever","febrile","acetaminophen"],
+      "summary":"Assessment and treatment of pediatric fever.",
+      "content":[
+        {"type":"heading","level":2,"text":"Pediatric Fever"},
+        {"type":"paragraph","text":"This protocol applies to pediatric patients with a body temperature of 100.4°F (38°C) or greater. Fever may be associated with seizures, hallucinations, and other forms of altered mental status. The febrile patient may be dehydrated."},
+        {"type":"flow-stage","title":"First Impression (Pediatric Assessment Triangle)","links":[{"text":"Pediatric Assessment Triangle","protocolId":"pediatric-assessment-triangle"}],"arrowAfter":true,"items":[
+          "Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.",
+          "Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.",
+          "Circulation – observe skin color for pallor, mottling, and/or cyanosis."
+        ]},
+        {"type":"flow-stage","title":"Primary Survey","arrowAfter":true,"items":[
+          "Ensure airway – ensure patency and proper positioning.",
+          {"text":"Assess breathing – give O₂ as tolerated by mask or blow-by. Maintain SpO₂ ≥ 94%.","bold":["Maintain SpO₂ ≥ 94%."]},
+          {"text":"Assist with bag valve mask if ineffective respiratory effort.","indent":1},
+          "Assess circulation – manage shock appropriately.",
+          "Assess disability – assess LOC.",
+          "Exposure/Environment – expose injuries as needed.",
+          {"text":"Altered LOC and signs of poor perfusion could indicate shock and should be managed appropriately. See Shock Protocol.","icon":"assets/legend-important.webp","iconAlt":"Important protocol information","bold":["Altered LOC and signs of poor perfusion could indicate shock and should be managed appropriately."],"red":["Altered LOC and signs of poor perfusion could indicate shock and should be managed appropriately."],"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]}
+        ]},
+        {"type":"flow-stage","title":"Secondary Assessment and Treatment","arrowAfter":true,"items":[
+          "Monitor vital signs and O₂ saturation.",
+          "Initiate cardiac monitoring.",
+          {"text":"Perform blood glucose analysis – treat if BGL is < 60 mg/dl.","bold":["BGL is < 60 mg/dl."]},
+          {"text":"Pediatric Altered Level of Consciousness protocol.","indent":1,"links":[{"text":"Pediatric Altered Level of Consciousness","protocolId":"altered-level-of-consciousness"}]},
+          "Physical exam and OPQRST/SAMPLE history.",
+          {"text":"Document history of fever and record temperature (forehead, ear or tympanic membrane).","indent":1},
+          {"text":"Initiate IV/IO normal saline – administer 20 ml/kg bolus if signs of shock, dehydration, hypotension, and/or sepsis are present. See Shock Protocol.","links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          "If high grade fever (103°F/39.5°C), initiate gradual cooling.",
+          {"text":"Remove excess clothing.","indent":1},
+          {"text":"Consider placing moistened towels in axilla and groin.","indent":1},
+          {"text":"DO NOT use ice or rubbing alcohol to cool.","indent":1,"bold":["DO NOT use ice or rubbing alcohol to cool."]},
+          {"text":"Avoid rapid cooling, DO NOT allow the patient to shiver.","indent":1,"bold":["DO NOT allow the patient to shiver."]},
+          {"text":"Administer Acetaminophen 15 mg/kg PO if > 4 hours since last antipyretic.","bold":["15 mg/kg PO"],"links":[{"text":"Acetaminophen","protocolId":"acetaminophen-pedi-liquid"}]}
+        ]},
+        {"type":"flow-stage","title":"Prepare for seizures, see Seizure Protocol for management of seizures.","links":[{"text":"Seizure Protocol","protocolId":"seizure"}]},
+        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital Signs","OPQRST/SAMPLE","Cardiac rhythm","Treatment(s)","Communication with Medical Control"]}
       ],
-      "status": "active",
-      "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 58,
-        "pageEnd": 58,
-        "pageLabel": "58"
-      },
-      "summary": "",
-      "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Pediatric Fever"
-        },
-        {
-          "type": "paragraph",
-          "text": "This protocol applies to pediatric patients with a body temperature of 100.4o F (38o C) or greater. Fever may be associated with seizures, hallucinations, and other forms of altered mental status. The febrile patient may be dehydrated. First Impression (Pediatric Assessment Triangle) Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry. Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds. Circulation – observe skin color for pallor, mottling and/or cyanosis. Primary Survey Ensure airway – ensure patency and proper positioning. Assess breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%. Assist with bag valve mask if ineffective respiratory effort. Assess circulation – manage shock appropriately. Assess disability – assess LOC. Exposure/Environment – expose injuries as needed. Altered LOC and signs of poor perfusion could indicate shock and should be managed appropriately. See Shock Protocol. Secondary Assessment and Treatment Monitor vital signs and O2 saturation. Initiate cardiac monitoring. Perform blood glucose analysis – treat if BGL is < than 60mg/dl. Pediatric Altered Level of Consciousness protocol. Physical exam and OPQRST/SAMPLE history. Document history of fever and record temperature (forehead, ear or tympanic membrane) Initiate IV/IO normal saline – administer 20 ml/kg bolus if signs of shock, dehydration, hypotension, and/or sepsis are present. See Shock Protocol. If high grade fever (103o/39.5o), initiate gradual cooling. Remove excess clothing. Consider placing moistened towels in axilla and groin. DO NOT use ice or rubbing alcohol to cool. Avoid rapid cooling, DO NOT allow the patient to shiver. Administer Acetaminophen 15 mg/kg PO if > 4 hours since last antipyretic. Prepare for seizures, see Seizure Protocol for management of seizures."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vital Signs OPQRST/SAMPLE Cardiac rhythm Treatment(s) Communication with Medical Control"
-        }
-      ],
-      "plainText": "Pediatric Fever\nThis protocol applies to pediatric patients with a body temperature of 100.4o F (38o C) or greater.\nFever may be associated with seizures, hallucinations, and other forms of altered mental status.\nThe febrile patient may be dehydrated.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis.\nPrimary Survey\n•\nEnsure airway – ensure patency and proper positioning.\n•\nAssess breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%.\no\nAssist with bag valve mask if ineffective respiratory effort.\n•\nAssess circulation – manage shock appropriately.\n•\nAssess disability – assess LOC.\n•\nExposure/Environment – expose injuries as needed.\nAltered LOC and signs of poor perfusion could indicate shock and should be managed\nappropriately. See Shock Protocol.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation.\n•\nInitiate cardiac monitoring.\n•\nPerform blood glucose analysis – treat if BGL is < than 60mg/dl.\no\nPediatric Altered Level of Consciousness protocol.\n•\nPhysical exam and OPQRST/SAMPLE history.\no\nDocument history of fever and record temperature (forehead, ear or tympanic membrane)\n•\nInitiate IV/IO normal saline – administer 20 ml/kg bolus if signs of shock, dehydration,\nhypotension, and/or sepsis are present. See Shock Protocol.\n•\nIf high grade fever (103o/39.5o), initiate gradual cooling.\no\nRemove excess clothing.\no\nConsider placing moistened towels in axilla and groin.\no\nDO NOT use ice or rubbing alcohol to cool.\no\nAvoid rapid cooling, DO NOT allow the patient to shiver.\n•\nAdminister Acetaminophen 15 mg/kg PO if > 4 hours since last antipyretic.\nPrepare for seizures, see Seizure Protocol for management of seizures.\nDocument:\n•\nVital Signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control",
-      "pageText": [
-        {
-          "page": 58,
-          "text": "Pediatric Fever\nThis protocol applies to pediatric patients with a body temperature of 100.4o F (38o C) or greater.\nFever may be associated with seizures, hallucinations, and other forms of altered mental status.\nThe febrile patient may be dehydrated.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis.\nPrimary Survey\n•\nEnsure airway – ensure patency and proper positioning.\n•\nAssess breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%.\no\nAssist with bag valve mask if ineffective respiratory effort.\n•\nAssess circulation – manage shock appropriately.\n•\nAssess disability – assess LOC.\n•\nExposure/Environment – expose injuries as needed.\nAltered LOC and signs of poor perfusion could indicate shock and should be managed\nappropriately. See Shock Protocol.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation.\n•\nInitiate cardiac monitoring.\n•\nPerform blood glucose analysis – treat if BGL is < than 60mg/dl.\no\nPediatric Altered Level of Consciousness protocol.\n•\nPhysical exam and OPQRST/SAMPLE history.\no\nDocument history of fever and record temperature (forehead, ear or tympanic membrane)\n•\nInitiate IV/IO normal saline – administer 20 ml/kg bolus if signs of shock, dehydration,\nhypotension, and/or sepsis are present. See Shock Protocol.\n•\nIf high grade fever (103o/39.5o), initiate gradual cooling.\no\nRemove excess clothing.\no\nConsider placing moistened towels in axilla and groin.\no\nDO NOT use ice or rubbing alcohol to cool.\no\nAvoid rapid cooling, DO NOT allow the patient to shiver.\n•\nAdminister Acetaminophen 15 mg/kg PO if > 4 hours since last antipyretic.\nPrepare for seizures, see Seizure Protocol for management of seizures.\nDocument:\n•\nVital Signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control"
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Pediatric Fever. Assessment, cooling, acetaminophen, seizure preparation, and documentation for pediatric patients with fever.","needsReview":false
+    },    {
       "id": "heat-related-emergencies",
       "title": "Heat Related Emergencies",
       "type": "protocol",

@@ -707,7 +707,7 @@ function renderFlowStage(block, container) {
   const heading = document.createElement('h3');
   appendRichText(heading, block.title || '', block.bold || [], block.links || []);
   section.appendChild(heading);
-  appendFlowItems(block.items || [], section);
+  if (block.items?.length) appendFlowItems(block.items, section);
   if (block.sideDocumentation) {
     const row = document.createElement('div');
     row.className = `flow-stage-with-documentation ${block.sideDocumentationLayout ? `layout-${block.sideDocumentationLayout}` : ''} ${block.arrowAfter ? 'flow-arrow-after' : ''}`;
