@@ -557,7 +557,7 @@ details[open] > .tree-heading.tree-toggle::before {
 .protocol-flow-stage { position: relative; margin: 1.25rem 0 2.8rem; padding: 1rem 1.15rem; border: 1px solid #b9c9d6; border-top: 6px solid #0b6b75; border-radius: .85rem; background: #fff; box-shadow: 0 5px 18px rgba(18, 52, 77, .08); }
 .protocol-flow-stage h3, .three-way-card h3 { margin-top: 0; color: #173a5e; }
 .flow-arrow-after::after { content: ""; position: absolute; left: 50%; bottom: -2.15rem; width: 0; height: 0; transform: translateX(-50%); border-left: 15px solid transparent; border-right: 15px solid transparent; border-top: 18px solid #050505; }
-.protocol-flow-stage.flow-arrow-after::before { content: ""; position: absolute; left: 50%; bottom: -1.35rem; width: 10px; height: 1.35rem; transform: translateX(-50%); background: #050505; }
+.protocol-flow-stage.flow-arrow-after::before { content: ""; position: absolute; left: 50%; bottom: -2.15rem; width: 10px; height: 2.15rem; transform: translateX(-50%); background: #050505; }
 .three-way-flow { position: relative; margin: .5rem 0 3rem; }
 .three-way-connector { position: relative; height: 3.1rem; }
 .three-way-connector::before { content: ""; position: absolute; left: 16.66%; right: 16.66%; top: 1rem; border-top: 9px solid #050505; }
