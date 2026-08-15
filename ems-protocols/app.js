@@ -685,7 +685,7 @@ function renderDocumentationCard(block, container) {
 }
 function renderStopControl(block, container) {
   const figure = document.createElement('figure');
-  figure.className = 'medical-control-reference';
+  figure.className = `medical-control-reference ${block.arrowAfter ? 'flow-arrow-after' : ''}`;
   const image = document.createElement('img');
   image.src = block.image || 'assets/legend-medical-control.webp';
   image.alt = block.alt || `${block.title || 'STOP'} — ${block.text || 'CONTACT MEDICAL CONTROL'}`;

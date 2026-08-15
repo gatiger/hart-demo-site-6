@@ -4277,61 +4277,46 @@
           {"text":"If cardiac rhythm change is noted, treat based on the appropriate guideline.","bold":["If cardiac rhythm change is noted, treat based on the appropriate guideline."]}
         ]}},
         {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Events preceding arrest.","Code summary","Treatment(s)","Communication with Medical Control."]},
-        {"type":"icon-note","image":"assets/legend-important.webp","alt":"Important protocol information","text":"Lidocaine may be utilized to replace Amiodarone. Dose – 1mg/kg IV/IO.","bold":["Lidocaine may be utilized to replace Amiodarone. Dose – 1mg/kg IV/IO."],"links":[{"text":"Lidocaine","protocolId":"lidocaine-xylocaine"}],"red":true}
+        {"type":"icon-note","image":"assets/legend-important.webp","alt":"Important protocol information","text":"Lidocaine may be utilized to replace Amiodarone. Dose – 1mg/kg IV/IO.","bold":[],"links":[{"text":"Lidocaine","protocolId":"lidocaine-xylocaine"}],"red":true}
       ],
       "plainText":"Pediatric Pulseless Arrest. Resuscitation pathways for shockable VF/pulseless VT and non-shockable asystole/PEA rhythms, including medications, defibrillation, transport, and documentation.","needsReview":false
     },    {
-      "id": "abdominal-discomfort",
-      "title": "Abdominal Discomfort",
-      "type": "protocol",
-      "categoryPath": [
-        "Pediatric Clinical Protocols",
-        "Pediatric Medical Emergencies"
+      "id":"abdominal-discomfort","title":"Pediatric Abdominal Discomfort","type":"protocol","categoryPath":["Pediatric Clinical Protocols","Pediatric Medical Emergencies"],"status":"active","effectiveDate":"2026-06-08","lastRevised":"","version":"2026",
+      "tags":["pediatric abdominal pain","abdominal discomfort","nausea","vomiting"],
+      "summary":"Assessment, stabilization, Medical Control consultation, and pain-management guidance for pediatric abdominal discomfort.","displayMode":"native",
+      "content":[
+        {"type":"paragraph","text":"This protocol applies to pediatric patients with pain/discomfort presenting in the abdomen or the flanks with no history or signs of trauma."},
+        {"type":"flow-stage","title":"First Impression (Pediatric Assessment Triangle)","links":[{"text":"Pediatric Assessment Triangle","protocolId":"pediatric-assessment-triangle"}],"arrowAfter":true,"items":[
+          "Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.",
+          "Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.",
+          "Circulation – observe skin color for pallor, mottling and/or cyanosis."
+        ]},
+        {"type":"flow-stage","title":"Primary Survey","arrowAfter":true,"items":[
+          {"text":"Ensure airway – ensure patency and proper positioning","bold":["Ensure airway"]},
+          {"text":"Assess breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 ≥ 94%.","bold":["Assess breathing","Maintain SpO2 ≥ 94%."]},
+          {"text":"Assist with bag valve mask if ineffective respiratory effort.","bold":["Assist with bag valve mask"]},
+          {"text":"Assess circulation – manage shock appropriately","bold":["Assess circulation"]},
+          {"text":"Assess disability – assess LOC","bold":["Assess disability"]},
+          {"text":"Exposure/Environment – expose injuries as needed.","bold":["Exposure/Environment"]},
+          {"text":"Altered LOC and signs of poor perfusion could indicate shock and should be managed appropriately. See Shock Protocol.","bold":["Altered LOC and signs of poor perfusion could indicate shock and should be managed appropriately."],"red":["Altered LOC and signs of poor perfusion could indicate shock and should be managed appropriately."],"links":[{"text":"Shock Protocol","protocolId":"shock-management"}],"icon":"assets/legend-important.webp","iconAlt":"Important protocol information"}
+        ]},
+        {"type":"flow-stage","title":"Secondary Assessment and History","arrowAfter":true,"items":[
+          "Monitor vital signs and O2 saturation.",
+          {"text":"Perform blood glucose analysis – Treat if BGL is < 60 mg/dl.","bold":["BGL is < 60 mg/dl."]},
+          "Cardiac monitor – record and evaluate 12-Lead ECG.",
+          {"text":"OPQRST/SAMPLE history","children":["History of blood in vomit or stool? Prior abdominal surgery? Last meal?","Physical exam – assess for signs of dehydration and/or shock."]},
+          "Consider possible causes; GI, GU, cardiac, meds/toxin ingestion, pregnancy, etc.",
+          "Save emesis or other drainage for signs of GI bleed, etc.",
+          "Keep the patient NPO.",
+          "Initiate IV/IO of normal saline – administer 20 ml/kg bolus if signs of shock.",
+          {"text":"If nausea or vomiting are present, see Nausea/Vomiting Protocol.","links":[{"text":"Nausea/Vomiting Protocol","protocolId":"nausea-and-vomiting"}]}
+        ]},
+        {"type":"stop-control","title":"STOP","text":"CONTACT MEDICAL CONTROL","image":"assets/legend-medical-control.webp","alt":"Stop and contact Medical Control","arrowAfter":true},
+        {"type":"protocol-link","label":"For pain management, see Pain Management Protocol.","protocolId":"pain-management"},
+        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital signs","OPQRST/SAMPLE","Cardiac rhythm","Treatment","Communication with Medical Control"]}
       ],
-      "status": "active",
-      "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 51,
-        "pageEnd": 51,
-        "pageLabel": "51"
-      },
-      "summary": "",
-      "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Pediatric Abdominal Discomfort"
-        },
-        {
-          "type": "paragraph",
-          "text": "First Impression (Pediatric Assessment Triangle) Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry. Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds. Circulation – observe skin color for pallor, mottling and/or cyanosis. This protocol applies to pediatric patients with pain/discomfort presenting in the abdomen or the flanks with no history or signs of trauma. Primary Survey Ensure airway – ensure patency and proper positioning. Assess breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%. Assist with bag valve mask if ineffective respiratory effort. Assess circulation – manage shock appropriately Assess disability - assess LOC Exposure/Environment – expose injuries as needed. Altered LOC and signs of poor perfusion could indicate shock and should be managed appropriately. See Shock Protocol. Secondary Assessment and History Monitor vital signs and O2 saturation. Perform blood glucose analysis – Treat if BGL is < 60 mg/dl. Cardiac monitor – record and evaluate 12-Lead ECG. OPQRST/SAMPLE history History of blood in vomit or stool? Prior abdominal surgery? Last meal? Physical exam – assess for signs of dehydration and/or shock. Consider possible causes; GI, GU, cardiac, meds/toxin ingestion, pregnancy, etc. Save emesis or other drainage for signs of GI bleed, etc. Keep the patient NPO. Initiate IV/IO of normal saline – administer 20 ml/kg bolus if signs of shock. If nausea or vomiting are present, see Nausea/Vomiting Protocol. Contact Medical Control For pain management, See Pain Management Protocol."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vital signs OPQRST/SAMPLE Cardiac rhythm Treatment Communication with Medical Control"
-        }
-      ],
-      "plainText": "Pediatric Abdominal Discomfort\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis.\nThis protocol applies to pediatric patients with pain/discomfort presenting in the abdomen or the\nflanks with no history or signs of trauma.\nPrimary Survey\n•\nEnsure airway – ensure patency and proper positioning.\n•\nAssess breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%.\n•\nAssist with bag valve mask if ineffective respiratory effort.\n•\nAssess circulation – manage shock appropriately\n•\nAssess disability -  assess LOC\n•\nExposure/Environment – expose injuries as needed.\nAltered LOC and signs of poor perfusion could indicate shock and should be managed\nappropriately.  See Shock Protocol.\nSecondary Assessment and History\n•\nMonitor vital signs and O2 saturation.\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nCardiac monitor – record and evaluate 12-Lead ECG.\n•\nOPQRST/SAMPLE history\no\nHistory of blood in vomit or stool? Prior abdominal surgery? Last meal?\no\nPhysical exam – assess for signs of dehydration and/or shock.\n•\nConsider possible causes; GI, GU, cardiac, meds/toxin ingestion, pregnancy, etc.\n•\nSave emesis or other drainage for signs of GI bleed, etc.\n•\nKeep the patient NPO.\n•\nInitiate IV/IO of normal saline – administer 20 ml/kg bolus if signs of shock.\n•\nIf nausea or vomiting are present, see Nausea/Vomiting Protocol.\nContact Medical\nControl\nFor pain management, See Pain Management Protocol.\nDocument:\n•\nVital signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment\n•\nCommunication with\nMedical Control",
-      "pageText": [
-        {
-          "page": 51,
-          "text": "Pediatric Abdominal Discomfort\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis.\nThis protocol applies to pediatric patients with pain/discomfort presenting in the abdomen or the\nflanks with no history or signs of trauma.\nPrimary Survey\n•\nEnsure airway – ensure patency and proper positioning.\n•\nAssess breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%.\n•\nAssist with bag valve mask if ineffective respiratory effort.\n•\nAssess circulation – manage shock appropriately\n•\nAssess disability -  assess LOC\n•\nExposure/Environment – expose injuries as needed.\nAltered LOC and signs of poor perfusion could indicate shock and should be managed\nappropriately.  See Shock Protocol.\nSecondary Assessment and History\n•\nMonitor vital signs and O2 saturation.\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nCardiac monitor – record and evaluate 12-Lead ECG.\n•\nOPQRST/SAMPLE history\no\nHistory of blood in vomit or stool? Prior abdominal surgery? Last meal?\no\nPhysical exam – assess for signs of dehydration and/or shock.\n•\nConsider possible causes; GI, GU, cardiac, meds/toxin ingestion, pregnancy, etc.\n•\nSave emesis or other drainage for signs of GI bleed, etc.\n•\nKeep the patient NPO.\n•\nInitiate IV/IO of normal saline – administer 20 ml/kg bolus if signs of shock.\n•\nIf nausea or vomiting are present, see Nausea/Vomiting Protocol.\nContact Medical\nControl\nFor pain management, See Pain Management Protocol.\nDocument:\n•\nVital signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment\n•\nCommunication with\nMedical Control"
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Pediatric Abdominal Discomfort. Assessment, stabilization, Medical Control consultation, nausea and vomiting guidance, pain management, and documentation for pediatric abdominal or flank discomfort without trauma.","needsReview":false
+    },    {
       "id": "allergic-reaction-anaphylaxis",
       "title": "Allergic Reaction / Anaphylaxis",
       "type": "protocol",

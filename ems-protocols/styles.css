@@ -533,6 +533,8 @@ details[open] > .tree-heading.tree-toggle::before {
 @media (max-width: 520px) { .protocol-documentation-card { grid-template-columns: 86px 1fr; padding: .8rem; } .protocol-icon-note { grid-template-columns: 2.75rem 1fr; } .protocol-icon-note img { width: 2.75rem; height: 2.75rem; } }
 .medical-control-reference { margin: 1.5rem auto; text-align: center; }
 .medical-control-reference img { display: block; width: min(18rem, 80%); height: auto; margin: 0 auto; object-fit: contain; }
+.medical-control-reference.flow-arrow-after { position: relative; margin-bottom: 3rem; }
+.medical-control-reference.flow-arrow-after::before { content: ""; position: absolute; left: 50%; bottom: -1.35rem; width: 10px; height: 1.35rem; transform: translateX(-50%); background: #050505; }
 .dopamine-dose-table caption { padding: .45rem .65rem; background: #050505; color: #fff; text-align: center; }
 .dopamine-dose-table .table-caption-subtitle { display: block; margin-top: .15rem; font-size: .78rem; font-weight: 800; }
 .dopamine-dose-table th, .dopamine-dose-table td { padding: .28rem .38rem; text-align: center; vertical-align: middle; }
