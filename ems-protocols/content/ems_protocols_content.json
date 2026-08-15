@@ -1657,67 +1657,65 @@
       "id": "general-information",
       "title": "General Information",
       "type": "administrative",
-      "categoryPath": [
-        "Administrative"
-      ],
+      "categoryPath": ["Administrative"],
       "status": "active",
       "effectiveDate": "2026-06-08",
       "lastRevised": "",
       "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 9,
-        "pageEnd": 9,
-        "pageLabel": "9"
-      },
-      "summary": "",
+      "tags": ["general information", "purpose", "professional judgement", "authority"],
+      "summary": "Purpose, professional judgement, and statutory authority for the Hart County EMS protocols.",
+      "displayMode": "native",
       "content": [
         {
           "type": "heading",
           "level": 2,
-          "text": "General Information"
-        },
-        {
-          "type": "paragraph",
           "text": "Purpose"
         },
         {
+          "type": "paragraph",
+          "text": "The purpose of this document is to provide:"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "1) Guidelines regarding permissible and appropriate emergency medical services procedures and treatment modalities which may be rendered by emergency medical personnel to a patient not in the hospital.",
+            "2) Communications protocols regarding which medical situations require direct voice communications between medical personnel and a physician (or his/her designee) prior to those emergency medical personnel rendering specified emergency medical services procedures to a patient not in a hospital."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "This document is divided into basic general guidelines, pediatric and adult clinical guidelines (Medical and Trauma), information regarding medications commonly administered by emergency medical personnel, and important resource documents."
+        },
+        {
+          "type": "paragraph",
+          "text": "Recognizing the wide variety in Georgia EMS medical direction, call volume, resources for training and quality assurance, the many different levels of EMS licensure, and the importance of providing pre-hospital care that is consistent with national standards and evidence-based medicine, these documents reflect the best effort of the Guidelines Revision Group to provide the most important basic information."
+        },
+        {
           "type": "heading",
-          "level": 3,
-          "text": "The purpose of this document is to provide"
-        },
-        {
-          "type": "list",
-          "items": [
-            "1) Guidelines regarding permissible and appropriate emergency medical services procedures"
-          ]
+          "level": 2,
+          "text": "Professional Judgement"
         },
         {
           "type": "paragraph",
-          "text": "and treatment modalities which may be rendered by emergency medical personnel to a patient not in the hospital, and"
+          "text": "Since each medical emergency must be dealt with on an individual basis and appropriate care determined accordingly, professional judgement is mandatory in determining treatment modalities with the parameters of these Guidelines."
         },
         {
-          "type": "list",
-          "items": [
-            "2) Communications protocols regarding which medical situations require direct voice"
-          ]
+          "type": "heading",
+          "level": 2,
+          "text": "Authority"
         },
         {
           "type": "paragraph",
-          "text": "communications between medical personnel and a physician (or his/her designee) prior to those emergency medical personnel rendering specified emergency medical services procedures to a patient not in a hospital. This document is divided into basic general guidelines, pediatric, and adult clinical guidelines (Medical and Trauma), information regarding medications commonly administered by emergency medical personnel and important resource documents. Recognizing the wide variety in Georgia EMS medical direction, call volume, resources for training and quality assurance, the many different levels of EMS licensure, and the importance of providing pre-hospital care that is consistent with national standards and evidence-based medicine, these documents reflect the best effort of the Guidelines Revision Group to provide the most important basic information. Professional Judgement Since each medical emergency must be dealt with on an individual basis and appropriate care determined accordingly, professional judgement is mandatory in determining treatment modalities with the parameters of these Guidelines. Authority The authority for implementing these guidelines for care of pre-hospital patients is found in state law OCGA 31-11-60.1 (b) and (c), OCGA 31-11-50 (b) and the Rules of the Department of Public Health Chapter 511-9-2. It is the responsibility of each emergency medical service personnel to be familiar with the laws, rules and regulations, and guidelines and adhere to them. Even an order by a Physician does not justify procedures not in accordance with the laws, rules and regulations."
-        }
-      ],
-      "plainText": "General Information\nPurpose\nThe purpose of this document is to provide:\n1) Guidelines regarding permissible and appropriate emergency medical services procedures\nand treatment modalities which may be rendered by emergency medical personnel to a\npatient not in the hospital, and\n2) Communications protocols regarding which medical situations require direct voice\ncommunications between medical personnel and a physician (or his/her designee) prior to\nthose emergency medical personnel rendering specified emergency medical services\nprocedures to a patient not in a hospital.\nThis document is divided into basic general guidelines, pediatric, and adult clinical guidelines\n(Medical and Trauma), information regarding medications commonly administered by\nemergency medical personnel and important resource documents.\nRecognizing the wide variety in Georgia EMS medical direction, call volume, resources for\ntraining and quality assurance, the many different levels of EMS licensure, and the importance\nof providing pre-hospital care that is consistent with national standards and evidence-based\nmedicine, these documents  reflect the best effort of the Guidelines Revision Group to provide\nthe most important basic information.\nProfessional Judgement\nSince each medical emergency must be dealt with on an individual basis and appropriate care\ndetermined accordingly, professional judgement is mandatory in determining treatment\nmodalities with the parameters of these Guidelines.\nAuthority\nThe authority for implementing these guidelines for care of pre-hospital patients is found in\nstate law OCGA 31-11-60.1 (b) and (c), OCGA 31-11-50 (b) and the Rules of the Department\nof Public Health Chapter 511-9-2.\nIt is the responsibility of each emergency medical service personnel to be familiar with the\nlaws, rules and regulations, and guidelines and adhere to them.  Even an order by a Physician\ndoes not justify procedures not in accordance with the laws, rules and regulations.",
-      "pageText": [
+          "text": "The authority for implementing these guidelines for care of pre-hospital patients is found in state law OCGA 31-11-60.1 (b) and (c), OCGA 31-11-50 (b), and the Rules of the Department of Public Health Chapter 511-9-2."
+        },
         {
-          "page": 9,
-          "text": "General Information\nPurpose\nThe purpose of this document is to provide:\n1) Guidelines regarding permissible and appropriate emergency medical services procedures\nand treatment modalities which may be rendered by emergency medical personnel to a\npatient not in the hospital, and\n2) Communications protocols regarding which medical situations require direct voice\ncommunications between medical personnel and a physician (or his/her designee) prior to\nthose emergency medical personnel rendering specified emergency medical services\nprocedures to a patient not in a hospital.\nThis document is divided into basic general guidelines, pediatric, and adult clinical guidelines\n(Medical and Trauma), information regarding medications commonly administered by\nemergency medical personnel and important resource documents.\nRecognizing the wide variety in Georgia EMS medical direction, call volume, resources for\ntraining and quality assurance, the many different levels of EMS licensure, and the importance\nof providing pre-hospital care that is consistent with national standards and evidence-based\nmedicine, these documents  reflect the best effort of the Guidelines Revision Group to provide\nthe most important basic information.\nProfessional Judgement\nSince each medical emergency must be dealt with on an individual basis and appropriate care\ndetermined accordingly, professional judgement is mandatory in determining treatment\nmodalities with the parameters of these Guidelines.\nAuthority\nThe authority for implementing these guidelines for care of pre-hospital patients is found in\nstate law OCGA 31-11-60.1 (b) and (c), OCGA 31-11-50 (b) and the Rules of the Department\nof Public Health Chapter 511-9-2.\nIt is the responsibility of each emergency medical service personnel to be familiar with the\nlaws, rules and regulations, and guidelines and adhere to them.  Even an order by a Physician\ndoes not justify procedures not in accordance with the laws, rules and regulations."
+          "type": "warning",
+          "text": "It is the responsibility of each emergency medical service personnel to be familiar with the laws, rules and regulations, and guidelines and adhere to them. Even an order by a Physician does not justify procedures not in accordance with the laws, rules and regulations."
         }
       ],
-      "needsReview": true,
-      "extractionNote": "Displayed from the official PDF by default because this page may contain tables, charts, forms, signatures, algorithms, or visual formatting that should not be flattened into text. Convert to structured table/blocks only after manual review.",
-      "displayMode": "pdf-page"
+      "plainText": "General Information. Purpose. The purpose of this document is to provide guidelines regarding permissible and appropriate emergency medical services procedures and treatment modalities, and communications protocols regarding medical situations requiring direct voice communications with a physician or designee. Professional Judgement. Since each medical emergency must be dealt with on an individual basis, professional judgement is mandatory. Authority. The authority for implementing these guidelines is found in OCGA 31-11-60.1 (b) and (c), OCGA 31-11-50 (b), and Rules of the Department of Public Health Chapter 511-9-2.",
+      "needsReview": false
     },
     {
       "id": "legend",
