@@ -5,6 +5,7 @@ let selectedId = null;
 const treeNav = document.getElementById('treeNav');
 const searchBox = document.getElementById('searchBox');
 const installBtn = document.getElementById('installBtn');
+const homeBtn = document.getElementById('homeBtn');
 
 window.addEventListener('beforeinstallprompt', (event) => {
   event.preventDefault();
@@ -25,11 +26,50 @@ async function init() {
   protocolData = await response.json();
   document.getElementById('metaLine').textContent = `Effective ${formatDate(protocolData.meta.effectiveDate)} • ${protocolData.protocols.length} entries`;
   renderTree(protocolData.navigation);
-  const first = protocolData.protocols.find(p => p.type === 'protocol') || protocolData.protocols[0];
-  if (first) showProtocol(first.id);
+  showSplash();
   if ('serviceWorker' in navigator) navigator.serviceWorker.register('service-worker.js').catch(() => {});
 }
 
+function showSplash() {
+  if (!protocolData) return;
+  selectedId = null;
+  markActiveButton();
+
+  const meta = protocolData.meta || {};
+  document.getElementById('protocolType').textContent = 'Welcome';
+  document.getElementById('protocolPages').textContent = '';
+  document.getElementById('protocol-title').textContent = 'Hart County EMS Protocols';
+  document.getElementById('protocolPath').textContent = '';
+  document.getElementById('reviewNotice').hidden = true;
+
+  const content = document.getElementById('protocolContent');
+  content.innerHTML = `
+    <section class="protocol-splash" aria-labelledby="splash-heading">
+      <div class="splash-emblem" aria-hidden="true">
+        <img src="icons/ems-192.png" alt="">
+      </div>
+      <p class="splash-agency">${escapeHtml(meta.agency || 'Hart County Emergency Medical Services')}</p>
+      <h3 id="splash-heading">Prehospital Clinical Operating Protocols &amp; Standing Orders</h3>
+      <p class="splash-effective">Effective ${escapeHtml(formatDate(meta.effectiveDate))}</p>
+      <dl class="splash-leadership">
+        <div><dt>Medical Director</dt><dd>${escapeHtml(meta.medicalDirector || '')}</dd></div>
+        <div><dt>EMS Director</dt><dd>${escapeHtml(meta.emsDirector || '')}</dd></div>
+      </dl>
+      <div class="splash-actions">
+        <button id="browseProtocolsBtn" class="btn btn-primary" type="button">Browse Protocols</button>
+        <a class="btn" href="${escapeHtml(meta.sourcePdf || 'documents/ems/2026-hcems-protocols.pdf')}" target="_blank" rel="noopener">Open Official PDF</a>
+      </div>
+      <p class="splash-note">Use the protocol navigation or search to find clinical guidance.</p>
+    </section>
+  `;
+
+  document.getElementById('browseProtocolsBtn')?.addEventListener('click', () => {
+    searchBox.focus();
+    searchBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  });
+}
+
+homeBtn?.addEventListener('click', showSplash);
 function formatDate(value) {
   if (!value) return 'date not set';
   const [y, m, d] = value.split('-').map(Number);
