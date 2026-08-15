@@ -574,7 +574,7 @@ function renderPediatricAssessmentFlow(block, container) {
   const first = document.createElement('section');
   first.className = 'assessment-stage assessment-first-impression';
   const firstHeading = document.createElement('h3');
-  firstHeading.textContent = block.firstImpression.title;
+  appendRichText(firstHeading, block.firstImpression.title, [], block.firstImpression.titleLinks || []);
   first.appendChild(firstHeading);
   appendFlowItems(block.firstImpression.items, first);
   flow.appendChild(first);

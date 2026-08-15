@@ -2795,18 +2795,21 @@
           "type": "pediatric-assessment-flow",
           "firstImpression": {
             "title": "First Impression (Pediatric Assessment Triangle)",
+            "titleLinks": [
+              {
+                "text": "Pediatric Assessment Triangle",
+                "protocolId": "pediatric-assessment-triangle"
+              }
+            ],
             "items": [
               {
-                "text": "Appearance – Observe muscle tone, interactivity, Consolability, look/gaze, and speech/cry",
-                "emphasizedInitials": ["Appearance"]
+                "text": "Appearance – Observe muscle tone, interactivity, Consolability, look/gaze, and speech/cry"
               },
               {
-                "text": "Breathing – Observe chest wall movement, accessory muscle use, abnormal airway sounds.",
-                "emphasizedInitials": ["Breathing"]
+                "text": "Breathing – Observe chest wall movement, accessory muscle use, abnormal airway sounds."
               },
               {
-                "text": "Circulation – Observe the skin color for pallor, mottling, or cyanosis.",
-                "emphasizedInitials": ["Circulation"]
+                "text": "Circulation – Observe the skin color for pallor, mottling, or cyanosis."
               }
             ]
           },
