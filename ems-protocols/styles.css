@@ -482,3 +482,17 @@ details[open] > .tree-heading.tree-toggle::before {
 /* Preserve nested protocol indentation from the source document */
 .protocol-content .nested-list { margin-left: clamp(1.25rem, 4vw, 2.5rem); }
 @media (max-width: 520px) { .protocol-content .nested-list { margin-left: .8rem; } }
+
+/* Protocol history and cross-references */
+.protocol-history { display: flex; gap: .45rem; }
+.btn-compact { padding: .45rem .7rem; font-size: .88rem; }
+.btn:disabled { cursor: not-allowed; opacity: .45; }
+.reference-link { margin: .85rem 0; }
+.reference-link-control { display: block; width: 100%; padding: .8rem 1rem; border: 1px solid #9fb6ca; border-left: 5px solid #173a5e; border-radius: 0 .7rem .7rem 0; background: #edf3f8; color: #173a5e; font: inherit; font-weight: 800; line-height: 1.5; text-align: left; text-decoration: underline; cursor: pointer; }
+.reference-link-control:hover { background: #e2ebf3; }
+.reference-link-internal .reference-link-control::after { content: "  →"; text-decoration: none; }
+@media (max-width: 440px) {
+  .protocol-topline { align-items: flex-start; }
+  .protocol-history { width: 100%; }
+  .protocol-history .btn { flex: 1; }
+}

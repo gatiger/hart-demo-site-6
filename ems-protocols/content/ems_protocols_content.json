@@ -2086,69 +2086,59 @@
       "id": "safe-transport-of-pediatric-patients",
       "title": "Safe Transport of Pediatric Patients",
       "type": "protocol",
-      "categoryPath": [
-        "General Protocols"
-      ],
+      "categoryPath": ["General Protocols"],
       "status": "active",
       "effectiveDate": "2026-06-08",
       "lastRevised": "",
       "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 22,
-        "pageEnd": 22,
-        "pageLabel": "22"
-      },
-      "summary": "",
+      "tags": ["pediatric transport", "child restraint", "ambulance safety", "NHTSA", "CDC field triage"],
+      "summary": "Safe transport and child-restraint requirements for pediatric patients.",
+      "displayMode": "native",
       "content": [
         {
-          "type": "heading",
-          "level": 2,
-          "text": "Safe Transport of Pediatric Patients"
+          "type": "paragraph",
+          "text": "Children are at risk of injury during transport by EMS. Appropriate protection must be provided for all pediatric patients. The National Highway and Traffic Safety Administration recently published Best Practice Recommendations for Safe Transport of Children."
         },
         {
-          "type": "paragraph",
-          "text": "Children are at risk of injury during transport by EMS. Appropriate protection must be provided for all pediatric patients. The National Highway and Traffic Safety Administration recently published Best Practice Recommendations for Safe Transport of Children. See: http://www.nhtsa.gov/staticfiles/nti/pdf/811677.pdf No child or infant should ever be held in the arms or lap of parent, caregiver, or medic during transport EVER. All monitoring devices and equipment should be tightly secured. All personnel should be secure. Children who are not patients should be transported, properly restrained, in an alternate passenger vehicle, whenever possible. Available child restraint devices should be used for all pediatric patients less than 40 pounds, according to manufacturer’s instructions, if the patient is not secured by other means as part of patient care. Do not transport a pediatric patient who meets CDC Field Triage Criteria in a child seat that was involved in an MVC. While manufacturers do not recommend using a child’s own car seat for transportation post-accident, this may be better than no restraint during transport. Use of child safety seat after involvement in a minor MVC may be allowed if ALL of the following apply:"
+          "type": "external-link",
+          "text": "See: http://www.nhtsa.gov/staticfiles/nti/pdf/811677.pdf",
+          "href": "https://static.nhtsa.gov/nhtsa/downloads/p2017-documents/811677.pdf"
+        },
+        {
+          "type": "warning",
+          "text": "No child or infant should ever be held in the arms or lap of parent, caregiver, or medic during transport EVER."
         },
         {
           "type": "list",
           "items": [
-            "Visual inspection, including under moveable seat padding, does not reveal cracks"
+            "All monitoring devices and equipment should be tightly secured.",
+            "All personnel should be secure.",
+            "Children who are not patients should be transported, properly restrained, in an alternate passenger vehicle, whenever possible.",
+            "Available child restraint devices should be used for all pediatric patients less than 40 pounds, according to manufacturer's instructions, if the patient is not secured by other means as part of patient care."
           ]
         },
         {
-          "type": "paragraph",
-          "text": "or deformity."
-        },
-        {
-          "type": "list",
-          "items": [
-            "Vehicle in which safety seat was installed was capable of being driven from the"
-          ]
+          "type": "protocol-link",
+          "text": "Do not transport a pediatric patient who meets CDC Field Triage Criteria in a child seat that was involved in an MVC.",
+          "protocolId": "cdc-field-triage-of-injured-patients"
         },
         {
           "type": "paragraph",
-          "text": "scene."
+          "text": "While manufacturers do not recommend using a child's own car seat for transportation post-accident, this may be better than no restraint during transport. Use of child safety seat after involvement in a minor MVC may be allowed if ALL of the following apply:"
         },
         {
           "type": "list",
+          "indent": 1,
           "items": [
+            "Visual inspection, including under moveable seat padding, does not reveal cracks or deformity.",
+            "Vehicle in which safety seat was installed was capable of being driven from the scene.",
             "Vehicle door nearest the child safety seat was undamaged.",
             "Air bags (if any) did not deploy."
           ]
         }
       ],
-      "plainText": "Safe Transport of Pediatric Patients\nChildren are at risk of injury during transport by EMS.  Appropriate protection must be provided\nfor all pediatric patients.  The National Highway and Traffic Safety Administration recently\npublished Best Practice Recommendations for Safe Transport of Children.\nSee: http://www.nhtsa.gov/staticfiles/nti/pdf/811677.pdf\n•\nNo child or infant should ever be held in the arms or lap of parent, caregiver, or medic\nduring transport EVER.\n•\nAll monitoring devices and equipment should be tightly secured.\n•\nAll personnel should be secure.\n•\nChildren who are not patients should be transported, properly restrained, in an alternate\npassenger vehicle, whenever possible.\n•\nAvailable child restraint devices should be used for all pediatric patients less than 40\npounds, according to manufacturer’s instructions, if the patient is not secured by other\nmeans as part of patient care.\n•\nDo not transport a pediatric patient who meets CDC Field Triage Criteria in a child seat\nthat was involved in an MVC.\n•\nWhile manufacturers do not recommend using a child’s own car seat for transportation\npost-accident, this may be better than no restraint during transport. Use of child safety\nseat after involvement in a minor MVC may be allowed if ALL of the following apply:\no Visual inspection, including under moveable seat padding, does not reveal cracks\nor deformity.\no Vehicle in which safety seat was installed was capable of being driven from the\nscene.\no Vehicle door nearest the child safety seat was undamaged.\no Air bags (if any) did not deploy.",
-      "pageText": [
-        {
-          "page": 22,
-          "text": "Safe Transport of Pediatric Patients\nChildren are at risk of injury during transport by EMS.  Appropriate protection must be provided\nfor all pediatric patients.  The National Highway and Traffic Safety Administration recently\npublished Best Practice Recommendations for Safe Transport of Children.\nSee: http://www.nhtsa.gov/staticfiles/nti/pdf/811677.pdf\n•\nNo child or infant should ever be held in the arms or lap of parent, caregiver, or medic\nduring transport EVER.\n•\nAll monitoring devices and equipment should be tightly secured.\n•\nAll personnel should be secure.\n•\nChildren who are not patients should be transported, properly restrained, in an alternate\npassenger vehicle, whenever possible.\n•\nAvailable child restraint devices should be used for all pediatric patients less than 40\npounds, according to manufacturer’s instructions, if the patient is not secured by other\nmeans as part of patient care.\n•\nDo not transport a pediatric patient who meets CDC Field Triage Criteria in a child seat\nthat was involved in an MVC.\n•\nWhile manufacturers do not recommend using a child’s own car seat for transportation\npost-accident, this may be better than no restraint during transport. Use of child safety\nseat after involvement in a minor MVC may be allowed if ALL of the following apply:\no Visual inspection, including under moveable seat padding, does not reveal cracks\nor deformity.\no Vehicle in which safety seat was installed was capable of being driven from the\nscene.\no Vehicle door nearest the child safety seat was undamaged.\no Air bags (if any) did not deploy."
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
+      "plainText": "Safe Transport of Pediatric Patients. Children are at risk of injury during transport by EMS. Appropriate protection must be provided for all pediatric patients.",
+      "needsReview": false
     },
     {
       "id": "patients-with-special-healthcare-needs",

@@ -1,11 +1,15 @@
 let protocolData;
 let deferredPrompt;
 let selectedId = null;
+let viewHistory = [];
+let viewHistoryIndex = -1;
 
 const treeNav = document.getElementById('treeNav');
 const searchBox = document.getElementById('searchBox');
 const installBtn = document.getElementById('installBtn');
 const homeBtn = document.getElementById('homeBtn');
+const backBtn = document.getElementById('backBtn');
+const forwardBtn = document.getElementById('forwardBtn');
 
 window.addEventListener('beforeinstallprompt', (event) => {
   event.preventDefault();
@@ -235,10 +239,19 @@ function renderItems(items, container, matches, term) {
   }
 }
 
-function showProtocol(id) {
+function showProtocol(id, options = {}) {
+  const shouldRecordHistory = options.recordHistory !== false;
   const protocol = protocolData.protocols.find(p => p.id === id);
   if (!protocol) return;
+
+  if (shouldRecordHistory && viewHistory[viewHistoryIndex] !== id) {
+    viewHistory = viewHistory.slice(0, viewHistoryIndex + 1);
+    viewHistory.push(id);
+    viewHistoryIndex = viewHistory.length - 1;
+  }
+
   selectedId = id;
+  updateHistoryButtons();
   markActiveButton();
 
   document.getElementById('protocolType').textContent = protocol.type;
@@ -258,7 +271,7 @@ function showProtocol(id) {
     return;
   }
 
-  if (protocol.displayMode === 'pdf-page' && !(protocol.content || []).length) {
+  if (protocol.displayMode === 'pdf-page') {
 
     const imageWrap = document.createElement('div');
     imageWrap.className = 'pdf-page-image-wrap';
@@ -282,18 +295,6 @@ function showProtocol(id) {
     }
     content.appendChild(imageWrap);
 
-    if (protocol.plainText) {
-      const details = document.createElement('details');
-      details.className = 'extracted-text-details';
-      const summary = document.createElement('summary');
-      summary.textContent = 'Show extracted searchable text';
-      const pre = document.createElement('pre');
-      pre.className = 'plain-text-fallback';
-      pre.textContent = protocol.plainText;
-      details.appendChild(summary);
-      details.appendChild(pre);
-      content.appendChild(details);
-    }
     return;
   }
 
@@ -383,7 +384,52 @@ function renderLegend(legend, container) {
 
   container.appendChild(section);
 }
+function renderReferenceLink(block, container) {
+  const wrap = document.createElement('div');
+  wrap.className = `reference-link ${block.type === 'protocol-link' ? 'reference-link-internal' : 'reference-link-external'}`;
+
+  if (block.type === 'protocol-link') {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'reference-link-control';
+    button.textContent = block.text || block.label || '';
+    button.addEventListener('click', () => showProtocol(block.protocolId));
+    wrap.appendChild(button);
+  } else {
+    const link = document.createElement('a');
+    link.className = 'reference-link-control';
+    link.href = block.href || '#';
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.textContent = block.text || block.label || block.href || '';
+    wrap.appendChild(link);
+  }
+
+  container.appendChild(wrap);
+}
+
+function updateHistoryButtons() {
+  if (backBtn) backBtn.disabled = viewHistoryIndex <= 0;
+  if (forwardBtn) forwardBtn.disabled = viewHistoryIndex < 0 || viewHistoryIndex >= viewHistory.length - 1;
+}
+
+backBtn?.addEventListener('click', () => {
+  if (viewHistoryIndex <= 0) return;
+  viewHistoryIndex -= 1;
+  showProtocol(viewHistory[viewHistoryIndex], { recordHistory: false });
+});
+
+forwardBtn?.addEventListener('click', () => {
+  if (viewHistoryIndex >= viewHistory.length - 1) return;
+  viewHistoryIndex += 1;
+  showProtocol(viewHistory[viewHistoryIndex], { recordHistory: false });
+});
 function renderBlock(block, container) {
+  if (block.type === 'external-link' || block.type === 'protocol-link') {
+    renderReferenceLink(block, container);
+    return;
+  }
+
   if (block.type === 'heading') {
     const level = block.level === 2 ? 'h3' : 'h4';
     const h = document.createElement(level);

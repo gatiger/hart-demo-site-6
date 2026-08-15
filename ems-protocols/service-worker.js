@@ -1,4 +1,4 @@
-const CACHE_NAME = 'hcems-protocols-v30';
+const CACHE_NAME = 'hcems-protocols-v31';
 const APP_SHELL = [
   './',
   './index.html',
@@ -6,6 +6,7 @@ const APP_SHELL = [
   './app.js',
   './manifest.json',
   './assets/Hart_EMS_Banner.webp',
+  './page-images/page-211.jpg',
   './content/ems_protocols_content.json',
 ];
 self.addEventListener('install', event => {
