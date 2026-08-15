@@ -3531,7 +3531,7 @@
       "needsReview": false
     },    {
       "id": "pediatric-apparent-life-threatening-event",
-      "title": "Pediatric Apparent Life-Threatening Event",
+      "title": "Pediatric Apparent Life-Threatening Event (ALTE)",
       "type": "protocol",
       "categoryPath": [
         "Pediatric Clinical Protocols"
@@ -3540,46 +3540,242 @@
       "effectiveDate": "2026-06-08",
       "lastRevised": "",
       "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 41,
-        "pageEnd": 41,
-        "pageLabel": "41"
-      },
-      "summary": "",
+      "tags": [
+        "ALTE",
+        "apnea",
+        "infant",
+        "pediatric transport"
+      ],
+      "summary": "Assessment, treatment, transport, and documentation guidance for pediatric apparent life-threatening events.",
+      "displayMode": "native",
       "content": [
+        {
+          "type": "paragraph",
+          "text": "This protocol applies to the pediatric patient that has experienced an episode that is frightening to the observer and involved some combination of apnea, choking or gagging, color change, and/or marked change in muscle tone (infant is “floppy”). ALTE usually occurs in infants less than 12 months old."
+        },
         {
           "type": "heading",
           "level": 2,
-          "text": "Pediatric Apparent Life-Threatening Event (ALTE)"
+          "text": "First Impression (Pediatric Assessment Triangle)",
+          "links": [
+            {
+              "text": "Pediatric Assessment Triangle",
+              "protocolId": "pediatric-assessment-triangle"
+            }
+          ]
         },
         {
-          "type": "paragraph",
-          "text": "This protocol applies to the pediatric patient that has experienced an episode that is frightening to the observer and involved some combination of apnea, choking or gagging, color change, and/or marked change in muscle tone (infant is “floppy”). ALTE usually occurs in infants less than 12 months old. First Impression (Pediatric Assessment Triangle) Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry. Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds. Circulation – observe skin color for pallor, mottling and/or cyanosis. Secondary Assessment and History Ensure airway – ensure patency and proper positioning. Consider Spinal Mobile Restriction if evidence of trauma. Assess Breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%. Assist with Bag Valve Mask if ineffective respiratory effort. Assess Circulation – manage shock appropriately. See Shock Protocol. Assess Disability – Assess LOC Exposure/Environment – expose injures as needed. Take measures to prevent hypothermia. Secondary Assessment and History Monitor vital signs and O2 saturation. Perform Blood Glucose Analysis – Treat if BGL is < 60mg/dl. If BGL is less than 60 mg/dl and the patient is symptomatic < 6 months : 5 ml/kg of D10 IV/IO. 6 months – 2 years : 2 ml/kg of D25 IV/IO. > 2 years – 1 ml/kg of D50 IV/IO Initiate Cardiac Monitoring Complete and thorough history and physical Assess for history of apnea, decreased tone, pallor or cyanosis. Obtain history of medication/toxin exposure and/or ingestions. Initiate IV/IO – Normal Saline KVO . If fluid resuscitation is needed, 20 ml/kg bolus IV/IO normal saline TRANSPORT !!! Often patients with ALTE are asymptomatic when EMS arrives. Evaluation and transport are still needed. Contact Medical control if parent/guardian is refusing medical care and/or transport. If patient shows continued respiratory depression, consider administration of Naloxone 0.01 mg/kg IV/IO/IM. If no clinical improvement is observed with initial dose, 0.1 mg/kg may be administered. Max dose - 2mg."
+          "type": "list",
+          "items": [
+            "Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.",
+            "Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.",
+            "Circulation – observe skin color for pallor, mottling and/or cyanosis."
+          ]
         },
         {
           "type": "heading",
-          "level": 3,
-          "text": "Document"
+          "level": 2,
+          "text": "Secondary Assessment and History"
         },
         {
-          "type": "paragraph",
-          "text": "Vital Signs Pertinent assessment findings Onset/duration of event Treatment Communications with Medical Control"
-        }
-      ],
-      "plainText": "Pediatric Apparent Life-Threatening Event (ALTE)\nThis protocol applies to the pediatric patient that has experienced an episode that is frightening to the\nobserver and involved some combination of apnea, choking or gagging, color change, and/or marked\nchange in muscle tone (infant is “floppy”). ALTE usually occurs in infants less than 12 months old.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis.\nSecondary Assessment and History\n•\nEnsure airway – ensure patency and proper positioning.\no\nConsider Spinal Mobile Restriction if evidence of trauma.\n•\nAssess Breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%.\no\nAssist with Bag Valve Mask if ineffective respiratory effort.\n•\nAssess Circulation – manage shock appropriately. See Shock Protocol.\n•\nAssess Disability – Assess LOC\n•\nExposure/Environment – expose injures as needed.\no\nTake measures to prevent hypothermia.\nSecondary Assessment and History\n•\nMonitor vital signs and O2 saturation.\n•\nPerform Blood Glucose Analysis – Treat if BGL is < 60mg/dl.\no\nIf BGL is less than 60 mg/dl and the patient is symptomatic\n▪\n< 6 months : 5 ml/kg of D10 IV/IO.\n▪\n6 months – 2 years : 2 ml/kg of D25 IV/IO.\n▪\n> 2 years – 1 ml/kg of D50 IV/IO\n•\nInitiate Cardiac Monitoring\n•\nComplete and thorough history and physical\no\nAssess for history of apnea, decreased tone, pallor or cyanosis.\no\nObtain history of medication/toxin exposure and/or ingestions.\n•\nInitiate IV/IO – Normal Saline KVO\no\n. If fluid resuscitation is needed, 20 ml/kg bolus IV/IO normal saline\nTRANSPORT !!! Often patients with ALTE are asymptomatic when EMS arrives. Evaluation\nand transport are still needed. Contact Medical control if parent/guardian is refusing\nmedical care and/or transport.\n•\nIf patient shows continued respiratory depression, consider administration of Naloxone 0.01\nmg/kg IV/IO/IM. If no clinical improvement is observed with initial dose, 0.1 mg/kg may be\nadministered. Max dose - 2mg.\nDocument:\no\nVital Signs\no\nPertinent assessment\nfindings\no\nOnset/duration of\nevent\no\nTreatment\no\nCommunications with\nMedical Control",
-      "pageText": [
+          "type": "list",
+          "items": [
+            {
+              "text": "Ensure airway – ensure patency and proper positioning.",
+              "bold": ["Ensure airway"]
+            }
+          ]
+        },
         {
-          "page": 41,
-          "text": "Pediatric Apparent Life-Threatening Event (ALTE)\nThis protocol applies to the pediatric patient that has experienced an episode that is frightening to the\nobserver and involved some combination of apnea, choking or gagging, color change, and/or marked\nchange in muscle tone (infant is “floppy”). ALTE usually occurs in infants less than 12 months old.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis.\nSecondary Assessment and History\n•\nEnsure airway – ensure patency and proper positioning.\no\nConsider Spinal Mobile Restriction if evidence of trauma.\n•\nAssess Breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%.\no\nAssist with Bag Valve Mask if ineffective respiratory effort.\n•\nAssess Circulation – manage shock appropriately. See Shock Protocol.\n•\nAssess Disability – Assess LOC\n•\nExposure/Environment – expose injures as needed.\no\nTake measures to prevent hypothermia.\nSecondary Assessment and History\n•\nMonitor vital signs and O2 saturation.\n•\nPerform Blood Glucose Analysis – Treat if BGL is < 60mg/dl.\no\nIf BGL is less than 60 mg/dl and the patient is symptomatic\n▪\n< 6 months : 5 ml/kg of D10 IV/IO.\n▪\n6 months – 2 years : 2 ml/kg of D25 IV/IO.\n▪\n> 2 years – 1 ml/kg of D50 IV/IO\n•\nInitiate Cardiac Monitoring\n•\nComplete and thorough history and physical\no\nAssess for history of apnea, decreased tone, pallor or cyanosis.\no\nObtain history of medication/toxin exposure and/or ingestions.\n•\nInitiate IV/IO – Normal Saline KVO\no\n. If fluid resuscitation is needed, 20 ml/kg bolus IV/IO normal saline\nTRANSPORT !!! Often patients with ALTE are asymptomatic when EMS arrives. Evaluation\nand transport are still needed. Contact Medical control if parent/guardian is refusing\nmedical care and/or transport.\n•\nIf patient shows continued respiratory depression, consider administration of Naloxone 0.01\nmg/kg IV/IO/IM. If no clinical improvement is observed with initial dose, 0.1 mg/kg may be\nadministered. Max dose - 2mg.\nDocument:\no\nVital Signs\no\nPertinent assessment\nfindings\no\nOnset/duration of\nevent\no\nTreatment\no\nCommunications with\nMedical Control"
+          "type": "list",
+          "indent": 1,
+          "items": [
+            {
+              "text": "Consider Spinal Motion Restriction if evidence of trauma.",
+              "links": [
+                {
+                  "text": "Spinal Motion Restriction",
+                  "protocolId": "spinal-motion-restriction"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "text": "Assess Breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 ≥ 94%.",
+              "bold": ["Assess Breathing", "Maintain SpO2 ≥ 94%."]
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "indent": 1,
+          "items": ["Assist with Bag Valve Mask if ineffective respiratory effort."]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "text": "Assess Circulation – manage shock appropriately. See Shock Protocol.",
+              "bold": ["Assess Circulation"],
+              "links": [
+                {
+                  "text": "Shock Protocol",
+                  "protocolId": "shock-management"
+                }
+              ]
+            },
+            {
+              "text": "Assess Disability – Assess LOC",
+              "bold": ["Assess Disability"]
+            },
+            {
+              "text": "Exposure/Environment – expose injuries as needed.",
+              "bold": ["Exposure/Environment"]
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "indent": 1,
+          "items": ["Take measures to prevent hypothermia."]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Secondary Assessment and History"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Monitor vital signs and O2 saturation.",
+            {
+              "text": "Perform Blood Glucose Analysis – Treat if BGL is < 60mg/dl.",
+              "bold": ["BGL is < 60mg/dl."]
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "indent": 1,
+          "items": ["If BGL is less than 60 mg/dl and the patient is symptomatic"]
+        },
+        {
+          "type": "list",
+          "indent": 1,
+          "items": [
+            {
+              "text": "< 6 months : 5 ml/kg of D10 IV/IO.",
+              "bold": ["5 ml/kg"],
+              "links": [
+                {
+                  "text": "D10",
+                  "protocolId": "dextrose-d10-25-50"
+                }
+              ]
+            },
+            {
+              "text": "6 months – 2 years : 2 ml/kg of D25 IV/IO.",
+              "bold": ["2 ml/kg"],
+              "links": [
+                {
+                  "text": "D25",
+                  "protocolId": "dextrose-d10-25-50"
+                }
+              ]
+            },
+            {
+              "text": "> 2 years – 1 ml/kg of D50 IV/IO",
+              "bold": ["1 ml/kg"],
+              "links": [
+                {
+                  "text": "D50",
+                  "protocolId": "dextrose-d10-25-50"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "Initiate Cardiac Monitoring",
+            {
+              "text": "Complete and thorough history and physical",
+              "bold": ["history and physical"]
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "indent": 1,
+          "items": [
+            "Assess for history of apnea, decreased tone, pallor or cyanosis.",
+            "Obtain history of medication/toxin exposure and/or ingestions."
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "text": "Initiate IV/IO – Normal Saline KVO",
+              "links": [
+                {
+                  "text": "Normal Saline",
+                  "protocolId": "normal-saline"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "indent": 1,
+          "items": ["If fluid resuscitation is needed, 20 ml/kg bolus IV/IO normal saline"]
+        },
+        {
+          "type": "icon-note",
+          "image": "assets/legend-important.webp",
+          "alt": "Important protocol information",
+          "text": "TRANSPORT !!! Often patients with ALTE are asymptomatic when EMS arrives. Evaluation and transport are still needed. Contact Medical control if parent/guardian is refusing medical care and/or transport.",
+          "bold": ["TRANSPORT !!! Often patients with ALTE are asymptomatic when EMS arrives. Evaluation and transport are still needed. Contact Medical control if parent/guardian is refusing medical care and/or transport."],
+          "red": true
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "text": "If patient shows continued respiratory depression, consider administration of Naloxone 0.01 mg/kg IV/IO/IM. If no clinical improvement is observed with initial dose, 0.1 mg/kg may be administered. Max dose - 2mg.",
+              "bold": ["0.01 mg/kg IV/IO/IM.", "0.1 mg/kg", "Max dose - 2mg."],
+              "links": [
+                {
+                  "text": "Naloxone",
+                  "protocolId": "naloxone-narcan"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "documentation-card",
+          "title": "Document:",
+          "image": "assets/legend-documentation.webp",
+          "alt": "Patient care documentation reminder symbol",
+          "items": [
+            "Vital Signs",
+            "Pertinent assessment findings",
+            "Onset/duration of event",
+            "Treatment",
+            "Communications with Medical Control"
+          ]
         }
       ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText": "Pediatric Apparent Life-Threatening Event (ALTE). This protocol applies to a pediatric patient who has experienced a frightening episode involving apnea, choking or gagging, color change, or marked change in muscle tone. Assessment, treatment, transport, and documentation guidance are included.",
+      "needsReview": false
+    },    {
       "id": "childbirth",
       "title": "Childbirth",
       "type": "protocol",
