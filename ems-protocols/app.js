@@ -658,7 +658,7 @@ function renderIconNote(block, container) {
   image.loading = 'lazy';
   section.appendChild(image);
   const text = document.createElement('p');
-  appendRichText(text, block.text || '', block.bold || [], block.links || [], [], block.red ? [block.text] : []);
+  appendRichText(text, block.text || '', block.bold || [], block.links || []);
   section.appendChild(text);
   container.appendChild(section);
 }
@@ -679,7 +679,23 @@ function renderDocumentationCard(block, container) {
   section.appendChild(body);
   container.appendChild(section);
 }
+function renderStopControl(block, container) {
+  const section = document.createElement('section');
+  section.className = 'stop-medical-control';
+  const stop = document.createElement('strong');
+  stop.textContent = block.title || 'STOP';
+  section.appendChild(stop);
+  const instruction = document.createElement('span');
+  instruction.textContent = block.text || 'CONTACT MEDICAL CONTROL';
+  section.appendChild(instruction);
+  container.appendChild(section);
+}
 function renderBlock(block, container) {
+  if (block.type === 'stop-control') {
+    renderStopControl(block, container);
+    return;
+  }
+
   if (block.type === 'protocol-image') {
     renderProtocolImage(block, container);
     return;
@@ -797,9 +813,16 @@ function renderPdfStyleTable(block, container) {
 
   const table = document.createElement('table');
   table.className = 'pdf-table';
+  if (block.className) table.classList.add(...String(block.className).split(/\s+/).filter(Boolean));
   if (block.caption) {
     const caption = document.createElement('caption');
     caption.textContent = block.caption;
+    if (block.subtitle) {
+      const subtitle = document.createElement('span');
+      subtitle.className = 'table-caption-subtitle';
+      subtitle.textContent = block.subtitle;
+      caption.appendChild(subtitle);
+    }
     table.appendChild(caption);
   }
 
@@ -826,8 +849,10 @@ function renderPdfStyleTable(block, container) {
   }
 
   const tbody = document.createElement('tbody');
-  (block.rows || []).forEach((row, index) => {
+  (block.rows || []).forEach((rowData, index) => {
+    const row = Array.isArray(rowData) ? rowData : (rowData.cells || []);
     const tr = document.createElement('tr');
+    if (!Array.isArray(rowData) && rowData.background) tr.classList.add(`table-row-`);
     if (looksLikeUnitRow(row) && index === 0 && block.headers?.length) tr.classList.add('unit-row');
     for (const rawCell of row) {
       const cell = normalizeCell(rawCell);
@@ -841,6 +866,12 @@ function renderPdfStyleTable(block, container) {
   });
   table.appendChild(tbody);
   wrap.appendChild(table);
+  if (block.note) {
+    const note = document.createElement('p');
+    note.className = 'table-footnote';
+    note.textContent = block.note;
+    wrap.appendChild(note);
+  }
   container.appendChild(wrap);
 }
 

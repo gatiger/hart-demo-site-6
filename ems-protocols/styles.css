@@ -521,6 +521,7 @@ details[open] > .tree-heading.tree-toggle::before {
 .protocol-icon-note img { display: block; width: 3.5rem; height: 3.5rem; object-fit: contain; }
 .protocol-icon-note p { margin: 0; }
 .protocol-icon-note-red { border-color: #dcaaaa; background: #fff1f1; }
+.protocol-icon-note-red p { color: #c31515; font-weight: 900; }
 .protocol-documentation-card { display: grid; grid-template-columns: minmax(110px, 170px) 1fr; align-items: center; gap: 1rem; margin: 1rem 0; padding: 1rem 1.15rem; border: 1px dashed #173a5e; border-radius: .75rem; background: #f8fbfd; }
 .protocol-documentation-card img { display: block; width: 100%; max-height: 170px; object-fit: contain; }
 .protocol-documentation-card h3 { margin-top: 0; }
@@ -529,6 +530,23 @@ details[open] > .tree-heading.tree-toggle::before {
 .protocol-reference-image img { display: block; width: 100%; height: auto; }
 .protocol-reference-image figcaption { margin-top: .45rem; color: #52697b; font-size: .9rem; text-align: center; }
 @media (max-width: 520px) { .protocol-documentation-card { grid-template-columns: 86px 1fr; padding: .8rem; } .protocol-icon-note { grid-template-columns: 2.75rem 1fr; } .protocol-icon-note img { width: 2.75rem; height: 2.75rem; } }
+.stop-medical-control { display: grid; place-items: center; width: min(16rem, 80%); min-height: 7.5rem; margin: 1.5rem auto; padding: 1.1rem 2rem; clip-path: polygon(29% 0, 71% 0, 100% 29%, 100% 71%, 71% 100%, 29% 100%, 0 71%, 0 29%); background: #e50909; color: #fff; text-align: center; text-transform: uppercase; }
+.stop-medical-control strong { font-size: 1.45rem; line-height: 1; text-decoration: underline; }
+.stop-medical-control span { font-weight: 900; line-height: 1.2; }
+.dopamine-dose-table caption { padding: .45rem .65rem; background: #050505; color: #fff; text-align: center; }
+.dopamine-dose-table .table-caption-subtitle { display: block; margin-top: .15rem; font-size: .78rem; font-weight: 800; }
+.dopamine-dose-table th, .dopamine-dose-table td { padding: .28rem .38rem; text-align: center; vertical-align: middle; }
+.dopamine-dose-table .table-row-gray > * { background: #c7c7c7 !important; }
+.dopamine-dose-table .table-row-pink > * { background: #e8a7ad !important; }
+.dopamine-dose-table .table-row-red > * { background: #ed1111 !important; color: #000; }
+.dopamine-dose-table .table-row-purple > * { background: #6621b6 !important; color: #fff; }
+.dopamine-dose-table .table-row-yellow > * { background: #fff019 !important; }
+.dopamine-dose-table .table-row-white > * { background: #fff !important; }
+.dopamine-dose-table .table-row-blue > * { background: #4a87c7 !important; }
+.dopamine-dose-table .table-row-orange > * { background: #f58217 !important; }
+.dopamine-dose-table .table-row-green > * { background: #12b763 !important; }
+.table-footnote { margin: .25rem 0 0; font-size: .85rem; font-weight: 800; text-align: center; }
+@media (max-width: 650px) { .dopamine-dose-table { min-width: 780px; } }
 .reference-link { margin: .85rem 0; }
 .reference-link-control { display: block; width: 100%; padding: .8rem 1rem; border: 1px solid #9fb6ca; border-left: 5px solid #173a5e; border-radius: 0 .7rem .7rem 0; background: #edf3f8; color: #173a5e; font: inherit; font-weight: 800; line-height: 1.5; text-align: left; text-decoration: underline; cursor: pointer; }
 .reference-link-control:hover { background: #e2ebf3; }

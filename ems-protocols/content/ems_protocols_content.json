@@ -3245,7 +3245,7 @@
       "needsReview": false
     },    {
       "id": "shock-sepsis-management",
-      "title": "Shock / Sepsis Management",
+      "title": "Pediatric Shock Management",
       "type": "protocol",
       "categoryPath": [
         "Pediatric Clinical Protocols"
@@ -3254,50 +3254,280 @@
       "effectiveDate": "2026-06-08",
       "lastRevised": "",
       "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 39,
-        "pageEnd": 40,
-        "pageLabel": "39-40"
-      },
-      "summary": "",
+      "tags": [
+        "pediatric shock",
+        "tissue perfusion",
+        "fluid resuscitation",
+        "dopamine"
+      ],
+      "summary": "Pediatric shock assessment, resuscitation, Medical Control consultation, and Dopamine infusion guidance.",
+      "displayMode": "native",
       "content": [
+        {
+          "type": "paragraph",
+          "text": "This protocol applies to pediatric patients presenting with signs and symptoms consistent with shock. All forms of shock are associated with inadequate tissue perfusion.",
+          "bold": ["All forms of shock are associated with inadequate tissue perfusion."]
+        },
         {
           "type": "heading",
           "level": 2,
-          "text": "Pediatric Shock Management"
+          "text": "First Impression (Pediatric Assessment Triangle)",
+          "links": [
+            {
+              "text": "Pediatric Assessment Triangle",
+              "protocolId": "pediatric-assessment-triangle"
+            }
+          ]
         },
         {
-          "type": "paragraph",
-          "text": "First Impression (Pediatric Assessment Triangle) Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry. Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds. Circulation – observe the skin color for pallor, mottling, and/or cyanosis. Primary Survey Ensure airway – ensure patency and proper positioning. Consider Spinal Motion Restriction if evidence of trauma. Assess Breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%. Assist with bag valve mask if ineffective respiratory effort. Assess Circulation – control bleeding if present. Assess Disability – Assess LOC Exposure/Environment – expose injures as needed. take measures to prevent hypothermia. Children possess very strong compensatory mechanisms which allow them to appear relatively well in early shock. However, once these compensatory mechanisms are overwhelmed, they tend to decompensate rapidly. Early manifestations of shock may be subtle. The perfusion status of infants and children must be evaluated carefully and frequently. See Shock Protocol. Secondary Assessment and History Monitor vital signs and SpO2. Perform Blood Glucose analysis – Treat if BGL is < 60 mg/dl. Initiate Cardiac Monitoring – treat dysrhythmias per appropriate protocol. Initiate EtCO2 monitoring – Maintain EtCO2 of 30-35 mmHg. OPQRST/SAMPLE history Physical Exam Keep the patient NPO. Advanced airway/ventilatory management as needed. Initiate IV/IO For Hypovolemic Shock, administer Lactated Ringers. 20ml/kg bolus For Cardiogenic Shock, administer Normal Saline at KVO rate. For all other types of shock, administer Normal Saline 20ml/kg bolus. Fluid boluses may be repeated x 1 – titrate to clinical effect. Attempt to identify cause and treat in accordance with appropriate guideline. (e.g. tension pneumothorax, overdose, trauma, etc.) This protocol applies to pediatric patients presenting with signs and symptoms consistent with shock. All forms of shock are associated with inadequate tissue perfusion. Dopamine Infusion: Standard 1600mcg/ml Concentration Broselow Color Weight (kg) Milliliters hour or drops per minute with micro drip tubing (60gtt/ml) 5 mcg/kg/hr 7.5 mcg/kg/hr 10 mcg/kg/hr 15 mcg/kg/hr 20 mcg/kg/hr Gray 3 0.6* 0.8* 1.1 1.7 2.3 Gray 4 0.8* 1.1 1.5 2.3 3.0 Gray 5 0.9* 1.4 1.9 2.8 3.8 Pink 6-7 1.2 1.9 2.4 3.7 4.9 Red 8-9 1.6 2.4 3.2 4.8 6.4 Purple 10-11 2 3 3.9 5.9 7.9 Yellow 12-14 2.4 3.7 4.9 7.3 9.8 White 15-18 3.1 4.7 6.2 9.3 12.4 Blue 19-23 3.9 5.9 7.9 11.8 15.8 Orange 24-29 5 7.5 9.9 14.9 19.9 Green 30-36 6.2 9.3 12.4 18.6 24.8 *For rates <1 mL/hour, consider using 800 mcg/mL concentration. Dopamine Infusion: 800 mcg/ml Concentration Broselow Color Weight (kg) Milliliters/hr. or drops per minute with micro drip tubing (60gtt/min) 5mcg/kg/hr 77.5mcg/kg/hr. 10mcg/kg/hr. 15mcg/kg/hr. 20mcg/kg/hr. Gray 3 1.1 1.7 2.3 3.4 4.5 Gray 4 1.5 2.3 3.0 4.5 6 Gray 5 1.9 2.8 3.8 5.6 7.5 Pediatric Shock Management (Continued) Initiate transport as soon as possible. Continue resuscitation and evaluation enroute – Frequently reevaluate ABCs and mental status. CONTACT MEDICAL CONTROL If patient deteriorates or fails to improve, Medical Control may authorize the following: For Hypovolemic shock, administer additional 20 ml/kg Lactated Ringers bolus. For Cardiogenic shock, ensure rate and rhythm have been treated Consider Dopamine drip 5-20 mcg/kg/min – titrate to clinical effect For all other types of shock administer Normal Saline 20ml/kg bolus."
+          "type": "list",
+          "items": [
+            "Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.",
+            "Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.",
+            "Circulation – observe the skin color for pallor, mottling, and/or cyanosis."
+          ]
         },
         {
           "type": "heading",
-          "level": 3,
-          "text": "Document"
+          "level": 2,
+          "text": "Primary Survey"
         },
         {
-          "type": "paragraph",
-          "text": "Vital Signs OPQRST/SAMPLE Cardiac rhythm Treatment(s) Communications with Medical Control"
-        }
-      ],
-      "plainText": "Pediatric Shock Management\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe the skin color for pallor, mottling, and/or cyanosis.\nPrimary Survey\n•\nEnsure airway – ensure patency and proper positioning.\no\nConsider Spinal Motion Restriction if evidence of trauma.\n•\nAssess Breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%.\no\nAssist with bag valve mask if ineffective respiratory effort.\n•\nAssess Circulation – control bleeding if present.\n•\nAssess Disability – Assess LOC\n•\nExposure/Environment – expose injures as needed.\no\ntake measures to prevent hypothermia.\nChildren possess very strong compensatory mechanisms which allow them to appear\nrelatively well in early shock. However, once these compensatory mechanisms are\noverwhelmed, they tend to decompensate rapidly. Early manifestations of shock may be\nsubtle. The perfusion status of infants and children must be evaluated carefully and\nfrequently. See Shock Protocol.\nSecondary Assessment and History\n•\nMonitor vital signs and SpO2.\n•\nPerform Blood Glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nInitiate Cardiac Monitoring – treat dysrhythmias per appropriate protocol.\n•\nInitiate EtCO2 monitoring – Maintain EtCO2 of 30-35 mmHg.\n•\nOPQRST/SAMPLE history\n•\nPhysical Exam\n•\nKeep the patient NPO.\n•\nAdvanced airway/ventilatory management as needed.\n•\nInitiate IV/IO\no\nFor Hypovolemic Shock, administer Lactated Ringers. 20ml/kg bolus\no\nFor Cardiogenic Shock, administer Normal Saline at KVO rate.\no\nFor all other types of shock, administer Normal Saline 20ml/kg bolus.\no\nFluid boluses may be repeated x 1 – titrate to clinical effect.\n•\nAttempt to identify cause and treat in accordance with appropriate guideline. (e.g. tension\npneumothorax, overdose, trauma, etc.)\nThis protocol applies to pediatric patients presenting with signs and symptoms consistent with\nshock. All forms of shock are associated with inadequate tissue perfusion.\nDopamine Infusion:  Standard 1600mcg/ml Concentration\nBroselow\nColor\nWeight\n(kg)\nMilliliters hour or drops per minute with micro drip tubing (60gtt/ml)\n5 mcg/kg/hr      7.5 mcg/kg/hr     10 mcg/kg/hr       15 mcg/kg/hr       20 mcg/kg/hr\nGray\n3\n0.6*\n0.8*\n1.1\n1.7\n2.3\nGray\n4\n0.8*\n1.1\n1.5\n2.3\n3.0\nGray\n5\n0.9*\n1.4\n1.9\n2.8\n3.8\nPink\n6-7\n1.2\n1.9\n2.4\n3.7\n4.9\nRed\n8-9\n1.6\n2.4\n3.2\n4.8\n6.4\nPurple\n10-11\n2\n3\n3.9\n5.9\n7.9\nYellow\n12-14\n2.4\n3.7\n4.9\n7.3\n9.8\nWhite\n15-18\n3.1\n4.7\n6.2\n9.3\n12.4\nBlue\n19-23\n3.9\n5.9\n7.9\n11.8\n15.8\nOrange\n24-29\n5\n7.5\n9.9\n14.9\n19.9\nGreen\n30-36\n6.2\n9.3\n12.4\n18.6\n24.8\n*For rates <1 mL/hour, consider using  800 mcg/mL concentration.\nDopamine Infusion: 800 mcg/ml Concentration\nBroselow\nColor\nWeight\n(kg)\nMilliliters/hr. or drops per minute with micro drip tubing (60gtt/min)\n5mcg/kg/hr\n77.5mcg/kg/hr.\n10mcg/kg/hr.\n15mcg/kg/hr.\n20mcg/kg/hr.\nGray\n3\n1.1\n1.7\n2.3\n3.4\n4.5\nGray\n4\n1.5\n2.3\n3.0\n4.5\n6\nGray\n5\n1.9\n2.8\n3.8\n5.6\n7.5\nPediatric Shock Management (Continued)\n•\nInitiate transport as soon as possible.\n•\nContinue resuscitation and evaluation enroute – Frequently reevaluate ABCs and mental status.\nCONTACT MEDICAL\nCONTROL\n•\nIf patient deteriorates or fails to improve, Medical Control may authorize the following:\no\nFor Hypovolemic shock, administer additional 20 ml/kg Lactated Ringers bolus.\no\nFor Cardiogenic shock, ensure rate and rhythm have been treated\n▪\nConsider Dopamine drip 5-20 mcg/kg/min – titrate to clinical effect\no\nFor all other types of shock administer Normal Saline 20ml/kg bolus.\nDocument:\n•\nVital Signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunications with\nMedical Control",
-      "pageText": [
-        {
-          "page": 39,
-          "text": "Pediatric Shock Management\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe the skin color for pallor, mottling, and/or cyanosis.\nPrimary Survey\n•\nEnsure airway – ensure patency and proper positioning.\no\nConsider Spinal Motion Restriction if evidence of trauma.\n•\nAssess Breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%.\no\nAssist with bag valve mask if ineffective respiratory effort.\n•\nAssess Circulation – control bleeding if present.\n•\nAssess Disability – Assess LOC\n•\nExposure/Environment – expose injures as needed.\no\ntake measures to prevent hypothermia.\nChildren possess very strong compensatory mechanisms which allow them to appear\nrelatively well in early shock. However, once these compensatory mechanisms are\noverwhelmed, they tend to decompensate rapidly. Early manifestations of shock may be\nsubtle. The perfusion status of infants and children must be evaluated carefully and\nfrequently. See Shock Protocol.\nSecondary Assessment and History\n•\nMonitor vital signs and SpO2.\n•\nPerform Blood Glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nInitiate Cardiac Monitoring – treat dysrhythmias per appropriate protocol.\n•\nInitiate EtCO2 monitoring – Maintain EtCO2 of 30-35 mmHg.\n•\nOPQRST/SAMPLE history\n•\nPhysical Exam\n•\nKeep the patient NPO.\n•\nAdvanced airway/ventilatory management as needed.\n•\nInitiate IV/IO\no\nFor Hypovolemic Shock, administer Lactated Ringers. 20ml/kg bolus\no\nFor Cardiogenic Shock, administer Normal Saline at KVO rate.\no\nFor all other types of shock, administer Normal Saline 20ml/kg bolus.\no\nFluid boluses may be repeated x 1 – titrate to clinical effect.\n•\nAttempt to identify cause and treat in accordance with appropriate guideline. (e.g. tension\npneumothorax, overdose, trauma, etc.)\nThis protocol applies to pediatric patients presenting with signs and symptoms consistent with\nshock. All forms of shock are associated with inadequate tissue perfusion."
+          "type": "list",
+          "items": [
+            {
+              "text": "Ensure airway – ensure patency and proper positioning.",
+              "bold": ["Ensure airway"]
+            }
+          ]
         },
         {
-          "page": 40,
-          "text": "Dopamine Infusion:  Standard 1600mcg/ml Concentration\nBroselow\nColor\nWeight\n(kg)\nMilliliters hour or drops per minute with micro drip tubing (60gtt/ml)\n5 mcg/kg/hr      7.5 mcg/kg/hr     10 mcg/kg/hr       15 mcg/kg/hr       20 mcg/kg/hr\nGray\n3\n0.6*\n0.8*\n1.1\n1.7\n2.3\nGray\n4\n0.8*\n1.1\n1.5\n2.3\n3.0\nGray\n5\n0.9*\n1.4\n1.9\n2.8\n3.8\nPink\n6-7\n1.2\n1.9\n2.4\n3.7\n4.9\nRed\n8-9\n1.6\n2.4\n3.2\n4.8\n6.4\nPurple\n10-11\n2\n3\n3.9\n5.9\n7.9\nYellow\n12-14\n2.4\n3.7\n4.9\n7.3\n9.8\nWhite\n15-18\n3.1\n4.7\n6.2\n9.3\n12.4\nBlue\n19-23\n3.9\n5.9\n7.9\n11.8\n15.8\nOrange\n24-29\n5\n7.5\n9.9\n14.9\n19.9\nGreen\n30-36\n6.2\n9.3\n12.4\n18.6\n24.8\n*For rates <1 mL/hour, consider using  800 mcg/mL concentration.\nDopamine Infusion: 800 mcg/ml Concentration\nBroselow\nColor\nWeight\n(kg)\nMilliliters/hr. or drops per minute with micro drip tubing (60gtt/min)\n5mcg/kg/hr\n77.5mcg/kg/hr.\n10mcg/kg/hr.\n15mcg/kg/hr.\n20mcg/kg/hr.\nGray\n3\n1.1\n1.7\n2.3\n3.4\n4.5\nGray\n4\n1.5\n2.3\n3.0\n4.5\n6\nGray\n5\n1.9\n2.8\n3.8\n5.6\n7.5\nPediatric Shock Management (Continued)\n•\nInitiate transport as soon as possible.\n•\nContinue resuscitation and evaluation enroute – Frequently reevaluate ABCs and mental status.\nCONTACT MEDICAL\nCONTROL\n•\nIf patient deteriorates or fails to improve, Medical Control may authorize the following:\no\nFor Hypovolemic shock, administer additional 20 ml/kg Lactated Ringers bolus.\no\nFor Cardiogenic shock, ensure rate and rhythm have been treated\n▪\nConsider Dopamine drip 5-20 mcg/kg/min – titrate to clinical effect\no\nFor all other types of shock administer Normal Saline 20ml/kg bolus.\nDocument:\n•\nVital Signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunications with\nMedical Control"
+          "type": "list",
+          "indent": 1,
+          "items": [
+            {
+              "text": "Consider Spinal Motion Restriction if evidence of trauma.",
+              "links": [
+                {
+                  "text": "Spinal Motion Restriction",
+                  "protocolId": "spinal-motion-restriction"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "text": "Assess Breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 ≥ 94%.",
+              "bold": ["Assess Breathing", "Maintain SpO2 ≥ 94%."]
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "indent": 1,
+          "items": ["Assist with bag valve mask if ineffective respiratory effort."]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "text": "Assess Circulation – control bleeding if present.",
+              "bold": ["Assess Circulation"]
+            },
+            {
+              "text": "Assess Disability – Assess LOC",
+              "bold": ["Assess Disability"]
+            },
+            {
+              "text": "Exposure/Environment – expose injuries as needed.",
+              "bold": ["Exposure/Environment"]
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "indent": 1,
+          "items": ["Take measures to prevent hypothermia."]
+        },
+        {
+          "type": "icon-note",
+          "image": "assets/legend-important.webp",
+          "alt": "Important protocol information",
+          "text": "Children possess very strong compensatory mechanisms which allow them to appear relatively well in early shock. However, once these compensatory mechanisms are overwhelmed, they tend to decompensate rapidly. Early manifestations of shock may be subtle. The perfusion status of infants and children must be evaluated carefully and frequently. See Shock Protocol.",
+          "bold": ["Children possess very strong compensatory mechanisms which allow them to appear relatively well in early shock. However, once these compensatory mechanisms are overwhelmed, they tend to decompensate rapidly. Early manifestations of shock may be subtle. The perfusion status of infants and children must be evaluated carefully and frequently."],
+          "links": [
+            {
+              "text": "Shock Protocol",
+              "protocolId": "shock-management"
+            }
+          ],
+          "red": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Secondary Assessment and History"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Monitor vital signs and SpO2.",
+            {
+              "text": "Perform Blood Glucose analysis – Treat if BGL is < 60 mg/dl.",
+              "bold": ["BGL is < 60 mg/dl."]
+            },
+            "Initiate Cardiac Monitoring – treat dysrhythmias per appropriate protocol.",
+            "Initiate EtCO2 monitoring – Maintain EtCO2 of 30-35 mmHg.",
+            "OPQRST/SAMPLE history",
+            "Physical Exam",
+            "Keep the patient NPO.",
+            "Advanced airway/ventilatory management as needed.",
+            "Initiate IV/IO"
+          ]
+        },
+        {
+          "type": "list",
+          "indent": 1,
+          "items": [
+            {
+              "text": "For Hypovolemic Shock, administer Lactated Ringers. 20ml/kg bolus",
+              "links": [
+                {
+                  "text": "Hypovolemic Shock",
+                  "protocolId": "shock-management"
+                }
+              ]
+            },
+            {
+              "text": "For Cardiogenic Shock, administer Normal Saline at KVO rate.",
+              "links": [
+                {
+                  "text": "Cardiogenic Shock",
+                  "protocolId": "shock-management"
+                },
+                {
+                  "text": "Normal Saline",
+                  "protocolId": "normal-saline"
+                }
+              ]
+            },
+            {
+              "text": "For all other types of shock, administer Normal Saline 20ml/kg bolus.",
+              "links": [
+                {
+                  "text": "Normal Saline",
+                  "protocolId": "normal-saline"
+                }
+              ]
+            },
+            "Fluid boluses may be repeated x 1 – titrate to clinical effect."
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "Attempt to identify cause and treat in accordance with appropriate guideline. (e.g. tension pneumothorax, overdose, trauma, etc.)",
+            "Initiate transport as soon as possible.",
+            "Continue resuscitation and evaluation enroute – Frequently reevaluate ABCs and mental status."
+          ]
+        },
+        {
+          "type": "documentation-card",
+          "title": "Document:",
+          "image": "assets/legend-documentation.webp",
+          "alt": "Patient care documentation reminder symbol",
+          "items": [
+            "Vital Signs",
+            "OPQRST/SAMPLE",
+            "Cardiac rhythm",
+            "Treatment(s)",
+            "Communications with Medical Control"
+          ]
+        },
+        {
+          "type": "stop-control",
+          "title": "STOP",
+          "text": "CONTACT MEDICAL CONTROL"
+        },
+        {
+          "type": "list",
+          "items": [
+            "If patient deteriorates or fails to improve, Medical Control may authorize the following:"
+          ]
+        },
+        {
+          "type": "list",
+          "indent": 1,
+          "items": [
+            "For Hypovolemic shock, administer additional 20 ml/kg Lactated Ringers bolus.",
+            {
+              "text": "For Cardiogenic shock, ensure rate and rhythm have been treated. Consider Dopamine drip 5-20 mcg/kg/min – titrate to clinical effect",
+              "links": [
+                {
+                  "text": "Dopamine",
+                  "protocolId": "dopamine"
+                }
+              ]
+            },
+            "For all other types of shock administer Normal Saline 20ml/kg bolus."
+          ]
+        },
+        {
+          "type": "table",
+          "className": "dopamine-dose-table",
+          "caption": "Dopamine Infusion: Standard 1600mcg/ml Concentration",
+          "subtitle": "Milliliters/hr. or drops per minute with micro drip tubing (60gtt/ml)",
+          "headers": [
+            "Broselow Color",
+            "Weight (kg)",
+            "5 mcg/kg/hr",
+            "7.5 mcg/kg/hr",
+            "10 mcg/kg/hr",
+            "15 mcg/kg/hr",
+            "20 mcg/kg/hr"
+          ],
+          "rows": [
+            {"background":"gray","cells":["Gray","3","0.6*","0.8*","1.1","1.7","2.3"]},
+            {"background":"gray","cells":["Gray","4","0.8*","1.1","1.5","2.3","3.0"]},
+            {"background":"gray","cells":["Gray","5","0.9*","1.4","1.9","2.8","3.8"]},
+            {"background":"pink","cells":["Pink","6-7","1.2","1.9","2.4","3.7","4.9"]},
+            {"background":"red","cells":["Red","8-9","1.6","2.4","3.2","4.8","6.4"]},
+            {"background":"purple","cells":["Purple","10-11","2","3","3.9","5.9","7.9"]},
+            {"background":"yellow","cells":["Yellow","12-14","2.4","3.7","4.9","7.3","9.8"]},
+            {"background":"white","cells":["White","15-18","3.1","4.7","6.2","9.3","12.4"]},
+            {"background":"blue","cells":["Blue","19-23","3.9","5.9","7.9","11.8","15.8"]},
+            {"background":"orange","cells":["Orange","24-29","5","7.5","9.9","14.9","19.9"]},
+            {"background":"green","cells":["Green","30-36","6.2","9.3","12.4","18.6","24.8"]}
+          ],
+          "note": "*For rates <1 ml/hour, consider using 800 mcg/ml concentration."
+        },
+        {
+          "type": "table",
+          "className": "dopamine-dose-table",
+          "caption": "Dopamine Infusion: 800 mcg/ml Concentration",
+          "subtitle": "Milliliters/hr. or drops per minute with micro drip tubing (60gtt/min)",
+          "headers": [
+            "Broselow Color",
+            "Weight (kg)",
+            "5 mcg/kg/hr",
+            "7.5 mcg/kg/hr",
+            "10 mcg/kg/hr",
+            "15 mcg/kg/hr",
+            "20 mcg/kg/hr"
+          ],
+          "rows": [
+            {"background":"gray","cells":["Gray","3","1.1","1.7","2.3","3.4","4.5"]},
+            {"background":"gray","cells":["Gray","4","1.5","2.3","3.0","4.5","6"]},
+            {"background":"gray","cells":["Gray","5","1.9","2.8","3.8","5.6","7.5"]}
+          ]
         }
       ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText": "Pediatric Shock Management. This protocol applies to pediatric patients presenting with signs and symptoms consistent with shock. All forms of shock are associated with inadequate tissue perfusion. Assessment, resuscitation, Medical Control consultation, and Dopamine infusion tables are included.",
+      "needsReview": false
+    },    {
       "id": "pediatric-apparent-life-threatening-event",
       "title": "Pediatric Apparent Life-Threatening Event",
       "type": "protocol",
