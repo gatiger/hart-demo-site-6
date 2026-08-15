@@ -4076,96 +4076,54 @@
       "plainText": "Childbirth/Labor. This protocol applies to women whose chief complaint is related to labor and/or impending delivery. Primary survey, secondary assessment, delivery, post-delivery care, APGAR scoring, transport, and documentation guidance are included.",
       "needsReview": false
     },    {
-      "id": "newborn-resuscitation",
-      "title": "Newborn Resuscitation",
-      "type": "protocol",
-      "categoryPath": [
-        "Pediatric Clinical Protocols"
+      "id":"newborn-resuscitation","title":"Newborn Resuscitation","type":"protocol","categoryPath":["Pediatric Clinical Protocols"],"status":"active","effectiveDate":"2026-06-08","lastRevised":"","version":"2026",
+      "tags":["newborn","neonate","resuscitation","APGAR","epinephrine"],
+      "summary":"Initial and advanced newborn resuscitation, medication, APGAR scoring, and documentation guidance.","displayMode":"native",
+      "content":[
+        {"type":"paragraph","text":"This protocol applies to term and pre-term newborn patients who fail to respond to initial stimulation and are in need of resuscitation efforts. This protocol also applies to all newborns and infants in the first few weeks of life."},
+        {"type":"heading","level":2,"text":"Within the first 30 seconds:"},
+        {"type":"list","items":["As soon as the baby is born:"]},
+        {"type":"list","indent":1,"items":["Vigorously dry the infant and provide warmth (increasing ambient temperature, cover with blankets)."]},
+        {"type":"list","items":["Position the infant to open the airway.","Clamp and cut the umbilical cord.","If excessive secretions and signs of compromise are present, clear airway with bulb syringe."]},
+        {"type":"list","indent":1,"items":[
+          {"text":"Routine suctioning of the oropharynx and nasopharynx as soon as the head is delivered is no longer recommended.","bold":["Routine suctioning of the oropharynx and nasopharynx as soon as the head is delivered is no longer recommended."],"underline":["Routine suctioning of the oropharynx and nasopharynx as soon as the head is delivered is no longer recommended."]},
+          "If meconium staining is present AND the newborn is not vigorous (weak or absent respiratory effort, weak or absent muscle tone, heart rate <100 bpm) tracheal suctioning may be considered."
+        ]},
+        {"type":"list","items":["Stimulate breathing (flicking soles of the newborn’s feet or rubbing the newborn’s back)."]},
+        {"type":"heading","level":2,"text":"Assess respirations:"},
+        {"type":"list","items":[
+          {"text":"If inadequate or gasping respirations are present, assist ventilations at a rate of 40-60 breaths per minute using a BVM with 100% O2.","bold":["40-60 breaths per minute"]},
+          "If respirations are shallow or slow, attempt 1 minute period of stimulation while administering O2 via blow by."
+        ]},
+        {"type":"list","indent":1,"items":[{"text":"If respirations do not increase, assist ventilations at a rate of 40-60 breaths per minute using a BVM with 100% O2.","bold":["40-60 breaths per minute"]}]},
+        {"type":"heading","level":2,"text":"Assess heart rate:"},
+        {"type":"list","items":["If less than 60 beats per minute, begin chest compressions."]},
+        {"type":"list","indent":1,"items":["Compression-to-ventilation ratio of 3:1 in neonatal resuscitation. Compress at 120/minute.","Compressions should be discontinued when the heart rate is higher than 60 beats per minute."]},
+        {"type":"icon-note","image":"assets/legend-important.webp","alt":"Important protocol information","text":"Most neonates transition to post-natal life without difficulty. About 10% of newborns require some assistance to begin breathing at birth. Less than 1% require extensive resuscitative measures.","bold":["Most neonates transition to post-natal life without difficulty. About 10% of newborns require some assistance to begin breathing at birth. Less than 1% require extensive resuscitative measures."],"red":true},
+        {"type":"heading","level":2,"text":"Advanced Resuscitation:"},
+        {"type":"list","items":["Consider advanced airway (one attempt only) for:"]},
+        {"type":"list","indent":1,"items":["Persistent apnea","Central cyanosis","Bradycardia (HR <100 beats per minute)"]},
+        {"type":"list","items":["If heart rate is persistently < 60 beats per minute:"]},
+        {"type":"list","indent":1,"items":["Continue CPR","Ensure that optimal ventilation is being provided with 100% O2.","Initiate IV/IO of normal saline."]},
+        {"type":"icon-note","image":"assets/legend-important.webp","alt":"Important protocol information","text":"For persistent HR <60 beats per minute, mix and administer 1:100,000 Epinephrine 0.01mg/kg. IV/IO every 3-5 minutes as needed.","bold":["For persistent HR <60 beats per minute, mix and administer 1:100,000 Epinephrine 0.01mg/kg. IV/IO every 3-5 minutes as needed."],"links":[{"text":"Epinephrine","protocolId":"epinephrine-1-1000-and-1-10-000"}],"red":true},
+        {"type":"list","indent":1,"items":[{"text":"Mixing Instructions for Epinephrine 1:100,000","bold":["Mixing Instructions for Epinephrine 1:100,000"],"links":[{"text":"Epinephrine","protocolId":"epinephrine-1-1000-and-1-10-000"}]}]},
+        {"type":"list","indent":1,"items":["1 ml of Epinephrine 1:10,000 in 9 ml Saline flush. (0.01 mg/ml)"]},
+        {"type":"list","items":[
+          {"text":"Obtain blood glucose level: If < 60 mg/dl, administer D10W 0.5g/kg (5ml/kg) IV/IO","bold":["0.5g/kg (5ml/kg) IV/IO"],"links":[{"text":"D10W","protocolId":"dextrose-d10-25-50"}]},
+          "If no improvement despite adequate ventilation, chest compressions and epinephrine, consider fluid administration (10ml/kg normal saline over 5-10 minutes)."
+        ]},
+        {"type":"score-callout","text":"APGAR score to be calculated at 1 and 5 minutes after delivery. Score < 3: Critical. Score ≥ 7 good to excellent.","links":[{"text":"APGAR","protocolId":"apgar-scoring-neonatal-resuscitation"}]},
+        {"type":"table","className":"apgar-table","caption":"APGAR Scoring","headers":["SCORE","0 points","1 point","2 points"],"rows":[
+          [{"text":"Appearance\n(Skin color)","bold":true,"className":"cell-initial-red"},"Cyanotic / Pale\nall over","Peripheral\ncyanosis only","Pink"],
+          [{"text":"Pulse\n(Heart rate)","bold":true,"className":"cell-initial-red"},"0","<100","100-140"],
+          [{"text":"Grimace\n(Reflex irritability)","bold":true,"className":"cell-initial-red"},"No response\nto stimulation","Grimace or\nweak cry when\nstimulated","Cry when\nstimulated"],
+          [{"text":"Activity\n(Tone)","bold":true,"className":"cell-initial-red"},"Floppy","Some flexion","Well flexed\nand resisting\nextension"],
+          [{"text":"Respiration","bold":true,"className":"cell-initial-red"},"Apneic","Slow, irregular\nbreathing","Strong cry"]
+        ]},
+        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Appearance","Respirations","Heart rate/rhythm","Skin Color","Resuscitation efforts","APGAR Scores","Communication with Medical Control"]}
       ],
-      "status": "active",
-      "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 44,
-        "pageEnd": 45,
-        "pageLabel": "44-45"
-      },
-      "summary": "",
-      "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Newborn Resuscitation"
-        },
-        {
-          "type": "paragraph",
-          "text": "This protocol applies to term and pre-term newborn patients who fail to respond to initial stimulation and are in need of resuscitation efforts. This protocol also applies to all newborns and infants in the first few weeks of life. Within the first 30 seconds:"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "As soon as the baby is born"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vigorously dry the infant and provide warmth (increasing ambient temperature, cover with blankets). Position the infant to open the airway. Clamp and cut the umbilical cord. If excessive secretions and signs of compromise are present, clear airway with bulb syringe. Routine suctioning of the oropharynx and nasopharynx as soon as the head is delivered is no longer recommended. If meconium staining is present AND the newborn is not vigorous (weak or absent respiratory effort, weak or absent muscle tone, heart rate <100 bpm) tracheal suctioning may be considered. Stimulate breathing (flicking soles of the newborn’s feet or rubbing the newborn’s back)."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Assess respirations"
-        },
-        {
-          "type": "paragraph",
-          "text": "If inadequate or gasping respirations are present, assist ventilations at a rate of 40-60 breaths per minute using a BVM with 100% O2. If respirations are shallow or slow, attempt 1 minute period of stimulation while administering O2 via blow by. If respirations do not increase, assist ventilations at a rate of 40-60 breaths per minute using a BVM with 100% O2."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Assess heart rate"
-        },
-        {
-          "type": "paragraph",
-          "text": "If less than 60 beats per minute, begin chest compressions. Compression-to-ventilation ratio of 3:1 in neonatal resuscitation. Compress at 120/minute. Compressions should be discontinued when the heart rate is higher than 60 beats per minute. Newborn Resuscitation (Continued) Most neonates transition to post-natal life without difficulty. About 10% of newborns require some assistance to begin breathing at birth. Less than 1% require extensive resuscitative measures."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Advanced Resuscitation"
-        },
-        {
-          "type": "paragraph",
-          "text": "Consider advanced airway (one attempt only) for: Persistent apnea Central cyanosis Bradycardia (HR <100 beats per minute) If heart rate is persistently < 60 beats per minute: Continue CPR Ensure that optimal ventilation is being provided with 100% O2. Initiate IV/IO of normal saline. For persistent HR <60 beats per minute, mix and administer 1:100,000 Epinephrine 0.01mg/kg. IV/IO every 3-5 minutes as needed. Mixing Instructions for Epinephrine 1:100,000 1 ml of Epinephrine 1:10,000 in 9 ml Saline flush. (0.01 mg/ml) Obtain blood glucose level: If < 60 mg/dl, administer D10W 0.5g/kg (5ml/kg) IV/IO If no improvement despite adequate ventilation, chest compressions and epinephrine, consider fluid administration (10ml/kg normal saline over 5-10 minutes ."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Appearance Respirations Heart rate/rhythm Skin Color Resuscitation efforts APGAR Scores Communication with medical control APGAR score to be calculated at 1 and 5 minutes after delivery. Score < 3: Critical. Score > 7 good to excellent."
-        }
-      ],
-      "plainText": "Newborn Resuscitation\nThis protocol applies to term and pre-term newborn patients who fail to respond to initial\nstimulation and are in need of resuscitation efforts.  This protocol also applies to all newborns and\ninfants in the first few weeks of life.\nWithin the first 30 seconds:\n•\nAs soon as the baby is born:\no\nVigorously dry the infant and provide warmth (increasing ambient temperature, cover\nwith blankets).\n•\nPosition the infant to open the airway.\n•\nClamp and cut the umbilical cord.\n•\nIf excessive secretions and signs of compromise are present, clear airway with bulb syringe.\no\nRoutine suctioning of the oropharynx and nasopharynx as soon as the head is delivered\nis no longer recommended.\no\nIf meconium staining is present AND the newborn is not vigorous (weak or absent\nrespiratory effort, weak or absent muscle tone, heart rate <100 bpm) tracheal suctioning\nmay be considered.\n•\nStimulate breathing (flicking soles of the newborn’s feet or rubbing the newborn’s back).\nAssess respirations:\n•\nIf inadequate or gasping respirations are present, assist ventilations at a rate of 40-60 breaths per\nminute using a BVM with 100% O2.\n•\nIf respirations are shallow or slow, attempt 1 minute period of stimulation while administering O2 via\nblow by.\no\nIf respirations do not increase, assist ventilations at a rate of 40-60 breaths per minute\nusing a BVM with 100% O2.\nAssess heart rate:\n•\nIf less than 60 beats per minute, begin chest compressions.\no\nCompression-to-ventilation ratio of 3:1 in neonatal resuscitation. Compress at 120/minute.\no\nCompressions should be discontinued when the heart rate is higher than 60 beats per\nminute.\nNewborn Resuscitation (Continued)\nMost neonates transition to post-natal life without difficulty.  About 10% of newborns\nrequire some assistance to begin breathing at birth. Less than 1% require extensive\nresuscitative measures.\nAdvanced Resuscitation:\n•\nConsider advanced airway (one attempt only) for:\no\nPersistent apnea\no\nCentral cyanosis\no\nBradycardia (HR <100 beats per minute)\n•\nIf heart rate is persistently < 60 beats per minute:\no\nContinue CPR\no\nEnsure that optimal ventilation is being provided with 100% O2.\no\nInitiate IV/IO of normal saline.\nFor persistent HR <60 beats per minute, mix and administer 1:100,000 Epinephrine\n0.01mg/kg. IV/IO every 3-5 minutes as needed.\n▪\nMixing Instructions for Epinephrine 1:100,000\no\n1 ml of Epinephrine 1:10,000 in 9 ml Saline flush. (0.01 mg/ml)\n•\nObtain blood glucose level: If < 60 mg/dl, administer D10W 0.5g/kg (5ml/kg) IV/IO\n•\nIf no improvement despite adequate ventilation, chest compressions and epinephrine, consider fluid\nadministration (10ml/kg normal saline over 5-10 minutes .\nDocument:\n•\nAppearance\n•\nRespirations\n•\nHeart rate/rhythm\n•\nSkin Color\n•\nResuscitation efforts\n•\nAPGAR Scores\n•\nCommunication with\nmedical control\nAPGAR score to be calculated at 1 and 5 minutes\nafter delivery. Score < 3: Critical.  Score > 7 good to\nexcellent.",
-      "pageText": [
-        {
-          "page": 44,
-          "text": "Newborn Resuscitation\nThis protocol applies to term and pre-term newborn patients who fail to respond to initial\nstimulation and are in need of resuscitation efforts.  This protocol also applies to all newborns and\ninfants in the first few weeks of life.\nWithin the first 30 seconds:\n•\nAs soon as the baby is born:\no\nVigorously dry the infant and provide warmth (increasing ambient temperature, cover\nwith blankets).\n•\nPosition the infant to open the airway.\n•\nClamp and cut the umbilical cord.\n•\nIf excessive secretions and signs of compromise are present, clear airway with bulb syringe.\no\nRoutine suctioning of the oropharynx and nasopharynx as soon as the head is delivered\nis no longer recommended.\no\nIf meconium staining is present AND the newborn is not vigorous (weak or absent\nrespiratory effort, weak or absent muscle tone, heart rate <100 bpm) tracheal suctioning\nmay be considered.\n•\nStimulate breathing (flicking soles of the newborn’s feet or rubbing the newborn’s back).\nAssess respirations:\n•\nIf inadequate or gasping respirations are present, assist ventilations at a rate of 40-60 breaths per\nminute using a BVM with 100% O2.\n•\nIf respirations are shallow or slow, attempt 1 minute period of stimulation while administering O2 via\nblow by.\no\nIf respirations do not increase, assist ventilations at a rate of 40-60 breaths per minute\nusing a BVM with 100% O2.\nAssess heart rate:\n•\nIf less than 60 beats per minute, begin chest compressions.\no\nCompression-to-ventilation ratio of 3:1 in neonatal resuscitation. Compress at 120/minute.\no\nCompressions should be discontinued when the heart rate is higher than 60 beats per\nminute."
-        },
-        {
-          "page": 45,
-          "text": "Newborn Resuscitation (Continued)\nMost neonates transition to post-natal life without difficulty.  About 10% of newborns\nrequire some assistance to begin breathing at birth. Less than 1% require extensive\nresuscitative measures.\nAdvanced Resuscitation:\n•\nConsider advanced airway (one attempt only) for:\no\nPersistent apnea\no\nCentral cyanosis\no\nBradycardia (HR <100 beats per minute)\n•\nIf heart rate is persistently < 60 beats per minute:\no\nContinue CPR\no\nEnsure that optimal ventilation is being provided with 100% O2.\no\nInitiate IV/IO of normal saline.\nFor persistent HR <60 beats per minute, mix and administer 1:100,000 Epinephrine\n0.01mg/kg. IV/IO every 3-5 minutes as needed.\n▪\nMixing Instructions for Epinephrine 1:100,000\no\n1 ml of Epinephrine 1:10,000 in 9 ml Saline flush. (0.01 mg/ml)\n•\nObtain blood glucose level: If < 60 mg/dl, administer D10W 0.5g/kg (5ml/kg) IV/IO\n•\nIf no improvement despite adequate ventilation, chest compressions and epinephrine, consider fluid\nadministration (10ml/kg normal saline over 5-10 minutes .\nDocument:\n•\nAppearance\n•\nRespirations\n•\nHeart rate/rhythm\n•\nSkin Color\n•\nResuscitation efforts\n•\nAPGAR Scores\n•\nCommunication with\nmedical control\nAPGAR score to be calculated at 1 and 5 minutes\nafter delivery. Score < 3: Critical.  Score > 7 good to\nexcellent."
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Newborn Resuscitation. This protocol applies to term and pre-term newborn patients who fail to respond to initial stimulation and are in need of resuscitation efforts. Initial care, ventilation, compressions, advanced resuscitation, medication, APGAR scoring, and documentation guidance are included.","needsReview":false
+    },    {
       "id": "bradycardia",
       "title": "Bradycardia",
       "type": "protocol",

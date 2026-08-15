@@ -546,6 +546,8 @@ details[open] > .tree-heading.tree-toggle::before {
 .dopamine-dose-table .table-row-orange > * { background: #f58217 !important; }
 .dopamine-dose-table .table-row-green > * { background: #12b763 !important; }
 .table-footnote { margin: .25rem 0 0; font-size: .85rem; font-weight: 800; text-align: center; }
+.score-callout { margin: 1.25rem 0; padding: 1rem 1.15rem; border-radius: .2rem; background: #050505; color: #fff; font-weight: 900; line-height: 1.35; }
+.score-callout .inline-protocol-link { color: #fff; }
 .apgar-table { min-width: 650px; }
 .apgar-table th, .apgar-table td { vertical-align: middle; }
 .apgar-table .cell-initial-red::first-letter { color: #c31515; }

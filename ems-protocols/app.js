@@ -692,7 +692,18 @@ function renderStopControl(block, container) {
   figure.appendChild(image);
   container.appendChild(figure);
 }
+function renderScoreCallout(block, container) {
+  const callout = document.createElement('div');
+  callout.className = 'score-callout';
+  appendRichText(callout, block.text || '', block.bold || [], block.links || []);
+  container.appendChild(callout);
+}
 function renderBlock(block, container) {
+  if (block.type === 'score-callout') {
+    renderScoreCallout(block, container);
+    return;
+  }
+
   if (block.type === 'stop-control') {
     renderStopControl(block, container);
     return;
