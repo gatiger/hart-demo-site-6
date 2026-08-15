@@ -253,6 +253,11 @@ function showProtocol(id) {
     return;
   }
 
+  if (protocol.displayMode === 'native-legend') {
+    renderLegend(protocol.legend || {}, content);
+    return;
+  }
+
   if (protocol.displayMode === 'pdf-page' && !(protocol.content || []).length) {
 
     const imageWrap = document.createElement('div');
@@ -335,6 +340,46 @@ function renderApprovalStatement(approval, container) {
       <p>${escapeHtml(approval.recordsNotice || '')}</p>
     </aside>
   `;
+
+  container.appendChild(section);
+}
+function renderLegend(legend, container) {
+  const items = Array.isArray(legend.items) ? legend.items : [];
+  const section = document.createElement('section');
+  section.className = 'legend-page';
+  section.setAttribute('aria-labelledby', 'legend-page-heading');
+
+  section.innerHTML = `
+    <header class="legend-intro">
+      <p class="legend-kicker">Protocol Reference</p>
+      <h3 id="legend-page-heading">Legend</h3>
+      ${legend.introduction ? `<p>${escapeHtml(legend.introduction)}</p>` : ''}
+      ${legend.abbreviationsNote ? `<p>${escapeHtml(legend.abbreviationsNote)}</p>` : ''}
+    </header>
+    <div class="legend-grid">
+      ${items.map(item => `
+        <article class="legend-item">
+          <div class="legend-image-frame">
+            <img src="${escapeHtml(item.image || '')}" alt="${escapeHtml(item.alt || '')}" loading="lazy">
+            <div class="legend-image-placeholder" aria-hidden="true">
+              <span>Image coming soon</span>
+              <code>${escapeHtml((item.image || '').split('/').pop() || '')}</code>
+            </div>
+          </div>
+          <div class="legend-item-copy">
+            <h4>${escapeHtml(item.title || '')}</h4>
+            <p>${escapeHtml(item.description || '')}</p>
+          </div>
+        </article>
+      `).join('')}
+    </div>
+  `;
+
+  section.querySelectorAll('.legend-image-frame img').forEach(img => {
+    const markMissing = () => img.closest('.legend-image-frame').classList.add('is-missing');
+    img.addEventListener('error', markMissing, { once: true });
+    if (img.complete && !img.naturalWidth) markMissing();
+  });
 
   container.appendChild(section);
 }

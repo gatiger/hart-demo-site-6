@@ -1721,42 +1721,46 @@
       "id": "legend",
       "title": "Legend",
       "type": "administrative",
-      "categoryPath": [
-        "Administrative"
-      ],
+      "categoryPath": ["Administrative"],
       "status": "active",
       "effectiveDate": "2026-06-08",
       "lastRevised": "",
       "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 10,
-        "pageEnd": 10,
-        "pageLabel": "10"
+      "tags": ["legend", "icons", "medical control", "documentation"],
+      "summary": "Explanations for the icons and graphics used throughout the protocols and guidelines.",
+      "displayMode": "native-legend",
+      "legend": {
+        "introduction": "The following chart explains the icons and graphics used throughout these protocols and guidelines.",
+        "abbreviationsNote": "Explanations of abbreviations used in specific protocols are available in the Resources section.",
+        "items": [
+          {
+            "title": "Important Point or Reminder",
+            "description": "Emphasizes important points and reminders within a particular protocol or guideline.",
+            "image": "assets/legend-important.webp",
+            "alt": "Important point or reminder symbol"
+          },
+          {
+            "title": "Contact Medical Control",
+            "description": "Indicates the point within a guideline at which medical control should be contacted. Treatments beyond this point should be performed with online medical direction or as authorized by local agency protocol.",
+            "image": "assets/legend-medical-control.webp",
+            "alt": "Contact Medical Control symbol"
+          },
+          {
+            "title": "Documentation Reminder",
+            "description": "Emphasizes important points that should be included in patient care documentation.",
+            "image": "assets/legend-documentation.webp",
+            "alt": "Patient care documentation reminder symbol"
+          },
+          {
+            "title": "Continued on Next Page",
+            "description": "Indicates that the guideline or resource continues on the next page.",
+            "image": "assets/legend-continued.webp",
+            "alt": "Continued on next page symbol"
+          }
+        ]
       },
-      "summary": "",
-      "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Emphasizes important points and reminders within a particular"
-        },
-        {
-          "type": "paragraph",
-          "text": "protocol/guideline Indicates the point within each guideline at which contact with medical control should be made. Treatments provided beyond this point should be performed in conjunction with online medical direction or autho0rized by local agency protocol. Emphasizes the important points to be included in patient care documentation Indicates that the guideline or resource provided continues on the next page Legend The following chart provides explanations for icons and graphics found throughout the protocols/guidelines. An explanation of abbreviations utilized in specific protocols can be found in the resources section of this document. CONTINUED ON NEXT PAGE Contact Medical Control"
-        }
-      ],
-      "plainText": "Emphasizes important points and reminders within a particular\nprotocol/guideline\nIndicates the point within each guideline at which contact with\nmedical control should be made.  Treatments provided beyond this\npoint should be performed in conjunction with online medical\ndirection or autho0rized by local agency protocol.\nEmphasizes the important points to be included in patient care\ndocumentation\nIndicates that the guideline or resource provided continues on the\nnext page\nLegend\nThe following chart provides explanations for icons and graphics found throughout the\nprotocols/guidelines.  An explanation of abbreviations utilized in specific protocols can be found in\nthe resources section of this document.\nCONTINUED ON NEXT\nPAGE\nContact Medical\nControl",
-      "pageText": [
-        {
-          "page": 10,
-          "text": "Emphasizes important points and reminders within a particular\nprotocol/guideline\nIndicates the point within each guideline at which contact with\nmedical control should be made.  Treatments provided beyond this\npoint should be performed in conjunction with online medical\ndirection or autho0rized by local agency protocol.\nEmphasizes the important points to be included in patient care\ndocumentation\nIndicates that the guideline or resource provided continues on the\nnext page\nLegend\nThe following chart provides explanations for icons and graphics found throughout the\nprotocols/guidelines.  An explanation of abbreviations utilized in specific protocols can be found in\nthe resources section of this document.\nCONTINUED ON NEXT\nPAGE\nContact Medical\nControl"
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
+      "plainText": "Legend. Important Point or Reminder. Contact Medical Control. Documentation Reminder. Continued on Next Page.",
+      "needsReview": false
     },
     {
       "id": "administration-disposal-of-medication",
