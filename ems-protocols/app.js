@@ -40,7 +40,6 @@ function showSplash() {
   document.getElementById('protocolPages').textContent = '';
   document.getElementById('protocol-title').textContent = 'Hart County EMS Protocols';
   document.getElementById('protocolPath').textContent = '';
-  document.getElementById('reviewNotice').hidden = true;
 
   const content = document.getElementById('protocolContent');
   content.innerHTML = `
@@ -57,7 +56,6 @@ function showSplash() {
       </dl>
       <div class="splash-actions">
         <button id="browseProtocolsBtn" class="btn btn-primary" type="button">Browse Protocols</button>
-        <a class="btn" href="${escapeHtml(meta.sourcePdf || 'documents/ems/2026-hcems-protocols.pdf')}" target="_blank" rel="noopener">Open Official PDF</a>
       </div>
       <p class="splash-note">Use the protocol navigation or search to find clinical guidance.</p>
     </section>
@@ -248,21 +246,9 @@ function showProtocol(id) {
   document.getElementById('protocolPages').textContent = `PDF page ${protocol.source.pageLabel}`;
   document.getElementById('protocol-title').textContent = protocol.title;
   document.getElementById('protocolPath').textContent = protocol.categoryPath.join(' › ');
-  document.getElementById('reviewNotice').hidden = !protocol.needsReview;
 
   const content = document.getElementById('protocolContent');
   content.innerHTML = '';
-
-  const tools = document.createElement('div');
-  tools.className = 'protocol-tools';
-  const pdfLink = document.createElement('a');
-  pdfLink.className = 'btn';
-  pdfLink.href = protocol?.source?.pdf || protocolData?.meta?.sourcePdf || 'documents/ems/2026-hcems-protocols.pdf';
-  pdfLink.target = '_blank';
-  pdfLink.rel = 'noopener';
-  pdfLink.textContent = 'Open full PDF';
-  tools.appendChild(pdfLink);
-  content.appendChild(tools);
 
   if ((protocol.displayMode === 'pdf-page' && !(protocol.content || []).length) || protocol.id === 'approval-statement') {
     const note = document.createElement('p');

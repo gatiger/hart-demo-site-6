@@ -128,12 +128,6 @@ h1 { margin: 0; font-size: clamp(1.5rem, 3vw, 2.2rem); }
 .search-result-btn:hover,
 .search-result-btn.active { background: #e8f3ed; border-color: #b9d8c6; }
 .tree-subheading { font-size: .94rem; }
-.protocol-tools {
-  display: flex;
-  gap: .5rem;
-  flex-wrap: wrap;
-  margin-bottom: 1rem;
-}
 .signature-note {
   font-weight: 800;
   color: var(--brand-dark);
