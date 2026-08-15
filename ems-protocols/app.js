@@ -492,13 +492,14 @@ function renderDocumentExample(block, container) {
 
   container.appendChild(section);
 }
-function appendRichText(element, text, phrases = [], links = [], initials = [], redPhrases = []) {
+function appendRichText(element, text, phrases = [], links = [], initials = [], redPhrases = [], underlinePhrases = []) {
   const source = String(text || '');
   const boldPhrases = (phrases || []).filter(Boolean);
   const linkedPhrases = (links || []).filter(link => link && link.text && link.protocolId);
   const initialPhrases = (initials || []).filter(Boolean);
   const redTextPhrases = (redPhrases || []).filter(Boolean);
-  if (!boldPhrases.length && !linkedPhrases.length && !initialPhrases.length && !redTextPhrases.length) {
+  const underlinedPhrases = (underlinePhrases || []).filter(Boolean);
+  if (!boldPhrases.length && !linkedPhrases.length && !initialPhrases.length && !redTextPhrases.length && !underlinedPhrases.length) {
     element.textContent = source;
     return;
   }
@@ -507,6 +508,7 @@ function appendRichText(element, text, phrases = [], links = [], initials = [], 
     ...linkedPhrases.map(link => link.text),
     ...initialPhrases,
     ...redTextPhrases,
+    ...underlinedPhrases,
     ...boldPhrases
   ])].sort((a, b) => b.length - a.length);
   const escaped = tokens.map(phrase => phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
@@ -533,10 +535,11 @@ function appendRichText(element, text, phrases = [], links = [], initials = [], 
       red.className = 'protocol-red-text';
       red.textContent = part;
       element.appendChild(red);
-    } else if (boldPhrases.includes(part)) {
-      const strong = document.createElement('strong');
-      strong.textContent = part;
-      element.appendChild(strong);
+    } else if (boldPhrases.includes(part) || underlinedPhrases.includes(part)) {
+      const emphasis = document.createElement(boldPhrases.includes(part) ? 'strong' : 'span');
+      if (underlinedPhrases.includes(part)) emphasis.classList.add('protocol-underlined-text');
+      emphasis.textContent = part;
+      element.appendChild(emphasis);
     } else {
       element.appendChild(document.createTextNode(part));
     }
@@ -755,7 +758,8 @@ function renderBlock(block, container) {
         typeof item === 'object' ? item.bold : [],
         typeof item === 'object' ? item.links : [],
         [],
-        typeof item === 'object' ? item.red : []
+        typeof item === 'object' ? item.red : [],
+        typeof item === 'object' ? item.underline : []
       );
       list.appendChild(li);
     }

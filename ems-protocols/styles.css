@@ -517,6 +517,7 @@ details[open] > .tree-heading.tree-toggle::before {
 @media (max-width: 760px) { .assessment-branches { grid-template-columns: 1fr; } .assessment-branch + .assessment-branch { margin-top: .5rem; } }
 @media (max-width: 480px) { .assessment-documentation { grid-template-columns: 110px 1fr; padding: .85rem; } .assessment-documentation img { max-height: 140px; } }
 .protocol-red-text { color: #c31515; }
+.protocol-underlined-text { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: .12em; }
 .protocol-icon-note { display: grid; grid-template-columns: 3.5rem 1fr; align-items: center; gap: .8rem; margin: 1rem 0; padding: .85rem 1rem; border: 1px solid #e1bd62; border-radius: .75rem; background: #fff8dd; }
 .protocol-icon-note img { display: block; width: 3.5rem; height: 3.5rem; object-fit: contain; }
 .protocol-icon-note p { margin: 0; }
@@ -545,6 +546,9 @@ details[open] > .tree-heading.tree-toggle::before {
 .dopamine-dose-table .table-row-orange > * { background: #f58217 !important; }
 .dopamine-dose-table .table-row-green > * { background: #12b763 !important; }
 .table-footnote { margin: .25rem 0 0; font-size: .85rem; font-weight: 800; text-align: center; }
+.apgar-table { min-width: 650px; }
+.apgar-table th, .apgar-table td { vertical-align: middle; }
+.apgar-table .cell-initial-red::first-letter { color: #c31515; }
 @media (max-width: 650px) { .dopamine-dose-table { min-width: 780px; } }
 .reference-link { margin: .85rem 0; }
 .reference-link-control { display: block; width: 100%; padding: .8rem 1rem; border: 1px solid #9fb6ca; border-left: 5px solid #173a5e; border-radius: 0 .7rem .7rem 0; background: #edf3f8; color: #173a5e; font: inherit; font-weight: 800; line-height: 1.5; text-align: left; text-decoration: underline; cursor: pointer; }
