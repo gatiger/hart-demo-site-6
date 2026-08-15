@@ -1916,113 +1916,85 @@
       "id": "emergency-vehicle-operations",
       "title": "Emergency Vehicle Operations",
       "type": "protocol",
-      "categoryPath": [
-        "General Protocols"
-      ],
+      "categoryPath": ["General Protocols"],
       "status": "active",
       "effectiveDate": "2026-06-08",
       "lastRevised": "",
       "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 19,
-        "pageEnd": 19,
-        "pageLabel": "19"
-      },
-      "summary": "",
+      "tags": ["emergency vehicle", "vehicle operations", "lights and siren", "OCGA 40-6-6", "driver safety"],
+      "summary": "Emergency vehicle operating requirements and OCGA § 40-6-6.",
+      "displayMode": "native",
       "content": [
+        {
+          "type": "paragraph",
+          "text": "The driver of any authorized emergency vehicle must always drive with due regard for the safety of all persons, including the patient being transported, the transport crew and the public."
+        },
+        {
+          "type": "warning",
+          "text": "When operating a vehicle as “an authorized emergency vehicle”, both the warning lights and audible signal must be in use. Operating a vehicle with only one of these two warning devices in use does not satisfy the requirements of OCGA 40-6-6 (see below)."
+        },
+        {
+          "type": "paragraph",
+          "text": "There are certain medical conditions that may require the rapid transport of the patient, without the use of an audible warning device due to the patient's condition (e.g. acute MI, pre-eclampsia)."
+        },
+        {
+          "type": "warning",
+          "text": "In circumstances where lights only are being used for transport, the vehicle cannot proceed as “an authorized emergency vehicle” under the conditions set forth in OCGA 40-6-6. The operator of the ambulance using lights only without the use of an audible warning device must proceed in complete compliance with the “Rules of the Road”."
+        },
+        {
+          "type": "paragraph",
+          "text": "Similarly, there may be environmental conditions (e.g. traffic, weather), in which operating as an emergency vehicle (lights and siren) introduces unreasonable risk and provides minimal opportunity to arrive at the destination sooner."
+        },
         {
           "type": "heading",
           "level": 2,
-          "text": "Emergency Vehicle Operations"
-        },
-        {
-          "type": "paragraph",
-          "text": "The driver of any authorized emergency vehicle must always drive with due regard for the safety of all persons, including the patient being transported, the transport crew and the public. When operating a vehicle as “an authorized emergency vehicle”, both the warning lights and audible signal must be in use. Operating a vehicle with only one of these two warning devices in use does not satisfy the requirements of OCGA 40-6-6 (see below) There are certain medical conditions that may require the rapid transport of the patient, without the use of an audible warning device due to the patient’s condition (e.g. acute MI, pre- eclampsia). In circumstances where lights only are being used for transport, the vehicle cannot proceed as “an authorized emergency vehicle” under the conditions set forth in OCGA 40-6-6. The operator of the ambulance using lights only without the use of an audible warning device must proceed in complete compliance with the “Rules of the Road”. Similarly, there may be environmental conditions (e.g. traffic, weather), in which operating as an emergency vehicle (lights and siren) introduces unreasonable risk and provides minimal opportunity to arrive at the destination sooner."
-        },
-        {
-          "type": "heading",
-          "level": 3,
           "text": "The Law"
         },
         {
-          "type": "paragraph",
+          "type": "note",
           "text": "OCGA § 40-6-6. Authorized Emergency Vehicles"
         },
         {
           "type": "list",
+          "ordered": true,
+          "listStyle": "lower-alpha",
           "items": [
-            "a) The driver of an authorized emergency vehicle or law enforcement vehicle, when"
+            "The driver of an authorized emergency vehicle or law enforcement vehicle, when responding to an emergency call, when in pursuit of an actual or suspected violator of the law, or when responding to but not upon returning from a fire alarm, may exercise the privileges set forth in this Code section."
           ]
-        },
-        {
-          "type": "paragraph",
-          "text": "responding to an emergency call, when in pursuit of an actual or suspected violator of the law, or when responding to but not upon returning from a fire alarm, may exercise the privileges set forth in this Code section."
         },
         {
           "type": "list",
+          "ordered": true,
+          "listStyle": "lower-alpha",
+          "start": 2,
           "items": [
-            "b) The driver of an authorized emergency vehicle or law enforcement vehicle may:",
-            "1) Park or stand, irrespective of the provisions of this chapter.",
-            "2) Proceed past a red or stop signal or stop sign, but only after slowing down as"
+            "The driver of an authorized emergency vehicle or law enforcement vehicle may:"
           ]
-        },
-        {
-          "type": "paragraph",
-          "text": "may be necessary for safe operation."
         },
         {
           "type": "list",
+          "ordered": true,
+          "indent": 1,
           "items": [
-            "3) Exceed the maximum speed limits so long as he or she does not endanger life or"
+            "1. Park or stand, irrespective of the provisions of this chapter.",
+            "2. Proceed past a red or stop signal or stop sign, but only after slowing down as may be necessary for safe operation.",
+            "3. Exceed the maximum speed limits so long as he or she does not endanger life or property; and",
+            "4. Disregard regulations governing direction of movement or turning in specified directions."
           ]
-        },
-        {
-          "type": "paragraph",
-          "text": "property; and"
         },
         {
           "type": "list",
+          "ordered": true,
+          "listStyle": "lower-alpha",
+          "start": 3,
           "items": [
-            "4) Disregard regulations governing direction of movement or turning in specified"
+            "The exceptions granted by this Code section to an authorized emergency vehicle shall apply only when such vehicle is making use of an audible signal and use of a flashing or revolving red light visible under normal atmospheric conditions from a distance of 500 feet to the front of such vehicle, except that a vehicle belonging to a federal, state, or local law enforcement agency and operated as such shall be making use of an audible signal and a flashing or revolving blue light with the same visibility to the front of the vehicle.",
+            "The foregoing provisions shall not relieve the driver of an authorized emergency vehicle from the duty to drive with due regard for the safety of all persons."
           ]
-        },
-        {
-          "type": "paragraph",
-          "text": "directions."
-        },
-        {
-          "type": "list",
-          "items": [
-            "c) The exceptions granted by this Code section to an authorized emergency vehicle shall"
-          ]
-        },
-        {
-          "type": "paragraph",
-          "text": "apply only when such vehicle is making use of an audible signal and use of a flashing or revolving red light visible under normal atmospheric conditions from a distance of 500 feet to the front of such vehicle, except that a vehicle belonging to a federal, state, or local law enforcement agency and operated as such shall be making use of an audible signal and a flashing or revolving blue light with the same visibility to the front of the vehicle."
-        },
-        {
-          "type": "list",
-          "items": [
-            "d) The foregoing provisions shall not relieve the driver of an authorized emergency vehicle"
-          ]
-        },
-        {
-          "type": "paragraph",
-          "text": "from the duty to drive with due regard for the safety of all persons."
         }
       ],
-      "plainText": "Emergency Vehicle Operations\nThe driver of any authorized emergency vehicle must always drive with due regard for the\nsafety of all persons, including the patient being transported, the transport crew and the public.\nWhen operating a vehicle as “an authorized emergency vehicle”, both the warning lights and\naudible signal must be in use. Operating a vehicle with only one of these two warning devices in\nuse does not satisfy the requirements of OCGA 40-6-6 (see below)\nThere are certain medical conditions that may require the rapid transport of the patient, without\nthe use of an audible warning device due to the patient’s condition (e.g. acute MI, pre-\neclampsia). In circumstances where lights only are being used for transport, the vehicle\ncannot proceed as “an authorized emergency vehicle” under the conditions set forth in\nOCGA 40-6-6. The operator of the ambulance using lights only without the use of an audible\nwarning device must proceed in complete compliance with the “Rules of the Road”.\nSimilarly, there may be environmental conditions (e.g. traffic, weather), in which operating as an\nemergency vehicle (lights and siren) introduces unreasonable risk and provides minimal\nopportunity to arrive at the destination sooner.\nThe Law\nOCGA § 40-6-6. Authorized Emergency Vehicles\na) The driver of an authorized emergency vehicle or law enforcement vehicle, when\nresponding to an emergency call, when in pursuit of an actual or suspected violator of\nthe law, or when responding to but not upon returning from a fire alarm, may exercise the\nprivileges set forth in this Code section.\nb) The driver of an authorized emergency vehicle or law enforcement vehicle may:\n1) Park or stand, irrespective of the provisions of this chapter.\n2) Proceed past a red or stop signal or stop sign, but only after slowing down as\nmay be necessary for safe operation.\n3) Exceed the maximum speed limits so long as he or she does not endanger life or\nproperty; and\n4) Disregard regulations governing direction of movement or turning in specified\ndirections.\nc) The exceptions granted by this Code section to an authorized emergency vehicle shall\napply only when such vehicle is making use of an audible signal and use of a flashing or\nrevolving red light visible under normal atmospheric conditions from a distance of 500\nfeet to the front of such vehicle, except that a vehicle belonging to a federal, state, or\nlocal law enforcement agency and operated as such shall be making use of an audible\nsignal and a flashing or revolving blue light with the same visibility to the front of the\nvehicle.\nd) The foregoing provisions shall not relieve the driver of an authorized emergency vehicle\nfrom the duty to drive with due regard for the safety of all persons.",
-      "pageText": [
-        {
-          "page": 19,
-          "text": "Emergency Vehicle Operations\nThe driver of any authorized emergency vehicle must always drive with due regard for the\nsafety of all persons, including the patient being transported, the transport crew and the public.\nWhen operating a vehicle as “an authorized emergency vehicle”, both the warning lights and\naudible signal must be in use. Operating a vehicle with only one of these two warning devices in\nuse does not satisfy the requirements of OCGA 40-6-6 (see below)\nThere are certain medical conditions that may require the rapid transport of the patient, without\nthe use of an audible warning device due to the patient’s condition (e.g. acute MI, pre-\neclampsia). In circumstances where lights only are being used for transport, the vehicle\ncannot proceed as “an authorized emergency vehicle” under the conditions set forth in\nOCGA 40-6-6. The operator of the ambulance using lights only without the use of an audible\nwarning device must proceed in complete compliance with the “Rules of the Road”.\nSimilarly, there may be environmental conditions (e.g. traffic, weather), in which operating as an\nemergency vehicle (lights and siren) introduces unreasonable risk and provides minimal\nopportunity to arrive at the destination sooner.\nThe Law\nOCGA § 40-6-6. Authorized Emergency Vehicles\na) The driver of an authorized emergency vehicle or law enforcement vehicle, when\nresponding to an emergency call, when in pursuit of an actual or suspected violator of\nthe law, or when responding to but not upon returning from a fire alarm, may exercise the\nprivileges set forth in this Code section.\nb) The driver of an authorized emergency vehicle or law enforcement vehicle may:\n1) Park or stand, irrespective of the provisions of this chapter.\n2) Proceed past a red or stop signal or stop sign, but only after slowing down as\nmay be necessary for safe operation.\n3) Exceed the maximum speed limits so long as he or she does not endanger life or\nproperty; and\n4) Disregard regulations governing direction of movement or turning in specified\ndirections.\nc) The exceptions granted by this Code section to an authorized emergency vehicle shall\napply only when such vehicle is making use of an audible signal and use of a flashing or\nrevolving red light visible under normal atmospheric conditions from a distance of 500\nfeet to the front of such vehicle, except that a vehicle belonging to a federal, state, or\nlocal law enforcement agency and operated as such shall be making use of an audible\nsignal and a flashing or revolving blue light with the same visibility to the front of the\nvehicle.\nd) The foregoing provisions shall not relieve the driver of an authorized emergency vehicle\nfrom the duty to drive with due regard for the safety of all persons."
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
+      "plainText": "Emergency Vehicle Operations. The driver of any authorized emergency vehicle must always drive with due regard for the safety of all persons, including the patient being transported, the transport crew and the public.",
+      "needsReview": false
     },
     {
       "id": "handling-patients-personal-property",
