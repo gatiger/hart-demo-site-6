@@ -492,6 +492,27 @@ function renderDocumentExample(block, container) {
 
   container.appendChild(section);
 }
+function appendTextWithBold(element, text, phrases = []) {
+  const source = String(text || '');
+  const boldPhrases = (phrases || []).filter(Boolean);
+  if (!boldPhrases.length) {
+    element.textContent = source;
+    return;
+  }
+
+  const escaped = boldPhrases.map(phrase => phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+  const matcher = new RegExp(`(${escaped.join('|')})`, 'g');
+  for (const part of source.split(matcher)) {
+    if (!part) continue;
+    if (boldPhrases.includes(part)) {
+      const strong = document.createElement('strong');
+      strong.textContent = part;
+      element.appendChild(strong);
+    } else {
+      element.appendChild(document.createTextNode(part));
+    }
+  }
+}
 function renderBlock(block, container) {
   if (block.type === 'document-example') {
     renderDocumentExample(block, container);
@@ -517,20 +538,22 @@ function renderBlock(block, container) {
   }
 
   if (block.type === 'list') {
-    const ordered = (block.ordered === true) || (block.items || []).every(item => /^\s*\d+[\).]/.test(item));
+    const itemText = item => typeof item === 'object' ? String(item.text || '') : String(item || '');
+    const ordered = (block.ordered === true) || (block.items || []).every(item => /^\s*\d+[\).]/.test(itemText(item)));
     const list = document.createElement(ordered ? 'ol' : 'ul');
     if (ordered && block.start) list.start = Number(block.start);
     if (ordered && block.listStyle) list.style.listStyleType = block.listStyle;
     if (block.indent) list.classList.add('nested-list');
     for (const item of block.items || []) {
       const li = document.createElement('li');
-      li.textContent = ordered ? item.replace(/^\s*\d+[\).]\s*/, '') : item.replace(/^\s*[•\-o]\s*/, '');
+      const rawText = itemText(item);
+      const cleanText = ordered ? rawText.replace(/^\s*\d+[\).]\s*/, '') : rawText.replace(/^\s*[â€¢\-o]\s*/, '');
+      appendTextWithBold(li, cleanText, typeof item === 'object' ? item.bold : []);
       list.appendChild(li);
     }
     container.appendChild(list);
     return;
   }
-
   if (block.type === 'table') {
     renderPdfStyleTable(block, container);
     return;

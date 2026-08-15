@@ -2541,63 +2541,75 @@
       "id": "intravenous-access",
       "title": "Intravenous Access",
       "type": "protocol",
-      "categoryPath": [
-        "General Protocols"
-      ],
+      "categoryPath": ["General Protocols"],
       "status": "active",
       "effectiveDate": "2026-06-08",
       "lastRevised": "",
       "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 32,
-        "pageEnd": 32,
-        "pageLabel": "32"
-      },
-      "summary": "",
+      "tags": ["intravenous access", "IV", "catheter", "Dextrose 50%", "Normal Saline", "external jugular"],
+      "summary": "Indications, site selection, catheter sizing, and procedure for intravenous access.",
+      "displayMode": "native",
       "content": [
         {
           "type": "heading",
           "level": 2,
-          "text": "Intravenous Access"
-        },
-        {
-          "type": "paragraph",
-          "text": "Indications for IV Access Current patient condition requires pre-hospital IV fluids or medication administration. Pre-hospital provider believes that a pre-hospital IV is warranted because of a high likelihood for clinical deterioration. Locate appropriate peripheral insertion site. In the event that an IV cannot be established, and the IV is considered critical for the care of the patient, other peripheral sites may be used (e.g. external jugular, feet, legs, etc.) The primary peripheral IV site should be the hand and forearm. Large bore catheters may be placed in the antecubital space veins, but placement in this location will require that the arm be maintained in an extended position. Secondary access sites include the leg, foot and the external jugular veins. Lower extremity vein cannulation should be avoided in diabetics and patients with evidence of venous stasis. Prepare insertion site using aseptic technique. Apply tourniquet proximal to puncture site. Prepare appropriately sized over-the-needle catheters(s)"
+          "text": "Indications for IV Access"
         },
         {
           "type": "list",
           "items": [
-            "Patients with major trauma or evidence of shock should have at least one and"
+            "Current patient condition requires pre-hospital IV fluids or medication administration.",
+            "Pre-hospital provider believes that a pre-hospital IV is warranted because of a high likelihood for clinical deterioration."
           ]
         },
         {
-          "type": "paragraph",
-          "text": "preferably two 16-gauge catheters placed."
+          "type": "heading",
+          "level": 2,
+          "text": "Locate Appropriate Peripheral Insertion Site"
         },
         {
           "type": "list",
           "items": [
+            "In the event that an IV cannot be established, and the IV is considered critical for the care of the patient, other peripheral sites may be used (e.g. external jugular, feet, legs, etc.)",
+            "The primary peripheral IV site should be the hand and forearm. Large bore catheters may be placed in the antecubital space veins, but placement in this location will require that the arm be maintained in an extended position. Secondary access sites include the leg, foot and the external jugular veins. Lower extremity vein cannulation should be avoided in diabetics and patients with evidence of venous stasis.",
+            "Prepare insertion site using aseptic technique.",
+            "Apply tourniquet proximal to puncture site.",
+            "Prepare appropriately sized over-the-needle catheter(s)"
+          ]
+        },
+        {
+          "type": "list",
+          "indent": 1,
+          "items": [
+            "Patients with major trauma or evidence of shock should have at least one and preferably two 16-gauge catheters placed.",
             "Adult medical patients should have an 18-to-20-gauge catheter placed if indicated.",
-            "Patients requiring Dextrose 50% should have, at a minimum, a 20-gauge catheter"
+            {
+              "text": "Patients requiring Dextrose 50% should have, at a minimum, a 20-gauge catheter placed with an 18-gauge being preferred.",
+              "bold": ["Dextrose 50%"]
+            }
           ]
         },
         {
-          "type": "paragraph",
-          "text": "placed with an 18-gauge being preferred. Stabilize the site and insert catheter. Remove the needle from the catheter. Confirm placement and attach Saline Lock – Release tourniquet. Flush the catheter with 10ml of Normal Saline. Secure catheter, dress site and secure tubing Initiate IV fluid administration or medication if indicated. External Jugular Veins should never be the first line attempt unless the patient has no limbs for the initial attempts. INTs should not be used in External Jugular Access."
-        }
-      ],
-      "plainText": "Intravenous Access\nIndications for IV Access\n•\nCurrent patient condition requires pre-hospital IV fluids or medication administration.\n•\nPre-hospital provider believes that a pre-hospital IV is warranted because of a high\nlikelihood for clinical deterioration.\nLocate appropriate peripheral insertion site.\n•\nIn the event that an IV cannot be established, and the IV is considered critical for the care\nof the patient, other peripheral sites may be used (e.g. external jugular, feet, legs, etc.)\n•\nThe primary peripheral IV site should be the hand and forearm. Large bore catheters may\nbe placed in the antecubital space veins, but placement in this location will require that the\narm be maintained in an extended position. Secondary access sites include the leg, foot\nand the external jugular veins. Lower extremity vein cannulation should be avoided in\ndiabetics and patients with evidence of venous stasis.\n•\nPrepare insertion site using aseptic technique.\n•\nApply tourniquet proximal to puncture site.\n•\nPrepare appropriately sized over-the-needle catheters(s)\no Patients with major trauma or evidence of shock should have at least one and\npreferably two 16-gauge catheters placed.\no Adult medical patients should have an 18-to-20-gauge catheter placed if indicated.\no Patients requiring Dextrose 50% should have, at a minimum, a 20-gauge catheter\nplaced with an 18-gauge being preferred.\n•\nStabilize the site and insert catheter.\n•\nRemove the needle from the catheter.\n•\nConfirm placement and attach Saline Lock – Release tourniquet.\n•\nFlush the catheter with 10ml of Normal Saline.\n•\nSecure catheter, dress site and secure tubing\n•\nInitiate IV fluid administration or medication if indicated.\nExternal Jugular Veins should never be the first line attempt unless\nthe patient has no limbs for the initial attempts.  INTs should not be\nused in External Jugular Access.",
-      "pageText": [
+          "type": "list",
+          "items": [
+            "Stabilize the site and insert catheter.",
+            "Remove the needle from the catheter.",
+            "Confirm placement and attach Saline Lock – Release tourniquet.",
+            {
+              "text": "Flush the catheter with 10ml of Normal Saline.",
+              "bold": ["Normal Saline"]
+            },
+            "Secure catheter, dress site and secure tubing.",
+            "Initiate IV fluid administration or medication if indicated."
+          ]
+        },
         {
-          "page": 32,
-          "text": "Intravenous Access\nIndications for IV Access\n•\nCurrent patient condition requires pre-hospital IV fluids or medication administration.\n•\nPre-hospital provider believes that a pre-hospital IV is warranted because of a high\nlikelihood for clinical deterioration.\nLocate appropriate peripheral insertion site.\n•\nIn the event that an IV cannot be established, and the IV is considered critical for the care\nof the patient, other peripheral sites may be used (e.g. external jugular, feet, legs, etc.)\n•\nThe primary peripheral IV site should be the hand and forearm. Large bore catheters may\nbe placed in the antecubital space veins, but placement in this location will require that the\narm be maintained in an extended position. Secondary access sites include the leg, foot\nand the external jugular veins. Lower extremity vein cannulation should be avoided in\ndiabetics and patients with evidence of venous stasis.\n•\nPrepare insertion site using aseptic technique.\n•\nApply tourniquet proximal to puncture site.\n•\nPrepare appropriately sized over-the-needle catheters(s)\no Patients with major trauma or evidence of shock should have at least one and\npreferably two 16-gauge catheters placed.\no Adult medical patients should have an 18-to-20-gauge catheter placed if indicated.\no Patients requiring Dextrose 50% should have, at a minimum, a 20-gauge catheter\nplaced with an 18-gauge being preferred.\n•\nStabilize the site and insert catheter.\n•\nRemove the needle from the catheter.\n•\nConfirm placement and attach Saline Lock – Release tourniquet.\n•\nFlush the catheter with 10ml of Normal Saline.\n•\nSecure catheter, dress site and secure tubing\n•\nInitiate IV fluid administration or medication if indicated.\nExternal Jugular Veins should never be the first line attempt unless\nthe patient has no limbs for the initial attempts.  INTs should not be\nused in External Jugular Access."
+          "type": "warning",
+          "text": "External Jugular Veins should never be the first line attempt unless the patient has no limbs for the initial attempts. INTs should not be used in External Jugular Access."
         }
       ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
+      "plainText": "Intravenous Access. Indications for IV Access. Locate appropriate peripheral insertion site. Patients requiring Dextrose 50% should have, at a minimum, a 20-gauge catheter placed with an 18-gauge being preferred. Flush the catheter with 10ml of Normal Saline.",
+      "needsReview": false
     },
     {
       "id": "intraosseous-access",
