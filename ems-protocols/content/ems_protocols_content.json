@@ -4317,110 +4317,61 @@
       ],
       "plainText":"Pediatric Abdominal Discomfort. Assessment, stabilization, Medical Control consultation, nausea and vomiting guidance, pain management, and documentation for pediatric abdominal or flank discomfort without trauma.","needsReview":false
     },    {
-      "id": "allergic-reaction-anaphylaxis",
-      "title": "Allergic Reaction / Anaphylaxis",
-      "type": "protocol",
-      "categoryPath": [
-        "Pediatric Clinical Protocols",
-        "Pediatric Medical Emergencies"
+      "id":"allergic-reaction-anaphylaxis","title":"Pediatric Allergic Reaction/Anaphylaxis","type":"protocol","categoryPath":["Pediatric Clinical Protocols","Pediatric Medical Emergencies"],"status":"active","effectiveDate":"2026-06-08","lastRevised":"","version":"2026",
+      "tags":["pediatric","allergic reaction","anaphylaxis","epinephrine"],
+      "summary":"Assessment and treatment of pediatric allergic reactions and anaphylaxis.",
+      "content":[
+        {"type":"heading","level":2,"text":"Pediatric Allergic Reaction/Anaphylaxis"},
+        {"type":"paragraph","text":"This protocol applies to pediatric patients presenting with rash, hives, shortness of breath, or other signs and symptoms, up to and including shock, possibly due to an allergic reaction."},
+        {"type":"flow-stage","title":"First Impression (Pediatric Assessment Triangle)","links":[{"text":"Pediatric Assessment Triangle","protocolId":"pediatric-assessment-triangle"}],"arrowAfter":true,"items":[
+          "Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.",
+          "Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.",
+          "Circulation – observe skin color for pallor, mottling, and/or cyanosis."
+        ]},
+        {"type":"flow-stage","title":"Primary Survey","arrowAfter":true,"items":[
+          "Ensure airway – ensure patency and proper positioning.",
+          {"text":"Assess breathing – give O₂ as tolerated by mask or blow-by. Maintain SpO₂ ≥ 94%.","bold":["Maintain SpO₂ ≥ 94%."]},
+          {"text":"Assess circulation – manage shock appropriately. See Shock Protocol.","links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          "Assess disability – assess LOC.",
+          "Exposure/Environment – expose injuries as needed.",
+          {"text":"If respiratory compromise and/or signs of shock are present, treat immediately with epinephrine. All EMS provider levels are authorized to utilize epinephrine auto-injectors. (AEMT, CT and Paramedic providers may give 1:1,000 Epinephrine SQ or IM.)","icon":"assets/legend-important.webp","red":true},
+          {"text":"Isolate the patient from the source of the allergen if possible.","icon":"assets/legend-important.webp","red":true}
+        ]},
+        {"type":"flow-stage","title":"Secondary Assessment and Treatment","arrowAfter":true,"items":[
+          "Monitor vital signs and O₂ saturation.",
+          "Monitor capnography.",
+          "Initiate cardiac monitoring.",
+          "Physical exam and OPQRST/SAMPLE history.",
+          "Advanced airway and ventilatory management as needed.",
+          "Initiate IV/IO of normal saline KVO.",
+          {"text":"Administer 20 ml/kg bolus if signs of shock are present.","indent":1},
+          "If localized reaction (hives):",
+          {"text":"Diphenhydramine – 1–2 mg/kg IV slow, or deep IM. Max Dose – 50mg","indent":1,"bold":["1–2 mg/kg","Max Dose – 50mg"],"links":[{"text":"Diphenhydramine","protocolId":"diphenhydramine-benadryl"}]},
+          {"text":"If patient presents with respiratory distress, in addition to Diphenhydramine:","links":[{"text":"Diphenhydramine","protocolId":"diphenhydramine-benadryl"}]},
+          {"text":"1:1,000 Epinephrine – 0.01 mg/kg subcutaneous","indent":1,"bold":["0.01 mg/kg"],"links":[{"text":"Epinephrine","protocolId":"epinephrine-1-1000-and-1-10-000"}]},
+          {"text":"Nebulize 3 ml DuoNeb","indent":1,"bold":["3 ml DuoNeb"],"links":[{"text":"DuoNeb","protocolId":"duoneb"}]},
+          {"text":"Administer Solu-Medrol 2 mg/kg IV for pediatric patients. Max Dose – 125 mg.","indent":1,"bold":["2 mg/kg","Max Dose – 125 mg."],"links":[{"text":"Solu-Medrol","protocolId":"methylprednisolone-solu-medrol"}]}
+        ]},
+        {"type":"flow-stage","title":"If anaphylactic shock is present:","arrowAfter":true,"items":[
+          {"text":"DO NOT delay Epinephrine 1:1,000 administration attempting IV/IO access.","indent":1,"bold":["DO NOT delay"],"links":[{"text":"Epinephrine","protocolId":"epinephrine-1-1000-and-1-10-000"}]},
+          {"text":"1:1,000 Epinephrine 0.01 mg/kg IM (preferred) or SQ. Max Dose: 0.3mg.","indent":2,"bold":["0.01 mg/kg IM","Max Dose: 0.3mg."],"links":[{"text":"Epinephrine","protocolId":"epinephrine-1-1000-and-1-10-000"}]},
+          {"text":"All levels (AEMT, CT, Paramedic) may repeat 1:1,000 epinephrine IM/SQ/auto-injector dosing every 5 minutes as needed.","icon":"assets/legend-important.webp","red":true}
+        ]},
+        {"type":"stop-control","title":"STOP","text":"CONTACT MEDICAL CONTROL","image":"assets/legend-medical-control.webp","alt":"Stop and contact Medical Control","arrowAfter":true},
+        {"type":"icon-note","image":"assets/legend-important.webp","alt":"Important protocol information","text":"If no response, within 10 minutes of the IM or SQ Epinephrine and fluid bolus, administer 1:10,000 Epinephrine 0.01 mg/kg IV/IO. Max Dose: 0.3mg.","bold":["within 10 minutes","0.01 mg/kg IV/IO","Max Dose: 0.3mg."],"links":[{"text":"Epinephrine","protocolId":"epinephrine-1-1000-and-1-10-000"}],"red":true},
+        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital Signs","OPQRST/SAMPLE","Cardiac rhythm","Treatment(s)","Communication with Medical Control"]},
+        {"type":"list","ordered":true,"items":[
+          "Severe findings include dyspnea, hypotension, and/or altered mental status. Patients with evidence of facial swelling should be evaluated for the presence of intra-oral swelling. If swelling of the tongue is present, then the patient should be treated for a Severe Reaction. Swelling of the lips and mid-face without evidence of respiratory distress or intra-oral swelling may be treated as a Mild/Moderate Reaction.",
+          "Epinephrine should be used with caution in patients over 40-years-old or individuals with a history of coronary heart disease or hypertension.",
+          {"text":"Diphenhydramine 1 mg/kg may be administered IM if unable to establish an IV. Max Pediatric Dose – 25 mg.","bold":["1 mg/kg","Max Pediatric Dose – 25 mg."],"links":[{"text":"Diphenhydramine","protocolId":"diphenhydramine-benadryl"}]},
+          {"text":"Most patients will respond to SQ Epinephrine. For severe symptoms that do not improve after SQ Epinephrine, request approval from on-line Medical Control for an Epinephrine Drip. Mix the Epinephrine Drip using the table below.","links":[{"text":"Epinephrine","protocolId":"epinephrine-1-1000-and-1-10-000"}]}
+        ]},
+        {"type":"table","className":"epinephrine-drip-table","caption":"Pediatric Epinephrine Drip Chart","subtitle":"Preferred Method – Mix 2mg in 250cc bag and place on IV pump. 0.1–1 mcg/kg/min OR see below only if pump is not available. Step 1: Determine starting rate. Epi 1 mg/ml (1:1,000). Only if pump is not available.","headers":["2 kg","4kg",{"text":"6kg","className":"epi-pink"},{"text":"8-9kg","className":"epi-red"},{"text":"10-11 kg","className":"epi-red"},{"text":"12-14 kg","className":"epi-yellow"},"15-16 kg","17-19 kg",{"text":"20-23 kg","className":"epi-blue"},{"text":"24-29 kg","className":"epi-yellow"},{"text":"30-36 kg","className":"epi-green"}],"rows":[
+          [{"text":"2gtt/min"},{"text":"3gtt/min"},{"text":"5gtt/min","className":"epi-pink"},{"text":"6gtt/min","className":"epi-red"},{"text":"8gtt/min","className":"epi-red"},{"text":"9gtt/min","className":"epi-yellow"},{"text":"11gtt/min"},{"text":"13gtt/min"},{"text":"15gtt/min","className":"epi-blue"},{"text":"15gtt/min","className":"epi-yellow"},{"text":"15gtt/min","className":"epi-green"}]
+        ]}
       ],
-      "status": "active",
-      "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 52,
-        "pageEnd": 53,
-        "pageLabel": "52-53"
-      },
-      "summary": "",
-      "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Pediatric Allergic Reaction/Anaphylaxis"
-        },
-        {
-          "type": "paragraph",
-          "text": "This protocol applies to pediatric patients presenting with rash, hives, shortness of breath, or other signs and symptoms, up to and including shock, possibly due to an allergic reaction. First Impression (Pediatric Assessment Triangle) Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry. Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds. Circulation – observe skin color for pallor, mottling and/or cyanosis. Primary Survey Ensure airway – ensure patency and proper positioning. Assess breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%. Assess circulation – manage shock appropriately. See Shock Protocol. Assess disability – assess LOC Exposure/Environment – expose injuries as needed. If respiratory compromise and/or signs of shock are present, treat immediately with epinephrine. All EMS provider levels are authorized to utilize epinephrine auto-injectors. (AEMT, CT and Paramedic providers may give 1:1,000 Epinephrine SQ or IM.) Isolate the patient from the source of the allergen if possible. Secondary Assessment and Treatment Monitor vital signs and O2 saturation. Monitor capnography. Initiate cardiac monitoring. Physical exam and OPQRST/SAMPLE history. Advanced airway and ventilatory management as needed. Initiate IV/IO of normal saline KVO Administer 20 ml/kg bolus if signs of shock are present. If localized reaction (hives): Diphenhydramine – 1-2 mg/kg IV slow, or deep IM. Max Dose - 50mg If patient presents with respiratory distress, in addition to Diphenhydramine: 1:1,000 Epinephrine – 0.01 mg/kg subcutaneous Nebulize 3 ml DuoNeb Administer Solu-Medrol 2 mg/kg IV for pediatric patients. Max Dose - 125 mg. Pediatric Dosing Preferred Method – Mix 2mg in 250cc bag and place on IV pump. 0.1 – 1 mcg/kg/min OR see below only if pump is not available. Step 1: Determine starting rate. Only if pump is not available Epi 1 mg/ml (1:1,000) 2 kg 4kg 6kg 8-9kg 10-11 kg 12-14 kg 15-16 kg 17-19 kg 20-23 kg 24-29 kg 30-36 kg 2gtt/min 3gtt/min 5gtt/min 6gtt/min 8gtt/min 9gtt/min 11gtt/min 13gtt/min 15gtt/min 15gtt/min 15gtt/min Pediatric Allergic Reaction/Anaphylaxis (Continued)"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "If anaphylactic shock is present"
-        },
-        {
-          "type": "paragraph",
-          "text": "DO NOT delay Epinephrine 1:1,000 administration attempting IV/IO access. 1:1,000 Epinephrine 0.01 mg/kg IM (preferred) or SQ. Max Dose: 0.3mg. All levels (AEMT, CT, Paramedic) may repeat 1:1,000 epinephrine IM/SQ/auto-injector dosing every 5 minutes as needed. Contact Medical Control If no response, within 10 minutes of the IM or SQ Epinephrine and fluid bolus, administer 1:10,000 Epinephrine 0.01 mg/kg IV/IO. Max Dose: 0.3mg."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vital Signs OPQRST/SAMPLE Cardiac rhythm Treatment(s) Communication with Medical Control"
-        },
-        {
-          "type": "list",
-          "items": [
-            "1. Severe findings include dyspnea, hypotension, and/or altered mental status. Patients with evidence"
-          ]
-        },
-        {
-          "type": "paragraph",
-          "text": "of facial swelling should be evaluated for the presence of intra-oral swelling. If swelling of the tongue is present, then the patient should be treated for a Severe Reaction. Swelling of the lips and mid- face without evidence of respiratory distress or intra-oral swelling may be treated as a Mild/Moderate Reaction."
-        },
-        {
-          "type": "list",
-          "items": [
-            "2. Epinephrine should be used with caution in patients over 40-years-old or individuals with a history of"
-          ]
-        },
-        {
-          "type": "paragraph",
-          "text": "coronary heart disease or hypertension."
-        },
-        {
-          "type": "list",
-          "items": [
-            "3. Diphenhydramine 1 mg/kg may be administered IM if unable to establish an IV.  Max Pediatric"
-          ]
-        },
-        {
-          "type": "paragraph",
-          "text": "Dose – 25 mg."
-        },
-        {
-          "type": "list",
-          "items": [
-            "4. Most patients will respond to SQ Epinephrine. For severe symptoms that do not improve after SQ"
-          ]
-        },
-        {
-          "type": "paragraph",
-          "text": "Epinephrine, request approval from on-line Medical Control for an Epinephrine Drip. Mix the Epinephrine Drip using the table below. Pediatric Epinephrine Drip Chart"
-        }
-      ],
-      "plainText": "Pediatric Allergic Reaction/Anaphylaxis\nThis protocol applies to pediatric patients presenting with rash, hives, shortness of breath, or\nother signs and symptoms, up to and including shock, possibly due to an allergic reaction.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis.\nPrimary Survey\n•\nEnsure airway – ensure patency and proper positioning.\n•\nAssess breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%.\n•\nAssess circulation – manage shock appropriately. See Shock Protocol.\n•\nAssess disability – assess LOC\n•\nExposure/Environment – expose injuries as needed.\nIf respiratory compromise and/or signs of shock are present, treat immediately with\nepinephrine. All EMS provider levels are authorized to utilize epinephrine auto-injectors.\n(AEMT, CT and Paramedic providers may give 1:1,000 Epinephrine SQ or IM.)\nIsolate the patient from the source of the allergen if possible.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation.\n•\nMonitor capnography.\n•\nInitiate cardiac monitoring.\n•\nPhysical exam and OPQRST/SAMPLE history.\n•\nAdvanced airway and ventilatory management as needed.\n•\nInitiate IV/IO of normal saline KVO\no\nAdminister 20 ml/kg bolus if signs of shock are present.\n•\nIf localized reaction (hives):\no\nDiphenhydramine – 1-2 mg/kg IV slow, or deep IM. Max Dose - 50mg\n•\nIf patient presents with respiratory distress, in addition to Diphenhydramine:\no\n1:1,000 Epinephrine – 0.01 mg/kg subcutaneous\no\nNebulize 3 ml DuoNeb\no\nAdminister Solu-Medrol 2 mg/kg IV for pediatric patients. Max Dose - 125 mg.\nPediatric Dosing\nPreferred Method – Mix 2mg in 250cc bag and place on IV pump. 0.1 – 1 mcg/kg/min OR see below only if pump is not\navailable.\nStep 1: Determine starting\nrate.\nOnly if pump is not available\nEpi 1 mg/ml (1:1,000)\n2 kg\n4kg\n6kg\n8-9kg\n10-11 kg\n12-14 kg\n15-16 kg\n17-19 kg\n20-23 kg\n24-29 kg\n30-36 kg\n2gtt/min\n3gtt/min\n5gtt/min\n6gtt/min\n8gtt/min\n9gtt/min\n11gtt/min\n13gtt/min\n15gtt/min\n15gtt/min\n15gtt/min\nPediatric Allergic Reaction/Anaphylaxis (Continued)\n•\nIf anaphylactic shock is present:\no\nDO NOT delay Epinephrine 1:1,000 administration attempting IV/IO access.\n▪\n1:1,000 Epinephrine 0.01 mg/kg IM (preferred) or SQ. Max Dose: 0.3mg.\nAll levels (AEMT, CT, Paramedic) may repeat 1:1,000 epinephrine IM/SQ/auto-injector dosing\nevery 5 minutes as needed.\nContact Medical\nControl\nIf no response, within 10 minutes of the IM or SQ Epinephrine and fluid bolus, administer\n1:10,000 Epinephrine 0.01 mg/kg IV/IO.  Max Dose: 0.3mg.\nDocument:\n•\nVital Signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control\n1. Severe findings include dyspnea, hypotension, and/or altered mental status. Patients with evidence\nof facial swelling should be evaluated for the presence of intra-oral swelling. If swelling of the tongue\nis present, then the patient should be treated for a Severe Reaction. Swelling of the lips and mid-\nface without evidence of respiratory distress or intra-oral swelling may be treated as a\nMild/Moderate Reaction.\n2. Epinephrine should be used with caution in patients over 40-years-old or individuals with a history of\ncoronary heart disease or hypertension.\n3. Diphenhydramine 1 mg/kg may be administered IM if unable to establish an IV.  Max Pediatric\nDose – 25 mg.\n4. Most patients will respond to SQ Epinephrine. For severe symptoms that do not improve after SQ\nEpinephrine, request approval from on-line Medical Control for an Epinephrine Drip. Mix the\nEpinephrine Drip using the table below.\nPediatric Epinephrine Drip Chart",
-      "pageText": [
-        {
-          "page": 52,
-          "text": "Pediatric Allergic Reaction/Anaphylaxis\nThis protocol applies to pediatric patients presenting with rash, hives, shortness of breath, or\nother signs and symptoms, up to and including shock, possibly due to an allergic reaction.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis.\nPrimary Survey\n•\nEnsure airway – ensure patency and proper positioning.\n•\nAssess breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%.\n•\nAssess circulation – manage shock appropriately. See Shock Protocol.\n•\nAssess disability – assess LOC\n•\nExposure/Environment – expose injuries as needed.\nIf respiratory compromise and/or signs of shock are present, treat immediately with\nepinephrine. All EMS provider levels are authorized to utilize epinephrine auto-injectors.\n(AEMT, CT and Paramedic providers may give 1:1,000 Epinephrine SQ or IM.)\nIsolate the patient from the source of the allergen if possible.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation.\n•\nMonitor capnography.\n•\nInitiate cardiac monitoring.\n•\nPhysical exam and OPQRST/SAMPLE history.\n•\nAdvanced airway and ventilatory management as needed.\n•\nInitiate IV/IO of normal saline KVO\no\nAdminister 20 ml/kg bolus if signs of shock are present.\n•\nIf localized reaction (hives):\no\nDiphenhydramine – 1-2 mg/kg IV slow, or deep IM. Max Dose - 50mg\n•\nIf patient presents with respiratory distress, in addition to Diphenhydramine:\no\n1:1,000 Epinephrine – 0.01 mg/kg subcutaneous\no\nNebulize 3 ml DuoNeb\no\nAdminister Solu-Medrol 2 mg/kg IV for pediatric patients. Max Dose - 125 mg."
-        },
-        {
-          "page": 53,
-          "text": "Pediatric Dosing\nPreferred Method – Mix 2mg in 250cc bag and place on IV pump. 0.1 – 1 mcg/kg/min OR see below only if pump is not\navailable.\nStep 1: Determine starting\nrate.\nOnly if pump is not available\nEpi 1 mg/ml (1:1,000)\n2 kg\n4kg\n6kg\n8-9kg\n10-11 kg\n12-14 kg\n15-16 kg\n17-19 kg\n20-23 kg\n24-29 kg\n30-36 kg\n2gtt/min\n3gtt/min\n5gtt/min\n6gtt/min\n8gtt/min\n9gtt/min\n11gtt/min\n13gtt/min\n15gtt/min\n15gtt/min\n15gtt/min\nPediatric Allergic Reaction/Anaphylaxis (Continued)\n•\nIf anaphylactic shock is present:\no\nDO NOT delay Epinephrine 1:1,000 administration attempting IV/IO access.\n▪\n1:1,000 Epinephrine 0.01 mg/kg IM (preferred) or SQ. Max Dose: 0.3mg.\nAll levels (AEMT, CT, Paramedic) may repeat 1:1,000 epinephrine IM/SQ/auto-injector dosing\nevery 5 minutes as needed.\nContact Medical\nControl\nIf no response, within 10 minutes of the IM or SQ Epinephrine and fluid bolus, administer\n1:10,000 Epinephrine 0.01 mg/kg IV/IO.  Max Dose: 0.3mg.\nDocument:\n•\nVital Signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control\n1. Severe findings include dyspnea, hypotension, and/or altered mental status. Patients with evidence\nof facial swelling should be evaluated for the presence of intra-oral swelling. If swelling of the tongue\nis present, then the patient should be treated for a Severe Reaction. Swelling of the lips and mid-\nface without evidence of respiratory distress or intra-oral swelling may be treated as a\nMild/Moderate Reaction.\n2. Epinephrine should be used with caution in patients over 40-years-old or individuals with a history of\ncoronary heart disease or hypertension.\n3. Diphenhydramine 1 mg/kg may be administered IM if unable to establish an IV.  Max Pediatric\nDose – 25 mg.\n4. Most patients will respond to SQ Epinephrine. For severe symptoms that do not improve after SQ\nEpinephrine, request approval from on-line Medical Control for an Epinephrine Drip. Mix the\nEpinephrine Drip using the table below.\nPediatric Epinephrine Drip Chart"
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Pediatric Allergic Reaction/Anaphylaxis. Assessment and treatment of pediatric allergic reactions and anaphylaxis, including epinephrine dosing, Medical Control consultation, documentation, and the Pediatric Epinephrine Drip Chart.","needsReview":false
+    },    {
       "id": "altered-level-of-consciousness",
       "title": "Altered Level of Consciousness",
       "type": "protocol",
