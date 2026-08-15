@@ -45,8 +45,8 @@ function showSplash() {
   const content = document.getElementById('protocolContent');
   content.innerHTML = `
     <section class="protocol-splash" aria-labelledby="splash-heading">
-      <div class="splash-emblem" aria-hidden="true">
-        <img src="icons/ems-192.png" alt="">
+      <div class="splash-banner">
+        <img src="assets/Hart_EMS_Banner.webp" alt="Hart County EMS">
       </div>
       <p class="splash-agency">${escapeHtml(meta.agency || 'Hart County Emergency Medical Services')}</p>
       <h3 id="splash-heading">Prehospital Clinical Operating Protocols &amp; Standing Orders</h3>

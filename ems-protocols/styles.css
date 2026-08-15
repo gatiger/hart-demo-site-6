@@ -377,19 +377,6 @@ details[open] > .tree-heading.tree-toggle::before {
   color: #fff;
   overflow: hidden;
 }
-.splash-emblem {
-  width: clamp(92px, 15vw, 138px);
-  aspect-ratio: 1;
-  display: grid;
-  place-items: center;
-  margin-bottom: 1.25rem;
-  padding: .65rem;
-  border: 2px solid rgba(255,255,255,.55);
-  border-radius: 50%;
-  background: rgba(255,255,255,.96);
-  box-shadow: 0 16px 36px rgba(0,0,0,.22);
-}
-.splash-emblem img { display: block; width: 100%; height: 100%; object-fit: contain; }
 .splash-agency { margin: 0 0 .55rem; color: rgba(255,255,255,.82); font-size: .8rem; font-weight: 900; letter-spacing: .13em; text-transform: uppercase; }
 .protocol-content .protocol-splash h3 { max-width: 850px; margin: 0; color: #fff; font-size: clamp(1.8rem, 4.5vw, 3.6rem); line-height: 1.08; letter-spacing: -.025em; }
 .splash-effective { margin: 1rem 0 0; color: #fff; font-size: clamp(1rem, 2vw, 1.2rem); font-weight: 800; }
@@ -409,3 +396,40 @@ details[open] > .tree-heading.tree-toggle::before {
   .splash-actions { width: 100%; }
   .splash-actions .btn { width: 100%; }
 }
+/* EMS banner splash palette */
+.protocol-splash {
+  border: 1px solid #cbd5e1;
+  border-top: 6px solid #173a5e;
+  background:
+    radial-gradient(circle at 50% 0, rgba(255,255,255,.98), rgba(255,255,255,0) 42%),
+    linear-gradient(145deg, #f8fafc 0%, #e9eff5 58%, #dbe5ee 100%);
+  color: #172b3f;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.9);
+}
+.splash-banner {
+  width: min(720px, 100%);
+  margin-bottom: clamp(1.25rem, 3vw, 2rem);
+  padding: clamp(.45rem, 1.5vw, .85rem);
+  border-radius: .85rem;
+  background: rgba(255,255,255,.88);
+}
+.splash-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 245px;
+  object-fit: contain;
+}
+.splash-agency { color: #48627a; }
+.protocol-content .protocol-splash h3 { color: #172b3f; }
+.splash-effective { color: #294d70; }
+.splash-leadership {
+  border-color: #c2ced9;
+  background: #c2ced9;
+}
+.splash-leadership div { background: rgba(255,255,255,.72); }
+.splash-leadership dt { color: #60758a; }
+.splash-leadership dd { color: #172b3f; }
+.splash-actions .btn-primary { background: #173a5e; border-color: #173a5e; color: #fff; }
+.splash-actions .btn:not(.btn-primary) { background: #fff; border-color: #8ca0b3; color: #173a5e; }
+.splash-note { color: #60758a; }

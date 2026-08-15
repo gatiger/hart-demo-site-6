@@ -1,10 +1,11 @@
-const CACHE_NAME = 'hcems-protocols-v8';
+const CACHE_NAME = 'hcems-protocols-v9';
 const APP_SHELL = [
   './',
   './index.html',
   './styles.css',
   './app.js',
   './manifest.json',
+  './assets/Hart_EMS_Banner.webp',
   './content/ems_protocols_content.json',
   './content/ems_protocols_toc.json'
 ];
