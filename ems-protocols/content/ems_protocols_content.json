@@ -1843,54 +1843,82 @@
       "id": "control-of-patient-care-physician-on-scene",
       "title": "Control of Patient Care: Physician on Scene",
       "type": "protocol",
-      "categoryPath": [
-        "General Protocols"
-      ],
+      "categoryPath": ["General Protocols"],
       "status": "active",
       "effectiveDate": "2026-06-08",
       "lastRevised": "",
       "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 15,
-        "pageEnd": 15,
-        "pageLabel": "15"
-      },
-      "summary": "",
+      "tags": ["patient care", "physician on scene", "intervener physician", "medical control", "scope of practice"],
+      "summary": "Direction for control of patient care when a physician is present at an emergency scene or supervising care from an office.",
+      "displayMode": "native",
       "content": [
         {
           "type": "heading",
           "level": 2,
-          "text": "Control of Patient Care: Physician on Scene"
+          "text": "Control of Care at the Scene"
         },
         {
           "type": "paragraph",
-          "text": "Control of patient care at the scene of an emergency shall be the responsibility of the individual in attendance most appropriately trained and knowledgeable in providing pre-hospital emergency stabilization and transport. When EMS personnel arrive at the scene of a medical emergency, and contact is made with medical control by EMS personnel, a physician/patient relationship is established between the patient and the physician providing medical control. The physician is responsible for the management of the patient and EMS personnel act as an agent of medical control unless the patient’s physician is present. When a physician, other than the patient’s physician, on the scene of a medical emergency, properly identifies himself and demonstrates his willingness to assume responsibility for patient management and documents his interventions by signing the patient care report, EMS personnel should place the intervening physician in communication with medical control. If there is a disagreement between the intervening physician and the medical control physician, or if the intervening physician refuses to speak with medical control, EMS personnel should continue to take orders from the medical control physician. Reference: DPH Rule 511-9-2-.07 (6) (i) Control of Patient care at the scene Intervener Physician An Intervener physician is a physician on the scene who has no previous connection with the patient. For the Good Samaritan physician to assume control of the patient, he/she must provide proof of licensure in Georgia Be willing to assume responsibility for the patient at the scene and during patient transportation to the hospital. This includes accompanying the patient during transportation. (except multi-casualty situations) Perform procedures outside the scope of EMS protocol his or herself If the physician is unwilling to comply with these requirements, then his/her assistance should be respectfully declined. Physician in His/her Office"
+          "text": "Control of patient care at the scene of an emergency shall be the responsibility of the person in attendance who is most appropriately trained and knowledgeable in providing prehospital emergency stabilization and transport."
+        },
+        {
+          "type": "paragraph",
+          "text": "When EMS personnel arrive at a medical emergency and contact Medical Control, a physician-patient relationship is established between the patient and the physician providing Medical Control. The Medical Control physician is responsible for management of the patient, and EMS personnel act as an agent of Medical Control unless the patient's physician is present."
+        },
+        {
+          "type": "paragraph",
+          "text": "When another physician at the scene properly identifies themselves, is willing to assume responsibility for patient management, and agrees to document their interventions by signing the patient care report, EMS personnel should place that physician in communication with Medical Control."
+        },
+        {
+          "type": "warning",
+          "text": "If the physician at the scene disagrees with the Medical Control physician or refuses to communicate with Medical Control, EMS personnel shall continue to follow orders from the Medical Control physician."
+        },
+        {
+          "type": "note",
+          "text": "Reference: Georgia Department of Public Health Rule 511-9-2-.07(6)(i), Control of Patient Care at the Scene."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Intervener Physician"
+        },
+        {
+          "type": "paragraph",
+          "text": "An intervener physician is a physician at the scene who has no previous connection with the patient. To assume control of the patient, the physician must:"
         },
         {
           "type": "list",
           "items": [
-            "1. EMS shall perform its duties per protocol",
-            "2. The physician may elect to supervise care provided by EMS.",
-            "3. If the physician directs the EMS personnel to perform a procedure or administer a"
+            "Provide proof of licensure in Georgia.",
+            "Accept responsibility for the patient at the scene and during transport to the hospital, including accompanying the patient during transport except in a multiple-casualty situation.",
+            "Personally perform any procedures that are outside the EMS protocol or the EMS provider's scope of practice."
           ]
         },
         {
-          "type": "paragraph",
-          "text": "medication which is not covered by EMS Scope of Practice or local protocol, then EMS will advise the physician of such. The EMS provider will not perform this procedure. The EMS provider may assist the physician in performing said procedure. If the physician initiates a medication which is to be continued during patient transport, which is not covered by scope or protocol, then the physician is expected to accompany the patient to the hospital."
-        }
-      ],
-      "plainText": "Control of Patient Care: Physician on Scene\nControl of patient care at the scene of an emergency shall be the responsibility of the individual in\nattendance most appropriately trained and knowledgeable in providing pre-hospital emergency\nstabilization and transport.  When EMS personnel arrive at the scene of a medical emergency,\nand contact is made with medical control by EMS personnel, a physician/patient relationship is\nestablished between the patient and the physician providing medical control.  The physician is\nresponsible for the management of the patient and EMS personnel act as an agent of medical\ncontrol unless the patient’s physician is present.  When a physician, other than the patient’s\nphysician, on the scene of a medical emergency, properly identifies himself and demonstrates his\nwillingness to assume responsibility for patient management and documents his interventions by\nsigning the patient care report, EMS personnel should place the intervening physician in\ncommunication with medical control.  If there is a disagreement between the intervening physician\nand the medical control physician, or if the intervening physician refuses to speak with medical\ncontrol, EMS personnel should continue to take orders from the medical control physician.\nReference: DPH Rule 511-9-2-.07 (6) (i) Control of Patient care at the scene\nIntervener Physician\n•\nAn Intervener physician is a physician on the scene who has no previous connection with\nthe patient.  For the Good Samaritan physician to assume control of the patient, he/she\nmust provide proof of licensure in Georgia\n•\nBe willing to assume responsibility for the patient at the scene and during patient\ntransportation to the hospital.  This includes accompanying the patient during\ntransportation. (except multi-casualty situations)\n•\nPerform procedures outside the scope of EMS protocol his or herself\nIf the physician is unwilling to comply with these requirements, then his/her assistance\nshould be respectfully declined.\nPhysician in His/her Office\n1. EMS shall perform its duties per protocol\n2. The physician may elect to supervise care provided by EMS.\n3. If the physician directs the EMS personnel to perform a procedure or administer a\nmedication which is not covered by EMS Scope of Practice or local protocol, then EMS\nwill advise the physician of such.  The EMS provider will not perform this\nprocedure.  The EMS provider may assist the physician in performing said procedure.\nIf the physician initiates a medication which is to be continued during patient transport,\nwhich is not covered by scope or protocol, then the physician is expected to\naccompany the patient to the hospital.",
-      "pageText": [
+          "type": "warning",
+          "text": "If the intervener physician is unwilling to meet these requirements, respectfully decline the physician's assistance."
+        },
         {
-          "page": 15,
-          "text": "Control of Patient Care: Physician on Scene\nControl of patient care at the scene of an emergency shall be the responsibility of the individual in\nattendance most appropriately trained and knowledgeable in providing pre-hospital emergency\nstabilization and transport.  When EMS personnel arrive at the scene of a medical emergency,\nand contact is made with medical control by EMS personnel, a physician/patient relationship is\nestablished between the patient and the physician providing medical control.  The physician is\nresponsible for the management of the patient and EMS personnel act as an agent of medical\ncontrol unless the patient’s physician is present.  When a physician, other than the patient’s\nphysician, on the scene of a medical emergency, properly identifies himself and demonstrates his\nwillingness to assume responsibility for patient management and documents his interventions by\nsigning the patient care report, EMS personnel should place the intervening physician in\ncommunication with medical control.  If there is a disagreement between the intervening physician\nand the medical control physician, or if the intervening physician refuses to speak with medical\ncontrol, EMS personnel should continue to take orders from the medical control physician.\nReference: DPH Rule 511-9-2-.07 (6) (i) Control of Patient care at the scene\nIntervener Physician\n•\nAn Intervener physician is a physician on the scene who has no previous connection with\nthe patient.  For the Good Samaritan physician to assume control of the patient, he/she\nmust provide proof of licensure in Georgia\n•\nBe willing to assume responsibility for the patient at the scene and during patient\ntransportation to the hospital.  This includes accompanying the patient during\ntransportation. (except multi-casualty situations)\n•\nPerform procedures outside the scope of EMS protocol his or herself\nIf the physician is unwilling to comply with these requirements, then his/her assistance\nshould be respectfully declined.\nPhysician in His/her Office\n1. EMS shall perform its duties per protocol\n2. The physician may elect to supervise care provided by EMS.\n3. If the physician directs the EMS personnel to perform a procedure or administer a\nmedication which is not covered by EMS Scope of Practice or local protocol, then EMS\nwill advise the physician of such.  The EMS provider will not perform this\nprocedure.  The EMS provider may assist the physician in performing said procedure.\nIf the physician initiates a medication which is to be continued during patient transport,\nwhich is not covered by scope or protocol, then the physician is expected to\naccompany the patient to the hospital."
+          "type": "heading",
+          "level": 2,
+          "text": "Physician in Their Office"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "1. EMS shall perform its duties according to protocol.",
+            "2. The physician may elect to supervise the care provided by EMS.",
+            "3. If the physician directs EMS personnel to perform a procedure or administer a medication that is outside the EMS scope of practice or local protocol, EMS shall advise the physician that the provider cannot perform it. The EMS provider may assist the physician while the physician personally performs the procedure."
+          ]
+        },
+        {
+          "type": "warning",
+          "text": "If the physician initiates a medication that must continue during transport and that medication is outside the EMS scope of practice or local protocol, the physician is expected to accompany the patient to the hospital."
         }
       ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
+      "plainText": "Control of Patient Care: Physician on Scene. Medical Control directs patient management after contact is established. A qualified physician at the scene may assume responsibility when properly identified, in communication with Medical Control, willing to sign the patient care report, and willing to accompany the patient when required. EMS providers shall not perform procedures or administer medications outside their scope of practice or local protocol.",
+      "needsReview": false
     },
     {
       "id": "crime-scene",
