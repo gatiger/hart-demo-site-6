@@ -1870,42 +1870,47 @@
       "id": "documentation",
       "title": "Documentation",
       "type": "protocol",
-      "categoryPath": [
-        "General Protocols"
-      ],
+      "categoryPath": ["General Protocols"],
       "status": "active",
       "effectiveDate": "2026-06-08",
       "lastRevised": "",
       "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 18,
-        "pageEnd": 18,
-        "pageLabel": "18"
-      },
-      "summary": "",
+      "tags": ["documentation", "patient care report", "vital signs", "medical control", "legal record"],
+      "summary": "Information that must be documented for every patient contact.",
+      "displayMode": "native",
       "content": [
         {
-          "type": "heading",
-          "level": 3,
-          "text": "Documentation"
+          "type": "paragraph",
+          "text": "Documentation information becomes the legal record of a patient's history and treatment by pre-hospital personnel. It may be used as defense or prosecution if an EMS provider is charged with medical negligence."
         },
         {
-          "type": "paragraph",
-          "text": "Documentation information becomes the legal record of a patient’s history and treatment by pre- hospital personnel. It may be used as defense or prosecution if an EMS provider is charged with medical negligence. For every patient contact, the following must be documented: A clear history of the present illness, including chief complaint, time of onset, associated complaints, pertinent negatives and mechanism of injury. A complete physical exam appropriate for the emergency condition. Level of consciousness using the AVPU method. At least two sets of vital signs Patients transported shall have at a minimum two complete sets of vital signs. On longer transports vital signs should be documented every 15 minutes or less. Vital signs should be repeated after every drug administration. For drug administration, note patient weight, dosage of the drug, route of administration, time of administration and response. A complete listing of treatments performed in chronological order. For extremity injuries, neurovascular status must be noted before and after immobilization. For potential spinal injuries, document motor function before and after immobilization. For IV or IO administration, note the size of the catheter, placement location, number of attempts, type of IV fluid or medication, and flow rate. An ECG lead II strip (at a minimum) shall be documented for all patients placed on the cardiac monitor. Any significant rhythm changes should be noted. For cardiac arrest, document the initial ECG, ending ECG, pre and post defibrillation, pacing attempts or code summary report For intubation, document the centimeter mark at teeth, methods which confirm placement (tube visualized passing through vocal cords, equal breath sounds, chest wall movement, absent gastric sounds, CO2 detector or End Tidal CO2 Monitoring/Waveform), size of ET tube and number of attempts. Any Medical Control orders requested and whether approved or denied."
-        }
-      ],
-      "plainText": "Documentation\nDocumentation information becomes the legal record of a patient’s history and treatment by pre-\nhospital personnel. It may be used as defense or prosecution if an EMS provider is charged with\nmedical negligence.\nFor every patient contact, the following must be documented:\n•\nA clear history of the present illness, including chief complaint, time of onset,\nassociated complaints, pertinent negatives and mechanism of injury.\n•\nA complete physical exam appropriate for the emergency condition.\n•\nLevel of consciousness using the AVPU method.\n•\nAt least two sets of vital signs\n•\nPatients transported shall have at a minimum two complete sets of vital signs. On\nlonger transports vital signs should be documented every 15 minutes or less.\n•\nVital signs should be repeated after every drug administration.\n•\nFor drug administration, note patient weight, dosage of the drug, route of\nadministration, time of administration and response.\n•\nA complete listing of treatments performed in chronological order.\n•\nFor extremity injuries, neurovascular status must be noted before and after\nimmobilization.\n•\nFor potential spinal injuries, document motor function before and after immobilization.\n•\nFor IV or IO administration, note the size of the catheter, placement location, number of\nattempts, type of IV fluid or medication, and flow rate.\n•\nAn ECG lead II strip (at a minimum) shall be documented for all patients placed on the\ncardiac monitor.\n•\nAny significant rhythm changes should be noted.\n•\nFor cardiac arrest, document the initial ECG, ending ECG, pre and post defibrillation,\npacing attempts or code summary report\n•\nFor intubation, document the centimeter mark at teeth, methods which confirm\nplacement (tube visualized passing through vocal cords, equal breath sounds, chest\nwall movement, absent gastric sounds, CO2 detector or End Tidal CO2\nMonitoring/Waveform), size of ET tube and number of attempts.\n•\nAny Medical Control orders requested and whether approved or denied.",
-      "pageText": [
+          "type": "warning",
+          "text": "For every patient contact, the following must be documented:"
+        },
         {
-          "page": 18,
-          "text": "Documentation\nDocumentation information becomes the legal record of a patient’s history and treatment by pre-\nhospital personnel. It may be used as defense or prosecution if an EMS provider is charged with\nmedical negligence.\nFor every patient contact, the following must be documented:\n•\nA clear history of the present illness, including chief complaint, time of onset,\nassociated complaints, pertinent negatives and mechanism of injury.\n•\nA complete physical exam appropriate for the emergency condition.\n•\nLevel of consciousness using the AVPU method.\n•\nAt least two sets of vital signs\n•\nPatients transported shall have at a minimum two complete sets of vital signs. On\nlonger transports vital signs should be documented every 15 minutes or less.\n•\nVital signs should be repeated after every drug administration.\n•\nFor drug administration, note patient weight, dosage of the drug, route of\nadministration, time of administration and response.\n•\nA complete listing of treatments performed in chronological order.\n•\nFor extremity injuries, neurovascular status must be noted before and after\nimmobilization.\n•\nFor potential spinal injuries, document motor function before and after immobilization.\n•\nFor IV or IO administration, note the size of the catheter, placement location, number of\nattempts, type of IV fluid or medication, and flow rate.\n•\nAn ECG lead II strip (at a minimum) shall be documented for all patients placed on the\ncardiac monitor.\n•\nAny significant rhythm changes should be noted.\n•\nFor cardiac arrest, document the initial ECG, ending ECG, pre and post defibrillation,\npacing attempts or code summary report\n•\nFor intubation, document the centimeter mark at teeth, methods which confirm\nplacement (tube visualized passing through vocal cords, equal breath sounds, chest\nwall movement, absent gastric sounds, CO2 detector or End Tidal CO2\nMonitoring/Waveform), size of ET tube and number of attempts.\n•\nAny Medical Control orders requested and whether approved or denied."
+          "type": "list",
+          "items": [
+            "A clear history of the present illness, including chief complaint, time of onset, associated complaints, pertinent negatives and mechanism of injury.",
+            "A complete physical exam appropriate for the emergency condition.",
+            "Level of consciousness using the AVPU method.",
+            "At least two sets of vital signs.",
+            "Patients transported shall have at a minimum two complete sets of vital signs. On longer transports vital signs should be documented every 15 minutes or less.",
+            "Vital signs should be repeated after every drug administration.",
+            "For drug administration, note patient weight, dosage of the drug, route of administration, time of administration and response.",
+            "A complete listing of treatments performed in chronological order.",
+            "For extremity injuries, neurovascular status must be noted before and after immobilization.",
+            "For potential spinal injuries, document motor function before and after immobilization.",
+            "For IV or IO administration, note the size of the catheter, placement location, number of attempts, type of IV fluid or medication, and flow rate.",
+            "An ECG lead II strip (at a minimum) shall be documented for all patients placed on the cardiac monitor.",
+            "Any significant rhythm changes should be noted.",
+            "For cardiac arrest, document the initial ECG, ending ECG, pre and post defibrillation, pacing attempts or code summary report.",
+            "For intubation, document the centimeter mark at teeth, methods which confirm placement (tube visualized passing through vocal cords, equal breath sounds, chest wall movement, absent gastric sounds, CO2 detector or End Tidal CO2 Monitoring/Waveform), size of ET tube and number of attempts.",
+            "Any Medical Control orders requested and whether approved or denied."
+          ]
         }
       ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
+      "plainText": "Documentation. Documentation information becomes the legal record of a patient's history and treatment by pre-hospital personnel. It may be used as defense or prosecution if an EMS provider is charged with medical negligence. For every patient contact, the information listed in this protocol must be documented.",
+      "needsReview": false
     },
     {
       "id": "emergency-vehicle-operations",
