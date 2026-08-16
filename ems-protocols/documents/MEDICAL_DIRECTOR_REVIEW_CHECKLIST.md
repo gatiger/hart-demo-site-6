@@ -214,6 +214,12 @@ This internal checklist tracks items that must be confirmed before the native EM
 - [ ] Approve the American Stroke Association reference/attribution.
 - [ ] Verify Cincinnati Stroke Scale, last-known-well, destination, and TPA-capable facility wording.
 
+
+### Adult Clinical Protocols > Adult Trauma Emergencies > Multiple System Trauma
+
+- [ ] Verify massive-hemorrhage interventions, airway/breathing steps, pelvic-binder consideration, spinal motion restriction, trauma-center transport, fluids, reassessment, and documentation requirements.
+- [ ] Verify all cross-references and the wording ?Continue all resuscitation efforts and evaluations enroute.?
+
 ## Resources
 
 ### Resources > Medication Administration

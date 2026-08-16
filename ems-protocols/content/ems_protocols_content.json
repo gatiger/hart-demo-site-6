@@ -694,7 +694,7 @@
           "title": "Adult Trauma Emergencies",
           "children": [
             {
-              "id": "multiple-system-trauma",
+              "id": "adult-multiple-system-trauma",
               "title": "Multiple System Trauma",
               "type": "protocol",
               "pageStart": 135,
@@ -8085,7 +8085,7 @@
       "displayMode": "structured"
     },
     {
-      "id": "multiple-system-trauma",
+      "id": "adult-multiple-system-trauma",
       "title": "Multiple System Trauma",
       "type": "protocol",
       "categoryPath": [
@@ -8096,14 +8096,18 @@
       "effectiveDate": "2026-06-08",
       "lastRevised": "",
       "version": "2026",
-      "tags": [],
+      "tags": [
+        "adult",
+        "trauma",
+        "multiple system trauma"
+      ],
       "source": {
         "pdf": "documents/ems/2026-hcems-protocols.pdf",
         "pageStart": 135,
         "pageEnd": 135,
         "pageLabel": "135"
       },
-      "summary": "",
+      "summary": "Assessment and treatment of adult patients presenting with injury to more than one body system.",
       "content": [
         {
           "type": "heading",
@@ -8112,27 +8116,183 @@
         },
         {
           "type": "paragraph",
-          "text": "This protocol applies to adult patients presenting with injury to more than one body system. Primary Survey Massive Hemorrhage Treat all life-threatening hemorrhage. See Hemorrhage Control Protocol. Tourniquets for massive extremity hemorrhage Wound packing or junctional tourniquet for junctional hemorrhage Airway – ensure patency and positioning Have suction equipment ready. Consider spinal motion restriction if indicated. Respiratory/breathing – Give supplemental O2 if signs of compromise. Maintain SpO2 > 94%. Manage any injuries impairing ventilation immediately. Chest wounds: Open/Sucking, Impaled objects, bruising Signs of Pneumothorax Flail Segments Assist with bag valve mask if respiratory effort is ineffective. Circulation – Assess radial pulses and heart rate. Consider Pelvic Binder if appropriate. Head/Hypothermia Initial GCS/AVPU Pupils Prevent hypothermia Secondary Assessment and Treatment Monitor vital signs and O2 saturation Perform blood glucose analysis – Treat if BGL is < 60 mg/dl. Cardiac Monitor Record and evaluate 12-Lead ECG Physical exam and OPQRST/SAMPLE history. Expose and rapidly assess the head, chest abdomen, pelvis and extremities for injury. Evaluate the patient’s posterior when possible. Perform spinal motion restriction, rigid C-collar and secure to a long spine board if indicated. Initiate patient transport to a trauma center as soon as possible. Advanced airway/ventilatory support as needed. See Sedation Assisted Intubation Protocol. Initiate IV/IO of normal saline at KVO rate. If fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol. Re-evaluate ABCs and perform detailed/focused assessment of the head, neck, chest, abdomen, pelvis, and all extremities. Repeat neurological exam. Continue all resuscitation efforts and evaluations enroute. Manage any presenting respiratory distress, seizures, and/or dysrhythmias in accordance with the appropriate guideline."
+          "text": "This protocol applies to adult patients presenting with injury to more than one body system."
         },
         {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
+          "type": "flow-stage",
+          "title": "Primary Survey",
+          "arrowAfter": true,
+          "items": [
+            {
+              "text": "Massive Hemorrhage",
+              "bold": [
+                "Massive Hemorrhage"
+              ]
+            },
+            {
+              "text": "Treat all life-threatening hemorrhage. See Hemorrhage Control Protocol.",
+              "indent": 1,
+              "bold": [
+                "Treat all life-threatening hemorrhage."
+              ],
+              "links": [
+                {
+                  "text": "Hemorrhage Control Protocol",
+                  "protocolId": "hemorrhage-control"
+                }
+              ]
+            },
+            {
+              "text": "Tourniquets for massive extremity hemorrhage",
+              "indent": 2
+            },
+            {
+              "text": "Wound packing or junctional tourniquet for junctional hemorrhage",
+              "indent": 2
+            },
+            {
+              "text": "Airway – ensure patency and positioning",
+              "bold": [
+                "Airway"
+              ]
+            },
+            {
+              "text": "Have suction equipment ready.",
+              "indent": 1
+            },
+            {
+              "text": "Consider spinal motion restriction if indicated.",
+              "indent": 1
+            },
+            {
+              "text": "Respiratory/breathing – Give supplemental O₂ if signs of compromise. Maintain SpO₂ > 94%.",
+              "bold": [
+                "Respiratory/breathing",
+                "Maintain SpO₂ > 94%."
+              ]
+            },
+            {
+              "text": "Manage any injuries impairing ventilation immediately.",
+              "indent": 1
+            },
+            {
+              "text": "Chest wounds: Open/Sucking, Impaled objects, bruising",
+              "indent": 2
+            },
+            {
+              "text": "Signs of Pneumothorax",
+              "indent": 2
+            },
+            {
+              "text": "Flail Segments",
+              "indent": 2
+            },
+            {
+              "text": "Assist with bag valve mask if respiratory effort is ineffective.",
+              "indent": 1
+            },
+            {
+              "text": "Circulation – Assess radial pulses and heart rate.",
+              "bold": [
+                "Circulation"
+              ]
+            },
+            {
+              "text": "Consider Pelvic Binder if appropriate.",
+              "indent": 1
+            },
+            {
+              "text": "Head/Hypothermia",
+              "bold": [
+                "Head/Hypothermia"
+              ]
+            },
+            {
+              "text": "Initial GCS/AVPU",
+              "indent": 1
+            },
+            {
+              "text": "Pupils",
+              "indent": 1
+            },
+            {
+              "text": "Prevent hypothermia",
+              "indent": 1
+            }
+          ]
         },
         {
-          "type": "paragraph",
-          "text": "Vital Signs OPQRST/SAMPLE Cardiac rhythm Treatment(s) Communication with Medical Control"
-        }
-      ],
-      "plainText": "Multiple System Trauma\nThis protocol applies to adult patients presenting with injury to more than one body system.\nPrimary Survey\n•\nMassive Hemorrhage\no\nTreat all life-threatening hemorrhage. See Hemorrhage Control Protocol.\n▪\nTourniquets for massive extremity hemorrhage\n▪\nWound packing or junctional tourniquet for junctional hemorrhage\n•\nAirway – ensure patency and positioning\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\n•\nRespiratory/breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nManage any injuries impairing ventilation immediately.\n▪\nChest wounds: Open/Sucking, Impaled objects, bruising\n▪\nSigns of Pneumothorax\n▪\nFlail Segments\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nCirculation – Assess radial pulses and heart rate.\no\nConsider Pelvic Binder if appropriate.\n•\nHead/Hypothermia\no\nInitial GCS/AVPU\no\nPupils\no\nPrevent hypothermia\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nCardiac Monitor\no\nRecord and evaluate 12-Lead ECG\n•\nPhysical exam and OPQRST/SAMPLE history.\no\nExpose and rapidly assess the head, chest abdomen, pelvis and extremities for injury.\n▪\nEvaluate the patient’s posterior when possible.\n•\nPerform spinal motion restriction, rigid C-collar and secure to a long spine board if indicated.\n•\nInitiate patient transport to a trauma center as soon as possible.\n•\nAdvanced airway/ventilatory support as needed. See Sedation Assisted Intubation Protocol.\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.\n•\nRe-evaluate ABCs and perform detailed/focused assessment of the head, neck, chest, abdomen,\npelvis, and all extremities.\no\nRepeat neurological exam.\n•\nContinue all resuscitation efforts and evaluations enroute.\n•\nManage any presenting respiratory distress, seizures, and/or dysrhythmias in accordance with the\nappropriate guideline.\nDocument:\n•\nVital Signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control",
-      "pageText": [
+          "type": "flow-stage",
+          "title": "Secondary Assessment and Treatment",
+          "items": [
+            "Monitor vital signs and O₂ saturation",
+            {
+              "text": "Perform blood glucose analysis – Treat if BGL is < 60 mg/dl.",
+              "bold": [
+                "BGL is < 60 mg/dl."
+              ]
+            },
+            "Cardiac Monitor",
+            {
+              "text": "Record and evaluate 12-Lead ECG",
+              "indent": 1
+            },
+            "Physical exam and OPQRST/SAMPLE history.",
+            {
+              "text": "Expose and rapidly assess the head, chest abdomen, pelvis and extremities for injury.",
+              "indent": 1
+            },
+            {
+              "text": "Evaluate the patient?s posterior when possible.",
+              "indent": 2
+            },
+            "Perform spinal motion restriction, rigid C-collar and secure to a long spine board if indicated.",
+            "Initiate patient transport to a trauma center as soon as possible.",
+            {
+              "text": "Advanced airway/ventilatory support as needed. See Sedation Assisted Intubation Protocol.",
+              "links": [
+                {
+                  "text": "Sedation Assisted Intubation Protocol",
+                  "protocolId": "sedation-assisted-intubation"
+                }
+              ]
+            },
+            "Initiate IV/IO of normal saline at KVO rate.",
+            {
+              "text": "If fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.",
+              "indent": 1,
+              "links": [
+                {
+                  "text": "Shock Protocol",
+                  "protocolId": "shock-management"
+                }
+              ]
+            },
+            "Re-evaluate ABCs and perform detailed/focused assessment of the head, neck, chest, abdomen, pelvis, and all extremities.",
+            {
+              "text": "Repeat neurological exam.",
+              "indent": 1
+            },
+            "Continue all resuscitation efforts and evaluations enroute.",
+            "Manage any presenting respiratory distress, seizures, and/or dysrhythmias in accordance with the appropriate guideline."
+          ]
+        },
         {
-          "page": 135,
-          "text": "Multiple System Trauma\nThis protocol applies to adult patients presenting with injury to more than one body system.\nPrimary Survey\n•\nMassive Hemorrhage\no\nTreat all life-threatening hemorrhage. See Hemorrhage Control Protocol.\n▪\nTourniquets for massive extremity hemorrhage\n▪\nWound packing or junctional tourniquet for junctional hemorrhage\n•\nAirway – ensure patency and positioning\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\n•\nRespiratory/breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nManage any injuries impairing ventilation immediately.\n▪\nChest wounds: Open/Sucking, Impaled objects, bruising\n▪\nSigns of Pneumothorax\n▪\nFlail Segments\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nCirculation – Assess radial pulses and heart rate.\no\nConsider Pelvic Binder if appropriate.\n•\nHead/Hypothermia\no\nInitial GCS/AVPU\no\nPupils\no\nPrevent hypothermia\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nCardiac Monitor\no\nRecord and evaluate 12-Lead ECG\n•\nPhysical exam and OPQRST/SAMPLE history.\no\nExpose and rapidly assess the head, chest abdomen, pelvis and extremities for injury.\n▪\nEvaluate the patient’s posterior when possible.\n•\nPerform spinal motion restriction, rigid C-collar and secure to a long spine board if indicated.\n•\nInitiate patient transport to a trauma center as soon as possible.\n•\nAdvanced airway/ventilatory support as needed. See Sedation Assisted Intubation Protocol.\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.\n•\nRe-evaluate ABCs and perform detailed/focused assessment of the head, neck, chest, abdomen,\npelvis, and all extremities.\no\nRepeat neurological exam.\n•\nContinue all resuscitation efforts and evaluations enroute.\n•\nManage any presenting respiratory distress, seizures, and/or dysrhythmias in accordance with the\nappropriate guideline.\nDocument:\n•\nVital Signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control"
+          "type": "documentation-card",
+          "title": "Document:",
+          "icon": "assets/legend-documentation.webp",
+          "iconAlt": "Documentation",
+          "items": [
+            "Vital Signs",
+            "OPQRST/SAMPLE",
+            "Cardiac rhythm",
+            "Treatment(s)",
+            "Communication with Medical Control"
+          ]
         }
       ],
+      "plainText": "Multiple System Trauma. This protocol applies to adult patients presenting with injury to more than one body system. Primary survey, secondary assessment and treatment, transport, reassessment, and documentation.",
       "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
       "displayMode": "structured"
     },
     {
