@@ -6840,67 +6840,60 @@
       "id": "dystonic-reaction",
       "title": "Dystonic Reaction",
       "type": "protocol",
-      "categoryPath": [
-        "Adult Clinical Protocols",
-        "Adult Medical Emergencies"
-      ],
+      "categoryPath": ["Adult Clinical Protocols", "Adult Medical Emergencies"],
       "status": "active",
       "effectiveDate": "2026-06-08",
       "lastRevised": "",
       "version": "2026",
       "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 119,
-        "pageEnd": 120,
-        "pageLabel": "119-120"
-      },
+      "source": {"pdf":"documents/ems/2026-hcems-protocols.pdf","pageStart":119,"pageEnd":120,"pageLabel":"119-120"},
       "summary": "",
       "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Dystonic Reaction"
-        },
-        {
-          "type": "paragraph",
-          "text": "This protocol applies to adult patients who are experiencing a reaction to Phenothiazine (Compazine or Phenergan) or Butyrophene (Haldol) compound. The reaction is usually non-life threatening and results in no long-term effects. Extrapyramidal symptoms are a possible side effect of antipsychotic medications. Primary Survey Assess level of consciousness – AVPU Ensure airway – ensure patency and positioning Have suction equipment ready. Consider spinal motion restriction if indicated. Assess breathing – Give supplemental O2 if signs of compromise. Maintain SpO2 > 94%. Assist with bag valve mask if respiratory effort is ineffective. Assess circulation – control bleeding and manage shock appropriately. See Shock Protocol Take measures to prevent hypothermia. If respiratory compromise and/or signs of shock, treat immediately with Allergic Reaction/Anaphylaxis or Shock Protocol. Secondary Assessment and Treatment Monitor vital signs and O2 saturation. Monitor capnography Perform blood glucose analysis. Treat if BGL is < 60 mg/dl. Initiate cardiac monitoring. Physical exam and OPQRST/SAMPLE history. Frequently, no clear history or medication use is obtainable; therefore, this reaction should be treated based on its clinical presentation. Although, Diphenhydramine (Benadryl) is used to treat this reaction, the reaction is not allergenic in nature. The patient should be informed of this distinction. Dystonic reactions may require field treatment to alleviate patient discomfort."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Signs and symptoms may present as the following"
-        },
-        {
-          "type": "paragraph",
-          "text": "Oculogyric crisis – deviation of eyes in all directions Buccolingual crisis – protruding or pulling sensation of the tongue. Trismus – clenching jaws. Forced jaw opening Difficulty speaking. Facial grimace. Torticollis – usually associated with oculogyric and buccolingual crisis. Opisthotonic crisis – condition characterized by rigidity and severe arching of the back with the head thrown backwards. Tortipelvic crisis – Typically involves the hips, pelvis and abdominal wall muscles. Causes difficulty with ambulation. Dystonic Reaction (Continued) Secondary Assessment and Treatment (Continued) Mental status is unaffected; symptoms may cause the patient to panic or have a sense of impending doom. Vital signs are usually normal. Remaining physical exam findings are normal. Advanced airway/ventilatory management as needed. Initiate IV/IO of normal saline at KVO rate. If fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol. Use caution if administering Diphenhydramine (Benadryl) to patients taking MAO inhibitors. MAO inhibitors prolong and intensify the anticholinergic (drying) effects of Diphenhydramine. Common MAO inhibitors include Nardial, Marplan, Eutonyl, and Parnate. Diphenhydramine (Benadryl) 50 mg IV slow push (preferred) or deep IM."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vital signs OPQRST/SAMPLE Signs/Symptoms Cardiac rhythm Treatment(s) Communication with Medical Control."
-        }
+        {"type":"heading","level":2,"text":"Dystonic Reaction"},
+        {"type":"paragraph","text":"This protocol applies to adult patients who are experiencing a reaction to Phenothiazine (Compazine or Phenergan) or Butyrophene (Haldol) compound. The reaction is usually non-life threatening and results in no long-term effects. Extrapyramidal symptoms are a possible side effect of antipsychotic medications."},
+        {"type":"flow-stage","title":"Primary Survey","arrowAfter":true,"items":[
+          {"text":"Assess level of consciousness – AVPU","bold":["Assess level of consciousness"]},
+          {"text":"Ensure airway – ensure patency and positioning","bold":["Ensure airway"]},
+          {"text":"Have suction equipment ready.","indent":1},
+          {"text":"Consider spinal motion restriction if indicated.","indent":1},
+          {"text":"Assess breathing – Give supplemental O₂ if signs of compromise. Maintain SpO₂ ≥ 94%.","bold":["Assess breathing","Maintain SpO₂ ≥ 94%."]},
+          {"text":"Assist with bag valve mask if respiratory effort is ineffective.","indent":1},
+          {"text":"Assess circulation – control bleeding and manage shock appropriately. See Shock Protocol.","bold":["Assess circulation"],"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          {"text":"Take measures to prevent hypothermia.","indent":1},
+          {"text":"If respiratory compromise and/or signs of shock, treat immediately with Allergic Reaction/Anaphylaxis or Shock Protocol.","bold":["If respiratory compromise and/or signs of shock, treat immediately with Allergic Reaction/Anaphylaxis or Shock Protocol."],"red":true,"icon":"assets/legend-important.webp","iconAlt":"Important protocol instruction","links":[{"text":"Allergic Reaction/Anaphylaxis","protocolId":"adult-allergic-reaction-anaphylaxis"},{"text":"Shock Protocol","protocolId":"shock-management"}]}
+        ]},
+        {"type":"flow-stage","title":"Secondary Assessment and Treatment","items":[
+          "Monitor vital signs and O₂ saturation.",
+          "Monitor capnography.",
+          {"text":"Perform blood glucose analysis. Treat if BGL is < 60 mg/dl.","bold":["BGL is < 60 mg/dl."]},
+          "Initiate cardiac monitoring.",
+          "Physical exam and OPQRST/SAMPLE history.",
+          {"text":"Frequently, no clear history or medication use is obtainable; therefore, this reaction should be treated based on its clinical presentation. Although, Diphenhydramine (Benadryl) is used to treat this reaction, the reaction is not allergic in nature. The patient should be informed of this distinction. Dystonic reactions may require field treatment to alleviate patient discomfort.","bold":["Frequently, no clear history or medication use is obtainable; therefore, this reaction should be treated based on its clinical presentation. Although, Diphenhydramine (Benadryl) is used to treat this reaction, the reaction is not allergic in nature. The patient should be informed of this distinction. Dystonic reactions may require field treatment to alleviate patient discomfort."],"red":true,"icon":"assets/legend-important.webp","iconAlt":"Important protocol instruction","links":[{"text":"Diphenhydramine","protocolId":"diphenhydramine-benadryl"}]},
+          "Signs and symptoms may present as the following:",
+          {"text":"Oculogyric crisis – deviation of eyes in all directions","indent":1},
+          {"text":"Buccolingual crisis – protruding or pulling sensation of the tongue.","indent":1},
+          {"text":"Trismus – clenching jaws.","indent":1},
+          {"text":"Forced jaw opening","indent":1},
+          {"text":"Difficulty speaking.","indent":1},
+          {"text":"Facial grimace.","indent":1},
+          {"text":"Torticollis – usually associated with oculogyric and buccolingual crisis.","indent":1},
+          {"text":"Opisthotonic crisis – condition characterized by rigidity and severe arching of the back with the head thrown backwards.","indent":1},
+          {"text":"Tortipelvic crisis – Typically involves the hips, pelvis and abdominal wall muscles. Causes difficulty with ambulation.","indent":1},
+          "Mental status is unaffected; symptoms may cause the patient to panic or have a sense of impending doom.",
+          "Vital signs are usually normal.",
+          "Remaining physical exam findings are normal.",
+          "Advanced airway/ventilatory management as needed.",
+          "Initiate IV/IO of normal saline at KVO rate.",
+          {"text":"If fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.","indent":1,"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          {"text":"Use caution if administering Diphenhydramine (Benadryl) to patients taking MAO inhibitors. MAO inhibitors prolong and intensify the anticholinergic (drying) effects of Diphenhydramine. Common MAO inhibitors include Nardil, Marplan, Eutonyl, and Parnate.","bold":["Use caution if administering Diphenhydramine (Benadryl) to patients taking MAO inhibitors. MAO inhibitors prolong and intensify the anticholinergic (drying) effects of Diphenhydramine. Common MAO inhibitors include Nardil, Marplan, Eutonyl, and Parnate."],"red":true,"icon":"assets/legend-important.webp","iconAlt":"Important medication warning","links":[{"text":"Diphenhydramine","protocolId":"diphenhydramine-benadryl"}]},
+          {"text":"Diphenhydramine (Benadryl) 50 mg IV slow push (preferred) or deep IM.","bold":["50 mg","IV slow push (preferred)"],"links":[{"text":"Diphenhydramine","protocolId":"diphenhydramine-benadryl"}]}
+        ]},
+        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital signs","OPQRST/SAMPLE","Signs/Symptoms","Cardiac rhythm","Treatment(s)","Communication with Medical Control"]}
       ],
-      "plainText": "Dystonic Reaction\nThis protocol applies to adult patients who are experiencing a reaction to Phenothiazine\n(Compazine or Phenergan) or Butyrophene (Haldol) compound. The reaction is usually non-life\nthreatening and results in no long-term effects. Extrapyramidal symptoms are a possible side\neffect of antipsychotic medications.\nPrimary Survey\n•\nAssess level of consciousness – AVPU\n•\nEnsure airway – ensure patency and positioning\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\n•\nAssess breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nAssess circulation – control bleeding and manage shock appropriately. See Shock Protocol\no\nTake measures to prevent hypothermia.\nIf respiratory compromise and/or signs of shock, treat immediately with Allergic\nReaction/Anaphylaxis or Shock Protocol.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation.\n•\nMonitor capnography\n•\nPerform blood glucose analysis. Treat if BGL is < 60 mg/dl.\n•\nInitiate cardiac monitoring.\n•\nPhysical exam and OPQRST/SAMPLE history.\nFrequently, no clear history or medication use is obtainable; therefore, this reaction should\nbe treated based on its clinical presentation. Although, Diphenhydramine (Benadryl) is\nused to treat this reaction, the reaction is not allergenic in nature. The patient should be\ninformed of this distinction. Dystonic reactions may require field treatment to alleviate\npatient discomfort.\n•\nSigns and symptoms may present as the following:\no\nOculogyric crisis – deviation of eyes in all directions\no\nBuccolingual crisis – protruding or pulling sensation of the tongue.\no\nTrismus – clenching jaws.\no\nForced jaw opening\no\nDifficulty speaking.\no\nFacial grimace.\no\nTorticollis – usually associated with oculogyric and buccolingual crisis.\no\nOpisthotonic crisis – condition characterized by rigidity and severe arching of the back\nwith the head thrown backwards.\no\nTortipelvic crisis – Typically involves the hips, pelvis and abdominal wall muscles.\n▪\nCauses difficulty with ambulation.\nDystonic Reaction (Continued)\nSecondary Assessment and Treatment (Continued)\n•\nMental status is unaffected; symptoms may cause the patient to panic or have a sense of\nimpending doom.\n•\nVital signs are usually normal.\n•\nRemaining physical exam findings are normal.\n•\nAdvanced airway/ventilatory management as needed.\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.\nUse caution if administering Diphenhydramine (Benadryl) to patients taking MAO inhibitors.\nMAO inhibitors prolong and intensify the anticholinergic (drying) effects of\nDiphenhydramine. Common MAO inhibitors include Nardial, Marplan, Eutonyl, and Parnate.\n•\nDiphenhydramine (Benadryl) 50 mg IV slow push (preferred) or deep IM.\nDocument:\n•\nVital signs\n•\nOPQRST/SAMPLE\n•\nSigns/Symptoms\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control.",
-      "pageText": [
-        {
-          "page": 119,
-          "text": "Dystonic Reaction\nThis protocol applies to adult patients who are experiencing a reaction to Phenothiazine\n(Compazine or Phenergan) or Butyrophene (Haldol) compound. The reaction is usually non-life\nthreatening and results in no long-term effects. Extrapyramidal symptoms are a possible side\neffect of antipsychotic medications.\nPrimary Survey\n•\nAssess level of consciousness – AVPU\n•\nEnsure airway – ensure patency and positioning\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\n•\nAssess breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nAssess circulation – control bleeding and manage shock appropriately. See Shock Protocol\no\nTake measures to prevent hypothermia.\nIf respiratory compromise and/or signs of shock, treat immediately with Allergic\nReaction/Anaphylaxis or Shock Protocol.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation.\n•\nMonitor capnography\n•\nPerform blood glucose analysis. Treat if BGL is < 60 mg/dl.\n•\nInitiate cardiac monitoring.\n•\nPhysical exam and OPQRST/SAMPLE history.\nFrequently, no clear history or medication use is obtainable; therefore, this reaction should\nbe treated based on its clinical presentation. Although, Diphenhydramine (Benadryl) is\nused to treat this reaction, the reaction is not allergenic in nature. The patient should be\ninformed of this distinction. Dystonic reactions may require field treatment to alleviate\npatient discomfort.\n•\nSigns and symptoms may present as the following:\no\nOculogyric crisis – deviation of eyes in all directions\no\nBuccolingual crisis – protruding or pulling sensation of the tongue.\no\nTrismus – clenching jaws.\no\nForced jaw opening\no\nDifficulty speaking.\no\nFacial grimace.\no\nTorticollis – usually associated with oculogyric and buccolingual crisis.\no\nOpisthotonic crisis – condition characterized by rigidity and severe arching of the back\nwith the head thrown backwards.\no\nTortipelvic crisis – Typically involves the hips, pelvis and abdominal wall muscles.\n▪\nCauses difficulty with ambulation."
-        },
-        {
-          "page": 120,
-          "text": "Dystonic Reaction (Continued)\nSecondary Assessment and Treatment (Continued)\n•\nMental status is unaffected; symptoms may cause the patient to panic or have a sense of\nimpending doom.\n•\nVital signs are usually normal.\n•\nRemaining physical exam findings are normal.\n•\nAdvanced airway/ventilatory management as needed.\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.\nUse caution if administering Diphenhydramine (Benadryl) to patients taking MAO inhibitors.\nMAO inhibitors prolong and intensify the anticholinergic (drying) effects of\nDiphenhydramine. Common MAO inhibitors include Nardial, Marplan, Eutonyl, and Parnate.\n•\nDiphenhydramine (Benadryl) 50 mg IV slow push (preferred) or deep IM.\nDocument:\n•\nVital signs\n•\nOPQRST/SAMPLE\n•\nSigns/Symptoms\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control."
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Dystonic Reaction. Adult assessment and treatment for extrapyramidal reactions to antipsychotic medications.",
+      "needsReview":false,
+      "displayMode":"structured"
+    },{
       "id": "heat-related-emergencies",
       "title": "Heat Related Emergencies",
       "type": "protocol",
