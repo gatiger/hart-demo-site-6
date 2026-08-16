@@ -6352,52 +6352,188 @@
         },
         {
           "type": "paragraph",
-          "text": "This protocol applied to adult patients who have become agitated or is having a behavioral emergency that has the potential to cause harm to the EMS crew or themselves. This protocol applies to patients 18-years-old or older. Primary Survey Assess level of consciousness â€“ AVPU Ensure airway â€“ ensure patency and positioning Have suction equipment ready. Consider spinal motion restriction if indicated. Assess breathing â€“ Give supplemental O2 if signs of compromise. Maintain SpO2 > 94%. Assist with bag valve mask if respiratory effort is ineffective. Assess circulation â€“ control bleeding and manage shock appropriately. See Shock Protocol Take measures to prevent hypothermia. Altered LOC and signs of poor perfusion could indicate shock and should be managed appropriately. Secondary Assessment and Treatment Monitor vital signs and O2 saturation. Perform blood glucose analysis â€“ Treat if BGL is < 60 mg/dl. Initiate cardiac monitoring â€“ treat dysrhythmias per appropriate protocol. Physical exam and OPQRST/SAMPLE history. Initiate IV of normal saline. Attempt to identify cause and treat in accordance with the appropriate protocol. Respiratory Distress (Hypoxia) Trauma Hypoglycemia Drug Use Request law enforcement for assistance as needed. If patient is handcuffed, law enforcement MUST ACCOMPANY THE PATIENT TO THE HOSPITAL."
+          "text": "This protocol applies to adult patients who have become agitated or are having a behavioral emergency that has the potential to cause harm to the EMS crew or themselves. This protocol applies to patients 18-years-old or older."
         },
         {
-          "type": "heading",
-          "level": 3,
-          "text": "Combative patient"
+          "type": "flow-stage",
+          "title": "Primary Survey",
+          "arrowAfter": true,
+          "items": [
+            {
+              "text": "Assess level of consciousness – AVPU",
+              "bold": ["Assess level of consciousness"]
+            },
+            {
+              "text": "Ensure airway – ensure patency and positioning",
+              "bold": ["Ensure airway"]
+            },
+            {
+              "text": "Have suction equipment ready.",
+              "indent": 1
+            },
+            {
+              "text": "Consider spinal motion restriction if indicated.",
+              "indent": 1
+            },
+            {
+              "text": "Assess breathing – Give supplemental O₂ if signs of compromise. Maintain SpO₂ ≥ 94%.",
+              "bold": ["Assess breathing", "Maintain SpO₂ ≥ 94%."]
+            },
+            {
+              "text": "Assist with bag valve mask if respiratory effort is ineffective.",
+              "indent": 1
+            },
+            {
+              "text": "Assess circulation – control bleeding and manage shock appropriately. See Shock Protocol.",
+              "bold": ["Assess circulation"],
+              "links": [{"text": "Shock Protocol", "protocolId": "shock-management"}]
+            },
+            {
+              "text": "Take measures to prevent hypothermia.",
+              "indent": 1
+            },
+            {
+              "text": "Altered LOC and signs of poor perfusion could indicate shock and should be managed appropriately.",
+              "bold": ["Altered LOC and signs of poor perfusion could indicate shock and should be managed appropriately."],
+              "red": true
+            }
+          ]
         },
         {
-          "type": "paragraph",
-          "text": "Apply soft restraints on all extremities using a quick-release knot. Law enforcement must be notified if patient has been restrained. Initiate transport as soon as possible. Frequently reevaluate ABCs and Mental Status during transport. DO NOT secure the patient to the stretcher in the prone position."
+          "type": "flow-stage",
+          "title": "Secondary Assessment and Treatment",
+          "items": [
+            "Monitor vital signs and O₂ saturation.",
+            {
+              "text": "Perform blood glucose analysis – Treat if BGL is < 60 mg/dl.",
+              "bold": ["BGL is < 60 mg/dl."]
+            },
+            "Initiate cardiac monitoring – treat dysrhythmias per appropriate protocol.",
+            "Physical exam and OPQRST/SAMPLE history.",
+            "Initiate IV of normal saline.",
+            "Attempt to identify cause and treat in accordance with the appropriate protocol.",
+            {
+              "text": "Respiratory Distress (Hypoxia)",
+              "indent": 1,
+              "bold": ["Respiratory Distress (Hypoxia)"]
+            },
+            {
+              "text": "Trauma",
+              "indent": 1,
+              "bold": ["Trauma"]
+            },
+            {
+              "text": "Hypoglycemia",
+              "indent": 1,
+              "bold": ["Hypoglycemia"]
+            },
+            {
+              "text": "Drug Use",
+              "indent": 1,
+              "bold": ["Drug Use"]
+            },
+            {
+              "text": "Request law enforcement for assistance as needed. If patient is handcuffed, law enforcement MUST ACCOMPANY THE PATIENT TO THE HOSPITAL.",
+              "bold": ["MUST ACCOMPANY THE PATIENT TO THE HOSPITAL."]
+            },
+            {
+              "text": "Combative patient:",
+              "bold": ["Combative patient:"]
+            },
+            {
+              "text": "Apply soft restraints on all extremities using a quick-release knot.",
+              "indent": 1
+            },
+            {
+              "text": "Law enforcement must be notified if patient has been restrained.",
+              "indent": 1
+            },
+            "Initiate transport as soon as possible.",
+            "Frequently reevaluate ABCs and Mental Status during transport.",
+            {
+              "text": "DO NOT secure the patient to the stretcher in the prone position.",
+              "bold": ["DO NOT"]
+            },
+            "If the patient continues to be a threat to their own safety or EMS crew safety:",
+            {
+              "text": "Administer Valium 5–10 mg IV/IO/IM.",
+              "indent": 1,
+              "bold": ["5–10 mg"],
+              "links": [{"text": "Valium", "protocolId": "diazepam"}]
+            },
+            {
+              "text": "DO NOT administer Valium Intra-nasal.",
+              "indent": 2,
+              "bold": ["DO NOT"]
+            },
+            {
+              "text": "OR",
+              "indent": 2,
+              "bold": ["OR"]
+            },
+            {
+              "text": "Administer Versed 2–5 mg slow IV/IM/IN. Max Dose – 5 mg.",
+              "indent": 1,
+              "bold": ["2–5 mg", "Max Dose – 5 mg."],
+              "links": [{"text": "Versed", "protocolId": "midazolam-versed"}]
+            }
+          ]
         },
         {
-          "type": "heading",
-          "level": 3,
-          "text": "If the patient continues to be a threat to their own safety or EMS crew safety"
+          "type": "stop-control",
+          "title": "STOP",
+          "text": "Contact Medical Control for Administration of Ketamine",
+          "image": "assets/legend-medical-control.webp",
+          "alt": "Stop and contact Medical Control for administration of Ketamine",
+          "arrowAfter": true
         },
         {
-          "type": "paragraph",
-          "text": "Administer Valium 5 â€“ 10 mg IV/IO/IM. DO NOT administer Valium Intra-nasal. OR Administer Versed 2 â€“ 5 mg slow IV/IM/IN. Max Dose â€“ 5 mg. Contact Medical Control for Administration of Ketamine Agitated/Behavioral Patient (Continued) For severe cases of Excited Delirium/Psychosis Administer Ketamine 1 â€“ 4 mg/kg. IM or 0.2 â€“ 1 mg/kg IV. Max Dose â€“ 400 mg. Monitor respiratory drive, systolic blood pressure and O2 saturation closely. For any additional dosing or if patient becomes combative after initial treatment, contact medical control or additional orders. Use Law Enforcement to restrain the patient, if possible, for provider safety. Have all airway equipment ready."
+          "type": "flow-stage",
+          "title": "For severe cases of Excited Delirium/Psychosis",
+          "items": [
+            {
+              "text": "Administer Ketamine 1–4 mg/kg IM or 0.2–1 mg/kg IV. Max Dose – 400 mg.",
+              "bold": ["1–4 mg/kg", "0.2–1 mg/kg", "Max Dose – 400 mg."],
+              "links": [{"text": "Ketamine", "protocolId": "ketamine"}]
+            },
+            {
+              "text": "Monitor respiratory drive, systolic blood pressure and O₂ saturation closely.",
+              "indent": 1
+            },
+            {
+              "text": "For any additional dosing or if patient becomes combative after initial treatment, contact medical control for additional orders.",
+              "bold": ["For any additional dosing or if patient becomes combative after initial treatment, contact medical control for additional orders."],
+              "red": true,
+              "icon": "assets/legend-important.webp",
+              "iconAlt": "Important protocol instruction"
+            },
+            {
+              "text": "Use Law Enforcement to restrain the patient, if possible, for provider safety. Have all airway equipment ready.",
+              "bold": ["Use Law Enforcement to restrain the patient, if possible, for provider safety. Have all airway equipment ready."],
+              "red": true,
+              "icon": "assets/legend-important.webp",
+              "iconAlt": "Important protocol instruction"
+            }
+          ]
         },
         {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vital signs OPQRST/SAMPLE Cardiac rhythm Treatment(s) Communication with Medical Control."
+          "type": "documentation-card",
+          "title": "Document:",
+          "image": "assets/legend-documentation.webp",
+          "alt": "Patient care documentation reminder symbol",
+          "items": [
+            "Vital signs",
+            "OPQRST/SAMPLE",
+            "Cardiac rhythm",
+            "Treatment(s)",
+            "Communication with Medical Control"
+          ]
         }
       ],
-      "plainText": "Agitated/Behavioral Patient\nThis protocol applied to adult patients who have become agitated or is having a behavioral\nemergency that has the potential to cause harm to the EMS crew or themselves. This protocol\napplies to patients 18-years-old or older.\nPrimary Survey\nâ€¢\nAssess level of consciousness â€“ AVPU\nâ€¢\nEnsure airway â€“ ensure patency and positioning\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\nâ€¢\nAssess breathing â€“ Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nAssist with bag valve mask if respiratory effort is ineffective.\nâ€¢\nAssess circulation â€“ control bleeding and manage shock appropriately. See Shock Protocol\no\nTake measures to prevent hypothermia.\nâ€¢\nAltered LOC and signs of poor perfusion could indicate shock and should be managed\nappropriately.\nSecondary Assessment and Treatment\nâ€¢\nMonitor vital signs and O2 saturation.\nâ€¢\nPerform blood glucose analysis â€“ Treat if BGL is < 60 mg/dl.\nâ€¢\nInitiate cardiac monitoring â€“ treat dysrhythmias per appropriate protocol.\nâ€¢\nPhysical exam and OPQRST/SAMPLE history.\nâ€¢\nInitiate IV of normal saline.\nâ€¢\nAttempt to identify cause and treat in accordance with the appropriate protocol.\no\nRespiratory Distress (Hypoxia)\no\nTrauma\no\nHypoglycemia\no\nDrug Use\nâ€¢\nRequest law enforcement for assistance as needed. If patient is handcuffed, law enforcement MUST\nACCOMPANY THE PATIENT TO THE HOSPITAL.\nâ€¢\nCombative patient:\no\nApply soft restraints on all extremities using a quick-release knot.\no\nLaw enforcement must be notified if patient has been restrained.\nâ€¢\nInitiate transport as soon as possible.\nâ€¢\nFrequently reevaluate ABCs and Mental Status during transport.\nâ€¢\nDO NOT secure the patient to the stretcher in the prone position.\nâ€¢\nIf the patient continues to be a threat to their own safety or EMS crew safety:\no\nAdminister Valium 5 â€“ 10 mg IV/IO/IM.\nâ–ª\nDO NOT administer Valium Intra-nasal.\nOR\no\nAdminister Versed 2 â€“ 5 mg slow IV/IM/IN.  Max Dose â€“ 5 mg.\nContact Medical Control for\nAdministration of Ketamine\nAgitated/Behavioral Patient (Continued)\nFor severe cases of Excited Delirium/Psychosis\nâ€¢\nAdminister Ketamine 1 â€“ 4 mg/kg. IM or 0.2 â€“ 1 mg/kg IV.   Max Dose â€“ 400 mg.\no\nMonitor respiratory drive, systolic blood pressure and O2 saturation closely.\nFor any additional dosing or if patient becomes combative after initial treatment, contact\nmedical control or additional orders.\nUse Law Enforcement to restrain the patient, if possible, for provider safety.  Have all airway\nequipment ready.\nDocument:\nâ€¢\nVital signs\nâ€¢\nOPQRST/SAMPLE\nâ€¢\nCardiac rhythm\nâ€¢\nTreatment(s)\nâ€¢\nCommunication with\nMedical Control.",
-      "pageText": [
-        {
-          "page": 107,
-          "text": "Agitated/Behavioral Patient\nThis protocol applied to adult patients who have become agitated or is having a behavioral\nemergency that has the potential to cause harm to the EMS crew or themselves. This protocol\napplies to patients 18-years-old or older.\nPrimary Survey\nâ€¢\nAssess level of consciousness â€“ AVPU\nâ€¢\nEnsure airway â€“ ensure patency and positioning\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\nâ€¢\nAssess breathing â€“ Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nAssist with bag valve mask if respiratory effort is ineffective.\nâ€¢\nAssess circulation â€“ control bleeding and manage shock appropriately. See Shock Protocol\no\nTake measures to prevent hypothermia.\nâ€¢\nAltered LOC and signs of poor perfusion could indicate shock and should be managed\nappropriately.\nSecondary Assessment and Treatment\nâ€¢\nMonitor vital signs and O2 saturation.\nâ€¢\nPerform blood glucose analysis â€“ Treat if BGL is < 60 mg/dl.\nâ€¢\nInitiate cardiac monitoring â€“ treat dysrhythmias per appropriate protocol.\nâ€¢\nPhysical exam and OPQRST/SAMPLE history.\nâ€¢\nInitiate IV of normal saline.\nâ€¢\nAttempt to identify cause and treat in accordance with the appropriate protocol.\no\nRespiratory Distress (Hypoxia)\no\nTrauma\no\nHypoglycemia\no\nDrug Use\nâ€¢\nRequest law enforcement for assistance as needed. If patient is handcuffed, law enforcement MUST\nACCOMPANY THE PATIENT TO THE HOSPITAL.\nâ€¢\nCombative patient:\no\nApply soft restraints on all extremities using a quick-release knot.\no\nLaw enforcement must be notified if patient has been restrained.\nâ€¢\nInitiate transport as soon as possible.\nâ€¢\nFrequently reevaluate ABCs and Mental Status during transport.\nâ€¢\nDO NOT secure the patient to the stretcher in the prone position.\nâ€¢\nIf the patient continues to be a threat to their own safety or EMS crew safety:\no\nAdminister Valium 5 â€“ 10 mg IV/IO/IM.\nâ–ª\nDO NOT administer Valium Intra-nasal.\nOR\no\nAdminister Versed 2 â€“ 5 mg slow IV/IM/IN.  Max Dose â€“ 5 mg."
-        },
-        {
-          "page": 108,
-          "text": "Contact Medical Control for\nAdministration of Ketamine\nAgitated/Behavioral Patient (Continued)\nFor severe cases of Excited Delirium/Psychosis\nâ€¢\nAdminister Ketamine 1 â€“ 4 mg/kg. IM or 0.2 â€“ 1 mg/kg IV.   Max Dose â€“ 400 mg.\no\nMonitor respiratory drive, systolic blood pressure and O2 saturation closely.\nFor any additional dosing or if patient becomes combative after initial treatment, contact\nmedical control or additional orders.\nUse Law Enforcement to restrain the patient, if possible, for provider safety.  Have all airway\nequipment ready.\nDocument:\nâ€¢\nVital signs\nâ€¢\nOPQRST/SAMPLE\nâ€¢\nCardiac rhythm\nâ€¢\nTreatment(s)\nâ€¢\nCommunication with\nMedical Control."
-        }
-      ],
+      "plainText": "Agitated/Behavioral Patient. Adult primary survey, secondary assessment and treatment, behavioral restraint guidance, medication treatment, Medical Control direction, and documentation requirements.",
       "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
       "displayMode": "structured"
-    },
-    {
+    },    {
       "id": "allergic-reaction-anaphylaxis",
       "title": "Allergic Reaction / Anaphylaxis",
       "type": "protocol",
