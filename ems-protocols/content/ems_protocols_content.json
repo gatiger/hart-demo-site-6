@@ -506,7 +506,7 @@
               "status": "active"
             },
             {
-              "id": "pulseless-arrest",
+              "id": "adult-pulseless-arrest",
               "title": "Pulseless Arrest",
               "type": "protocol",
               "pageStart": 101,
@@ -6021,57 +6021,64 @@
       "plainText":"Adult Tachycardia. Assessment, narrow- and wide-complex pathways, cardioversion, medication infusions, substitution guidance, and documentation.",
       "needsReview":false
     },    {
-      "id": "pulseless-arrest",
+      "id": "adult-pulseless-arrest",
       "title": "Pulseless Arrest",
       "type": "protocol",
-      "categoryPath": [
-        "Adult Clinical Protocols",
-        "Adult Cardiac Emergencies"
-      ],
+      "categoryPath": ["Adult Clinical Protocols","Adult Cardiac Emergencies"],
       "status": "active",
       "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 101,
-        "pageEnd": 101,
-        "pageLabel": "101"
-      },
-      "summary": "",
+      "source": {"pageStart":101,"pageEnd":101,"pageLabel":"101"},
+      "summary": "Adult pulseless arrest resuscitation with shockable and non-shockable rhythm pathways.",
       "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Pulseless Arrest"
-        },
-        {
-          "type": "paragraph",
-          "text": "Resuscitation Assess patient for respiratory and cardiac arrest. Initiate CPR and AED/Defibrillator using most current AHA Guidelines. Provide high-quality compressions, minimizing interruptions. Compressions should be at a rate of 100 – 120 per minute. Apply Automated Compression Device ASAP. Ventilate with bag valve mask and 100% O2, consider Oropharyngeal/Nasopharyngeal airway Consider advanced airway management. Do not delay resuscitation for advanced airway placement. If advanced airway is utilized, initiate EtCO2 monitoring. Shockable Rhythm? YES NO V-fib/Pulseless VT Defibrillate: 120 – 200 joules (biphasic) or 360 joules (monophasic) Resume CPR for 2 minutes If patient remains in V-fib/Pulseless VT, Deliver 2nd shock at equivalent or higher dose. Continue CPR Initiate IV/IO of normal saline. 1:10,000 Epinephrine 1 mg IV/IO, repeat every 3 – 5 minutes Consider advanced airway and capnography Re-assess rhythm every 2 minutes, if rhythm is organized, check pulse. Defibrillate Resume CPR for 2 minutes. Amiodarone 1st Dose 300 mg IV/IO 2nd Dose 150 mg IV/IO Continue CPR/treatment(s) as indicated. Consider and treat reversible causes. Asystole/PEA Initiate IV/IO of normal saline 1:10,000 Epinephrine 1 mg IV/IO repeat every 3 – 5 minutes. Consider advanced airway and capnography. Re-assess rhythm every 2 minutes. If rhythm is organized, check pulse. Continue CPR/treatment as indicated. Consider and treat reversible causes. Hypovolemia Tension Pneumothorax Hypoxia Tamponade Hydrogen Ion Toxins Hypoglycemia Thrombosis Hypokalemia Hyperkalemia Hypothermia"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vital Signs Events preceding arrest Code Summary Treatment(s) Communication with Medical Control Transport to the closest appropriate facility. If cardiac rhythm change is noted, treat based on appropriate Protocol. Lidocaine may be used in place of Amiodarone. Administer Lidocaine at 1 – 1.5 mg/kg. Max Dose 3 mg/kg."
-        }
+        {"type":"heading","level":2,"text":"Pulseless Arrest"},
+        {"type":"flow-stage","title":"Resuscitation","arrowAfter":true,"items":[
+          "Assess patient for respiratory and cardiac arrest.",
+          {"text":"Initiate CPR and AED/Defibrillator using most current AHA Guidelines.","links":[{"text":"AHA Guidelines","protocolId":"aha-adult-cardiac-arrest"}]},
+          "Provide high-quality compressions, minimizing interruptions.",
+          {"text":"Compressions should be at a rate of 100–120 per minute.","indent":1},
+          {"text":"Apply Automated Compression Device ASAP.","indent":1},
+          "Ventilate with bag valve mask and 100% O₂, consider Oropharyngeal/Nasopharyngeal airway.",
+          "Consider advanced airway management.",
+          {"text":"Do not delay resuscitation for advanced airway placement.","indent":1},
+          {"text":"If advanced airway is utilized, initiate EtCO₂ monitoring.","indent":1}
+        ]},
+        {"type":"two-way-decision","question":"Shockable Rhythm?","paths":[
+          {"answer":"YES","title":"V-fib/Pulseless VT","items":[
+            "Defibrillate: 120–200 joules (biphasic) or 360 joules (monophasic).",
+            "Resume CPR for 2 minutes.",
+            "If patient remains in V-fib/Pulseless VT, deliver 2nd shock at equivalent or higher dose.",
+            "Continue CPR.",
+            "Initiate IV/IO of normal saline.",
+            {"text":"1:10,000 Epinephrine 1 mg IV/IO, repeat every 3–5 minutes.","bold":["1 mg","every 3–5 minutes."],"links":[{"text":"Epinephrine","protocolId":"epinephrine-1-1000-and-1-10-000"}]},
+            "Consider advanced airway and capnography.",
+            "Re-assess rhythm every 2 minutes, if rhythm is organized, check pulse.",
+            "Defibrillate and check pulse.",
+            "Resume CPR for 2 minutes.",
+            {"text":"Amiodarone","links":[{"text":"Amiodarone","protocolId":"amiodarone-cordarone"}]},
+            {"text":"1st Dose 300 mg IV/IO.","indent":1,"bold":["1st Dose 300 mg"]},
+            {"text":"2nd Dose 150 mg IV/IO.","indent":1,"bold":["2nd Dose 150 mg"]},
+            "Continue CPR/treatment(s) as indicated.",
+            "Consider and treat reversible causes."
+          ]},
+          {"answer":"NO","title":"Asystole/PEA","items":[
+            "Initiate IV/IO of normal saline.",
+            {"text":"1:10,000 Epinephrine 1 mg IV/IO, repeat every 3–5 minutes.","bold":["1 mg","every 3–5 minutes."],"links":[{"text":"Epinephrine","protocolId":"epinephrine-1-1000-and-1-10-000"}]},
+            "Consider advanced airway and capnography.",
+            "Re-assess rhythm every 2 minutes, if rhythm is organized, check pulse.",
+            "Continue CPR/treatment as indicated.",
+            "Consider and treat reversible causes.",
+            {"indent":1,"pairs":[["Hypovolemia","Tension Pneumothorax"],["Hypoxia","Tamponade"],["Hydrogen Ion","Toxins"],["Hypoglycemia","Thrombosis"],["Hypokalemia",""],["Hyperkalemia",""],["Hypothermia",""]]}
+          ]}
+        ],"footer":{"items":[
+          {"text":"Transport to the closest appropriate facility.","icon":"assets/legend-important.webp","iconAlt":"Important protocol information","bold":["Transport to the closest appropriate facility."],"red":["Transport to the closest appropriate facility."]},
+          {"text":"If cardiac rhythm change is noted, treat based on appropriate Protocol.","icon":"assets/legend-important.webp","iconAlt":"Important protocol information","bold":["If cardiac rhythm change is noted, treat based on appropriate Protocol."],"red":["If cardiac rhythm change is noted, treat based on appropriate Protocol."]}
+        ]}},
+        {"type":"icon-note","image":"assets/legend-important.webp","alt":"Important medication substitution note","text":"Lidocaine may be used in place of Amiodarone. Administer Lidocaine at 1–1.5 mg/kg. Max Dose 3 mg/kg.","bold":["1–1.5 mg/kg.","Max Dose 3 mg/kg."],"links":[{"text":"Lidocaine","protocolId":"lidocaine-xylocaine"},{"text":"Amiodarone","protocolId":"amiodarone-cordarone"}]},
+        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital Signs","Events preceding arrest","Code Summary","Treatment(s)","Communication with Medical Control"]}
       ],
-      "plainText": "Pulseless Arrest\nResuscitation\n•\nAssess patient for respiratory and cardiac arrest.\n•\nInitiate CPR and AED/Defibrillator using most current AHA Guidelines.\n•\nProvide high-quality compressions, minimizing interruptions.\no\nCompressions should be at a rate of 100 – 120 per minute.\no\nApply Automated Compression Device ASAP.\n•\nVentilate with bag valve mask and 100% O2, consider Oropharyngeal/Nasopharyngeal airway\n•\nConsider advanced airway management.\no\nDo not delay resuscitation for advanced airway placement.\no\nIf advanced airway is utilized, initiate EtCO2 monitoring.\nShockable Rhythm?\nYES\nNO\nV-fib/Pulseless VT\n•\nDefibrillate: 120 – 200 joules (biphasic) or\n360 joules (monophasic)\n•\nResume CPR for 2 minutes\n•\nIf patient remains in V-fib/Pulseless VT,\nDeliver 2nd shock at equivalent or higher\ndose.\n•\nContinue CPR\n•\nInitiate IV/IO of normal saline.\n•\n1:10,000 Epinephrine 1 mg IV/IO, repeat\nevery 3 – 5 minutes\n•\nConsider advanced airway and capnography\n•\nRe-assess rhythm every 2 minutes, if rhythm\nis organized, check pulse.\n•\nDefibrillate\n•\nResume CPR for 2 minutes.\n•\nAmiodarone\n1st Dose 300 mg IV/IO\n2nd Dose 150 mg IV/IO\n•\nContinue CPR/treatment(s) as indicated.\n•\nConsider and treat reversible causes.\nAsystole/PEA\n•\nInitiate IV/IO of normal saline\n•\n1:10,000 Epinephrine 1 mg IV/IO repeat\nevery 3 – 5 minutes.\n•\nConsider advanced airway and capnography.\n•\nRe-assess rhythm every  2 minutes. If rhythm\nis organized, check pulse.\n•\nContinue CPR/treatment as indicated.\n•\nConsider and treat reversible causes.\nHypovolemia\nTension Pneumothorax\nHypoxia\nTamponade\nHydrogen Ion\nToxins\nHypoglycemia\nThrombosis\nHypokalemia\nHyperkalemia\nHypothermia\nDocument:\n•\nVital Signs\n•\nEvents preceding\narrest\n•\nCode Summary\n•\nTreatment(s)\n•\nCommunication with\nMedical Control\nTransport to the closest appropriate facility.\nIf cardiac rhythm change is noted, treat based on\nappropriate Protocol.\nLidocaine may be used in place of Amiodarone. Administer Lidocaine at 1 –\n1.5 mg/kg.  Max Dose 3 mg/kg.",
-      "pageText": [
-        {
-          "page": 101,
-          "text": "Pulseless Arrest\nResuscitation\n•\nAssess patient for respiratory and cardiac arrest.\n•\nInitiate CPR and AED/Defibrillator using most current AHA Guidelines.\n•\nProvide high-quality compressions, minimizing interruptions.\no\nCompressions should be at a rate of 100 – 120 per minute.\no\nApply Automated Compression Device ASAP.\n•\nVentilate with bag valve mask and 100% O2, consider Oropharyngeal/Nasopharyngeal airway\n•\nConsider advanced airway management.\no\nDo not delay resuscitation for advanced airway placement.\no\nIf advanced airway is utilized, initiate EtCO2 monitoring.\nShockable Rhythm?\nYES\nNO\nV-fib/Pulseless VT\n•\nDefibrillate: 120 – 200 joules (biphasic) or\n360 joules (monophasic)\n•\nResume CPR for 2 minutes\n•\nIf patient remains in V-fib/Pulseless VT,\nDeliver 2nd shock at equivalent or higher\ndose.\n•\nContinue CPR\n•\nInitiate IV/IO of normal saline.\n•\n1:10,000 Epinephrine 1 mg IV/IO, repeat\nevery 3 – 5 minutes\n•\nConsider advanced airway and capnography\n•\nRe-assess rhythm every 2 minutes, if rhythm\nis organized, check pulse.\n•\nDefibrillate\n•\nResume CPR for 2 minutes.\n•\nAmiodarone\n1st Dose 300 mg IV/IO\n2nd Dose 150 mg IV/IO\n•\nContinue CPR/treatment(s) as indicated.\n•\nConsider and treat reversible causes.\nAsystole/PEA\n•\nInitiate IV/IO of normal saline\n•\n1:10,000 Epinephrine 1 mg IV/IO repeat\nevery 3 – 5 minutes.\n•\nConsider advanced airway and capnography.\n•\nRe-assess rhythm every  2 minutes. If rhythm\nis organized, check pulse.\n•\nContinue CPR/treatment as indicated.\n•\nConsider and treat reversible causes.\nHypovolemia\nTension Pneumothorax\nHypoxia\nTamponade\nHydrogen Ion\nToxins\nHypoglycemia\nThrombosis\nHypokalemia\nHyperkalemia\nHypothermia\nDocument:\n•\nVital Signs\n•\nEvents preceding\narrest\n•\nCode Summary\n•\nTreatment(s)\n•\nCommunication with\nMedical Control\nTransport to the closest appropriate facility.\nIf cardiac rhythm change is noted, treat based on\nappropriate Protocol.\nLidocaine may be used in place of Amiodarone. Administer Lidocaine at 1 –\n1.5 mg/kg.  Max Dose 3 mg/kg."
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Adult Pulseless Arrest. Resuscitation, shockable and non-shockable rhythm pathways, transport warnings, medication substitution, and documentation.",
+      "needsReview":false
+    },    {
       "id": "post-resuscitation",
       "title": "Post Resuscitation",
       "type": "protocol",
