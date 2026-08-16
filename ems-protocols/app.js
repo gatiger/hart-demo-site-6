@@ -811,6 +811,7 @@ function renderTwoWayDecision(block, container) {
     column.appendChild(answer);
     const card = document.createElement('section');
     card.className = 'two-way-card';
+    if (!path.title && !(path.items || []).length) card.classList.add('two-way-card-empty');
     const heading = document.createElement('h3');
     heading.textContent = path.title || '';
     card.appendChild(heading);

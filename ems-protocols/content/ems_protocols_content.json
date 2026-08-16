@@ -5852,53 +5852,39 @@
       "id": "hemorrhage-control",
       "title": "Hemorrhage Control",
       "type": "protocol",
-      "categoryPath": [
-        "Adult Clinical Protocols"
-      ],
+      "categoryPath": ["Adult Clinical Protocols"],
       "status": "active",
       "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 97,
-        "pageEnd": 97,
-        "pageLabel": "97"
-      },
-      "summary": "",
+      "source": {"pageStart":97,"pageEnd":97,"pageLabel":"97"},
+      "summary": "Hemorrhage control decision pathway, reassessment, Shock Index, and TXA mixing instructions.",
       "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Hemorrhage Control"
-        },
-        {
-          "type": "paragraph",
-          "text": "Apply manual direct pressure or pressure bandage to the wound Hemorrhage Controlled ? NO YES Apply tourniquet for extremities. Use second tourniquet between initial tourniquet and wound if needed. Consider wound packing if appropriate. Consider JETT if available and appropriate. Consider use of Tranexamic Acid for non-compressible hemorrhage on age-appropriate patients ( > 16 years old) with a Shock index > 1.0. If hypoperfusion is present, consider aeromedical transport or rendezvous with whole blood provider. Monitor and re-assess treatments and bandaging frequently. DO NOT remove blood-soaked bandages. Apply fresh bandage over old bandage. Shock Index Formula SI = Heart Rate(HR)/Systolic Blood Pressure(SBP) Normal Range – 0.5 – 0.7 TXA Mixing Instructions 2 gm (2000 mg) mixed into 100 ml bag of Normal Saline and infused over 10 minutes via a 60 gtts drip set."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vital signs Mechanism of Injury Time of Injury Treatment(s) Communication with Medical Control"
-        }
+        {"type":"heading","level":2,"text":"Hemorrhage Control"},
+        {"type":"flow-stage","title":"Apply manual direct pressure or pressure bandage to the wound","arrowAfter":true,"items":[]},
+        {"type":"two-way-decision","question":"Hemorrhage Controlled?","paths":[
+          {"answer":"YES","title":"","items":[]},
+          {"answer":"NO","title":"Additional Hemorrhage Control","items":[
+            "Apply tourniquet for extremities. Use second tourniquet between initial tourniquet and wound if needed.",
+            "Consider wound packing if appropriate.",
+            "Consider JETT if available and appropriate.",
+            {"text":"Consider use of Tranexamic Acid for non-compressible hemorrhage on age-appropriate patients (≥ 16 years old) with a Shock index ≥ 1.0.","links":[{"text":"Tranexamic Acid","protocolId":"tranexamic-acid"}]},
+            "If hypoperfusion is present, consider aeromedical transport or rendezvous with whole blood provider."
+          ]}
+        ],"footer":{"items":[
+          "Monitor and re-assess treatments and bandaging frequently.",
+          {"text":"DO NOT remove blood-soaked bandages. Apply fresh bandage over old bandage.","indent":1,"bold":["DO NOT remove blood-soaked bandages."]}
+        ]}},
+        {"type":"flow-stage","title":"Shock Index Formula","items":[
+          {"text":"SI = Heart Rate (HR) / Systolic Blood Pressure (SBP)","bold":["SI = Heart Rate (HR) / Systolic Blood Pressure (SBP)"]},
+          {"text":"Normal Range – 0.5–0.7","indent":1}
+        ]},
+        {"type":"flow-stage","title":"TXA Mixing Instructions","items":[
+          {"text":"2 gm (2000 mg) mixed into 100 ml bag of Normal Saline and infused over 10 minutes via a 60 gtts drip set.","bold":["2 gm (2000 mg)"]}
+        ]},
+        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital Signs","Mechanism of Injury","Time of Injury","Treatment(s)","Communication with Medical Control"]}
       ],
-      "plainText": "Hemorrhage Control\nApply manual direct pressure or pressure bandage to the wound\nHemorrhage Controlled ?\nNO\nYES\n•\nApply tourniquet for extremities.\nUse second tourniquet between\ninitial tourniquet and wound if\nneeded.\n•\nConsider wound packing if\nappropriate.\n•\nConsider JETT if available and\nappropriate.\n•\nConsider use of Tranexamic\nAcid for non-compressible\nhemorrhage on age-appropriate\npatients ( > 16 years old) with a\nShock index > 1.0.\n•\nIf hypoperfusion is present,\nconsider aeromedical transport\nor rendezvous with whole blood\nprovider.\n•\nMonitor and re-assess treatments and bandaging frequently.\no\nDO NOT remove blood-soaked bandages. Apply fresh bandage over old bandage.\nShock Index Formula\n•\nSI = Heart Rate(HR)/Systolic Blood Pressure(SBP)\no\nNormal Range – 0.5 – 0.7\nTXA Mixing Instructions\n•\n2 gm (2000 mg) mixed into 100 ml bag of Normal Saline and\ninfused over 10 minutes via a 60 gtts drip set.\nDocument:\n▪\nVital signs\n▪\nMechanism of Injury\n▪\nTime of Injury\n▪\nTreatment(s)\n▪\nCommunication with\nMedical Control",
-      "pageText": [
-        {
-          "page": 97,
-          "text": "Hemorrhage Control\nApply manual direct pressure or pressure bandage to the wound\nHemorrhage Controlled ?\nNO\nYES\n•\nApply tourniquet for extremities.\nUse second tourniquet between\ninitial tourniquet and wound if\nneeded.\n•\nConsider wound packing if\nappropriate.\n•\nConsider JETT if available and\nappropriate.\n•\nConsider use of Tranexamic\nAcid for non-compressible\nhemorrhage on age-appropriate\npatients ( > 16 years old) with a\nShock index > 1.0.\n•\nIf hypoperfusion is present,\nconsider aeromedical transport\nor rendezvous with whole blood\nprovider.\n•\nMonitor and re-assess treatments and bandaging frequently.\no\nDO NOT remove blood-soaked bandages. Apply fresh bandage over old bandage.\nShock Index Formula\n•\nSI = Heart Rate(HR)/Systolic Blood Pressure(SBP)\no\nNormal Range – 0.5 – 0.7\nTXA Mixing Instructions\n•\n2 gm (2000 mg) mixed into 100 ml bag of Normal Saline and\ninfused over 10 minutes via a 60 gtts drip set.\nDocument:\n▪\nVital signs\n▪\nMechanism of Injury\n▪\nTime of Injury\n▪\nTreatment(s)\n▪\nCommunication with\nMedical Control"
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Hemorrhage Control. Direct pressure, controlled versus uncontrolled bleeding pathways, reassessment, Shock Index, TXA mixing, and documentation.",
+      "needsReview":false
+    },    {
       "id": "bradycardia",
       "title": "Bradycardia",
       "type": "protocol",

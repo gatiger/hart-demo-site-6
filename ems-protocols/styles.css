@@ -698,3 +698,6 @@ details[open] > .tree-heading.tree-toggle::before {
 .assessment-paired-grid span { padding-bottom: .15rem; border-bottom: 1px dotted #c7d2dc; }
 @media (max-width: 440px) { .assessment-paired-grid { grid-template-columns: 1fr; } }
 .protocol-struck-flow-item { color: #52677a; text-decoration: line-through; text-decoration-thickness: 2px; }
+
+.two-way-card-empty { border-color: transparent !important; background: transparent; box-shadow: none; }
+.two-way-card-empty h3 { display: none; }
