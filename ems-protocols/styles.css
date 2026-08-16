@@ -638,6 +638,7 @@ details[open] > .tree-heading.tree-toggle::before {
 .protocol-flow-stage li.flow-item-indent-1 { margin-left: 1.5rem; }
 .protocol-flow-stage li.flow-item-indent-2 { margin-left: 3rem; }
 .protocol-flow-stage li.flow-item-indent-3 { margin-left: 4.5rem; }
+.protocol-flow-stage li.flow-item-no-bullet { list-style: none; margin-left: 0; text-align: center; }
 @media (max-width: 640px) {
   .protocol-flow-stage li.flow-item-indent-1 { margin-left: .75rem; }
   .protocol-flow-stage li.flow-item-indent-2 { margin-left: 1.5rem; }

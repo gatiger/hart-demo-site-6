@@ -3,7 +3,7 @@ let deferredPrompt;
 let selectedId = null;
 let viewHistory = [];
 let viewHistoryIndex = -1;
-const CONTENT_VERSION = 'v127';
+const CONTENT_VERSION = 'v128';
 
 const treeNav = document.getElementById('treeNav');
 const searchBox = document.getElementById('searchBox');
@@ -574,6 +574,7 @@ function appendPhoneAwareText(element, value) {
     const redPhrases = itemData.red === true ? [itemData.text || ''] : (itemData.red || []);
     if (itemData.struck) li.classList.add('protocol-struck-flow-item');
     if (itemData.highlight) li.classList.add('protocol-highlight-flow-item');
+    if (itemData.noBullet) li.classList.add('flow-item-no-bullet');
     if (redPhrases.length) li.classList.add('protocol-red-flow-item');
     if (itemData.indent) li.classList.add(`flow-item-indent-${Math.min(Number(itemData.indent) || 1, 3)}`);
     if (itemData.pairs?.length) {
