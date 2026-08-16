@@ -184,6 +184,14 @@ This internal checklist tracks items that must be confirmed before the native EM
 - [ ] Verify midazolam/diazepam doses, repeats, maximums, and medical-control stop.
 
 
+
+### Adult Clinical Protocols > Adult Medical Emergencies > Toxic Ingestion
+
+- [ ] Verify all overdose-specific treatments, medication doses, routes, repeat instructions, and maximums.
+- [ ] Verify the law-enforcement reporting requirement for all suspected suicide attempts.
+- [ ] Verify Georgia Poison Control 1-800-222-1222 and the authority to follow Poison Control advice as Medical Control direction.
+- [ ] Verify the documentation requirements and all adult Toxic Ingestion wording.
+
 ### Adult Clinical Protocols > Adult Medical Emergencies > Toxic Exposure
 
 - [ ] Verify the adult atropine dose of 2?5 mg/kg IV/IO/IM every 10?15 minutes and the instruction to titrate to drying of secretions.

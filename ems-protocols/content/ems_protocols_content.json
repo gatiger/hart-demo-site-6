@@ -7856,14 +7856,19 @@
       "effectiveDate": "2026-06-08",
       "lastRevised": "",
       "version": "2026",
-      "tags": [],
+      "tags": [
+        "adult",
+        "toxic ingestion",
+        "overdose",
+        "poison control"
+      ],
       "source": {
         "pdf": "documents/ems/2026-hcems-protocols.pdf",
         "pageStart": 134,
         "pageEnd": 134,
         "pageLabel": "134"
       },
-      "summary": "",
+      "summary": "Assessment and treatment of adult patients with an acute overdose or toxic ingestion.",
       "content": [
         {
           "type": "heading",
@@ -7872,54 +7877,211 @@
         },
         {
           "type": "paragraph",
-          "text": "This protocol applies to adult patients with an acute overdose or toxic ingestion. Primary Survey Assess level of consciousness – AVPU Ensure airway – ensure patency and positioning Have suction equipment ready. Consider spinal motion restriction if indicated. Assess breathing – Give supplemental O2 if signs of compromise. Maintain SpO2 > 94%. Assist with bag valve mask if respiratory effort is ineffective. Assess circulation – control bleeding and manage shock appropriately. See Shock Protocol. Secondary Assessment and Treatment Monitor vital signs and O2 saturation Perform blood glucose analysis – Treat if BGL is < 60 mg/dl. Cardiac Monitor Record and evaluate 12-Lead ECG Physical exam and OPQRST/SAMPLE history. Identify substance/toxin and amount of exposure. Keep the patient NPO. Initiate IV/IO of normal saline at KVO rate. If fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol."
+          "text": "This protocol applies to adult patients with an acute overdose or toxic ingestion."
         },
         {
-          "type": "heading",
-          "level": 3,
-          "text": "If calcium-channel blocker or beta blocker overdose"
+          "type": "flow-stage",
+          "title": "Primary Survey",
+          "arrowAfter": true,
+          "items": [
+            {
+              "text": "Assess level of consciousness – AVPU",
+              "bold": [
+                "Assess level of consciousness"
+              ]
+            },
+            {
+              "text": "Ensure airway – ensure patency and positioning",
+              "bold": [
+                "Ensure airway"
+              ]
+            },
+            {
+              "text": "Have suction equipment ready.",
+              "indent": 1
+            },
+            {
+              "text": "Consider spinal motion restriction if indicated.",
+              "indent": 1
+            },
+            {
+              "text": "Assess breathing – Give supplemental O₂ if signs of compromise. Maintain SpO₂ > 94%.",
+              "bold": [
+                "Assess breathing",
+                "Maintain SpO₂ > 94%."
+              ]
+            },
+            {
+              "text": "Assist with bag valve mask if respiratory effort is ineffective.",
+              "indent": 1
+            },
+            {
+              "text": "Assess circulation – control bleeding and manage shock appropriately. See Shock Protocol.",
+              "bold": [
+                "Assess circulation"
+              ],
+              "links": [
+                {
+                  "text": "Shock Protocol",
+                  "protocolId": "shock-management"
+                }
+              ]
+            }
+          ]
         },
         {
-          "type": "paragraph",
-          "text": "Glucagon 1 mg IM/SQ/IN"
+          "type": "flow-stage",
+          "title": "Secondary Assessment and Treatment",
+          "items": [
+            "Monitor vital signs and O₂ saturation",
+            {
+              "text": "Perform blood glucose analysis – Treat if BGL is < 60 mg/dl.",
+              "bold": [
+                "BGL is < 60 mg/dl."
+              ]
+            },
+            "Cardiac Monitor",
+            {
+              "text": "Record and evaluate 12-Lead ECG",
+              "indent": 1
+            },
+            "Physical exam and OPQRST/SAMPLE history.",
+            {
+              "text": "Identify substance/toxin and amount of exposure.",
+              "indent": 1
+            },
+            "Keep the patient NPO.",
+            "Initiate IV/IO of normal saline at KVO rate.",
+            {
+              "text": "If fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.",
+              "indent": 1,
+              "links": [
+                {
+                  "text": "Shock Protocol",
+                  "protocolId": "shock-management"
+                }
+              ]
+            },
+            {
+              "text": "If calcium-channel blocker or beta blocker overdose:",
+              "bold": [
+                "If calcium-channel blocker or beta blocker overdose:"
+              ]
+            },
+            {
+              "text": "Glucagon 1 mg IM/SQ/IN",
+              "indent": 1,
+              "links": [
+                {
+                  "text": "Glucagon",
+                  "protocolId": "glucagon"
+                }
+              ]
+            },
+            {
+              "text": "If tricyclic antidepressant overdose with wide complex tachycardia:",
+              "bold": [
+                "If tricyclic antidepressant overdose with wide complex tachycardia:"
+              ]
+            },
+            {
+              "text": "Sodium Bicarbonate 1 mEq/kg IV/IO slowly.",
+              "indent": 1,
+              "links": [
+                {
+                  "text": "Sodium Bicarbonate",
+                  "protocolId": "sodium-bicarbonate"
+                }
+              ]
+            },
+            {
+              "text": "If narcotic overdose:",
+              "bold": [
+                "If narcotic overdose:"
+              ]
+            },
+            {
+              "text": "Naloxone 0.4 mg IV/IO/IM/IN may repeat x 2 (titrated to patient’s respirations)",
+              "indent": 1,
+              "links": [
+                {
+                  "text": "Naloxone",
+                  "protocolId": "naloxone-narcan"
+                }
+              ]
+            },
+            {
+              "text": "If stimulant/hallucinogen overdose (cocaine, amphetamine, ecstasy, etc.):",
+              "bold": [
+                "If stimulant/hallucinogen overdose (cocaine, amphetamine, ecstasy, etc.):"
+              ]
+            },
+            {
+              "text": "Midazolam 2.5 mg IV/IO/IM/IN",
+              "indent": 1,
+              "links": [
+                {
+                  "text": "Midazolam",
+                  "protocolId": "midazolam-versed"
+                }
+              ]
+            },
+            {
+              "text": "Contact Medical Control to repeat 2.5 mg dose.",
+              "indent": 2
+            },
+            {
+              "text": "Cool patient passively but DO NOT allow the patient to shiver.",
+              "indent": 2,
+              "bold": [
+                "DO NOT"
+              ]
+            }
+          ]
         },
         {
-          "type": "heading",
-          "level": 3,
-          "text": "If tricyclic antidepressant overdose with wide complex tachycardia"
+          "type": "flow-stage",
+          "items": [
+            {
+              "text": "All suspected suicide attempts must be reported to law enforcement before leaving scene.",
+              "icon": "assets/legend-important.webp",
+              "iconAlt": "Important protocol information",
+              "bold": [
+                "All suspected suicide attempts must be reported to law enforcement before leaving scene."
+              ],
+              "red": [
+                "All suspected suicide attempts must be reported to law enforcement before leaving scene."
+              ]
+            },
+            {
+              "text": "EMS personnel may contact Poison Control directly. EMS personnel are directed to follow the advice offered by Poison Control Center as if it came directly from Medical Control. Georgia Poison Control: 1-800-222-1222.",
+              "icon": "assets/legend-important.webp",
+              "iconAlt": "Important protocol information",
+              "bold": [
+                "EMS personnel may contact Poison Control directly. EMS personnel are directed to follow the advice offered by Poison Control Center as if it came directly from Medical Control. Georgia Poison Control: 1-800-222-1222."
+              ],
+              "red": [
+                "EMS personnel may contact Poison Control directly. EMS personnel are directed to follow the advice offered by Poison Control Center as if it came directly from Medical Control. Georgia Poison Control: 1-800-222-1222."
+              ]
+            }
+          ]
         },
         {
-          "type": "paragraph",
-          "text": "Sodium Bicarbonate 1 mEq/kg IV/IO slowly."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "If narcotic overdose"
-        },
-        {
-          "type": "paragraph",
-          "text": "Naloxone 0.4 mg IV/IO/IM/IN may repeat x 2 (titrated to patient’s respirations) If stimulant/hallucinogen overdose (cocaine, amphetamine, ecstasy, etc.): Midazolam 2.5 mg IV/IO/IM/IN Contact Medical Control to repeat 2.5 mg dose. Cool patient passively but DO NOT allow the patient to shiver. All suspected suicide attempts must be reported to law enforcement before leaving scene. EMS personnel may contact Poison Control directly. EMS personnel are directed to follow the advice offered by Poison Control Center as if it came directly from Medical Control. Georgia Poison Control: 1-800-222-1222."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vital signs OPQRST/SAMPLE Cardiac rhythm Treatment(s) Communication with Medical Control."
+          "type": "documentation-card",
+          "title": "Document:",
+          "icon": "assets/legend-documentation.webp",
+          "iconAlt": "Documentation",
+          "items": [
+            "Vital signs",
+            "OPQRST/SAMPLE",
+            "Cardiac rhythm",
+            "Treatment(s)",
+            "Communication with Medical Control."
+          ]
         }
       ],
-      "plainText": "Toxic Ingestion\nThis protocol applies to adult patients with an acute overdose or toxic ingestion.\nPrimary Survey\n•\nAssess level of consciousness – AVPU\n•\nEnsure airway – ensure patency and positioning\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\n•\nAssess breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nAssess circulation – control bleeding and manage shock appropriately. See Shock Protocol.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nCardiac Monitor\no\nRecord and evaluate 12-Lead ECG\n•\nPhysical exam and OPQRST/SAMPLE history.\no\nIdentify substance/toxin and amount of exposure.\n•\nKeep the patient NPO.\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.\nIf calcium-channel blocker or beta blocker overdose:\n•\nGlucagon 1 mg IM/SQ/IN\nIf tricyclic antidepressant overdose with wide complex tachycardia:\n•\nSodium Bicarbonate 1 mEq/kg IV/IO slowly.\nIf narcotic overdose:\n•\nNaloxone 0.4 mg IV/IO/IM/IN may repeat x 2 (titrated to patient’s respirations)\nIf stimulant/hallucinogen overdose (cocaine, amphetamine, ecstasy, etc.):\n•\nMidazolam 2.5 mg IV/IO/IM/IN\no\nContact Medical Control to repeat 2.5 mg dose.\no\nCool patient passively but DO NOT allow the patient to shiver.\nAll suspected suicide attempts must be reported to law enforcement before leaving scene.\nEMS personnel may contact Poison Control directly. EMS personnel are directed to follow\nthe advice offered by Poison Control Center as if it came directly from Medical Control.\nGeorgia Poison Control: 1-800-222-1222.\nDocument:\n•\nVital signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control.",
-      "pageText": [
-        {
-          "page": 134,
-          "text": "Toxic Ingestion\nThis protocol applies to adult patients with an acute overdose or toxic ingestion.\nPrimary Survey\n•\nAssess level of consciousness – AVPU\n•\nEnsure airway – ensure patency and positioning\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\n•\nAssess breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nAssess circulation – control bleeding and manage shock appropriately. See Shock Protocol.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nCardiac Monitor\no\nRecord and evaluate 12-Lead ECG\n•\nPhysical exam and OPQRST/SAMPLE history.\no\nIdentify substance/toxin and amount of exposure.\n•\nKeep the patient NPO.\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.\nIf calcium-channel blocker or beta blocker overdose:\n•\nGlucagon 1 mg IM/SQ/IN\nIf tricyclic antidepressant overdose with wide complex tachycardia:\n•\nSodium Bicarbonate 1 mEq/kg IV/IO slowly.\nIf narcotic overdose:\n•\nNaloxone 0.4 mg IV/IO/IM/IN may repeat x 2 (titrated to patient’s respirations)\nIf stimulant/hallucinogen overdose (cocaine, amphetamine, ecstasy, etc.):\n•\nMidazolam 2.5 mg IV/IO/IM/IN\no\nContact Medical Control to repeat 2.5 mg dose.\no\nCool patient passively but DO NOT allow the patient to shiver.\nAll suspected suicide attempts must be reported to law enforcement before leaving scene.\nEMS personnel may contact Poison Control directly. EMS personnel are directed to follow\nthe advice offered by Poison Control Center as if it came directly from Medical Control.\nGeorgia Poison Control: 1-800-222-1222.\nDocument:\n•\nVital signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control."
-        }
-      ],
+      "plainText": "Toxic Ingestion. This protocol applies to adult patients with an acute overdose or toxic ingestion. Primary survey, secondary assessment and treatment, overdose-specific treatments, reporting requirements, Poison Control, and documentation.",
       "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
       "displayMode": "structured"
     },
     {
