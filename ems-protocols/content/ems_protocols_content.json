@@ -6941,63 +6941,52 @@
       "id": "hypertensive-crisis",
       "title": "Hypertensive Crisis",
       "type": "protocol",
-      "categoryPath": [
-        "Adult Clinical Protocols",
-        "Adult Medical Emergencies"
-      ],
+      "categoryPath": ["Adult Clinical Protocols", "Adult Medical Emergencies"],
       "status": "active",
       "effectiveDate": "2026-06-08",
       "lastRevised": "",
       "version": "2026",
       "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 122,
-        "pageEnd": 122,
-        "pageLabel": "122"
-      },
+      "source": {"pdf":"documents/ems/2026-hcems-protocols.pdf","pageStart":122,"pageEnd":122,"pageLabel":"122"},
       "summary": "",
       "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Acute Hypertensive Crisis"
-        },
-        {
-          "type": "paragraph",
-          "text": "This protocol applies to adult patients demonstrating an acute, potentially life-threatening elevation of blood pressure with evidence of end-organ perfusion damage. Defined as a Systolic blood pressure greater than 190 mmHg and a Diastolic greater than 120 mmHg. Primary Survey Assess level of consciousness – AVPU Ensure airway – ensure patency and positioning Have suction equipment ready. Consider spinal motion restriction if indicated. Assess breathing – Give supplemental O2 if signs of compromise. Maintain SpO2 > 94%. Assist with bag valve mask if respiratory effort is ineffective. Assess circulation – control bleeding and manage shock appropriately. See Shock Protocol. Secondary Assessment and Treatment Monitor vital signs and O2 saturation. Cardiac monitor Record and evaluate 12-Lead ECG. Perform blood glucose analysis – Treat if BGL is < 60 mg/dl. Physical exam and OPQRST/SAMPLE history. Assess for evidence of end-organ perfusion damage (i.e. stroke, acute coronary syndrome/congestive heart failure, renal failure). Signs and symptoms may include elevated blood pressure, headache, dizziness, nausea/vomiting, blurred vision, dyspnea, pulmonary/peripheral edema, etc. Consider possible causes: chest pain, CHF, overdose, increased intra-cranial pressure, tachycardia. Initiate IV/IO of normal saline at KVO rate. If suspected overdose of cocaine or amphetamine use, you may consider ONE of the following medications. Midazolam 2.5 mg IV/IO/IN. May repeat 2.5 mg IV/IO/IN once. Max Dose 5 mg. Valium 2 10 mg IV/IO Labetalol 20 mg IV over 20 minutes. Any neurological defect(s) noted ? If no neurological defects are noted, DO NOT attempt to lower blood pressure without contacting Medical Control."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Orders may include"
-        },
-        {
-          "type": "paragraph",
-          "text": "Nitroglycerin 0.4 mg sublingual. Contact Medical Control for Addition Orders"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vital signs OPQRST/SAMPLE Cardiac rhythm Treatment(s) Communication with Medical Control."
-        }
+        {"type":"heading","level":2,"text":"Acute Hypertensive Crisis"},
+        {"type":"paragraph","text":"This protocol applies to adult patients demonstrating an acute, potentially life-threatening elevation of blood pressure with evidence of end-organ perfusion damage. Defined as a Systolic blood pressure greater than 190 mmHg and a Diastolic greater than 120 mmHg."},
+        {"type":"flow-stage","title":"Primary Survey","arrowAfter":true,"items":[
+          {"text":"Assess level of consciousness – AVPU","bold":["Assess level of consciousness"]},
+          {"text":"Ensure airway – ensure patency and positioning","bold":["Ensure airway"]},
+          {"text":"Have suction equipment ready.","indent":1},
+          {"text":"Consider spinal motion restriction if indicated.","indent":1},
+          {"text":"Assess breathing – Give supplemental O₂ if signs of compromise. Maintain SpO₂ ≥ 94%.","bold":["Assess breathing","Maintain SpO₂ ≥ 94%."]},
+          {"text":"Assist with bag valve mask if respiratory effort is ineffective.","indent":1},
+          {"text":"Assess circulation – control bleeding and manage shock appropriately. See Shock Protocol.","bold":["Assess circulation"],"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]}
+        ]},
+        {"type":"flow-stage","title":"Secondary Assessment and Treatment","arrowAfter":true,"items":[
+          "Monitor vital signs and O₂ saturation.",
+          "Cardiac monitor",
+          {"text":"Record and evaluate 12-Lead ECG.","indent":1},
+          {"text":"Perform blood glucose analysis – Treat if BGL is < 60 mg/dl.","bold":["BGL is < 60 mg/dl."]},
+          "Physical exam and OPQRST/SAMPLE history.",
+          {"text":"Assess for evidence of end-organ perfusion damage (i.e. stroke, acute coronary syndrome/congestive heart failure, renal failure).","indent":1},
+          {"text":"Signs and symptoms may include elevated blood pressure, headache, dizziness, nausea/vomiting, blurred vision, dyspnea, pulmonary/peripheral edema, etc.","bold":["Signs and symptoms may include elevated blood pressure, headache, dizziness, nausea/vomiting, blurred vision, dyspnea, pulmonary/peripheral edema, etc."],"red":true,"icon":"assets/legend-important.webp","iconAlt":"Important clinical warning"},
+          "Consider possible causes: chest pain, CHF, overdose, increased intra-cranial pressure, tachycardia.",
+          "Initiate IV/IO of normal saline at KVO rate.",
+          "If suspected overdose of cocaine or amphetamine use, you may consider ONE of the following medications.",
+          {"text":"Midazolam 2.5 mg IV/IO/IN. May repeat 2.5 mg IV/IO/IN once. Max Dose 5 mg.","indent":1,"bold":["2.5 mg","Max Dose 5 mg."],"links":[{"text":"Midazolam","protocolId":"midazolam-versed"}]},
+          {"text":"Valium 2–10 mg IV/IO","indent":1,"bold":["2–10 mg"],"links":[{"text":"Valium","protocolId":"diazepam"}]},
+          {"text":"Labetalol 20 mg IV over 20 minutes.","indent":1,"bold":["20 mg IV over 20 minutes."],"links":[{"text":"Labetalol","protocolId":"labetalol"}]},
+          "Any neurological defect(s) noted?",
+          {"text":"If no neurological defects are noted, DO NOT attempt to lower blood pressure without contacting Medical Control.","indent":1,"bold":["DO NOT"]},
+          {"text":"Orders may include:","indent":2},
+          {"text":"Nitroglycerin 0.4 mg sublingual.","indent":3,"bold":["0.4 mg sublingual."],"links":[{"text":"Nitroglycerin","protocolId":"nitroglycerin-tabs"}]}
+        ]},
+        {"type":"stop-control","title":"STOP","text":"Contact Medical Control for Additional Orders","image":"assets/legend-medical-control.webp","alt":"Stop and contact Medical Control for additional orders"},
+        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital signs","OPQRST/SAMPLE","Cardiac rhythm","Treatment(s)","Communication with Medical Control"]}
       ],
-      "plainText": "Acute Hypertensive Crisis\nThis protocol applies to adult patients demonstrating an acute, potentially life-threatening\nelevation of blood pressure with evidence of end-organ perfusion damage. Defined as a Systolic\nblood pressure greater than 190 mmHg and a Diastolic greater than 120 mmHg.\nPrimary Survey\n•\nAssess level of consciousness – AVPU\n•\nEnsure airway – ensure patency and positioning\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\n•\nAssess breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nAssess circulation – control bleeding and manage shock appropriately. See Shock Protocol.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation.\n•\nCardiac monitor\no\nRecord and evaluate 12-Lead ECG.\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nPhysical exam and OPQRST/SAMPLE history.\no\nAssess for evidence of end-organ perfusion damage (i.e. stroke, acute coronary\nsyndrome/congestive heart failure, renal failure).\nSigns and symptoms may include elevated blood pressure, headache, dizziness,\nnausea/vomiting, blurred vision, dyspnea, pulmonary/peripheral edema, etc.\n•\nConsider possible causes: chest pain, CHF, overdose, increased intra-cranial pressure,\ntachycardia.\n•\nInitiate IV/IO of normal saline at KVO rate.\n•\nIf suspected overdose of cocaine or amphetamine use, you may consider ONE of the following\nmedications.\no\nMidazolam 2.5 mg IV/IO/IN. May repeat 2.5 mg IV/IO/IN once. Max Dose 5 mg.\no\nValium 2 10 mg IV/IO\no\nLabetalol 20 mg IV over 20 minutes.\n•\nAny neurological defect(s) noted ?\no\nIf no neurological defects are noted, DO NOT attempt to lower blood pressure without\ncontacting Medical Control.\n▪\nOrders may include:\n•\nNitroglycerin 0.4 mg sublingual.\nContact Medical Control\nfor Addition Orders\nDocument:\n•\nVital signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control.",
-      "pageText": [
-        {
-          "page": 122,
-          "text": "Acute Hypertensive Crisis\nThis protocol applies to adult patients demonstrating an acute, potentially life-threatening\nelevation of blood pressure with evidence of end-organ perfusion damage. Defined as a Systolic\nblood pressure greater than 190 mmHg and a Diastolic greater than 120 mmHg.\nPrimary Survey\n•\nAssess level of consciousness – AVPU\n•\nEnsure airway – ensure patency and positioning\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\n•\nAssess breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nAssess circulation – control bleeding and manage shock appropriately. See Shock Protocol.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation.\n•\nCardiac monitor\no\nRecord and evaluate 12-Lead ECG.\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nPhysical exam and OPQRST/SAMPLE history.\no\nAssess for evidence of end-organ perfusion damage (i.e. stroke, acute coronary\nsyndrome/congestive heart failure, renal failure).\nSigns and symptoms may include elevated blood pressure, headache, dizziness,\nnausea/vomiting, blurred vision, dyspnea, pulmonary/peripheral edema, etc.\n•\nConsider possible causes: chest pain, CHF, overdose, increased intra-cranial pressure,\ntachycardia.\n•\nInitiate IV/IO of normal saline at KVO rate.\n•\nIf suspected overdose of cocaine or amphetamine use, you may consider ONE of the following\nmedications.\no\nMidazolam 2.5 mg IV/IO/IN. May repeat 2.5 mg IV/IO/IN once. Max Dose 5 mg.\no\nValium 2 10 mg IV/IO\no\nLabetalol 20 mg IV over 20 minutes.\n•\nAny neurological defect(s) noted ?\no\nIf no neurological defects are noted, DO NOT attempt to lower blood pressure without\ncontacting Medical Control.\n▪\nOrders may include:\n•\nNitroglycerin 0.4 mg sublingual.\nContact Medical Control\nfor Addition Orders\nDocument:\n•\nVital signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control."
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Acute Hypertensive Crisis. Adult assessment and treatment for severe blood-pressure elevation with evidence of end-organ perfusion damage.",
+      "needsReview":false,
+      "displayMode":"structured"
+    },{
       "id": "adult-nausea-and-vomiting",
       "title": "Nausea and Vomiting",
       "type": "protocol",
