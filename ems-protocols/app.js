@@ -880,37 +880,38 @@ function renderLvadUnresponsiveFlow(block, container) {
   const viewport = document.createElement('div');
   viewport.className = 'lvad-chart-viewport';
   viewport.innerHTML = `
-    <svg class="lvad-chart" viewBox="0 0 1000 980" role="img" aria-labelledby="lvad-chart-title lvad-chart-desc">
+    <svg class="lvad-chart" viewBox="0 0 1000 920" role="img" aria-labelledby="lvad-chart-title lvad-chart-desc">
       <title id="lvad-chart-title">Assessment of the unresponsive LVAD patient</title>
       <desc id="lvad-chart-desc">Decision flow assessing perfusion, VAD hum, restart status, chest compressions, ACLS protocols, and calling the VAD center.</desc>
       <defs><marker id="lvad-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z"></path></marker></defs>
       <g class="lvad-chart-lines" marker-end="url(#lvad-arrow)">
-        <path d="M500 80 V110"/><path d="M500 205 V218"/>
-        <path d="M500 282 V310 H230 V340"/><path d="M500 310 H770 V340"/>
-        <path d="M770 490 V505"/><path d="M770 575 V600 H655 V620"/><path d="M770 600 H885 V620"/>
-        <path d="M885 700 V720"/>
-        <path d="M885 790 V815 H500 V830"/>
-        <path d="M885 790 V805 H655 V720"/>
-        <path d="M655 720 V815 H500"/>
-        <path d="M230 490 V815 H500"/>
-        <path d="M500 815 V830"/><path d="M500 885 V910"/>
+        <path d="M500 80 V100"/><path d="M500 200 V225"/>
+        <path d="M380 260 H350"/><path d="M620 260 H650"/>
+        <path d="M815 365 V392 H760 V395"/>
+        <path d="M645 430 H590"/><path d="M760 465 V490"/>
+        <path d="M775 580 V605"/>
+        <path d="M655 640 H620 V530 H590"/>
+        <path d="M760 675 V735 H340"/>
+        <path d="M475 620 V735 H340"/>
+        <path d="M185 365 V735 H340"/>
+        <path d="M210 790 V830"/>
       </g>
       <g class="lvad-chart-labels">
-        <text x="240" y="330">YES</text><text x="780" y="330" class="no">NO</text>
-        <text x="625" y="610">YES</text><text x="895" y="610" class="no">NO</text>
-        <text x="805" y="808" class="no">NO</text><text x="900" y="808">YES</text>
+        <text x="360" y="250">YES</text><text x="640" y="250" class="no">NO</text>
+        <text x="620" y="420">YES</text><text x="775" y="480" class="no">NO</text>
+        <text x="625" y="630" class="no">NO</text><text x="775" y="700">YES</text>
       </g>
       <foreignObject x="400" y="20" width="200" height="60"><div class="lvad-svg-box start">Unresponsive LVAD Patient</div></foreignObject>
-      <foreignObject x="325" y="110" width="350" height="95"><div class="lvad-svg-box">Assess ventilation and perfusion:<ul><li>Normal skin color?</li><li>Normal capillary refill?</li></ul></div></foreignObject>
-      <ellipse class="lvad-svg-decision" cx="500" cy="250" rx="120" ry="32"/><text class="lvad-svg-decision-text" x="500" y="255">Adequate perfusion?</text>
-      <foreignObject x="50" y="340" width="360" height="150"><div class="lvad-svg-box">Assess and treat non-LVAD causes for altered mental status such as:<ul class="two-column"><li>Hypoxia</li><li>Overdose</li><li>Stroke</li><li>Blood glucose</li></ul></div></foreignObject>
-      <foreignObject x="590" y="340" width="360" height="150"><div class="lvad-svg-box">Assess VAD:<ul><li>Connections ok?</li><li>Adequate power?</li><li>Auscultate apex for VAD hum</li></ul></div></foreignObject>
-      <ellipse class="lvad-svg-decision" cx="770" cy="540" rx="115" ry="35"/><text class="lvad-svg-decision-text" x="770" y="545">VAD hum?</text>
-      <foreignObject x="540" y="620" width="230" height="100"><div class="lvad-svg-box action">Perform external chest compressions</div></foreignObject>
-      <foreignObject x="790" y="620" width="190" height="80"><div class="lvad-svg-box">Attempt to restart LVAD<br>Change controller</div></foreignObject>
-      <ellipse class="lvad-svg-decision" cx="885" cy="755" rx="105" ry="35"/><text class="lvad-svg-decision-text" x="885" y="760">VAD restarted?</text>
-      <foreignObject x="325" y="830" width="350" height="55"><div class="lvad-svg-box outcome">Follow ACLS protocols</div></foreignObject>
-      <foreignObject x="400" y="910" width="200" height="55"><div class="lvad-svg-box call">Call VAD Center</div></foreignObject>
+      <foreignObject x="325" y="100" width="350" height="100"><div class="lvad-svg-box">Assess ventilation and perfusion:<ul><li>Normal skin color?</li><li>Normal capillary refill?</li></ul></div></foreignObject>
+      <foreignObject x="20" y="215" width="330" height="150"><div class="lvad-svg-box">Assess and treat non-LVAD causes for altered mental status such as:<ul class="two-column"><li>Hypoxia</li><li>Overdose</li><li>Stroke</li><li>Blood glucose</li></ul></div></foreignObject>
+      <ellipse class="lvad-svg-decision" cx="500" cy="260" rx="120" ry="35"/><text class="lvad-svg-decision-text" x="500" y="254"><tspan x="500">Adequate</tspan><tspan x="500" dy="20">perfusion?</tspan></text>
+      <foreignObject x="650" y="215" width="330" height="150"><div class="lvad-svg-box">Assess VAD:<ul><li>Connections ok?</li><li>Adequate power?</li><li>Auscultate apex for VAD hum</li></ul></div></foreignObject>
+      <ellipse class="lvad-svg-decision" cx="760" cy="430" rx="115" ry="35"/><text class="lvad-svg-decision-text" x="760" y="436">VAD hum?</text>
+      <foreignObject x="360" y="395" width="230" height="225"><div class="lvad-svg-box action">Perform external chest compressions</div></foreignObject>
+      <foreignObject x="650" y="490" width="250" height="90"><div class="lvad-svg-box">Attempt to restart LVAD<br>Change controller</div></foreignObject>
+      <ellipse class="lvad-svg-decision" cx="775" cy="640" rx="120" ry="35"/><text class="lvad-svg-decision-text" x="775" y="646">VAD restarted?</text>
+      <foreignObject x="80" y="735" width="260" height="55"><div class="lvad-svg-box outcome">Follow ACLS protocols</div></foreignObject>
+      <foreignObject x="110" y="830" width="200" height="55"><div class="lvad-svg-box call">Call VAD Center</div></foreignObject>
     </svg>`;
   flow.appendChild(viewport);
   container.appendChild(flow);

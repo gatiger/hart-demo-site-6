@@ -1,4 +1,4 @@
-const CACHE_NAME = 'hcems-protocols-v103';
+const CACHE_NAME = 'hcems-protocols-v104';
 const APP_SHELL = [
   './',
   './index.html',
