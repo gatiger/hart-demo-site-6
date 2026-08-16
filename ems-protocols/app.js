@@ -667,7 +667,15 @@ function renderProtocolImage(block, container) {
   image.src = block.image;
   image.alt = block.alt || '';
   image.loading = 'lazy';
+  image.addEventListener('error', () => figure.classList.add('is-missing'), { once: true });
   figure.appendChild(image);
+
+  const placeholder = document.createElement('div');
+  placeholder.className = 'protocol-reference-image-placeholder';
+  placeholder.setAttribute('aria-hidden', 'true');
+  placeholder.innerHTML = `<strong>Image coming soon</strong><code>${escapeHtml((block.image || '').split('/').pop() || '')}</code>`;
+  figure.appendChild(placeholder);
+
   if (block.caption) {
     const caption = document.createElement('figcaption');
     caption.textContent = block.caption;
