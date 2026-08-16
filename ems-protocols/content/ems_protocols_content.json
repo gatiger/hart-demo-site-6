@@ -7829,8 +7829,8 @@
         {
           "type": "documentation-card",
           "title": "Document:",
-          "icon": "assets/legend-documentation.webp",
-          "iconAlt": "Documentation",
+          "image": "assets/legend-documentation.webp",
+          "alt": "Patient care documentation reminder symbol",
           "items": [
             "Vital signs",
             "Agent/mechanism of exposure",
@@ -8069,8 +8069,8 @@
         {
           "type": "documentation-card",
           "title": "Document:",
-          "icon": "assets/legend-documentation.webp",
-          "iconAlt": "Documentation",
+          "image": "assets/legend-documentation.webp",
+          "alt": "Patient care documentation reminder symbol",
           "items": [
             "Vital signs",
             "OPQRST/SAMPLE",
@@ -8280,8 +8280,8 @@
         {
           "type": "documentation-card",
           "title": "Document:",
-          "icon": "assets/legend-documentation.webp",
-          "iconAlt": "Documentation",
+          "image": "assets/legend-documentation.webp",
+          "alt": "Patient care documentation reminder symbol",
           "items": [
             "Vital Signs",
             "OPQRST/SAMPLE",
