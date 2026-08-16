@@ -568,7 +568,7 @@
               "status": "active"
             },
             {
-              "id": "chest-pain-stemi",
+              "id": "adult-chest-pain-stemi",
               "title": "Chest Pain / STEMI",
               "type": "protocol",
               "pageStart": 111,
@@ -6202,79 +6202,6 @@
       "plainText":"Left Ventricular Assist Device. Primary and secondary assessment, device-specific management, emergency contact guidance, transport, and documentation.",
       "needsReview":false
     },    {
-      "id": "chest-pain-stemi",
-      "title": "Chest Pain/STEMI",
-      "type": "protocol",
-      "categoryPath": [
-        "Adult Clinical Protocols",
-        "Adult Cardiac Emergencies"
-      ],
-      "status": "active",
-      "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 111,
-        "pageEnd": 112,
-        "pageLabel": "111-112"
-      },
-      "summary": "",
-      "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Chest Pain/STEMI"
-        },
-        {
-          "type": "paragraph",
-          "text": "This protocol applies to adult patients presenting with chest pain/discomfort suspected to be ischemic in nature. This may include classic presentations or anginal equivalents (i.e. epigastric pain, neck and/or jaw pain, and indigestion). Contact Medical Control for all pediatric care under this protocol. Primary Survey Assess level of consciousness â€“ AVPU Ensure airway â€“ ensure patency and positioning Have suction equipment ready. Consider spinal motion restriction if indicated. Assess breathing â€“ Give supplemental O2 if signs of compromise. Maintain SpO2 > 94%. Assist with bag valve mask if respiratory effort is ineffective. Assess circulation â€“ control bleeding and manage shock appropriately. See Shock Protocol Take measures to prevent hypothermia. Secondary Assessment and Treatment Place patient in position of comfort and minimize patient exertion. If patient is hypotensive, place in supine position and manage shock appropriately. See Shock Protocol. Monitor vital signs and O2 saturation Cardiac Monitor Obtain and evaluate 12-Lead ECG as soon as possible. Transmit ECG to appropriate facility. Monitor continuously until patient is in care of ER/Cath lab staff. Treat arrhythmias under the appropriate protocol. Perform blood glucose analysis. Treat if BGL is < 60 mg/dl. Initiate EtCO2 monitoring. Physical exam and OPQRST/SAMPLE history. Consider possible causes: (acute myocardial infarction, angina, aneurysm, pulmonary embolus, gastro-intestinal issues, etc.) Initiate IV/IO of normal saline at KVO rate. If fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol. Establish 2nd IV only if time permits. If patient is not allergic, administer Aspirin 324 mg orally. (Four 81 mg baby aspirin) Instruct the patient to chew before swallowing Administer regardless of patient has taken aspirin prior to EMS arrival."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vital signs OPQRST/SAMPLE Cardiac rhythm 12-Lead ECG Treatment(s) Communication with Medical Control. Chest Pain/STEMI (Continued) Secondary Assessment and Treatment (Continued) If the patient presents with an inferior AMI (S-T elevation in Leads II, III, and aVF). Both nitroglycerin and opiate administration may cause fatal hypotension in these patients. Obtain a right-sided 12-Lead ECG. Administer Nitroglycerin 0.4 mg SL. May repeat every 5 minutes as long as SBP remains > 100 mmHg and chest pain continues. Max Dose 1.2 mg If the systolic blood pressure falls below 100 mmHg in response to nitroglycerin therapy: Position the patient flat. DO NOT administer additional nitroglycerin. Administer 250 ml fluid bolus IV, repeat up to 1000 ml. (if no pulmonary edema), titrate to keep systolic blood pressure > 110 mmHg. DO NOT administer nitroglycerin to any patient who has taken erectile dysfunction medication in the last 24 hours. A report should be given to the Cardiac Facility ASAP with any patient presenting with S-T elevation. Administer Morphine Sulfate 2 mg IV slow push in 5 â€“ 10 minute intervals. Max Dose 10 mg. Medical Control may authorize even when systolic blood pressure is < 110 mmHg in certain circumstances."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "If nausea develops"
-        },
-        {
-          "type": "paragraph",
-          "text": "Ondansetron 4 mg IV/IO/IM/IN Repeat every 15 minutes if no relief. Max Dose 8 mg. Fluid Resuscitation Additional fluid boluses for inferior wall MI only (beyond original 1000 ml) in 250 ml bolus increments then reassess for pulmonary edema between each bolus."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "If patient presents with Cardiogenic Shock"
-        },
-        {
-          "type": "paragraph",
-          "text": "Ensure rate and rhythm have been treated accordingly. If the systolic blood pressure is < 90 mmHg, consider a Dopamine Infusion. Dopamine Infusion 2-10 mcg/kg/min, titrating to effect. See Dopamine Infusion Chart. If the chest pain is thought to be stimulant-induced (cocaine, amphetamine, ecstasy) and pulse rate is > 120 BPM consider: Midazolam 2.5 mg slow push IV/IO/IN. May repeat 2.5 mg IV/IO/IN. Max Dose 5 mg. Cool patient passively but DO NOT allow patient to shiver. Early notification and rapid transport to a cardiac facility capable of reperfusion therapy is paramount."
-        }
-      ],
-      "plainText": "Chest Pain/STEMI\nThis protocol applies to adult patients presenting with chest pain/discomfort suspected to be\nischemic in nature. This may include classic presentations or anginal equivalents (i.e. epigastric\npain, neck and/or jaw pain, and indigestion).\nContact Medical Control for all pediatric care under this protocol.\nPrimary Survey\nâ€¢\nAssess level of consciousness â€“ AVPU\nâ€¢\nEnsure airway â€“ ensure patency and positioning\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\nâ€¢\nAssess breathing â€“ Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nAssist with bag valve mask if respiratory effort is ineffective.\nâ€¢\nAssess circulation â€“ control bleeding and manage shock appropriately. See Shock Protocol\no\nTake measures to prevent hypothermia.\nSecondary Assessment and Treatment\nâ€¢\nPlace patient in position of comfort and minimize patient exertion.\no\nIf patient is hypotensive, place in supine position and manage shock appropriately. See\nShock Protocol.\nâ€¢\nMonitor vital signs and O2 saturation\nâ€¢\nCardiac Monitor\no\nObtain and evaluate 12-Lead ECG as soon as possible.\no\nTransmit ECG to appropriate facility.\no\nMonitor continuously until patient is in care of ER/Cath lab staff.\no\nTreat arrhythmias under the appropriate protocol.\nâ€¢\nPerform blood glucose analysis.  Treat if BGL is < 60 mg/dl.\nâ€¢\nInitiate EtCO2 monitoring.\nâ€¢\nPhysical exam and OPQRST/SAMPLE history.\nâ€¢\nConsider possible causes: (acute myocardial infarction, angina, aneurysm, pulmonary embolus,\ngastro-intestinal issues, etc.)\nâ€¢\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus.  See Shock Protocol.\no\nEstablish 2nd IV only if time permits.\nâ€¢\nIf patient is not allergic, administer Aspirin 324 mg orally. (Four 81 mg baby aspirin)\no\nInstruct the patient to chew before swallowing\no\nAdminister regardless of patient has taken aspirin prior to EMS arrival.\nDocument:\nâ€¢\nVital signs\nâ€¢\nOPQRST/SAMPLE\nâ€¢\nCardiac rhythm\nâ€¢\n12-Lead ECG\nâ€¢\nTreatment(s)\nâ€¢\nCommunication with\nMedical Control.\nChest Pain/STEMI (Continued)\nSecondary Assessment and Treatment (Continued)\nIf the patient presents with an inferior AMI (S-T elevation in Leads II, III, and aVF). Both\nnitroglycerin and opiate administration may cause fatal hypotension in these patients.\nObtain a right-sided 12-Lead ECG.\nâ€¢\nAdminister Nitroglycerin 0.4 mg SL. May repeat every 5 minutes as long as SBP remains > 100\nmmHg and chest pain continues.  Max Dose 1.2 mg\no\nIf the systolic blood pressure falls below 100 mmHg in response to nitroglycerin therapy:\nâ–ª\nPosition the patient flat.\nâ–ª\nDO NOT administer additional nitroglycerin.\nâ–ª\nAdminister 250 ml fluid bolus IV, repeat up to 1000 ml. (if no pulmonary edema),\ntitrate to keep systolic blood pressure > 110 mmHg.\no\nDO NOT administer nitroglycerin to any patient who has taken erectile dysfunction\nmedication in the last 24 hours.\nâ€¢\nA report should be given to the Cardiac Facility ASAP with any patient presenting with S-T\nelevation.\no\nAdminister Morphine Sulfate 2 mg IV slow push in 5 â€“ 10 minute intervals. Max Dose 10\nmg.\nâ–ª\nMedical Control may authorize even when systolic blood pressure is < 110 mmHg\nin certain circumstances.\nâ€¢\nIf nausea develops:\no\nOndansetron 4 mg IV/IO/IM/IN\nâ–ª\nRepeat every 15 minutes if no relief.  Max Dose 8 mg.\nâ€¢\nFluid Resuscitation\no\nAdditional fluid boluses for inferior wall MI only (beyond original 1000 ml) in 250 ml bolus\nincrements then reassess for pulmonary edema between each bolus.\nâ€¢\nIf patient presents with Cardiogenic Shock:\no\nEnsure rate and rhythm have been treated accordingly.\no\nIf the systolic blood pressure is < 90 mmHg, consider a Dopamine Infusion.\nâ–ª\nDopamine Infusion 2-10 mcg/kg/min, titrating to effect. See Dopamine Infusion\nChart.\nâ€¢\nIf the chest pain is thought to be stimulant-induced (cocaine, amphetamine, ecstasy) and pulse rate\nis > 120 BPM consider:\no\nMidazolam 2.5 mg slow push IV/IO/IN.\nâ–ª\nMay repeat 2.5 mg IV/IO/IN. Max Dose 5 mg.\nâ–ª\nCool patient passively but DO NOT allow patient to shiver.\nEarly notification and rapid transport to a cardiac facility capable of reperfusion therapy is\nparamount.",
-      "pageText": [
-        {
-          "page": 111,
-          "text": "Chest Pain/STEMI\nThis protocol applies to adult patients presenting with chest pain/discomfort suspected to be\nischemic in nature. This may include classic presentations or anginal equivalents (i.e. epigastric\npain, neck and/or jaw pain, and indigestion).\nContact Medical Control for all pediatric care under this protocol.\nPrimary Survey\nâ€¢\nAssess level of consciousness â€“ AVPU\nâ€¢\nEnsure airway â€“ ensure patency and positioning\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\nâ€¢\nAssess breathing â€“ Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nAssist with bag valve mask if respiratory effort is ineffective.\nâ€¢\nAssess circulation â€“ control bleeding and manage shock appropriately. See Shock Protocol\no\nTake measures to prevent hypothermia.\nSecondary Assessment and Treatment\nâ€¢\nPlace patient in position of comfort and minimize patient exertion.\no\nIf patient is hypotensive, place in supine position and manage shock appropriately. See\nShock Protocol.\nâ€¢\nMonitor vital signs and O2 saturation\nâ€¢\nCardiac Monitor\no\nObtain and evaluate 12-Lead ECG as soon as possible.\no\nTransmit ECG to appropriate facility.\no\nMonitor continuously until patient is in care of ER/Cath lab staff.\no\nTreat arrhythmias under the appropriate protocol.\nâ€¢\nPerform blood glucose analysis.  Treat if BGL is < 60 mg/dl.\nâ€¢\nInitiate EtCO2 monitoring.\nâ€¢\nPhysical exam and OPQRST/SAMPLE history.\nâ€¢\nConsider possible causes: (acute myocardial infarction, angina, aneurysm, pulmonary embolus,\ngastro-intestinal issues, etc.)\nâ€¢\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus.  See Shock Protocol.\no\nEstablish 2nd IV only if time permits.\nâ€¢\nIf patient is not allergic, administer Aspirin 324 mg orally. (Four 81 mg baby aspirin)\no\nInstruct the patient to chew before swallowing\no\nAdminister regardless of patient has taken aspirin prior to EMS arrival.\nDocument:\nâ€¢\nVital signs\nâ€¢\nOPQRST/SAMPLE\nâ€¢\nCardiac rhythm\nâ€¢\n12-Lead ECG\nâ€¢\nTreatment(s)\nâ€¢\nCommunication with\nMedical Control."
-        },
-        {
-          "page": 112,
-          "text": "Chest Pain/STEMI (Continued)\nSecondary Assessment and Treatment (Continued)\nIf the patient presents with an inferior AMI (S-T elevation in Leads II, III, and aVF). Both\nnitroglycerin and opiate administration may cause fatal hypotension in these patients.\nObtain a right-sided 12-Lead ECG.\nâ€¢\nAdminister Nitroglycerin 0.4 mg SL. May repeat every 5 minutes as long as SBP remains > 100\nmmHg and chest pain continues.  Max Dose 1.2 mg\no\nIf the systolic blood pressure falls below 100 mmHg in response to nitroglycerin therapy:\nâ–ª\nPosition the patient flat.\nâ–ª\nDO NOT administer additional nitroglycerin.\nâ–ª\nAdminister 250 ml fluid bolus IV, repeat up to 1000 ml. (if no pulmonary edema),\ntitrate to keep systolic blood pressure > 110 mmHg.\no\nDO NOT administer nitroglycerin to any patient who has taken erectile dysfunction\nmedication in the last 24 hours.\nâ€¢\nA report should be given to the Cardiac Facility ASAP with any patient presenting with S-T\nelevation.\no\nAdminister Morphine Sulfate 2 mg IV slow push in 5 â€“ 10 minute intervals. Max Dose 10\nmg.\nâ–ª\nMedical Control may authorize even when systolic blood pressure is < 110 mmHg\nin certain circumstances.\nâ€¢\nIf nausea develops:\no\nOndansetron 4 mg IV/IO/IM/IN\nâ–ª\nRepeat every 15 minutes if no relief.  Max Dose 8 mg.\nâ€¢\nFluid Resuscitation\no\nAdditional fluid boluses for inferior wall MI only (beyond original 1000 ml) in 250 ml bolus\nincrements then reassess for pulmonary edema between each bolus.\nâ€¢\nIf patient presents with Cardiogenic Shock:\no\nEnsure rate and rhythm have been treated accordingly.\no\nIf the systolic blood pressure is < 90 mmHg, consider a Dopamine Infusion.\nâ–ª\nDopamine Infusion 2-10 mcg/kg/min, titrating to effect. See Dopamine Infusion\nChart.\nâ€¢\nIf the chest pain is thought to be stimulant-induced (cocaine, amphetamine, ecstasy) and pulse rate\nis > 120 BPM consider:\no\nMidazolam 2.5 mg slow push IV/IO/IN.\nâ–ª\nMay repeat 2.5 mg IV/IO/IN. Max Dose 5 mg.\nâ–ª\nCool patient passively but DO NOT allow patient to shiver.\nEarly notification and rapid transport to a cardiac facility capable of reperfusion therapy is\nparamount."
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
       "id": "adult-abdominal-discomfort",
       "title": "Abdominal Discomfort",
       "type": "protocol",
@@ -6642,79 +6569,81 @@
       "needsReview":false,
       "displayMode":"structured"
     },    {
-      "id": "chest-pain-stemi",
+      "id": "adult-chest-pain-stemi",
       "title": "Chest Pain / STEMI",
       "type": "protocol",
-      "categoryPath": [
-        "Adult Clinical Protocols",
-        "Adult Medical Emergencies"
-      ],
+      "categoryPath": ["Adult Clinical Protocols", "Adult Medical Emergencies"],
       "status": "active",
       "effectiveDate": "2026-06-08",
       "lastRevised": "",
       "version": "2026",
       "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 111,
-        "pageEnd": 112,
-        "pageLabel": "111-112"
-      },
+      "source": {"pdf":"documents/ems/2026-hcems-protocols.pdf","pageStart":111,"pageEnd":112,"pageLabel":"111-112"},
       "summary": "",
       "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Chest Pain/STEMI"
-        },
-        {
-          "type": "paragraph",
-          "text": "This protocol applies to adult patients presenting with chest pain/discomfort suspected to be ischemic in nature. This may include classic presentations or anginal equivalents (i.e. epigastric pain, neck and/or jaw pain, and indigestion). Contact Medical Control for all pediatric care under this protocol. Primary Survey Assess level of consciousness â€“ AVPU Ensure airway â€“ ensure patency and positioning Have suction equipment ready. Consider spinal motion restriction if indicated. Assess breathing â€“ Give supplemental O2 if signs of compromise. Maintain SpO2 > 94%. Assist with bag valve mask if respiratory effort is ineffective. Assess circulation â€“ control bleeding and manage shock appropriately. See Shock Protocol Take measures to prevent hypothermia. Secondary Assessment and Treatment Place patient in position of comfort and minimize patient exertion. If patient is hypotensive, place in supine position and manage shock appropriately. See Shock Protocol. Monitor vital signs and O2 saturation Cardiac Monitor Obtain and evaluate 12-Lead ECG as soon as possible. Transmit ECG to appropriate facility. Monitor continuously until patient is in care of ER/Cath lab staff. Treat arrhythmias under the appropriate protocol. Perform blood glucose analysis. Treat if BGL is < 60 mg/dl. Initiate EtCO2 monitoring. Physical exam and OPQRST/SAMPLE history. Consider possible causes: (acute myocardial infarction, angina, aneurysm, pulmonary embolus, gastro-intestinal issues, etc.) Initiate IV/IO of normal saline at KVO rate. If fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol. Establish 2nd IV only if time permits. If patient is not allergic, administer Aspirin 324 mg orally. (Four 81 mg baby aspirin) Instruct the patient to chew before swallowing Administer regardless of patient has taken aspirin prior to EMS arrival."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vital signs OPQRST/SAMPLE Cardiac rhythm 12-Lead ECG Treatment(s) Communication with Medical Control. Chest Pain/STEMI (Continued) Secondary Assessment and Treatment (Continued) If the patient presents with an inferior AMI (S-T elevation in Leads II, III, and aVF). Both nitroglycerin and opiate administration may cause fatal hypotension in these patients. Obtain a right-sided 12-Lead ECG. Administer Nitroglycerin 0.4 mg SL. May repeat every 5 minutes as long as SBP remains > 100 mmHg and chest pain continues. Max Dose 1.2 mg If the systolic blood pressure falls below 100 mmHg in response to nitroglycerin therapy: Position the patient flat. DO NOT administer additional nitroglycerin. Administer 250 ml fluid bolus IV, repeat up to 1000 ml. (if no pulmonary edema), titrate to keep systolic blood pressure > 110 mmHg. DO NOT administer nitroglycerin to any patient who has taken erectile dysfunction medication in the last 24 hours. A report should be given to the Cardiac Facility ASAP with any patient presenting with S-T elevation. Administer Morphine Sulfate 2 mg IV slow push in 5 â€“ 10 minute intervals. Max Dose 10 mg. Medical Control may authorize even when systolic blood pressure is < 110 mmHg in certain circumstances."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "If nausea develops"
-        },
-        {
-          "type": "paragraph",
-          "text": "Ondansetron 4 mg IV/IO/IM/IN Repeat every 15 minutes if no relief. Max Dose 8 mg. Fluid Resuscitation Additional fluid boluses for inferior wall MI only (beyond original 1000 ml) in 250 ml bolus increments then reassess for pulmonary edema between each bolus."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "If patient presents with Cardiogenic Shock"
-        },
-        {
-          "type": "paragraph",
-          "text": "Ensure rate and rhythm have been treated accordingly. If the systolic blood pressure is < 90 mmHg, consider a Dopamine Infusion. Dopamine Infusion 2-10 mcg/kg/min, titrating to effect. See Dopamine Infusion Chart. If the chest pain is thought to be stimulant-induced (cocaine, amphetamine, ecstasy) and pulse rate is > 120 BPM consider: Midazolam 2.5 mg slow push IV/IO/IN. May repeat 2.5 mg IV/IO/IN. Max Dose 5 mg. Cool patient passively but DO NOT allow patient to shiver. Early notification and rapid transport to a cardiac facility capable of reperfusion therapy is paramount."
-        }
+        {"type":"heading","level":2,"text":"Chest Pain/STEMI"},
+        {"type":"paragraph","text":"This protocol applies to adult patients presenting with chest pain/discomfort suspected to be ischemic in nature. This may include classic presentations or anginal equivalents (i.e. epigastric pain, neck and/or jaw pain, and indigestion)."},
+        {"type":"icon-note","image":"assets/legend-important.webp","alt":"Important protocol instruction","text":"Contact Medical Control for all pediatric care under this protocol.","bold":["Contact Medical Control for all pediatric care under this protocol."],"red":true},
+        {"type":"flow-stage","title":"Primary Survey","arrowAfter":true,"items":[
+          {"text":"Assess level of consciousness – AVPU","bold":["Assess level of consciousness"]},
+          {"text":"Ensure airway – ensure patency and positioning","bold":["Ensure airway"]},
+          {"text":"Have suction equipment ready.","indent":1},
+          {"text":"Consider spinal motion restriction if indicated.","indent":1},
+          {"text":"Assess breathing – Give supplemental O₂ if signs of compromise. Maintain SpO₂ ≥ 94%.","bold":["Assess breathing","Maintain SpO₂ ≥ 94%."]},
+          {"text":"Assist with bag valve mask if respiratory effort is ineffective.","indent":1},
+          {"text":"Assess circulation – control bleeding and manage shock appropriately. See Shock Protocol.","bold":["Assess circulation"],"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          {"text":"Take measures to prevent hypothermia.","indent":1}
+        ]},
+        {"type":"flow-stage","title":"Secondary Assessment and Treatment","items":[
+          "Place patient in position of comfort and minimize patient exertion.",
+          {"text":"If patient is hypotensive, place in supine position and manage shock appropriately. See Shock Protocol.","indent":1,"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          "Monitor vital signs and O₂ saturation.",
+          "Cardiac Monitor",
+          {"text":"Obtain and evaluate 12-Lead ECG as soon as possible.","indent":1},
+          {"text":"Transmit ECG to appropriate facility.","indent":1},
+          {"text":"Monitor continuously until patient is in care of ER/Cath lab staff.","indent":1},
+          {"text":"Treat arrhythmias under the appropriate protocol.","indent":1},
+          {"text":"Perform blood glucose analysis. Treat if BGL is < 60 mg/dl.","bold":["BGL is < 60 mg/dl."]},
+          "Initiate EtCO₂ monitoring.",
+          "Physical exam and OPQRST/SAMPLE history.",
+          "Consider possible causes: (acute myocardial infarction, angina, aneurysm, pulmonary embolus, gastro-intestinal issues, etc.)",
+          "Initiate IV/IO of normal saline at KVO rate.",
+          {"text":"If fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.","indent":1,"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          {"text":"Establish 2nd IV only if time permits.","indent":1},
+          {"text":"If patient is not allergic, administer Aspirin 324 mg orally. (Four 81 mg baby aspirin)","bold":["Aspirin 324 mg orally."],"links":[{"text":"Aspirin","protocolId":"aspirin"}]},
+          {"text":"Instruct the patient to chew before swallowing.","indent":1},
+          {"text":"Administer regardless of patient having taken aspirin prior to EMS arrival.","indent":1},
+          {"text":"If the patient presents with an inferior AMI (S-T elevation in Leads II, III, and aVF). Both nitroglycerin and opiate administration may cause fatal hypotension in these patients. Obtain a right-sided 12-Lead ECG.","bold":["If the patient presents with an inferior AMI (S-T elevation in Leads II, III, and aVF).","Obtain a right-sided 12-Lead ECG."],"red":true,"icon":"assets/legend-important.webp","iconAlt":"Important protocol instruction"},
+          {"text":"Administer Nitroglycerin 0.4 mg SL. May repeat every 5 minutes as long as SBP remains > 100 mmHg and chest pain continues. Max Dose 1.2 mg","bold":["0.4 mg SL.","every 5 minutes","SBP remains > 100 mmHg","Max Dose 1.2 mg"],"links":[{"text":"Nitroglycerin","protocolId":"nitroglycerin-tabs"}]},
+          {"text":"If the systolic blood pressure falls below 100 mmHg in response to nitroglycerin therapy:","indent":1},
+          {"text":"Position the patient flat.","indent":2},
+          {"text":"DO NOT administer additional nitroglycerin.","indent":2,"bold":["DO NOT"]},
+          {"text":"Administer 250 ml fluid bolus IV, repeat up to 1000 ml (if no pulmonary edema), titrate to keep systolic blood pressure > 110 mmHg.","indent":2},
+          {"text":"DO NOT administer nitroglycerin to any patient who has taken erectile dysfunction medication in the last 24 hours.","bold":["DO NOT administer nitroglycerin to any patient who has taken erectile dysfunction medication in the last 24 hours."],"red":true},
+          "A report should be given to the Cardiac Facility ASAP with any patient presenting with S-T elevation.",
+          {"text":"Administer Morphine Sulfate 2 mg IV slow push in 5–10 minute intervals. Max Dose 10 mg.","bold":["2 mg","5–10 minute intervals.","Max Dose 10 mg."],"links":[{"text":"Morphine Sulfate","protocolId":"morphine-sulfate"}]},
+          {"text":"Medical Control may authorize even when systolic blood pressure is < 110 mmHg in certain circumstances.","indent":1,"bold":["Medical Control"]},
+          "If nausea develops:",
+          {"text":"Ondansetron 4 mg IV/IO/IM/IN","indent":1,"bold":["4 mg"],"links":[{"text":"Ondansetron","protocolId":"ondansetron-zofran"}]},
+          {"text":"Repeat every 15 minutes if no relief. Max Dose 8 mg.","indent":2,"bold":["Max Dose 8 mg."]},
+          "Fluid Resuscitation",
+          {"text":"Additional fluid boluses for inferior wall MI only (beyond original 1000 ml) in 250 ml bolus increments then reassess for pulmonary edema between each bolus.","indent":1},
+          "If patient presents with Cardiogenic Shock:",
+          {"text":"Ensure rate and rhythm have been treated accordingly.","indent":1},
+          {"text":"If the systolic blood pressure is < 90 mmHg, consider a Dopamine Infusion.","indent":1,"links":[{"text":"Dopamine Infusion","protocolId":"dopamine"}]},
+          {"text":"Dopamine Infusion 2–10 mcg/kg/min, titrating to effect. See Dopamine Infusion Chart.","indent":2,"bold":["2–10 mcg/kg/min"],"links":[{"text":"Dopamine Infusion","protocolId":"dopamine"},{"text":"Dopamine Infusion Chart","protocolId":"dopamine"}]},
+          "If the chest pain is thought to be stimulant-induced (cocaine, amphetamine, ecstasy) and pulse rate is > 120 BPM consider:",
+          {"text":"Midazolam 2.5 mg slow push IV/IO/IN.","indent":1,"bold":["2.5 mg"],"links":[{"text":"Midazolam","protocolId":"midazolam-versed"}]},
+          {"text":"May repeat 2.5 mg IV/IO/IN. Max Dose 5 mg.","indent":2,"bold":["2.5 mg","Max Dose 5 mg."]},
+          {"text":"Cool patient passively but DO NOT allow patient to shiver.","indent":2,"bold":["DO NOT"]},
+          {"text":"Early notification and rapid transport to a cardiac facility capable of reperfusion therapy is paramount.","bold":["Early notification and rapid transport to a cardiac facility capable of reperfusion therapy is paramount."],"red":true,"icon":"assets/legend-important.webp","iconAlt":"Important protocol instruction"}
+        ]},
+        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital Signs","OPQRST/SAMPLE","Cardiac rhythm","12-Lead ECG","Treatment(s)","Communication with Medical Control"]}
       ],
-      "plainText": "Chest Pain/STEMI\nThis protocol applies to adult patients presenting with chest pain/discomfort suspected to be\nischemic in nature. This may include classic presentations or anginal equivalents (i.e. epigastric\npain, neck and/or jaw pain, and indigestion).\nContact Medical Control for all pediatric care under this protocol.\nPrimary Survey\nâ€¢\nAssess level of consciousness â€“ AVPU\nâ€¢\nEnsure airway â€“ ensure patency and positioning\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\nâ€¢\nAssess breathing â€“ Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nAssist with bag valve mask if respiratory effort is ineffective.\nâ€¢\nAssess circulation â€“ control bleeding and manage shock appropriately. See Shock Protocol\no\nTake measures to prevent hypothermia.\nSecondary Assessment and Treatment\nâ€¢\nPlace patient in position of comfort and minimize patient exertion.\no\nIf patient is hypotensive, place in supine position and manage shock appropriately. See\nShock Protocol.\nâ€¢\nMonitor vital signs and O2 saturation\nâ€¢\nCardiac Monitor\no\nObtain and evaluate 12-Lead ECG as soon as possible.\no\nTransmit ECG to appropriate facility.\no\nMonitor continuously until patient is in care of ER/Cath lab staff.\no\nTreat arrhythmias under the appropriate protocol.\nâ€¢\nPerform blood glucose analysis.  Treat if BGL is < 60 mg/dl.\nâ€¢\nInitiate EtCO2 monitoring.\nâ€¢\nPhysical exam and OPQRST/SAMPLE history.\nâ€¢\nConsider possible causes: (acute myocardial infarction, angina, aneurysm, pulmonary embolus,\ngastro-intestinal issues, etc.)\nâ€¢\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus.  See Shock Protocol.\no\nEstablish 2nd IV only if time permits.\nâ€¢\nIf patient is not allergic, administer Aspirin 324 mg orally. (Four 81 mg baby aspirin)\no\nInstruct the patient to chew before swallowing\no\nAdminister regardless of patient has taken aspirin prior to EMS arrival.\nDocument:\nâ€¢\nVital signs\nâ€¢\nOPQRST/SAMPLE\nâ€¢\nCardiac rhythm\nâ€¢\n12-Lead ECG\nâ€¢\nTreatment(s)\nâ€¢\nCommunication with\nMedical Control.\nChest Pain/STEMI (Continued)\nSecondary Assessment and Treatment (Continued)\nIf the patient presents with an inferior AMI (S-T elevation in Leads II, III, and aVF). Both\nnitroglycerin and opiate administration may cause fatal hypotension in these patients.\nObtain a right-sided 12-Lead ECG.\nâ€¢\nAdminister Nitroglycerin 0.4 mg SL. May repeat every 5 minutes as long as SBP remains > 100\nmmHg and chest pain continues.  Max Dose 1.2 mg\no\nIf the systolic blood pressure falls below 100 mmHg in response to nitroglycerin therapy:\nâ–ª\nPosition the patient flat.\nâ–ª\nDO NOT administer additional nitroglycerin.\nâ–ª\nAdminister 250 ml fluid bolus IV, repeat up to 1000 ml. (if no pulmonary edema),\ntitrate to keep systolic blood pressure > 110 mmHg.\no\nDO NOT administer nitroglycerin to any patient who has taken erectile dysfunction\nmedication in the last 24 hours.\nâ€¢\nA report should be given to the Cardiac Facility ASAP with any patient presenting with S-T\nelevation.\no\nAdminister Morphine Sulfate 2 mg IV slow push in 5 â€“ 10 minute intervals. Max Dose 10\nmg.\nâ–ª\nMedical Control may authorize even when systolic blood pressure is < 110 mmHg\nin certain circumstances.\nâ€¢\nIf nausea develops:\no\nOndansetron 4 mg IV/IO/IM/IN\nâ–ª\nRepeat every 15 minutes if no relief.  Max Dose 8 mg.\nâ€¢\nFluid Resuscitation\no\nAdditional fluid boluses for inferior wall MI only (beyond original 1000 ml) in 250 ml bolus\nincrements then reassess for pulmonary edema between each bolus.\nâ€¢\nIf patient presents with Cardiogenic Shock:\no\nEnsure rate and rhythm have been treated accordingly.\no\nIf the systolic blood pressure is < 90 mmHg, consider a Dopamine Infusion.\nâ–ª\nDopamine Infusion 2-10 mcg/kg/min, titrating to effect. See Dopamine Infusion\nChart.\nâ€¢\nIf the chest pain is thought to be stimulant-induced (cocaine, amphetamine, ecstasy) and pulse rate\nis > 120 BPM consider:\no\nMidazolam 2.5 mg slow push IV/IO/IN.\nâ–ª\nMay repeat 2.5 mg IV/IO/IN. Max Dose 5 mg.\nâ–ª\nCool patient passively but DO NOT allow patient to shiver.\nEarly notification and rapid transport to a cardiac facility capable of reperfusion therapy is\nparamount.",
-      "pageText": [
-        {
-          "page": 111,
-          "text": "Chest Pain/STEMI\nThis protocol applies to adult patients presenting with chest pain/discomfort suspected to be\nischemic in nature. This may include classic presentations or anginal equivalents (i.e. epigastric\npain, neck and/or jaw pain, and indigestion).\nContact Medical Control for all pediatric care under this protocol.\nPrimary Survey\nâ€¢\nAssess level of consciousness â€“ AVPU\nâ€¢\nEnsure airway â€“ ensure patency and positioning\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\nâ€¢\nAssess breathing â€“ Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nAssist with bag valve mask if respiratory effort is ineffective.\nâ€¢\nAssess circulation â€“ control bleeding and manage shock appropriately. See Shock Protocol\no\nTake measures to prevent hypothermia.\nSecondary Assessment and Treatment\nâ€¢\nPlace patient in position of comfort and minimize patient exertion.\no\nIf patient is hypotensive, place in supine position and manage shock appropriately. See\nShock Protocol.\nâ€¢\nMonitor vital signs and O2 saturation\nâ€¢\nCardiac Monitor\no\nObtain and evaluate 12-Lead ECG as soon as possible.\no\nTransmit ECG to appropriate facility.\no\nMonitor continuously until patient is in care of ER/Cath lab staff.\no\nTreat arrhythmias under the appropriate protocol.\nâ€¢\nPerform blood glucose analysis.  Treat if BGL is < 60 mg/dl.\nâ€¢\nInitiate EtCO2 monitoring.\nâ€¢\nPhysical exam and OPQRST/SAMPLE history.\nâ€¢\nConsider possible causes: (acute myocardial infarction, angina, aneurysm, pulmonary embolus,\ngastro-intestinal issues, etc.)\nâ€¢\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus.  See Shock Protocol.\no\nEstablish 2nd IV only if time permits.\nâ€¢\nIf patient is not allergic, administer Aspirin 324 mg orally. (Four 81 mg baby aspirin)\no\nInstruct the patient to chew before swallowing\no\nAdminister regardless of patient has taken aspirin prior to EMS arrival.\nDocument:\nâ€¢\nVital signs\nâ€¢\nOPQRST/SAMPLE\nâ€¢\nCardiac rhythm\nâ€¢\n12-Lead ECG\nâ€¢\nTreatment(s)\nâ€¢\nCommunication with\nMedical Control."
-        },
-        {
-          "page": 112,
-          "text": "Chest Pain/STEMI (Continued)\nSecondary Assessment and Treatment (Continued)\nIf the patient presents with an inferior AMI (S-T elevation in Leads II, III, and aVF). Both\nnitroglycerin and opiate administration may cause fatal hypotension in these patients.\nObtain a right-sided 12-Lead ECG.\nâ€¢\nAdminister Nitroglycerin 0.4 mg SL. May repeat every 5 minutes as long as SBP remains > 100\nmmHg and chest pain continues.  Max Dose 1.2 mg\no\nIf the systolic blood pressure falls below 100 mmHg in response to nitroglycerin therapy:\nâ–ª\nPosition the patient flat.\nâ–ª\nDO NOT administer additional nitroglycerin.\nâ–ª\nAdminister 250 ml fluid bolus IV, repeat up to 1000 ml. (if no pulmonary edema),\ntitrate to keep systolic blood pressure > 110 mmHg.\no\nDO NOT administer nitroglycerin to any patient who has taken erectile dysfunction\nmedication in the last 24 hours.\nâ€¢\nA report should be given to the Cardiac Facility ASAP with any patient presenting with S-T\nelevation.\no\nAdminister Morphine Sulfate 2 mg IV slow push in 5 â€“ 10 minute intervals. Max Dose 10\nmg.\nâ–ª\nMedical Control may authorize even when systolic blood pressure is < 110 mmHg\nin certain circumstances.\nâ€¢\nIf nausea develops:\no\nOndansetron 4 mg IV/IO/IM/IN\nâ–ª\nRepeat every 15 minutes if no relief.  Max Dose 8 mg.\nâ€¢\nFluid Resuscitation\no\nAdditional fluid boluses for inferior wall MI only (beyond original 1000 ml) in 250 ml bolus\nincrements then reassess for pulmonary edema between each bolus.\nâ€¢\nIf patient presents with Cardiogenic Shock:\no\nEnsure rate and rhythm have been treated accordingly.\no\nIf the systolic blood pressure is < 90 mmHg, consider a Dopamine Infusion.\nâ–ª\nDopamine Infusion 2-10 mcg/kg/min, titrating to effect. See Dopamine Infusion\nChart.\nâ€¢\nIf the chest pain is thought to be stimulant-induced (cocaine, amphetamine, ecstasy) and pulse rate\nis > 120 BPM consider:\no\nMidazolam 2.5 mg slow push IV/IO/IN.\nâ–ª\nMay repeat 2.5 mg IV/IO/IN. Max Dose 5 mg.\nâ–ª\nCool patient passively but DO NOT allow patient to shiver.\nEarly notification and rapid transport to a cardiac facility capable of reperfusion therapy is\nparamount."
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Chest Pain/STEMI. Adult assessment and treatment for suspected ischemic chest pain and anginal equivalents.",
+      "needsReview":false,
+      "displayMode":"structured"
+    },{
       "id": "childbirth-ob-gyn-emergencies",
       "title": "Childbirth-OB/GYN Emergencies",
       "type": "protocol",
