@@ -490,7 +490,7 @@
           "title": "Adult Cardiac Emergencies",
           "children": [
             {
-              "id": "bradycardia",
+              "id": "adult-bradycardia",
               "title": "Bradycardia",
               "type": "protocol",
               "pageStart": 98,
@@ -5885,75 +5885,63 @@
       "plainText":"Hemorrhage Control. Direct pressure, controlled versus uncontrolled bleeding pathways, reassessment, Shock Index, TXA mixing, and documentation.",
       "needsReview":false
     },    {
-      "id": "bradycardia",
+      "id": "adult-bradycardia",
       "title": "Bradycardia",
       "type": "protocol",
-      "categoryPath": [
-        "Adult Clinical Protocols",
-        "Adult Cardiac Emergencies"
-      ],
+      "categoryPath": ["Adult Clinical Protocols","Adult Cardiac Emergencies"],
       "status": "active",
       "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 98,
-        "pageEnd": 98,
-        "pageLabel": "98"
-      },
-      "summary": "",
+      "source": {"pageStart":98,"pageEnd":98,"pageLabel":"98"},
+      "summary": "Assessment and treatment of adult patients with a heart rate below 60 beats per minute.",
       "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Bradycardia"
-        },
-        {
-          "type": "paragraph",
-          "text": "This protocol applies to adult patients with a heart rate < 60 beats per minute. This protocol is not Primary Survey Assess level of consciousness – AVPU Ensure airway – ensure patency and positioning Consider spinal motion restriction if indicated. Assess breathing – Give supplemental O2 if signs of compromise. Maintain SpO2 > 94%. Assist with bag valve mask if respiratory effort is ineffective. Assess circulation – control bleeding and manage shock appropriately. See Shock Protocol Take measures to prevent hypothermia. Secondary Assessment and Treatment Monitor vital signs and O2 saturation. Perform blood glucose analysis – Treat if BGL is < 60 mg/dl. Initiate cardiac monitoring. Record and evaluate 12-Lead ECG. DO NOT delay treatments/therapy for acquisition of 12-Lead. Treat dysrhythmias per the appropriate protocol. Consider EtCO2 monitoring Physical Exam and OPQRST/SAMPLE history Initiate IV/IO of normal saline at a KVO rate. 2nd IV access can be established if time permits. If patient is asymptomatic (i.e. no hypotension, no altered mental status, no difficulty in breathing, no signs of shock, no ischemic chest pain/discomfort, no acute heart failure) Monitor patient closely."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "If signs of cardiopulmonary compromise"
-        },
-        {
-          "type": "paragraph",
-          "text": "If IV/IO access has been achieved, administer Atropine – 0.5 – 1 mg May repeat every 3 – 5 minutes. Max Dose – 3 mg. If IV/IO access is delayed or the bradycardia is a high degree block (2nd Degree Type II, or 3rd Degree) or atropine is ineffective, consider Transcutaneous Pacing. If time permits sedate patient prior to Transcutaneous Pacing DO NOT delay pacing for administration of medications or IV/IO access. Consider Midazolam 2 – 5 mg IV/IO/IM/IN slowly. After sedation, monitor respirations closely."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "May also consider"
-        },
-        {
-          "type": "paragraph",
-          "text": "Levophed IV Infusion – 1 – 10 mcg/min. 1 mg in 250 ml of Normal Saline = 4 mcg/ml. Monitor Patient for deterioration into cardiac arrest. See Levophed Dosing Chart OR If no response, initiate a Dopamine IV Infusion 2 – 20 mcg/kg/min. See Dopamine Infusion Chart. OR Initiate an Epinephrine IV infusion – 2 – 10 mcg/min. Contact Medical Control For Additonal Orders"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vital signs OPQRST/SAMPLE Cardiac rhythm Vital signs Communication with Medical Control"
-        }
+        {"type":"heading","level":2,"text":"Bradycardia"},
+        {"type":"paragraph","text":"This protocol applies to adult patients with a heart rate < 60 beats per minute. This protocol is not"},
+        {"type":"flow-stage","title":"Primary Survey","arrowAfter":true,"items":[
+          "Assess level of consciousness – AVPU.",
+          {"text":"Ensure airway – ensure patency and positioning.","bold":["Ensure airway"]},
+          {"text":"Consider spinal motion restriction if indicated.","indent":1},
+          {"text":"Assess breathing – give supplemental O₂ if signs of compromise. Maintain SpO₂ ≥ 94%.","bold":["Assess breathing","Maintain SpO₂ ≥ 94%."]},
+          {"text":"Assist with bag valve mask if respiratory effort is ineffective.","indent":1},
+          {"text":"Assess circulation – control bleeding and manage shock appropriately. See Shock Protocol.","bold":["Assess circulation"],"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          {"text":"Take measures to prevent hypothermia.","indent":1}
+        ]},
+        {"type":"flow-stage","title":"Secondary Assessment and Treatment","items":[
+          "Monitor vital signs and O₂ saturation.",
+          {"text":"Perform blood glucose analysis – treat if BGL is < 60 mg/dl.","bold":["BGL is < 60 mg/dl."]},
+          "Initiate cardiac monitoring.",
+          {"text":"Record and evaluate 12-Lead ECG.","indent":1},
+          {"text":"DO NOT delay treatments/therapy for acquisition of 12-Lead.","indent":1,"bold":["DO NOT delay treatments/therapy for acquisition of 12-Lead."]},
+          {"text":"Treat dysrhythmias per the appropriate protocol.","indent":1},
+          "Consider EtCO₂ monitoring.",
+          "Physical exam and OPQRST/SAMPLE history.",
+          "Initiate IV/IO of normal saline at a KVO rate.",
+          {"text":"2nd IV access can be established if time permits.","indent":1},
+          "If patient is asymptomatic (i.e. no hypotension, no altered mental status, no difficulty in breathing, no signs of shock, no ischemic chest pain/discomfort, no acute heart failure):",
+          {"text":"Monitor patient closely.","indent":1},
+          "If signs of cardiopulmonary compromise:",
+          {"text":"If IV/IO access has been achieved, administer Atropine – 0.5–1 mg.","indent":1,"bold":["0.5–1 mg."],"links":[{"text":"Atropine","protocolId":"atropine"}]},
+          {"text":"May repeat every 3–5 minutes. Max Dose – 3 mg.","indent":2,"bold":["every 3–5 minutes.","Max Dose – 3 mg."]},
+          {"text":"If IV/IO access is delayed or the bradycardia is a high degree block (2nd Degree Type II, or 3rd Degree) or atropine is ineffective, consider Transcutaneous Pacing.","indent":1,"links":[{"text":"Transcutaneous Pacing","protocolId":"transcutaneous-pacing"}]},
+          {"text":"If time permits sedate patient prior to Transcutaneous Pacing.","indent":2,"links":[{"text":"Transcutaneous Pacing","protocolId":"transcutaneous-pacing"}]},
+          {"text":"DO NOT delay pacing for administration of medications or IV/IO access.","indent":2,"bold":["DO NOT delay pacing for administration of medications or IV/IO access."]},
+          {"text":"Consider Midazolam 2–5 mg IV/IO/IM/IN slowly.","indent":2,"bold":["2–5 mg"],"links":[{"text":"Midazolam","protocolId":"midazolam-versed"}]},
+          {"text":"After sedation, monitor respirations closely.","indent":2},
+          "May also consider:",
+          {"text":"Levophed IV Infusion – 1–10 mcg/min.","indent":2,"bold":["1–10 mcg/min."],"links":[{"text":"Levophed","protocolId":"levophed-norepinephrine"}]},
+          {"text":"1 mg in 250 ml of Normal Saline = 4 mcg/ml.","indent":3,"bold":["1 mg in 250 ml of Normal Saline = 4 mcg/ml."]},
+          {"text":"Monitor patient for deterioration into cardiac arrest.","indent":3},
+          {"text":"See Levophed Dosing Chart.","indent":3,"links":[{"text":"Levophed Dosing Chart","protocolId":"levophed-dosage-chart"}]},
+          {"text":"OR","indent":3,"bold":["OR"]},
+          {"text":"If no response, initiate a Dopamine IV Infusion 2–20 mcg/kg/min. See Dopamine Infusion Chart.","bold":["2–20 mcg/kg/min."],"links":[{"text":"Dopamine","protocolId":"dopamine"},{"text":"Dopamine Infusion Chart","protocolId":"dopamine"}]},
+          {"text":"OR","bold":["OR"]},
+          {"text":"Initiate an Epinephrine IV infusion – 2–10 mcg/min.","bold":["2–10 mcg/min."],"links":[{"text":"Epinephrine","protocolId":"epinephrine-1-1000-and-1-10-000"}]}
+        ]},
+        {"type":"stop-control","title":"STOP","text":"Contact Medical Control For Additional Orders","image":"assets/legend-medical-control.webp","alt":"Stop and contact Medical Control for additional orders"},
+        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital Signs","OPQRST/SAMPLE","Cardiac rhythm","Vital Signs","Communication with Medical Control"]}
       ],
-      "plainText": "Bradycardia\nThis protocol applies to adult patients with a heart rate < 60 beats per minute. This protocol is not\nPrimary Survey\n•\nAssess level of consciousness – AVPU\n•\nEnsure airway – ensure patency and positioning\no\nConsider spinal motion restriction if indicated.\n•\nAssess breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nAssess circulation – control bleeding and manage shock appropriately. See Shock Protocol\no\nTake measures to prevent hypothermia.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation.\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nInitiate cardiac monitoring.\no\nRecord and evaluate 12-Lead ECG.\no\nDO NOT delay treatments/therapy for acquisition of 12-Lead.\no\nTreat dysrhythmias per the appropriate protocol.\n•\nConsider EtCO2 monitoring\n•\nPhysical Exam and OPQRST/SAMPLE history\n•\nInitiate IV/IO of normal saline at a KVO rate.\no\n2nd IV access can be established if time permits.\n•\nIf patient is asymptomatic (i.e. no hypotension, no altered mental status, no difficulty in breathing, no\nsigns of shock, no ischemic chest pain/discomfort, no acute heart failure)\no\nMonitor patient closely.\n•\nIf signs of cardiopulmonary compromise:\no\nIf IV/IO access has been achieved, administer Atropine – 0.5 – 1 mg\n▪\nMay repeat every 3 – 5 minutes.  Max Dose – 3 mg.\no\nIf IV/IO access is delayed or the bradycardia is a high degree block (2nd Degree Type II, or\n3rd Degree) or atropine is ineffective, consider Transcutaneous Pacing.\n▪\nIf time permits sedate patient prior to Transcutaneous Pacing\n•\nDO NOT delay pacing for administration of medications or IV/IO access.\n•\nConsider Midazolam 2 – 5 mg IV/IO/IM/IN slowly.\n•\nAfter sedation, monitor respirations closely.\n•\nMay also consider:\n▪\nLevophed IV Infusion – 1 – 10 mcg/min.\n•\n1 mg in 250 ml of Normal Saline = 4 mcg/ml.\n•\nMonitor Patient for deterioration into cardiac arrest.\n•\nSee Levophed Dosing Chart\n•\nOR\n•\nIf no response, initiate a Dopamine IV Infusion 2 – 20 mcg/kg/min. See Dopamine Infusion Chart.\n•\nOR\n•\nInitiate an Epinephrine IV infusion – 2 – 10 mcg/min.\nContact Medical Control\nFor Additonal Orders\nDocument:\n•\nVital signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nVital signs\n•\nCommunication with\nMedical Control",
-      "pageText": [
-        {
-          "page": 98,
-          "text": "Bradycardia\nThis protocol applies to adult patients with a heart rate < 60 beats per minute. This protocol is not\nPrimary Survey\n•\nAssess level of consciousness – AVPU\n•\nEnsure airway – ensure patency and positioning\no\nConsider spinal motion restriction if indicated.\n•\nAssess breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nAssess circulation – control bleeding and manage shock appropriately. See Shock Protocol\no\nTake measures to prevent hypothermia.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation.\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nInitiate cardiac monitoring.\no\nRecord and evaluate 12-Lead ECG.\no\nDO NOT delay treatments/therapy for acquisition of 12-Lead.\no\nTreat dysrhythmias per the appropriate protocol.\n•\nConsider EtCO2 monitoring\n•\nPhysical Exam and OPQRST/SAMPLE history\n•\nInitiate IV/IO of normal saline at a KVO rate.\no\n2nd IV access can be established if time permits.\n•\nIf patient is asymptomatic (i.e. no hypotension, no altered mental status, no difficulty in breathing, no\nsigns of shock, no ischemic chest pain/discomfort, no acute heart failure)\no\nMonitor patient closely.\n•\nIf signs of cardiopulmonary compromise:\no\nIf IV/IO access has been achieved, administer Atropine – 0.5 – 1 mg\n▪\nMay repeat every 3 – 5 minutes.  Max Dose – 3 mg.\no\nIf IV/IO access is delayed or the bradycardia is a high degree block (2nd Degree Type II, or\n3rd Degree) or atropine is ineffective, consider Transcutaneous Pacing.\n▪\nIf time permits sedate patient prior to Transcutaneous Pacing\n•\nDO NOT delay pacing for administration of medications or IV/IO access.\n•\nConsider Midazolam 2 – 5 mg IV/IO/IM/IN slowly.\n•\nAfter sedation, monitor respirations closely.\n•\nMay also consider:\n▪\nLevophed IV Infusion – 1 – 10 mcg/min.\n•\n1 mg in 250 ml of Normal Saline = 4 mcg/ml.\n•\nMonitor Patient for deterioration into cardiac arrest.\n•\nSee Levophed Dosing Chart\n•\nOR\n•\nIf no response, initiate a Dopamine IV Infusion 2 – 20 mcg/kg/min. See Dopamine Infusion Chart.\n•\nOR\n•\nInitiate an Epinephrine IV infusion – 2 – 10 mcg/min.\nContact Medical Control\nFor Additonal Orders\nDocument:\n•\nVital signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nVital signs\n•\nCommunication with\nMedical Control"
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Adult Bradycardia. Primary survey, secondary assessment, Atropine, pacing, vasopressor options, Medical Control, and documentation.",
+      "needsReview":false
+    },    {
       "id": "tachycardia",
       "title": "Tachycardia",
       "type": "protocol",
