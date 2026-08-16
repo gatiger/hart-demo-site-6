@@ -552,7 +552,7 @@
               "status": "active"
             },
             {
-              "id": "allergic-reaction-anaphylaxis",
+              "id": "adult-allergic-reaction-anaphylaxis",
               "title": "Allergic Reaction / Anaphylaxis",
               "type": "protocol",
               "pageStart": 109,
@@ -6534,66 +6534,61 @@
       "needsReview": false,
       "displayMode": "structured"
     },    {
-      "id": "allergic-reaction-anaphylaxis",
+      "id": "adult-allergic-reaction-anaphylaxis",
       "title": "Allergic Reaction / Anaphylaxis",
       "type": "protocol",
-      "categoryPath": [
-        "Adult Clinical Protocols",
-        "Adult Medical Emergencies"
-      ],
+      "categoryPath": ["Adult Clinical Protocols", "Adult Medical Emergencies"],
       "status": "active",
       "effectiveDate": "2026-06-08",
       "lastRevised": "",
       "version": "2026",
       "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 109,
-        "pageEnd": 109,
-        "pageLabel": "109"
-      },
+      "source": {"pdf":"documents/ems/2026-hcems-protocols.pdf","pageStart":109,"pageEnd":109,"pageLabel":"109"},
       "summary": "",
       "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Allergic Reaction/Anaphylaxis"
-        },
-        {
-          "type": "paragraph",
-          "text": "This protocol applies to adult patients presenting with rash, hives, shortness of breath, or other signs and symptoms, up to and including shock, possibly due to an allergic reaction. Primary Survey Assess level of consciousness â€“ AVPU Ensure airway â€“ ensure patency and positioning Have suction equipment ready. Consider spinal motion restriction if indicated. Assess breathing â€“ Give supplemental O2 if signs of compromise. Maintain SpO2 > 94%. Assist with bag valve mask if respiratory effort is ineffective. Assess circulation â€“ control bleeding and manage shock appropriately. See Shock Protocol Take measures to prevent hypothermia. If respiratory compromise and/or signs of shock, treat immediately with epinephrine. All EMS provider levels are authorized to utilize epinephrine auto-injectors. AEMT, CT and Paramedic providers may give 1:1,000 Epinephrine SQ or IM. Secondary Assessment and Treatment ISOLATE THE PATIENT FROM THE SOURCE OF THE ALLERGEN. Monitor vital signs and O2 saturation. Perform blood glucose analysis. Treat if BGL is < 60 mg/dl. Cardiac monitor â€“ record and evaluate 12 Lead ECG. DO NOT delay treatments/therapy for 12-Lead acquisition. Consider EtCO2 monitoring â€“ Ideally > 20 mmHg. Physical Exam and OPQRST/SAMPLE history. Initiate IV/IO of normal saline If fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol. If localized reaction (hives) Administer Diphenhydramine 25 â€“ 50 mg IV slowly or deep IM. Administer Methylprednisolone 125 mg IVP. If respiratory distress, along with above treatments: Administer 1:1,000 Epinephrine 0.3 â€“ 0.5 mg SQ. Nebulize DuoNeb. May repeat once 20 minutes post initial DuoNeb."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "If anaphylactic shock"
-        },
-        {
-          "type": "paragraph",
-          "text": "Do not delay epinephrine administration attempting IV/IO access. 1:1,000 Epinephrine 0.3 â€“ 0.5 mg IM (preferred) or SQ. All levels may repeat 1:1,000 Epinephrine IM/SQ/auto-injector (in accordance with their scope of practice) every 5 minutes as needed. If no response within 10 minutes to the IM or SQ Epinephrine and fluid bolus, administer 1:10,000 Epinephrine 0.1 â€“ 0.2 mg IV/IO. Anaphylaxis â€“ a systemic response to an antigen involving two (2) or more organ systems OR any involvement of the upper and/or lower respiratory systems OR any derangement of vital signs."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vital signs OPQRST/SAMPLE Cardiac rhythm Treatment(s) Communication with Medical Control."
-        }
+        {"type":"heading","level":2,"text":"Allergic Reaction/Anaphylaxis"},
+        {"type":"paragraph","text":"This protocol applies to adult patients presenting with rash, hives, shortness of breath, or other signs and symptoms, up to and including shock, possibly due to an allergic reaction."},
+        {"type":"flow-stage","title":"Primary Survey","arrowAfter":true,"items":[
+          {"text":"Assess level of consciousness – AVPU","bold":["Assess level of consciousness"]},
+          {"text":"Ensure airway – ensure patency and positioning","bold":["Ensure airway"]},
+          {"text":"Have suction equipment ready.","indent":1},
+          {"text":"Consider spinal motion restriction if indicated.","indent":1},
+          {"text":"Assess breathing – Give supplemental O₂ if signs of compromise. Maintain SpO₂ ≥ 94%.","bold":["Assess breathing","Maintain SpO₂ ≥ 94%."]},
+          {"text":"Assist with bag valve mask if respiratory effort is ineffective.","indent":1},
+          {"text":"Assess circulation – control bleeding and manage shock appropriately. See Shock Protocol.","bold":["Assess circulation"],"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          {"text":"Take measures to prevent hypothermia.","indent":1},
+          {"text":"If respiratory compromise and/or signs of shock, treat immediately with epinephrine. All EMS provider levels are authorized to utilize epinephrine auto-injectors. AEMT, CT and Paramedic providers may give 1:1,000 Epinephrine SQ or IM.","bold":["If respiratory compromise and/or signs of shock, treat immediately with epinephrine."],"red":true,"icon":"assets/legend-important.webp","iconAlt":"Important protocol instruction","links":[{"text":"Epinephrine","protocolId":"epinephrine-1-1000-and-1-10-000"}]}
+        ]},
+        {"type":"flow-stage","title":"Secondary Assessment and Treatment","items":[
+          {"text":"ISOLATE THE PATIENT FROM THE SOURCE OF THE ALLERGEN.","bold":["ISOLATE THE PATIENT FROM THE SOURCE OF THE ALLERGEN."]},
+          "Monitor vital signs and O₂ saturation.",
+          {"text":"Perform blood glucose analysis. Treat if BGL is < 60 mg/dl.","bold":["BGL is < 60 mg/dl."]},
+          "Cardiac monitor – record and evaluate 12 Lead ECG.",
+          {"text":"DO NOT delay treatments/therapy for 12-Lead acquisition.","indent":1,"bold":["DO NOT"]},
+          "Consider EtCO₂ monitoring – Ideally > 20 mmHg.",
+          "Physical Exam and OPQRST/SAMPLE history.",
+          "Initiate IV/IO of normal saline.",
+          {"text":"If fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.","indent":1,"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          "If localized reaction (hives):",
+          {"text":"Administer Diphenhydramine 25–50 mg IV slowly or deep IM.","indent":1,"bold":["25–50 mg"],"links":[{"text":"Diphenhydramine","protocolId":"diphenhydramine-benadryl"}]},
+          {"text":"Administer Methylprednisolone 125 mg IVP.","indent":1,"bold":["125 mg"],"links":[{"text":"Methylprednisolone","protocolId":"methylprednisolone-solu-medrol"}]},
+          "If respiratory distress, along with above treatments:",
+          {"text":"Administer 1:1,000 Epinephrine 0.3–0.5 mg SQ.","indent":1,"bold":["0.3–0.5 mg"],"links":[{"text":"Epinephrine","protocolId":"epinephrine-1-1000-and-1-10-000"}]},
+          {"text":"Nebulize DuoNeb.","indent":1,"links":[{"text":"DuoNeb","protocolId":"duoneb"}]},
+          {"text":"May repeat once 20 minutes post initial DuoNeb.","indent":2,"bold":["DuoNeb"],"links":[{"text":"DuoNeb","protocolId":"duoneb"}]},
+          "If anaphylactic shock:",
+          {"text":"Do not delay epinephrine administration attempting IV/IO access.","indent":1},
+          {"text":"1:1,000 Epinephrine 0.3–0.5 mg IM (preferred) or SQ.","indent":2,"bold":["0.3–0.5 mg","IM (preferred)"],"links":[{"text":"Epinephrine","protocolId":"epinephrine-1-1000-and-1-10-000"}]},
+          {"text":"All levels may repeat 1:1,000 Epinephrine IM/SQ/auto-injector (in accordance with their scope of practice) every 5 minutes as needed.","bold":["All levels may repeat 1:1,000 Epinephrine IM/SQ/auto-injector (in accordance with their scope of practice) every 5 minutes as needed."],"red":true,"icon":"assets/legend-important.webp","iconAlt":"Important protocol instruction","links":[{"text":"Epinephrine","protocolId":"epinephrine-1-1000-and-1-10-000"}]},
+          {"text":"If no response within 10 minutes to the IM or SQ Epinephrine and fluid bolus, administer 1:10,000 Epinephrine 0.1–0.2 mg IV/IO.","bold":["0.1–0.2 mg"],"links":[{"text":"Epinephrine","protocolId":"epinephrine-1-1000-and-1-10-000"}]}
+        ]},
+        {"type":"flow-stage","title":"Anaphylaxis","items":["A systemic response to an antigen involving two (2) or more organ systems OR any involvement of the upper and/or lower respiratory systems OR any derangement of vital signs."]},
+        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital signs","OPQRST/SAMPLE","Cardiac rhythm","Treatment(s)","Communication with Medical Control"]}
       ],
-      "plainText": "Allergic Reaction/Anaphylaxis\nThis protocol applies to adult patients presenting with rash, hives, shortness of breath, or other\nsigns and symptoms, up to and including shock, possibly due to an allergic reaction.\nPrimary Survey\nâ€¢\nAssess level of consciousness â€“ AVPU\nâ€¢\nEnsure airway â€“ ensure patency and positioning\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\nâ€¢\nAssess breathing â€“ Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nAssist with bag valve mask if respiratory effort is ineffective.\nâ€¢\nAssess circulation â€“ control bleeding and manage shock appropriately. See Shock Protocol\no\nTake measures to prevent hypothermia.\nIf respiratory compromise and/or signs of shock, treat immediately with epinephrine. All\nEMS provider levels are authorized to utilize epinephrine auto-injectors. AEMT, CT and\nParamedic providers may give 1:1,000 Epinephrine SQ or IM.\nSecondary Assessment and Treatment\nâ€¢\nISOLATE THE PATIENT FROM THE SOURCE OF THE ALLERGEN.\nâ€¢\nMonitor vital signs and O2 saturation.\nâ€¢\nPerform blood glucose analysis.  Treat if BGL is < 60 mg/dl.\nâ€¢\nCardiac monitor â€“ record and evaluate 12 Lead ECG.\no\nDO NOT delay treatments/therapy for 12-Lead acquisition.\nâ€¢\nConsider EtCO2 monitoring â€“ Ideally > 20 mmHg.\nâ€¢\nPhysical Exam and OPQRST/SAMPLE history.\nâ€¢\nInitiate IV/IO of normal saline\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus.  See Shock Protocol.\nâ€¢\nIf localized reaction (hives)\no\nAdminister Diphenhydramine 25 â€“ 50 mg IV slowly or deep IM.\no\nAdminister Methylprednisolone 125 mg IVP.\nâ€¢\nIf respiratory distress, along with above treatments:\no\nAdminister 1:1,000 Epinephrine 0.3 â€“ 0.5 mg SQ.\no\nNebulize DuoNeb.\nâ–ª\nMay repeat once 20 minutes post initial DuoNeb.\nâ€¢\nIf anaphylactic shock:\no\nDo not delay epinephrine administration attempting IV/IO access.\no\n1:1,000 Epinephrine 0.3 â€“ 0.5 mg IM (preferred) or SQ.\nAll levels may repeat 1:1,000 Epinephrine IM/SQ/auto-injector (in accordance with their\nscope of practice) every 5 minutes as needed.\nâ€¢\nIf no response within 10 minutes to the IM or SQ Epinephrine and fluid bolus, administer 1:10,000\nEpinephrine 0.1 â€“ 0.2 mg IV/IO.\nAnaphylaxis â€“ a systemic response to an antigen\ninvolving two (2) or more organ systems OR any\ninvolvement of the upper and/or lower respiratory\nsystems OR any derangement of vital signs.\nDocument:\nâ€¢\nVital signs\nâ€¢\nOPQRST/SAMPLE\nâ€¢\nCardiac rhythm\nâ€¢\nTreatment(s)\nâ€¢\nCommunication with\nMedical Control.",
-      "pageText": [
-        {
-          "page": 109,
-          "text": "Allergic Reaction/Anaphylaxis\nThis protocol applies to adult patients presenting with rash, hives, shortness of breath, or other\nsigns and symptoms, up to and including shock, possibly due to an allergic reaction.\nPrimary Survey\nâ€¢\nAssess level of consciousness â€“ AVPU\nâ€¢\nEnsure airway â€“ ensure patency and positioning\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\nâ€¢\nAssess breathing â€“ Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nAssist with bag valve mask if respiratory effort is ineffective.\nâ€¢\nAssess circulation â€“ control bleeding and manage shock appropriately. See Shock Protocol\no\nTake measures to prevent hypothermia.\nIf respiratory compromise and/or signs of shock, treat immediately with epinephrine. All\nEMS provider levels are authorized to utilize epinephrine auto-injectors. AEMT, CT and\nParamedic providers may give 1:1,000 Epinephrine SQ or IM.\nSecondary Assessment and Treatment\nâ€¢\nISOLATE THE PATIENT FROM THE SOURCE OF THE ALLERGEN.\nâ€¢\nMonitor vital signs and O2 saturation.\nâ€¢\nPerform blood glucose analysis.  Treat if BGL is < 60 mg/dl.\nâ€¢\nCardiac monitor â€“ record and evaluate 12 Lead ECG.\no\nDO NOT delay treatments/therapy for 12-Lead acquisition.\nâ€¢\nConsider EtCO2 monitoring â€“ Ideally > 20 mmHg.\nâ€¢\nPhysical Exam and OPQRST/SAMPLE history.\nâ€¢\nInitiate IV/IO of normal saline\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus.  See Shock Protocol.\nâ€¢\nIf localized reaction (hives)\no\nAdminister Diphenhydramine 25 â€“ 50 mg IV slowly or deep IM.\no\nAdminister Methylprednisolone 125 mg IVP.\nâ€¢\nIf respiratory distress, along with above treatments:\no\nAdminister 1:1,000 Epinephrine 0.3 â€“ 0.5 mg SQ.\no\nNebulize DuoNeb.\nâ–ª\nMay repeat once 20 minutes post initial DuoNeb.\nâ€¢\nIf anaphylactic shock:\no\nDo not delay epinephrine administration attempting IV/IO access.\no\n1:1,000 Epinephrine 0.3 â€“ 0.5 mg IM (preferred) or SQ.\nAll levels may repeat 1:1,000 Epinephrine IM/SQ/auto-injector (in accordance with their\nscope of practice) every 5 minutes as needed.\nâ€¢\nIf no response within 10 minutes to the IM or SQ Epinephrine and fluid bolus, administer 1:10,000\nEpinephrine 0.1 â€“ 0.2 mg IV/IO.\nAnaphylaxis â€“ a systemic response to an antigen\ninvolving two (2) or more organ systems OR any\ninvolvement of the upper and/or lower respiratory\nsystems OR any derangement of vital signs.\nDocument:\nâ€¢\nVital signs\nâ€¢\nOPQRST/SAMPLE\nâ€¢\nCardiac rhythm\nâ€¢\nTreatment(s)\nâ€¢\nCommunication with\nMedical Control."
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Allergic Reaction/Anaphylaxis. Adult assessment and treatment for allergic reactions and anaphylactic shock.",
+      "needsReview":false,
+      "displayMode":"structured"
+    },    {
       "id": "adult-altered-level-of-consciousness",
       "title": "Altered Level of Consciousness",
       "type": "protocol",
