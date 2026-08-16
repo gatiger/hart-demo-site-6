@@ -710,7 +710,7 @@
               "status": "active"
             },
             {
-              "id": "eye-trauma",
+              "id": "adult-eye-trauma",
               "title": "Eye Trauma",
               "type": "protocol",
               "pageStart": 138,
@@ -8613,7 +8613,7 @@
       "displayMode": "structured"
     },
     {
-      "id": "eye-trauma",
+      "id": "adult-eye-trauma",
       "title": "Eye Trauma",
       "type": "protocol",
       "categoryPath": [
@@ -8624,14 +8624,19 @@
       "effectiveDate": "2026-06-08",
       "lastRevised": "",
       "version": "2026",
-      "tags": [],
+      "tags": [
+        "adult",
+        "trauma",
+        "eye trauma",
+        "chemical exposure"
+      ],
       "source": {
         "pdf": "documents/ems/2026-hcems-protocols.pdf",
         "pageStart": 138,
         "pageEnd": 139,
         "pageLabel": "138-139"
       },
-      "summary": "",
+      "summary": "Assessment and treatment of adult patients with blunt or penetrating eye trauma or chemical substances in the eyes.",
       "content": [
         {
           "type": "heading",
@@ -8640,31 +8645,295 @@
         },
         {
           "type": "paragraph",
-          "text": "This protocol applies to adult patients with blunt or penetrating trauma to the eye(s) or who have chemical substances in the eye(s). Primary Survey Massive Hemorrhage Treat all life-threatening hemorrhage. See Hemorrhage Control Protocol. Tourniquets for massive extremity hemorrhage. Wound packing or junctional tourniquet for junctional hemorrhage. Airway – ensure patency and positioning. Have suction equipment ready. Consider spinal motion restriction if indicated. Respiratory/breathing – Give supplemental O2 if signs of compromise. Maintain SpO2 > 94%. Manage any injuries impairing ventilation immediately. Chest wounds: Open/Sucking, Impaled objects, bruising. Signs of Pneumothorax. Flail Segments. Assist with bag valve mask if respiratory effort is ineffective. Circulation – Assess radial pulses and heart rate. Consider Pelvic Binder if appropriate. Head/Hypothermia Initial GCS/AVPU. Pupils. Prevent hypothermia. Secondary Assessment and Treatment Monitor vital signs and O2 saturation Perform blood glucose analysis – Treat if BGL is < 60 mg/dl. Cardiac Monitor Record and evaluate 12-Lead ECG. Physical exam and OPQRST/SAMPLE history. Expose and rapidly assess the head, chest abdomen, pelvis and extremities for injury. Evaluate the patient’s posterior when possible. Perform spinal motion restriction, rigid C-collar and secure to a long spine board if indicated. Initiate patient transport to a trauma center as soon as possible. Advanced airway/ventilatory support as needed. See Sedation Assisted Intubation Protocol. Initiate IV/IO of normal saline at KVO rate. If fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol. Assess vision, if possible, with the injured eye. Can the patient count the number of fingers you hold up, if not, can the patient perceive light. Never apply pressure to the eyeball. Eye Trauma (Continued) Secondary Assessment and Treatment (Continued) If the eye has been avulsed or if the globe has been ruptured, Carefully cover the injured eye to protect it. Prevent conjugated eye movements – also cover the uninjured eye. DO NOT apply any pressure. DO NOT apply any absorbent dressing. If a foreign body is embedded in the eye, DO NOT attempt to remove the object. Attempt to stabilize the object. Carefully cover both eyes. If the eyes are injured by chemical exposure, pepper spray or mace, Responders should protect themselves with appropriate personal protective equipment. Remove the victim from the source of exposure. Remove contaminated clothing and seal in plastic bags. Irrigate eyes with copious amounts of sterile water or normal saline. Transport the patient with head elevated about 30 degrees, and BOTH eyes closed or loosely patched (Unless irrigating). Treat pain as needed. See Pain Management Protocol. DO NOT treat eye injury pain with NSAIDs (Toradol)."
+          "text": "This protocol applies to adult patients with blunt or penetrating trauma to the eye(s) or who have chemical substances in the eye(s)."
         },
         {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
+          "type": "flow-stage",
+          "title": "Primary Survey",
+          "arrowAfter": true,
+          "items": [
+            {
+              "text": "Massive Hemorrhage",
+              "bold": [
+                "Massive Hemorrhage"
+              ]
+            },
+            {
+              "text": "Treat all life-threatening hemorrhage. See Hemorrhage Control Protocol.",
+              "indent": 1,
+              "bold": [
+                "Treat all life-threatening hemorrhage."
+              ],
+              "links": [
+                {
+                  "text": "Hemorrhage Control Protocol",
+                  "protocolId": "hemorrhage-control"
+                }
+              ]
+            },
+            {
+              "text": "Tourniquets for massive extremity hemorrhage.",
+              "indent": 2
+            },
+            {
+              "text": "Wound packing or junctional tourniquet for junctional hemorrhage.",
+              "indent": 2
+            },
+            {
+              "text": "Airway – ensure patency and positioning.",
+              "bold": [
+                "Airway"
+              ]
+            },
+            {
+              "text": "Have suction equipment ready.",
+              "indent": 1
+            },
+            {
+              "text": "Consider spinal motion restriction if indicated.",
+              "indent": 1
+            },
+            {
+              "text": "Respiratory/breathing – Give supplemental O₂ if signs of compromise. Maintain SpO₂ ≥ 94%.",
+              "bold": [
+                "Respiratory/breathing",
+                "Maintain SpO₂ ≥ 94%."
+              ]
+            },
+            {
+              "text": "Manage any injuries impairing ventilation immediately.",
+              "indent": 1
+            },
+            {
+              "text": "Chest wounds: Open/Sucking, Impaled objects, bruising.",
+              "indent": 2
+            },
+            {
+              "text": "Signs of Pneumothorax.",
+              "indent": 2
+            },
+            {
+              "text": "Flail Segments.",
+              "indent": 2
+            },
+            {
+              "text": "Assist with bag valve mask if respiratory effort is ineffective.",
+              "indent": 1
+            },
+            {
+              "text": "Circulation – Assess radial pulses and heart rate.",
+              "bold": [
+                "Circulation"
+              ]
+            },
+            {
+              "text": "Consider Pelvic Binder if appropriate.",
+              "indent": 1
+            },
+            {
+              "text": "Head/Hypothermia",
+              "bold": [
+                "Head/Hypothermia"
+              ]
+            },
+            {
+              "text": "Initial GCS/AVPU.",
+              "indent": 1
+            },
+            {
+              "text": "Pupils.",
+              "indent": 1
+            },
+            {
+              "text": "Prevent hypothermia.",
+              "indent": 1
+            }
+          ]
         },
         {
-          "type": "paragraph",
-          "text": "Vital signs OPQRST/SAMPLE Cardiac rhythm Treatment(s) Communication with Medical Control."
+          "type": "flow-stage",
+          "title": "Secondary Assessment and Treatment",
+          "items": [
+            "Monitor vital signs and O₂ saturation",
+            {
+              "text": "Perform blood glucose analysis – Treat if BGL is < 60 mg/dl.",
+              "bold": [
+                "BGL is < 60 mg/dl."
+              ]
+            },
+            "Cardiac Monitor",
+            {
+              "text": "Record and evaluate 12-Lead ECG.",
+              "indent": 1
+            },
+            "Physical exam and OPQRST/SAMPLE history.",
+            {
+              "text": "Expose and rapidly assess the head, chest abdomen, pelvis and extremities for injury.",
+              "indent": 1
+            },
+            {
+              "text": "Evaluate the patient’s posterior when possible.",
+              "indent": 2
+            },
+            "Perform spinal motion restriction, rigid C-collar and secure to a long spine board if indicated.",
+            "Initiate patient transport to a trauma center as soon as possible.",
+            {
+              "text": "Advanced airway/ventilatory support as needed. See Sedation Assisted Intubation Protocol.",
+              "links": [
+                {
+                  "text": "Sedation Assisted Intubation Protocol",
+                  "protocolId": "sedation-assisted-intubation"
+                }
+              ]
+            },
+            "Initiate IV/IO of normal saline at KVO rate.",
+            {
+              "text": "If fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.",
+              "indent": 1,
+              "links": [
+                {
+                  "text": "Shock Protocol",
+                  "protocolId": "shock-management"
+                }
+              ]
+            },
+            {
+              "text": "Assess vision, if possible, with the injured eye.",
+              "icon": "assets/legend-important.webp",
+              "iconAlt": "Important protocol information",
+              "bold": [
+                "Assess vision, if possible, with the injured eye."
+              ],
+              "red": [
+                "Assess vision, if possible, with the injured eye."
+              ]
+            },
+            {
+              "text": "Can the patient count the number of fingers you hold up, if not, can the patient perceive light.",
+              "indent": 1,
+              "bold": [
+                "Can the patient count the number of fingers you hold up, if not, can the patient perceive light."
+              ],
+              "red": [
+                "Can the patient count the number of fingers you hold up, if not, can the patient perceive light."
+              ]
+            },
+            {
+              "text": "Never apply pressure directly to the eyeball.",
+              "indent": 1,
+              "bold": [
+                "Never apply pressure directly to the eyeball."
+              ],
+              "red": [
+                "Never apply pressure directly to the eyeball."
+              ]
+            },
+            {
+              "text": "If the eye has been enavulsed or if the globe has been ruptured,",
+              "bold": [
+                "If the eye has been enavulsed or if the globe has been ruptured,"
+              ]
+            },
+            {
+              "text": "Carefully cover the injured eye to protect it.",
+              "indent": 1
+            },
+            {
+              "text": "Prevent conjugated eye movements – also cover the uninjured eye.",
+              "indent": 1
+            },
+            {
+              "text": "DO NOT apply any pressure.",
+              "indent": 1,
+              "bold": [
+                "DO NOT"
+              ]
+            },
+            {
+              "text": "DO NOT apply any absorbent dressing.",
+              "indent": 1,
+              "bold": [
+                "DO NOT"
+              ]
+            },
+            {
+              "text": "If a foreign body is embedded in the eye,",
+              "bold": [
+                "If a foreign body is embedded in the eye,"
+              ]
+            },
+            {
+              "text": "DO NOT attempt to remove the object.",
+              "indent": 1,
+              "bold": [
+                "DO NOT"
+              ]
+            },
+            {
+              "text": "Attempt to stabilize the object.",
+              "indent": 1
+            },
+            {
+              "text": "Carefully cover both eyes.",
+              "indent": 1
+            },
+            {
+              "text": "If the eyes are injured by chemical exposure, pepper spray or mace,",
+              "bold": [
+                "If the eyes are injured by chemical exposure, pepper spray or mace,"
+              ]
+            },
+            {
+              "text": "Responders should protect themselves with appropriate personal protective equipment.",
+              "indent": 1
+            },
+            {
+              "text": "Remove the victim from the source of exposure.",
+              "indent": 1
+            },
+            {
+              "text": "Remove contaminated clothing and seal in plastic bags.",
+              "indent": 1
+            },
+            {
+              "text": "Irrigate eyes with copious amounts of sterile water or normal saline.",
+              "indent": 1
+            },
+            "Transport the patient with head elevated about 30 degrees, and BOTH eyes closed or loosely patched (Unless irrigating).",
+            {
+              "text": "Treat pain as needed. See Pain Management Protocol.",
+              "links": [
+                {
+                  "text": "Pain Management Protocol",
+                  "protocolId": "adult-pain-management"
+                }
+              ]
+            },
+            {
+              "text": "DO NOT treat eye injury pain with NSAIDs (Toradol).",
+              "indent": 1,
+              "bold": [
+                "DO NOT"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "documentation-card",
+          "title": "Document:",
+          "image": "assets/legend-documentation.webp",
+          "alt": "Patient care documentation reminder symbol",
+          "items": [
+            "Vital signs",
+            "OPQRST/SAMPLE",
+            "Cardiac rhythm",
+            "Treatment(s)",
+            "Communication with Medical Control."
+          ]
         }
       ],
-      "plainText": "Eye Trauma\nThis protocol applies to adult patients with blunt or penetrating trauma to the eye(s) or who have\nchemical substances in the eye(s).\nPrimary Survey\n•\nMassive Hemorrhage\no\nTreat all life-threatening hemorrhage. See Hemorrhage Control Protocol.\n▪\nTourniquets for massive extremity hemorrhage.\n▪\nWound packing or junctional tourniquet for junctional hemorrhage.\n•\nAirway – ensure patency and positioning.\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\n•\nRespiratory/breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nManage any injuries impairing ventilation immediately.\n▪\nChest wounds: Open/Sucking, Impaled objects, bruising.\n▪\nSigns of Pneumothorax.\n▪\nFlail Segments.\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nCirculation – Assess radial pulses and heart rate.\no\nConsider Pelvic Binder if appropriate.\n•\nHead/Hypothermia\no\nInitial GCS/AVPU.\no\nPupils.\no\nPrevent hypothermia.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nCardiac Monitor\no\nRecord and evaluate 12-Lead ECG.\n•\nPhysical exam and OPQRST/SAMPLE history.\no\nExpose and rapidly assess the head, chest abdomen, pelvis and extremities for injury.\n▪\nEvaluate the patient’s posterior when possible.\n•\nPerform spinal motion restriction, rigid C-collar and secure to a long spine board if indicated.\n•\nInitiate patient transport to a trauma center as soon as possible.\n•\nAdvanced airway/ventilatory support as needed. See Sedation Assisted Intubation Protocol.\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.\nAssess vision, if possible, with the injured eye.\no\nCan the patient count the number of fingers you hold up, if not, can the patient\nperceive light.\no\nNever apply pressure to the eyeball.\nEye Trauma (Continued)\nSecondary Assessment and Treatment (Continued)\n•\nIf the eye has been avulsed or if the globe has been ruptured,\no\nCarefully cover the injured eye to protect it.\no\nPrevent conjugated eye movements – also cover the uninjured eye.\no\nDO NOT apply any pressure.\no\nDO NOT apply any absorbent dressing.\n•\nIf a foreign body is embedded in the eye,\no\nDO NOT attempt to remove the object.\no\nAttempt to stabilize the object.\no\nCarefully cover both eyes.\n•\nIf the eyes are injured by chemical exposure, pepper spray or mace,\no\nResponders should protect themselves with appropriate personal protective equipment.\no\nRemove the victim from the source of exposure.\no\nRemove contaminated clothing and seal in plastic bags.\no\nIrrigate eyes with copious amounts of sterile water or normal saline.\n•\nTransport the patient with head elevated about 30 degrees, and BOTH eyes closed or loosely\npatched (Unless irrigating).\n•\nTreat pain as needed. See Pain Management Protocol.\no\nDO NOT treat eye injury pain with NSAIDs (Toradol).\nDocument:\n•\nVital signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control.",
-      "pageText": [
-        {
-          "page": 138,
-          "text": "Eye Trauma\nThis protocol applies to adult patients with blunt or penetrating trauma to the eye(s) or who have\nchemical substances in the eye(s).\nPrimary Survey\n•\nMassive Hemorrhage\no\nTreat all life-threatening hemorrhage. See Hemorrhage Control Protocol.\n▪\nTourniquets for massive extremity hemorrhage.\n▪\nWound packing or junctional tourniquet for junctional hemorrhage.\n•\nAirway – ensure patency and positioning.\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\n•\nRespiratory/breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nManage any injuries impairing ventilation immediately.\n▪\nChest wounds: Open/Sucking, Impaled objects, bruising.\n▪\nSigns of Pneumothorax.\n▪\nFlail Segments.\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nCirculation – Assess radial pulses and heart rate.\no\nConsider Pelvic Binder if appropriate.\n•\nHead/Hypothermia\no\nInitial GCS/AVPU.\no\nPupils.\no\nPrevent hypothermia.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nCardiac Monitor\no\nRecord and evaluate 12-Lead ECG.\n•\nPhysical exam and OPQRST/SAMPLE history.\no\nExpose and rapidly assess the head, chest abdomen, pelvis and extremities for injury.\n▪\nEvaluate the patient’s posterior when possible.\n•\nPerform spinal motion restriction, rigid C-collar and secure to a long spine board if indicated.\n•\nInitiate patient transport to a trauma center as soon as possible.\n•\nAdvanced airway/ventilatory support as needed. See Sedation Assisted Intubation Protocol.\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.\nAssess vision, if possible, with the injured eye.\no\nCan the patient count the number of fingers you hold up, if not, can the patient\nperceive light.\no\nNever apply pressure to the eyeball."
-        },
-        {
-          "page": 139,
-          "text": "Eye Trauma (Continued)\nSecondary Assessment and Treatment (Continued)\n•\nIf the eye has been avulsed or if the globe has been ruptured,\no\nCarefully cover the injured eye to protect it.\no\nPrevent conjugated eye movements – also cover the uninjured eye.\no\nDO NOT apply any pressure.\no\nDO NOT apply any absorbent dressing.\n•\nIf a foreign body is embedded in the eye,\no\nDO NOT attempt to remove the object.\no\nAttempt to stabilize the object.\no\nCarefully cover both eyes.\n•\nIf the eyes are injured by chemical exposure, pepper spray or mace,\no\nResponders should protect themselves with appropriate personal protective equipment.\no\nRemove the victim from the source of exposure.\no\nRemove contaminated clothing and seal in plastic bags.\no\nIrrigate eyes with copious amounts of sterile water or normal saline.\n•\nTransport the patient with head elevated about 30 degrees, and BOTH eyes closed or loosely\npatched (Unless irrigating).\n•\nTreat pain as needed. See Pain Management Protocol.\no\nDO NOT treat eye injury pain with NSAIDs (Toradol).\nDocument:\n•\nVital signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control."
-        }
-      ],
+      "plainText": "Eye Trauma. This protocol applies to adult patients with blunt or penetrating trauma to the eyes or chemical substances in the eyes. Primary survey, secondary assessment and treatment, eye protection, irrigation, transport, pain management, and documentation.",
       "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
       "displayMode": "structured"
     },
     {

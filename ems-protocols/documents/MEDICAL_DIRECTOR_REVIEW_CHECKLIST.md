@@ -216,6 +216,12 @@ This internal checklist tracks items that must be confirmed before the native EM
 
 
 
+
+### Adult Clinical Protocols > Adult Trauma Emergencies > Eye Trauma
+
+- [ ] Verify the vision assessment, ruptured-globe/enavulsed-eye wording, embedded-object care, chemical-exposure decontamination, bilateral eye covering, transport position, irrigation exception, pain-management instruction, and prohibition on NSAIDs/Toradol.
+- [ ] Confirm whether ?enavulsed? is the intended source term or should be corrected to ?avulsed? or ?enucleated.?
+
 ### Adult Clinical Protocols > Adult Trauma Emergencies > Head and Spine Trauma
 
 - [ ] Verify hemorrhage control, airway/ventilation, spinal motion restriction, trauma-center transport, fluid targets, and detailed reassessment instructions.
