@@ -3,7 +3,7 @@ let deferredPrompt;
 let selectedId = null;
 let viewHistory = [];
 let viewHistoryIndex = -1;
-const CONTENT_VERSION = 'v131';
+const CONTENT_VERSION = 'v132';
 
 const treeNav = document.getElementById('treeNav');
 const searchBox = document.getElementById('searchBox');
@@ -679,6 +679,70 @@ function renderPediatricAssessmentFlow(block, container) {
 
   container.appendChild(flow);
 }
+function renderStrokeLateralityDiagram(block, container) {
+  const figure = document.createElement('figure');
+  figure.className = 'stroke-laterality-diagram';
+  const heading = document.createElement('h3');
+  heading.textContent = block.title || 'Stroke Laterality';
+  figure.appendChild(heading);
+  if (block.intro) {
+    const intro = document.createElement('p');
+    intro.className = 'stroke-laterality-intro';
+    intro.textContent = block.intro;
+    figure.appendChild(intro);
+  }
+  const grid = document.createElement('div');
+  grid.className = 'stroke-laterality-grid';
+  for (const panelData of block.panels || []) {
+    const panel = document.createElement('article');
+    panel.className = 'stroke-laterality-panel';
+    const title = document.createElement('h4');
+    title.textContent = panelData.title;
+    panel.appendChild(title);
+    const visual = document.createElement('div');
+    visual.className = 'stroke-laterality-visual';
+    const brain = document.createElement('div');
+    brain.className = 'stroke-brain lesion-' + panelData.brainSide;
+    brain.setAttribute('role', 'img');
+    brain.setAttribute('aria-label', panelData.brainSide + ' brain hemisphere highlighted');
+    brain.innerHTML = '<span class="hemisphere left"></span><span class="hemisphere right"></span><span class="brain-divider"></span>';
+    visual.appendChild(brain);
+    const arrow = document.createElement('span');
+    arrow.className = 'stroke-laterality-arrow';
+    arrow.setAttribute('aria-hidden', 'true');
+    arrow.textContent = '→';
+    visual.appendChild(arrow);
+    const person = document.createElement('div');
+    person.className = 'stroke-person affected-' + panelData.affectedSide;
+    person.setAttribute('role', 'img');
+    person.setAttribute('aria-label', panelData.affectedSide + ' side of body highlighted');
+    person.innerHTML = '<span class="head"></span><span class="torso"></span><span class="arm left"></span><span class="arm right"></span><span class="leg left"></span><span class="leg right"></span>';
+    visual.appendChild(person);
+    panel.appendChild(visual);
+    const affected = document.createElement('p');
+    affected.className = 'stroke-affected-label';
+    affected.textContent = panelData.affectedLabel;
+    panel.appendChild(affected);
+    appendFlowItems(panelData.effects || [], panel);
+    grid.appendChild(panel);
+  }
+  figure.appendChild(grid);
+  const footer = document.createElement('figcaption');
+  const review = document.createElement('strong');
+  review.textContent = block.reviewNote || '';
+  footer.appendChild(review);
+  if (block.sourceUrl && block.sourceLabel) {
+    footer.appendChild(document.createTextNode(' Source: '));
+    const source = document.createElement('a');
+    source.href = block.sourceUrl;
+    source.target = '_blank';
+    source.rel = 'noopener noreferrer';
+    source.textContent = block.sourceLabel;
+    footer.appendChild(source);
+  }
+  figure.appendChild(footer);
+  container.appendChild(figure);
+}
 function renderProtocolImage(block, container) {
   const figure = document.createElement('figure');
   figure.className = 'protocol-reference-image';
@@ -950,6 +1014,11 @@ function renderBlock(block, container) {
 
   if (block.type === 'stop-control') {
     renderStopControl(block, container);
+    return;
+  }
+
+  if (block.type === 'stroke-laterality-diagram') {
+    renderStrokeLateralityDiagram(block, container);
     return;
   }
 

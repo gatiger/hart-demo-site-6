@@ -798,3 +798,36 @@ details[open] > .tree-heading.tree-toggle::before {
 .lvad-chart-labels text { fill:#28734f; font-size:18px; font-weight:900; text-anchor:middle; paint-order:stroke; stroke:#f8fbfd; stroke-width:8; stroke-linejoin:round; }
 .lvad-chart-labels text.no { fill:#a63b32; }
 @media(max-width:760px){.lvad-chart{min-width:660px}.lvad-chart-viewport{padding-bottom:.8rem}.lvad-svg-box{font-size:16px}.lvad-svg-decision-text,.lvad-chart-labels text{font-size:17px}}
+/* Native stroke laterality reference */
+.stroke-laterality-diagram { margin:1.5rem 0; padding:1.25rem; border:1px solid #aac3d6; border-top:6px solid #176f86; border-radius:16px; background:#f8fbfd; box-shadow:0 10px 24px rgba(23,58,94,.08); }
+.stroke-laterality-diagram > h3 { margin:0; color:#173a5e; text-align:center; }
+.stroke-laterality-intro { max-width:760px; margin:.6rem auto 1rem; text-align:center; }
+.stroke-laterality-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; }
+.stroke-laterality-panel { padding:1rem; border:1px solid #b8ccdc; border-radius:12px; background:#fff; }
+.stroke-laterality-panel h4 { margin:0 0 .75rem; color:#173a5e; text-align:center; }
+.stroke-laterality-visual { display:flex; align-items:center; justify-content:center; gap:1.1rem; min-height:180px; }
+.stroke-brain { position:relative; display:flex; width:104px; height:76px; border:4px solid #173a5e; border-radius:52% 52% 45% 45%; overflow:hidden; background:#dce8ef; }
+.stroke-brain .hemisphere { width:50%; height:100%; background:#dce8ef; }
+.stroke-brain.lesion-left .hemisphere.left,.stroke-brain.lesion-right .hemisphere.right { background:#d85b4a; }
+.stroke-brain .brain-divider { position:absolute; left:50%; top:3px; bottom:3px; border-left:3px solid #173a5e; transform:translateX(-50%); }
+.stroke-laterality-arrow { color:#176f86; font-size:2.3rem; font-weight:900; }
+.stroke-person { position:relative; width:76px; height:168px; }
+.stroke-person span { position:absolute; display:block; background:#b9cad6; }
+.stroke-person .head { left:24px; top:0; width:30px; height:30px; border-radius:50%; }
+.stroke-person .torso { left:23px; top:34px; width:32px; height:66px; border-radius:14px 14px 8px 8px; }
+.stroke-person .arm { top:42px; width:13px; height:72px; border-radius:8px; transform-origin:top center; }
+.stroke-person .arm.left { left:15px; transform:rotate(12deg); }
+.stroke-person .arm.right { right:13px; transform:rotate(-12deg); }
+.stroke-person .leg { top:94px; width:14px; height:72px; border-radius:8px; }
+.stroke-person .leg.left { left:24px; transform:rotate(4deg); }
+.stroke-person .leg.right { right:21px; transform:rotate(-4deg); }
+.stroke-person.affected-left .head { background:linear-gradient(90deg,#d85b4a 50%,#b9cad6 50%); }
+.stroke-person.affected-right .head { background:linear-gradient(90deg,#b9cad6 50%,#d85b4a 50%); }
+.stroke-person.affected-left .arm.left,.stroke-person.affected-left .leg.left,.stroke-person.affected-right .arm.right,.stroke-person.affected-right .leg.right { background:#d85b4a; }
+.stroke-person.affected-left .torso { background:linear-gradient(90deg,#d85b4a 50%,#b9cad6 50%); }
+.stroke-person.affected-right .torso { background:linear-gradient(90deg,#b9cad6 50%,#d85b4a 50%); }
+.stroke-affected-label { margin:.25rem 0 .75rem; color:#a63b32; font-weight:800; text-align:center; }
+.stroke-laterality-panel ul { margin:.25rem 0 0; }
+.stroke-laterality-diagram figcaption { margin-top:1rem; padding:.75rem; border-radius:8px; background:#fff4d9; color:#664b00; text-align:center; }
+.stroke-laterality-diagram figcaption a { color:#075f78; }
+@media(max-width:760px){.stroke-laterality-grid{grid-template-columns:1fr}.stroke-laterality-visual{min-height:160px}.stroke-laterality-diagram{padding:.9rem}}
