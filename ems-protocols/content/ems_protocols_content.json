@@ -5185,52 +5185,72 @@
       ],
       "status": "active",
       "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": [],
       "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
         "pageStart": 77,
         "pageEnd": 78,
         "pageLabel": "77-78"
       },
-      "summary": "",
+      "summary": "Assessment and treatment of pediatric patients presenting with injury to the abdomen and/or pelvis.",
       "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Pediatric Abdominal and Pelvic Trauma"
-        },
-        {
-          "type": "paragraph",
-          "text": "This protocol applies to pediatric patients presenting with injury to the abdomen and/or pelvis. First Impression (Pediatric Assessment Triangle) Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry. Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds. Circulation – observe skin color for pallor, mottling and/or cyanosis. Primary Survey Massive hemorrhage Treat all life-threatening hemorrhage Tourniquets for massive extremity hemorrhage Wound packing for junctional hemorrhage Airway – ensure patency, manually stabilize C-Spine. Have suction equipment ready Consider spinal motion restriction if indicated. Respiratory/Breathing – give supplemental O2 if signs of compromise. Maintain SpO2 > 94%. Manage any injuries impairing ventilation. Chest wounds: Penetrating/Sucking chest wound, impaled objects, bruising Signs of pneumothorax Flail segments Assist with bag valve mask if respiratory effort is ineffective. Circulation – assess pulses and perfusion status Manage shock appropriately. See Shock Protocol. Head/Hypothermia Initial GCS/AVPU Pupils Prevent hypothermia Secondary Assessment and Treatment Physical Exam and OPQRST/SAMPLE history Note any abdominal rigidity, distention, tenderness, etc. Note any pelvic instability. Monitor vital signs and O2 saturation, determine GCS Score For Evisceration – DO NOT attempt to replace protruding organs. Apply a moistened sterile dressing directly to the site. Cover the moistened sterile dressing with an occlusive dressing. Place the patient on their back, with legs flexed at the knees. This is to reduce pain by relaxing the strain on the abdominal muscles. For Impaled objects – DO NOT attempt to remove the object. Carefully cut away any clothing that is around the object. Manually stabilize the object – avoid applying any pressure to the impaled object. Use bulky dressing and cravats to stabilize the impaled object. Minimize patient movement. If the impaled object was removed prior to your arrival, try to bring the object with you to the ER. Perform spinal motion restriction, apply cervical collar and secure to long spine board. Initiate transport as soon as possible. Consider transport to a trauma center. Pediatric Abdominal and Pelvic Trauma (Continued) Secondary Assessment and Treatment (Continued) Advanced airway/ventilatory management as needed. Initiate IV/IO of normal saline at KVO rate. If fluid resuscitation is needed, 20 ml/kg bolus. See Shock Protocol. Re-evaluate ABCs and perform detailed/focused head-to-to exam and repeat neurological exam Perform blood glucose analysis – Treat if BGL is < 60 mg/dl. Consider cardiac monitoring Continue resuscitation and evaluation enroute."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vital signs OPQRST/SAMPLE Cardiac rhythm Treatment(s) Communication with Medical Control."
-        }
+        {"type":"heading","level":2,"text":"Pediatric Abdominal and Pelvic Trauma"},
+        {"type":"paragraph","text":"This protocol applies to pediatric patients presenting with injury to the abdomen and/or pelvis."},
+        {"type":"flow-stage","title":"First Impression (Pediatric Assessment Triangle)","arrowAfter":true,"links":[{"text":"Pediatric Assessment Triangle","protocolId":"pediatric-assessment-triangle"}],"items":[
+          "Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.",
+          "Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.",
+          "Circulation – observe skin color for pallor, mottling, and/or cyanosis."
+        ]},
+        {"type":"flow-stage","title":"Primary Survey","arrowAfter":true,"items":[
+          {"text":"Massive hemorrhage","bold":["Massive hemorrhage"]},
+          {"text":"Treat all life-threatening hemorrhage.","indent":1},
+          {"text":"Tourniquets for massive extremity hemorrhage.","indent":2},
+          {"text":"Wound packing for junctional hemorrhage.","indent":2},
+          {"text":"Airway – ensure patency, manually stabilize C-Spine.","bold":["Airway"]},
+          {"text":"Have suction equipment ready.","indent":1},
+          {"text":"Consider spinal motion restriction if indicated.","indent":1},
+          {"text":"Respiratory/Breathing – give supplemental O₂ if signs of compromise. Maintain SpO₂ ≥ 94%.","bold":["Respiratory/Breathing","Maintain SpO₂ ≥ 94%."]},
+          {"text":"Manage any injuries impairing ventilation.","indent":1},
+          {"text":"Chest wounds: Penetrating/Sucking chest wound, impaled objects, bruising.","indent":2},
+          {"text":"Signs of pneumothorax.","indent":2},
+          {"text":"Flail segments.","indent":2},
+          {"text":"Assist with bag valve mask if respiratory effort is ineffective.","indent":1},
+          {"text":"Circulation – assess pulses and perfusion status.","bold":["Circulation"]},
+          {"text":"Manage shock appropriately. See Shock Protocol.","indent":1,"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          {"text":"Head/Hypothermia","bold":["Head/Hypothermia"]},
+          {"text":"Initial GCS/AVPU.","indent":1},
+          {"text":"Pupils.","indent":1},
+          {"text":"Prevent hypothermia.","indent":1}
+        ]},
+        {"type":"flow-stage","title":"Secondary Assessment and Treatment","items":[
+          "Physical exam and OPQRST/SAMPLE history.",
+          {"text":"Note any abdominal rigidity, distention, tenderness, etc.","indent":1},
+          {"text":"Note any pelvic instability.","indent":1},
+          {"text":"Monitor vital signs and O₂ saturation, determine GCS Score.","indent":1},
+          {"text":"For Evisceration – DO NOT attempt to replace protruding organs.","bold":["For Evisceration","DO NOT attempt to replace protruding organs."]},
+          {"text":"Apply a moistened sterile dressing directly to the site.","indent":1},
+          {"text":"Cover the moistened sterile dressing with an occlusive dressing.","indent":1},
+          {"text":"Place the patient on their back, with legs flexed at the knees. This is to reduce pain by relaxing the strain on the abdominal muscles.","indent":1},
+          {"text":"For Impaled Objects – DO NOT attempt to remove the object.","bold":["For Impaled Objects","DO NOT attempt to remove the object."]},
+          {"text":"Carefully cut away any clothing that is around the object.","indent":1},
+          {"text":"Manually stabilize the object – avoid applying any pressure to the impaled object.","indent":1},
+          {"text":"Use bulky dressing and cravats to stabilize the impaled object.","indent":1},
+          {"text":"Minimize patient movement.","indent":1},
+          {"text":"If the impaled object was removed prior to your arrival, try to bring the object with you to the ER.","icon":"assets/legend-important.webp","iconAlt":"Important protocol information","bold":["If the impaled object was removed prior to your arrival, try to bring the object with you to the ER."],"red":["If the impaled object was removed prior to your arrival, try to bring the object with you to the ER."]},
+          "Perform spinal motion restriction, apply cervical collar and secure to long spine board.",
+          "Initiate transport as soon as possible.",
+          {"text":"Consider transport to a trauma center.","indent":1},
+          "Advanced airway/ventilatory management as needed.",
+          "Initiate IV/IO of normal saline at KVO rate.",
+          {"text":"If fluid resuscitation is needed, administer 20 ml/kg bolus. See Shock Protocol.","indent":1,"bold":["20 ml/kg bolus."],"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          "Re-evaluate ABCs and perform detailed/focused head-to-toe exam and repeat neurological exam.",
+          {"text":"Perform blood glucose analysis – treat if BGL is < 60 mg/dl.","bold":["BGL is < 60 mg/dl."]},
+          "Consider cardiac monitoring.",
+          "Continue resuscitation and evaluation enroute."
+        ]},
+        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital Signs","OPQRST/SAMPLE","Cardiac rhythm","Treatment(s)","Communication with Medical Control"]}
       ],
-      "plainText": "Pediatric Abdominal and Pelvic Trauma\nThis protocol applies to pediatric patients presenting with injury to the abdomen and/or pelvis.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis.\nPrimary Survey\n•\nMassive hemorrhage\no\nTreat all life-threatening hemorrhage\n▪\nTourniquets for massive extremity hemorrhage\n▪\nWound packing for junctional hemorrhage\n•\nAirway – ensure patency, manually stabilize C-Spine.\no\nHave suction equipment ready\no\nConsider spinal motion restriction if indicated.\n•\nRespiratory/Breathing – give supplemental O2 if signs of compromise. Maintain SpO2 > 94%.\no\nManage any injuries impairing ventilation.\n▪\nChest wounds: Penetrating/Sucking chest wound, impaled objects, bruising\n▪\nSigns of pneumothorax\n▪\nFlail segments\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nCirculation – assess pulses and perfusion status\no\nManage shock appropriately. See Shock Protocol.\n•\nHead/Hypothermia\no\nInitial GCS/AVPU\no\nPupils\no\nPrevent hypothermia\nSecondary Assessment and Treatment\n•\nPhysical Exam and OPQRST/SAMPLE history\no\nNote any abdominal rigidity, distention, tenderness, etc.\no\nNote any pelvic instability.\no\nMonitor vital signs and O2 saturation, determine GCS Score\n•\nFor Evisceration – DO NOT attempt to replace protruding organs.\no\nApply a moistened sterile dressing directly to the site.\no\nCover the moistened sterile dressing with an occlusive dressing.\no\nPlace the patient on their back, with legs flexed at the knees. This is to reduce pain by\nrelaxing the strain on the abdominal muscles.\n•\nFor Impaled objects – DO NOT attempt to remove the object.\no\nCarefully cut away any clothing that is around the object.\no\nManually stabilize the object – avoid applying any pressure to the impaled object.\no\nUse bulky dressing and cravats to stabilize the impaled object.\no\nMinimize patient movement.\nIf the impaled object was removed prior to your arrival, try to bring the object with\nyou to the ER.\no\nPerform spinal motion restriction, apply cervical collar and secure to long spine board.\n•\nInitiate transport as soon as possible.\no\nConsider transport to a trauma center.\nPediatric Abdominal and Pelvic Trauma (Continued)\nSecondary Assessment and Treatment (Continued)\n•\nAdvanced airway/ventilatory management as needed.\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg bolus. See Shock Protocol.\n•\nRe-evaluate ABCs and perform detailed/focused head-to-to exam and repeat neurological exam\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nConsider cardiac monitoring\n•\nContinue resuscitation and evaluation enroute.\nDocument:\n•\nVital signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control.",
-      "pageText": [
-        {
-          "page": 77,
-          "text": "Pediatric Abdominal and Pelvic Trauma\nThis protocol applies to pediatric patients presenting with injury to the abdomen and/or pelvis.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis.\nPrimary Survey\n•\nMassive hemorrhage\no\nTreat all life-threatening hemorrhage\n▪\nTourniquets for massive extremity hemorrhage\n▪\nWound packing for junctional hemorrhage\n•\nAirway – ensure patency, manually stabilize C-Spine.\no\nHave suction equipment ready\no\nConsider spinal motion restriction if indicated.\n•\nRespiratory/Breathing – give supplemental O2 if signs of compromise. Maintain SpO2 > 94%.\no\nManage any injuries impairing ventilation.\n▪\nChest wounds: Penetrating/Sucking chest wound, impaled objects, bruising\n▪\nSigns of pneumothorax\n▪\nFlail segments\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nCirculation – assess pulses and perfusion status\no\nManage shock appropriately. See Shock Protocol.\n•\nHead/Hypothermia\no\nInitial GCS/AVPU\no\nPupils\no\nPrevent hypothermia\nSecondary Assessment and Treatment\n•\nPhysical Exam and OPQRST/SAMPLE history\no\nNote any abdominal rigidity, distention, tenderness, etc.\no\nNote any pelvic instability.\no\nMonitor vital signs and O2 saturation, determine GCS Score\n•\nFor Evisceration – DO NOT attempt to replace protruding organs.\no\nApply a moistened sterile dressing directly to the site.\no\nCover the moistened sterile dressing with an occlusive dressing.\no\nPlace the patient on their back, with legs flexed at the knees. This is to reduce pain by\nrelaxing the strain on the abdominal muscles.\n•\nFor Impaled objects – DO NOT attempt to remove the object.\no\nCarefully cut away any clothing that is around the object.\no\nManually stabilize the object – avoid applying any pressure to the impaled object.\no\nUse bulky dressing and cravats to stabilize the impaled object.\no\nMinimize patient movement.\nIf the impaled object was removed prior to your arrival, try to bring the object with\nyou to the ER.\no\nPerform spinal motion restriction, apply cervical collar and secure to long spine board.\n•\nInitiate transport as soon as possible.\no\nConsider transport to a trauma center."
-        },
-        {
-          "page": 78,
-          "text": "Pediatric Abdominal and Pelvic Trauma (Continued)\nSecondary Assessment and Treatment (Continued)\n•\nAdvanced airway/ventilatory management as needed.\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg bolus. See Shock Protocol.\n•\nRe-evaluate ABCs and perform detailed/focused head-to-to exam and repeat neurological exam\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nConsider cardiac monitoring\n•\nContinue resuscitation and evaluation enroute.\nDocument:\n•\nVital signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control."
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Pediatric Abdominal and Pelvic Trauma. Primary survey, abdominal and pelvic injury treatment, transport, reassessment, and documentation.",
+      "needsReview":false
+    },    {
       "id": "extremity-trauma",
       "title": "Extremity Trauma",
       "type": "protocol",
