@@ -3,6 +3,7 @@ let deferredPrompt;
 let selectedId = null;
 let viewHistory = [];
 let viewHistoryIndex = -1;
+const CONTENT_VERSION = 'v107';
 
 const treeNav = document.getElementById('treeNav');
 const searchBox = document.getElementById('searchBox');
@@ -26,12 +27,12 @@ installBtn?.addEventListener('click', async () => {
 });
 
 async function init() {
-  const response = await fetch('content/ems_protocols_content.json', { cache: 'no-cache' });
+  const response = await fetch('content/ems_protocols_content.json?v=' + CONTENT_VERSION, { cache: 'no-store' });
   protocolData = await response.json();
   document.getElementById('metaLine').textContent = `Effective ${formatDate(protocolData.meta.effectiveDate)} • ${protocolData.protocols.length} entries`;
   renderTree(protocolData.navigation);
   showSplash();
-  if ('serviceWorker' in navigator) navigator.serviceWorker.register('service-worker.js').catch(() => {});
+  if ('serviceWorker' in navigator) navigator.serviceWorker.register('service-worker.js', { updateViaCache: 'none' }).then(registration => registration.update()).catch(() => {});
 }
 
 function showSplash() {
