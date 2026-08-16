@@ -5092,52 +5092,90 @@
       ],
       "status": "active",
       "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": [],
       "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
         "pageStart": 75,
         "pageEnd": 76,
         "pageLabel": "75-76"
       },
-      "summary": "",
+      "summary": "Assessment and treatment of pediatric patients presenting with chest trauma.",
       "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Pediatric Chest Trauma"
-        },
-        {
-          "type": "paragraph",
-          "text": "This protocol applies to pediatric patients presenting with chest trauma. First Impression (Pediatric Assessment Triangle) Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry. Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds. Circulation – observe skin color for pallor, mottling and/or cyanosis. Primary Survey Massive hemorrhage Treat all life-threatening hemorrhage Tourniquets for massive extremity hemorrhage Wound packing for junctional hemorrhage Airway – ensure patency, manually stabilize C-Spine. Have suction equipment ready Consider spinal motion restriction if indicated. Respiratory/Breathing – give supplemental O2 if signs of compromise. Maintain SpO2 > 94%. Manage any injuries impairing ventilation. Chest wounds: Penetrating/Sucking chest wound, impaled objects, bruising Signs of pneumothorax Flail segments Assist with bag valve mask if respiratory effort is ineffective. Circulation – assess pulses and perfusion status Manage shock appropriately. See Shock Protocol. Head/Hypothermia Initial GCS/AVPU Pupils Prevent hypothermia If at any time during the primary survey or secondary assessment the following chest injuries are identified, treat immediately. For Penetrating Trauma or Sucking Chest Wound Seal initially with a gloved hand Apply occlusive dressing, tape on 4 sides. Monitor for Tension Pneumothorax For Flail Segment Stabilize with bulky dressing. Gentle pressure, Do Not impair ventilation. Provide positive pressure ventilation as needed. For Tension Pneumothorax Perform needle decompression on the affected side. Preferred location is the 5th intercostal space along the anterior axillary line. Alternate location is the 2nd intercostal space along the midclavicular line. Pediatric Chest Trauma (Continued) Secondary Assessment and Treatment Physical exam and OPQRST/SAMPLE history Examine the chest for bruising, abrasions, instability, crepitus, and/or open wounds. Auscultate breath sounds and heart tones. Monitor vital signs and O2 saturation, determine GCS Administer prehospital care and resuscitate as needed. Perform spinal motion restriction – apply a rigid cervical collar, secure to long spine board. Initiate patient transport as soon as possible to the appropriate facility. Consider transport to trauma center Advanced airway/ventilatory management as needed. Initiate IV/IO of normal saline KVO. If fluid resuscitation is needed, 20 ml/kg bolus. See Shock Protocol. Re-evaluate ABCs and perform detailed/focused head-to-toe assessment and repeat neurological exam. Continuously monitor patient’s respiratory and perfusion status. Auscultate breath sounds Apply capnography Perform blood glucose analysis. Treat if BGL is < 60 mg/dl. Initiate cardiac monitoring. Treat dysrhythmias in accordance with the appropriate protocol. Continue resuscitation and evaluation enroute. IMPORTANT – NEEDLE CHEST DECOMPRESSION"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Indications for needle chest decompression"
-        },
-        {
-          "type": "paragraph",
-          "text": "Peri-arrest, PEA, shock with hypotension, and at least one of the following: Neck vein distension Tracheal deviation away from injured side. Increased resistance when ventilating Hyper-expanded chest with little movement during respiration. Needle chest decompression should never be utilized based solely on the presence of poor or absent breath sounds on one side of the chest. This procedure has complications and should not be used lightly. When used appropriately, it can be life-saving. CAUTION: Overly aggressive positive pressure ventilation may cause a pneumothorax or exacerbate an existing pneumothorax. Document; Vital Signs OPQRST/SAMPLE Cardiac rhythm Treatment(s) Communication with Medical Control."
-        }
+        {"type":"heading","level":2,"text":"Pediatric Chest Trauma"},
+        {"type":"paragraph","text":"This protocol applies to pediatric patients presenting with chest trauma."},
+        {"type":"flow-stage","title":"First Impression (Pediatric Assessment Triangle)","arrowAfter":true,"links":[{"text":"Pediatric Assessment Triangle","protocolId":"pediatric-assessment-triangle"}],"items":[
+          "Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.",
+          "Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.",
+          "Circulation – observe skin color for pallor, mottling, and/or cyanosis."
+        ]},
+        {"type":"flow-stage","title":"Primary Survey","arrowAfter":true,"items":[
+          {"text":"Massive hemorrhage","bold":["Massive hemorrhage"]},
+          {"text":"Treat all life-threatening hemorrhage.","indent":1},
+          {"text":"Tourniquets for massive extremity hemorrhage.","indent":2},
+          {"text":"Wound packing for junctional hemorrhage.","indent":2},
+          {"text":"Airway – ensure patency, manually stabilize C-Spine.","bold":["Airway"]},
+          {"text":"Have suction equipment ready.","indent":1},
+          {"text":"Consider spinal motion restriction if indicated.","indent":1},
+          {"text":"Respiratory/Breathing – give supplemental O₂ if signs of compromise. Maintain SpO₂ ≥ 94%.","bold":["Respiratory/Breathing","Maintain SpO₂ ≥ 94%."]},
+          {"text":"Manage any injuries impairing ventilation.","indent":1},
+          {"text":"Chest wounds: Penetrating/Sucking chest wound, impaled objects, bruising.","indent":2},
+          {"text":"Signs of pneumothorax.","indent":2},
+          {"text":"Flail segments.","indent":2},
+          {"text":"Assist with bag valve mask if respiratory effort is ineffective.","indent":1},
+          {"text":"Circulation – assess pulses and perfusion status.","bold":["Circulation"]},
+          {"text":"Manage shock appropriately. See Shock Protocol.","indent":1,"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          {"text":"Head/Hypothermia","bold":["Head/Hypothermia"]},
+          {"text":"Initial GCS/AVPU.","indent":1},
+          {"text":"Pupils.","indent":1},
+          {"text":"Prevent hypothermia.","indent":1},
+          {"text":"If at any time during the primary survey or secondary assessment the following chest injuries are identified, treat immediately.","icon":"assets/legend-important.webp","iconAlt":"Important protocol information","bold":["If at any time during the primary survey or secondary assessment the following chest injuries are identified, treat immediately."],"red":["If at any time during the primary survey or secondary assessment the following chest injuries are identified, treat immediately."]},
+          {"text":"For Penetrating Trauma or Sucking Chest Wound","bold":["For Penetrating Trauma or Sucking Chest Wound"]},
+          {"text":"Seal initially with a gloved hand.","indent":1},
+          {"text":"Apply occlusive dressing, tape on 4 sides.","indent":1},
+          {"text":"Monitor for Tension Pneumothorax.","indent":1},
+          {"text":"For Flail Segment","bold":["For Flail Segment"]},
+          {"text":"Stabilize with bulky dressing.","indent":1},
+          {"text":"Gentle pressure. Do not impair ventilation.","indent":2,"bold":["Do not impair ventilation."]},
+          {"text":"Provide positive pressure ventilation as needed.","indent":1},
+          {"text":"For Tension Pneumothorax","bold":["For Tension Pneumothorax"]},
+          {"text":"Perform needle decompression on the affected side.","indent":1},
+          {"text":"Preferred location is the 5th intercostal space along the anterior axillary line.","indent":2},
+          {"text":"Alternate location is the 2nd intercostal space along the midclavicular line.","indent":2}
+        ]},
+        {"type":"flow-stage","title":"Secondary Assessment and Treatment","arrowAfter":true,"items":[
+          "Physical exam and OPQRST/SAMPLE history.",
+          {"text":"Examine the chest for bruising, abrasions, instability, crepitus, and/or open wounds.","indent":1},
+          {"text":"Auscultate breath sounds and heart tones.","indent":1},
+          "Monitor vital signs and O₂ saturation, determine GCS.",
+          "Administer prehospital care and resuscitate as needed.",
+          "Perform spinal motion restriction – apply a rigid cervical collar, secure to long spine board.",
+          "Initiate patient transport as soon as possible to the appropriate facility.",
+          {"text":"Consider transport to trauma center.","indent":1},
+          "Advanced airway/ventilatory management as needed.",
+          "Initiate IV/IO of normal saline KVO.",
+          {"text":"If fluid resuscitation is needed, administer 20 ml/kg bolus. See Shock Protocol.","indent":1,"bold":["20 ml/kg bolus."],"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          "Re-evaluate ABCs and perform detailed/focused head-to-toe assessment and repeat neurological exam.",
+          {"text":"Continuously monitor patient’s respiratory and perfusion status.","indent":1},
+          {"text":"Auscultate breath sounds.","indent":1},
+          {"text":"Apply capnography.","indent":1},
+          {"text":"Perform blood glucose analysis. Treat if BGL is < 60 mg/dl.","indent":1,"bold":["BGL is < 60 mg/dl."]},
+          "Initiate cardiac monitoring.",
+          {"text":"Treat dysrhythmias in accordance with the appropriate protocol.","indent":1},
+          "Continue resuscitation and evaluation enroute."
+        ]},
+        {"type":"flow-stage","title":"IMPORTANT – NEEDLE CHEST DECOMPRESSION","items":[
+          {"text":"Indications for needle chest decompression:","icon":"assets/legend-important.webp","iconAlt":"Important protocol information","bold":["Indications for needle chest decompression:"],"red":["Indications for needle chest decompression:"]},
+          {"text":"Peri-arrest, PEA, shock with hypotension, and at least one of the following:","indent":1},
+          {"text":"Neck vein distension.","indent":2},
+          {"text":"Tracheal deviation away from injured side.","indent":2},
+          {"text":"Increased resistance when ventilating.","indent":2},
+          {"text":"Hyper-expanded chest with little movement during respiration.","indent":2},
+          {"text":"Needle chest decompression should never be utilized based solely on the presence of poor or absent breath sounds on one side of the chest. This procedure has complications and should not be used lightly. When used appropriately, it can be life-saving.","icon":"assets/legend-important.webp","iconAlt":"Important protocol information","bold":["Needle chest decompression should never be utilized based solely on the presence of poor or absent breath sounds on one side of the chest. This procedure has complications and should not be used lightly. When used appropriately, it can be life-saving."],"red":["Needle chest decompression should never be utilized based solely on the presence of poor or absent breath sounds on one side of the chest. This procedure has complications and should not be used lightly. When used appropriately, it can be life-saving."]},
+          {"text":"CAUTION: Overly aggressive positive pressure ventilation may cause a pneumothorax or exacerbate an existing pneumothorax.","bold":["CAUTION: Overly aggressive positive pressure ventilation may cause a pneumothorax or exacerbate an existing pneumothorax."]}
+        ]},
+        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital Signs","OPQRST/SAMPLE","Cardiac rhythm","Treatment(s)","Communication with Medical Control"]}
       ],
-      "plainText": "Pediatric Chest Trauma\nThis protocol applies to pediatric patients presenting with chest trauma.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis.\nPrimary Survey\n•\nMassive hemorrhage\no\nTreat all life-threatening hemorrhage\n▪\nTourniquets for massive extremity hemorrhage\n▪\nWound packing for junctional hemorrhage\n•\nAirway – ensure patency, manually stabilize C-Spine.\no\nHave suction equipment ready\no\nConsider spinal motion restriction if indicated.\n•\nRespiratory/Breathing – give supplemental O2 if signs of compromise. Maintain SpO2 > 94%.\no\nManage any injuries impairing ventilation.\n▪\nChest wounds: Penetrating/Sucking chest wound, impaled objects, bruising\n▪\nSigns of pneumothorax\n▪\nFlail segments\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nCirculation – assess pulses and perfusion status\no\nManage shock appropriately. See Shock Protocol.\n•\nHead/Hypothermia\no\nInitial GCS/AVPU\no\nPupils\no\nPrevent hypothermia\nIf at any time during the primary survey or secondary assessment the following chest\ninjuries are identified, treat immediately.\n•\nFor Penetrating Trauma or Sucking Chest Wound\no\nSeal initially with a gloved hand\no\nApply occlusive dressing, tape on 4 sides.\no\nMonitor for Tension Pneumothorax\n•\nFor Flail Segment\no\nStabilize with bulky dressing.\n▪\nGentle pressure, Do Not impair ventilation.\no\nProvide positive pressure ventilation as needed.\n•\nFor Tension Pneumothorax\no\nPerform needle decompression on the affected side.\n▪\nPreferred location is the 5th intercostal space along the anterior axillary line.\n▪\nAlternate location is the 2nd intercostal space along the midclavicular line.\nPediatric Chest Trauma (Continued)\nSecondary Assessment and Treatment\n•\nPhysical exam and OPQRST/SAMPLE history\no\nExamine the chest for bruising, abrasions, instability, crepitus, and/or open wounds.\no\nAuscultate breath sounds and heart tones.\n•\nMonitor vital signs and O2 saturation, determine GCS\n•\nAdminister prehospital care and resuscitate as needed.\n•\nPerform spinal motion restriction – apply a rigid cervical collar, secure to long spine board.\n•\nInitiate patient transport as soon as possible to the appropriate facility.\no\nConsider transport to trauma center\n•\nAdvanced airway/ventilatory management as needed.\n•\n•\nInitiate IV/IO of normal saline KVO.\no\nIf fluid resuscitation is needed, 20 ml/kg bolus.  See Shock Protocol.\n•\nRe-evaluate ABCs and perform detailed/focused head-to-toe assessment and repeat neurological\nexam.\no\nContinuously monitor patient’s respiratory and perfusion status.\no\nAuscultate breath sounds\no\nApply capnography\no\nPerform blood glucose analysis. Treat if BGL is < 60 mg/dl.\n•\nInitiate cardiac monitoring.\no\nTreat dysrhythmias in accordance with the appropriate protocol.\n•\nContinue resuscitation and evaluation enroute.\nIMPORTANT – NEEDLE CHEST DECOMPRESSION\nIndications for needle chest decompression:\no\nPeri-arrest, PEA, shock with hypotension, and at least one of the following:\n▪\nNeck vein distension\n▪\nTracheal deviation away from injured side.\n▪\nIncreased resistance when ventilating\n▪\nHyper-expanded chest with little movement during respiration.\nNeedle chest decompression should never be utilized based solely on the presence of poor\nor absent breath sounds on one side of the chest.  This procedure has complications and\nshould not be used lightly.  When used appropriately, it can be life-saving.\nCAUTION: Overly aggressive positive pressure ventilation may cause a pneumothorax or\nexacerbate an existing pneumothorax.\nDocument;\n•\nVital Signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control.",
-      "pageText": [
-        {
-          "page": 75,
-          "text": "Pediatric Chest Trauma\nThis protocol applies to pediatric patients presenting with chest trauma.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis.\nPrimary Survey\n•\nMassive hemorrhage\no\nTreat all life-threatening hemorrhage\n▪\nTourniquets for massive extremity hemorrhage\n▪\nWound packing for junctional hemorrhage\n•\nAirway – ensure patency, manually stabilize C-Spine.\no\nHave suction equipment ready\no\nConsider spinal motion restriction if indicated.\n•\nRespiratory/Breathing – give supplemental O2 if signs of compromise. Maintain SpO2 > 94%.\no\nManage any injuries impairing ventilation.\n▪\nChest wounds: Penetrating/Sucking chest wound, impaled objects, bruising\n▪\nSigns of pneumothorax\n▪\nFlail segments\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nCirculation – assess pulses and perfusion status\no\nManage shock appropriately. See Shock Protocol.\n•\nHead/Hypothermia\no\nInitial GCS/AVPU\no\nPupils\no\nPrevent hypothermia\nIf at any time during the primary survey or secondary assessment the following chest\ninjuries are identified, treat immediately.\n•\nFor Penetrating Trauma or Sucking Chest Wound\no\nSeal initially with a gloved hand\no\nApply occlusive dressing, tape on 4 sides.\no\nMonitor for Tension Pneumothorax\n•\nFor Flail Segment\no\nStabilize with bulky dressing.\n▪\nGentle pressure, Do Not impair ventilation.\no\nProvide positive pressure ventilation as needed.\n•\nFor Tension Pneumothorax\no\nPerform needle decompression on the affected side.\n▪\nPreferred location is the 5th intercostal space along the anterior axillary line.\n▪\nAlternate location is the 2nd intercostal space along the midclavicular line."
-        },
-        {
-          "page": 76,
-          "text": "Pediatric Chest Trauma (Continued)\nSecondary Assessment and Treatment\n•\nPhysical exam and OPQRST/SAMPLE history\no\nExamine the chest for bruising, abrasions, instability, crepitus, and/or open wounds.\no\nAuscultate breath sounds and heart tones.\n•\nMonitor vital signs and O2 saturation, determine GCS\n•\nAdminister prehospital care and resuscitate as needed.\n•\nPerform spinal motion restriction – apply a rigid cervical collar, secure to long spine board.\n•\nInitiate patient transport as soon as possible to the appropriate facility.\no\nConsider transport to trauma center\n•\nAdvanced airway/ventilatory management as needed.\n•\n•\nInitiate IV/IO of normal saline KVO.\no\nIf fluid resuscitation is needed, 20 ml/kg bolus.  See Shock Protocol.\n•\nRe-evaluate ABCs and perform detailed/focused head-to-toe assessment and repeat neurological\nexam.\no\nContinuously monitor patient’s respiratory and perfusion status.\no\nAuscultate breath sounds\no\nApply capnography\no\nPerform blood glucose analysis. Treat if BGL is < 60 mg/dl.\n•\nInitiate cardiac monitoring.\no\nTreat dysrhythmias in accordance with the appropriate protocol.\n•\nContinue resuscitation and evaluation enroute.\nIMPORTANT – NEEDLE CHEST DECOMPRESSION\nIndications for needle chest decompression:\no\nPeri-arrest, PEA, shock with hypotension, and at least one of the following:\n▪\nNeck vein distension\n▪\nTracheal deviation away from injured side.\n▪\nIncreased resistance when ventilating\n▪\nHyper-expanded chest with little movement during respiration.\nNeedle chest decompression should never be utilized based solely on the presence of poor\nor absent breath sounds on one side of the chest.  This procedure has complications and\nshould not be used lightly.  When used appropriately, it can be life-saving.\nCAUTION: Overly aggressive positive pressure ventilation may cause a pneumothorax or\nexacerbate an existing pneumothorax.\nDocument;\n•\nVital Signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control."
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Pediatric Chest Trauma. Primary survey, immediate chest injury treatment, secondary assessment, needle chest decompression guidance, and documentation.",
+      "needsReview":false
+    },    {
       "id": "abdominal-and-pelvic-trauma",
       "title": "Abdominal and Pelvic Trauma",
       "type": "protocol",
