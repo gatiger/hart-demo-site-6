@@ -1032,6 +1032,7 @@ function renderPdfStyleTable(block, container) {
   if (block.note) {
     const note = document.createElement('p');
     note.className = 'table-footnote';
+    if (block.noteClassName) note.classList.add(...String(block.noteClassName).split(/\s+/).filter(Boolean));
     note.textContent = block.note;
     wrap.appendChild(note);
   }

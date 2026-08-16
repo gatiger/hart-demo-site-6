@@ -498,7 +498,7 @@
               "status": "active"
             },
             {
-              "id": "tachycardia",
+              "id": "adult-tachycardia",
               "title": "Tachycardia",
               "type": "protocol",
               "pageStart": 99,
@@ -5942,70 +5942,85 @@
       "plainText":"Adult Bradycardia. Primary survey, secondary assessment, Atropine, pacing, vasopressor options, Medical Control, and documentation.",
       "needsReview":false
     },    {
-      "id": "tachycardia",
+      "id": "adult-tachycardia",
       "title": "Tachycardia",
       "type": "protocol",
-      "categoryPath": [
-        "Adult Clinical Protocols",
-        "Adult Cardiac Emergencies"
-      ],
+      "categoryPath": ["Adult Clinical Protocols","Adult Cardiac Emergencies"],
       "status": "active",
       "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 99,
-        "pageEnd": 100,
-        "pageLabel": "99-100"
-      },
-      "summary": "",
+      "source": {"pageStart":99,"pageEnd":100,"pageLabel":"99-100"},
+      "summary": "Assessment and treatment of adult patients presenting with a palpable pulse rate greater than 150 beats per minute.",
       "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Tachycardia"
-        },
-        {
-          "type": "paragraph",
-          "text": "This protocol applies to adult patients who present with a palpable pulse rate > 150 beats per minute. Primary Survey Assess level of consciousness – AVPU Ensure airway – ensure patency and positioning Consider spinal motion restriction if indicated. Assess breathing – Give supplemental O2 if signs of compromise. Maintain SpO2 > 94%. Assist with bag valve mask if respiratory effort is ineffective. Assess circulation – control bleeding and manage shock appropriately. See Shock Protocol Take measures to prevent hypothermia. Secondary Assessment and Treatment Monitor vital signs and O2 saturation. Perform blood glucose analysis – Treat if BGL is < 60 mg/dl. Initiate cardiac monitoring. Record and evaluate 12-Lead ECG. DO NOT delay treatments/therapy for acquisition of 12-Lead. Treat dysrhythmias per the appropriate protocol. Consider EtCO2 monitoring Physical Exam and OPQRST/SAMPLE history Initiate IV/IO of normal saline at a KVO rate. 2nd IV access can be established if time permits. Advanced airway/ventilatory management as needed. Attempt to rule out sinus tachycardia as a potential cause of the symptoms. 220 minus the patient’s age is the upper limit of sinus tachycardia. If sinus tachycardia, search and treat causes. (i.e. hypovolemia, dehydration, trauma, etc.) For Regular Narrow-Complex Tachycardia If no hypertension, acute altered mental status, signs of shock, ischemic chest pain/discomfort, and/or acute heart failure. For narrow complex tachycardia, attempt Valsalva and/or other vagal maneuvers. If regular, consider Adenosine IV/IO. 1st Dose – 6mg IV rapid push followed by 10ml saline flush. 2nd Dose – 12 mg IV rapid push followed by 10 ml saline flush. (If needed) OR If signs of cardiopulmonary compromise, perform immediate Synchronized Cardioversion. If conscious, consider Midazolam 2 – 5 mg IV/IO/IN or Valium 5 – 10 mg IV/IO slowly prior to cardioversion. Monitor respirations after sedation administration. Synchronized Cardioversion: Recommended Doses Narrow-Regular 50 – 100 joules Narrow-Irregular 120 – 200 joules biphasic, 200 joules monophasic Wide-Regular 100 Joules Magnesium Drip Amiodarone Drip 0.9% NaCl 100 ml 100 ml Medication 2 gm Mag Sulfate 150 mg Amiodarone Concentration 20 mg/ml 1.5 mg/ml Tachycardia (Continued) For irregular narrow-complex tachycardia (Atrial Fibrillation/Atrial Flutter) If no hypotension, acute altered mental status, signs of shock, ischemic chest pain/discomfort, and/or acute heart failure: Administer Amiodarone 150 mg IV over 10 minutes. Withhold with Wolff-Parkinson White (WPW) Evidenced by short PR interval and Delta Wave If unstable consider cardioversion. For wide-complex tachycardia (QRS > 0.12 seconds) If no hypotension, acute altered mental status, signs of shock, ischemic chest pain/discomfort, and/or acute heart failure: If regular and monomorphic consider Adenosine IV/IO 1st dose 6 mg, administer rapidly followed by 10 ml flush. 2nd dose 12 mg administer rapidly followed by 10 ml flush. (if required)"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "If signs of cardiopulmonary compromise"
-        },
-        {
-          "type": "paragraph",
-          "text": "Perform immediate Synchronized Cardioversion If conscious, consider administration of Midazolam 2 – 5 mg IV/IO/IN slowly, or Valium 5 – 10 mg IV/IO prior to cardioversion. Monitor Respirations. If, at any time, a cardiac rhythm other than a tachycardia is noted, treat based on the appropriate protocol. If tachycardia persists, despite synchronized cardioversion and/or adenosine administration: If narrow-complex tachycardia, consider additional anti-dysrhythmics. If wide-complex tachycardia, consider Amiodarone 150 mg IV/IO over 10 minutes. May repeat dose once. Consider following 150 mg Amiodarone bolus with maintenance infusion at 1 mg/min. If polymorphic, wide-complex tachycardia (Torsade’s), administer Magnesium Sulfate 1 – 2 grams in 100 ml D5W over 5 – 60 minutes IV. Titrate to control Torsade’s. Note: for wide-irregular rhythms utilize the defibrillation dose (not synchronized)."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vital Signs OPQRST/SAMPLE Cardiac rhythm Treatment(s) Communication with Medical Control. *Lidocaine may be utilized in replacement of Amiodarone. Administer Lidocaine at 1 – 1.5 mg/kg. Max Dose – 3 mg/kg."
-        }
+        {"type":"heading","level":2,"text":"Tachycardia"},
+        {"type":"paragraph","text":"This protocol applies to adult patients who present with a palpable pulse rate > 150 beats per minute."},
+        {"type":"flow-stage","title":"Primary Survey","arrowAfter":true,"items":[
+          "Assess level of consciousness – AVPU.",
+          {"text":"Ensure airway – ensure patency and positioning.","bold":["Ensure airway"]},
+          {"text":"Consider spinal motion restriction if indicated.","indent":1},
+          {"text":"Assess breathing – give supplemental O₂ if signs of compromise. Maintain SpO₂ ≥ 94%.","bold":["Assess breathing","Maintain SpO₂ ≥ 94%."]},
+          {"text":"Assist with bag valve mask if respiratory effort is ineffective.","indent":1},
+          {"text":"Assess circulation – control bleeding and manage shock appropriately. See Shock Protocol.","bold":["Assess circulation"],"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          {"text":"Take measures to prevent hypothermia.","indent":1}
+        ]},
+        {"type":"flow-stage","title":"Secondary Assessment and Treatment","arrowAfter":true,"items":[
+          "Monitor vital signs and O₂ saturation.",
+          {"text":"Perform blood glucose analysis – treat if BGL is < 60 mg/dl.","bold":["BGL is < 60 mg/dl."]},
+          "Initiate cardiac monitoring.",
+          {"text":"Record and evaluate 12-Lead ECG.","indent":1},
+          {"text":"DO NOT delay treatments/therapy for acquisition of 12-Lead.","indent":1,"bold":["DO NOT delay treatments/therapy for acquisition of 12-Lead."]},
+          {"text":"Treat dysrhythmias per the appropriate protocol.","indent":1},
+          "Consider EtCO₂ monitoring.",
+          "Physical exam and OPQRST/SAMPLE history.",
+          "Initiate IV/IO of normal saline at a KVO rate.",
+          {"text":"2nd IV access can be established if time permits.","indent":1},
+          "Advanced airway/ventilatory management as needed.",
+          {"text":"Attempt to rule out sinus tachycardia as a potential cause of the symptoms. 220 minus the patient’s age is the upper limit of sinus tachycardia.","icon":"assets/legend-important.webp","iconAlt":"Important protocol information","bold":["Attempt to rule out sinus tachycardia as a potential cause of the symptoms. 220 minus the patient’s age is the upper limit of sinus tachycardia."],"red":["Attempt to rule out sinus tachycardia as a potential cause of the symptoms. 220 minus the patient’s age is the upper limit of sinus tachycardia."]},
+          "If sinus tachycardia, search and treat causes. (i.e. hypovolemia, dehydration, trauma, etc.)"
+        ]},
+        {"type":"flow-stage","title":"For Regular Narrow-Complex Tachycardia","arrowAfter":true,"items":[
+          "If no hypotension, acute altered mental status, signs of shock, ischemic chest pain/discomfort, and/or acute heart failure:",
+          {"text":"For narrow complex tachycardia, attempt Valsalva and/or other vagal maneuvers.","indent":1},
+          {"text":"If regular, consider Adenosine IV/IO.","indent":1,"links":[{"text":"Adenosine","protocolId":"adenosine-adenocard"}]},
+          {"text":"1st Dose – 6 mg IV rapid push followed by 10 ml saline flush.","indent":2,"bold":["1st Dose – 6 mg"]},
+          {"text":"2nd Dose – 12 mg IV rapid push followed by 10 ml saline flush. (if needed)","indent":2,"bold":["2nd Dose – 12 mg"]},
+          {"text":"OR","indent":1,"bold":["OR"]},
+          "If signs of cardiopulmonary compromise, perform immediate Synchronized Cardioversion.",
+          {"text":"If conscious, consider Midazolam 2–5 mg IV/IO/IN or Valium 5–10 mg IV/IO slowly prior to cardioversion.","indent":1,"bold":["2–5 mg","5–10 mg"],"links":[{"text":"Midazolam","protocolId":"midazolam-versed"},{"text":"Valium","protocolId":"diazepam"}]},
+          {"text":"Monitor respirations after sedation administration.","indent":2}
+        ]},
+        {"type":"flow-stage","title":"For Irregular Narrow-Complex Tachycardia (Atrial Fibrillation/Atrial Flutter)","arrowAfter":true,"items":[
+          "If no hypotension, acute altered mental status, signs of shock, ischemic chest pain/discomfort, and/or acute heart failure:",
+          {"text":"Administer Amiodarone 150 mg IV over 10 minutes.","indent":1,"bold":["150 mg IV over 10 minutes."],"links":[{"text":"Amiodarone","protocolId":"amiodarone-cordarone"}]},
+          {"text":"Withhold with Wolff-Parkinson White (WPW).","indent":2},
+          {"text":"Evidenced by short PR interval and Delta Wave.","indent":3},
+          {"text":"If unstable consider cardioversion.","indent":1}
+        ]},
+        {"type":"flow-stage","title":"For Wide-Complex Tachycardia (QRS ≥ 0.12 seconds)","arrowAfter":true,"items":[
+          "If no hypotension, acute altered mental status, signs of shock, ischemic chest pain/discomfort, and/or acute heart failure:",
+          {"text":"If regular and monomorphic consider Adenosine IV/IO.","indent":1,"links":[{"text":"Adenosine","protocolId":"adenosine-adenocard"}]},
+          {"text":"1st dose 6 mg, administer rapidly followed by 10 ml flush.","indent":2,"bold":["1st dose 6 mg"]},
+          {"text":"2nd dose 12 mg, administer rapidly followed by 10 ml flush. (if required)","indent":2,"bold":["2nd dose 12 mg"]},
+          {"text":"If signs of cardiopulmonary compromise:","indent":1},
+          {"text":"Perform immediate Synchronized Cardioversion.","indent":2,"bold":["Synchronized Cardioversion"]},
+          {"text":"If conscious, consider administration of Midazolam 2–5 mg IV/IO/IN slowly, or Valium 5–10 mg IV/IO prior to cardioversion. Monitor respirations.","indent":3,"bold":["2–5 mg","5–10 mg"],"links":[{"text":"Midazolam","protocolId":"midazolam-versed"},{"text":"Valium","protocolId":"diazepam"}]},
+          "If at any time, a cardiac rhythm other than a tachycardia is noted, treat based on the appropriate protocol."
+        ]},
+        {"type":"flow-stage","title":"Persistent Tachycardia Treatment","items":[
+          "If tachycardia persists, despite synchronized cardioversion and/or adenosine administration:",
+          {"text":"If narrow-complex tachycardia, consider additional anti-dysrhythmics.","indent":1},
+          {"text":"If wide-complex tachycardia, consider Amiodarone 150 mg IV/IO over 10 minutes.","indent":1,"bold":["150 mg IV/IO over 10 minutes."],"links":[{"text":"Amiodarone","protocolId":"amiodarone-cordarone"}]},
+          {"text":"May repeat dose once.","indent":2},
+          {"text":"Consider following 150 mg Amiodarone bolus with maintenance infusion at 1 mg/min.","indent":2,"bold":["150 mg","1 mg/min."],"links":[{"text":"Amiodarone","protocolId":"amiodarone-cordarone"}]},
+          {"text":"If polymorphic, wide-complex tachycardia (Torsades), administer Magnesium Sulfate 1–2 grams in 100 ml D₅W over 5–60 minutes IV. Titrate to control Torsade’s.","bold":["1–2 grams","5–60 minutes"],"links":[{"text":"Magnesium Sulfate","protocolId":"magnesium-sulfate"}]}
+        ]},
+        {"type":"table","caption":"Synchronized Cardioversion: Recommended Doses","headers":["Rhythm","Recommended Dose"],"rows":[["Narrow-Regular","50–100 Joules"],["Narrow-Irregular","120–200 joules biphasic, 200 joules monophasic"],["Wide-Regular","100 Joules"]],"note":"For wide-irregular rhythms utilize the defibrillation dose (not synchronized).","noteClassName":"table-footnote-red"},
+        {"type":"table","caption":"Maintenance Infusion Mixing","headers":["","Magnesium Drip","Amiodarone Drip"],"rows":[["0.9% NaCl","100 ml","100 ml"],["Medication","2 gm Mag Sulfate","150 mg Amiodarone"],["Concentration","20 mg/ml","1.5 mg/ml"]]},
+        {"type":"icon-note","image":"assets/legend-important.webp","alt":"Important medication substitution note","text":"Lidocaine may be utilized in replacement of Amiodarone. Administer Lidocaine at 1–1.5 mg/kg. Max Dose – 3 mg/kg.","bold":["1–1.5 mg/kg.","Max Dose – 3 mg/kg."],"links":[{"text":"Lidocaine","protocolId":"lidocaine-xylocaine"},{"text":"Amiodarone","protocolId":"amiodarone-cordarone"}]},
+        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital Signs","OPQRST/SAMPLE","Cardiac rhythm","Treatment(s)","Communication with Medical Control"]}
       ],
-      "plainText": "Tachycardia\nThis protocol applies to adult patients who present with a palpable pulse rate > 150 beats per\nminute.\nPrimary Survey\n•\nAssess level of consciousness – AVPU\n•\nEnsure airway – ensure patency and positioning\no\nConsider spinal motion restriction if indicated.\n•\nAssess breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nAssess circulation – control bleeding and manage shock appropriately. See Shock Protocol\no\nTake measures to prevent hypothermia.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation.\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nInitiate cardiac monitoring.\no\nRecord and evaluate 12-Lead ECG.\no\nDO NOT delay treatments/therapy for acquisition of 12-Lead.\no\nTreat dysrhythmias per the appropriate protocol.\n•\nConsider EtCO2 monitoring\n•\nPhysical Exam and OPQRST/SAMPLE history\n•\nInitiate IV/IO of normal saline at a KVO rate.\no\n2nd IV access can be established if time permits.\n•\nAdvanced airway/ventilatory management as needed.\nAttempt to rule out sinus tachycardia as a potential cause of the symptoms. 220 minus the\npatient’s age is the upper limit of sinus tachycardia.\n•\nIf sinus tachycardia, search and treat causes. (i.e. hypovolemia, dehydration, trauma, etc.)\nFor Regular Narrow-Complex Tachycardia\n•\nIf no hypertension, acute altered mental status, signs of shock, ischemic chest pain/discomfort,\nand/or acute heart failure.\no\nFor narrow complex tachycardia, attempt Valsalva and/or other vagal maneuvers.\no\nIf regular, consider Adenosine IV/IO.\n▪\n1st Dose – 6mg IV rapid push followed by 10ml saline flush.\n▪\n2nd Dose – 12 mg IV rapid push followed by 10 ml saline flush. (If needed)\nOR\n•\nIf signs of cardiopulmonary compromise, perform immediate Synchronized Cardioversion.\no\nIf conscious, consider Midazolam 2 – 5 mg IV/IO/IN or Valium 5 – 10 mg IV/IO slowly\nprior to cardioversion.\n▪\nMonitor respirations after sedation administration.\nSynchronized Cardioversion: Recommended Doses\nNarrow-Regular\n50 – 100 joules\nNarrow-Irregular\n120 – 200 joules biphasic, 200 joules monophasic\nWide-Regular\n100 Joules\nMagnesium\nDrip\nAmiodarone\nDrip\n0.9% NaCl\n100 ml\n100 ml\nMedication\n2 gm Mag Sulfate\n150 mg Amiodarone\nConcentration\n20 mg/ml\n1.5 mg/ml\nTachycardia (Continued)\nFor irregular narrow-complex tachycardia (Atrial Fibrillation/Atrial Flutter)\n•\nIf no hypotension, acute altered mental status, signs of shock, ischemic chest pain/discomfort,\nand/or acute heart failure:\no\nAdminister Amiodarone 150 mg IV over 10 minutes.\n▪\nWithhold with Wolff-Parkinson White (WPW)\n•\nEvidenced by short PR interval and Delta Wave\no\nIf unstable consider cardioversion.\nFor wide-complex tachycardia (QRS > 0.12 seconds)\n•\nIf no hypotension, acute altered mental status, signs of shock, ischemic chest pain/discomfort,\nand/or acute heart failure:\no\nIf regular and monomorphic consider Adenosine IV/IO\n▪\n1st dose 6 mg, administer rapidly followed by 10 ml flush.\n▪\n2nd dose 12 mg administer rapidly followed by 10 ml flush. (if required)\no\nIf signs of cardiopulmonary compromise:\n▪\nPerform immediate Synchronized Cardioversion\n•\nIf conscious, consider administration of Midazolam 2 – 5 mg IV/IO/IN\nslowly, or Valium 5 – 10 mg IV/IO prior to cardioversion. Monitor\nRespirations.\n•\nIf, at any time, a cardiac rhythm other than a tachycardia is noted, treat based on the appropriate\nprotocol.\n•\nIf tachycardia persists, despite synchronized cardioversion and/or adenosine administration:\no\nIf narrow-complex tachycardia, consider additional anti-dysrhythmics.\no\nIf wide-complex tachycardia, consider Amiodarone 150 mg IV/IO over 10 minutes.\n▪\nMay repeat dose once.\n▪\nConsider following 150 mg Amiodarone bolus with maintenance infusion at 1\nmg/min.\n•\nIf polymorphic, wide-complex tachycardia (Torsade’s), administer Magnesium Sulfate 1 – 2 grams\nin 100 ml D5W over 5 – 60 minutes IV. Titrate to control Torsade’s.\nNote: for wide-irregular rhythms utilize the defibrillation dose (not synchronized).\nDocument:\n•\nVital Signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control.\n*Lidocaine may be utilized in replacement of Amiodarone.\nAdminister Lidocaine at 1 – 1.5 mg/kg.  Max Dose – 3 mg/kg.",
-      "pageText": [
-        {
-          "page": 99,
-          "text": "Tachycardia\nThis protocol applies to adult patients who present with a palpable pulse rate > 150 beats per\nminute.\nPrimary Survey\n•\nAssess level of consciousness – AVPU\n•\nEnsure airway – ensure patency and positioning\no\nConsider spinal motion restriction if indicated.\n•\nAssess breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nAssess circulation – control bleeding and manage shock appropriately. See Shock Protocol\no\nTake measures to prevent hypothermia.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation.\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nInitiate cardiac monitoring.\no\nRecord and evaluate 12-Lead ECG.\no\nDO NOT delay treatments/therapy for acquisition of 12-Lead.\no\nTreat dysrhythmias per the appropriate protocol.\n•\nConsider EtCO2 monitoring\n•\nPhysical Exam and OPQRST/SAMPLE history\n•\nInitiate IV/IO of normal saline at a KVO rate.\no\n2nd IV access can be established if time permits.\n•\nAdvanced airway/ventilatory management as needed.\nAttempt to rule out sinus tachycardia as a potential cause of the symptoms. 220 minus the\npatient’s age is the upper limit of sinus tachycardia.\n•\nIf sinus tachycardia, search and treat causes. (i.e. hypovolemia, dehydration, trauma, etc.)\nFor Regular Narrow-Complex Tachycardia\n•\nIf no hypertension, acute altered mental status, signs of shock, ischemic chest pain/discomfort,\nand/or acute heart failure.\no\nFor narrow complex tachycardia, attempt Valsalva and/or other vagal maneuvers.\no\nIf regular, consider Adenosine IV/IO.\n▪\n1st Dose – 6mg IV rapid push followed by 10ml saline flush.\n▪\n2nd Dose – 12 mg IV rapid push followed by 10 ml saline flush. (If needed)\nOR\n•\nIf signs of cardiopulmonary compromise, perform immediate Synchronized Cardioversion.\no\nIf conscious, consider Midazolam 2 – 5 mg IV/IO/IN or Valium 5 – 10 mg IV/IO slowly\nprior to cardioversion.\n▪\nMonitor respirations after sedation administration."
-        },
-        {
-          "page": 100,
-          "text": "Synchronized Cardioversion: Recommended Doses\nNarrow-Regular\n50 – 100 joules\nNarrow-Irregular\n120 – 200 joules biphasic, 200 joules monophasic\nWide-Regular\n100 Joules\nMagnesium\nDrip\nAmiodarone\nDrip\n0.9% NaCl\n100 ml\n100 ml\nMedication\n2 gm Mag Sulfate\n150 mg Amiodarone\nConcentration\n20 mg/ml\n1.5 mg/ml\nTachycardia (Continued)\nFor irregular narrow-complex tachycardia (Atrial Fibrillation/Atrial Flutter)\n•\nIf no hypotension, acute altered mental status, signs of shock, ischemic chest pain/discomfort,\nand/or acute heart failure:\no\nAdminister Amiodarone 150 mg IV over 10 minutes.\n▪\nWithhold with Wolff-Parkinson White (WPW)\n•\nEvidenced by short PR interval and Delta Wave\no\nIf unstable consider cardioversion.\nFor wide-complex tachycardia (QRS > 0.12 seconds)\n•\nIf no hypotension, acute altered mental status, signs of shock, ischemic chest pain/discomfort,\nand/or acute heart failure:\no\nIf regular and monomorphic consider Adenosine IV/IO\n▪\n1st dose 6 mg, administer rapidly followed by 10 ml flush.\n▪\n2nd dose 12 mg administer rapidly followed by 10 ml flush. (if required)\no\nIf signs of cardiopulmonary compromise:\n▪\nPerform immediate Synchronized Cardioversion\n•\nIf conscious, consider administration of Midazolam 2 – 5 mg IV/IO/IN\nslowly, or Valium 5 – 10 mg IV/IO prior to cardioversion. Monitor\nRespirations.\n•\nIf, at any time, a cardiac rhythm other than a tachycardia is noted, treat based on the appropriate\nprotocol.\n•\nIf tachycardia persists, despite synchronized cardioversion and/or adenosine administration:\no\nIf narrow-complex tachycardia, consider additional anti-dysrhythmics.\no\nIf wide-complex tachycardia, consider Amiodarone 150 mg IV/IO over 10 minutes.\n▪\nMay repeat dose once.\n▪\nConsider following 150 mg Amiodarone bolus with maintenance infusion at 1\nmg/min.\n•\nIf polymorphic, wide-complex tachycardia (Torsade’s), administer Magnesium Sulfate 1 – 2 grams\nin 100 ml D5W over 5 – 60 minutes IV. Titrate to control Torsade’s.\nNote: for wide-irregular rhythms utilize the defibrillation dose (not synchronized).\nDocument:\n•\nVital Signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control.\n*Lidocaine may be utilized in replacement of Amiodarone.\nAdminister Lidocaine at 1 – 1.5 mg/kg.  Max Dose – 3 mg/kg."
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Adult Tachycardia. Assessment, narrow- and wide-complex pathways, cardioversion, medication infusions, substitution guidance, and documentation.",
+      "needsReview":false
+    },    {
       "id": "pulseless-arrest",
       "title": "Pulseless Arrest",
       "type": "protocol",

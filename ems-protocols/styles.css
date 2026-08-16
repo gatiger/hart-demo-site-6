@@ -703,3 +703,5 @@ details[open] > .tree-heading.tree-toggle::before {
 .two-way-card-empty h3 { display: none; }
 .two-way-card-empty::before { content: ""; position: absolute; left: 50%; top: 0; bottom: -2.1rem; border-left: 9px solid #050505; transform: translateX(-50%); }
 .two-way-card-empty::after { display: none; }
+
+.table-footnote-red { color: #c31515; font-weight: 800; }
