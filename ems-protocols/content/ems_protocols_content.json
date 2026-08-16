@@ -560,7 +560,7 @@
               "status": "active"
             },
             {
-              "id": "altered-level-of-consciousness",
+              "id": "adult-altered-level-of-consciousness",
               "title": "Altered Level of Consciousness",
               "type": "protocol",
               "pageStart": 110,
@@ -6594,84 +6594,59 @@
       "displayMode": "structured"
     },
     {
-      "id": "altered-level-of-consciousness",
+      "id": "adult-altered-level-of-consciousness",
       "title": "Altered Level of Consciousness",
       "type": "protocol",
-      "categoryPath": [
-        "Adult Clinical Protocols",
-        "Adult Medical Emergencies"
-      ],
+      "categoryPath": ["Adult Clinical Protocols", "Adult Medical Emergencies"],
       "status": "active",
       "effectiveDate": "2026-06-08",
       "lastRevised": "",
       "version": "2026",
       "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 110,
-        "pageEnd": 110,
-        "pageLabel": "110"
-      },
+      "source": {"pdf": "documents/ems/2026-hcems-protocols.pdf", "pageStart": 110, "pageEnd": 110, "pageLabel": "110"},
       "summary": "",
       "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Altered Level of Consciousness"
-        },
-        {
-          "type": "paragraph",
-          "text": "This protocol applies to adult patients who are disoriented, weak, dizzy, confused, agitated, exhibit bizarre behavior, have had a syncopal episode, or are unconscious. Primary Survey Assess level of consciousness â€“ AVPU Ensure airway â€“ ensure patency and positioning Have suction equipment ready. Consider spinal motion restriction if indicated. Assess breathing â€“ Give supplemental O2 if signs of compromise. Maintain SpO2 > 94%. Assist with bag valve mask if respiratory effort is ineffective. Assess circulation â€“ control bleeding and manage shock appropriately. See Shock Protocol Take measures to prevent hypothermia. Altered LOC and signs of poor perfusion could indicate shock and should be managed appropriately. Secondary Assessment and Treatment Monitor vital signs and O2 saturation. Perform blood glucose analysis. Treat if BGL is < 60 mg/dl."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "If patient can protect and maintain own airway"
-        },
-        {
-          "type": "paragraph",
-          "text": "Administer Oral Glucose 15 grams PO."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "If patient cannot protect their own airway"
-        },
-        {
-          "type": "paragraph",
-          "text": "administer D50W 25 g IV/IO OR D10W 250 ml IV/IO."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "If IV/IO cannot be established"
-        },
-        {
-          "type": "paragraph",
-          "text": "Administer Glucagon 1 mg IM/SQ/IN. Cardiac monitor â€“ record and evaluate 12 Lead ECG. DO NOT delay treatments/therapy for 12-Lead acquisition. Consider EtCO2 monitoring. Physical Exam and OPQRST/SAMPLE history. Initiate IV/IO of normal saline. If fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol. Consider possible causes: (AEIOUTIPS) alcohol, electrolytes, insulin, opiates, uremia trauma, infection, poison, psychogenic, seizure and/or shock. If the patient appears intoxicated, drug overdose, or toxic ingestion, See Toxic Ingestion Protocol. If patient requires restraint, apply soft restraints for crew and patientâ€™s protection. If patient shows continued respiratory depression, consider administration of Naloxone 0.4 mg IV/IO/IN slowly. May repeat x 2 (titrate to patientâ€™s respirations) If patient becomes agitated or violent, See Agitated/Behavioral Protocol. Contact Medical Control for additional orders"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vital signs OPQRST/SAMPLE Cardiac rhythm Treatment(s) Communication with Medical Control."
-        }
+        {"type":"heading","level":2,"text":"Altered Level of Consciousness"},
+        {"type":"paragraph","text":"This protocol applies to adult patients who are disoriented, weak, dizzy, confused, agitated, exhibit bizarre behavior, have had a syncopal episode, or are unconscious."},
+        {"type":"flow-stage","title":"Primary Survey","arrowAfter":true,"items":[
+          {"text":"Assess level of consciousness – AVPU","bold":["Assess level of consciousness"]},
+          {"text":"Ensure airway – ensure patency and positioning","bold":["Ensure airway"]},
+          {"text":"Have suction equipment ready.","indent":1},
+          {"text":"Consider spinal motion restriction if indicated.","indent":1},
+          {"text":"Assess breathing – Give supplemental O₂ if signs of compromise. Maintain SpO₂ ≥ 94%.","bold":["Assess breathing","Maintain SpO₂ ≥ 94%."]},
+          {"text":"Assist with bag valve mask if respiratory effort is ineffective.","indent":1},
+          {"text":"Assess circulation – control bleeding and manage shock appropriately. See Shock Protocol.","bold":["Assess circulation"],"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          {"text":"Take measures to prevent hypothermia.","indent":1},
+          {"text":"Altered LOC and signs of poor perfusion could indicate shock and should be managed appropriately.","bold":["Altered LOC and signs of poor perfusion could indicate shock and should be managed appropriately."],"red":true,"icon":"assets/legend-important.webp","iconAlt":"Important protocol instruction"}
+        ]},
+        {"type":"flow-stage","title":"Secondary Assessment and Treatment","arrowAfter":true,"items":[
+          "Monitor vital signs and O₂ saturation.",
+          {"text":"Perform blood glucose analysis. Treat if BGL is < 60 mg/dl.","bold":["BGL is < 60 mg/dl."]},
+          {"text":"If patient can protect and maintain own airway:","indent":1},
+          {"text":"Administer Oral Glucose 15 grams PO.","indent":2,"bold":["15 grams PO."],"links":[{"text":"Oral Glucose","protocolId":"oral-glucose"}]},
+          {"text":"If patient cannot protect their own airway:","indent":1},
+          {"text":"Administer D₅₀W 25 g IV/IO OR D₁₀W 250 ml IV/IO.","indent":2,"bold":["25 g","250 ml"],"links":[{"text":"D₅₀W","protocolId":"dextrose-d10-25-50"},{"text":"D₁₀W","protocolId":"dextrose-d10-25-50"}]},
+          {"text":"If IV/IO cannot be established:","indent":1},
+          {"text":"Administer Glucagon 1 mg IM/SQ/IN.","indent":2,"bold":["1 mg"],"links":[{"text":"Glucagon","protocolId":"glucagon"}]},
+          "Cardiac monitor – record and evaluate 12 Lead ECG.",
+          {"text":"DO NOT delay treatments/therapy for 12-Lead acquisition.","indent":1,"bold":["DO NOT"]},
+          "Consider EtCO₂ monitoring.",
+          "Physical Exam and OPQRST/SAMPLE history.",
+          "Initiate IV/IO of normal saline.",
+          {"text":"If fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.","indent":1,"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          "Consider possible causes: (AEIOUTIPS) alcohol, electrolytes, insulin, opiates, uremia, trauma, infection, poison, psychogenic, seizure and/or shock.",
+          {"text":"If the patient appears intoxicated, drug overdose, or toxic ingestion, See Toxic Ingestion Protocol.","links":[{"text":"Toxic Ingestion Protocol","protocolId":"toxic-ingestion"}]},
+          "If patient requires restraint, apply soft restraints for crew and patient’s protection.",
+          {"text":"If patient shows continued respiratory depression, consider administration of Naloxone 0.4 mg IV/IO/IN slowly. May repeat x 2 (titrate to patient’s respirations).","bold":["0.4 mg"],"links":[{"text":"Naloxone","protocolId":"naloxone-narcan"}]},
+          {"text":"If patient becomes agitated or violent, See Agitated/Behavioral Protocol.","links":[{"text":"Agitated/Behavioral Protocol","protocolId":"agitation-behavioral-emergency"}]}
+        ]},
+        {"type":"stop-control","title":"STOP","text":"Contact Medical Control for additional orders","image":"assets/legend-medical-control.webp","alt":"Stop and contact Medical Control for additional orders"},
+        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital signs","OPQRST/SAMPLE","Cardiac rhythm","Treatment(s)","Communication with Medical Control"]}
       ],
-      "plainText": "Altered Level of Consciousness\nThis protocol applies to adult patients who are disoriented, weak, dizzy, confused, agitated,\nexhibit bizarre behavior, have had a syncopal episode, or are unconscious.\nPrimary Survey\nâ€¢\nAssess level of consciousness â€“ AVPU\nâ€¢\nEnsure airway â€“ ensure patency and positioning\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\nâ€¢\nAssess breathing â€“ Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nAssist with bag valve mask if respiratory effort is ineffective.\nâ€¢\nAssess circulation â€“ control bleeding and manage shock appropriately. See Shock Protocol\no\nTake measures to prevent hypothermia.\nAltered LOC and signs of poor perfusion could indicate shock and should be managed\nappropriately.\nSecondary Assessment and Treatment\nâ€¢\nMonitor vital signs and O2 saturation.\nâ€¢\nPerform blood glucose analysis.  Treat if BGL is < 60 mg/dl.\no\nIf patient can protect and maintain own airway:\nâ–ª\nAdminister Oral Glucose 15 grams PO.\no\nIf patient cannot protect their own airway:\nâ–ª\nadminister D50W 25 g IV/IO OR D10W 250 ml IV/IO.\no\nIf IV/IO cannot be established:\nâ–ª\nAdminister Glucagon 1 mg IM/SQ/IN.\nâ€¢\nCardiac monitor â€“ record and evaluate 12 Lead ECG.\no\nDO NOT delay treatments/therapy for 12-Lead acquisition.\nâ€¢\nConsider EtCO2 monitoring.\nâ€¢\nPhysical Exam and OPQRST/SAMPLE history.\nâ€¢\nInitiate IV/IO of normal saline.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus.  See Shock Protocol.\nâ€¢\nConsider possible causes: (AEIOUTIPS) alcohol, electrolytes, insulin, opiates, uremia\ntrauma, infection, poison, psychogenic, seizure and/or shock.\nâ€¢\nIf the patient appears intoxicated, drug overdose, or toxic ingestion, See Toxic Ingestion\nProtocol.\nâ€¢\nIf patient requires restraint, apply soft restraints for crew and patientâ€™s protection.\nâ€¢\nIf patient shows continued respiratory depression, consider administration of Naloxone 0.4\nmg IV/IO/IN slowly.  May repeat x 2 (titrate to patientâ€™s respirations)\nâ€¢\nIf patient becomes agitated or violent, See Agitated/Behavioral Protocol.\nContact Medical Control\nfor additional orders\nDocument:\nâ€¢\nVital signs\nâ€¢\nOPQRST/SAMPLE\nâ€¢\nCardiac rhythm\nâ€¢\nTreatment(s)\nâ€¢\nCommunication with\nMedical Control.",
-      "pageText": [
-        {
-          "page": 110,
-          "text": "Altered Level of Consciousness\nThis protocol applies to adult patients who are disoriented, weak, dizzy, confused, agitated,\nexhibit bizarre behavior, have had a syncopal episode, or are unconscious.\nPrimary Survey\nâ€¢\nAssess level of consciousness â€“ AVPU\nâ€¢\nEnsure airway â€“ ensure patency and positioning\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\nâ€¢\nAssess breathing â€“ Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nAssist with bag valve mask if respiratory effort is ineffective.\nâ€¢\nAssess circulation â€“ control bleeding and manage shock appropriately. See Shock Protocol\no\nTake measures to prevent hypothermia.\nAltered LOC and signs of poor perfusion could indicate shock and should be managed\nappropriately.\nSecondary Assessment and Treatment\nâ€¢\nMonitor vital signs and O2 saturation.\nâ€¢\nPerform blood glucose analysis.  Treat if BGL is < 60 mg/dl.\no\nIf patient can protect and maintain own airway:\nâ–ª\nAdminister Oral Glucose 15 grams PO.\no\nIf patient cannot protect their own airway:\nâ–ª\nadminister D50W 25 g IV/IO OR D10W 250 ml IV/IO.\no\nIf IV/IO cannot be established:\nâ–ª\nAdminister Glucagon 1 mg IM/SQ/IN.\nâ€¢\nCardiac monitor â€“ record and evaluate 12 Lead ECG.\no\nDO NOT delay treatments/therapy for 12-Lead acquisition.\nâ€¢\nConsider EtCO2 monitoring.\nâ€¢\nPhysical Exam and OPQRST/SAMPLE history.\nâ€¢\nInitiate IV/IO of normal saline.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus.  See Shock Protocol.\nâ€¢\nConsider possible causes: (AEIOUTIPS) alcohol, electrolytes, insulin, opiates, uremia\ntrauma, infection, poison, psychogenic, seizure and/or shock.\nâ€¢\nIf the patient appears intoxicated, drug overdose, or toxic ingestion, See Toxic Ingestion\nProtocol.\nâ€¢\nIf patient requires restraint, apply soft restraints for crew and patientâ€™s protection.\nâ€¢\nIf patient shows continued respiratory depression, consider administration of Naloxone 0.4\nmg IV/IO/IN slowly.  May repeat x 2 (titrate to patientâ€™s respirations)\nâ€¢\nIf patient becomes agitated or violent, See Agitated/Behavioral Protocol.\nContact Medical Control\nfor additional orders\nDocument:\nâ€¢\nVital signs\nâ€¢\nOPQRST/SAMPLE\nâ€¢\nCardiac rhythm\nâ€¢\nTreatment(s)\nâ€¢\nCommunication with\nMedical Control."
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Altered Level of Consciousness. Adult assessment and treatment for disorientation, weakness, dizziness, confusion, agitation, bizarre behavior, syncope, or unconsciousness.",
+      "needsReview":false,
+      "displayMode":"structured"
+    },    {
       "id": "chest-pain-stemi",
       "title": "Chest Pain / STEMI",
       "type": "protocol",
