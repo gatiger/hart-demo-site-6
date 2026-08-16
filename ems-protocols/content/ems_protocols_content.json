@@ -584,7 +584,7 @@
               "status": "active"
             },
             {
-              "id": "cold-related-emergencies",
+              "id": "adult-cold-related-emergencies",
               "title": "Cold Related Emergencies",
               "type": "protocol",
               "pageStart": 117,
@@ -6782,61 +6782,61 @@
       "needsReview":false,
       "displayMode":"structured"
     },{
-      "id": "cold-related-emergencies",
+      "id": "adult-cold-related-emergencies",
       "title": "Cold Related Emergencies",
       "type": "protocol",
-      "categoryPath": [
-        "Adult Clinical Protocols",
-        "Adult Medical Emergencies"
-      ],
+      "categoryPath": ["Adult Clinical Protocols", "Adult Medical Emergencies"],
       "status": "active",
       "effectiveDate": "2026-06-08",
       "lastRevised": "",
       "version": "2026",
       "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 117,
-        "pageEnd": 118,
-        "pageLabel": "117-118"
-      },
+      "source": {"pdf":"documents/ems/2026-hcems-protocols.pdf","pageStart":117,"pageEnd":118,"pageLabel":"117-118"},
       "summary": "",
       "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Cold Related Emergencies"
-        },
-        {
-          "type": "paragraph",
-          "text": "This protocol applies to adult patients having a body temperature below 95o F (35o C) secondary to environmental exposure. Primary Survey Assess level of consciousness – AVPU Ensure airway – ensure patency and positioning Use least invasive means possible to secure airway. Intubate only, if necessary, as gently as possible. Have suction equipment ready. Consider spinal motion restriction if indicated. Assess breathing – Give supplemental O2 if signs of compromise. Maintain SpO2 > 94%. Assist with bag valve mask if respiratory effort is ineffective. Assess circulation – check for pulse – if no pulse, begin CPR. It may be necessary to assess pulse and respirations for up to 30 – 45 seconds to confirm arrest. If no pulse, initiate CPR and AED/Defibrillator using most current AHA Guidelines. If severe hypothermia (< 86o F/30o C) is strongly suspected, limit defibrillation attempts to 1 and withhold medications. If body temperature is > 86o F/30o C treat in accordance with the Pulseless Arrest Protocol. Resuscitation efforts should continue until core temperature approaches normal. If pulse is present, DO NOT initiate CPR, no matter how slow the rate. Treat bradycardia only if the patient is hypotensive. Carefully move patient to a warm environment, remove all wet clothing, dry the patient and cover with blankets. Avoid any rough movement that may cause cardiac dysrhythmias. It may be beneficial to immobilize the patient on a backboard. Secondary Assessment and Treatment Monitor vital signs and O2 saturation. Perform blood glucose analysis – Treat if BGL is < 60 mg/dl. Initiate cardiac monitoring. Physical Exam and OPQRST/SAMPLE history. Initiate IV/IO of warm normal saline at KVO rate. If fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol. Apply hot packs to groin, axilla, neck and chest. Cold Related Emergencies (Continued) Secondary Assessment and Treatment (Continued) Protect injured, frostbitten areas, DO NOT rub or place on heated surface. Remove clothing and jewelry from injured parts. DO NOT attempt to thaw injured part with localized heat. Severe frostbite injuries should be transported to a trauma center. Consider Morphine Sulfate for pain relief when the patent is conscious, alert, is not hypotensive and is complaining of severe pain. See Pain Management Protocol. Administer Morphine Sulfate 2 mg IV slow push in 5 – 10 minute intervals. Max Dose 10 mg."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vital Signs OPQRST/SAMPLE Cardiac rhythm Treatment(s) Communication with Medical Control"
-        }
+        {"type":"heading","level":2,"text":"Cold Related Emergencies"},
+        {"type":"paragraph","text":"This protocol applies to adult patients having a body temperature below 95° F (35° C) secondary to environmental exposure."},
+        {"type":"flow-stage","title":"Primary Survey","arrowAfter":true,"items":[
+          {"text":"Assess level of consciousness – AVPU","bold":["Assess level of consciousness"]},
+          {"text":"Ensure airway – ensure patency and positioning","bold":["Ensure airway"]},
+          {"text":"Use least invasive means possible to secure airway.","indent":1},
+          {"text":"Intubate only, if necessary, as gently as possible.","indent":2},
+          {"text":"Have suction equipment ready.","indent":1},
+          {"text":"Consider spinal motion restriction if indicated.","indent":1},
+          {"text":"Assess breathing – Give supplemental O₂ if signs of compromise. Maintain SpO₂ ≥ 94%.","bold":["Assess breathing","Maintain SpO₂ ≥ 94%."]},
+          {"text":"Assist with bag valve mask if respiratory effort is ineffective.","indent":1},
+          {"text":"Assess circulation – check for pulse – if no pulse, begin CPR.","bold":["Assess circulation"]},
+          {"text":"It may be necessary to assess pulse and respirations for up to 30–45 seconds to confirm arrest.","bold":["It may be necessary to assess pulse and respirations for up to 30–45 seconds to confirm arrest."],"red":true,"icon":"assets/legend-important.webp","iconAlt":"Important protocol instruction"},
+          {"text":"If no pulse, initiate CPR and AED/Defibrillator using most current AHA Guidelines.","bold":["AHA Guidelines"]},
+          {"text":"If severe hypothermia (< 86° F/30° C) is strongly suspected, limit defibrillation attempts to 1 and withhold medications.","indent":1},
+          {"text":"If body temperature is > 86° F/30° C treat in accordance with the Pulseless Arrest Protocol.","indent":1,"links":[{"text":"Pulseless Arrest Protocol","protocolId":"adult-pulseless-arrest"}]},
+          {"text":"Resuscitation efforts should continue until core temperature approaches normal range.","indent":1},
+          {"text":"If pulse is present, DO NOT initiate CPR, no matter how slow the rate.","bold":["DO NOT"]},
+          {"text":"Treat bradycardia only if the patient is hypotensive.","indent":1},
+          "Carefully move patient to a warm environment, remove all wet clothing, dry the patient and cover with blankets.",
+          {"text":"Avoid any rough movement that may cause cardiac dysrhythmias. It may be beneficial to immobilize the patient on a backboard.","bold":["Avoid any rough movement that may cause cardiac dysrhythmias. It may be beneficial to immobilize the patient on a backboard."]}
+        ]},
+        {"type":"flow-stage","title":"Secondary Assessment and Treatment","items":[
+          "Monitor vital signs and O₂ saturation.",
+          {"text":"Perform blood glucose analysis – Treat if BGL is < 60 mg/dl.","bold":["BGL is < 60 mg/dl."]},
+          "Initiate cardiac monitoring.",
+          "Physical Exam and OPQRST/SAMPLE history.",
+          "Initiate IV/IO of warm normal saline at KVO rate.",
+          {"text":"If fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.","indent":1,"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          {"text":"Apply hot packs to groin, axilla, neck and chest.","bold":["groin, axilla, neck and chest."]},
+          "Protect injured, frostbitten areas, DO NOT rub or place on heated surface.",
+          {"text":"Remove clothing and jewelry from injured body parts.","indent":1},
+          {"text":"DO NOT attempt to thaw injured part with localized heat.","indent":1,"bold":["DO NOT"]},
+          {"text":"Severe frostbite injuries should be transported to a trauma center.","indent":1},
+          {"text":"Consider Morphine Sulfate for pain relief when the patient is conscious, alert, is not hypotensive and is complaining of severe pain. See Pain Management Protocol.","links":[{"text":"Morphine Sulfate","protocolId":"morphine-sulfate"},{"text":"Pain Management Protocol","protocolId":"adult-pain-management"}]},
+          {"text":"Administer Morphine Sulfate 2 mg IV slow push in 5–10 minute intervals. Max Dose 10 mg.","indent":1,"bold":["2 mg","5–10 minute intervals.","Max Dose 10 mg."],"links":[{"text":"Morphine Sulfate","protocolId":"morphine-sulfate"}]}
+        ]},
+        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital Signs","OPQRST/SAMPLE","Cardiac rhythm","Treatment(s)","Communication with Medical Control"]}
       ],
-      "plainText": "Cold Related Emergencies\nThis protocol applies to adult patients having a body temperature below 95o F (35o C) secondary\nto environmental exposure.\nPrimary Survey\n•\nAssess level of consciousness – AVPU\n•\nEnsure airway – ensure patency and positioning\no\nUse least invasive means possible to secure airway.\n▪\nIntubate only, if necessary, as gently as possible.\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\n•\nAssess breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nAssess circulation – check for pulse – if no pulse, begin CPR.\nIt may be necessary to assess pulse and respirations for up to 30 – 45 seconds to confirm\narrest.\n•\nIf no pulse, initiate CPR and AED/Defibrillator using most current AHA Guidelines.\no\nIf severe hypothermia (< 86o F/30o C) is strongly suspected, limit defibrillation attempts to 1\nand withhold medications.\no\nIf body temperature is > 86o F/30o C treat in accordance with the Pulseless Arrest\nProtocol.\no\nResuscitation efforts should continue until core temperature approaches normal.\n•\nIf pulse is present, DO NOT initiate CPR, no matter how slow the rate.\no\nTreat bradycardia only if the patient is hypotensive.\n•\nCarefully move patient to a warm environment, remove all wet clothing, dry the patient and cover\nwith blankets.\n•\nAvoid any rough movement that may cause cardiac dysrhythmias. It may be beneficial to\nimmobilize the patient on a backboard.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation.\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nInitiate cardiac monitoring.\n•\nPhysical Exam and OPQRST/SAMPLE history.\n•\nInitiate IV/IO of warm normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.\n•\nApply hot packs to groin, axilla, neck and chest.\nCold Related Emergencies (Continued)\nSecondary Assessment and Treatment (Continued)\n•\nProtect injured, frostbitten areas, DO NOT rub or place on heated surface.\no\nRemove clothing and jewelry from injured parts.\no\nDO NOT attempt to thaw injured part with localized heat.\no\nSevere frostbite injuries should be transported to a trauma center.\n•\nConsider Morphine Sulfate for pain relief when the patent is conscious, alert, is not hypotensive\nand is complaining of severe pain.  See Pain Management Protocol.\no\nAdminister Morphine Sulfate  2 mg IV slow push in 5 – 10 minute intervals. Max Dose 10\nmg.\nDocument:\n•\nVital Signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control",
-      "pageText": [
-        {
-          "page": 117,
-          "text": "Cold Related Emergencies\nThis protocol applies to adult patients having a body temperature below 95o F (35o C) secondary\nto environmental exposure.\nPrimary Survey\n•\nAssess level of consciousness – AVPU\n•\nEnsure airway – ensure patency and positioning\no\nUse least invasive means possible to secure airway.\n▪\nIntubate only, if necessary, as gently as possible.\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\n•\nAssess breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nAssess circulation – check for pulse – if no pulse, begin CPR.\nIt may be necessary to assess pulse and respirations for up to 30 – 45 seconds to confirm\narrest.\n•\nIf no pulse, initiate CPR and AED/Defibrillator using most current AHA Guidelines.\no\nIf severe hypothermia (< 86o F/30o C) is strongly suspected, limit defibrillation attempts to 1\nand withhold medications.\no\nIf body temperature is > 86o F/30o C treat in accordance with the Pulseless Arrest\nProtocol.\no\nResuscitation efforts should continue until core temperature approaches normal.\n•\nIf pulse is present, DO NOT initiate CPR, no matter how slow the rate.\no\nTreat bradycardia only if the patient is hypotensive.\n•\nCarefully move patient to a warm environment, remove all wet clothing, dry the patient and cover\nwith blankets.\n•\nAvoid any rough movement that may cause cardiac dysrhythmias. It may be beneficial to\nimmobilize the patient on a backboard.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation.\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nInitiate cardiac monitoring.\n•\nPhysical Exam and OPQRST/SAMPLE history.\n•\nInitiate IV/IO of warm normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.\n•\nApply hot packs to groin, axilla, neck and chest."
-        },
-        {
-          "page": 118,
-          "text": "Cold Related Emergencies (Continued)\nSecondary Assessment and Treatment (Continued)\n•\nProtect injured, frostbitten areas, DO NOT rub or place on heated surface.\no\nRemove clothing and jewelry from injured parts.\no\nDO NOT attempt to thaw injured part with localized heat.\no\nSevere frostbite injuries should be transported to a trauma center.\n•\nConsider Morphine Sulfate for pain relief when the patent is conscious, alert, is not hypotensive\nand is complaining of severe pain.  See Pain Management Protocol.\no\nAdminister Morphine Sulfate  2 mg IV slow push in 5 – 10 minute intervals. Max Dose 10\nmg.\nDocument:\n•\nVital Signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control"
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Cold Related Emergencies. Adult assessment and treatment for environmental hypothermia and frostbite.",
+      "needsReview":false,
+      "displayMode":"structured"
+    },{
       "id": "dystonic-reaction",
       "title": "Dystonic Reaction",
       "type": "protocol",
