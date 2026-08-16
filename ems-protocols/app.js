@@ -571,6 +571,7 @@ function appendPhoneAwareText(element, value) {
     const li = document.createElement('li');
     const itemData = typeof item === 'object' ? item : { text: item };
     const redPhrases = itemData.red === true ? [itemData.text || ''] : (itemData.red || []);
+    if (itemData.struck) li.classList.add('protocol-struck-flow-item');
     if (redPhrases.length) li.classList.add('protocol-red-flow-item');
     if (itemData.indent) li.classList.add(`flow-item-indent-${Math.min(Number(itemData.indent) || 1, 3)}`);
     if (itemData.pairs?.length) {

@@ -697,3 +697,4 @@ details[open] > .tree-heading.tree-toggle::before {
 .assessment-paired-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .25rem 1rem; }
 .assessment-paired-grid span { padding-bottom: .15rem; border-bottom: 1px dotted #c7d2dc; }
 @media (max-width: 440px) { .assessment-paired-grid { grid-template-columns: 1fr; } }
+.protocol-struck-flow-item { color: #52677a; text-decoration: line-through; text-decoration-thickness: 2px; }

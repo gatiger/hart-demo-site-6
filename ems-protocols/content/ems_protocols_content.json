@@ -5657,66 +5657,65 @@
       "id": "pain-management",
       "title": "Pain Management",
       "type": "protocol",
-      "categoryPath": [
-        "Adult Clinical Protocols"
-      ],
+      "categoryPath": ["Adult Clinical Protocols"],
       "status": "active",
       "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 91,
-        "pageEnd": 92,
-        "pageLabel": "91-92"
-      },
-      "summary": "",
+      "source": {"pageStart":91,"pageEnd":92,"pageLabel":"91-92"},
+      "summary": "Assessment and treatment of adult patients suffering from severe pain or discomfort.",
       "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Adult Pain Management"
-        },
-        {
-          "type": "paragraph",
-          "text": "This protocol applies to adult patients suffering from severe pain or discomfort, including isolated extremity injuries, musculoskeletal or soft tissue injures, flank pain due to suspected kidney stones, sickle cell crisis, burns or any other cause. Primary Survey Assess level of consciousness – AVPU Ensure airway – ensure patency and positioning Consider spinal motion restriction if indicated. Assess breathing – Give supplemental O2 if signs of compromise. Maintain SpO2 > 94%. Assist with bag valve mask if respiratory effort is ineffective. Assess circulation – control bleeding and manage shock appropriately. See Shock Protocol. Take measures to prevent hypothermia. Secondary Assessment and Treatment Place the patient in a position of comfort and minimize patient exertion. If patient is hypotensive, place supine and treat accordingly. See Shock Protocol. Monitor vital signs and O2 saturation. Initiate EtCO2 monitoring. Consider cardiac monitoring. Record and evaluate 12 Lead ECG Obtain OPQRST/SAMPLE history Physical Exam Immobilize any obvious injuries. Elevate injured extremities if possible. Consider application of a cold pack. Keep the patient NPO Initiate IV/IO of normal saline at KVO rate. If fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol. Assess the patient’s pain level Use the numerical scale or the Wong-Baker FACES scale (see next page)"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vital Signs OPQRST/SAMPLE Cardiac rhythm Treatment(s) Pain Scale Communication with Medical Control Pain Management (Continued)"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Consider the administration of ONE of the following"
-        },
-        {
-          "type": "paragraph",
-          "text": "Morphine – 2 mg increments IV/IO/IM slowly. Max Dose – 10 mg. Titrate administration to pain relief. Fentanyl - 1 – 2 mcg/kg IV/IO/IM/IN. Max Dose – 200 mcg. Titrate administration to pain relief. Ketamine – 0.1 mg/kg – 0.2 mg/kg IV/IO/IM/IN. Titrate administration to pain relief. Withhold for patients with eye trauma. May repeat every 15 minutes, twice. Toradol – 15mg IV/IM Max Dose – 15 mg. DO NOT administer if patient has an allergy to aspirin. Toradol is intended to treat suspected kidney stones or isolated minor extremity injury. After any medication administration, you should re-assess the patient’s mental status, pain level, blood pressure, and check for signs of respiratory depression every 5 minutes. If respirations become depressed, administer Naloxone – 2 mg IV/IO/IM/IN. If patient becomes nauseated or vomits, administer Ondansetron – 4 mg IV/IO/IM/IN may repeat in 15 minutes if no relief. Max Dose – 8 mg. May administer Phenergan."
-        }
+        {"type":"heading","level":2,"text":"Adult Pain Management"},
+        {"type":"paragraph","text":"This protocol applies to adult patients suffering from severe pain or discomfort, including isolated extremity injuries, musculoskeletal or soft tissue injuries, flank pain due to suspected kidney stones, sickle cell crisis, burns or any other cause."},
+        {"type":"flow-stage","title":"Primary Survey","arrowAfter":true,"items":[
+          "Assess level of consciousness – AVPU.",
+          {"text":"Ensure airway – ensure patency and positioning.","bold":["Ensure airway"]},
+          {"text":"Consider spinal motion restriction if indicated.","indent":1},
+          {"text":"Assess breathing – give supplemental O₂ if signs of compromise. Maintain SpO₂ ≥ 94%.","bold":["Assess breathing","Maintain SpO₂ ≥ 94%."]},
+          {"text":"Assist with bag valve mask if respiratory effort is ineffective.","indent":1},
+          {"text":"Assess circulation – control bleeding and manage shock appropriately. See Shock Protocol.","bold":["Assess circulation"],"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          {"text":"Take measures to prevent hypothermia.","indent":1}
+        ]},
+        {"type":"flow-stage","title":"Secondary Assessment and Treatment","arrowAfter":true,"items":[
+          "Place the patient in a position of comfort and minimize patient exertion.",
+          {"text":"If patient is hypotensive, place supine and treat accordingly. See Shock Protocol.","indent":1,"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          "Monitor vital signs and O₂ saturation.",
+          "Initiate EtCO₂ monitoring.",
+          "Consider cardiac monitoring.",
+          {"text":"Record and evaluate 12-Lead ECG.","indent":1},
+          "Obtain OPQRST/SAMPLE history.",
+          "Physical exam.",
+          "Immobilize any obvious injuries.",
+          {"text":"Elevate injured extremities if possible.","indent":1},
+          {"text":"Consider application of a cold pack.","indent":1},
+          "Keep the patient NPO.",
+          "Initiate IV/IO of normal saline at KVO rate.",
+          {"text":"If fluid resuscitation is needed, administer 20 ml/kg fluid bolus. See Shock Protocol.","indent":1,"bold":["20 ml/kg fluid bolus."],"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          "Assess the patient’s pain level.",
+          {"text":"Use the numerical scale or the Wong-Baker FACES scale.","indent":1}
+        ]},
+        {"type":"flow-stage","title":"Medication Treatment","items":[
+          {"text":"Consider administration of ONE of the following:","bold":["Consider administration of ONE of the following:"]},
+          {"text":"Morphine – 2 mg increments IV/IO/IM slowly. Max Dose – 10 mg.","indent":1,"bold":["2 mg increments","Max Dose – 10 mg."],"links":[{"text":"Morphine","protocolId":"morphine-sulfate"}]},
+          {"text":"Titrate administration to pain relief.","indent":2},
+          {"text":"Fentanyl – 1–2 mcg/kg IV/IO/IM/IN. Max Dose – 200 mcg.","indent":1,"bold":["1–2 mcg/kg","Max Dose – 200 mcg."],"links":[{"text":"Fentanyl","protocolId":"fentanyl"}]},
+          {"text":"Titrate administration to pain relief.","indent":2},
+          {"text":"Ketamine – 0.1 mg/kg–0.2 mg/kg IV/IO/IM/IN.","indent":1,"bold":["0.1 mg/kg–0.2 mg/kg"],"links":[{"text":"Ketamine","protocolId":"ketamine"}]},
+          {"text":"Titrate administration to pain relief.","indent":2},
+          {"text":"Withhold for patients with eye trauma.","indent":2},
+          {"text":"May repeat every 15 minutes, twice.","indent":2},
+          {"text":"Toradol – 15 mg IV/IM. Max Dose – 15 mg.","indent":1,"bold":["15 mg IV/IM.","Max Dose – 15 mg."],"links":[{"text":"Toradol","protocolId":"ketorolac-toradol"}]},
+          {"text":"DO NOT administer if patient has an allergy to aspirin.","indent":2,"bold":["DO NOT administer if patient has an allergy to aspirin."]},
+          {"text":"Toradol is intended to treat suspected kidney stones or isolated minor extremity injury.","icon":"assets/legend-important.webp","iconAlt":"Important protocol information","bold":["Toradol is intended to treat suspected kidney stones or isolated minor extremity injury."],"red":["Toradol is intended to treat suspected kidney stones or isolated minor extremity injury."],"links":[{"text":"Toradol","protocolId":"ketorolac-toradol"}]},
+          {"text":"After any medication administration, you should re-assess the patient’s mental status, pain level, blood pressure, and check for signs of respiratory depression every 5 minutes.","icon":"assets/legend-important.webp","iconAlt":"Important protocol information","bold":["After any medication administration, you should re-assess the patient’s mental status, pain level, blood pressure, and check for signs of respiratory depression every 5 minutes."],"red":["After any medication administration, you should re-assess the patient’s mental status, pain level, blood pressure, and check for signs of respiratory depression every 5 minutes."]},
+          {"text":"If respirations become depressed, administer Naloxone – 2 mg IV/IO/IM/IN.","bold":["2 mg"],"links":[{"text":"Naloxone","protocolId":"naloxone-narcan"}]},
+          {"text":"If patient becomes nauseated or vomits, administer Ondansetron – 4 mg IV/IO/IM/IN; may repeat in 15 minutes if no relief. Max Dose – 8 mg.","bold":["4 mg","Max Dose – 8 mg."],"links":[{"text":"Ondansetron","protocolId":"ondansetron-zofran"}]},
+          {"text":"May administer Phenergan.","struck":true,"links":[{"text":"Phenergan","protocolId":"phenergan-removed"}]}
+        ]},
+        {"type":"protocol-image","image":"assets/pediatric-pain-rating-scale.png","alt":"Numeric Pain Rating Scale from zero to ten and Wong-Baker FACES Pain Rating Scale from no hurt to hurts worst"},
+        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital Signs","OPQRST/SAMPLE","Cardiac rhythm","Treatment(s)","Pain Scale","Communication with Medical Control"]}
       ],
-      "plainText": "Adult Pain Management\nThis protocol applies to adult patients suffering from severe pain or discomfort, including isolated\nextremity injuries, musculoskeletal or soft tissue injures, flank pain due to suspected kidney\nstones, sickle cell crisis, burns or any other cause.\nPrimary Survey\n•\nAssess level of consciousness – AVPU\n•\nEnsure airway – ensure patency and positioning\no\nConsider spinal motion restriction if indicated.\n•\nAssess breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nAssess circulation – control bleeding and manage shock appropriately. See Shock Protocol.\no\nTake measures to prevent hypothermia.\nSecondary Assessment and Treatment\n•\nPlace the patient in a position of comfort and minimize patient exertion.\no\nIf patient is hypotensive, place supine and treat accordingly. See Shock Protocol.\n•\nMonitor vital signs and O2 saturation.\n•\nInitiate EtCO2 monitoring.\n•\nConsider cardiac monitoring.\no\nRecord and evaluate 12 Lead ECG\n•\nObtain OPQRST/SAMPLE history\n•\nPhysical Exam\n•\nImmobilize any obvious injuries.\no\nElevate injured extremities if possible.\no\nConsider application of a cold pack.\n•\nKeep the patient NPO\n•\nInitiate IV/IO of  normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus.  See Shock Protocol.\n•\nAssess the patient’s pain level\no\nUse the numerical scale or the Wong-Baker FACES scale (see next page)\nDocument:\n•\nVital Signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nPain Scale\n•\nCommunication with\nMedical Control\nPain Management (Continued)\n•\nConsider the administration of ONE of the following:\no\nMorphine – 2 mg increments IV/IO/IM slowly.  Max Dose – 10 mg.\n•\nTitrate administration to pain relief.\no\nFentanyl -  1 – 2 mcg/kg IV/IO/IM/IN.  Max Dose – 200 mcg.\n•\nTitrate administration to pain relief.\no\nKetamine – 0.1 mg/kg – 0.2 mg/kg IV/IO/IM/IN.\n•\nTitrate administration to pain relief.\n•\nWithhold for patients with eye trauma.\n•\nMay repeat every 15 minutes, twice.\no\nToradol – 15mg IV/IM  Max Dose – 15 mg.\n•\nDO NOT administer if patient has an allergy to aspirin.\nToradol is intended to treat suspected kidney stones or isolated minor extremity injury.\nAfter any medication administration, you should re-assess the patient’s mental status,\npain level, blood pressure, and check for signs of respiratory depression every 5 minutes.\n•\nIf respirations become depressed, administer Naloxone – 2 mg IV/IO/IM/IN.\n•\nIf patient becomes nauseated or vomits, administer Ondansetron – 4 mg IV/IO/IM/IN may repeat\nin 15 minutes if no relief.  Max Dose – 8 mg.\n•\nMay administer Phenergan.",
-      "pageText": [
-        {
-          "page": 91,
-          "text": "Adult Pain Management\nThis protocol applies to adult patients suffering from severe pain or discomfort, including isolated\nextremity injuries, musculoskeletal or soft tissue injures, flank pain due to suspected kidney\nstones, sickle cell crisis, burns or any other cause.\nPrimary Survey\n•\nAssess level of consciousness – AVPU\n•\nEnsure airway – ensure patency and positioning\no\nConsider spinal motion restriction if indicated.\n•\nAssess breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nAssess circulation – control bleeding and manage shock appropriately. See Shock Protocol.\no\nTake measures to prevent hypothermia.\nSecondary Assessment and Treatment\n•\nPlace the patient in a position of comfort and minimize patient exertion.\no\nIf patient is hypotensive, place supine and treat accordingly. See Shock Protocol.\n•\nMonitor vital signs and O2 saturation.\n•\nInitiate EtCO2 monitoring.\n•\nConsider cardiac monitoring.\no\nRecord and evaluate 12 Lead ECG\n•\nObtain OPQRST/SAMPLE history\n•\nPhysical Exam\n•\nImmobilize any obvious injuries.\no\nElevate injured extremities if possible.\no\nConsider application of a cold pack.\n•\nKeep the patient NPO\n•\nInitiate IV/IO of  normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus.  See Shock Protocol.\n•\nAssess the patient’s pain level\no\nUse the numerical scale or the Wong-Baker FACES scale (see next page)\nDocument:\n•\nVital Signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nPain Scale\n•\nCommunication with\nMedical Control"
-        },
-        {
-          "page": 92,
-          "text": "Pain Management (Continued)\n•\nConsider the administration of ONE of the following:\no\nMorphine – 2 mg increments IV/IO/IM slowly.  Max Dose – 10 mg.\n•\nTitrate administration to pain relief.\no\nFentanyl -  1 – 2 mcg/kg IV/IO/IM/IN.  Max Dose – 200 mcg.\n•\nTitrate administration to pain relief.\no\nKetamine – 0.1 mg/kg – 0.2 mg/kg IV/IO/IM/IN.\n•\nTitrate administration to pain relief.\n•\nWithhold for patients with eye trauma.\n•\nMay repeat every 15 minutes, twice.\no\nToradol – 15mg IV/IM  Max Dose – 15 mg.\n•\nDO NOT administer if patient has an allergy to aspirin.\nToradol is intended to treat suspected kidney stones or isolated minor extremity injury.\nAfter any medication administration, you should re-assess the patient’s mental status,\npain level, blood pressure, and check for signs of respiratory depression every 5 minutes.\n•\nIf respirations become depressed, administer Naloxone – 2 mg IV/IO/IM/IN.\n•\nIf patient becomes nauseated or vomits, administer Ondansetron – 4 mg IV/IO/IM/IN may repeat\nin 15 minutes if no relief.  Max Dose – 8 mg.\n•\nMay administer Phenergan."
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Adult Pain Management. Primary and secondary assessment, medication treatment, pain scales, reassessment, and documentation.",
+      "needsReview":false
+    },    {
       "id": "shock-management",
       "title": "Shock Management",
       "type": "protocol",
