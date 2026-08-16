@@ -24,11 +24,11 @@ This internal checklist tracks items that must be confirmed before the native EM
 ### Administrative > Approval Statement
 
 - [ ] Approve the replacement electronic approval statement word-for-word.
-- [ ] Confirm Ã¢â‚¬Å“Morgan Wood, MD,Ã¢â‚¬Â Ã¢â‚¬Å“Mike Adams,Ã¢â‚¬Â their titles, and the June 8, 2026 effective date.
-- [ ] Confirm Ã¢â‚¬Å“Signature on fileÃ¢â‚¬Â is accurate for both approvers.
+- [ ] Confirm “Morgan Wood, MD,” “Mike Adams,” their titles, and the June 8, 2026 effective date.
+- [ ] Confirm “Signature on file” is accurate for both approvers.
 - [ ] Approve the statement that original signatures are maintained at Hart County EMS headquarters.
 - [ ] Confirm the signed source may be stored outside the app and need not be reachable from it.
-- [ ] Confirm whether Ã¢â‚¬Å“for authorized personnelÃ¢â‚¬Â should remain when the URL is not password protected.
+- [ ] Confirm whether “for authorized personnel” should remain when the URL is not password protected.
 
 ### Administrative > General Information
 
@@ -39,7 +39,7 @@ This internal checklist tracks items that must be confirmed before the native EM
 
 - [ ] Approve the meanings and appearance of every recreated symbol.
 - [ ] Confirm the documentation, important-information, and medical-control images are correct.
-- [ ] Approve removal of Ã¢â‚¬Å“continued on next pageÃ¢â‚¬Â because multi-page protocols are combined.
+- [ ] Approve removal of “continued on next page” because multi-page protocols are combined.
 
 ## General Protocols
 
@@ -151,7 +151,7 @@ This internal checklist tracks items that must be confirmed before the native EM
 - [ ] Verify Transfer Center: 1-800-499-9298 and 585-275-4999.
 - [ ] Verify the VAD educator name/email and educational-resource URL.
 - [ ] Resolve reproduction/adaptation permission and attribution with administration/legal.
-- [ ] Decide whether crews should call the patientÃ¢â‚¬â„¢s VAD center before UR Medicine.
+- [ ] Decide whether crews should call the patient’s VAD center before UR Medicine.
 
 ### Adult Clinical Protocols > Adult Medical Emergencies > Allergic Reaction / Anaphylaxis
 
@@ -177,7 +177,7 @@ This internal checklist tracks items that must be confirmed before the native EM
 
 ### Adult Clinical Protocols > Adult Medical Emergencies > Sickle Cell Crisis
 
-- [ ] Verify medication choices, doses, maximums, routes, reversal, and red Ã¢â‚¬Å“OR.Ã¢â‚¬Â
+- [ ] Verify medication choices, doses, maximums, routes, reversal, and red “OR.”
 
 ### Adult Clinical Protocols > Adult Medical Emergencies > Seizure
 
@@ -189,8 +189,8 @@ This internal checklist tracks items that must be confirmed before the native EM
 - [ ] Verify the systolic blood-pressure thresholds, consecutive-reading requirement, magnesium sulfate doses/mixing/infusion times, midazolam dose/repeat instruction, transport language, monitoring warning, and medical-control requirement.
 ### Adult Clinical Protocols > Adult Medical Emergencies > Stroke
 
-- [ ] Approve Ã¢â‚¬Å“How Stroke Location Can Affect the Opposite Side of the Body.Ã¢â‚¬Â
-- [ ] Verify Ã¢â‚¬Å“Left Brain Stroke/InjuryÃ¢â‚¬Â and Ã¢â‚¬Å“Right Brain Stroke/Injury.Ã¢â‚¬Â
+- [ ] Approve “How Stroke Location Can Affect the Opposite Side of the Body.”
+- [ ] Verify “Left Brain Stroke/Injury” and “Right Brain Stroke/Injury.”
 - [ ] Confirm the red/white brain and opposite-body highlighting is clear and accurate.
 - [ ] Approve every listed left-brain and right-brain effect.
 - [ ] Approve the American Stroke Association reference/attribution.
