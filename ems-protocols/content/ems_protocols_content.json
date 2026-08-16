@@ -5260,52 +5260,74 @@
       ],
       "status": "active",
       "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": [],
       "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
         "pageStart": 79,
         "pageEnd": 80,
         "pageLabel": "79-80"
       },
-      "summary": "",
+      "summary": "Assessment and treatment of pediatric patients presenting with extremity trauma.",
       "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Pediatric Extremity Trauma"
-        },
-        {
-          "type": "paragraph",
-          "text": "This protocol applies to pediatric patients presenting with extremity trauma. First Impression (Pediatric Assessment Triangle) Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry. Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds. Circulation – observe skin color for pallor, mottling and/or cyanosis. Primary Survey Massive hemorrhage Treat all life-threatening hemorrhage Tourniquets for massive extremity hemorrhage Wound packing for junctional hemorrhage Airway – ensure patency, manually stabilize C-Spine. Have suction equipment ready Consider spinal motion restriction if indicated. Respiratory/Breathing – give supplemental O2 if signs of compromise. Maintain SpO2 > 94%. Manage any injuries impairing ventilation. Chest wounds: Penetrating/Sucking chest wound, impaled objects, bruising Signs of pneumothorax Flail segments Assist with bag valve mask if respiratory effort is ineffective. Circulation – assess pulses and perfusion status Manage shock appropriately. See Shock Protocol. Head/Hypothermia Initial GCS/AVPU Pupils Prevent hypothermia Secondary Assessment and Treatment Physical exam and OPQRST/SAMPLE history Establish the mechanism and nature of injury. Monitor vital signs and O2 saturation For Fractures and/or Dislocations Assess distal pulse, motor and sensation before/after splinting and during transport. If open fractures, control bleeding and cover with dry sterile dressing. If the extremity is severely angulated AND pulses are absent, apply gentle traction while trying to straighten the extremity. If pulses are present or if resistance is encountered while attempting to straighten the extremity, splint the extremity in the position found. Apply the appropriate splinting device. To reduce swelling, elevate the extremity and apply cold packs. Pediatric Extremity Trauma (Continued) Secondary Assessment and Treatment (Continued) For Amputation If limb is located, initiate care for amputated limb after patient has been stabilized. Remove gross contaminants with saline rinse. Wrap in saline moistened gauze and place in plastic bag or container (sterile if available). Seal the bag or container tightly and place in solution of ice water, if available. Transport the amputated limb to the hospital regardless of its condition. If the part cannot be immediately located, transport the patient and have other field providers search for and transport limb as soon as possible. Initiate transport as soon as possible. Consider transport to a trauma center. Initiate IV/IO of normal saline at KVO rate. If fluid resuscitation is needed, 20 ml/kg bolus. See Shock Protocol. Re-evaluate patient’s ABCs and perform detailed focused head-to-toe assessment. Cardiac monitoring For pain management, See Pediatric Pain Management Protocol."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vital signs Neurovascular status of the extremity before and after management Cardiac rhythm Treatment(s) Communication with Medical Control."
-        }
+        {"type":"heading","level":2,"text":"Pediatric Extremity Trauma"},
+        {"type":"paragraph","text":"This protocol applies to pediatric patients presenting with extremity trauma."},
+        {"type":"flow-stage","title":"First Impression (Pediatric Assessment Triangle)","arrowAfter":true,"links":[{"text":"Pediatric Assessment Triangle","protocolId":"pediatric-assessment-triangle"}],"items":[
+          "Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.",
+          "Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.",
+          "Circulation – observe skin color for pallor, mottling, and/or cyanosis."
+        ]},
+        {"type":"flow-stage","title":"Primary Survey","arrowAfter":true,"items":[
+          {"text":"Massive hemorrhage","bold":["Massive hemorrhage"]},
+          {"text":"Treat all life-threatening hemorrhage.","indent":1},
+          {"text":"Tourniquets for massive extremity hemorrhage.","indent":2},
+          {"text":"Wound packing for junctional hemorrhage.","indent":2},
+          {"text":"Airway – ensure patency, manually stabilize C-Spine.","bold":["Airway"]},
+          {"text":"Have suction equipment ready.","indent":1},
+          {"text":"Consider spinal motion restriction if indicated.","indent":1},
+          {"text":"Respiratory/Breathing – give supplemental O₂ if signs of compromise. Maintain SpO₂ ≥ 94%.","bold":["Respiratory/Breathing","Maintain SpO₂ ≥ 94%."]},
+          {"text":"Manage any injuries impairing ventilation.","indent":1},
+          {"text":"Chest wounds: Penetrating/Sucking chest wound, impaled objects, bruising.","indent":2},
+          {"text":"Signs of pneumothorax.","indent":2},
+          {"text":"Flail segments.","indent":2},
+          {"text":"Assist with bag valve mask if respiratory effort is ineffective.","indent":1},
+          {"text":"Circulation – assess pulses and perfusion status.","bold":["Circulation"]},
+          {"text":"Manage shock appropriately. See Shock Protocol.","indent":1,"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          {"text":"Head/Hypothermia","bold":["Head/Hypothermia"]},
+          {"text":"Initial GCS/AVPU.","indent":1},
+          {"text":"Pupils.","indent":1},
+          {"text":"Prevent hypothermia.","indent":1}
+        ]},
+        {"type":"flow-stage","title":"Secondary Assessment and Treatment","arrowAfter":true,"items":[
+          "Physical exam and OPQRST/SAMPLE history.",
+          {"text":"Establish the mechanism and nature of injury.","indent":1},
+          {"text":"Monitor vital signs and O₂ saturation.","indent":1},
+          {"text":"For Fractures and/or Dislocations","indent":1,"bold":["For Fractures and/or Dislocations"]},
+          {"text":"Assess distal pulse, motor and sensation before/after splinting and during transport.","indent":2},
+          {"text":"If open fractures, control bleeding and cover with dry sterile dressing.","indent":2},
+          {"text":"If the extremity is severely angulated AND pulses are absent, apply gentle traction while trying to straighten the extremity.","indent":2,"bold":["AND"]},
+          {"text":"If pulses are present or if resistance is encountered while attempting to straighten the extremity, splint the extremity in the position found.","indent":2},
+          {"text":"Apply the appropriate splinting device.","indent":2},
+          {"text":"To reduce swelling, elevate the extremity and apply cold packs.","indent":2},
+          {"text":"For Amputation","indent":1,"bold":["For Amputation"]},
+          {"text":"If limb is located, initiate care for amputated limb after patient has been stabilized.","indent":2},
+          {"text":"Remove gross contaminants with saline rinse.","indent":2},
+          {"text":"Wrap in saline moistened gauze and place in plastic bag or container (sterile if available).","indent":2},
+          {"text":"Seal the bag or container tightly and place in solution of ice water, if available.","indent":2},
+          {"text":"Transport the amputated limb to the hospital regardless of its condition.","indent":2},
+          {"text":"If the part cannot be immediately located, transport the patient and have other field providers search for and transport limb as soon as possible.","indent":2},
+          {"text":"Initiate transport as soon as possible.","indent":1},
+          {"text":"Consider transport to a trauma center.","indent":2},
+          {"text":"Initiate IV/IO of normal saline at KVO rate.","indent":1},
+          {"text":"If fluid resuscitation is needed, administer 20 ml/kg bolus. See Shock Protocol.","indent":2,"bold":["20 ml/kg bolus."],"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          {"text":"Re-evaluate patient’s ABCs and perform detailed focused head-to-toe assessment.","indent":1},
+          {"text":"Cardiac monitoring.","indent":1}
+        ]},
+        {"type":"flow-stage","title":"Pain Management","items":[
+          {"text":"For pain management, see Pediatric Pain Management Protocol.","links":[{"text":"Pediatric Pain Management Protocol","protocolId":"pain-management"}]}
+        ]},
+        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital Signs","Neurovascular status of the extremity before and after management","Cardiac rhythm","Treatment(s)","Communication with Medical Control"]}
       ],
-      "plainText": "Pediatric Extremity Trauma\nThis protocol applies to pediatric patients presenting with extremity trauma.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis.\nPrimary Survey\n•\nMassive hemorrhage\no\nTreat all life-threatening hemorrhage\n▪\nTourniquets for massive extremity hemorrhage\n▪\nWound packing for junctional hemorrhage\n•\nAirway – ensure patency, manually stabilize C-Spine.\no\nHave suction equipment ready\no\nConsider spinal motion restriction if indicated.\n•\nRespiratory/Breathing – give supplemental O2 if signs of compromise. Maintain SpO2 > 94%.\no\nManage any injuries impairing ventilation.\n▪\nChest wounds: Penetrating/Sucking chest wound, impaled objects, bruising\n▪\nSigns of pneumothorax\n▪\nFlail segments\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nCirculation – assess pulses and perfusion status\no\nManage shock appropriately. See Shock Protocol.\n•\nHead/Hypothermia\no\nInitial GCS/AVPU\no\nPupils\no\nPrevent hypothermia\nSecondary Assessment and Treatment\n•\nPhysical exam and OPQRST/SAMPLE history\no\nEstablish the mechanism and nature of injury.\no\nMonitor vital signs and O2 saturation\no\nFor Fractures and/or Dislocations\n▪\nAssess distal pulse, motor and sensation before/after splinting and during\ntransport.\n▪\nIf open fractures, control bleeding and cover with dry sterile dressing.\n▪\nIf the extremity is severely angulated AND pulses are absent, apply gentle\ntraction while trying to straighten the extremity.\n▪\nIf pulses are present or if resistance is encountered while attempting to\nstraighten the extremity, splint the extremity in the position found.\n▪\nApply the appropriate splinting device.\n▪\nTo reduce swelling, elevate the extremity and apply cold packs.\nPediatric Extremity Trauma (Continued)\nSecondary Assessment and Treatment (Continued)\no\nFor Amputation\n▪\nIf limb is located, initiate care for amputated limb after patient has been stabilized.\n▪\nRemove gross contaminants with saline rinse.\n▪\nWrap in  saline moistened gauze and place in plastic bag or container (sterile if\navailable).\n▪\nSeal the bag or container tightly and place in solution of ice water, if available.\n▪\nTransport the amputated limb to the hospital regardless of its condition.\n▪\nIf the part cannot be immediately located, transport the patient and have other field\nproviders search for and transport limb as soon as possible.\no\nInitiate transport as soon as possible.\no\nConsider transport to a trauma center.\no\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg bolus.  See Shock Protocol.\no\nRe-evaluate patient’s ABCs and perform detailed focused head-to-toe assessment.\no\nCardiac monitoring\n•\nFor pain management, See Pediatric Pain Management Protocol.\nDocument:\n•\nVital signs\n•\nNeurovascular status\nof the extremity\nbefore and after\nmanagement\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control.",
-      "pageText": [
-        {
-          "page": 79,
-          "text": "Pediatric Extremity Trauma\nThis protocol applies to pediatric patients presenting with extremity trauma.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis.\nPrimary Survey\n•\nMassive hemorrhage\no\nTreat all life-threatening hemorrhage\n▪\nTourniquets for massive extremity hemorrhage\n▪\nWound packing for junctional hemorrhage\n•\nAirway – ensure patency, manually stabilize C-Spine.\no\nHave suction equipment ready\no\nConsider spinal motion restriction if indicated.\n•\nRespiratory/Breathing – give supplemental O2 if signs of compromise. Maintain SpO2 > 94%.\no\nManage any injuries impairing ventilation.\n▪\nChest wounds: Penetrating/Sucking chest wound, impaled objects, bruising\n▪\nSigns of pneumothorax\n▪\nFlail segments\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nCirculation – assess pulses and perfusion status\no\nManage shock appropriately. See Shock Protocol.\n•\nHead/Hypothermia\no\nInitial GCS/AVPU\no\nPupils\no\nPrevent hypothermia\nSecondary Assessment and Treatment\n•\nPhysical exam and OPQRST/SAMPLE history\no\nEstablish the mechanism and nature of injury.\no\nMonitor vital signs and O2 saturation\no\nFor Fractures and/or Dislocations\n▪\nAssess distal pulse, motor and sensation before/after splinting and during\ntransport.\n▪\nIf open fractures, control bleeding and cover with dry sterile dressing.\n▪\nIf the extremity is severely angulated AND pulses are absent, apply gentle\ntraction while trying to straighten the extremity.\n▪\nIf pulses are present or if resistance is encountered while attempting to\nstraighten the extremity, splint the extremity in the position found.\n▪\nApply the appropriate splinting device.\n▪\nTo reduce swelling, elevate the extremity and apply cold packs."
-        },
-        {
-          "page": 80,
-          "text": "Pediatric Extremity Trauma (Continued)\nSecondary Assessment and Treatment (Continued)\no\nFor Amputation\n▪\nIf limb is located, initiate care for amputated limb after patient has been stabilized.\n▪\nRemove gross contaminants with saline rinse.\n▪\nWrap in  saline moistened gauze and place in plastic bag or container (sterile if\navailable).\n▪\nSeal the bag or container tightly and place in solution of ice water, if available.\n▪\nTransport the amputated limb to the hospital regardless of its condition.\n▪\nIf the part cannot be immediately located, transport the patient and have other field\nproviders search for and transport limb as soon as possible.\no\nInitiate transport as soon as possible.\no\nConsider transport to a trauma center.\no\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg bolus.  See Shock Protocol.\no\nRe-evaluate patient’s ABCs and perform detailed focused head-to-toe assessment.\no\nCardiac monitoring\n•\nFor pain management, See Pediatric Pain Management Protocol.\nDocument:\n•\nVital signs\n•\nNeurovascular status\nof the extremity\nbefore and after\nmanagement\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control."
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Pediatric Extremity Trauma. Primary survey, fracture and dislocation care, amputation care, pain management, and documentation.",
+      "needsReview":false
+    },    {
       "id": "trauma-arrest",
       "title": "Trauma Arrest",
       "type": "protocol",
