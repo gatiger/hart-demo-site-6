@@ -688,3 +688,12 @@ details[open] > .tree-heading.tree-toggle::before {
 .protocol-reference-image-placeholder code { color: #48627a; overflow-wrap: anywhere; }
 .protocol-reference-image.is-missing img { display: none; }
 .protocol-reference-image.is-missing .protocol-reference-image-placeholder { display: grid; }
+/* Adult assessment branch flow */
+.assessment-decision { white-space: pre-line; }
+.assessment-branch-adult-trauma, .assessment-branch-adult-medical { border-top: 6px solid #173a5e; }
+.assessment-branch-adult-trauma .assessment-answer, .assessment-branch-adult-medical .assessment-answer { background: #173a5e; }
+.assessment-branch > h3:empty { display: none; }
+.assessment-paired-item { list-style: none; }
+.assessment-paired-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .25rem 1rem; }
+.assessment-paired-grid span { padding-bottom: .15rem; border-bottom: 1px dotted #c7d2dc; }
+@media (max-width: 440px) { .assessment-paired-grid { grid-template-columns: 1fr; } }

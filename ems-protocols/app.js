@@ -573,6 +573,21 @@ function appendPhoneAwareText(element, value) {
     const redPhrases = itemData.red === true ? [itemData.text || ''] : (itemData.red || []);
     if (redPhrases.length) li.classList.add('protocol-red-flow-item');
     if (itemData.indent) li.classList.add(`flow-item-indent-${Math.min(Number(itemData.indent) || 1, 3)}`);
+    if (itemData.pairs?.length) {
+      li.classList.add('assessment-paired-item');
+      const grid = document.createElement('div');
+      grid.className = 'assessment-paired-grid';
+      for (const pair of itemData.pairs) {
+        for (const value of pair) {
+          const cell = document.createElement('span');
+          cell.textContent = value;
+          grid.appendChild(cell);
+        }
+      }
+      li.appendChild(grid);
+      list.appendChild(li);
+      continue;
+    }
     let textContainer = li;
     if (itemData.icon) {
       li.classList.add('assessment-icon-item');

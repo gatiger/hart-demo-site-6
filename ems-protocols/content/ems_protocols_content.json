@@ -5593,53 +5593,67 @@
       "id": "adult-assessment",
       "title": "Adult Assessment",
       "type": "protocol",
-      "categoryPath": [
-        "Adult Clinical Protocols"
-      ],
+      "categoryPath": ["Adult Clinical Protocols"],
       "status": "active",
       "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 90,
-        "pageEnd": 90,
-        "pageLabel": "90"
-      },
-      "summary": "",
+      "source": {"pageStart":90,"pageEnd":90,"pageLabel":"90"},
+      "summary": "Primary and secondary assessment of adult trauma and medical patients.",
       "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Trauma"
-        },
-        {
-          "type": "paragraph",
-          "text": "Medical Adult Assessment Primary Survey Assess LOC – determine responsiveness, utilize the AVPU scale. Ensure airway – ensure patency and positioning Open, clear and maintain airway. Simultaneously initiate spinal motion restriction if indicated. Assess breathing – assess rate and quality of breathing Ensure adequate ventilation Me Assess circulation – assess pulse and perfusion status. Control major bleeding Manage shock appropriately. See Shock Protocol. Perform necessary interventions for all identified life threats and determine patient priority. Initiate Secondary Assessment and History If new life threats are identified, treat immediately If the primary survey is abnormal, minimize scene time. Perform only necessary interventions, such as major bleeding control, spinal motion restriction, initial airway management, bag valve mask ventilation, in the field. Continue spinal motion restriction support as indicated. If no spinal injury is suspected, place patient in position of comfort. Initiate basic care for specific injuries. Perform physical examination. Expose and examine any potentially injured area. Take measures to prevent hypothermia. Monitor vital signs and O2 saturation. Consider cardiac monitoring Perform blood glucose analysis. Obtain OPQRST/SAMPLE history Onset Signs, Symptoms Provocation Allergies Quality Medications Region, Radiation Past Medical Hx Severity Last Oral Intake Time Events proceeding Illness or injury. Perform ongoing assessment Repeat primary survey and vital signs Evaluate response to treatment Repeat physical exam. If patient is unresponsive or has a diminished LOC, perform a rapid head-to-toe examination to rule out the presence of trauma and identify medically significant phyical findings. Obtain OPQRST/SAMPLE history. Onset Signs, Symptoms Provocation Allergies Quality Medications Region, Radiation Past Medical Hx Severity Last Oral Intake Time Events proceeding illness or injury Perform physical examination Monitor vital signs and O2 saturation Place patient on cardiac monitor Consider 12-Lead ECG Consider EtCO2 Perform blood glucose analysis Perform ongoing assessment Repeat primary survey and vital signs Evaluate response to treatment Repeat physical exam."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vital Signs OPQRST/SAMPLE Environmental Observations Treatment Communication with Medical Control"
+        {"type":"heading","level":2,"text":"Adult Assessment"},
+        {"type":"pediatric-assessment-flow",
+          "firstImpression":{"title":"Primary Survey","items":[
+            {"text":"Assess LOC – determine responsiveness, utilize the AVPU scale.","bold":["Assess LOC"]},
+            {"text":"Ensure airway – ensure patency and positioning.","bold":["Ensure airway"]},
+            {"text":"Open, clear and maintain airway.","indent":1},
+            {"text":"Simultaneously initiate spinal motion restriction if indicated.","indent":1},
+            {"text":"Assess breathing – assess rate and quality of breathing.","bold":["Assess breathing"]},
+            {"text":"Ensure adequate ventilation.","indent":1},
+            {"text":"Assess circulation – assess pulse and perfusion status.","bold":["Assess circulation"]},
+            {"text":"Control major bleeding.","indent":1},
+            {"text":"Manage shock appropriately. See Shock Protocol.","indent":1,"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+            {"text":"Perform necessary interventions for all identified life threats and determine patient priority.","icon":"assets/legend-important.webp","iconAlt":"Important protocol information","bold":["Perform necessary interventions for all identified life threats and determine patient priority."],"red":["Perform necessary interventions for all identified life threats and determine patient priority."]}
+          ]},
+          "question":"Initiate Secondary Assessment and History\nIf new life threats are identified, treat immediately.",
+          "branches":[
+            {"kind":"adult-trauma","answer":"Trauma","title":"","intro":[
+              {"text":"If the primary survey is abnormal, minimize scene time. Perform only necessary interventions, such as major bleeding control, spinal motion restriction, initial airway management, bag valve mask ventilation, in the field.","icon":"assets/legend-important.webp","iconAlt":"Important protocol information","bold":["If the primary survey is abnormal, minimize scene time. Perform only necessary interventions, such as major bleeding control, spinal motion restriction, initial airway management, bag valve mask ventilation, in the field."],"red":["If the primary survey is abnormal, minimize scene time. Perform only necessary interventions, such as major bleeding control, spinal motion restriction, initial airway management, bag valve mask ventilation, in the field."]},
+              "Continue spinal motion restriction support as indicated. If no spinal injury is suspected, place patient in position of comfort.",
+              "Initiate basic care for specific injuries.",
+              "Perform physical examination.",
+              {"text":"Expose and examine any potentially injured area.","indent":1},
+              {"text":"Take measures to prevent hypothermia.","indent":1},
+              "Monitor vital signs and O₂ saturation.",
+              "Consider cardiac monitoring.",
+              "Perform blood glucose analysis.",
+              "Obtain OPQRST/SAMPLE history.",
+              {"indent":1,"pairs":[["Onset","Signs, Symptoms"],["Provocation","Allergies"],["Quality","Medications"],["Region, Radiation","Past Medical Hx"],["Severity","Last Oral Intake"],["Time","Events preceding illness or injury"]]},
+              "Perform ongoing assessment.",
+              {"text":"Repeat primary survey and vital signs.","indent":1},
+              {"text":"Evaluate response to treatment.","indent":1},
+              {"text":"Repeat physical exam.","indent":1}
+            ]},
+            {"kind":"adult-medical","answer":"Medical","title":"","intro":[
+              {"text":"If patient is unresponsive or has a diminished LOC, perform a rapid head-to-toe examination to rule out the presence of trauma and identify medically significant physical findings.","icon":"assets/legend-important.webp","iconAlt":"Important protocol information","bold":["If patient is unresponsive or has a diminished LOC, perform a rapid head-to-toe examination to rule out the presence of trauma and identify medically significant physical findings."],"red":["If patient is unresponsive or has a diminished LOC, perform a rapid head-to-toe examination to rule out the presence of trauma and identify medically significant physical findings."]},
+              "Obtain OPQRST/SAMPLE history.",
+              {"indent":1,"pairs":[["Onset","Signs, Symptoms"],["Provocation","Allergies"],["Quality","Medications"],["Region, Radiation","Past Medical Hx"],["Severity","Last Oral Intake"],["Time","Events preceding illness or injury"]]},
+              "Perform physical examination.",
+              "Monitor vital signs and O₂ saturation.",
+              "Place patient on cardiac monitor.",
+              "Consider 12-Lead ECG.",
+              "Consider EtCO₂.",
+              "Perform blood glucose analysis.",
+              "Perform ongoing assessment.",
+              {"text":"Repeat primary survey and vital signs.","indent":1},
+              {"text":"Evaluate response to treatment.","indent":1},
+              {"text":"Repeat physical exam.","indent":1}
+            ]}
+          ],
+          "documentation":{"title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital Signs","OPQRST/SAMPLE","Environmental Observations","Treatment","Communication with Medical Control"]}
         }
       ],
-      "plainText": "Trauma\nMedical\nAdult Assessment\nPrimary Survey\n•\nAssess LOC – determine responsiveness, utilize the AVPU scale.\n•\nEnsure airway – ensure patency and positioning\no\nOpen, clear and maintain airway.\no\nSimultaneously initiate spinal motion restriction if indicated.\n•\nAssess breathing – assess rate and quality of breathing\no\nEnsure adequate ventilation\no\nMe\n•\nAssess circulation – assess pulse and perfusion status.\no\nControl major bleeding\no\nManage shock appropriately.  See Shock Protocol.\nPerform necessary interventions for all identified life threats and determine\npatient priority.\nInitiate Secondary Assessment and History\nIf new life threats are identified, treat immediately\nIf the primary survey is abnormal, minimize scene\ntime. Perform only necessary interventions, such\nas major bleeding control, spinal motion\nrestriction, initial airway management, bag valve\nmask ventilation, in the field.\n•\nContinue spinal motion restriction support as\nindicated. If no spinal injury is suspected, place patient\nin position of comfort.\n•\nInitiate basic care for specific injuries.\n•\nPerform physical examination.\no\nExpose and examine any potentially injured\narea.\no\nTake measures to prevent hypothermia.\n•\nMonitor vital signs and O2 saturation.\n•\nConsider cardiac monitoring\n•\nPerform blood glucose analysis.\n•\nObtain OPQRST/SAMPLE history\no\nOnset\nSigns, Symptoms\no\nProvocation\nAllergies\no\nQuality\nMedications\no\nRegion, Radiation\nPast Medical Hx\no\nSeverity\nLast Oral Intake\no\nTime\nEvents proceeding\nIllness or injury.\n•\nPerform ongoing assessment\no\nRepeat primary survey and vital signs\no\nEvaluate response to treatment\no\nRepeat physical exam.\nIf patient is unresponsive or has a diminished\nLOC, perform a rapid head-to-toe examination to\nrule out the presence of trauma and identify\nmedically significant phyical findings.\n•\nObtain OPQRST/SAMPLE history.\no\nOnset\nSigns, Symptoms\no\nProvocation\nAllergies\no\nQuality\nMedications\no\nRegion, Radiation\nPast Medical Hx\no\nSeverity\nLast Oral Intake\no\nTime\nEvents proceeding\nillness or injury\n•\nPerform physical examination\n•\nMonitor vital signs and O2 saturation\n•\nPlace patient on cardiac monitor\n•\nConsider 12-Lead ECG\n•\nConsider EtCO2\n•\nPerform blood glucose analysis\n•\nPerform ongoing assessment\no\nRepeat primary survey and vital signs\no\nEvaluate response to treatment\no\nRepeat physical exam.\nDocument:\n•\nVital Signs\n•\nOPQRST/SAMPLE\n•\nEnvironmental\nObservations\n•\nTreatment\n•\nCommunication with\nMedical Control",
-      "pageText": [
-        {
-          "page": 90,
-          "text": "Trauma\nMedical\nAdult Assessment\nPrimary Survey\n•\nAssess LOC – determine responsiveness, utilize the AVPU scale.\n•\nEnsure airway – ensure patency and positioning\no\nOpen, clear and maintain airway.\no\nSimultaneously initiate spinal motion restriction if indicated.\n•\nAssess breathing – assess rate and quality of breathing\no\nEnsure adequate ventilation\no\nMe\n•\nAssess circulation – assess pulse and perfusion status.\no\nControl major bleeding\no\nManage shock appropriately.  See Shock Protocol.\nPerform necessary interventions for all identified life threats and determine\npatient priority.\nInitiate Secondary Assessment and History\nIf new life threats are identified, treat immediately\nIf the primary survey is abnormal, minimize scene\ntime. Perform only necessary interventions, such\nas major bleeding control, spinal motion\nrestriction, initial airway management, bag valve\nmask ventilation, in the field.\n•\nContinue spinal motion restriction support as\nindicated. If no spinal injury is suspected, place patient\nin position of comfort.\n•\nInitiate basic care for specific injuries.\n•\nPerform physical examination.\no\nExpose and examine any potentially injured\narea.\no\nTake measures to prevent hypothermia.\n•\nMonitor vital signs and O2 saturation.\n•\nConsider cardiac monitoring\n•\nPerform blood glucose analysis.\n•\nObtain OPQRST/SAMPLE history\no\nOnset\nSigns, Symptoms\no\nProvocation\nAllergies\no\nQuality\nMedications\no\nRegion, Radiation\nPast Medical Hx\no\nSeverity\nLast Oral Intake\no\nTime\nEvents proceeding\nIllness or injury.\n•\nPerform ongoing assessment\no\nRepeat primary survey and vital signs\no\nEvaluate response to treatment\no\nRepeat physical exam.\nIf patient is unresponsive or has a diminished\nLOC, perform a rapid head-to-toe examination to\nrule out the presence of trauma and identify\nmedically significant phyical findings.\n•\nObtain OPQRST/SAMPLE history.\no\nOnset\nSigns, Symptoms\no\nProvocation\nAllergies\no\nQuality\nMedications\no\nRegion, Radiation\nPast Medical Hx\no\nSeverity\nLast Oral Intake\no\nTime\nEvents proceeding\nillness or injury\n•\nPerform physical examination\n•\nMonitor vital signs and O2 saturation\n•\nPlace patient on cardiac monitor\n•\nConsider 12-Lead ECG\n•\nConsider EtCO2\n•\nPerform blood glucose analysis\n•\nPerform ongoing assessment\no\nRepeat primary survey and vital signs\no\nEvaluate response to treatment\no\nRepeat physical exam.\nDocument:\n•\nVital Signs\n•\nOPQRST/SAMPLE\n•\nEnvironmental\nObservations\n•\nTreatment\n•\nCommunication with\nMedical Control"
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Adult Assessment. Primary Survey followed by Trauma and Medical secondary assessment branches and documentation.",
+      "needsReview":false
+    },    {
       "id": "pain-management",
       "title": "Pain Management",
       "type": "protocol",
