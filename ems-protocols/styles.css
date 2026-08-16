@@ -714,7 +714,7 @@ details[open] > .tree-heading.tree-toggle::before {
 .lvad-device-section > h3, .lvad-unresponsive-flow > h3 { padding: .7rem 1rem; background: #12658a; color: #fff; text-align: center; text-transform: uppercase; letter-spacing: .035em; }
 .lvad-device-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1rem; }
 .lvad-device-card { overflow: hidden; border: 1px solid #b9c9d6; border-radius: .8rem; background: #fff; box-shadow: 0 5px 18px rgba(18,52,77,.08); }
-.lvad-device-card > img { display: block; width: 100%; aspect-ratio: 1 / 1; padding: .45rem; object-fit: contain; background: #f4f5f5; }
+.lvad-device-card > img { display: block; width: 100%; aspect-ratio: 1 / 1; padding: .45rem; object-fit: contain; background: #fff; filter: invert(1); }
 .lvad-device-card h4 { margin: .8rem 1rem .1rem; color: #b34e1e; font-size: 1.1rem; }
 .lvad-device-type { margin: 0 1rem .75rem; font-weight: 800; }
 .lvad-device-card dl { display: grid; grid-template-columns: auto 1fr; gap: .25rem .4rem; margin: 0; padding: 0 1rem 1rem; font-size: .9rem; }
@@ -746,7 +746,7 @@ details[open] > .tree-heading.tree-toggle::before {
 .lvad-monitor-section .lvad-device-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
 
 /* LVAD image fidelity and original-diagram connector refinements */
-.lvad-monitor-section .lvad-device-card > img { width: 100%; height: auto; min-height: 0; aspect-ratio: auto; padding: .75rem; object-fit: contain; background: #fff; image-rendering: auto; }
+.lvad-monitor-section .lvad-device-card > img { width: 100%; height: auto; min-height: 0; aspect-ratio: auto; padding: .75rem; object-fit: contain; background: #fff; filter: none; image-rendering: auto; }
 .lvad-flow-no > .lvad-flow-box,
 .lvad-flow-no > .lvad-flow-question,
 .lvad-vad-paths > div:last-child > .lvad-flow-box,
@@ -766,3 +766,17 @@ details[open] > .tree-heading.tree-toggle::before {
 .lvad-flow-action::after { content:""; position:absolute; left:50%; top:100%; height:5rem; border-left:5px solid #173a5e; transform:translateX(-50%); }
 .lvad-flow-outcome { position:relative; z-index:2; }
 @media (max-width:760px){.lvad-flow-yes::after,.lvad-flow-action::after,.lvad-vad-paths::before,.lvad-vad-paths>div::before{display:none}.lvad-monitor-section .lvad-device-card>img{aspect-ratio:auto}}
+/* Complete lower LVAD decision routing */
+.lvad-flow-yes::after { z-index: 0; }
+.lvad-flow-yes > .lvad-flow-box { position: relative; z-index: 1; }
+.lvad-flow-action::after { height: 10.8rem; }
+.lvad-flow-action::before { content:""; position:absolute; left:50%; bottom:-11rem; transform:translateX(-50%); border-left:9px solid transparent; border-right:9px solid transparent; border-top:11px solid #173a5e; }
+.lvad-vad-paths > div:last-child > .lvad-flow-question::before { content:""; position:absolute; left:50%; top:100%; height:4.8rem; border-left:5px solid #173a5e; transform:translateX(-50%); }
+.lvad-vad-paths > div:last-child > .lvad-flow-question::after { content:""; position:absolute; left:50%; top:calc(100% + 4.65rem); transform:translateX(-50%); border-left:9px solid transparent; border-right:9px solid transparent; border-top:11px solid #173a5e; }
+.lvad-restart-labels { position:relative; min-height:4.5rem; }
+.lvad-restart-labels::before { content:""; position:absolute; left:-100%; right:25%; top:1.75rem; border-top:5px solid #173a5e; }
+.lvad-restart-labels::after { content:""; position:absolute; right:25%; top:1.75rem; height:3.6rem; border-left:5px solid #173a5e; }
+.lvad-restart-labels span { position:relative; z-index:1; padding:.1rem .35rem; background:#f8fbfd; }
+.lvad-flow-outcome::before { content:""; position:absolute; left:50%; top:-1.25rem; height:1.25rem; border-left:5px solid #173a5e; transform:translateX(-50%); }
+.lvad-flow-outcome::after { content:""; position:absolute; left:50%; top:-.15rem; transform:translateX(-50%); border-left:9px solid transparent; border-right:9px solid transparent; border-top:11px solid #173a5e; }
+@media(max-width:760px){.lvad-flow-action::after,.lvad-flow-action::before,.lvad-vad-paths>div:last-child>.lvad-flow-question::before,.lvad-vad-paths>div:last-child>.lvad-flow-question::after,.lvad-restart-labels::before,.lvad-restart-labels::after,.lvad-flow-outcome::before,.lvad-flow-outcome::after{display:none}}
