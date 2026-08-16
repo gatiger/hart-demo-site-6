@@ -194,7 +194,7 @@ This internal checklist tracks items that must be confirmed before the native EM
 
 ### Adult Clinical Protocols > Adult Medical Emergencies > Toxic Exposure
 
-- [ ] Verify the adult atropine dose of 2?5 mg/kg IV/IO/IM every 10?15 minutes and the instruction to titrate to drying of secretions.
+- [ ] Verify the adult atropine dose of 2–5 mg/kg IV/IO/IM every 10–15 minutes and the instruction to titrate to drying of secretions.
 - [ ] Verify the carbon-monoxide treatment and hyperbaric-capable destination language.
 - [ ] Verify Georgia Poison Control 1-800-222-1222, CHEMPACK deployment language, and authority to follow Poison Control advice as Medical Control direction.
 - [ ] Verify the law-enforcement reporting requirement for all suspected suicide attempts.
@@ -214,6 +214,12 @@ This internal checklist tracks items that must be confirmed before the native EM
 - [ ] Approve the American Stroke Association reference/attribution.
 - [ ] Verify Cincinnati Stroke Scale, last-known-well, destination, and TPA-capable facility wording.
 
+
+
+### Adult Clinical Protocols > Adult Trauma Emergencies > Head and Spine Trauma
+
+- [ ] Verify hemorrhage control, airway/ventilation, spinal motion restriction, trauma-center transport, fluid targets, and detailed reassessment instructions.
+- [ ] Verify the 150% mortality statement, cerebral-herniation signs, GCS thresholds, Cushing’s Triad wording, hyperventilation rate, EtCO₂ target, seizure management, and neurogenic-shock/medical-control instructions.
 
 ### Adult Clinical Protocols > Adult Trauma Emergencies > Multiple System Trauma
 
