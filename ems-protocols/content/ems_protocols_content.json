@@ -5806,54 +5806,49 @@
       "id": "sepsis-management",
       "title": "Sepsis Management",
       "type": "protocol",
-      "categoryPath": [
-        "Adult Clinical Protocols"
-      ],
+      "categoryPath": ["Adult Clinical Protocols"],
       "status": "active",
       "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 96,
-        "pageEnd": 96,
-        "pageLabel": "96"
-      },
-      "summary": "",
+      "source": {"pageStart":96,"pageEnd":96,"pageLabel":"96"},
+      "summary": "Identification and treatment of adult patients with suspected sepsis and septic shock.",
       "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "OR"
-        },
-        {
-          "type": "paragraph",
-          "text": "Sepsis/Shock Management Sepsis is a potentially life-threatening condition that occurs when the body’s response to an infection damages its tissues. When the infection-fighting process turns on the body, they cause organs to function poorly and abnormally. Sepsis may progress to septic shock. This is a dramatic drop in blood pressure that can lead to severe organ problems and death. Early treatment with antibiotics and aggressive intravenous fluids improve chances for survival. Indications of Sepsis Patient has a suspected infection AND AT LEAST 2 OF THE FOLLOWING: Altered mentation (Any GCS < 15, confused, agitated, etc.) Baseline changes. Respiratory rate > 20 breaths per minute. Heart rate > 90 beats per minute. Systolic Blood Pressure < 100 mmHg. Fever or hypothermia EtCO2 < 25 mmHg. Initial Treatment Work to minimize scene time to LESS than 10 minutes. Notify the closest appropriate facility of SEPSIS ALERT. Establish a minimum of two (2) IV sites if possible. Consider early IO placement for volume resuscitation. Administer 500 ml bolus of Lactated Ringers or Normal Saline. Consider repeating the bolus if patient improves clinically. Monitor all vital signs and lung sounds after each bolus. May give up to 1000 ml bolus. Secondary Assessment and Treatment(s) Consider Vasopressors if unresponsive to IV fluid therapy. Levophed – Start at 4 mcg/min, titrate to a systolic blood pressure of 100 mmHg. Maximum of 10 mcg/min. OR Epinephrine – 1:100,000 0.5 – 2 ml every 3 -5 minutes"
-        },
-        {
-          "type": "list",
-          "items": [
-            "Mixing Instructions for Epinephrine 1:100,000"
-          ]
-        },
-        {
-          "type": "paragraph",
-          "text": "Mix 1 ml of 1:10,000 Epinephrine in 9 ml of Normal Saline. Onset 1 minute Duration 5 – 10 minutes Also consider ANCEF – Contact Medical Control Prior to Administration. 2 gm if > 176 pounds. Mix in 100 ml of Normal Saline and give over 10 minutes via 60 gtts. 1 gm if < 176 pounds. Mix in 100 ml of Normal Saline and give over 10 minutes via 60 gtts."
-        }
+        {"type":"heading","level":2,"text":"Sepsis/Shock Management"},
+        {"type":"paragraph","text":"Sepsis is a potentially life-threatening condition that occurs when the body’s response to an infection damages its tissues. When the infection-fighting process turns on the body, they cause organs to function poorly and abnormally. Sepsis may progress to septic shock. This is a dramatic drop in blood pressure that can lead to severe organ problems and death. Early treatment with antibiotics and aggressive intravenous fluids improve chances for survival."},
+        {"type":"flow-stage","title":"Indications of Sepsis","arrowAfter":true,"items":[
+          "Patient has a suspected infection.",
+          {"text":"AND AT LEAST 2 OF THE FOLLOWING:","indent":1,"bold":["AND AT LEAST 2 OF THE FOLLOWING:"]},
+          {"text":"Altered mentation (Any GCS < 15, confused, agitated, etc.) Baseline changes.","indent":2},
+          {"text":"Respiratory rate > 20 breaths per minute.","indent":2},
+          {"text":"Heart rate > 90 beats per minute.","indent":2},
+          {"text":"Systolic Blood Pressure ≤ 100 mmHg.","indent":2},
+          {"text":"Fever or hypothermia.","indent":2},
+          {"text":"EtCO₂ ≤ 25 mmHg.","indent":2}
+        ]},
+        {"type":"flow-stage","title":"Initial Treatment","arrowAfter":true,"items":[
+          {"text":"Work to minimize scene time to LESS than 10 minutes.","bold":["LESS than 10 minutes."]},
+          {"text":"Notify the closest appropriate facility of SEPSIS ALERT.","bold":["SEPSIS ALERT."]},
+          "Establish a minimum of two (2) IV sites if possible.",
+          "Consider early IO placement for volume resuscitation.",
+          "Administer 500 ml bolus of Lactated Ringers or Normal Saline.",
+          {"text":"Consider repeating the bolus if patient improves clinically.","indent":1},
+          {"text":"Monitor all vital signs and lung sounds after each bolus.","indent":1},
+          {"text":"May give up to 1000 ml bolus.","indent":1,"bold":["May give up to 1000 ml bolus."],"red":["May give up to 1000 ml bolus."]}
+        ]},
+        {"type":"flow-stage","title":"Secondary Assessment and Treatment(s)","items":[
+          "Consider Vasopressors if unresponsive to IV fluid therapy.",
+          {"text":"Levophed – Start at 4 mcg/min, titrate to a systolic blood pressure of 100 mmHg. Maximum of 10 mcg/min.","indent":1,"bold":["Start at 4 mcg/min","Maximum of 10 mcg/min."],"links":[{"text":"Levophed","protocolId":"levophed-norepinephrine"}]},
+          {"text":"OR","bold":["OR"]},
+          {"text":"Epinephrine – 1:100,000 0.5–2 ml every 3–5 minutes.","bold":["1:100,000","0.5–2 ml","every 3–5 minutes."],"links":[{"text":"Epinephrine","protocolId":"epinephrine-1-1000-and-1-10-000"}]},
+          {"text":"Mixing Instructions for Epinephrine 1:100,000","indent":1,"bold":["Mixing Instructions for Epinephrine 1:100,000"]},
+          {"text":"Mix 1 ml of 1:10,000 Epinephrine in 9 ml of Normal Saline. Onset 1 minute. Duration 5–10 minutes.","indent":2},
+          {"text":"Also consider ANCEF – Contact Medical Control Prior to Administration.","links":[{"text":"ANCEF","protocolId":"ancef"}]},
+          {"text":"2 gm if > 176 pounds. Mix in 100 ml of Normal Saline and give over 10 minutes via 60 gtts.","indent":2,"bold":["2 gm if > 176 pounds."]},
+          {"text":"1 gm if < 176 pounds. Mix in 100 ml of Normal Saline and give over 10 minutes via 60 gtts.","indent":2,"bold":["1 gm if < 176 pounds."]}
+        ]}
       ],
-      "plainText": "OR\nSepsis/Shock Management\nSepsis is a potentially life-threatening condition that occurs when the body’s response to an infection\ndamages its tissues.  When the infection-fighting process turns on the body, they cause organs to function\npoorly and abnormally. Sepsis may progress to septic shock. This is a dramatic drop in blood pressure\nthat can lead to severe organ problems and death. Early treatment with antibiotics and aggressive\nintravenous fluids improve chances for survival.\nIndications of Sepsis\n•\nPatient has a suspected infection\no\nAND AT LEAST 2 OF THE FOLLOWING:\n▪\nAltered mentation (Any GCS < 15, confused, agitated, etc.) Baseline changes.\n▪\nRespiratory rate > 20 breaths per minute.\n▪\nHeart rate > 90 beats per minute.\n▪\nSystolic Blood Pressure < 100 mmHg.\n▪\nFever or hypothermia\n▪\nEtCO2 < 25 mmHg.\nInitial Treatment\n•\nWork to minimize scene time to LESS than 10 minutes.\n•\nNotify the closest appropriate facility of SEPSIS ALERT.\n•\nEstablish a minimum of two (2) IV sites if possible.\n•\nConsider early IO placement for volume resuscitation.\n•\nAdminister 500 ml bolus of Lactated Ringers or Normal Saline.\no\nConsider repeating the bolus if patient improves clinically.\no\nMonitor all vital signs and lung sounds after each bolus.\no\nMay give up to 1000 ml bolus.\nSecondary Assessment and Treatment(s)\n•\nConsider Vasopressors if unresponsive to IV fluid therapy.\no\nLevophed – Start at 4 mcg/min, titrate to a systolic blood pressure of 100 mmHg.\nMaximum of 10 mcg/min.\nOR\n•\nEpinephrine – 1:100,000 0.5 – 2 ml every 3 -5 minutes\no Mixing Instructions for Epinephrine 1:100,000\n•\nMix 1 ml of 1:10,000 Epinephrine in 9 ml of Normal Saline.\n▪\nOnset 1 minute\n▪\nDuration 5 – 10 minutes\n•\nAlso consider ANCEF – Contact Medical Control Prior to Administration.\n▪\n2 gm if > 176 pounds. Mix in 100 ml of Normal Saline and give over 10\nminutes via 60 gtts.\n▪\n1 gm if < 176 pounds. Mix in 100 ml of Normal Saline and give over 10\nminutes via 60 gtts.",
-      "pageText": [
-        {
-          "page": 96,
-          "text": "OR\nSepsis/Shock Management\nSepsis is a potentially life-threatening condition that occurs when the body’s response to an infection\ndamages its tissues.  When the infection-fighting process turns on the body, they cause organs to function\npoorly and abnormally. Sepsis may progress to septic shock. This is a dramatic drop in blood pressure\nthat can lead to severe organ problems and death. Early treatment with antibiotics and aggressive\nintravenous fluids improve chances for survival.\nIndications of Sepsis\n•\nPatient has a suspected infection\no\nAND AT LEAST 2 OF THE FOLLOWING:\n▪\nAltered mentation (Any GCS < 15, confused, agitated, etc.) Baseline changes.\n▪\nRespiratory rate > 20 breaths per minute.\n▪\nHeart rate > 90 beats per minute.\n▪\nSystolic Blood Pressure < 100 mmHg.\n▪\nFever or hypothermia\n▪\nEtCO2 < 25 mmHg.\nInitial Treatment\n•\nWork to minimize scene time to LESS than 10 minutes.\n•\nNotify the closest appropriate facility of SEPSIS ALERT.\n•\nEstablish a minimum of two (2) IV sites if possible.\n•\nConsider early IO placement for volume resuscitation.\n•\nAdminister 500 ml bolus of Lactated Ringers or Normal Saline.\no\nConsider repeating the bolus if patient improves clinically.\no\nMonitor all vital signs and lung sounds after each bolus.\no\nMay give up to 1000 ml bolus.\nSecondary Assessment and Treatment(s)\n•\nConsider Vasopressors if unresponsive to IV fluid therapy.\no\nLevophed – Start at 4 mcg/min, titrate to a systolic blood pressure of 100 mmHg.\nMaximum of 10 mcg/min.\nOR\n•\nEpinephrine – 1:100,000 0.5 – 2 ml every 3 -5 minutes\no Mixing Instructions for Epinephrine 1:100,000\n•\nMix 1 ml of 1:10,000 Epinephrine in 9 ml of Normal Saline.\n▪\nOnset 1 minute\n▪\nDuration 5 – 10 minutes\n•\nAlso consider ANCEF – Contact Medical Control Prior to Administration.\n▪\n2 gm if > 176 pounds. Mix in 100 ml of Normal Saline and give over 10\nminutes via 60 gtts.\n▪\n1 gm if < 176 pounds. Mix in 100 ml of Normal Saline and give over 10\nminutes via 60 gtts."
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Sepsis/Shock Management. Sepsis indications, initial fluid treatment, vasopressors, push-dose Epinephrine, and ANCEF dosing.",
+      "needsReview":false
+    },    {
       "id": "hemorrhage-control",
       "title": "Hemorrhage Control",
       "type": "protocol",
