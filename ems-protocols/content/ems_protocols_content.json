@@ -6204,7 +6204,7 @@
           {"name":"Patient with LVAD","deviceType":"MAP 83, pulse pressure 12","image":"assets/lvad-monitor-with-lvad.png","alt":"Bedside monitor example for a patient with an LVAD showing MAP 83 and pulse pressure 12","specs":[]}
         ]},
         {"type":"lvad-unresponsive-flow","title":"Assessment of the Unresponsive LVAD Patient"},
-        {"type":"external-link","text":"UR Medicine VAD Program Educational Resources","url":"https://www.urmc.rochester.edu/MediaLibraries/URMCMedia/cardiology/patient-care/documents/LVAD_TREATING_2.pdf"},
+        {"type":"external-link","text":"UR Medicine VAD Program Educational Resources","href":"https://www.urmc.rochester.edu/MediaLibraries/URMCMedia/cardiology/patient-care/documents/LVAD_TREATING_2.pdf"},
         {"type":"paragraph","text":"For questions, email UR Medicine VAD Educator Lisa Fowler at lisa_chemotti@urmc.rochester.edu."},        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital Signs","Pertinent assessment findings","Onset/duration of event","Treatment(s)","Communication with Medical Control"]}
       ],
       "plainText":"Left Ventricular Assist Device. Primary and secondary assessment, device-specific management, emergency contact guidance, transport, and documentation.",

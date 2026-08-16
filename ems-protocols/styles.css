@@ -714,7 +714,7 @@ details[open] > .tree-heading.tree-toggle::before {
 .lvad-device-section > h3, .lvad-unresponsive-flow > h3 { padding: .7rem 1rem; background: #12658a; color: #fff; text-align: center; text-transform: uppercase; letter-spacing: .035em; }
 .lvad-device-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1rem; }
 .lvad-device-card { overflow: hidden; border: 1px solid #b9c9d6; border-radius: .8rem; background: #fff; box-shadow: 0 5px 18px rgba(18,52,77,.08); }
-.lvad-device-card > img { display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; background: #111; }
+.lvad-device-card > img { display: block; width: 100%; aspect-ratio: 1 / 1; padding: .45rem; object-fit: contain; background: #f4f5f5; }
 .lvad-device-card h4 { margin: .8rem 1rem .1rem; color: #b34e1e; font-size: 1.1rem; }
 .lvad-device-type { margin: 0 1rem .75rem; font-weight: 800; }
 .lvad-device-card dl { display: grid; grid-template-columns: auto 1fr; gap: .25rem .4rem; margin: 0; padding: 0 1rem 1rem; font-size: .9rem; }
@@ -744,3 +744,25 @@ details[open] > .tree-heading.tree-toggle::before {
 @media (max-width:760px){.lvad-device-grid{grid-template-columns:1fr}.lvad-device-card{display:grid;grid-template-columns:9rem 1fr}.lvad-device-card>img{grid-row:1/4;height:100%}.lvad-device-card dl{grid-column:2}.lvad-contact-grid,.lvad-monitor-grid,.lvad-flow-branches{grid-template-columns:1fr}.lvad-flow-branches::before,.lvad-flow-branch::before{display:none}.lvad-flow-branch{margin-top:1rem}}
 @media (max-width:480px){.lvad-device-card{display:block}.lvad-device-card>img{aspect-ratio:4/3}.lvad-vad-paths{grid-template-columns:1fr}}
 .lvad-monitor-section .lvad-device-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+
+/* LVAD image fidelity and original-diagram connector refinements */
+.lvad-monitor-section .lvad-device-card > img { width: 100%; height: auto; min-height: 0; aspect-ratio: auto; padding: .75rem; object-fit: contain; background: #fff; image-rendering: auto; }
+.lvad-flow-no > .lvad-flow-box,
+.lvad-flow-no > .lvad-flow-question,
+.lvad-vad-paths > div:last-child > .lvad-flow-box,
+.lvad-vad-paths > div:last-child > .lvad-flow-question { position: relative; margin-bottom: 2.25rem; }
+.lvad-flow-no > .lvad-flow-box::before,
+.lvad-flow-no > .lvad-flow-question::before,
+.lvad-vad-paths > div:last-child > .lvad-flow-box::before { content:""; position:absolute; left:50%; bottom:-2.1rem; height:2.1rem; border-left:5px solid #173a5e; transform:translateX(-50%); }
+.lvad-flow-no > .lvad-flow-box::after,
+.lvad-flow-no > .lvad-flow-question::after,
+.lvad-vad-paths > div:last-child > .lvad-flow-box::after { content:""; position:absolute; left:50%; bottom:-2.25rem; transform:translateX(-50%); border-left:9px solid transparent; border-right:9px solid transparent; border-top:11px solid #173a5e; }
+.lvad-vad-paths { position:relative; }
+.lvad-vad-paths::before { content:""; position:absolute; left:25%; right:25%; top:-1.15rem; border-top:5px solid #173a5e; }
+.lvad-vad-paths > div { position:relative; }
+.lvad-vad-paths > div::before { content:""; position:absolute; left:50%; top:-1.15rem; height:1.15rem; border-left:5px solid #173a5e; transform:translateX(-50%); }
+.lvad-flow-yes::after { content:""; position:absolute; left:50%; top:9rem; bottom:-1.5rem; border-left:5px solid #173a5e; transform:translateX(-50%); }
+.lvad-flow-action { position:relative; }
+.lvad-flow-action::after { content:""; position:absolute; left:50%; top:100%; height:5rem; border-left:5px solid #173a5e; transform:translateX(-50%); }
+.lvad-flow-outcome { position:relative; z-index:2; }
+@media (max-width:760px){.lvad-flow-yes::after,.lvad-flow-action::after,.lvad-vad-paths::before,.lvad-vad-paths>div::before{display:none}.lvad-monitor-section .lvad-device-card>img{aspect-ratio:auto}}
