@@ -5719,417 +5719,90 @@
       "id": "shock-management",
       "title": "Shock Management",
       "type": "protocol",
-      "categoryPath": [
-        "Adult Clinical Protocols"
-      ],
+      "categoryPath": ["Adult Clinical Protocols"],
       "status": "active",
       "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 93,
-        "pageEnd": 95,
-        "pageLabel": "93-95"
-      },
-      "summary": "",
+      "source": {"pageStart":93,"pageEnd":95,"pageLabel":"93-95"},
+      "summary": "Assessment and treatment of adult patients presenting with signs and symptoms consistent with shock.",
       "content": [
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Page 94"
-        },
-        {
-          "type": "table",
-          "headers": [
-            "Mcg/min",
-            "Volume/minute with 60 gtts",
-            "Micro drops/minute"
-          ],
-          "rows": [
-            [
-              "1",
-              "0.25 ml/min",
-              "4"
-            ],
-            [
-              "2",
-              "0.5 ml/min",
-              "8"
-            ],
-            [
-              "3",
-              "0.75 ml/min",
-              "11"
-            ],
-            [
-              "4",
-              "1.0 ml/min",
-              "15"
-            ],
-            [
-              "5",
-              "1.25 ml/min",
-              "18"
-            ],
-            [
-              "6",
-              "1.5 ml/min",
-              "22"
-            ],
-            [
-              "7",
-              "1.75 ml/min",
-              "26"
-            ],
-            [
-              "8",
-              "2.0 ml/min",
-              "30"
-            ],
-            [
-              "9",
-              "2.25 ml/min",
-              "34"
-            ],
-            [
-              "10",
-              "2.5 ml/min",
-              "38"
-            ]
-          ],
-          "sourcePage": 94,
-          "needsReview": true
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Page 95"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Dopamine Infusion: Standard 1600mcg/ml Concentration"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Weight — Milliliters hour or drops per minute with micro drip tubing (60gtt/ml)"
-        },
-        {
-          "type": "table",
-          "headers": [
-            "lbs",
-            "kg",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "15",
-            "20"
-          ],
-          "rows": [
-            [
-              "mcg/kg/hr",
-              "mcg/kg/hr",
-              "mcg/kg/hr",
-              "mcg/kg/hr",
-              "mcg/kg/hr",
-              "mcg/kg/hr",
-              "mcg/kg/hr",
-              "mcg/kg/hr",
-              "mcg/kg/hr",
-              "mcg/kg/hr",
-              "mcg/kg/hr",
-              "",
-              ""
-            ],
-            [
-              "77",
-              "35",
-              "3",
-              "4",
-              "5",
-              "7",
-              "8",
-              "9",
-              "10",
-              "11",
-              "13",
-              "20",
-              "26"
-            ],
-            [
-              "88",
-              "40",
-              "3",
-              "5",
-              "6",
-              "8",
-              "9",
-              "11",
-              "12",
-              "14",
-              "15",
-              "23",
-              "30"
-            ],
-            [
-              "99",
-              "45",
-              "3",
-              "5",
-              "7",
-              "8",
-              "10",
-              "12",
-              "14",
-              "15",
-              "17",
-              "25",
-              "34"
-            ],
-            [
-              "110",
-              "50",
-              "4",
-              "6",
-              "8",
-              "9",
-              "11",
-              "13",
-              "15",
-              "17",
-              "19",
-              "28",
-              "38"
-            ],
-            [
-              "121",
-              "55",
-              "4",
-              "6",
-              "8",
-              "10",
-              "12",
-              "14",
-              "17",
-              "19",
-              "21",
-              "31",
-              "41"
-            ],
-            [
-              "132",
-              "60",
-              "5",
-              "7",
-              "9",
-              "11",
-              "14",
-              "16",
-              "18",
-              "20",
-              "23",
-              "34",
-              "45"
-            ],
-            [
-              "143",
-              "65",
-              "5",
-              "7",
-              "10",
-              "12",
-              "15",
-              "17",
-              "20",
-              "22",
-              "24",
-              "37",
-              "49"
-            ],
-            [
-              "154",
-              "70",
-              "5",
-              "8",
-              "11",
-              "13",
-              "16",
-              "18",
-              "21",
-              "24",
-              "26",
-              "39",
-              "53"
-            ],
-            [
-              "165",
-              "75",
-              "6",
-              "8",
-              "11",
-              "14",
-              "17",
-              "20",
-              "23",
-              "25",
-              "28",
-              "42",
-              "56"
-            ],
-            [
-              "176",
-              "80",
-              "6",
-              "9",
-              "12",
-              "15",
-              "18",
-              "21",
-              "24",
-              "27",
-              "30",
-              "45",
-              "60"
-            ],
-            [
-              "187",
-              "85",
-              "6",
-              "10",
-              "13",
-              "16",
-              "19",
-              "22",
-              "26",
-              "29",
-              "32",
-              "48",
-              "64"
-            ],
-            [
-              "198",
-              "90",
-              "7",
-              "10",
-              "14",
-              "17",
-              "20",
-              "24",
-              "27",
-              "30",
-              "34",
-              "51",
-              "68"
-            ],
-            [
-              "209",
-              "95",
-              "7",
-              "11",
-              "14",
-              "18",
-              "21",
-              "25",
-              "29",
-              "32",
-              "36",
-              "53",
-              "71"
-            ],
-            [
-              "220",
-              "100",
-              "8",
-              "11",
-              "15",
-              "19",
-              "23",
-              "26",
-              "30",
-              "34",
-              "38",
-              "56",
-              "75"
-            ],
-            [
-              "231",
-              "105",
-              "8",
-              "12",
-              "16",
-              "20",
-              "24",
-              "28",
-              "32",
-              "35",
-              "39",
-              "59",
-              "79"
-            ],
-            [
-              "242",
-              "110",
-              "8",
-              "12",
-              "17",
-              "21",
-              "25",
-              "29",
-              "33",
-              "37",
-              "41",
-              "62",
-              "83"
-            ],
-            [
-              "253",
-              "115",
-              "9",
-              "13",
-              "17",
-              "22",
-              "26",
-              "30",
-              "35",
-              "39",
-              "43",
-              "65",
-              "86"
-            ]
-          ],
-          "sourcePage": 95,
-          "needsReview": true
-        }
+        {"type":"heading","level":2,"text":"Shock Management"},
+        {"type":"paragraph","text":"This protocol applies to adult patients presenting with signs and symptoms consistent with shock. All forms of shock are associated with inadequate tissue perfusion."},
+        {"type":"flow-stage","title":"Primary Survey","arrowAfter":true,"items":[
+          "Assess level of consciousness – AVPU.",
+          {"text":"Ensure airway – ensure patency and positioning.","bold":["Ensure airway"]},
+          {"text":"Consider spinal motion restriction if indicated.","indent":1},
+          {"text":"Assess breathing – give supplemental O₂ if signs of compromise. Maintain SpO₂ ≥ 94%.","bold":["Assess breathing","Maintain SpO₂ ≥ 94%."]},
+          {"text":"Assist with bag valve mask if respiratory effort is ineffective.","indent":1},
+          {"text":"Assess circulation – control bleeding and manage shock appropriately.","bold":["Assess circulation"]},
+          {"text":"Take measures to prevent hypothermia.","indent":1}
+        ]},
+        {"type":"flow-stage","title":"Secondary Assessment and Treatment","arrowAfter":true,"items":[
+          "Monitor vital signs and O₂ saturation.",
+          {"text":"Perform blood glucose analysis – treat if BGL is < 60 mg/dl.","bold":["BGL is < 60 mg/dl."]},
+          "Initiate cardiac monitoring.",
+          {"text":"Treat dysrhythmias per appropriate protocol.","indent":1},
+          "Initiate EtCO₂ monitoring.",
+          "Obtain OPQRST/SAMPLE history.",
+          "Physical exam.",
+          "Keep patient NPO.",
+          "Advanced airway/ventilatory management as needed.",
+          "Initiate IV/IO.",
+          {"text":"For Hypovolemic Shock, administer normal saline bolus. 20 ml/kg.","indent":1,"bold":["20 ml/kg."],"links":[{"text":"Hypovolemic Shock","protocolId":"shock-management"}]},
+          {"text":"For Cardiogenic Shock, administer normal saline at KVO rate.","indent":1,"links":[{"text":"Cardiogenic Shock","protocolId":"shock-management"}]},
+          {"text":"For all other types of shock, administer normal saline bolus. 20 ml/kg.","indent":1,"bold":["20 ml/kg."]},
+          {"text":"Fluid boluses may be repeated × 1 – titrate to clinical effect.","indent":1},
+          "Attempt to identify cause(s) and treat in accordance with the appropriate protocol. (Tension Pneumothorax, overdose, trauma, etc.)",
+          "Initiate transport as soon as possible.",
+          "Continue resuscitation and evaluation enroute.",
+          {"text":"Frequently re-evaluate ABCs and mental status.","indent":1}
+        ]},
+        {"type":"flow-stage","title":"Advanced Shock Treatment","items":[
+          "If patient deteriorates or fails to improve, Medical Control may authorize the following:",
+          {"text":"For Hypovolemic Shock, administer additional 20 ml/kg bolus.","indent":1,"bold":["20 ml/kg bolus."],"links":[{"text":"Hypovolemic Shock","protocolId":"shock-management"}]},
+          {"text":"For Cardiogenic Shock, ensure rate and rhythm have been treated.","indent":1,"links":[{"text":"Cardiogenic Shock","protocolId":"shock-management"}]},
+          {"text":"Levophed IV Infusion – 1–10 mcg/min.","indent":2,"bold":["1–10 mcg/min."],"links":[{"text":"Levophed","protocolId":"levophed-norepinephrine"}]},
+          {"text":"4 mg in 250 ml normal saline = 16 mcg/ml.","indent":3,"bold":["4 mg in 250 ml normal saline = 16 mcg/ml."]},
+          {"text":"Start drip at calculated rate.","indent":3},
+          {"text":"Monitor patient for deterioration into cardiac arrest.","indent":3},
+          {"text":"See Levophed Dosing Chart below.","indent":3,"links":[{"text":"Levophed Dosing Chart","protocolId":"levophed-dosage-chart"}]},
+          {"text":"May also consider:","indent":2},
+          {"text":"Dopamine IV Infusion 2–20 mcg/kg/min.","indent":3,"bold":["2–20 mcg/kg/min."],"links":[{"text":"Dopamine","protocolId":"dopamine"}]},
+          {"text":"See Dopamine Dosing Chart.","indent":3,"links":[{"text":"Dopamine Dosing Chart","protocolId":"dopamine"}]},
+          {"text":"Titrate to clinical effect.","indent":3},
+          {"text":"For all other types of shock, administer 20 ml/kg normal saline fluid bolus.","indent":1,"bold":["20 ml/kg"]},
+          {"text":"AND","bold":["AND"]},
+          {"text":"Consider push dose epinephrine in hypotension or presumed peri-arrest.","bold":["Consider push dose epinephrine in hypotension or presumed peri-arrest."]},
+          {"text":"Epinephrine 1:100,000 – 0.5–2 ml every 3–5 minutes.","indent":2,"bold":["1:100,000","0.5–2 ml","every 3–5 minutes."],"links":[{"text":"Epinephrine","protocolId":"epinephrine-1-1000-and-1-10-000"}]},
+          {"text":"Mixing instructions for Epinephrine 1:100,000","indent":2,"bold":["Mixing instructions for Epinephrine 1:100,000"],"links":[{"text":"Epinephrine","protocolId":"epinephrine-1-1000-and-1-10-000"}]},
+          {"text":"Mix 1 ml of 1:10,000 Epinephrine in 9 ml of Normal Saline. 1:100,000 solution.","indent":3}
+        ]},
+        {"type":"table","className":"levophed-dose-table","caption":"Levophed Dosing Chart","subtitle":"4 mg in 250 ml of Normal Saline · Concentration = 16 mcg/ml","headers":["Mcg/min","Volume/minute with 60 gtts","Micro drops/minute"],"rows":[
+          ["1","0.25 ml/min","4"],["2","0.5 ml/min","8"],["3","0.75 ml/min","11"],["4","1.0 ml/min","15"],["5","1.25 ml/min","18"],["6","1.5 ml/min","22"],["7","1.75 ml/min","26"],["8","2.0 ml/min","30"],["9","2.25 ml/min","34"],["10","2.5 ml/min","38"]
+        ]},
+        {"type":"table","className":"dopamine-dose-table adult-dopamine-dose-table","caption":"Dopamine Infusion: Standard 1600 mcg/ml Concentration","subtitle":"Milliliters per hour or drops per minute with micro drip tubing (60 gtt/ml)","headers":["Weight (lbs)","Weight (kg)","2 mcg/kg/hr","3 mcg/kg/hr","4 mcg/kg/hr","5 mcg/kg/hr","6 mcg/kg/hr","7 mcg/kg/hr","8 mcg/kg/hr","9 mcg/kg/hr","10 mcg/kg/hr","15 mcg/kg/hr","20 mcg/kg/hr"],"rows":[
+          ["77","35","3","4","5","7","8","9","10","11","13","20","26"],
+          ["88","40","3","5","6","8","9","11","12","14","15","23","30"],
+          ["99","45","3","5","7","8","10","12","14","15","17","25","34"],
+          ["110","50","4","6","8","9","11","13","15","17","19","28","38"],
+          ["121","55","4","6","8","10","12","14","17","18","21","31","41"],
+          ["132","60","5","7","9","11","14","16","18","20","23","34","45"],
+          ["143","65","5","7","10","12","15","17","20","22","24","37","49"],
+          ["154","70","5","8","11","13","16","18","21","24","26","39","53"],
+          ["165","75","6","8","11","14","17","20","23","25","28","42","56"],
+          ["176","80","6","9","12","15","18","21","24","27","30","45","60"],
+          ["187","85","6","9","13","16","19","22","26","29","32","48","64"],
+          ["198","90","7","10","14","17","20","24","27","30","34","51","68"],
+          ["209","95","7","11","14","18","21","25","29","32","36","53","71"],
+          ["220","100","8","11","15","19","23","26","30","34","38","56","75"],
+          ["231","105","8","12","16","20","24","28","32","35","39","59","79"],
+          ["242","110","8","12","17","21","25","29","33","37","41","62","83"],
+          ["253","115","9","13","17","22","26","30","35","39","43","65","86"]
+        ]},
+        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital Signs","OPQRST/SAMPLE","Cardiac rhythm","Treatment(s)","Communication with Medical Control"]}
       ],
-      "plainText": "Shock Management\nThis protocol applies to adult patients presenting with signs and symptoms consistent with shock.\nAll forms of shock are associated with inadequate tissue perfusion.\nPrimary Survey\n•\nAssess level of consciousness – AVPU\n•\nEnsure airway – ensure patency and positioning\no\nConsider spinal motion restriction if indicated.\n•\nAssess breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nAssess circulation – control bleeding and manage shock appropriately.\no\nTake measures to prevent hypothermia.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nInitiate cardiac monitoring\no\nTreat dysrhythmias per appropriate protocol.\n•\nInitiate EtCO2 monitoring.\n•\nObtain OPQRST/SAMPLE history\n•\nPhysical Exam\n•\nKeep patient NPO\n•\nAdvanced airway/ventilatory management as needed.\n•\nInitiate IV/IO\no\nFor Hypovolemic Shock,  administer normal saline bolus.  20 ml/kg.\no\nFor Cardiogenic Shock, administer normal saline at KVO rate.\no\nFor all other types of shock, administer normal saline bolus. 20 ml/kg.\no\nFluid boluses may be repeated x 1 – titrate to clinical effect.\n•\nAttempt to identify cause(s) and treat in accordance with the appropriate protocol.  (Tension\nPneumothorax, overdose, trauma, etc.)\n•\nInitiate transport as soon as possible.\n•\nContinue resuscitation and evaluation enroute.\no\nFrequently revaluate ABCs and mental status.\nDocument:\n•\nVital signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control.\nShock Management (Continued)\nSecondary Assessment and Treatment (Continued)\n•\nIf patient deteriorates or fails to improve, Medical Control may authorize the following:\no\nFor Hypovolemic Shock, administer additional 20 ml/kg bolus.\no\nFor Cardiogenic Shock, ensure rate and rhythm have been treated.\n▪\nLevophed IV Infusion – 1-10 mcg/min.\n•\n4 mg in 250 ml normal saline = 16 mcg/ml\n•\nStart drip at calculated rate\n•\nMonitor patient for deterioration into cardiac arrest.\n▪\nSee Levophed Dosing Chart (below)\nMay also consider:\n▪\nDopamine IV Infusion 2 – 20 mcg/kg/min\n▪\nSee Dopamine Dosing Chart\no\nTitrate to clinical effect.\n•\nFor all other types of shock, administer 20 ml/kg normal saline fluid bolus.\nAND\n•\nConsider push dose epinephrine in hypotension or presumed peri-arrest.\n▪\nEpinephrine 1:100,000 – 0.5 – 2ml every 3-5 minutes.\n•\nMixing instructions for Epinephrine 1:100,000\no\nMix 1 ml of 1:10,000 Epinephrine in 9 ml of Normal Saline.\n1:100,000 solution.\nLevophed Dosing Chart\n4 mg in 250 ml of Normal Saline\nConcentration = 16 mcg/ml\nMcg/min\nVolume/minute with 60 gtts\nMicro drops/minute\n1\n0.25 ml/min\n4\n2\n0.5 ml/min\n8\n3\n0.75 ml/min\n11\n4\n1.0 ml/min\n15\n5\n1.25 ml/min\n18\n6\n1.5 ml/min\n22\n7\n1.75 ml/min\n26\n8\n2.0 ml/min\n30\n9\n2.25 ml/min\n34\n10\n2.5 ml/min\n38\nShock Management (Continued)\nDopamine Infusion:  Standard 1600mcg/ml Concentration\nWeight\nMilliliters hour or drops per minute with micro drip tubing (60gtt/ml)\nlbs\nkg\n2\nmcg/kg/hr\n3\nmcg/kg/hr\n4\nmcg/kg/hr\n5\nmcg/kg/hr\n6\nmcg/kg/hr\n7\nmcg/kg/hr\n8\nmcg/kg/hr\n9\nmcg/kg/hr\n10\nmcg/kg/hr\n15\nmcg/kg/hr\n20\nmcg/kg/hr\n77\n35\n3\n4\n5\n7\n8\n9\n10\n11\n13\n20\n26\n88\n40\n3\n5\n6\n8\n9\n11\n12\n14\n15\n23\n30\n99\n45\n3\n5\n7\n8\n10\n12\n14\n15\n17\n25\n34\n110\n50\n4\n6\n8\n9\n11\n13\n15\n17\n19\n28\n38\n121\n55\n4\n6\n8\n10\n12\n14\n17\n19\n21\n31\n41\n132\n60\n5\n7\n9\n11\n14\n16\n18\n20\n23\n34\n45\n143\n65\n5\n7\n10\n12\n15\n17\n20\n22\n24\n37\n49\n154\n70\n5\n8\n11\n13\n16\n18\n21\n24\n26\n39\n53\n165\n75\n6\n8\n11\n14\n17\n20\n23\n25\n28\n42\n56\n176\n80\n6\n9\n12\n15\n18\n21\n24\n27\n30\n45\n60\n187\n85\n6\n10\n13\n16\n19\n22\n26\n29\n32\n48\n64\n198\n90\n7\n10\n14\n17\n20\n24\n27\n30\n34\n51\n68\n209\n7\n11\n14\n18\n21\n25\n29\n32\n36\n53\n71\n220\n100\n8\n11\n15\n19\n23\n26\n30\n34\n38\n56\n75\n231\n105\n8\n12\n16\n20\n24\n28\n32\n35\n39\n59\n79\n242\n110\n8\n12\n17\n21\n25\n29\n33\n37\n41\n62\n83\n253\n115\n9\n13\n17\n22\n26\n30\n35\n39\n43\n65\n86",
-      "pageText": [
-        {
-          "page": 93,
-          "text": "Shock Management\nThis protocol applies to adult patients presenting with signs and symptoms consistent with shock.\nAll forms of shock are associated with inadequate tissue perfusion.\nPrimary Survey\n•\nAssess level of consciousness – AVPU\n•\nEnsure airway – ensure patency and positioning\no\nConsider spinal motion restriction if indicated.\n•\nAssess breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nAssess circulation – control bleeding and manage shock appropriately.\no\nTake measures to prevent hypothermia.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nInitiate cardiac monitoring\no\nTreat dysrhythmias per appropriate protocol.\n•\nInitiate EtCO2 monitoring.\n•\nObtain OPQRST/SAMPLE history\n•\nPhysical Exam\n•\nKeep patient NPO\n•\nAdvanced airway/ventilatory management as needed.\n•\nInitiate IV/IO\no\nFor Hypovolemic Shock,  administer normal saline bolus.  20 ml/kg.\no\nFor Cardiogenic Shock, administer normal saline at KVO rate.\no\nFor all other types of shock, administer normal saline bolus. 20 ml/kg.\no\nFluid boluses may be repeated x 1 – titrate to clinical effect.\n•\nAttempt to identify cause(s) and treat in accordance with the appropriate protocol.  (Tension\nPneumothorax, overdose, trauma, etc.)\n•\nInitiate transport as soon as possible.\n•\nContinue resuscitation and evaluation enroute.\no\nFrequently revaluate ABCs and mental status.\nDocument:\n•\nVital signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control."
-        },
-        {
-          "page": 94,
-          "text": "Shock Management (Continued)\nSecondary Assessment and Treatment (Continued)\n•\nIf patient deteriorates or fails to improve, Medical Control may authorize the following:\no\nFor Hypovolemic Shock, administer additional 20 ml/kg bolus.\no\nFor Cardiogenic Shock, ensure rate and rhythm have been treated.\n▪\nLevophed IV Infusion – 1-10 mcg/min.\n•\n4 mg in 250 ml normal saline = 16 mcg/ml\n•\nStart drip at calculated rate\n•\nMonitor patient for deterioration into cardiac arrest.\n▪\nSee Levophed Dosing Chart (below)\nMay also consider:\n▪\nDopamine IV Infusion 2 – 20 mcg/kg/min\n▪\nSee Dopamine Dosing Chart\no\nTitrate to clinical effect.\n•\nFor all other types of shock, administer 20 ml/kg normal saline fluid bolus.\nAND\n•\nConsider push dose epinephrine in hypotension or presumed peri-arrest.\n▪\nEpinephrine 1:100,000 – 0.5 – 2ml every 3-5 minutes.\n•\nMixing instructions for Epinephrine 1:100,000\no\nMix 1 ml of 1:10,000 Epinephrine in 9 ml of Normal Saline.\n1:100,000 solution.\nLevophed Dosing Chart\n4 mg in 250 ml of Normal Saline\nConcentration = 16 mcg/ml\nMcg/min\nVolume/minute with 60 gtts\nMicro drops/minute\n1\n0.25 ml/min\n4\n2\n0.5 ml/min\n8\n3\n0.75 ml/min\n11\n4\n1.0 ml/min\n15\n5\n1.25 ml/min\n18\n6\n1.5 ml/min\n22\n7\n1.75 ml/min\n26\n8\n2.0 ml/min\n30\n9\n2.25 ml/min\n34\n10\n2.5 ml/min\n38"
-        },
-        {
-          "page": 95,
-          "text": "Shock Management (Continued)\nDopamine Infusion:  Standard 1600mcg/ml Concentration\nWeight\nMilliliters hour or drops per minute with micro drip tubing (60gtt/ml)\nlbs\nkg\n2\nmcg/kg/hr\n3\nmcg/kg/hr\n4\nmcg/kg/hr\n5\nmcg/kg/hr\n6\nmcg/kg/hr\n7\nmcg/kg/hr\n8\nmcg/kg/hr\n9\nmcg/kg/hr\n10\nmcg/kg/hr\n15\nmcg/kg/hr\n20\nmcg/kg/hr\n77\n35\n3\n4\n5\n7\n8\n9\n10\n11\n13\n20\n26\n88\n40\n3\n5\n6\n8\n9\n11\n12\n14\n15\n23\n30\n99\n45\n3\n5\n7\n8\n10\n12\n14\n15\n17\n25\n34\n110\n50\n4\n6\n8\n9\n11\n13\n15\n17\n19\n28\n38\n121\n55\n4\n6\n8\n10\n12\n14\n17\n19\n21\n31\n41\n132\n60\n5\n7\n9\n11\n14\n16\n18\n20\n23\n34\n45\n143\n65\n5\n7\n10\n12\n15\n17\n20\n22\n24\n37\n49\n154\n70\n5\n8\n11\n13\n16\n18\n21\n24\n26\n39\n53\n165\n75\n6\n8\n11\n14\n17\n20\n23\n25\n28\n42\n56\n176\n80\n6\n9\n12\n15\n18\n21\n24\n27\n30\n45\n60\n187\n85\n6\n10\n13\n16\n19\n22\n26\n29\n32\n48\n64\n198\n90\n7\n10\n14\n17\n20\n24\n27\n30\n34\n51\n68\n209\n7\n11\n14\n18\n21\n25\n29\n32\n36\n53\n71\n220\n100\n8\n11\n15\n19\n23\n26\n30\n34\n38\n56\n75\n231\n105\n8\n12\n16\n20\n24\n28\n32\n35\n39\n59\n79\n242\n110\n8\n12\n17\n21\n25\n29\n33\n37\n41\n62\n83\n253\n115\n9\n13\n17\n22\n26\n30\n35\n39\n43\n65\n86"
-        }
-      ],
-      "needsReview": true,
-      "extractionNote": "Tables were converted from the PDF into in-page HTML table blocks. Review against the official PDF before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Adult Shock Management. Primary and secondary assessment, advanced vasopressor treatment, Levophed chart, Dopamine chart, and documentation.",
+      "needsReview":false
+    },    {
       "id": "sepsis-management",
       "title": "Sepsis Management",
       "type": "protocol",
