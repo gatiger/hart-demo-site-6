@@ -640,7 +640,7 @@
               "status": "active"
             },
             {
-              "id": "sickle-cell-crisis",
+              "id": "adult-sickle-cell-crisis",
               "title": "Sickle Cell Crisis",
               "type": "protocol",
               "pageStart": 128,
@@ -7206,69 +7206,60 @@
       "needsReview":false,
       "displayMode":"structured"
     },{
-      "id": "sickle-cell-crisis",
+      "id": "adult-sickle-cell-crisis",
       "title": "Sickle Cell Crisis",
       "type": "protocol",
-      "categoryPath": [
-        "Adult Clinical Protocols",
-        "Adult Medical Emergencies"
-      ],
+      "categoryPath": ["Adult Clinical Protocols", "Adult Medical Emergencies"],
       "status": "active",
       "effectiveDate": "2026-06-08",
       "lastRevised": "",
       "version": "2026",
       "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 128,
-        "pageEnd": 128,
-        "pageLabel": "128"
-      },
+      "source": {"pdf":"documents/ems/2026-hcems-protocols.pdf","pageStart":128,"pageEnd":128,"pageLabel":"128"},
       "summary": "",
       "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Adult Sickle Cell Crisis"
-        },
-        {
-          "type": "paragraph",
-          "text": "This protocol applies to adult patients presenting with sickle cell crisis. The typical sickle cell EMS call in adults is severe pain in the abdomen and chest, jaundice, swelling of hands, feet and joints, and/or difficulty breathing with hypoxia. Many of these patients are dehydrated. Primary Survey Assess level of consciousness – AVPU Ensure airway – ensure patency and positioning Have suction equipment ready. Consider spinal motion restriction if indicated. Assess breathing – Give supplemental O2 if signs of compromise. Maintain SpO2 > 94%. If known COPD, start with 2 – 6 lpm via nasal cannula and increase as needed Assist with bag valve mask if respiratory effort is ineffective. Assess circulation – control bleeding and manage shock appropriately. See Shock Protocol. Secondary Assessment and Treatment Monitor vital signs and O2 saturation Perform blood glucose analysis – Treat if BGL is < 60 mg/dl. Cardiac Monitor Record and evaluate 12-Lead ECG Physical exam and OPQRST/SAMPLE history. Obtain description of seizure activity Duration and severity Note any history of illness or trauma. Advanced airway/ventilatory management as needed. Initiate IV/IO of normal saline at KVO rate. If fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol. Pain Management If pain scale is > 6, consider one of the following: Morphine 0.1 mg/kg IV/IM/IO. Maximum Dose – 10 mg. OR Fentanyl 1 – 2 mcg/kg IV/IO/IM/IN. Maximum Dose – 200 mcg."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "If respirations become depressed"
-        },
-        {
-          "type": "list",
-          "items": [
-            "Administer Naloxone 0.01 mg/kg IV/IO/IN."
-          ]
-        },
-        {
-          "type": "paragraph",
-          "text": "If no clinical improvement, 0.1 mg/kg. Maximum Dose – 2 mg. Titrate Naloxone administration to patient’s respirations. If patient becomes nauseated or vomits, consider administering:"
-        },
-        {
-          "type": "list",
-          "items": [
-            "Ondansetron (Zofran) 0.1 mg/kg IV/IM/ODT.  Maximum Dose – 4 mg."
-          ]
-        }
+        {"type":"heading","level":2,"text":"Adult Sickle Cell Crisis"},
+        {"type":"paragraph","text":"This protocol applies to adult patients presenting with sickle cell crisis. The typical sickle cell EMS call in adults is severe pain in the abdomen and chest, jaundice, swelling of hands, feet and joints, and/or difficulty breathing with hypoxia. Many of these patients are dehydrated."},
+        {"type":"flow-stage","title":"Primary Survey","arrowAfter":true,"items":[
+          {"text":"Assess level of consciousness – AVPU","bold":["Assess level of consciousness"]},
+          {"text":"Ensure airway – ensure patency and positioning","bold":["Ensure airway"]},
+          {"text":"Have suction equipment ready.","indent":1},
+          {"text":"Consider spinal motion restriction if indicated.","indent":1},
+          {"text":"Assess breathing – Give supplemental O₂ if signs of compromise. Maintain SpO₂ ≥ 94%.","bold":["Assess breathing","Maintain SpO₂ ≥ 94%."]},
+          {"text":"If known COPD, start with 2–6 lpm via nasal cannula and increase as needed.","indent":1},
+          {"text":"Assist with bag valve mask if respiratory effort is ineffective.","indent":1},
+          {"text":"Assess circulation – control bleeding and manage shock appropriately. See Shock Protocol.","bold":["Assess circulation"],"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]}
+        ]},
+        {"type":"flow-stage","title":"Secondary Assessment and Treatment","arrowAfter":true,"items":[
+          "Monitor vital signs and O₂ saturation.",
+          {"text":"Perform blood glucose analysis – Treat if BGL is < 60 mg/dl.","bold":["BGL is < 60 mg/dl."]},
+          "Cardiac Monitor",
+          {"text":"Record and evaluate 12-Lead ECG","indent":1},
+          "Physical exam and OPQRST/SAMPLE history.",
+          {"text":"Obtain description of seizure activity.","indent":1},
+          {"text":"Duration and severity","indent":2},
+          {"text":"Note any history of illness or trauma.","indent":1},
+          "Advanced airway/ventilatory management as needed.",
+          "Initiate IV/IO of normal saline at KVO rate.",
+          {"text":"If fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.","indent":1,"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]}
+        ]},
+        {"type":"flow-stage","title":"Pain Management","items":[
+          "If pain scale is ≥ 6, consider one of the following:",
+          {"text":"Morphine 0.1 mg/kg IV/IO/IM. Maximum Dose – 10 mg.","indent":1,"bold":["0.1 mg/kg","Maximum Dose – 10 mg."],"links":[{"text":"Morphine","protocolId":"morphine-sulfate"}]},
+          {"text":"OR","indent":2,"bold":["OR"],"red":true},
+          {"text":"Fentanyl 1–2 mcg/kg IV/IO/IM/IN. Maximum Dose – 200 mcg.","indent":1,"bold":["1–2 mcg/kg","Maximum Dose – 200 mcg."],"links":[{"text":"Fentanyl","protocolId":"fentanyl-sublimaze"}]},
+          "If respirations become depressed:",
+          {"text":"Administer Naloxone 0.01 mg/kg IV/IO/IN.","indent":1,"bold":["0.01 mg/kg"],"links":[{"text":"Naloxone","protocolId":"naloxone-narcan"}]},
+          {"text":"If no clinical improvement, 0.1 mg/kg. Maximum Dose – 2 mg.","indent":2,"bold":["0.1 mg/kg","Maximum Dose – 2 mg."]},
+          {"text":"Titrate Naloxone administration to patient’s respirations.","indent":2,"links":[{"text":"Naloxone","protocolId":"naloxone-narcan"}]},
+          "If patient becomes nauseated or vomits, consider administering:",
+          {"text":"Ondansetron (Zofran) 0.1 mg/kg IV/IM/ODT. Maximum Dose – 4 mg.","indent":1,"bold":["0.1 mg/kg","Maximum Dose – 4 mg."],"links":[{"text":"Ondansetron","protocolId":"ondansetron-zofran"}]}
+        ]}
       ],
-      "plainText": "Adult Sickle Cell Crisis\nThis protocol applies to adult patients presenting with sickle cell crisis. The typical sickle cell EMS call\nin adults is severe pain in the abdomen and chest, jaundice, swelling of hands, feet and joints, and/or\ndifficulty breathing with hypoxia. Many of these patients are dehydrated.\nPrimary Survey\n•\nAssess level of consciousness – AVPU\n•\nEnsure airway – ensure patency and positioning\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\n•\nAssess breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nIf known COPD, start with 2 – 6 lpm via nasal cannula and increase as needed\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nAssess circulation – control bleeding and manage shock appropriately. See Shock Protocol.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nCardiac Monitor\no\nRecord and evaluate 12-Lead ECG\n•\nPhysical exam and OPQRST/SAMPLE history.\no\nObtain description of seizure activity\n▪\nDuration and severity\no\nNote any history of illness or trauma.\n•\nAdvanced airway/ventilatory management as needed.\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.\nPain Management\n•\nIf pain scale is > 6, consider one of the following:\no\nMorphine 0.1 mg/kg IV/IM/IO. Maximum Dose – 10 mg.\nOR\no\nFentanyl  1 – 2 mcg/kg IV/IO/IM/IN.  Maximum Dose – 200 mcg.\n•\nIf respirations become depressed:\no Administer Naloxone 0.01 mg/kg IV/IO/IN.\n▪\nIf no clinical improvement, 0.1 mg/kg.  Maximum Dose – 2 mg.\n▪\nTitrate Naloxone administration to patient’s respirations.\n•\nIf patient becomes nauseated or vomits, consider administering:\no Ondansetron (Zofran) 0.1 mg/kg IV/IM/ODT.  Maximum Dose – 4 mg.",
-      "pageText": [
-        {
-          "page": 128,
-          "text": "Adult Sickle Cell Crisis\nThis protocol applies to adult patients presenting with sickle cell crisis. The typical sickle cell EMS call\nin adults is severe pain in the abdomen and chest, jaundice, swelling of hands, feet and joints, and/or\ndifficulty breathing with hypoxia. Many of these patients are dehydrated.\nPrimary Survey\n•\nAssess level of consciousness – AVPU\n•\nEnsure airway – ensure patency and positioning\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\n•\nAssess breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nIf known COPD, start with 2 – 6 lpm via nasal cannula and increase as needed\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nAssess circulation – control bleeding and manage shock appropriately. See Shock Protocol.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nCardiac Monitor\no\nRecord and evaluate 12-Lead ECG\n•\nPhysical exam and OPQRST/SAMPLE history.\no\nObtain description of seizure activity\n▪\nDuration and severity\no\nNote any history of illness or trauma.\n•\nAdvanced airway/ventilatory management as needed.\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.\nPain Management\n•\nIf pain scale is > 6, consider one of the following:\no\nMorphine 0.1 mg/kg IV/IM/IO. Maximum Dose – 10 mg.\nOR\no\nFentanyl  1 – 2 mcg/kg IV/IO/IM/IN.  Maximum Dose – 200 mcg.\n•\nIf respirations become depressed:\no Administer Naloxone 0.01 mg/kg IV/IO/IN.\n▪\nIf no clinical improvement, 0.1 mg/kg.  Maximum Dose – 2 mg.\n▪\nTitrate Naloxone administration to patient’s respirations.\n•\nIf patient becomes nauseated or vomits, consider administering:\no Ondansetron (Zofran) 0.1 mg/kg IV/IM/ODT.  Maximum Dose – 4 mg."
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Adult Sickle Cell Crisis. Adult assessment, hydration, pain management, respiratory monitoring, and nausea treatment.",
+      "needsReview":false,
+      "displayMode":"structured"
+    },{
       "id": "seizure",
       "title": "Seizure",
       "type": "protocol",
