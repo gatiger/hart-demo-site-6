@@ -5549,48 +5549,47 @@
       ],
       "status": "active",
       "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": [],
       "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
         "pageStart": 87,
         "pageEnd": 87,
         "pageLabel": "87"
       },
-      "summary": "",
+      "summary": "Assessment and treatment of pediatric patients who have been submerged under water for any period of time.",
       "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Pediatric Submersion Event"
-        },
-        {
-          "type": "paragraph",
-          "text": "This protocol applies to any pediatric patient that has been submerged under water for any period of time. Special note: Safety of rescue personnel is top priority ! Enter the water only if trained and as a last resort. First Impression (Pediatric Assessment Triangle) Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry. Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds. Circulation – observe skin color for pallor, mottling and/or cyanosis. Primary Survey Ensure airway – ensure patency and proper positioning. Consider spinal mobile restriction if any evidence of trauma. Assess breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%. Assist ventilation with bag valve mask if respirations are ineffective. Assess circulation – manage shock appropriately. See Shock Protocol. Assess disability – assess LOC. Exposure/Environment – take measures to prevent hypothermia. See Cold Related Emergencies Protocol. Remove wet clothing Cover and warm patient. Secondary Assessment and Treatment Monitor vital signs and O2 saturation. Perform blood glucose analysis – Treat if BGL is < 60 mg/dl. Consider cardiac monitor Physical Exam and OPQRST/SAMPLE history Advanced airway/ventilatory management as needed. Initiate IV/IO of normal saline at KVO rate. If fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol. If patient is hypothermic, see Cold Related Emergencies Protocol. All submersion victims should be transported even if they appear uninjured or appear to have recovered."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vital signs OPQRST/SAMPLE Cardiac rhythm Treatment(s) Communication with Medical Control."
-        }
+        {"type":"heading","level":2,"text":"Pediatric Submersion Event"},
+        {"type":"paragraph","text":"This protocol applies to any pediatric patient that has been submerged under water for any period of time. Special note: Safety of rescue personnel is top priority! Enter the water only if trained and as a last resort.","bold":["Special note: Safety of rescue personnel is top priority! Enter the water only if trained and as a last resort."]},
+        {"type":"flow-stage","title":"First Impression (Pediatric Assessment Triangle)","arrowAfter":true,"links":[{"text":"Pediatric Assessment Triangle","protocolId":"pediatric-assessment-triangle"}],"items":[
+          "Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.",
+          "Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.",
+          "Circulation – observe skin color for pallor, mottling, and/or cyanosis."
+        ]},
+        {"type":"flow-stage","title":"Primary Survey","arrowAfter":true,"items":[
+          {"text":"Ensure airway – ensure patency and proper positioning.","bold":["Ensure airway"]},
+          {"text":"Consider spinal motion restriction if any evidence of trauma.","indent":1},
+          {"text":"Assess breathing – give O₂ as tolerated by mask or blow-by. Maintain SpO₂ ≥ 94%.","bold":["Assess breathing","Maintain SpO₂ ≥ 94%."]},
+          {"text":"Assist ventilation with bag valve mask if respirations are ineffective.","indent":1},
+          {"text":"Assess circulation – manage shock appropriately. See Shock Protocol.","bold":["Assess circulation"],"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          {"text":"Assess disability – assess LOC.","bold":["Assess disability"]},
+          {"text":"Exposure/Environment – take measures to prevent hypothermia. See Cold Related Emergencies Protocol.","bold":["Exposure/Environment"],"links":[{"text":"Cold Related Emergencies Protocol","protocolId":"cold-related-emergencies"}]},
+          {"text":"Remove wet clothing.","indent":1},
+          {"text":"Cover and warm patient.","indent":1}
+        ]},
+        {"type":"flow-stage","title":"Secondary Assessment and Treatment","items":[
+          "Monitor vital signs and O₂ saturation.",
+          {"text":"Perform blood glucose analysis – treat if BGL is < 60 mg/dl.","bold":["BGL is < 60 mg/dl."]},
+          "Consider cardiac monitor.",
+          "Physical exam and OPQRST/SAMPLE history.",
+          "Advanced airway/ventilatory management as needed.",
+          "Initiate IV/IO of normal saline at KVO rate.",
+          {"text":"If fluid resuscitation is needed, administer 20 ml/kg fluid bolus. See Shock Protocol.","indent":1,"bold":["20 ml/kg fluid bolus."],"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          {"text":"If patient is hypothermic, see Cold Related Emergencies Protocol.","links":[{"text":"Cold Related Emergencies Protocol","protocolId":"cold-related-emergencies"}]},
+          {"text":"All submersion victims should be transported even if they appear uninjured or appear to have recovered.","icon":"assets/legend-important.webp","iconAlt":"Important protocol information","bold":["All submersion victims should be transported even if they appear uninjured or appear to have recovered."],"red":["All submersion victims should be transported even if they appear uninjured or appear to have recovered."]}
+        ]},
+        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital Signs","OPQRST/SAMPLE","Cardiac rhythm","Treatment(s)","Communication with Medical Control"]}
       ],
-      "plainText": "Pediatric Submersion Event\nThis protocol applies to any pediatric patient that has been submerged under water for any\nperiod of time.  Special note: Safety of rescue personnel is top priority ! Enter the water\nonly if trained and as a last resort.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis.\nPrimary Survey\n•\nEnsure airway – ensure patency and proper positioning.\no\nConsider spinal mobile restriction if any evidence of trauma.\n•\nAssess breathing – give O2 as tolerated by mask or blow-by.  Maintain SpO2 > 94%.\no\nAssist ventilation with bag valve mask if respirations are ineffective.\n•\nAssess circulation – manage shock appropriately.  See Shock Protocol.\n•\nAssess disability – assess LOC.\n•\nExposure/Environment – take measures to prevent hypothermia. See Cold Related Emergencies\nProtocol.\no\nRemove wet clothing\no\nCover and warm patient.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation.\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nConsider cardiac monitor\n•\nPhysical Exam and OPQRST/SAMPLE history\n•\nAdvanced airway/ventilatory management as needed.\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.\n•\nIf patient is hypothermic, see Cold Related Emergencies Protocol.\nAll submersion victims should be transported even if they appear uninjured or appear to\nhave recovered.\nDocument:\n•\nVital signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control.",
-      "pageText": [
-        {
-          "page": 87,
-          "text": "Pediatric Submersion Event\nThis protocol applies to any pediatric patient that has been submerged under water for any\nperiod of time.  Special note: Safety of rescue personnel is top priority ! Enter the water\nonly if trained and as a last resort.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis.\nPrimary Survey\n•\nEnsure airway – ensure patency and proper positioning.\no\nConsider spinal mobile restriction if any evidence of trauma.\n•\nAssess breathing – give O2 as tolerated by mask or blow-by.  Maintain SpO2 > 94%.\no\nAssist ventilation with bag valve mask if respirations are ineffective.\n•\nAssess circulation – manage shock appropriately.  See Shock Protocol.\n•\nAssess disability – assess LOC.\n•\nExposure/Environment – take measures to prevent hypothermia. See Cold Related Emergencies\nProtocol.\no\nRemove wet clothing\no\nCover and warm patient.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation.\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nConsider cardiac monitor\n•\nPhysical Exam and OPQRST/SAMPLE history\n•\nAdvanced airway/ventilatory management as needed.\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.\n•\nIf patient is hypothermic, see Cold Related Emergencies Protocol.\nAll submersion victims should be transported even if they appear uninjured or appear to\nhave recovered.\nDocument:\n•\nVital signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control."
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Pediatric Submersion Event. Rescue safety, assessment, hypothermia prevention, transport requirements, and documentation.",
+      "needsReview":false
+    },    {
       "id": "adult-assessment",
       "title": "Adult Assessment",
       "type": "protocol",
