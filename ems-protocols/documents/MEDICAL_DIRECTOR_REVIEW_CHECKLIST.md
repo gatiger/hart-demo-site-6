@@ -183,6 +183,16 @@ This internal checklist tracks items that must be confirmed before the native EM
 
 - [ ] Verify midazolam/diazepam doses, repeats, maximums, and medical-control stop.
 
+
+### Adult Clinical Protocols > Adult Medical Emergencies > Toxic Exposure
+
+- [ ] Verify the adult atropine dose of 2?5 mg/kg IV/IO/IM every 10?15 minutes and the instruction to titrate to drying of secretions.
+- [ ] Verify the carbon-monoxide treatment and hyperbaric-capable destination language.
+- [ ] Verify Georgia Poison Control 1-800-222-1222, CHEMPACK deployment language, and authority to follow Poison Control advice as Medical Control direction.
+- [ ] Verify the law-enforcement reporting requirement for all suspected suicide attempts.
+- [ ] Confirm whether ?obstetric history? belongs in the adult Toxic Exposure assessment.
+- [ ] Verify all toxic-exposure wording, routes, PPE/decontamination requirements, reassessment instructions, and documentation requirements.
+
 ### Adult Clinical Protocols > Adult Medical Emergencies > Toxemia
 
 - [ ] Verify the definition and applicability statement for toxemia/eclampsia.
