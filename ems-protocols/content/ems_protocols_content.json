@@ -4937,7 +4937,7 @@
       "needsReview":false
     },    {
       "id": "head-and-spine-trauma",
-      "title": "Head and Spine Trauma",
+      "title": "Head and Spine Injuries",
       "type": "protocol",
       "categoryPath": [
         "Pediatric Clinical Protocols",
@@ -4945,61 +4945,74 @@
       ],
       "status": "active",
       "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": [],
       "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
         "pageStart": 72,
         "pageEnd": 73,
         "pageLabel": "72-73"
       },
-      "summary": "",
+      "summary": "Assessment and treatment of pediatric patients presenting with injuries to the head and/or spine.",
       "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Pediatric Head and Spine Injuries"
-        },
-        {
-          "type": "paragraph",
-          "text": "This protocol applies to pediatric patients presenting with injuries to the head and/or spine. First Impression (Pediatric Assessment Triangle) Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry. Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds. Circulation – observe skin color for pallor, mottling and/or cyanosis. Primary Survey Massive hemorrhage Treat all life-threatening hemorrhage Tourniquets for massive extremity hemorrhage Wound packing for junctional hemorrhage Airway – ensure patency, manually stabilize C-Spine. Have suction equipment ready Consider spinal motion restriction if indicated. Respiratory/Breathing – give supplemental O2 if signs of compromise. Maintain SpO2 > 94%. Manage any injuries impairing ventilation. Chest wounds: Penetrating/Sucking chest wound, impaled objects, bruising Signs of pneumothorax Flail segments Assist with bag valve mask if respiratory effort is ineffective. Circulation – assess pulses and perfusion status Manage shock appropriately. See Shock Protocol. Head/Hypothermia Initial GCS/AVPU Pupils Prevent hypothermia Secondary Assessment and Treatment Monitor vital signs and O2 saturation. Perform blood glucose analysis – Treat if BGL is < 60 mg/dl. Consider cardiac monitoring. Record and evaluate 12-Lead ECG. Physical Exam and OPQRST/SAMPLE history. Perform spinal motion restriction. Apply a rigid cervical collar. Secure to long spine board. Initiate patient transport to an appropriate level trauma center as soon as possible. Advanced airway/ventilatory management as needed. See Sedation Assisted Intubation Protocol. Initiate EtCO2 monitoring. Pediatric Head and Spine Injuries (Continued) Secondary Assessment and Treatment (Continued) Initiate IV/IO of normal saline at KVO rate. If fluid resuscitation is needed, 20 ml/kg bolus. See Shock Protocol. Perform detailed/focused physical assessment. Re-evaluate ABCs. Repeat neurological exam. Continue resuscitation and evaluation enroute. Manage any presenting Respiratory Distress, Seizures, and/or dysrhythmias in accordance with the appropriate protocol. Frequently re-assess for clinical signs of cerebral herniation. Signs and symptoms include dilated, unreactive pupils, asymmetric pupils, extensor posturing or no motor response, decreased GCS > 2 points in patients with initial GCS < 9. Hyperventilation therapy titrated to clinical effect may be necessary for brief periods in cases of cerebral herniation or acute neurological deterioration."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Hyperventilation is administered as"
-        },
-        {
-          "type": "paragraph",
-          "text": "25 breaths per minute in a child 30 breaths per minute in an infant less than 1 year-old. Maintain EtCO2 of 30 – 35 mmHg. Children with traumatic brain injury are likely to exhibit post-traumatic seizures. Manage any presenting seizure activity in accordance with the Seizure Protocol."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vital Signs OPQRST/SAMPLE Cardiac rhythm Treatment(s) Communication with Medical Control."
-        }
+        {"type":"heading","level":2,"text":"Pediatric Head and Spine Injuries"},
+        {"type":"paragraph","text":"This protocol applies to pediatric patients presenting with injuries to the head and/or spine."},
+        {"type":"flow-stage","title":"First Impression (Pediatric Assessment Triangle)","arrowAfter":true,"links":[{"text":"Pediatric Assessment Triangle","protocolId":"pediatric-assessment-triangle"}],"items":[
+          "Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.",
+          "Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.",
+          "Circulation – observe skin color for pallor, mottling, and/or cyanosis."
+        ]},
+        {"type":"flow-stage","title":"Primary Survey","arrowAfter":true,"items":[
+          {"text":"Massive hemorrhage","bold":["Massive hemorrhage"]},
+          {"text":"Treat all life-threatening hemorrhage.","indent":1},
+          {"text":"Tourniquets for massive extremity hemorrhage.","indent":2},
+          {"text":"Wound packing for junctional hemorrhage.","indent":2},
+          {"text":"Airway – ensure patency, manually stabilize C-Spine.","bold":["Airway"]},
+          {"text":"Have suction equipment ready.","indent":1},
+          {"text":"Consider spinal motion restriction if indicated.","indent":1},
+          {"text":"Respiratory/Breathing – give supplemental O₂ if signs of compromise. Maintain SpO₂ ≥ 94%.","bold":["Respiratory/Breathing","Maintain SpO₂ ≥ 94%."]},
+          {"text":"Manage any injuries impairing ventilation.","indent":1},
+          {"text":"Chest wounds: Penetrating/Sucking chest wound, impaled objects, bruising.","indent":2},
+          {"text":"Signs of pneumothorax.","indent":2},
+          {"text":"Flail segments.","indent":2},
+          {"text":"Assist with bag valve mask if respiratory effort is ineffective.","indent":1},
+          {"text":"Circulation – assess pulses and perfusion status.","bold":["Circulation"]},
+          {"text":"Manage shock appropriately. See Shock Protocol.","indent":1,"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          {"text":"Head/Hypothermia","bold":["Head/Hypothermia"]},
+          {"text":"Initial GCS/AVPU.","indent":1},
+          {"text":"Pupils.","indent":1},
+          {"text":"Prevent hypothermia.","indent":1}
+        ]},
+        {"type":"flow-stage","title":"Secondary Assessment and Treatment","items":[
+          "Monitor vital signs and O₂ saturation.",
+          {"text":"Perform blood glucose analysis – treat if BGL is < 60 mg/dl.","bold":["BGL is < 60 mg/dl."]},
+          "Consider cardiac monitoring.",
+          {"text":"Record and evaluate 12-Lead ECG.","indent":1},
+          "Physical exam and OPQRST/SAMPLE history.",
+          "Perform spinal motion restriction.",
+          {"text":"Apply a rigid cervical collar.","indent":1},
+          {"text":"Secure to long spine board.","indent":1},
+          "Initiate patient transport to an appropriate level trauma center as soon as possible.",
+          {"text":"Advanced airway/ventilatory management as needed. See Sedation Assisted Intubation Protocol.","links":[{"text":"Sedation Assisted Intubation Protocol","protocolId":"sedation-assisted-intubation"}]},
+          {"text":"Initiate EtCO₂ monitoring.","indent":1},
+          "Initiate IV/IO of normal saline at KVO rate.",
+          {"text":"If fluid resuscitation is needed, administer 20 ml/kg bolus. See Shock Protocol.","indent":1,"bold":["20 ml/kg bolus."],"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          "Perform detailed/focused physical assessment.",
+          {"text":"Re-evaluate ABCs.","indent":1},
+          {"text":"Repeat neurological exam.","indent":1},
+          "Continue resuscitation and evaluation enroute.",
+          {"text":"Manage any presenting Respiratory Distress, Seizures, and/or dysrhythmias in accordance with the appropriate protocol.","links":[{"text":"Respiratory Distress","protocolId":"respiratory-distress"},{"text":"Seizures","protocolId":"seizure"}]},
+          {"text":"Frequently re-assess for clinical signs of cerebral herniation. Signs and symptoms include dilated, unreactive pupils, asymmetric pupils, extensor posturing or no motor response, decreased GCS > 2 points in patients with initial GCS < 9.","icon":"assets/legend-important.webp","iconAlt":"Important protocol information","bold":["Frequently re-assess for clinical signs of cerebral herniation. Signs and symptoms include dilated, unreactive pupils, asymmetric pupils, extensor posturing or no motor response, decreased GCS > 2 points in patients with initial GCS < 9."],"red":["Frequently re-assess for clinical signs of cerebral herniation. Signs and symptoms include dilated, unreactive pupils, asymmetric pupils, extensor posturing or no motor response, decreased GCS > 2 points in patients with initial GCS < 9."]},
+          "Hyperventilation therapy titrated to clinical effect may be necessary for brief periods in cases of cerebral herniation or acute neurological deterioration.",
+          {"text":"Hyperventilation is administered as:","indent":1},
+          {"text":"25 breaths per minute in a child.","indent":2},
+          {"text":"30 breaths per minute in an infant less than 1 year-old.","indent":2},
+          {"text":"Maintain EtCO₂ of 30–35 mmHg.","indent":2},
+          {"text":"Children with traumatic brain injury are likely to exhibit post-traumatic seizures.","icon":"assets/legend-important.webp","iconAlt":"Important protocol information","bold":["Children with traumatic brain injury are likely to exhibit post-traumatic seizures."],"red":["Children with traumatic brain injury are likely to exhibit post-traumatic seizures."]},
+          {"text":"Manage any presenting seizure activity in accordance with the Seizure Protocol.","indent":1,"links":[{"text":"Seizure Protocol","protocolId":"seizure"}]}
+        ]},
+        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital Signs","OPQRST/SAMPLE","Cardiac rhythm","Treatment(s)","Communication with Medical Control"]}
       ],
-      "plainText": "Pediatric Head and Spine Injuries\nThis protocol applies to pediatric patients presenting with injuries to the head and/or spine.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis.\nPrimary Survey\n•\nMassive hemorrhage\no\nTreat all life-threatening hemorrhage\n▪\nTourniquets for massive extremity hemorrhage\n▪\nWound packing for junctional hemorrhage\n•\nAirway – ensure patency, manually stabilize C-Spine.\no\nHave suction equipment ready\no\nConsider spinal motion restriction if indicated.\n•\nRespiratory/Breathing – give supplemental O2 if signs of compromise. Maintain SpO2 > 94%.\no\nManage any injuries impairing ventilation.\n▪\nChest wounds: Penetrating/Sucking chest wound, impaled objects, bruising\n▪\nSigns of pneumothorax\n▪\nFlail segments\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nCirculation – assess pulses and perfusion status\no\nManage shock appropriately. See Shock Protocol.\n•\nHead/Hypothermia\no\nInitial GCS/AVPU\no\nPupils\no\nPrevent hypothermia\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation.\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nConsider cardiac monitoring.\no\nRecord and evaluate 12-Lead ECG.\n•\nPhysical Exam and OPQRST/SAMPLE history.\n•\nPerform spinal motion restriction.\no\nApply a rigid cervical collar.\no\nSecure to long spine board.\n•\nInitiate patient transport to an appropriate level trauma center as soon as possible.\n•\nAdvanced airway/ventilatory management as needed. See Sedation Assisted Intubation\nProtocol.\no\nInitiate EtCO2 monitoring.\nPediatric Head and Spine Injuries (Continued)\nSecondary Assessment and Treatment (Continued)\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg bolus.  See Shock Protocol.\n•\nPerform detailed/focused physical assessment.\no\nRe-evaluate ABCs.\no\nRepeat neurological exam.\n•\nContinue resuscitation and evaluation enroute.\n•\nManage any presenting Respiratory Distress, Seizures, and/or dysrhythmias in accordance with\nthe appropriate protocol.\nFrequently re-assess for clinical signs of cerebral herniation.  Signs and symptoms include\ndilated, unreactive pupils, asymmetric pupils, extensor posturing or no motor response,\ndecreased GCS > 2 points in patients with initial GCS < 9.\n•\nHyperventilation therapy titrated to clinical effect may be necessary for brief periods in cases of\ncerebral herniation or acute neurological deterioration.\no\nHyperventilation is administered as:\n▪\n25 breaths per minute in a child\n▪\n30 breaths per minute in an infant less than 1 year-old.\n▪\nMaintain EtCO2 of 30 – 35 mmHg.\nChildren with traumatic brain injury are likely to exhibit post-traumatic seizures.\no\nManage any presenting seizure activity in accordance with the Seizure Protocol.\nDocument:\n•\nVital Signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control.",
-      "pageText": [
-        {
-          "page": 72,
-          "text": "Pediatric Head and Spine Injuries\nThis protocol applies to pediatric patients presenting with injuries to the head and/or spine.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis.\nPrimary Survey\n•\nMassive hemorrhage\no\nTreat all life-threatening hemorrhage\n▪\nTourniquets for massive extremity hemorrhage\n▪\nWound packing for junctional hemorrhage\n•\nAirway – ensure patency, manually stabilize C-Spine.\no\nHave suction equipment ready\no\nConsider spinal motion restriction if indicated.\n•\nRespiratory/Breathing – give supplemental O2 if signs of compromise. Maintain SpO2 > 94%.\no\nManage any injuries impairing ventilation.\n▪\nChest wounds: Penetrating/Sucking chest wound, impaled objects, bruising\n▪\nSigns of pneumothorax\n▪\nFlail segments\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nCirculation – assess pulses and perfusion status\no\nManage shock appropriately. See Shock Protocol.\n•\nHead/Hypothermia\no\nInitial GCS/AVPU\no\nPupils\no\nPrevent hypothermia\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation.\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nConsider cardiac monitoring.\no\nRecord and evaluate 12-Lead ECG.\n•\nPhysical Exam and OPQRST/SAMPLE history.\n•\nPerform spinal motion restriction.\no\nApply a rigid cervical collar.\no\nSecure to long spine board.\n•\nInitiate patient transport to an appropriate level trauma center as soon as possible.\n•\nAdvanced airway/ventilatory management as needed. See Sedation Assisted Intubation\nProtocol.\no\nInitiate EtCO2 monitoring."
-        },
-        {
-          "page": 73,
-          "text": "Pediatric Head and Spine Injuries (Continued)\nSecondary Assessment and Treatment (Continued)\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg bolus.  See Shock Protocol.\n•\nPerform detailed/focused physical assessment.\no\nRe-evaluate ABCs.\no\nRepeat neurological exam.\n•\nContinue resuscitation and evaluation enroute.\n•\nManage any presenting Respiratory Distress, Seizures, and/or dysrhythmias in accordance with\nthe appropriate protocol.\nFrequently re-assess for clinical signs of cerebral herniation.  Signs and symptoms include\ndilated, unreactive pupils, asymmetric pupils, extensor posturing or no motor response,\ndecreased GCS > 2 points in patients with initial GCS < 9.\n•\nHyperventilation therapy titrated to clinical effect may be necessary for brief periods in cases of\ncerebral herniation or acute neurological deterioration.\no\nHyperventilation is administered as:\n▪\n25 breaths per minute in a child\n▪\n30 breaths per minute in an infant less than 1 year-old.\n▪\nMaintain EtCO2 of 30 – 35 mmHg.\nChildren with traumatic brain injury are likely to exhibit post-traumatic seizures.\no\nManage any presenting seizure activity in accordance with the Seizure Protocol.\nDocument:\n•\nVital Signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control."
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Pediatric Head and Spine Injuries. Primary survey, secondary assessment, cerebral herniation guidance, seizure guidance, and documentation.",
+      "needsReview":false
+    },    {
       "id": "eye-trauma",
       "title": "Eye Trauma",
       "type": "protocol",
