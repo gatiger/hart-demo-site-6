@@ -344,7 +344,7 @@
               "pageEnd": 67,
               "status": "active"
             },
-            {
+                    {
               "id": "toxic-ingestion",
               "title": "Toxic Ingestion",
               "type": "protocol",
@@ -357,8 +357,7 @@
         {
           "id": "pediatric-trauma-emergencies",
           "title": "Pediatric Trauma Emergencies",
-          "children": [
-            {
+          "children": [    {
               "id": "multiple-system-trauma",
               "title": "Multiple System Trauma",
               "type": "protocol",
@@ -4811,79 +4810,63 @@
       ],
       "status": "active",
       "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": [],
       "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
         "pageStart": 68,
         "pageEnd": 69,
         "pageLabel": "68-69"
       },
-      "summary": "",
+      "summary": "Assessment and treatment of pediatric patients with an acute overdose and/or toxic ingestion.",
       "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Pediatric Toxic Ingestion"
-        },
-        {
-          "type": "paragraph",
-          "text": "This protocol applies to pediatric patients with an acute overdose and/toxic ingestion. First Impression (Pediatric Assessment Triangle) Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry. Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds. Circulation – observe skin color for pallor, mottling and/or cyanosis. Primary Survey Ensure airway – ensure patency and positioning. Have suctioning equipment ready Keep patient NPO Assess breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%. Assist with bag valve mask if ineffective respiratory effort. Assess circulation – manage shock appropriately. See Shock Protocol. Assess disability – assess LOC Exposure/Environment – expose injuries as needed. Secondary Assessment and History Monitor vital signs and O2 saturation. Perform blood glucose analysis – Treat if BGL is < 60 mg/dl. Consider cardiac monitoring. Physical exam and OPQRST/SAMPLE history Identify substance/toxin and amount of exposure. Initiate IV/IO of normal saline. If fluid resuscitation is needed, administer 20 ml/kg bolus. See Shock Protocol. Treatments"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "If calcium channel blocker or beta blocker overdose"
-        },
-        {
-          "type": "paragraph",
-          "text": "Administer Glucagon 0.025 – 0.1 mg/kg IM slowly or IN. Max Dose – 1mg."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "If Narcotic overdose"
-        },
-        {
-          "type": "paragraph",
-          "text": "Administer Naloxone 0.01 mg/kg IV/IO slowly or IN. If no clinical improvement, administer 0.1 mg/kg. Max Dose – 2 mg. Titrate naloxone administration to patient’s respirations"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "If Tricyclic Antidepressants overdose with wide complex tachycardia"
-        },
-        {
-          "type": "paragraph",
-          "text": "Administer Sodium Bicarbonate 1 mEq/kg IV/IO slowly. Pediatric Toxic Ingestion (Continued) Treatments (Continued) If stimulant/hallucinogen overdose (cocaine, amphetamine, ecstasy, etc.): Administer Midazolam 0.2 mg/kg IV/IO/IM slowly, or IN. Max Dose – 5 mg. Cool patient passively but do not allow patient to shiver. If patient is asymptomatic, monitor for delayed effects. Frequently reassess patient, manage any presenting respiratory distress, seizures, and/or dysrhythmias in accordance with the appropriate protocol. All suspected suicide attempts must be reported before leaving the scene. EMS personnel may contact Poison Control directly. EMS personnel are directed to follow the advice offered by the Poison Control Center as if it came directly from Medical Control. Georgia Poison Control: 1-800-222-1222."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vital signs OPQRST/SAMPLE Cardiac rhythm Treatment(s) Communication with Medical Control"
-        }
+        {"type":"heading","level":2,"text":"Pediatric Toxic Ingestion"},
+        {"type":"paragraph","text":"This protocol applies to pediatric patients with an acute overdose and/or toxic ingestion."},
+        {"type":"flow-stage","title":"First Impression (Pediatric Assessment Triangle)","arrowAfter":true,"links":[{"text":"Pediatric Assessment Triangle","protocolId":"pediatric-assessment-triangle"}],"items":[
+          "Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.",
+          "Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.",
+          "Circulation – observe skin color for pallor, mottling, and/or cyanosis."
+        ]},
+        {"type":"flow-stage","title":"Primary Survey","arrowAfter":true,"items":[
+          {"text":"Ensure airway – ensure patency and positioning.","bold":["Ensure airway"]},
+          {"text":"Have suctioning equipment ready.","indent":1},
+          {"text":"Keep patient NPO.","indent":1},
+          {"text":"Assess breathing – give O₂ as tolerated by mask or blow-by. Maintain SpO₂ ≥ 94%.","bold":["Assess breathing","Maintain SpO₂ ≥ 94%."]},
+          {"text":"Assist with bag valve mask if ineffective respiratory effort.","indent":1},
+          {"text":"Assess circulation – manage shock appropriately. See Shock Protocol.","bold":["Assess circulation"],"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          {"text":"Assess disability – assess LOC.","bold":["Assess disability"]},
+          {"text":"Exposure/Environment – expose injuries as needed.","bold":["Exposure/Environment"]}
+        ]},
+        {"type":"flow-stage","title":"Secondary Assessment and History","arrowAfter":true,"items":[
+          "Monitor vital signs and O₂ saturation.",
+          {"text":"Perform blood glucose analysis – treat if BGL is < 60 mg/dl.","bold":["BGL is < 60 mg/dl."]},
+          "Consider cardiac monitoring.",
+          "Physical exam and OPQRST/SAMPLE history.",
+          {"text":"Identify substance/toxin and amount of exposure.","indent":1},
+          "Initiate IV/IO of normal saline.",
+          {"text":"If fluid resuscitation is needed, administer 20 ml/kg bolus. See Shock Protocol.","indent":1,"bold":["20 ml/kg bolus."],"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]}
+        ]},
+        {"type":"flow-stage","title":"Treatments","arrowAfter":true,"items":[
+          {"text":"If calcium channel blocker or beta blocker overdose:","bold":["If calcium channel blocker or beta blocker overdose:"]},
+          {"text":"Administer Glucagon 0.025–0.1 mg/kg IM slowly or IN. Max Dose – 1 mg.","indent":1,"bold":["0.025–0.1 mg/kg","Max Dose – 1 mg."],"links":[{"text":"Glucagon","protocolId":"glucagon"}]},
+          {"text":"If narcotic overdose:","bold":["If narcotic overdose:"]},
+          {"text":"Administer Naloxone 0.01 mg/kg IV/IO slowly or IN.","indent":1,"bold":["0.01 mg/kg"],"links":[{"text":"Naloxone","protocolId":"naloxone-narcan"}]},
+          {"text":"If no clinical improvement, administer 0.1 mg/kg. Max Dose – 2 mg.","indent":2,"bold":["0.1 mg/kg.","Max Dose – 2 mg."]},
+          {"text":"Titrate naloxone administration to patient’s respirations.","indent":2},
+          {"text":"If tricyclic antidepressant overdose with wide complex tachycardia:","bold":["If tricyclic antidepressant overdose with wide complex tachycardia:"]},
+          {"text":"Administer Sodium Bicarbonate 1 mEq/kg IV/IO slowly.","indent":1,"bold":["1 mEq/kg"],"links":[{"text":"Sodium Bicarbonate","protocolId":"sodium-bicarbonate"}]},
+          {"text":"If stimulant/hallucinogen overdose (cocaine, amphetamine, ecstasy, etc.):","bold":["If stimulant/hallucinogen overdose (cocaine, amphetamine, ecstasy, etc.):"]},
+          {"text":"Administer Midazolam 0.2 mg/kg IV/IO/IM slowly, or IN. Max Dose – 5 mg.","indent":1,"bold":["0.2 mg/kg","Max Dose – 5 mg."],"links":[{"text":"Midazolam","protocolId":"midazolam-versed"}]},
+          {"text":"Cool patient passively but do not allow patient to shiver.","indent":1},
+          "If patient is asymptomatic, monitor for delayed effects.",
+          {"text":"Frequently reassess patient, manage any presenting respiratory distress, seizures, and/or dysrhythmias in accordance with the appropriate protocol.","icon":"assets/legend-important.webp","iconAlt":"Important protocol information","bold":["Frequently reassess patient, manage any presenting respiratory distress, seizures, and/or dysrhythmias in accordance with the appropriate protocol."],"red":["Frequently reassess patient, manage any presenting respiratory distress, seizures, and/or dysrhythmias in accordance with the appropriate protocol."]}
+        ]},
+        {"type":"flow-stage","title":"Reporting and Poison Control","items":[
+          {"text":"All suspected suicide attempts must be reported before leaving the scene.","icon":"assets/legend-important.webp","iconAlt":"Important protocol information","bold":["All suspected suicide attempts must be reported before leaving the scene."],"red":["All suspected suicide attempts must be reported before leaving the scene."]},
+          {"text":"EMS personnel may contact Poison Control directly. EMS personnel are directed to follow the advice offered by the Poison Control Center as if it came directly from Medical Control. Georgia Poison Control: 1-800-222-1222.","icon":"assets/legend-important.webp","iconAlt":"Important protocol information","bold":["EMS personnel may contact Poison Control directly. EMS personnel are directed to follow the advice offered by the Poison Control Center as if it came directly from Medical Control. Georgia Poison Control: 1-800-222-1222."],"red":["EMS personnel may contact Poison Control directly. EMS personnel are directed to follow the advice offered by the Poison Control Center as if it came directly from Medical Control. Georgia Poison Control: 1-800-222-1222."]}
+        ]},
+        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital Signs","OPQRST/SAMPLE","Cardiac rhythm","Treatment(s)","Communication with Medical Control"]}
       ],
-      "plainText": "Pediatric Toxic Ingestion\nThis protocol applies to pediatric patients with an acute overdose and/toxic ingestion.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis.\nPrimary Survey\n•\nEnsure airway – ensure patency and positioning.\no\nHave suctioning equipment ready\no\nKeep patient NPO\n•\nAssess breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%.\no\nAssist with bag valve mask if ineffective respiratory effort.\n•\nAssess circulation – manage shock appropriately. See Shock Protocol.\n•\nAssess disability – assess LOC\n•\nExposure/Environment – expose injuries as needed.\nSecondary Assessment and History\n•\nMonitor vital signs and O2 saturation.\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nConsider cardiac monitoring.\n•\nPhysical exam and OPQRST/SAMPLE history\no\nIdentify substance/toxin and amount of exposure.\n•\nInitiate IV/IO of normal saline.\no\nIf fluid resuscitation is needed, administer 20 ml/kg bolus. See Shock Protocol.\nTreatments\n•\nIf calcium channel blocker or beta blocker overdose:\no\nAdminister Glucagon 0.025 – 0.1 mg/kg IM slowly or IN. Max Dose – 1mg.\n•\nIf Narcotic overdose:\no\nAdminister Naloxone 0.01 mg/kg IV/IO slowly or IN.\n▪\nIf no clinical improvement, administer 0.1 mg/kg.  Max Dose – 2 mg.\n▪\nTitrate naloxone administration to patient’s respirations\n•\nIf Tricyclic Antidepressants overdose with wide complex tachycardia:\no\nAdminister Sodium Bicarbonate 1 mEq/kg IV/IO slowly.\nPediatric Toxic Ingestion (Continued)\nTreatments (Continued)\n•\nIf stimulant/hallucinogen overdose (cocaine, amphetamine, ecstasy, etc.):\no\nAdminister Midazolam 0.2 mg/kg IV/IO/IM slowly, or IN.  Max Dose – 5 mg.\no\nCool patient passively but do not allow patient to shiver.\n•\nIf patient is asymptomatic, monitor for delayed effects.\nFrequently reassess patient, manage any presenting respiratory distress, seizures, and/or\ndysrhythmias in accordance with the appropriate protocol.\nAll suspected suicide attempts must be reported before leaving the scene.\nEMS personnel may contact Poison Control directly. EMS personnel are directed to follow\nthe advice offered by the Poison Control Center as if it came directly from Medical Control.\nGeorgia Poison Control: 1-800-222-1222.\nDocument:\n•\nVital signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control",
-      "pageText": [
-        {
-          "page": 68,
-          "text": "Pediatric Toxic Ingestion\nThis protocol applies to pediatric patients with an acute overdose and/toxic ingestion.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis.\nPrimary Survey\n•\nEnsure airway – ensure patency and positioning.\no\nHave suctioning equipment ready\no\nKeep patient NPO\n•\nAssess breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%.\no\nAssist with bag valve mask if ineffective respiratory effort.\n•\nAssess circulation – manage shock appropriately. See Shock Protocol.\n•\nAssess disability – assess LOC\n•\nExposure/Environment – expose injuries as needed.\nSecondary Assessment and History\n•\nMonitor vital signs and O2 saturation.\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nConsider cardiac monitoring.\n•\nPhysical exam and OPQRST/SAMPLE history\no\nIdentify substance/toxin and amount of exposure.\n•\nInitiate IV/IO of normal saline.\no\nIf fluid resuscitation is needed, administer 20 ml/kg bolus. See Shock Protocol.\nTreatments\n•\nIf calcium channel blocker or beta blocker overdose:\no\nAdminister Glucagon 0.025 – 0.1 mg/kg IM slowly or IN. Max Dose – 1mg.\n•\nIf Narcotic overdose:\no\nAdminister Naloxone 0.01 mg/kg IV/IO slowly or IN.\n▪\nIf no clinical improvement, administer 0.1 mg/kg.  Max Dose – 2 mg.\n▪\nTitrate naloxone administration to patient’s respirations\n•\nIf Tricyclic Antidepressants overdose with wide complex tachycardia:\no\nAdminister Sodium Bicarbonate 1 mEq/kg IV/IO slowly."
-        },
-        {
-          "page": 69,
-          "text": "Pediatric Toxic Ingestion (Continued)\nTreatments (Continued)\n•\nIf stimulant/hallucinogen overdose (cocaine, amphetamine, ecstasy, etc.):\no\nAdminister Midazolam 0.2 mg/kg IV/IO/IM slowly, or IN.  Max Dose – 5 mg.\no\nCool patient passively but do not allow patient to shiver.\n•\nIf patient is asymptomatic, monitor for delayed effects.\nFrequently reassess patient, manage any presenting respiratory distress, seizures, and/or\ndysrhythmias in accordance with the appropriate protocol.\nAll suspected suicide attempts must be reported before leaving the scene.\nEMS personnel may contact Poison Control directly. EMS personnel are directed to follow\nthe advice offered by the Poison Control Center as if it came directly from Medical Control.\nGeorgia Poison Control: 1-800-222-1222.\nDocument:\n•\nVital signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control"
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Pediatric Toxic Ingestion. Assessment, treatment, reporting, Poison Control guidance, and documentation.",
+      "needsReview":false
+    },    {
       "id": "multiple-system-trauma",
       "title": "Multiple System Trauma",
       "type": "protocol",
