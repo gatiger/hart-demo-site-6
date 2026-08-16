@@ -883,7 +883,7 @@ function renderLvadUnresponsiveFlow(block, container) {
     <svg class="lvad-chart" viewBox="0 0 1000 980" role="img" aria-labelledby="lvad-chart-title lvad-chart-desc">
       <title id="lvad-chart-title">Assessment of the unresponsive LVAD patient</title>
       <desc id="lvad-chart-desc">Decision flow assessing perfusion, VAD hum, restart status, chest compressions, ACLS protocols, and calling the VAD center.</desc>
-      <defs><marker id="lvad-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z"></path></marker></defs>
+      <defs><marker id="lvad-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z"></path></marker></defs>
       <g class="lvad-chart-lines" marker-end="url(#lvad-arrow)">
         <path d="M500 80 V110"/><path d="M500 205 V218"/>
         <path d="M500 282 V310 H230 V340"/><path d="M500 310 H770 V340"/>
