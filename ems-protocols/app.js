@@ -486,13 +486,34 @@ function renderDocumentExample(block, container) {
 
   for (const line of block.lines || []) {
     const paragraph = document.createElement('p');
-    paragraph.textContent = line;
+    appendPhoneAwareText(paragraph, line);
     section.appendChild(paragraph);
   }
 
   container.appendChild(section);
 }
-function appendRichText(element, text, phrases = [], links = [], initials = [], redPhrases = [], underlinePhrases = []) {
+const mobilePhoneLinksEnabled = window.matchMedia('(max-width: 820px) and (pointer: coarse)').matches;
+function appendPhoneAwareText(element, value) {
+  const text = String(value || '');
+  const phonePattern = /(?:\+?1[\s.-]?)?(?:\(\d{3}\)|\d{3})[\s.-]\d{3}[\s.-]\d{4}/g;
+  let lastIndex = 0;
+  for (const match of text.matchAll(phonePattern)) {
+    if (match.index > lastIndex) element.appendChild(document.createTextNode(text.slice(lastIndex, match.index)));
+    if (mobilePhoneLinksEnabled) {
+      const link = document.createElement('a');
+      const digits = match[0].replace(/\D/g, '');
+      link.className = 'mobile-phone-link';
+      link.href = `tel:${digits.length === 10 ? `+1${digits}` : `+${digits}`}`;
+      link.textContent = match[0];
+      link.setAttribute('aria-label', `Call ${match[0]}`);
+      element.appendChild(link);
+    } else {
+      element.appendChild(document.createTextNode(match[0]));
+    }
+    lastIndex = match.index + match[0].length;
+  }
+  if (lastIndex < text.length) element.appendChild(document.createTextNode(text.slice(lastIndex)));
+}function appendRichText(element, text, phrases = [], links = [], initials = [], redPhrases = [], underlinePhrases = []) {
   const source = String(text || '');
   const boldPhrases = (phrases || []).filter(Boolean);
   const linkedPhrases = (links || []).filter(link => link && link.text && link.protocolId);
@@ -500,7 +521,7 @@ function appendRichText(element, text, phrases = [], links = [], initials = [], 
   const redTextPhrases = (redPhrases || []).filter(Boolean);
   const underlinedPhrases = (underlinePhrases || []).filter(Boolean);
   if (!boldPhrases.length && !linkedPhrases.length && !initialPhrases.length && !redTextPhrases.length && !underlinedPhrases.length) {
-    element.textContent = source;
+    appendPhoneAwareText(element, source);
     return;
   }
 
@@ -533,15 +554,15 @@ function appendRichText(element, text, phrases = [], links = [], initials = [], 
     } else if (redTextPhrases.includes(part)) {
       const red = document.createElement(boldPhrases.includes(part) ? 'strong' : 'span');
       red.className = 'protocol-red-text';
-      red.textContent = part;
+      appendPhoneAwareText(red, part);
       element.appendChild(red);
     } else if (boldPhrases.includes(part) || underlinedPhrases.includes(part)) {
       const emphasis = document.createElement(boldPhrases.includes(part) ? 'strong' : 'span');
       if (underlinedPhrases.includes(part)) emphasis.classList.add('protocol-underlined-text');
-      emphasis.textContent = part;
+      appendPhoneAwareText(emphasis, part);
       element.appendChild(emphasis);
     } else {
-      element.appendChild(document.createTextNode(part));
+      appendPhoneAwareText(element, part);
     }
   }
 }function appendFlowItems(items, container) {
@@ -888,7 +909,7 @@ function renderBlock(block, container) {
   if (block.type === 'note' || block.type === 'warning') {
     const div = document.createElement('div');
     div.className = block.type === 'warning' ? 'warning-block' : 'note-block';
-    div.textContent = block.text || '';
+    appendPhoneAwareText(div, block.text || '');
     container.appendChild(div);
     return;
   }
@@ -906,7 +927,7 @@ function normalizeCell(cell) {
 
 function applyCellFormatting(el, cell, isHeader = false) {
   const c = normalizeCell(cell);
-  el.textContent = c.text || '';
+  appendPhoneAwareText(el, c.text || '');
   if (c.colspan) el.colSpan = Number(c.colspan);
   if (c.rowspan) el.rowSpan = Number(c.rowspan);
   if (c.align) el.style.textAlign = c.align;
