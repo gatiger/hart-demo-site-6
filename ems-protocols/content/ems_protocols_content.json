@@ -5493,48 +5493,53 @@
       ],
       "status": "active",
       "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": [],
       "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
         "pageStart": 86,
         "pageEnd": 86,
         "pageLabel": "86"
       },
-      "summary": "",
+      "summary": "Assessment and treatment of pediatric patients suspected of being bitten by a venomous snake.",
       "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Pediatric Snakebite"
-        },
-        {
-          "type": "paragraph",
-          "text": "This protocol applies to pediatric patients who are suspected of being bitten by a venomous snake. Special note: The safety of rescue personnel is top priority ! Ensure scene safety and determine location of snake. DO NOT transport snake. (A picture will suffice.) DEAD SNAKES ARE STILL DANGEROUS. First Impression (Pediatric Assessment Triangle) Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry. Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds. Circulation – observe skin color for pallor, mottling and/or cyanosis. Primary Survey Ensure airway – ensure patency and proper positioning. Assess breathing – give O2 as tolerated by mask or blow-by. Maintain SpO2 > 94%. Assist ventilation with bag valve mask if respirations are ineffective. Assess circulation – manage shock appropriately. See Shock Protocol. Exposure/Environment – expose injuries as needed. Secondary Assessment and Treatment Monitor vital signs and O2 saturation. Perform blood glucose analysis – Treat if BGL is < 60 mg/dl. Consider cardiac monitoring Physical exam and OPQRST/SAMPLE history Assess for swelling, skin color changes, shock Mark the leading edge of swelling and erythema and record time, repeat if the leading edge is progressing. If able, safely determine the type, size and length of snake. Advanced airway/ventilatory management as needed. Place patient in the position of comfort. Minimize movement and exertion. DO NOT place bitten extremity in an elevated or lowered position. Clean wound – apply light dressing, unless wound is bleeding profusely. DO NOT apply ice or constricting bands, no cutting of bite injury. Initiate IV/IO of normal saline at KVO rate. If fluid resuscitation is needed, 20 ml/kg fluid bolus IV/IO. See Shock Protocol. Frequently re-assess patient, manage any presenting Respiratory Distress, Seizures, and/or dysrhythmias in accordance with the appropriate protocol. See Pain Management Protocol."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vital Signs OPQRST/SAMPLE Cardiac rhythm Treatment(s) Communication with Medical Control."
-        }
+        {"type":"heading","level":2,"text":"Pediatric Snakebite"},
+        {"type":"paragraph","text":"This protocol applies to pediatric patients who are suspected of being bitten by a venomous snake."},
+        {"type":"flow-stage","title":"Special Note","items":[
+          {"text":"The safety of rescue personnel is top priority! Ensure scene safety and determine location of snake. DO NOT transport snake. (A picture will suffice.) DEAD SNAKES ARE STILL DANGEROUS.","bold":["The safety of rescue personnel is top priority! Ensure scene safety and determine location of snake. DO NOT transport snake. (A picture will suffice.) DEAD SNAKES ARE STILL DANGEROUS."]}
+        ]},
+        {"type":"flow-stage","title":"First Impression (Pediatric Assessment Triangle)","arrowAfter":true,"links":[{"text":"Pediatric Assessment Triangle","protocolId":"pediatric-assessment-triangle"}],"items":[
+          "Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.",
+          "Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.",
+          "Circulation – observe skin color for pallor, mottling, and/or cyanosis."
+        ]},
+        {"type":"flow-stage","title":"Primary Survey","arrowAfter":true,"items":[
+          {"text":"Ensure airway – ensure patency and proper positioning.","bold":["Ensure airway"]},
+          {"text":"Assess breathing – give O₂ as tolerated by mask or blow-by. Maintain SpO₂ ≥ 94%.","bold":["Assess breathing","Maintain SpO₂ ≥ 94%."]},
+          {"text":"Assist ventilation with bag valve mask if respirations are ineffective.","indent":1},
+          {"text":"Assess circulation – manage shock appropriately. See Shock Protocol.","bold":["Assess circulation"],"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          {"text":"Exposure/Environment – expose injuries as needed.","bold":["Exposure/Environment"]}
+        ]},
+        {"type":"flow-stage","title":"Secondary Assessment and Treatment","items":[
+          "Monitor vital signs and O₂ saturation.",
+          {"text":"Perform blood glucose analysis – treat if BGL is < 60 mg/dl.","bold":["BGL is < 60 mg/dl."]},
+          "Consider cardiac monitoring.",
+          "Physical exam and OPQRST/SAMPLE history.",
+          {"text":"Assess for swelling, skin color changes, shock.","indent":1},
+          {"text":"Mark the leading edge of swelling and erythema and record time, repeat if the leading edge is progressing.","icon":"assets/legend-important.webp","iconAlt":"Important protocol information","bold":["Mark the leading edge of swelling and erythema and record time, repeat if the leading edge is progressing."],"red":["Mark the leading edge of swelling and erythema and record time, repeat if the leading edge is progressing."]},
+          "If able, safely determine the type, size and length of snake.",
+          "Advanced airway/ventilatory management as needed.",
+          "Place patient in the position of comfort. Minimize movement and exertion.",
+          {"text":"DO NOT place bitten extremity in an elevated or lowered position.","bold":["DO NOT place bitten extremity in an elevated or lowered position."]},
+          "Clean wound – apply light dressing, unless wound is bleeding profusely.",
+          {"text":"DO NOT apply ice or constricting bands, no cutting of bite injury.","indent":1,"bold":["DO NOT apply ice or constricting bands, no cutting of bite injury."]},
+          "Initiate IV/IO of normal saline at KVO rate.",
+          {"text":"If fluid resuscitation is needed, administer 20 ml/kg fluid bolus IV/IO. See Shock Protocol.","indent":1,"bold":["20 ml/kg fluid bolus"],"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          {"text":"Frequently re-assess patient, manage any presenting Respiratory Distress, Seizures, and/or dysrhythmias in accordance with the appropriate protocol.","links":[{"text":"Respiratory Distress","protocolId":"respiratory-distress"},{"text":"Seizures","protocolId":"seizure"}]},
+          {"text":"See Pain Management Protocol.","links":[{"text":"Pain Management Protocol","protocolId":"pain-management"}]}
+        ]},
+        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital Signs","OPQRST/SAMPLE","Cardiac rhythm","Treatment(s)","Communication with Medical Control"]}
       ],
-      "plainText": "Pediatric Snakebite\nThis protocol applies to pediatric patients who are suspected of being bitten by a venomous\nsnake.\nSpecial note: The safety of rescue personnel is top priority ! Ensure scene safety and\ndetermine location of snake. DO NOT transport snake. (A picture will suffice.) DEAD\nSNAKES ARE STILL DANGEROUS.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis.\nPrimary Survey\n•\nEnsure airway – ensure patency and proper positioning.\n•\nAssess breathing – give O2 as tolerated by mask or blow-by.  Maintain SpO2 > 94%.\no\nAssist ventilation with bag valve mask if respirations are ineffective.\n•\nAssess circulation – manage shock appropriately.  See Shock Protocol.\n•\nExposure/Environment – expose injuries as needed.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation.\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nConsider cardiac monitoring\n•\nPhysical exam and OPQRST/SAMPLE history\no\nAssess for swelling, skin color changes, shock\nMark the leading edge of swelling and erythema and record time, repeat if the leading\nedge is progressing.\n•\nIf able, safely determine the type, size and length of snake.\n•\nAdvanced airway/ventilatory management as needed.\n•\nPlace patient in the position of comfort. Minimize movement and exertion.\n•\nDO NOT place bitten extremity in an elevated or lowered position.\n•\nClean wound – apply light dressing, unless wound is bleeding profusely.\no\nDO NOT apply ice or constricting bands, no cutting of bite injury.\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus IV/IO. See Shock Protocol.\n•\nFrequently re-assess patient, manage any presenting Respiratory Distress, Seizures, and/or\ndysrhythmias in accordance with the appropriate protocol.\n•\nSee Pain Management Protocol.\nDocument:\n•\nVital Signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control.",
-      "pageText": [
-        {
-          "page": 86,
-          "text": "Pediatric Snakebite\nThis protocol applies to pediatric patients who are suspected of being bitten by a venomous\nsnake.\nSpecial note: The safety of rescue personnel is top priority ! Ensure scene safety and\ndetermine location of snake. DO NOT transport snake. (A picture will suffice.) DEAD\nSNAKES ARE STILL DANGEROUS.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis.\nPrimary Survey\n•\nEnsure airway – ensure patency and proper positioning.\n•\nAssess breathing – give O2 as tolerated by mask or blow-by.  Maintain SpO2 > 94%.\no\nAssist ventilation with bag valve mask if respirations are ineffective.\n•\nAssess circulation – manage shock appropriately.  See Shock Protocol.\n•\nExposure/Environment – expose injuries as needed.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation.\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nConsider cardiac monitoring\n•\nPhysical exam and OPQRST/SAMPLE history\no\nAssess for swelling, skin color changes, shock\nMark the leading edge of swelling and erythema and record time, repeat if the leading\nedge is progressing.\n•\nIf able, safely determine the type, size and length of snake.\n•\nAdvanced airway/ventilatory management as needed.\n•\nPlace patient in the position of comfort. Minimize movement and exertion.\n•\nDO NOT place bitten extremity in an elevated or lowered position.\n•\nClean wound – apply light dressing, unless wound is bleeding profusely.\no\nDO NOT apply ice or constricting bands, no cutting of bite injury.\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus IV/IO. See Shock Protocol.\n•\nFrequently re-assess patient, manage any presenting Respiratory Distress, Seizures, and/or\ndysrhythmias in accordance with the appropriate protocol.\n•\nSee Pain Management Protocol.\nDocument:\n•\nVital Signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control."
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Pediatric Snakebite. Scene safety, assessment, snakebite treatment, reassessment, cross-references, and documentation.",
+      "needsReview":false
+    },    {
       "id": "submersion",
       "title": "Submersion",
       "type": "protocol",
