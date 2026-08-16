@@ -6647,79 +6647,154 @@
       "id": "childbirth-ob-gyn-emergencies",
       "title": "Childbirth-OB/GYN Emergencies",
       "type": "protocol",
-      "categoryPath": [
-        "Adult Clinical Protocols",
-        "Adult Medical Emergencies"
-      ],
+      "categoryPath": ["Adult Clinical Protocols", "Adult Medical Emergencies"],
       "status": "active",
       "effectiveDate": "2026-06-08",
       "lastRevised": "",
       "version": "2026",
       "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 113,
-        "pageEnd": 116,
-        "pageLabel": "113-116"
-      },
+      "source": {"pdf":"documents/ems/2026-hcems-protocols.pdf","pageStart":113,"pageEnd":116,"pageLabel":"113-116"},
       "summary": "",
       "content": [
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Page 113"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Childbirth-OB/GYN Emergencies"
-        },
-        {
-          "type": "paragraph",
-          "text": "This protocol applies to adult women whose chief complaint is related to labor and/or impending\ndelivery."
-        },
-        {
-          "type": "paragraph",
-          "text": "Primary Survey"
-        },
-        {
-          "type": "list",
-          "items": [
-            "â€¢ Assess level of consciousness â€“ AVPU",
-            "â€¢ Ensure airway â€“ ensure patency and positioning",
-            "o Have suction equipment ready.",
-            "o Consider spinal motion restriction if indicated.",
-            "â€¢ Assess breathing â€“ Give supplemental O if signs of compromise. Maintain SpO > 94%. 2 2",
-            "o Assist with bag valve mask if respiratory effort is ineffective.",
-            "â€¢ Assess circulation â€“ control bleeding and manage shock appropriately. See Shock Protocol",
-            "o Take measures to prevent hypothermia. Altered LOC and signs of poor perfusion could indicate shock and should be managed appropriately. If patient is unstable, initial resuscitation/stabilization must precede any action specified in this protocol. Resuscitation of the mother is the key to survival of both the mother and fetus."
-          ]
-        }
+        {"type":"heading","level":2,"text":"Childbirth-OB/GYN Emergencies"},
+        {"type":"paragraph","text":"This protocol applies to adult women whose chief complaint is related to labor and/or impending delivery."},
+        {"type":"flow-stage","title":"Primary Survey","arrowAfter":true,"items":[
+          {"text":"Assess level of consciousness – AVPU","bold":["Assess level of consciousness"]},
+          {"text":"Ensure airway – ensure patency and positioning","bold":["Ensure airway"]},
+          {"text":"Have suction equipment ready.","indent":1},
+          {"text":"Consider spinal motion restriction if indicated.","indent":1},
+          {"text":"Assess breathing – Give supplemental O₂ if signs of compromise. Maintain SpO₂ ≥ 94%.","bold":["Assess breathing","Maintain SpO₂ ≥ 94%."]},
+          {"text":"Assist with bag valve mask if respiratory effort is ineffective.","indent":1},
+          {"text":"Assess circulation – control bleeding and manage shock appropriately. See Shock Protocol.","bold":["Assess circulation"],"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          {"text":"Take measures to prevent hypothermia.","indent":1},
+          {"text":"Altered LOC and signs of poor perfusion could indicate shock and should be managed appropriately.","bold":["Altered LOC and signs of poor perfusion could indicate shock and should be managed appropriately."],"red":true,"icon":"assets/legend-important.webp","iconAlt":"Important protocol instruction"},
+          {"text":"If patient is unstable, initial resuscitation/stabilization must precede any action specified in this protocol. Resuscitation of the mother is the key to survival of both the mother and fetus.","bold":["If patient is unstable, initial resuscitation/stabilization must precede any action specified in this protocol. Resuscitation of the mother is the key to survival of both the mother and fetus."],"red":true,"icon":"assets/legend-important.webp","iconAlt":"Important protocol instruction"}
+        ]},
+        {"type":"flow-stage","title":"Secondary Assessment and Treatment","arrowAfter":true,"items":[
+          "Monitor vital signs and O₂ saturation.",
+          {"text":"Perform blood glucose analysis. Treat if BGL is < 60 mg/dl.","bold":["BGL is < 60 mg/dl."]},
+          "Consider cardiac monitoring.",
+          "Obtain OPQRST/SAMPLE, last menstrual period, obstetric, and gynecological history.",
+          {"text":"Determine how many previous deliveries, due date, onset of contractions, if membranes have ruptured, if bleeding or vaginal discharge is present, if patient has the urge to push or move bowels, and if pregnancy is high-risk.","bold":["Determine how many previous deliveries, due date, onset of contractions, if membranes have ruptured, if bleeding or vaginal discharge is present, if patient has the urge to push or move bowels, and if pregnancy is high-risk."],"red":true,"icon":"assets/legend-important.webp","iconAlt":"Important protocol instruction"},
+          "Time contractions – frequency and duration.",
+          "Physical exam – assess for signs of shock.",
+          "IV/IO access with normal saline – initiate 20 ml/kg bolus.",
+          {"text":"If fluid resuscitation is needed, 20 ml/kg bolus. See Shock Protocol.","indent":1,"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          {"text":"Place patient in position of comfort, EXCEPT for 3rd trimester patient who should be transported on their left side.","bold":["EXCEPT"]},
+          "Keep the patient NPO.",
+          "If bleeding is present, apply ABD pad to the external vaginal area. Consider possible causes:",
+          {"text":"Ectopic pregnancy.","indent":1},
+          {"text":"Spontaneous abortion.","indent":1},
+          {"text":"Placenta abruption.","indent":1},
+          {"text":"Trauma.","indent":1},
+          {"text":"Abnormal menstrual flow.","indent":1},
+          "Bring any products of conception to the hospital with the patient.",
+          "If active labor, inspect the perineum for crowning.",
+          {"text":"If crowning is present, apply gentle pressure with your gloved hand to the infant’s head and prepare for delivery.","indent":1},
+          {"text":"If no crowning is present, monitor and reassess frequency and duration of contractions.","indent":1},
+          {"text":"Priority symptoms: Crowning < 36 weeks gestation, prolapsed cord, abnormal presentation, severe vaginal bleeding, multiple gestation or seizure.","bold":["Priority symptoms: Crowning < 36 weeks gestation, prolapsed cord, abnormal presentation, severe vaginal bleeding, multiple gestation or seizure."],"red":true,"icon":"assets/legend-important.webp","iconAlt":"Important protocol instruction"},
+          {"text":"If noted, expedite transport and notify Medical Control as early as possible.","bold":["If noted, expedite transport and notify Medical Control as early as possible."],"red":true,"icon":"assets/legend-important.webp","iconAlt":"Important protocol instruction"}
+        ]},
+        {"type":"flow-stage","title":"Eclampsia","items":[
+          {"text":"Magnesium Sulfate – 4 gm mixed in 100 ml of Normal Saline, administered over 10–20 minutes.","bold":["4 gm","10–20 minutes"],"links":[{"text":"Magnesium Sulfate","protocolId":"magnesium-sulfate"}]},
+          {"text":"Should be titrated until seizure activity stops.","indent":1},
+          {"text":"Any seizure refractory to Magnesium Sulfate should be treated following the Seizure Protocol. See also Toxemia Protocol.","indent":1,"links":[{"text":"Magnesium Sulfate","protocolId":"magnesium-sulfate"},{"text":"Seizure Protocol","protocolId":"seizure"},{"text":"Toxemia Protocol","protocolId":"toxemia"}]}
+        ]},
+        {"type":"flow-stage","title":"Pre-Eclampsia and Postpartum Hypertension","items":[
+          "Strongly consider alternative cause for hypertension prior to treatment.",
+          {"text":"You must contact Medical Control for authorization prior to blood pressure treatment. BP must remain elevated for two consecutive sets of vital signs. Discuss target blood pressure with Medical Control Physician.","indent":1,"bold":["You must contact Medical Control for authorization prior to blood pressure treatment. BP must remain elevated for two consecutive sets of vital signs. Discuss target blood pressure with Medical Control Physician."],"red":true},
+          {"text":"Systolic Blood Pressure > 140/90 with any upper right quadrant/epigastric or abdominal pain, blurred vision, or severe headache, consider Labetalol.","links":[{"text":"Labetalol","protocolId":"labetalol"}]},
+          {"text":"Systolic Blood Pressure ≥ 160/110, consider Labetalol.","links":[{"text":"Labetalol","protocolId":"labetalol"}]}
+        ]},
+        {"type":"flow-stage","title":"Post-Partum Hemorrhage","arrowAfter":true,"items":[
+          "Firmly massage the uterine fundus after the placenta has delivered.",
+          "If perineal (external vaginal area) lacerations are present, apply direct pressure and wound care, but DO NOT place dressings inside the vagina.",
+          {"text":"Consider Tranexamic Acid.","links":[{"text":"Tranexamic Acid","protocolId":"tranexamic-acid"}]}
+        ]},
+        {"type":"flow-stage","title":"Birthing Complications","items":[
+          {"text":"Breach Birth","bold":["Breach Birth"]},
+          {"text":"If feet or buttocks presentation – DO NOT pull on the infant.","indent":1,"bold":["DO NOT"]},
+          {"text":"Support the infant’s presenting part(s).","indent":1},
+          {"text":"Place a gloved hand inside the vagina and form a “V” with first two fingers, place over the infant’s face to keep the vaginal wall away from the infant’s face.","indent":1},
+          {"text":"Prolapsed Cord","bold":["Prolapsed Cord"]},
+          {"text":"Place the mother in a knee-chest position to relieve pressure on the umbilical cord.","indent":1},
+          {"text":"To further reduce pressure on the umbilical cord, place your gloved hand inside the vagina and push upward on the presenting part.","indent":1},
+          {"text":"Cover the umbilical cord with moist sterile dressing and avoid manipulating the cord.","indent":1},
+          {"text":"Shoulder Dystocia","bold":["Shoulder Dystocia"]},
+          {"text":"Position the mother on her left side in a dorsal-knee-chest position or increase the diameter of the pelvis or position the mother with buttocks off the edge of the stretcher with thighs flexed upward as much as possible.","indent":1},
+          {"text":"Apply firm open hand pressure above the symphysis pubis.","indent":1},
+          {"text":"Attempt to guide the infant’s head downward to allow the anterior shoulder to slip under the symphysis pubis.","indent":1},
+          {"text":"Gently rotate the fetal shoulder girdle into the wider oblique pelvic diameter. The posterior shoulder usually delivers without resistance.","indent":1},
+          {"text":"Complete the delivery as above.","indent":1},
+          {"text":"If delivery does not occur, maintain airway patency as best as possible and immediately transport to an appropriate facility.","indent":1}
+        ]},
+        {"type":"flow-stage","title":"Delivery and Post Delivery Care of Mother and Infant","items":[
+          {"text":"Maintain gentle pressure on the infant’s head and allow it to deliver in a controlled gradual manner. Routine suctioning of the oropharynx and nasopharynx as soon as the head is delivered is NO LONGER RECOMMENDED.","bold":["Routine suctioning of the oropharynx and nasopharynx as soon as the head is delivered is NO LONGER RECOMMENDED."]},
+          "Check around the infant’s neck for the umbilical cord.",
+          {"text":"If the cord is looped around the infant’s neck, use your finger to hook the cord and pull it over the infant’s head.","indent":1},
+          {"text":"If unable to free the cord, clamp the cord in two places and cut the cord between the clamps.","indent":1},
+          "Gently direct the infant’s head and body downward to deliver the anterior shoulder and support the rest of the body as it delivers.",
+          "Keep the infant at the level of the vagina and use a sterile gauze pad to wipe any secretions around the mouth and nose.",
+          "Vigorously dry the infant and provide warmth (increasing ambient temperature, cover with blankets).",
+          "If needed, stimulate breathing by flicking the soles of the infant’s feet or rubbing the infant’s back.",
+          "Clamp the cord at 4 and 6 inches and cut the cord between the clamps.",
+          "Wrap the infant in dry, clean towels or blankets.",
+          "Note time of delivery. Obtain an APGAR Score at 1 and 5 minutes after delivery. (See below)",
+          {"text":"Score ≤ 3 – Critical","indent":1},
+          {"text":"Score ≥ 7 – Good","indent":1,"bold":["Score ≥ 7 – Good"]},
+          "If excessive secretions AND signs of compromise are present, clear airway with bulb syringe.",
+          "Once the placenta delivers, place it in a clean container and transport it to the hospital with the mother and infant.",
+          "After delivery, keep the mother warm and watch for signs of shock.",
+          "If excessive blood loss (> 500 ml):",
+          {"text":"Apply ABD pad to the external vaginal area.","indent":1},
+          {"text":"Consider an additional fluid bolus.","indent":1},
+          {"text":"Massage uterus to promote uterine contraction.","indent":1},
+          {"text":"Consider allowing the mother to breast feed infant.","indent":1},
+          {"text":"Transport to a facility capable of treating and managing an obstetrical patient and infant.","bold":["Transport to a facility capable of treating and managing an obstetrical patient and infant."]},
+          {"text":"If the newborn fails to respond to initial stimulation and is in need of resuscitation efforts, initiate resuscitation and refer to the Newborn Resuscitation Protocol.","bold":["If the newborn fails to respond to initial stimulation and is in need of resuscitation efforts, initiate resuscitation and refer to the Newborn Resuscitation Protocol."],"red":true,"icon":"assets/legend-important.webp","iconAlt":"Important protocol instruction","links":[{"text":"Newborn Resuscitation Protocol","protocolId":"newborn-resuscitation"}]}
+        ]},
+        {"type":"table","className":"apgar-table","caption":"APGAR Scoring","headers":["SCORE","0 points","1 point","2 points"],"rows":[
+          [{"text":"Appearance
+(Skin color)","bold":true,"className":"cell-initial-red"},"Cyanotic / Pale
+all over","Peripheral
+cyanosis only","Pink"],
+          [{"text":"Pulse
+(Heart rate)","bold":true,"className":"cell-initial-red"},"0","<100","100-140"],
+          [{"text":"Grimace
+(Reflex irritability)","bold":true,"className":"cell-initial-red"},"No response
+to stimulation","Grimace or
+weak cry when
+stimulated","Cry when
+stimulated"],
+          [{"text":"Activity
+(Tone)","bold":true,"className":"cell-initial-red"},"Floppy","Some flexion","Well flexed
+and resisting
+extension"],
+          [{"text":"Respiration","bold":true,"className":"cell-initial-red"},"Apneic","Slow, irregular
+breathing","Strong cry"]
+        ]},
+        {"type":"flow-stage","title":"OB/GYN Pearls","items":[
+          {"text":"Eclampsia may occur up to 2 months post-partum. Always consider in pregnant/recently pregnant seizing patients.","bold":["Eclampsia may occur up to 2 months post-partum. Always consider in pregnant/recently pregnant seizing patients."],"red":true,"icon":"assets/legend-important.webp","iconAlt":"Important protocol instruction"},
+          {"text":"Severe headache, vision changes, edema, RUQ pain may indicate pre-eclampsia.","bold":["Severe headache, vision changes, edema, RUQ pain may indicate pre-eclampsia."],"red":true,"icon":"assets/legend-important.webp","iconAlt":"Important protocol instruction"},
+          {"text":"In the setting of pregnancy, hypertension is defined as a systolic blood pressure > 140 mmHg or a diastolic blood pressure > 90 mmHg, or a relative increase of 30 mmHg systolic, or a 20 mmHg increase of diastolic pressure above the patient’s pre-pregnancy blood pressure.","bold":["In the setting of pregnancy, hypertension is defined as a systolic blood pressure > 140 mmHg or a diastolic blood pressure > 90 mmHg, or a relative increase of 30 mmHg systolic, or a 20 mmHg increase of diastolic pressure above the patient’s pre-pregnancy blood pressure."],"red":true,"icon":"assets/legend-important.webp","iconAlt":"Important protocol instruction"},
+          {"text":"Ask the patient to quantify bleeding – number of pads used per hour.","bold":["Ask the patient to quantify bleeding – number of pads used per hour."],"red":true,"icon":"assets/legend-important.webp","iconAlt":"Important protocol instruction"},
+          {"text":"Any pregnant patient involved in a MVC should be seen immediately by a physician for evaluation and fetal monitoring in a TRAUMA CENTER !!!!!!","bold":["Any pregnant patient involved in a MVC should be seen immediately by a physician for evaluation and fetal monitoring in a TRAUMA CENTER !!!!!!"],"red":true,"icon":"assets/legend-important.webp","iconAlt":"Important protocol instruction"},
+          {"text":"Magnesium Sulfate may cause hypotension and decreased respiratory drive.","bold":["Magnesium Sulfate may cause hypotension and decreased respiratory drive."],"red":true,"icon":"assets/legend-important.webp","iconAlt":"Important protocol instruction","links":[{"text":"Magnesium Sulfate","protocolId":"magnesium-sulfate"}]},
+          {"text":"If > 20 weeks pregnant, consider left lateral position for transport.","bold":["If > 20 weeks pregnant, consider left lateral position for transport."],"red":true,"icon":"assets/legend-important.webp","iconAlt":"Important protocol instruction"},
+          {"text":"Due to the following physiological changes during pregnancy, it is often difficult to assess for shock:","bold":["Due to the following physiological changes during pregnancy, it is often difficult to assess for shock:"],"red":true,"icon":"assets/legend-important.webp","iconAlt":"Important protocol instruction"},
+          {"text":"Mother’s heart rate increases:","indent":1,"bold":["Mother’s heart rate increases:"],"red":true},
+          {"text":"By 3rd trimester, heart rate can be 15–20 beats per minute above normal.","indent":2,"red":true},
+          {"text":"Both systolic and diastolic pressures drop by 5–15 mmHg during 2nd trimester.","indent":2,"red":true},
+          {"text":"The mother’s cardiac output and blood volume increase:","indent":1,"bold":["The mother’s cardiac output and blood volume increase:"],"red":true},
+          {"text":"The pregnant patient may lose 30–35% of their blood volume before the signs and symptoms of shock become apparent.","indent":2,"red":true},
+          {"text":"Supine hypotension usually occurs in the 3rd trimester.","indent":1,"red":true}
+        ]},
+        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital Signs","Obstetric History","Frequency/duration of contractions","Treatment(s)","Communication with Medical Control"]}
       ],
-      "plainText": "Childbirth-OB/GYN Emergencies\nThis protocol applies to adult women whose chief complaint is related to labor and/or impending\ndelivery.\nPrimary Survey\nâ€¢\nAssess level of consciousness â€“ AVPU\nâ€¢\nEnsure airway â€“ ensure patency and positioning\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\nâ€¢\nAssess breathing â€“ Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nAssist with bag valve mask if respiratory effort is ineffective.\nâ€¢\nAssess circulation â€“ control bleeding and manage shock appropriately. See Shock Protocol\no\nTake measures to prevent hypothermia.\nAltered LOC and signs of poor perfusion could indicate shock and should be managed\nappropriately.\nIf patient is unstable, initial resuscitation/stabilization must precede any action\nspecified in this protocol. Resuscitation of the mother is the key to survival of both the\nmother and fetus.\nSecondary Assessment and Treatment\nâ€¢\nMonitor vital signs and O2 saturation.\nâ€¢\nPerform blood glucose analysis. Treat if BGL is < 60 mg/dl.\nâ€¢\nConsider cardiac monitoring.\nâ€¢\nObtain OPQRST/SAMPLE, last menstrual period, obstetric, and gynecological history.\nDetermine how many previous deliveries, due date, onset of contractions, if membranes\nhave ruptured, if bleeding or vaginal discharge is present, if patient has the urge to push or\nmove bowels, and if pregnancy is high-risk.\nâ€¢\nTime contractions â€“ frequency and duration.\nâ€¢\nPhysical exam â€“ assess for signs of shock.\nâ€¢\nIV/IO access with normal saline â€“ initiate 20 ml/kg bolus.\no\nIf fluid resuscitation is needed, 20 ml/kg bolus. See Shock Protocol.\nâ€¢\nPlace patient in position of comfort, EXCEPT for 3rd trimester patient who should be transported on\ntheir left side.\nâ€¢\nKeep the patient NPO.\nâ€¢\nIf bleeding is present, apply ABD pad to the external vaginal area. Consider possible causes:\no\nRuptured ectopic pregnancy.\no\nSpontaneous abortion.\no\nPlacenta abruption.\no\nTrauma.\no\nAbnormal menstrual flow.\nâ€¢\nBring any products of conception to the hospital with the patient.\nâ€¢\nIf active labor, inspect the perineum for crowning.\no\nIf crowning is present, apply gentle pressure with your gloved hand to the infantâ€™s head and\nprepare for delivery.\no\nIf no crowning is present, monitor and reassess frequency and duration of contractions.\nPriority symptoms: Crowing < 36 weeks gestation, prolapsed cord, abnormal presentation,\nsevere vaginal bleeding, multiple gestation or seizure.\nIf noted, expedite transport and notify Medical Control as early as possible.\nChildbirth-OB/GYN Emergencies (Continued)\nSecondary Assessment and Treatment (Continued)\nEclampsia\nâ€¢\nMagnesium Sulfate â€“ 4 gm mixed in 100 ml of Normal Saline, administered over 10 â€“ 20 minutes.\no\nShould be titrated until seizure activity stops.\no\nAny seizure refractory to Magnesium Sulfate should be treated following the Seizure\nProtocol. See also Toxemia Protocol.\nPre-Eclampsia and Post-Partum Hypertension\nâ€¢\nStrongly consider alternative cause for hypertension prior to treatment.\no\nYou must contact Medical Control for authorization prior to blood pressure\ntreatment. BP must remain elevated for two consecutive sets of vital signs. Discuss\ntarget blood pressure with Medical Control Physician.\no\nSystolic Blood Pressure > 140/90 with any upper right quadrant/epigastric or abdominal\npain, blurred vision, or severe headache, consider Labetalol.\no\nSystolic Blood Pressure > 160/110, consider Labetalol.\nPost-Partum Hemorrhage\nâ€¢\nFirmly massage the uterine fundus after the placenta has delivered.\nâ€¢\nIf perineal (external vaginal area) lacerations are present, apply direct pressure and wound care,\nbut DO NOT place dressings inside the vagina.\nâ€¢\nConsider Tranexamic Acid.\nBirthing Complications\nâ€¢\nBreach Birth\no\nIf feet or buttocks presentation â€“ DO NOT pull on the infant.\no\nSupport the infantâ€™s presenting part(s).\no\nPlace a gloved hand inside the vagina and form a â€œVâ€ with the first two fingers, place over\nthe infantâ€™s face to keep the vaginal wall away from the infantâ€™s face.\nâ€¢\nProlapsed Cord\no\nPlace the mother in a knee chest position to relieve pressure on the umbilical cord.\no\nTo further reduce pressure on the umbilical cord, place your gloved hand inside the vagina\nand push upward on the presenting part.\no\nCover the umbilical cord with moist sterile dressing and avoid manipulation of the cord.\nâ€¢\nShoulder Dystocia\no\nPosition the mother on her left side in a dorsal-knee-chest position to increase the\ndiameter of the pelvis or position the mother with buttocks off the edge of the stretcher with\nthighs flexed upward as much as possible.\no\nApply firm open hand pressure above the symphysis pubis.\no\nAttempt to guide the infantâ€™s head downward to allow the anterior shoulder to slip under\nthe symphysis pubis.\no\nGently rotate the fetal shoulder girdle into the wider oblique pelvic diameter. The posterior\nshoulder usually delivers without resistance.\no\nComplete the delivery as above.\no\nIf delivery does not occur, maintain airway patency as best as possible and immediately\ntransport to an appropriate facility.\nChildbirth-OB/GYN Emergencies (Continued)\nDelivery and Post Delivery Care of Mother and Infant\nâ€¢\nMaintain gentle pressure on the infantâ€™s head and allow it to deliver in a controlled gradual\nmanner. Routine suctioning of the oropharynx and nasopharynx as soon as the head is\ndelivered is NO LONGER RECOMMENDED.\nâ€¢\nCheck around the infantâ€™s neck for the umbilical cord.\no\nIf the cord is looped around the infantâ€™s neck, use your finger to hook the cord and pull it\nover the infantâ€™s head.\no\nIf unable to free the cord, clamp the cord in two places and cut the cord between the\nclamps.\nâ€¢\nGently direct the infantâ€™s head and body downward to deliver the anterior shoulder and support the\nrest of the body as it delivers.\nâ€¢\nKeep the infant at the level of the vagina and use a sterile gauze pad to wipe any secretions\naround the mouth and nose.\nâ€¢\nVigorously dry the infant and provide warmth (increasing ambient temperature, cover with\nblankets).\nâ€¢\nIf needed, stimulate breathing by flicking the soles of the infantâ€™s feet or rubbing the infantâ€™s back.\nâ€¢\nClamp the cord at 4 and 6 inches and cut the cord between the clamps.\nâ€¢\nWrap the infant in dry, clean towels or blankets\nâ€¢\nNote time of delivery. Obtain an APGAR Score at 1 and 5 minutes after delivery. (See below)\no\nScore < 3 â€“ Critical\no\nScore > 7 â€“ Good\nâ€¢\nIf excessive secretions AND signs of compromise are present, clear airway with bulb syringe.\nâ€¢\nOnce the placenta delivers, place it in a clean container and transport it to the hospital with the\nmother and infant.\nâ€¢\nAfter delivery, keep the mother warm and watch for signs of shock.\nâ€¢\nIf excessive blood loss (> 500 ml):\no\nApply ABD pad to the external vaginal area.\no\nConsider an additional fluid bolus\no\nMassage uterus to promote uterine contraction.\no\nConsider allowing mother to breast feed infant.\nâ€¢\nTransport to a facility capable of treating and managing an obstetrical patient and infant.\nIf the newborn fails to respond to initial stimulation and is in need of resuscitation efforts,\ninitiate resuscitation and refer to the Newborn Resuscitation Protocol.\nDocument:\nâ€¢\nVital Signs\nâ€¢\nObstetric History\nâ€¢\nFrequency/duration\nof contractions\nâ€¢\nTreatment(s)\nâ€¢\nCommunication with\nMedical Control\nOB/GYN Pearls\nEclampsia may occur up to 2 months post-partum. Always consider in\npregnant/recently pregnant seizing patients.\nSevere headache, vision changes, edema, RUQ pain may indicate pre-eclampsia.\nIn the setting of pregnancy, hypertension is defined as a systolic blood pressure >\n140 mmHg or a diastolic blood pressure > 90 mmHg, or a relative increase of 30\nmmHg systolic, or a 20 mmHg increase of diastolic pressure above the patientâ€™s\npre-pregnancy blood pressure.\nAsk the patient to quantify bleeding â€“ number of pads used per hour.\nAny pregnant patient involved in a MVC should be seen immediately by a physician\nfor evaluation and fetal monitoring in a TRAUMA CENTER !!!!!!!\nMagnesium Sulfate may cause hypotension and decreased respiratory drive.\nIf > 20 weeks pregnant, consider left lateral position for transport.\nDue to the following physiological changes during pregnancy, it is often difficult to\nassess for shock:\no Motherâ€™s heart rate increases:\nâ–ª\nBy 3rd trimester, heart rate can be 15 â€“ 20 beats per minute above\nnormal.\nâ–ª\nBoth systolic and diastolic pressures drop by 5 â€“ 15 mmHg during 2nd\ntrimester.\no The motherâ€™s cardiac output and blood volume increase:\nâ–ª\nThe pregnant patient may lose 30 â€“ 35% of their blood volume before\nthe signs and symptoms of shock become apparent.\no Supine hypotension usually occurs in the 3rd trimester.",
-      "pageText": [
-        {
-          "page": 113,
-          "text": "Childbirth-OB/GYN Emergencies\nThis protocol applies to adult women whose chief complaint is related to labor and/or impending\ndelivery.\nPrimary Survey\nâ€¢\nAssess level of consciousness â€“ AVPU\nâ€¢\nEnsure airway â€“ ensure patency and positioning\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\nâ€¢\nAssess breathing â€“ Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nAssist with bag valve mask if respiratory effort is ineffective.\nâ€¢\nAssess circulation â€“ control bleeding and manage shock appropriately. See Shock Protocol\no\nTake measures to prevent hypothermia.\nAltered LOC and signs of poor perfusion could indicate shock and should be managed\nappropriately.\nIf patient is unstable, initial resuscitation/stabilization must precede any action\nspecified in this protocol. Resuscitation of the mother is the key to survival of both the\nmother and fetus.\nSecondary Assessment and Treatment\nâ€¢\nMonitor vital signs and O2 saturation.\nâ€¢\nPerform blood glucose analysis. Treat if BGL is < 60 mg/dl.\nâ€¢\nConsider cardiac monitoring.\nâ€¢\nObtain OPQRST/SAMPLE, last menstrual period, obstetric, and gynecological history.\nDetermine how many previous deliveries, due date, onset of contractions, if membranes\nhave ruptured, if bleeding or vaginal discharge is present, if patient has the urge to push or\nmove bowels, and if pregnancy is high-risk.\nâ€¢\nTime contractions â€“ frequency and duration.\nâ€¢\nPhysical exam â€“ assess for signs of shock.\nâ€¢\nIV/IO access with normal saline â€“ initiate 20 ml/kg bolus.\no\nIf fluid resuscitation is needed, 20 ml/kg bolus. See Shock Protocol.\nâ€¢\nPlace patient in position of comfort, EXCEPT for 3rd trimester patient who should be transported on\ntheir left side.\nâ€¢\nKeep the patient NPO.\nâ€¢\nIf bleeding is present, apply ABD pad to the external vaginal area. Consider possible causes:\no\nRuptured ectopic pregnancy.\no\nSpontaneous abortion.\no\nPlacenta abruption.\no\nTrauma.\no\nAbnormal menstrual flow.\nâ€¢\nBring any products of conception to the hospital with the patient.\nâ€¢\nIf active labor, inspect the perineum for crowning.\no\nIf crowning is present, apply gentle pressure with your gloved hand to the infantâ€™s head and\nprepare for delivery.\no\nIf no crowning is present, monitor and reassess frequency and duration of contractions.\nPriority symptoms: Crowing < 36 weeks gestation, prolapsed cord, abnormal presentation,\nsevere vaginal bleeding, multiple gestation or seizure.\nIf noted, expedite transport and notify Medical Control as early as possible."
-        },
-        {
-          "page": 114,
-          "text": "Childbirth-OB/GYN Emergencies (Continued)\nSecondary Assessment and Treatment (Continued)\nEclampsia\nâ€¢\nMagnesium Sulfate â€“ 4 gm mixed in 100 ml of Normal Saline, administered over 10 â€“ 20 minutes.\no\nShould be titrated until seizure activity stops.\no\nAny seizure refractory to Magnesium Sulfate should be treated following the Seizure\nProtocol. See also Toxemia Protocol.\nPre-Eclampsia and Post-Partum Hypertension\nâ€¢\nStrongly consider alternative cause for hypertension prior to treatment.\no\nYou must contact Medical Control for authorization prior to blood pressure\ntreatment. BP must remain elevated for two consecutive sets of vital signs. Discuss\ntarget blood pressure with Medical Control Physician.\no\nSystolic Blood Pressure > 140/90 with any upper right quadrant/epigastric or abdominal\npain, blurred vision, or severe headache, consider Labetalol.\no\nSystolic Blood Pressure > 160/110, consider Labetalol.\nPost-Partum Hemorrhage\nâ€¢\nFirmly massage the uterine fundus after the placenta has delivered.\nâ€¢\nIf perineal (external vaginal area) lacerations are present, apply direct pressure and wound care,\nbut DO NOT place dressings inside the vagina.\nâ€¢\nConsider Tranexamic Acid.\nBirthing Complications\nâ€¢\nBreach Birth\no\nIf feet or buttocks presentation â€“ DO NOT pull on the infant.\no\nSupport the infantâ€™s presenting part(s).\no\nPlace a gloved hand inside the vagina and form a â€œVâ€ with the first two fingers, place over\nthe infantâ€™s face to keep the vaginal wall away from the infantâ€™s face.\nâ€¢\nProlapsed Cord\no\nPlace the mother in a knee chest position to relieve pressure on the umbilical cord.\no\nTo further reduce pressure on the umbilical cord, place your gloved hand inside the vagina\nand push upward on the presenting part.\no\nCover the umbilical cord with moist sterile dressing and avoid manipulation of the cord.\nâ€¢\nShoulder Dystocia\no\nPosition the mother on her left side in a dorsal-knee-chest position to increase the\ndiameter of the pelvis or position the mother with buttocks off the edge of the stretcher with\nthighs flexed upward as much as possible.\no\nApply firm open hand pressure above the symphysis pubis.\no\nAttempt to guide the infantâ€™s head downward to allow the anterior shoulder to slip under\nthe symphysis pubis.\no\nGently rotate the fetal shoulder girdle into the wider oblique pelvic diameter. The posterior\nshoulder usually delivers without resistance.\no\nComplete the delivery as above.\no\nIf delivery does not occur, maintain airway patency as best as possible and immediately\ntransport to an appropriate facility."
-        },
-        {
-          "page": 115,
-          "text": "Childbirth-OB/GYN Emergencies (Continued)\nDelivery and Post Delivery Care of Mother and Infant\nâ€¢\nMaintain gentle pressure on the infantâ€™s head and allow it to deliver in a controlled gradual\nmanner. Routine suctioning of the oropharynx and nasopharynx as soon as the head is\ndelivered is NO LONGER RECOMMENDED.\nâ€¢\nCheck around the infantâ€™s neck for the umbilical cord.\no\nIf the cord is looped around the infantâ€™s neck, use your finger to hook the cord and pull it\nover the infantâ€™s head.\no\nIf unable to free the cord, clamp the cord in two places and cut the cord between the\nclamps.\nâ€¢\nGently direct the infantâ€™s head and body downward to deliver the anterior shoulder and support the\nrest of the body as it delivers.\nâ€¢\nKeep the infant at the level of the vagina and use a sterile gauze pad to wipe any secretions\naround the mouth and nose.\nâ€¢\nVigorously dry the infant and provide warmth (increasing ambient temperature, cover with\nblankets).\nâ€¢\nIf needed, stimulate breathing by flicking the soles of the infantâ€™s feet or rubbing the infantâ€™s back.\nâ€¢\nClamp the cord at 4 and 6 inches and cut the cord between the clamps.\nâ€¢\nWrap the infant in dry, clean towels or blankets\nâ€¢\nNote time of delivery. Obtain an APGAR Score at 1 and 5 minutes after delivery. (See below)\no\nScore < 3 â€“ Critical\no\nScore > 7 â€“ Good\nâ€¢\nIf excessive secretions AND signs of compromise are present, clear airway with bulb syringe.\nâ€¢\nOnce the placenta delivers, place it in a clean container and transport it to the hospital with the\nmother and infant.\nâ€¢\nAfter delivery, keep the mother warm and watch for signs of shock.\nâ€¢\nIf excessive blood loss (> 500 ml):\no\nApply ABD pad to the external vaginal area.\no\nConsider an additional fluid bolus\no\nMassage uterus to promote uterine contraction.\no\nConsider allowing mother to breast feed infant.\nâ€¢\nTransport to a facility capable of treating and managing an obstetrical patient and infant.\nIf the newborn fails to respond to initial stimulation and is in need of resuscitation efforts,\ninitiate resuscitation and refer to the Newborn Resuscitation Protocol.\nDocument:\nâ€¢\nVital Signs\nâ€¢\nObstetric History\nâ€¢\nFrequency/duration\nof contractions\nâ€¢\nTreatment(s)\nâ€¢\nCommunication with\nMedical Control"
-        },
-        {
-          "page": 116,
-          "text": "OB/GYN Pearls\nEclampsia may occur up to 2 months post-partum. Always consider in\npregnant/recently pregnant seizing patients.\nSevere headache, vision changes, edema, RUQ pain may indicate pre-eclampsia.\nIn the setting of pregnancy, hypertension is defined as a systolic blood pressure >\n140 mmHg or a diastolic blood pressure > 90 mmHg, or a relative increase of 30\nmmHg systolic, or a 20 mmHg increase of diastolic pressure above the patientâ€™s\npre-pregnancy blood pressure.\nAsk the patient to quantify bleeding â€“ number of pads used per hour.\nAny pregnant patient involved in a MVC should be seen immediately by a physician\nfor evaluation and fetal monitoring in a TRAUMA CENTER !!!!!!!\nMagnesium Sulfate may cause hypotension and decreased respiratory drive.\nIf > 20 weeks pregnant, consider left lateral position for transport.\nDue to the following physiological changes during pregnancy, it is often difficult to\nassess for shock:\no Motherâ€™s heart rate increases:\nâ–ª\nBy 3rd trimester, heart rate can be 15 â€“ 20 beats per minute above\nnormal.\nâ–ª\nBoth systolic and diastolic pressures drop by 5 â€“ 15 mmHg during 2nd\ntrimester.\no The motherâ€™s cardiac output and blood volume increase:\nâ–ª\nThe pregnant patient may lose 30 â€“ 35% of their blood volume before\nthe signs and symptoms of shock become apparent.\no Supine hypotension usually occurs in the 3rd trimester."
-        }
-      ],
-      "needsReview": true,
-      "extractionNote": "Tables were converted from the PDF into in-page HTML table blocks. Review against the official PDF before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Childbirth-OB/GYN Emergencies. Adult obstetric assessment, labor, delivery, complications, postpartum care, APGAR scoring, and OB/GYN clinical pearls.",
+      "needsReview":false,
+      "displayMode":"structured"
+    },{
       "id": "cold-related-emergencies",
       "title": "Cold Related Emergencies",
       "type": "protocol",
