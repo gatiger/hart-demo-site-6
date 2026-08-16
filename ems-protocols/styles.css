@@ -821,8 +821,8 @@ details[open] > .tree-heading.tree-toggle::before {
 .stroke-person .leg { top:94px; width:14px; height:72px; border-radius:8px; }
 .stroke-person .leg.left { left:24px; transform:rotate(4deg); }
 .stroke-person .leg.right { right:21px; transform:rotate(-4deg); }
-.stroke-person.affected-left .head { background:linear-gradient(90deg,#d85b4a 50%,#b9cad6 50%); }
-.stroke-person.affected-right .head { background:linear-gradient(90deg,#b9cad6 50%,#d85b4a 50%); }
+.stroke-person.brain-left .head { background:linear-gradient(90deg,#d85b4a 50%,#b9cad6 50%); }
+.stroke-person.brain-right .head { background:linear-gradient(90deg,#b9cad6 50%,#d85b4a 50%); }
 .stroke-person.affected-left .arm.left,.stroke-person.affected-left .leg.left,.stroke-person.affected-right .arm.right,.stroke-person.affected-right .leg.right { background:#d85b4a; }
 .stroke-person.affected-left .torso { background:linear-gradient(90deg,#d85b4a 50%,#b9cad6 50%); }
 .stroke-person.affected-right .torso { background:linear-gradient(90deg,#b9cad6 50%,#d85b4a 50%); }

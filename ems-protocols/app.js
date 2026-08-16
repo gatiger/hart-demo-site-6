@@ -3,7 +3,7 @@ let deferredPrompt;
 let selectedId = null;
 let viewHistory = [];
 let viewHistoryIndex = -1;
-const CONTENT_VERSION = 'v132';
+const CONTENT_VERSION = 'v133';
 
 const treeNav = document.getElementById('treeNav');
 const searchBox = document.getElementById('searchBox');
@@ -713,7 +713,7 @@ function renderStrokeLateralityDiagram(block, container) {
     arrow.textContent = '→';
     visual.appendChild(arrow);
     const person = document.createElement('div');
-    person.className = 'stroke-person affected-' + panelData.affectedSide;
+    person.className = 'stroke-person affected-' + panelData.affectedSide + ' brain-' + panelData.brainSide;
     person.setAttribute('role', 'img');
     person.setAttribute('aria-label', panelData.affectedSide + ' side of body highlighted');
     person.innerHTML = '<span class="head"></span><span class="torso"></span><span class="arm left"></span><span class="arm right"></span><span class="leg left"></span><span class="leg right"></span>';
