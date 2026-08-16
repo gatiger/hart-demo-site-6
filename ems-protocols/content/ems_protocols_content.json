@@ -6754,24 +6754,11 @@
           {"text":"If the newborn fails to respond to initial stimulation and is in need of resuscitation efforts, initiate resuscitation and refer to the Newborn Resuscitation Protocol.","bold":["If the newborn fails to respond to initial stimulation and is in need of resuscitation efforts, initiate resuscitation and refer to the Newborn Resuscitation Protocol."],"red":true,"icon":"assets/legend-important.webp","iconAlt":"Important protocol instruction","links":[{"text":"Newborn Resuscitation Protocol","protocolId":"newborn-resuscitation"}]}
         ]},
         {"type":"table","className":"apgar-table","caption":"APGAR Scoring","headers":["SCORE","0 points","1 point","2 points"],"rows":[
-          [{"text":"Appearance
-(Skin color)","bold":true,"className":"cell-initial-red"},"Cyanotic / Pale
-all over","Peripheral
-cyanosis only","Pink"],
-          [{"text":"Pulse
-(Heart rate)","bold":true,"className":"cell-initial-red"},"0","<100","100-140"],
-          [{"text":"Grimace
-(Reflex irritability)","bold":true,"className":"cell-initial-red"},"No response
-to stimulation","Grimace or
-weak cry when
-stimulated","Cry when
-stimulated"],
-          [{"text":"Activity
-(Tone)","bold":true,"className":"cell-initial-red"},"Floppy","Some flexion","Well flexed
-and resisting
-extension"],
-          [{"text":"Respiration","bold":true,"className":"cell-initial-red"},"Apneic","Slow, irregular
-breathing","Strong cry"]
+          [{"text":"Appearance\n(Skin color)","bold":true,"className":"cell-initial-red"},"Cyanotic / Pale\nall over","Peripheral\ncyanosis only","Pink"],
+          [{"text":"Pulse\n(Heart rate)","bold":true,"className":"cell-initial-red"},"0","<100","100-140"],
+          [{"text":"Grimace\n(Reflex irritability)","bold":true,"className":"cell-initial-red"},"No response\nto stimulation","Grimace or\nweak cry when\nstimulated","Cry when\nstimulated"],
+          [{"text":"Activity\n(Tone)","bold":true,"className":"cell-initial-red"},"Floppy","Some flexion","Well flexed\nand resisting\nextension"],
+          [{"text":"Respiration","bold":true,"className":"cell-initial-red"},"Apneic","Slow, irregular\nbreathing","Strong cry"]
         ]},
         {"type":"flow-stage","title":"OB/GYN Pearls","items":[
           {"text":"Eclampsia may occur up to 2 months post-partum. Always consider in pregnant/recently pregnant seizing patients.","bold":["Eclampsia may occur up to 2 months post-partum. Always consider in pregnant/recently pregnant seizing patients."],"red":true,"icon":"assets/legend-important.webp","iconAlt":"Important protocol instruction"},
