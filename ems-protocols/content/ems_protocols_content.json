@@ -6990,54 +6990,51 @@
       "id": "adult-nausea-and-vomiting",
       "title": "Nausea and Vomiting",
       "type": "protocol",
-      "categoryPath": [
-        "Adult Clinical Protocols",
-        "Adult Medical Emergencies"
-      ],
+      "categoryPath": ["Adult Clinical Protocols", "Adult Medical Emergencies"],
       "status": "active",
       "effectiveDate": "2026-06-08",
       "lastRevised": "",
       "version": "2026",
       "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 123,
-        "pageEnd": 123,
-        "pageLabel": "123"
-      },
+      "source": {"pdf":"documents/ems/2026-hcems-protocols.pdf","pageStart":123,"pageEnd":123,"pageLabel":"123"},
       "summary": "",
       "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Nausea/Vomiting"
-        },
-        {
-          "type": "paragraph",
-          "text": "This protocol applies to adult patients presenting with acute onset of nausea and/or vomiting. Primary Survey Assess level of consciousness – AVPU Ensure airway – ensure patency and positioning Have suction equipment ready. Consider spinal motion restriction if indicated. Assess breathing – Give supplemental O2 if signs of compromise. Maintain SpO2 > 94%. Assist with bag valve mask if respiratory effort is ineffective. Assess circulation – control bleeding and manage shock appropriately. See Shock Protocol. Altered LOC and signs of poor perfusion could indicate shock. Secondary Assessment and Treatment Monitor vital signs and O2 saturation. Cardiac monitor Record and evaluate 12-Lead ECG. Perform blood glucose analysis – Treat if BGL is < 60 mg/dl. Physical exam and OPQRST/SAMPLE history. Assess for signs of dehydration. Consider possible causes (Gastrointestinal, GU, cardiac, meds/toxic ingestion, pregnancy, etc.) Save emesis for signs of gastrointestinal bleed, etc. Keep the patient NPO Initiate IV/IO of normal saline at KVO rate. If fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol. Titrate to a systolic blood pressure of > 90 mmHg. Consider Ondansetron 4 mg IV/IO/IM/IN – repeat in 15 minutes if no relief. Max Dose 8 mg OR Phenergan 12.5 – 25 mg diluted in 100 ml of normal saline over 10 minutes, OR 25 mg IM for patients > 15 years-old. Phenergan is NOT to be administered direct IV push."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vital signs OPQRST/SAMPLE Cardiac rhythm Treatment(s) Communication with Medical Control."
-        }
+        {"type":"heading","level":2,"text":"Nausea/Vomiting"},
+        {"type":"paragraph","text":"This protocol applies to adult patients presenting with acute onset of nausea and/or vomiting."},
+        {"type":"flow-stage","title":"Primary Survey","arrowAfter":true,"items":[
+          {"text":"Assess level of consciousness – AVPU","bold":["Assess level of consciousness"]},
+          {"text":"Ensure airway – ensure patency and positioning","bold":["Ensure airway"]},
+          {"text":"Have suction equipment ready.","indent":1},
+          {"text":"Consider spinal motion restriction if indicated.","indent":1},
+          {"text":"Assess breathing – Give supplemental O₂ if signs of compromise. Maintain SpO₂ ≥ 94%.","bold":["Assess breathing","Maintain SpO₂ ≥ 94%."]},
+          {"text":"Assist with bag valve mask if respiratory effort is ineffective.","indent":1},
+          {"text":"Assess circulation – control bleeding and manage shock appropriately. See Shock Protocol.","bold":["Assess circulation"],"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          {"text":"Altered LOC and signs of poor perfusion could indicate shock.","bold":["Altered LOC and signs of poor perfusion could indicate shock."],"red":true,"icon":"assets/legend-important.webp","iconAlt":"Important protocol instruction"}
+        ]},
+        {"type":"flow-stage","title":"Secondary Assessment and Treatment","items":[
+          "Monitor vital signs and O₂ saturation.",
+          "Cardiac monitor",
+          {"text":"Record and evaluate 12-Lead ECG.","indent":1},
+          {"text":"Perform blood glucose analysis – Treat if BGL is < 60 mg/dl.","bold":["BGL is < 60 mg/dl."]},
+          "Physical exam and OPQRST/SAMPLE history.",
+          {"text":"Assess for signs of dehydration.","indent":1},
+          "Consider possible causes (Gastrointestinal, GU, cardiac, meds/toxic ingestion, pregnancy, etc.)",
+          "Save emesis for signs of gastrointestinal bleed, etc.",
+          "Keep the patient NPO.",
+          "Initiate IV/IO of normal saline at KVO rate.",
+          {"text":"If fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.","indent":1,"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          {"text":"Titrate to a systolic blood pressure of ≥ 90 mmHg.","indent":1},
+          {"text":"Consider Ondansetron 4 mg IV/IO/IM/IN – repeat in 15 minutes if no relief. Max Dose 8 mg.","bold":["4 mg","15 minutes","Max Dose 8 mg."],"links":[{"text":"Ondansetron","protocolId":"ondansetron-zofran"}]},
+          {"text":"OR","bold":["OR"]},
+          {"text":"Phenergan 12.5–25 mg diluted in 100 ml of normal saline over 10 minutes. OR 25 mg IM for patients > 15 years-old.","bold":["12.5–25 mg","100 ml","10 minutes","25 mg IM"],"links":[{"text":"Phenergan","protocolId":"phenergan-removed"}],"struck":true},
+          {"text":"Phenergan is NOT to be administered direct IV push.","indent":1,"bold":["Phenergan is NOT to be administered direct IV push."],"red":true}
+        ]},
+        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital signs","OPQRST/SAMPLE","Cardiac rhythm","Treatment(s)","Communication with Medical Control"]}
       ],
-      "plainText": "Nausea/Vomiting\nThis protocol applies to adult patients presenting with acute onset of nausea and/or vomiting.\nPrimary Survey\n•\nAssess level of consciousness – AVPU\n•\nEnsure airway – ensure patency and positioning\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\n•\nAssess breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nAssess circulation – control bleeding and manage shock appropriately. See Shock Protocol.\nAltered LOC and signs of poor perfusion could indicate shock.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation.\n•\nCardiac monitor\no\nRecord and evaluate 12-Lead ECG.\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nPhysical exam and OPQRST/SAMPLE history.\no\nAssess for signs of dehydration.\n•\nConsider possible causes (Gastrointestinal, GU, cardiac, meds/toxic ingestion, pregnancy, etc.)\n•\nSave emesis for signs of gastrointestinal bleed, etc.\n•\nKeep the patient NPO\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.\no\nTitrate to a systolic blood pressure of > 90 mmHg.\n•\nConsider Ondansetron 4 mg IV/IO/IM/IN – repeat in 15 minutes if no relief.  Max Dose 8 mg\nOR\n•\nPhenergan 12.5 – 25 mg diluted in 100 ml of normal saline over 10 minutes, OR 25 mg IM for\npatients > 15 years-old.\no\nPhenergan is NOT to be administered direct IV push.\nDocument:\n•\nVital signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control.",
-      "pageText": [
-        {
-          "page": 123,
-          "text": "Nausea/Vomiting\nThis protocol applies to adult patients presenting with acute onset of nausea and/or vomiting.\nPrimary Survey\n•\nAssess level of consciousness – AVPU\n•\nEnsure airway – ensure patency and positioning\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\n•\nAssess breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nAssess circulation – control bleeding and manage shock appropriately. See Shock Protocol.\nAltered LOC and signs of poor perfusion could indicate shock.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation.\n•\nCardiac monitor\no\nRecord and evaluate 12-Lead ECG.\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nPhysical exam and OPQRST/SAMPLE history.\no\nAssess for signs of dehydration.\n•\nConsider possible causes (Gastrointestinal, GU, cardiac, meds/toxic ingestion, pregnancy, etc.)\n•\nSave emesis for signs of gastrointestinal bleed, etc.\n•\nKeep the patient NPO\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.\no\nTitrate to a systolic blood pressure of > 90 mmHg.\n•\nConsider Ondansetron 4 mg IV/IO/IM/IN – repeat in 15 minutes if no relief.  Max Dose 8 mg\nOR\n•\nPhenergan 12.5 – 25 mg diluted in 100 ml of normal saline over 10 minutes, OR 25 mg IM for\npatients > 15 years-old.\no\nPhenergan is NOT to be administered direct IV push.\nDocument:\n•\nVital signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control."
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Nausea/Vomiting. Adult assessment and treatment for acute onset nausea and/or vomiting.",
+      "needsReview":false,
+      "displayMode":"structured"
+    },{
       "id": "respiratory-distress",
       "title": "Respiratory Distress",
       "type": "protocol",
