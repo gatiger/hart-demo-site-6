@@ -648,7 +648,7 @@
               "status": "active"
             },
             {
-              "id": "seizure",
+              "id": "adult-seizure",
               "title": "Seizure",
               "type": "protocol",
               "pageStart": 129,
@@ -7260,233 +7260,54 @@
       "needsReview":false,
       "displayMode":"structured"
     },{
-      "id": "seizure",
+      "id": "adult-seizure",
       "title": "Seizure",
       "type": "protocol",
-      "categoryPath": [
-        "Adult Clinical Protocols",
-        "Adult Medical Emergencies"
-      ],
+      "categoryPath": ["Adult Clinical Protocols", "Adult Medical Emergencies"],
       "status": "active",
       "effectiveDate": "2026-06-08",
       "lastRevised": "",
       "version": "2026",
       "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 129,
-        "pageEnd": 129,
-        "pageLabel": "129"
-      },
+      "source": {"pdf":"documents/ems/2026-hcems-protocols.pdf","pageStart":129,"pageEnd":129,"pageLabel":"129"},
       "summary": "",
       "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Seizure"
-        },
-        {
-          "type": "paragraph",
-          "text": "This protocol applies to adult patients actively seizing or those that have a history of seizures prior to EMS arrival. Primary Survey Assess level of consciousness – AVPU Ensure airway – ensure patency and positioning Have suction equipment ready. Consider spinal motion restriction if indicated. Assess breathing – Give supplemental O2 if signs of compromise. Maintain SpO2 > 94%. If known COPD, start with 2 – 6 lpm via nasal cannula and increase as needed Assist with bag valve mask if respiratory effort is ineffective. Assess circulation – control bleeding and manage shock appropriately. See Shock Protocol. Secondary Assessment and Treatment Monitor vital signs and O2 saturation Perform blood glucose analysis – Treat if BGL is < 60 mg/dl. Cardiac Monitor Record and evaluate 12-Lead ECG Physical exam and OPQRST/SAMPLE history. Obtain description of seizure activity Duration and severity Note any history of illness or trauma. Advanced airway/ventilatory management as needed. Initiate IV/IO of normal saline at KVO rate. If fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol. If the patient is actively seizing, consider ONE of the following: Midazolam 2 – 5 mg IV/IO/IM/IN. May repeat once at 2.5 mg if seizing continues. Max Dose 5 mg. OR Diazepam 2 – 5 mg IV/IO/IM/IN. May repeat once at 5 mg if seizing continues. Max Dose 5 mg. Contact Medical Control for Additional Orders if Seizure Activity Continues"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vital signs History Description of seizures Cardiac rhythm Treatment(s) Communication with Medical Control."
-        }
+        {"type":"heading","level":2,"text":"Seizure"},
+        {"type":"paragraph","text":"This protocol applies to adult patients actively seizing or those that have a history of seizures prior to EMS arrival."},
+        {"type":"flow-stage","title":"Primary Survey","arrowAfter":true,"items":[
+          {"text":"Assess level of consciousness – AVPU","bold":["Assess level of consciousness"]},
+          {"text":"Ensure airway – ensure patency and positioning","bold":["Ensure airway"]},
+          {"text":"Have suction equipment ready.","indent":1},
+          {"text":"Consider spinal motion restriction if indicated.","indent":1},
+          {"text":"Assess breathing – Give supplemental O₂ if signs of compromise. Maintain SpO₂ ≥ 94%.","bold":["Assess breathing","Maintain SpO₂ ≥ 94%."]},
+          {"text":"If known COPD, start with 2–6 lpm via nasal cannula and increase as needed.","indent":1},
+          {"text":"Assist with bag valve mask if respiratory effort is ineffective.","indent":1},
+          {"text":"Assess circulation – control bleeding and manage shock appropriately. See Shock Protocol.","bold":["Assess circulation"],"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]}
+        ]},
+        {"type":"flow-stage","title":"Secondary Assessment and Treatment","arrowAfter":true,"items":[
+          "Monitor vital signs and O₂ saturation.",
+          {"text":"Perform blood glucose analysis – Treat if BGL is < 60 mg/dl.","bold":["BGL is < 60 mg/dl."]},
+          "Cardiac Monitor",
+          {"text":"Record and evaluate 12-Lead ECG","indent":1},
+          "Physical exam and OPQRST/SAMPLE history.",
+          {"text":"Obtain description of seizure activity","indent":1},
+          {"text":"Duration and severity","indent":2},
+          {"text":"Note any history of illness or trauma.","indent":1},
+          "Advanced airway/ventilatory management as needed.",
+          "Initiate IV/IO of normal saline at KVO rate.",
+          {"text":"If fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.","indent":1,"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          "If the patient is actively seizing, consider ONE of the following:",
+          {"text":"Midazolam 2–5 mg IV/IO/IM/IN. May repeat once at 2.5 mg if seizing continues. Max Dose 5 mg.","indent":1,"bold":["2–5 mg","2.5 mg","Max Dose 5 mg."],"links":[{"text":"Midazolam","protocolId":"midazolam-versed"}]},
+          {"text":"OR","bold":["OR"],"noBullet":true},
+          {"text":"Diazepam 2–5 mg IV/IO/IM/IN. May repeat once at 5 mg if seizing continues. Max Dose 5 mg.","indent":1,"bold":["2–5 mg","5 mg","Max Dose 5 mg."],"links":[{"text":"Diazepam","protocolId":"diazepam"}]}
+        ]},
+        {"type":"stop-control","title":"STOP","text":"Contact Medical Control for Additional Orders if Seizure Activity Continues","image":"assets/legend-medical-control.webp","alt":"Stop and contact Medical Control if seizure activity continues"},
+        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital signs","History","Description of seizures","Cardiac rhythm","Treatment(s)","Communication with Medical Control"]}
       ],
-      "plainText": "Seizure\nThis protocol applies to adult patients actively seizing or those that have a history of seizures\nprior to EMS arrival.\nPrimary Survey\n•\nAssess level of consciousness – AVPU\n•\nEnsure airway – ensure patency and positioning\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\n•\nAssess breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nIf known COPD, start with 2 – 6 lpm via nasal cannula and increase as needed\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nAssess circulation – control bleeding and manage shock appropriately. See Shock Protocol.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nCardiac Monitor\no\nRecord and evaluate 12-Lead ECG\n•\nPhysical exam and OPQRST/SAMPLE history.\no\nObtain description of seizure activity\n▪\nDuration and severity\no\nNote any history of illness or trauma.\n•\nAdvanced airway/ventilatory management as needed.\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.\n•\nIf the patient is actively seizing, consider ONE of the following:\no\nMidazolam  2 – 5 mg IV/IO/IM/IN. May repeat once at 2.5 mg if seizing continues.  Max\nDose 5 mg.\nOR\no\nDiazepam  2 – 5 mg IV/IO/IM/IN.  May repeat once at 5 mg if seizing continues. Max\nDose 5 mg.\nContact Medical Control\nfor Additional Orders if\nSeizure Activity Continues\nDocument:\n•\nVital signs\n•\nHistory\n•\nDescription of seizures\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control.",
-      "pageText": [
-        {
-          "page": 129,
-          "text": "Seizure\nThis protocol applies to adult patients actively seizing or those that have a history of seizures\nprior to EMS arrival.\nPrimary Survey\n•\nAssess level of consciousness – AVPU\n•\nEnsure airway – ensure patency and positioning\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\n•\nAssess breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nIf known COPD, start with 2 – 6 lpm via nasal cannula and increase as needed\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nAssess circulation – control bleeding and manage shock appropriately. See Shock Protocol.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nCardiac Monitor\no\nRecord and evaluate 12-Lead ECG\n•\nPhysical exam and OPQRST/SAMPLE history.\no\nObtain description of seizure activity\n▪\nDuration and severity\no\nNote any history of illness or trauma.\n•\nAdvanced airway/ventilatory management as needed.\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.\n•\nIf the patient is actively seizing, consider ONE of the following:\no\nMidazolam  2 – 5 mg IV/IO/IM/IN. May repeat once at 2.5 mg if seizing continues.  Max\nDose 5 mg.\nOR\no\nDiazepam  2 – 5 mg IV/IO/IM/IN.  May repeat once at 5 mg if seizing continues. Max\nDose 5 mg.\nContact Medical Control\nfor Additional Orders if\nSeizure Activity Continues\nDocument:\n•\nVital signs\n•\nHistory\n•\nDescription of seizures\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control."
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
-      "id": "stroke",
-      "title": "Stroke",
-      "type": "protocol",
-      "categoryPath": [
-        "Adult Clinical Protocols",
-        "Adult Medical Emergencies"
-      ],
-      "status": "active",
-      "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 130,
-        "pageEnd": 130,
-        "pageLabel": "130"
-      },
-      "summary": "",
-      "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Stroke/CVA"
-        },
-        {
-          "type": "paragraph",
-          "text": "This protocol applies to adult patients presenting with full or one-sided body weakness, facial droop, difficulty speaking, and/or altered mental status, occurring separately or in conjunction with each other. Primary Survey Assess level of consciousness – AVPU Ensure airway – ensure patency and positioning Have suction equipment ready. Consider spinal motion restriction if indicated. Assess breathing – Give supplemental O2 if signs of compromise. Maintain SpO2 > 94%. Assist with bag valve mask if respiratory effort is ineffective. Assess circulation – control bleeding and manage shock appropriately. See Shock Protocol. Secondary Assessment and Treatment Monitor vital signs and O2 saturation DO NOT attempt to lower blood pressure. Perform blood glucose analysis – Treat if BGL is < 60 mg/dl. Cardiac Monitor Record and evaluate 12-Lead ECG Physical exam and OPQRST/SAMPLE history. If possible, determine the time the patient was last seen normal. Obtain the name and contact information of the witness. Remember F.A.S.T. Use the Cincinnati Stroke Scale Face: Check for facial droop. Arms: Assess for extremity weakness. Speech: Assess for slurred speech. Time: Note when patient was last seen normal. Rule out stroke mimics such as hypoglycemia, seizures, and head injury. Consult the appropriate guidelines for treatment options. Reassure and calm the patient. If no trauma, place the patient in a position of comfort or in a left lateral recumbent position. Protect paralyzed extremities Limit on-scene time to < 10 minutes. Initiate IV/IO of normal saline at KVO rate. Avoid primary IV access in paralyzed extremities. Rapid transport to the closest Stroke Center or Hospital capable of TPA administration."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vital signs, GCS, BGL Last time seen normal OPQRST/SAMPLE Cincinnati Stoke Scale Treatment(s) Communication with Medical Control."
-        }
-      ],
-      "plainText": "Stroke/CVA\nThis protocol applies to adult patients presenting with full or one-sided body weakness, facial\ndroop, difficulty speaking, and/or altered mental status, occurring separately or in conjunction\nwith each other.\nPrimary Survey\n•\nAssess level of consciousness – AVPU\n•\nEnsure airway – ensure patency and positioning\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\n•\nAssess breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nAssess circulation – control bleeding and manage shock appropriately. See Shock Protocol.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation\no\nDO NOT attempt to lower blood pressure.\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nCardiac Monitor\no\nRecord and evaluate 12-Lead ECG\n•\nPhysical exam and OPQRST/SAMPLE history.\no\nIf possible, determine the time the patient was last seen normal.\no\nObtain the name and contact information of the witness.\nRemember F.A.S.T. Use the Cincinnati Stroke Scale\no\nFace: Check for facial droop.\no\nArms: Assess for extremity weakness.\no\nSpeech: Assess for slurred speech.\no\nTime: Note when patient was last seen normal.\n•\nRule out stroke mimics such as hypoglycemia, seizures, and head injury.\no\nConsult the appropriate guidelines for treatment options.\n•\nReassure and calm the patient.\n•\nIf no trauma, place the patient in a position of comfort or in a left lateral recumbent position.\n•\nProtect paralyzed extremities\n•\nLimit on-scene time to < 10 minutes.\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nAvoid primary IV access in paralyzed extremities.\nRapid transport to the closest Stroke Center or Hospital capable of TPA\nadministration.\nDocument:\n•\nVital signs, GCS, BGL\n•\nLast time seen normal\n•\nOPQRST/SAMPLE\n•\nCincinnati Stoke Scale\n•\nTreatment(s)\n•\nCommunication with\nMedical Control.",
-      "pageText": [
-        {
-          "page": 130,
-          "text": "Stroke/CVA\nThis protocol applies to adult patients presenting with full or one-sided body weakness, facial\ndroop, difficulty speaking, and/or altered mental status, occurring separately or in conjunction\nwith each other.\nPrimary Survey\n•\nAssess level of consciousness – AVPU\n•\nEnsure airway – ensure patency and positioning\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\n•\nAssess breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nAssess circulation – control bleeding and manage shock appropriately. See Shock Protocol.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation\no\nDO NOT attempt to lower blood pressure.\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nCardiac Monitor\no\nRecord and evaluate 12-Lead ECG\n•\nPhysical exam and OPQRST/SAMPLE history.\no\nIf possible, determine the time the patient was last seen normal.\no\nObtain the name and contact information of the witness.\nRemember F.A.S.T. Use the Cincinnati Stroke Scale\no\nFace: Check for facial droop.\no\nArms: Assess for extremity weakness.\no\nSpeech: Assess for slurred speech.\no\nTime: Note when patient was last seen normal.\n•\nRule out stroke mimics such as hypoglycemia, seizures, and head injury.\no\nConsult the appropriate guidelines for treatment options.\n•\nReassure and calm the patient.\n•\nIf no trauma, place the patient in a position of comfort or in a left lateral recumbent position.\n•\nProtect paralyzed extremities\n•\nLimit on-scene time to < 10 minutes.\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nAvoid primary IV access in paralyzed extremities.\nRapid transport to the closest Stroke Center or Hospital capable of TPA\nadministration.\nDocument:\n•\nVital signs, GCS, BGL\n•\nLast time seen normal\n•\nOPQRST/SAMPLE\n•\nCincinnati Stoke Scale\n•\nTreatment(s)\n•\nCommunication with\nMedical Control."
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
-      "id": "toxemia",
-      "title": "Toxemia",
-      "type": "protocol",
-      "categoryPath": [
-        "Adult Clinical Protocols",
-        "Adult Medical Emergencies"
-      ],
-      "status": "active",
-      "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 131,
-        "pageEnd": 131,
-        "pageLabel": "131"
-      },
-      "summary": "",
-      "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Toxemia"
-        },
-        {
-          "type": "paragraph",
-          "text": "This protocol applies to the adult obstetrical patient experiencing hypertension and/or eclampsia activity. (Seizures, swelling/edema, visual hallucination or coma) Primary Survey Assess level of consciousness – AVPU Ensure airway – ensure patency and positioning Have suction equipment ready. Consider spinal motion restriction if indicated. Assess breathing – Give supplemental O2 if signs of compromise. Maintain SpO2 > 94%. Assist with bag valve mask if respiratory effort is ineffective. Assess circulation – control bleeding and manage shock appropriately. See Shock Protocol. Secondary Assessment and Treatment Monitor vital signs and O2 saturation Perform blood glucose analysis – Treat if BGL is < 60 mg/dl. Cardiac Monitor Record and evaluate 12-Lead ECG Physical exam and OPQRST/SAMPLE and obstetric history. Signs and symptoms may include elevated blood pressure, severe headache, dizziness, nausea/vomiting, blurred vision, dyspnea, edema, etc. Advanced airway/ventilatory management as required Position patient on left side. Initiate IV/IO of normal saline at KVO rate. If fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol. Expedite transport (as gently as possible, no lights or sirens For Active Seizures Magnesium Sulfate 2 – 4 g IV mixed in 100 ml of normal saline administered over 10-20 minutes. Should be titrated to cessation of seizure activity. OR Midazolam 2.5 mg IV/IO slowly. Contact Medical Control to repeat 2.5 mg dosing) For Systolic blood pressure > 160 mmHg on two or more consecutive readings: Magnesium Sulfate 4 g IV mixed in 100 ml of normal saline administered over 10-20 minutes. For Systolic blood pressure > 110 mmHg and < 160 mmHg not responding to Magnesium Sulfate: Contact Medical Control Monitor patient for hypotension, respiratory depression, and heart block when administering Magnesium Sulfate and/or benzodiazepines."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vital signs/history Description of seizures Cardiac rhythm Treatment(s) Communications with Medical Control."
-        }
-      ],
-      "plainText": "Toxemia\nThis protocol applies to the adult obstetrical patient experiencing hypertension and/or eclampsia\nactivity.  (Seizures, swelling/edema, visual hallucination or coma)\nPrimary Survey\n•\nAssess level of consciousness – AVPU\n•\nEnsure airway – ensure patency and positioning\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\n•\nAssess breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nAssess circulation – control bleeding and manage shock appropriately. See Shock Protocol.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nCardiac Monitor\no\nRecord and evaluate 12-Lead ECG\n•\nPhysical exam and OPQRST/SAMPLE and obstetric history.\nSigns and symptoms may include elevated blood pressure, severe headache, dizziness,\nnausea/vomiting, blurred vision, dyspnea, edema, etc.\n•\nAdvanced airway/ventilatory management as required\n•\nPosition patient on left side.\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.\n•\nExpedite transport (as gently as possible, no lights or sirens\nFor Active Seizures\n•\nMagnesium Sulfate 2 – 4 g IV mixed in 100 ml of normal saline administered over 10-20\nminutes.\no\nShould be titrated to cessation of seizure activity.\nOR\n•\nMidazolam 2.5 mg IV/IO slowly.\no\nContact Medical Control to repeat 2.5 mg dosing)\nFor Systolic blood pressure > 160 mmHg on two or more consecutive readings:\no\nMagnesium Sulfate 4 g IV mixed in 100 ml of normal saline administered over 10-20\nminutes.\nFor Systolic blood pressure > 110 mmHg and < 160 mmHg not responding to Magnesium Sulfate:\no\nContact Medical Control\nMonitor patient for hypotension, respiratory depression, and heart block when\nadministering Magnesium Sulfate and/or benzodiazepines.\nDocument:\n•\nVital signs/history\n•\nDescription of seizures\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunications with\nMedical Control.",
-      "pageText": [
-        {
-          "page": 131,
-          "text": "Toxemia\nThis protocol applies to the adult obstetrical patient experiencing hypertension and/or eclampsia\nactivity.  (Seizures, swelling/edema, visual hallucination or coma)\nPrimary Survey\n•\nAssess level of consciousness – AVPU\n•\nEnsure airway – ensure patency and positioning\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\n•\nAssess breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nAssess circulation – control bleeding and manage shock appropriately. See Shock Protocol.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nCardiac Monitor\no\nRecord and evaluate 12-Lead ECG\n•\nPhysical exam and OPQRST/SAMPLE and obstetric history.\nSigns and symptoms may include elevated blood pressure, severe headache, dizziness,\nnausea/vomiting, blurred vision, dyspnea, edema, etc.\n•\nAdvanced airway/ventilatory management as required\n•\nPosition patient on left side.\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.\n•\nExpedite transport (as gently as possible, no lights or sirens\nFor Active Seizures\n•\nMagnesium Sulfate 2 – 4 g IV mixed in 100 ml of normal saline administered over 10-20\nminutes.\no\nShould be titrated to cessation of seizure activity.\nOR\n•\nMidazolam 2.5 mg IV/IO slowly.\no\nContact Medical Control to repeat 2.5 mg dosing)\nFor Systolic blood pressure > 160 mmHg on two or more consecutive readings:\no\nMagnesium Sulfate 4 g IV mixed in 100 ml of normal saline administered over 10-20\nminutes.\nFor Systolic blood pressure > 110 mmHg and < 160 mmHg not responding to Magnesium Sulfate:\no\nContact Medical Control\nMonitor patient for hypotension, respiratory depression, and heart block when\nadministering Magnesium Sulfate and/or benzodiazepines.\nDocument:\n•\nVital signs/history\n•\nDescription of seizures\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunications with\nMedical Control."
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
-      "id": "toxic-exposure",
-      "title": "Toxic Exposure",
-      "type": "protocol",
-      "categoryPath": [
-        "Adult Clinical Protocols",
-        "Adult Medical Emergencies"
-      ],
-      "status": "active",
-      "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 132,
-        "pageEnd": 133,
-        "pageLabel": "132-133"
-      },
-      "summary": "",
-      "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Toxic Exposure"
-        },
-        {
-          "type": "paragraph",
-          "text": "This protocol applies to adult patients with toxic exposure secondary to ingestion, inhalation, contact or intravenous administration of a potentially toxic substance. Scene Safety and Initial Management Prevent exposure of EMS personnel ! Assess and ensure scene security prior to proceeding with this guideline. If toxic environment, have patient moved to safety by appropriately trained personnel using the proper level of personal protective equipment (PPE). If signs of hazardous materials incident, call for HazMat team, keep patient(s) isolated in contaminated zone until HazMat team arrives. Coordinate efforts with HazMat personnel. Identify agent and mechanism/route of exposure (Inhaled, contact, etc.) Decontaminate as appropriate EMS personnel must be wearing the appropriate level of PPE prior to helping with the decontamination process. Primary Survey Assess level of consciousness – AVPU Ensure airway – ensure patency and positioning Have suction equipment ready. Consider spinal motion restriction if indicated. Assess breathing – Give supplemental O2 if signs of compromise. Maintain SpO2 > 94%. Assist with bag valve mask if respiratory effort is ineffective. Assess circulation – control bleeding and manage shock appropriately. See Shock Protocol."
-        },
-        {
-          "type": "list",
-          "items": [
-            "Take measures to prevent hypothermia, especially following decontamination."
-          ]
-        },
-        {
-          "type": "paragraph",
-          "text": "Secondary Assessment and Treatment Monitor vital signs and O2 saturation. Pulse oximetry may not be accurate for toxic inhalation victims. Perform blood glucose analysis – Treat if BGL is < 60 mg/dl. Cardiac Monitor Record and evaluate 12-Lead ECG Physical exam and OPQRST/SAMPLE and obstetric history. Identify substance/toxin and amount of exposure Determine mechanism, time, and duration of exposure. If ingested, See Poisoning/Overdose Protocol. Initiate IV/IO of normal saline at KVO rate. If fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol. Toxic Exposure (Continued) Secondary Assessment and Treatment (Continued)"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "If known or suspected carbon monoxide poisoning"
-        },
-        {
-          "type": "paragraph",
-          "text": "Provide 100% high flow O2. Consult Medical Control for destination choice, including consideration of medical facilities equipped with hyperbaric capability. If organophosphate, carbamate, or nerve agent poisoning: Administer Atropine 2 – 5 mg/kg IV/IO/IM every 10-15 minutes, titrate to clinical symptoms (drying of secretions) Contact Georgia Poison Control 1-800-222-1222 for consultation and/or CHEMPACK Deployment. See CHEMPACK in resources. If patient is asymptomatic, monitor for delayed effects. Frequently re-assess patient, mange any presenting respiratory distress, seizures, and/or dysrhythmias in accordance with the appropriate Protocol. All suspected suicide attempts must be reported to law enforcement before leaving scene. EMS personnel may contact Poison Control directly. EMS personnel are directed to follow the advice offered by Poison Control Center as if it came directly from Medical Control. Georgia Poison Control: 1-800-222-1222."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vital signs Agent/mechanism of exposure Cardiac rhythm Treatment(s) Communication with Medical Control/Poison Control"
-        }
-      ],
-      "plainText": "Toxic Exposure\nThis protocol applies to adult patients with toxic exposure secondary to ingestion, inhalation,\ncontact or intravenous administration of a potentially toxic substance.\nScene Safety and Initial Management\nPrevent exposure of EMS personnel !  Assess and ensure scene security prior to\nproceeding with this guideline.\n•\nIf toxic environment, have patient moved to safety by appropriately trained personnel using the\nproper level of personal protective equipment (PPE).\n•\nIf signs of hazardous materials incident, call for HazMat team, keep patient(s) isolated in\ncontaminated zone until HazMat team arrives.\no\nCoordinate efforts with HazMat personnel.\n•\nIdentify agent and mechanism/route of exposure (Inhaled, contact, etc.)\n•\nDecontaminate as appropriate\no\nEMS personnel must be wearing the appropriate level of PPE prior to helping with the\ndecontamination process.\nPrimary Survey\n•\nAssess level of consciousness – AVPU\n•\nEnsure airway – ensure patency and positioning\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\n•\nAssess breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nAssess circulation – control bleeding and manage shock appropriately. See Shock Protocol.\no Take measures to prevent hypothermia, especially following decontamination.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation.\nPulse oximetry may not be accurate for toxic inhalation victims.\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nCardiac Monitor\no\nRecord and evaluate 12-Lead ECG\n•\nPhysical exam and OPQRST/SAMPLE and obstetric history.\no\nIdentify substance/toxin and amount of exposure\no\nDetermine mechanism, time, and duration of exposure.\no\nIf ingested, See Poisoning/Overdose Protocol.\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.\nToxic Exposure (Continued)\nSecondary Assessment and Treatment (Continued)\n•\nIf known or suspected carbon monoxide poisoning:\no\nProvide 100% high flow O2.\no\nConsult Medical Control for destination choice, including consideration of medical\nfacilities equipped with hyperbaric capability.\n•\nIf organophosphate, carbamate, or nerve agent poisoning:\no\nAdminister Atropine 2 – 5 mg/kg IV/IO/IM every 10-15 minutes, titrate to clinical\nsymptoms (drying of secretions)\no\nContact Georgia Poison Control 1-800-222-1222 for consultation and/or CHEMPACK\nDeployment. See CHEMPACK in resources.\n•\nIf patient is asymptomatic, monitor for delayed effects.\n•\nFrequently re-assess patient, mange any presenting respiratory distress, seizures, and/or\ndysrhythmias in accordance with the appropriate Protocol.\nAll suspected suicide attempts must be reported to law enforcement before leaving\nscene.\nEMS personnel may contact Poison Control directly. EMS personnel are directed to\nfollow the advice offered by Poison Control Center as if it came directly from Medical\nControl. Georgia Poison Control: 1-800-222-1222.\nDocument:\n•\nVital signs\n•\nAgent/mechanism of\nexposure\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control/Poison\nControl",
-      "pageText": [
-        {
-          "page": 132,
-          "text": "Toxic Exposure\nThis protocol applies to adult patients with toxic exposure secondary to ingestion, inhalation,\ncontact or intravenous administration of a potentially toxic substance.\nScene Safety and Initial Management\nPrevent exposure of EMS personnel !  Assess and ensure scene security prior to\nproceeding with this guideline.\n•\nIf toxic environment, have patient moved to safety by appropriately trained personnel using the\nproper level of personal protective equipment (PPE).\n•\nIf signs of hazardous materials incident, call for HazMat team, keep patient(s) isolated in\ncontaminated zone until HazMat team arrives.\no\nCoordinate efforts with HazMat personnel.\n•\nIdentify agent and mechanism/route of exposure (Inhaled, contact, etc.)\n•\nDecontaminate as appropriate\no\nEMS personnel must be wearing the appropriate level of PPE prior to helping with the\ndecontamination process.\nPrimary Survey\n•\nAssess level of consciousness – AVPU\n•\nEnsure airway – ensure patency and positioning\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\n•\nAssess breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nAssess circulation – control bleeding and manage shock appropriately. See Shock Protocol.\no Take measures to prevent hypothermia, especially following decontamination.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation.\nPulse oximetry may not be accurate for toxic inhalation victims.\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nCardiac Monitor\no\nRecord and evaluate 12-Lead ECG\n•\nPhysical exam and OPQRST/SAMPLE and obstetric history.\no\nIdentify substance/toxin and amount of exposure\no\nDetermine mechanism, time, and duration of exposure.\no\nIf ingested, See Poisoning/Overdose Protocol.\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol."
-        },
-        {
-          "page": 133,
-          "text": "Toxic Exposure (Continued)\nSecondary Assessment and Treatment (Continued)\n•\nIf known or suspected carbon monoxide poisoning:\no\nProvide 100% high flow O2.\no\nConsult Medical Control for destination choice, including consideration of medical\nfacilities equipped with hyperbaric capability.\n•\nIf organophosphate, carbamate, or nerve agent poisoning:\no\nAdminister Atropine 2 – 5 mg/kg IV/IO/IM every 10-15 minutes, titrate to clinical\nsymptoms (drying of secretions)\no\nContact Georgia Poison Control 1-800-222-1222 for consultation and/or CHEMPACK\nDeployment. See CHEMPACK in resources.\n•\nIf patient is asymptomatic, monitor for delayed effects.\n•\nFrequently re-assess patient, mange any presenting respiratory distress, seizures, and/or\ndysrhythmias in accordance with the appropriate Protocol.\nAll suspected suicide attempts must be reported to law enforcement before leaving\nscene.\nEMS personnel may contact Poison Control directly. EMS personnel are directed to\nfollow the advice offered by Poison Control Center as if it came directly from Medical\nControl. Georgia Poison Control: 1-800-222-1222.\nDocument:\n•\nVital signs\n•\nAgent/mechanism of\nexposure\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control/Poison\nControl"
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Seizure. Adult assessment and treatment for active seizure or a history of seizures before EMS arrival.",
+      "needsReview":false,
+      "displayMode":"structured"
+    },{
       "id": "toxic-ingestion",
       "title": "Toxic Ingestion",
       "type": "protocol",
