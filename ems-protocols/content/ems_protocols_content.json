@@ -600,7 +600,7 @@
               "status": "active"
             },
             {
-              "id": "heat-related-emergencies",
+              "id": "adult-heat-related-emergencies",
               "title": "Heat Related Emergencies",
               "type": "protocol",
               "pageStart": 121,
@@ -6894,57 +6894,50 @@
       "needsReview":false,
       "displayMode":"structured"
     },{
-      "id": "heat-related-emergencies",
+      "id": "adult-heat-related-emergencies",
       "title": "Heat Related Emergencies",
       "type": "protocol",
-      "categoryPath": [
-        "Adult Clinical Protocols",
-        "Adult Medical Emergencies"
-      ],
+      "categoryPath": ["Adult Clinical Protocols", "Adult Medical Emergencies"],
       "status": "active",
       "effectiveDate": "2026-06-08",
       "lastRevised": "",
       "version": "2026",
       "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 121,
-        "pageEnd": 121,
-        "pageLabel": "121"
-      },
+      "source": {"pdf":"documents/ems/2026-hcems-protocols.pdf","pageStart":121,"pageEnd":121,"pageLabel":"121"},
       "summary": "",
       "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Heat Related Emergencies"
-        },
-        {
-          "type": "paragraph",
-          "text": "This protocol applies to adult patients with fatigue or altered level of consciousness secondary to environmental heat exposure. Primary Survey Assess level of consciousness – AVPU Ensure airway – ensure patency and positioning Have suction equipment ready. Consider spinal motion restriction if indicated. Assess breathing – Give supplemental O2 if signs of compromise. Maintain SpO2 > 94%. Assist with bag valve mask if respiratory effort is ineffective. Assess circulation – control bleeding and manage shock appropriately. See Shock Protocol Remove the patient from the environment. Altered LOC and signs of poor perfusion could indicate shock and should be managed appropriately. Secondary Assessment and Treatment Monitor vital signs and O2 saturation. Cardiac monitor Record and evaluate 12-Lead ECG. Perform blood glucose analysis – Treat if BGL is < 60 mg/dl. Physical exam and OPQRST/SAMPLE history. Initiate IV/IO of normal saline at KVO rate. If fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol. If conscious and not vomiting or extremely nauseous provide oral fluids. If heat stroke is suspected, initiate active cooling with cold packs water and fan. Signs and symptoms of heat stroke may include hot dry skin (25% of patients will still be moist), seizures, altered mental status, dilated pupils, rapid heart rate or arrythmia. Prepare for seizure activity. See Seizure Protocol for management of seizures."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vital signs OPQRST/SAMPLE Cardiac rhythm Treatment(s) Communication with Medical Control."
-        }
+        {"type":"heading","level":2,"text":"Heat Related Emergencies"},
+        {"type":"paragraph","text":"This protocol applies to adult patients with fatigue or altered level of consciousness secondary to environmental heat exposure."},
+        {"type":"flow-stage","title":"Primary Survey","arrowAfter":true,"items":[
+          {"text":"Assess level of consciousness – AVPU","bold":["Assess level of consciousness"]},
+          {"text":"Ensure airway – ensure patency and positioning","bold":["Ensure airway"]},
+          {"text":"Have suction equipment ready.","indent":1},
+          {"text":"Consider spinal motion restriction if indicated.","indent":1},
+          {"text":"Assess breathing – Give supplemental O₂ if signs of compromise. Maintain SpO₂ ≥ 94%.","bold":["Assess breathing","Maintain SpO₂ ≥ 94%."]},
+          {"text":"Assist with bag valve mask if respiratory effort is ineffective.","indent":1},
+          {"text":"Assess circulation – control bleeding and manage shock appropriately. See Shock Protocol.","bold":["Assess circulation"],"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          {"text":"Remove the patient from the environment.","indent":1},
+          {"text":"Altered LOC and signs of poor perfusion could indicate shock and should be managed appropriately.","bold":["Altered LOC and signs of poor perfusion could indicate shock and should be managed appropriately."],"red":true,"icon":"assets/legend-important.webp","iconAlt":"Important protocol instruction"}
+        ]},
+        {"type":"flow-stage","title":"Secondary Assessment and Treatment","items":[
+          "Monitor vital signs and O₂ saturation.",
+          "Cardiac monitor",
+          {"text":"Record and evaluate 12-Lead ECG.","indent":1},
+          {"text":"Perform blood glucose analysis – Treat if BGL is < 60 mg/dl.","bold":["BGL is < 60 mg/dl."]},
+          "Physical exam and OPQRST/SAMPLE history.",
+          "Initiate IV/IO of normal saline at KVO rate.",
+          {"text":"If fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.","indent":1,"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          "If conscious and not vomiting or extremely nauseous provide oral fluids.",
+          "If heat stroke is suspected, initiate active cooling with cold packs, water and a fan.",
+          {"text":"Signs and symptoms of heat stroke may include hot dry skin (25% of patients will still be moist), seizures, altered mental status, dilated pupils, rapid heart rate or arrhythmia.","bold":["Signs and symptoms of heat stroke may include hot dry skin (25% of patients will still be moist), seizures, altered mental status, dilated pupils, rapid heart rate or arrhythmia."],"red":true,"icon":"assets/legend-important.webp","iconAlt":"Important heat-stroke warning"},
+          {"text":"Prepare for seizure activity. See Seizure Protocol for management of seizures.","links":[{"text":"Seizure Protocol","protocolId":"seizure"}]}
+        ]},
+        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital signs","OPQRST/SAMPLE","Cardiac rhythm","Treatment(s)","Communication with Medical Control"]}
       ],
-      "plainText": "Heat Related Emergencies\nThis protocol applies to adult patients with fatigue or altered level of consciousness secondary to\nenvironmental heat exposure.\nPrimary Survey\n•\nAssess level of consciousness – AVPU\n•\nEnsure airway – ensure patency and positioning\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\n•\nAssess breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nAssess circulation – control bleeding and manage shock appropriately. See Shock Protocol\no\nRemove the patient from the environment.\nAltered LOC and signs of poor perfusion could indicate shock and should be managed\nappropriately.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation.\n•\nCardiac monitor\no\nRecord and evaluate 12-Lead ECG.\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nPhysical exam and OPQRST/SAMPLE history.\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.\n•\nIf conscious and not vomiting or extremely nauseous provide oral fluids.\n•\nIf heat stroke is suspected, initiate active cooling with cold packs water and fan.\nSigns and symptoms of heat stroke may include hot dry skin (25% of patients will still be\nmoist), seizures, altered mental status, dilated pupils, rapid heart rate or arrythmia.\n•\nPrepare for seizure activity. See Seizure Protocol for management of seizures.\nDocument:\n•\nVital signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control.",
-      "pageText": [
-        {
-          "page": 121,
-          "text": "Heat Related Emergencies\nThis protocol applies to adult patients with fatigue or altered level of consciousness secondary to\nenvironmental heat exposure.\nPrimary Survey\n•\nAssess level of consciousness – AVPU\n•\nEnsure airway – ensure patency and positioning\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\n•\nAssess breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nAssess circulation – control bleeding and manage shock appropriately. See Shock Protocol\no\nRemove the patient from the environment.\nAltered LOC and signs of poor perfusion could indicate shock and should be managed\nappropriately.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation.\n•\nCardiac monitor\no\nRecord and evaluate 12-Lead ECG.\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nPhysical exam and OPQRST/SAMPLE history.\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.\n•\nIf conscious and not vomiting or extremely nauseous provide oral fluids.\n•\nIf heat stroke is suspected, initiate active cooling with cold packs water and fan.\nSigns and symptoms of heat stroke may include hot dry skin (25% of patients will still be\nmoist), seizures, altered mental status, dilated pupils, rapid heart rate or arrythmia.\n•\nPrepare for seizure activity. See Seizure Protocol for management of seizures.\nDocument:\n•\nVital signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control."
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Heat Related Emergencies. Adult assessment and treatment for environmental heat exposure and suspected heat stroke.",
+      "needsReview":false,
+      "displayMode":"structured"
+    },{
       "id": "hypertensive-crisis",
       "title": "Hypertensive Crisis",
       "type": "protocol",
