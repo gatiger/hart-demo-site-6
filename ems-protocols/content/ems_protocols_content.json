@@ -5022,57 +5022,67 @@
       ],
       "status": "active",
       "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": [],
       "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
         "pageStart": 74,
         "pageEnd": 74,
         "pageLabel": "74"
       },
-      "summary": "",
+      "summary": "Assessment and treatment of pediatric patients with blunt or penetrating eye trauma or chemical exposure to the eye.",
       "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Pediatric Eye Trauma"
-        },
-        {
-          "type": "paragraph",
-          "text": "This protocol applies to pediatric patients with blunt or penetrating trauma to the eye(s) or who have a chemical substance in the eye. First Impression (Pediatric Assessment Triangle) Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry. Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds. Circulation – observe skin color for pallor, mottling and/or cyanosis. Primary Survey Massive hemorrhage Treat all life-threatening hemorrhage Tourniquets for massive extremity hemorrhage Wound packing for junctional hemorrhage Airway – ensure patency, manually stabilize C-Spine. Have suction equipment ready Consider spinal motion restriction if indicated. Respiratory/Breathing – give supplemental O2 if signs of compromise. Maintain SpO2 > 94%. Manage any injuries impairing ventilation. Chest wounds: Penetrating/Sucking chest wound, impaled objects, bruising Signs of pneumothorax Flail segments Assist with bag valve mask if respiratory effort is ineffective. Circulation – assess pulses and perfusion status Manage shock appropriately. See Shock Protocol. Head/Hypothermia Initial GCS/AVPU Pupils Prevent hypothermia Secondary Assessment and Treatment Physical exam and OPQRST/SAMPLE history. Establish mechanism and nature of injury. Assess vision, if possible, with injured eye. Can the patient count the number of fingers you hold up ? If not, can the patient perceive light ? Never apply pressure directly to the eyeball. Monitor vital signs and O2 saturation."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "If the eye has been avulsed or if the globe has been ruptured"
-        },
-        {
-          "type": "paragraph",
-          "text": "Carefully cover the injured eye to protect it. Prevent conjugated eye movements – also cover the uninjured eye. Do Not apply any pressure or absorbent dressing."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "If a foreign body is embedded in the eye"
-        },
-        {
-          "type": "paragraph",
-          "text": "Do Not attempt to remove the object. Do attempt to stabilize the object. Carefully cover both eyes. If the eyes are injured by chemical exposure, pepper spray or mace: Responders should protect themselves with appropriate PPE. Remove victim from the source of exposure. Remove contaminated clothing and seal in plastic bag(s) Irrigate eyes with copious amounts of water or normal saline. Transport patient with head elevated about 30 degrees, and both eyes closed or loosely patched, unless irrigating. For pain, contact Medical Control or see Pain Management Protocol."
-        }
+        {"type":"heading","level":2,"text":"Pediatric Eye Trauma"},
+        {"type":"paragraph","text":"This protocol applies to pediatric patients with blunt or penetrating trauma to the eye(s) or who have a chemical substance in the eye."},
+        {"type":"flow-stage","title":"First Impression (Pediatric Assessment Triangle)","arrowAfter":true,"links":[{"text":"Pediatric Assessment Triangle","protocolId":"pediatric-assessment-triangle"}],"items":[
+          "Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.",
+          "Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.",
+          "Circulation – observe skin color for pallor, mottling, and/or cyanosis."
+        ]},
+        {"type":"flow-stage","title":"Primary Survey","arrowAfter":true,"items":[
+          {"text":"Massive hemorrhage","bold":["Massive hemorrhage"]},
+          {"text":"Treat all life-threatening hemorrhage.","indent":1},
+          {"text":"Tourniquets for massive extremity hemorrhage.","indent":2},
+          {"text":"Wound packing for junctional hemorrhage.","indent":2},
+          {"text":"Airway – ensure patency, manually stabilize C-Spine.","bold":["Airway"]},
+          {"text":"Have suction equipment ready.","indent":1},
+          {"text":"Consider spinal motion restriction if indicated.","indent":1},
+          {"text":"Respiratory/Breathing – give supplemental O₂ if signs of compromise. Maintain SpO₂ ≥ 94%.","bold":["Respiratory/Breathing","Maintain SpO₂ ≥ 94%."]},
+          {"text":"Manage any injuries impairing ventilation.","indent":1},
+          {"text":"Chest wounds: Penetrating/Sucking chest wound, impaled objects, bruising.","indent":2},
+          {"text":"Signs of pneumothorax.","indent":2},
+          {"text":"Flail segments.","indent":2},
+          {"text":"Assist with bag valve mask if respiratory effort is ineffective.","indent":1},
+          {"text":"Circulation – assess pulses and perfusion status.","bold":["Circulation"]},
+          {"text":"Manage shock appropriately. See Shock Protocol.","indent":1,"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          {"text":"Head/Hypothermia","bold":["Head/Hypothermia"]},
+          {"text":"Initial GCS/AVPU.","indent":1},
+          {"text":"Pupils.","indent":1},
+          {"text":"Prevent hypothermia.","indent":1}
+        ]},
+        {"type":"flow-stage","title":"Secondary Assessment and Treatment","items":[
+          "Physical exam and OPQRST/SAMPLE history.",
+          {"text":"Establish mechanism and nature of injury.","indent":1},
+          {"text":"Assess vision, if possible, with injured eye. Can the patient count the number of fingers you hold up? If not, can the patient perceive light?","icon":"assets/legend-important.webp","iconAlt":"Important protocol information","bold":["Assess vision, if possible, with injured eye. Can the patient count the number of fingers you hold up? If not, can the patient perceive light?"],"red":["Assess vision, if possible, with injured eye. Can the patient count the number of fingers you hold up? If not, can the patient perceive light?"]},
+          {"text":"Never apply pressure directly to the eyeball.","icon":"assets/legend-important.webp","iconAlt":"Important protocol information","bold":["Never apply pressure directly to the eyeball."],"red":["Never apply pressure directly to the eyeball."]},
+          "Monitor vital signs and O₂ saturation.",
+          "If the eye has been avulsed or if the globe has been ruptured:",
+          {"text":"Carefully cover the injured eye to protect it.","indent":1},
+          {"text":"Prevent conjugated eye movements – also cover the uninjured eye.","indent":1},
+          {"text":"Do not apply any pressure or absorbent dressing.","indent":1,"bold":["Do not apply any pressure or absorbent dressing."]},
+          "If a foreign body is embedded in the eye:",
+          {"text":"Do not attempt to remove the object.","indent":1,"bold":["Do not attempt to remove the object."]},
+          {"text":"Do attempt to stabilize the object.","indent":1},
+          {"text":"Carefully cover both eyes.","indent":1},
+          "If the eyes are injured by chemical exposure, pepper spray, or mace:",
+          {"text":"Responders should protect themselves with appropriate PPE.","indent":1},
+          {"text":"Remove victim from the source of exposure.","indent":1},
+          {"text":"Remove contaminated clothing and seal in plastic bag(s).","indent":1},
+          {"text":"Irrigate eyes with copious amounts of water or normal saline.","indent":1},
+          "Transport patient with head elevated about 30 degrees, and both eyes closed or loosely patched, unless irrigating.",
+          {"text":"For pain, contact Medical Control or see Pain Management Protocol.","links":[{"text":"Pain Management Protocol","protocolId":"pain-management"}]}
+        ]}
       ],
-      "plainText": "Pediatric Eye Trauma\nThis protocol applies to pediatric patients with blunt or penetrating trauma to the eye(s) or who\nhave a chemical substance in the eye.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis.\nPrimary Survey\n•\nMassive hemorrhage\no\nTreat all life-threatening hemorrhage\n▪\nTourniquets for massive extremity hemorrhage\n▪\nWound packing for junctional hemorrhage\n•\nAirway – ensure patency, manually stabilize C-Spine.\no\nHave suction equipment ready\no\nConsider spinal motion restriction if indicated.\n•\nRespiratory/Breathing – give supplemental O2 if signs of compromise. Maintain SpO2 > 94%.\no\nManage any injuries impairing ventilation.\n▪\nChest wounds: Penetrating/Sucking chest wound, impaled objects, bruising\n▪\nSigns of pneumothorax\n▪\nFlail segments\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nCirculation – assess pulses and perfusion status\no\nManage shock appropriately. See Shock Protocol.\n•\nHead/Hypothermia\no\nInitial GCS/AVPU\no\nPupils\no\nPrevent hypothermia\nSecondary Assessment and Treatment\n•\nPhysical exam and OPQRST/SAMPLE history.\no\nEstablish mechanism and nature of injury.\nAssess vision, if possible, with injured eye. Can the patient count the number of fingers you hold up ?\nIf not, can the patient perceive light ?\nNever apply pressure directly to the eyeball.\n•\nMonitor vital signs and O2 saturation.\n•\nIf the eye has been avulsed or if the globe has been ruptured:\no\nCarefully cover the injured eye to protect it.\no\nPrevent conjugated eye movements – also cover the uninjured eye.\no\nDo Not apply any pressure or absorbent dressing.\n•\nIf a foreign body is embedded in the eye:\no\nDo Not attempt to remove the object.\no\nDo attempt to stabilize the object.\no\nCarefully cover both eyes.\n•\nIf the eyes are injured by chemical exposure, pepper spray or mace:\no\nResponders should protect themselves with appropriate PPE.\no\nRemove victim from the source of exposure.\no\nRemove contaminated clothing and seal in plastic bag(s)\no\nIrrigate eyes with copious amounts of water or normal saline.\n•\nTransport patient with head elevated about 30 degrees, and both eyes closed or loosely patched, unless\nirrigating.\n•\nFor pain, contact Medical Control or see Pain Management Protocol.",
-      "pageText": [
-        {
-          "page": 74,
-          "text": "Pediatric Eye Trauma\nThis protocol applies to pediatric patients with blunt or penetrating trauma to the eye(s) or who\nhave a chemical substance in the eye.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis.\nPrimary Survey\n•\nMassive hemorrhage\no\nTreat all life-threatening hemorrhage\n▪\nTourniquets for massive extremity hemorrhage\n▪\nWound packing for junctional hemorrhage\n•\nAirway – ensure patency, manually stabilize C-Spine.\no\nHave suction equipment ready\no\nConsider spinal motion restriction if indicated.\n•\nRespiratory/Breathing – give supplemental O2 if signs of compromise. Maintain SpO2 > 94%.\no\nManage any injuries impairing ventilation.\n▪\nChest wounds: Penetrating/Sucking chest wound, impaled objects, bruising\n▪\nSigns of pneumothorax\n▪\nFlail segments\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nCirculation – assess pulses and perfusion status\no\nManage shock appropriately. See Shock Protocol.\n•\nHead/Hypothermia\no\nInitial GCS/AVPU\no\nPupils\no\nPrevent hypothermia\nSecondary Assessment and Treatment\n•\nPhysical exam and OPQRST/SAMPLE history.\no\nEstablish mechanism and nature of injury.\nAssess vision, if possible, with injured eye. Can the patient count the number of fingers you hold up ?\nIf not, can the patient perceive light ?\nNever apply pressure directly to the eyeball.\n•\nMonitor vital signs and O2 saturation.\n•\nIf the eye has been avulsed or if the globe has been ruptured:\no\nCarefully cover the injured eye to protect it.\no\nPrevent conjugated eye movements – also cover the uninjured eye.\no\nDo Not apply any pressure or absorbent dressing.\n•\nIf a foreign body is embedded in the eye:\no\nDo Not attempt to remove the object.\no\nDo attempt to stabilize the object.\no\nCarefully cover both eyes.\n•\nIf the eyes are injured by chemical exposure, pepper spray or mace:\no\nResponders should protect themselves with appropriate PPE.\no\nRemove victim from the source of exposure.\no\nRemove contaminated clothing and seal in plastic bag(s)\no\nIrrigate eyes with copious amounts of water or normal saline.\n•\nTransport patient with head elevated about 30 degrees, and both eyes closed or loosely patched, unless\nirrigating.\n•\nFor pain, contact Medical Control or see Pain Management Protocol."
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Pediatric Eye Trauma. Primary survey and eye-specific secondary assessment and treatment.",
+      "needsReview":false
+    },    {
       "id": "chest-trauma",
       "title": "Chest Trauma",
       "type": "protocol",
