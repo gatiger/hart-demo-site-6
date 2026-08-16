@@ -6129,70 +6129,53 @@
       "id": "left-ventricular-assist-device-lvad",
       "title": "Left Ventricular Assist Device (LVAD)",
       "type": "protocol",
-      "categoryPath": [
-        "Adult Clinical Protocols",
-        "Adult Cardiac Emergencies"
-      ],
+      "categoryPath": ["Adult Clinical Protocols","Adult Cardiac Emergencies"],
       "status": "active",
       "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 103,
-        "pageEnd": 105,
-        "pageLabel": "103-105"
-      },
-      "summary": "",
+      "source": {"pageStart":103,"pageEnd":103,"pageLabel":"103"},
+      "summary": "Assessment and treatment of adult patients with an implanted left ventricular assist device.",
       "content": [
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Page 103"
-        },
-        {
-          "type": "paragraph",
-          "text": "This protocol applies to adult patients who have a left ventricular assist device (LVAD)\nimplanted. A ventricular assist device is a mechanical pump that is used to support heart\nfunction and blood flow in people who have weak hearts."
-        },
-        {
-          "type": "paragraph",
-          "text": "Primary Survey"
-        },
-        {
-          "type": "list",
-          "items": [
-            "• Assess level of consciousness – AVPU",
-            "• Ensure airway – ensure patency and positioning",
-            "o Consider spinal motion restriction if indicated.",
-            "• Assess breathing – Give supplemental O if signs of compromise. Maintain SpO > 94%. 2 2",
-            "o Assist with bag valve mask if respiratory effort is ineffective.",
-            "o DO NOT hyperventilate.",
-            "• Assess circulation – control bleeding and manage shock appropriately. See Shock Protocol",
-            "o Take measures to prevent hypothermia. In the majority of LVAD patients a pulse will not be palpable. This occurs because the LVAD unloads the left ventricle in a continuous fashion. Mental status and skin color are the best indicators of oxygenation and perfusion status."
-          ]
-        }
+        {"type":"heading","level":2,"text":"Left Ventricular Assist Device (LVAD)"},
+        {"type":"paragraph","text":"This protocol applies to adult patients who have a left ventricular assist device (LVAD) implanted. A left ventricular assist device is a mechanical pump that is used to support heart function and blood flow in people who have weak hearts."},
+        {"type":"flow-stage","title":"Primary Survey","arrowAfter":true,"items":[
+          "Assess level of consciousness – AVPU.",
+          {"text":"Ensure airway – ensure patency and positioning.","bold":["Ensure airway"]},
+          {"text":"Consider spinal motion restriction if indicated.","indent":1},
+          {"text":"Assess breathing – give supplemental O₂ if signs of compromise. Maintain SpO₂ ≥ 94%.","bold":["Assess breathing","Maintain SpO₂ ≥ 94%."]},
+          {"text":"Assist with bag valve mask if respiratory effort is ineffective.","indent":1},
+          {"text":"DO NOT hyperventilate.","indent":1,"bold":["DO NOT hyperventilate."]},
+          {"text":"Assess circulation – control bleeding and manage shock appropriately. See Shock Protocol.","bold":["Assess circulation"],"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          {"text":"Take measures to prevent hypothermia.","indent":1},
+          {"text":"In the majority of LVAD patients a pulse will not be palpable. This occurs because the LVAD unloads the left ventricle in a continuous fashion. Mental status and skin color are the best indicators of oxygenation and perfusion status.","icon":"assets/legend-important.webp","iconAlt":"Important protocol information","bold":["In the majority of LVAD patients a pulse will not be palpable. This occurs because the LVAD unloads the left ventricle in a continuous fashion. Mental status and skin color are the best indicators of oxygenation and perfusion status."],"red":["In the majority of LVAD patients a pulse will not be palpable. This occurs because the LVAD unloads the left ventricle in a continuous fashion. Mental status and skin color are the best indicators of oxygenation and perfusion status."]}
+        ]},
+        {"type":"flow-stage","title":"Secondary Assessment and Treatment","items":[
+          {"text":"Locate the emergency contact sheet per the patient’s hospital/physician. Call LVAD coordinator if device fails.","highlight":true,"bold":["Locate the emergency contact sheet per the patient’s hospital/physician. Call LVAD coordinator if device fails."]},
+          "Listen over pump pocket – A hum should be detected if LVAD is running.",
+          "Check for specific alarms.",
+          {"text":"If alarms show red buttons – critical status.","indent":1},
+          {"text":"Perform blood glucose analysis – treat if BGL is < 60 mg/dl.","bold":["BGL is < 60 mg/dl."]},
+          "Cardiac monitor.",
+          {"text":"No pads over the pump pocket.","indent":1},
+          {"text":"DO NOT stop LVAD to assess.","indent":1,"bold":["DO NOT stop LVAD to assess."]},
+          "Physical exam and OPQRST/SAMPLE history.",
+          {"text":"These patients, along with their family members, have been well trained in the care of themselves and their device. LISTEN TO THEM!","indent":1,"bold":["LISTEN TO THEM!"]},
+          {"text":"Assess for evidence of poor perfusion and/or acute congestive heart failure.","indent":1},
+          "Initial LVAD management.",
+          {"text":"Check LVAD percutaneous lead connection(s).","indent":1},
+          {"text":"Make sure the driveline and power sources (battery and/or AC power) are connected to the system controller.","indent":1},
+          {"text":"Change battery if < 2 lights are showing. Change batteries one at a time.","indent":1,"bold":["Change batteries one at a time."],"red":["Change batteries one at a time."]},
+          {"text":"Transport with 4–6 backup batteries and back up control unit.","indent":1},
+          {"text":"If in cardiac arrest, NO CPR.","bold":["NO CPR."]},
+          "Initiate IV/IO of normal saline.",
+          {"text":"Drip rate is dependent upon perfusion status.","indent":1},
+          {"text":"If signs and symptoms of acute CHF, withhold fluid bolus. See CHF in the Respiratory Distress Protocol.","links":[{"text":"Respiratory Distress Protocol","protocolId":"respiratory-distress"}]},
+          "Transport to the appropriate facility."
+        ]},
+        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital Signs","Pertinent assessment findings","Onset/duration of event","Treatment(s)","Communication with Medical Control"]}
       ],
-      "plainText": "Left Ventricular Assist Device (LVAD)\nThis protocol applies to adult patients who have a left ventricular assist device (LVAD)\nimplanted. A ventricular assist device is a mechanical pump that is used to support heart\nfunction and blood flow in people who have weak hearts.\nPrimary Survey\n•\nAssess level of consciousness – AVPU\n•\nEnsure airway – ensure patency and positioning\no\nConsider spinal motion restriction if indicated.\n•\nAssess breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nAssist with bag valve mask if respiratory effort is ineffective.\no\nDO NOT hyperventilate.\n•\nAssess circulation – control bleeding and manage shock appropriately. See Shock Protocol\no\nTake measures to prevent hypothermia.\nIn the majority of LVAD patients a pulse will not be palpable. This occurs because the LVAD\nunloads the left ventricle in a continuous fashion. Mental status and skin color are the best\nindicators of oxygenation and perfusion status.\nSecondary Assessment and Treatment\n•\nLocate the emergency contact sheet per the patient’s hospital/physician.  Call LVAD\ncoordinator if device fails.\n•\nListen over pump pocket – A hum should be detected if LVAD is running.\n•\nCheck for specific alarms\no\nIf alarms show red buttons – critical status\n•\nPerform blood glucose analysis  Treat if BGL is < 60 mg/dl.\n•\nCardiac monitor\no\nNo pads over the pump pocket.\no\nDO NOT stop LVAD to assess.\n•\nPhysical Exam and OPQRST/SAMPLE history.\no\nThese patients, along with their family members, have been well trained in the care of\nthemselves and their device. LISTEN TO THEM !\no\nAssess for evidence of poor perfusion and/or acute congestive heart failure.\n•\nInitial LVAD management\no\nCheck LVAD percutaneous lead connection(s)\no\nMake sure the driveline and power sources (battery and/or AC power) are connected to the\nsystem controller.\no\nChange battery if < 2 lights are showing.  Change batteries one at a time.\no\nTransport with 4 – 6 backup batteries and back up control unit.\n•\nIf in cardiac arrest, NO CPR.\n•\nInitiate IV/IO of normal saline.\no\nDrip rate is dependent upon perfusion status.\n•\nIf signs and symptoms of acute CHF, withhold fluid bolus. See CHF in the Respiratory Distress\nProtocol.\n•\nTransport to the appropriate facility.\nDocument:\n•\nVital signs\n•\nPertinent assessment findings\n•\nOnset/duration of event\n•\nTreatment(s)\n•\nCommunication with Medical\nControl.\nLeft Ventricular Assist Device (Continued)\nLeft Ventricular Assist Device (Continued)",
-      "pageText": [
-        {
-          "page": 103,
-          "text": "Left Ventricular Assist Device (LVAD)\nThis protocol applies to adult patients who have a left ventricular assist device (LVAD)\nimplanted. A ventricular assist device is a mechanical pump that is used to support heart\nfunction and blood flow in people who have weak hearts.\nPrimary Survey\n•\nAssess level of consciousness – AVPU\n•\nEnsure airway – ensure patency and positioning\no\nConsider spinal motion restriction if indicated.\n•\nAssess breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nAssist with bag valve mask if respiratory effort is ineffective.\no\nDO NOT hyperventilate.\n•\nAssess circulation – control bleeding and manage shock appropriately. See Shock Protocol\no\nTake measures to prevent hypothermia.\nIn the majority of LVAD patients a pulse will not be palpable. This occurs because the LVAD\nunloads the left ventricle in a continuous fashion. Mental status and skin color are the best\nindicators of oxygenation and perfusion status.\nSecondary Assessment and Treatment\n•\nLocate the emergency contact sheet per the patient’s hospital/physician.  Call LVAD\ncoordinator if device fails.\n•\nListen over pump pocket – A hum should be detected if LVAD is running.\n•\nCheck for specific alarms\no\nIf alarms show red buttons – critical status\n•\nPerform blood glucose analysis  Treat if BGL is < 60 mg/dl.\n•\nCardiac monitor\no\nNo pads over the pump pocket.\no\nDO NOT stop LVAD to assess.\n•\nPhysical Exam and OPQRST/SAMPLE history.\no\nThese patients, along with their family members, have been well trained in the care of\nthemselves and their device. LISTEN TO THEM !\no\nAssess for evidence of poor perfusion and/or acute congestive heart failure.\n•\nInitial LVAD management\no\nCheck LVAD percutaneous lead connection(s)\no\nMake sure the driveline and power sources (battery and/or AC power) are connected to the\nsystem controller.\no\nChange battery if < 2 lights are showing.  Change batteries one at a time.\no\nTransport with 4 – 6 backup batteries and back up control unit.\n•\nIf in cardiac arrest, NO CPR.\n•\nInitiate IV/IO of normal saline.\no\nDrip rate is dependent upon perfusion status.\n•\nIf signs and symptoms of acute CHF, withhold fluid bolus. See CHF in the Respiratory Distress\nProtocol.\n•\nTransport to the appropriate facility.\nDocument:\n•\nVital signs\n•\nPertinent assessment findings\n•\nOnset/duration of event\n•\nTreatment(s)\n•\nCommunication with Medical\nControl."
-        },
-        {
-          "page": 104,
-          "text": "Left Ventricular Assist Device (Continued)"
-        },
-        {
-          "page": 105,
-          "text": "Left Ventricular Assist Device (Continued)"
-        }
-      ],
-      "needsReview": true,
-      "extractionNote": "Tables were converted from the PDF into in-page HTML table blocks. Review against the official PDF before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Left Ventricular Assist Device. Primary and secondary assessment, device-specific management, emergency contact guidance, transport, and documentation.",
+      "needsReview":false
+    },    {
       "id": "chest-pain-stemi",
       "title": "Chest Pain/STEMI",
       "type": "protocol",

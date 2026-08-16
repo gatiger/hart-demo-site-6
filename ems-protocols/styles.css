@@ -705,3 +705,5 @@ details[open] > .tree-heading.tree-toggle::before {
 .two-way-card-empty::after { display: none; }
 
 .table-footnote-red { color: #c31515; font-weight: 800; }
+
+.protocol-highlight-flow-item { padding: .35rem .5rem; background: #fff200; color: #c31515; font-weight: 900; }
