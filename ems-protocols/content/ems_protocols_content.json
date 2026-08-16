@@ -257,55 +257,14 @@
           "title": "Pediatric Medical Emergencies",
           "children": [
             {
-      "id": "abdominal-discomfort",
-      "title": "Abdominal Discomfort",
-      "type": "protocol",
-      "categoryPath": ["Adult Clinical Protocols","Adult Medical Emergencies"],
-      "status": "active",
-      "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": ["adult abdominal pain","abdominal discomfort","flank pain"],
-      "source": {"pdf":"documents/ems/2026-hcems-protocols.pdf","pageStart":106,"pageEnd":106,"pageLabel":"106"},
-      "summary": "Assessment and treatment of adult patients with non-traumatic abdominal or flank discomfort.",
-      "content": [
-        {"type":"heading","level":2,"text":"Abdominal Discomfort"},
-        {"type":"paragraph","text":"This protocol applies to adult patients with pain/discomfort presenting in the abdomen or the flanks with no history or signs of trauma."},
-        {"type":"flow-stage","title":"Primary Survey","arrowAfter":true,"items":[
-          {"text":"Assess level of consciousness – AVPU","bold":["Assess level of consciousness"]},
-          {"text":"Ensure airway – ensure patency and positioning","bold":["Ensure airway"]},
-          {"text":"Have suction equipment ready.","indent":1},
-          {"text":"Consider spinal motion restriction if indicated.","indent":1},
-          {"text":"Assess breathing – Give supplemental O₂ if signs of compromise. Maintain SpO₂ ≥ 94%.","bold":["Assess breathing","Maintain SpO₂ ≥ 94%."]},
-          {"text":"Assist with bag valve mask if respiratory effort is ineffective.","indent":1},
-          {"text":"Assess circulation – control bleeding and manage shock appropriately. See Shock Protocol","bold":["Assess circulation"],"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
-          {"text":"Take measures to prevent hypothermia.","indent":1},
-          {"text":"Altered LOC and signs of poor perfusion could indicate shock and should be managed appropriately.","bold":["Altered LOC and signs of poor perfusion could indicate shock and should be managed appropriately."],"red":["Altered LOC and signs of poor perfusion could indicate shock and should be managed appropriately."]}
-        ]},
-        {"type":"flow-stage","title":"Secondary Assessment and Treatment","items":[
-          "Monitor vital signs and O₂ saturation.",
-          {"text":"Perform blood glucose analysis. Treat if BGL is < 60 mg/dl.","bold":["BGL is < 60 mg/dl."]},
-          "Cardiac monitor",
-          {"text":"Record and evaluate 12-Lead ECG.","indent":1},
-          "Physical exam and OPQRST/SAMPLE history.",
-          {"text":"History of blood in vomit or stool.","indent":1},
-          {"text":"Prior abdominal surgery?","indent":1},
-          {"text":"Last meal?","indent":1},
-          {"text":"Assess for signs of dehydration and/or shock.","indent":1},
-          "Consider possible causes (GI, GU, cardiac, aneurysm, medications, toxic exposure, pregnancy, etc.)",
-          "Save emesis or other drainage for signs of GI bleed etc.",
-          "Keep the patient NPO",
-          "Initiate IV of normal saline.",
-          {"text":"If fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.","indent":1,"bold":["20 ml/kg fluid bolus."],"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
-          {"text":"Titrate to a systolic blood pressure of ≥ 90 mmHg.","indent":1,"bold":["≥ 90 mmHg."]},
-          {"text":"For pain management, See Pain Management Protocol.","links":[{"text":"Pain Management Protocol","protocolId":"adult-pain-management"}]},
-          {"text":"If nausea or vomiting are present, See Nausea/Vomiting Protocol.","links":[{"text":"Nausea/Vomiting Protocol","protocolId":"adult-nausea-and-vomiting"}]}
-        ]},
-        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital Signs","OPQRST/SAMPLE","Cardiac rhythm","Treatment(s)","Communication with Medical Control"]}
-      ],
-      "plainText":"Abdominal Discomfort. Adult assessment and treatment for non-traumatic abdominal or flank pain, including shock, pain, nausea, and documentation guidance.",
-      "needsReview":false
-    },    {
+              "id": "abdominal-discomfort",
+              "title": "Abdominal Discomfort",
+              "type": "protocol",
+              "pageStart": 51,
+              "pageEnd": 51,
+              "status": "active"
+            },
+            {
               "id": "allergic-reaction-anaphylaxis",
               "title": "Allergic Reaction / Anaphylaxis",
               "type": "protocol",
@@ -6327,52 +6286,51 @@
       "id": "adult-abdominal-discomfort",
       "title": "Abdominal Discomfort",
       "type": "protocol",
-      "categoryPath": [
-        "Adult Clinical Protocols",
-        "Adult Medical Emergencies"
-      ],
+      "categoryPath": ["Adult Clinical Protocols","Adult Medical Emergencies"],
       "status": "active",
       "effectiveDate": "2026-06-08",
       "lastRevised": "",
       "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 106,
-        "pageEnd": 106,
-        "pageLabel": "106"
-      },
-      "summary": "",
+      "tags": ["adult abdominal pain","abdominal discomfort","flank pain"],
+      "source": {"pdf":"documents/ems/2026-hcems-protocols.pdf","pageStart":106,"pageEnd":106,"pageLabel":"106"},
+      "summary": "Assessment and treatment of adult patients with non-traumatic abdominal or flank discomfort.",
       "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Abdominal Discomfort"
-        },
-        {
-          "type": "paragraph",
-          "text": "This protocol applies to adult patients with pain/discomfort presenting in the abdomen or the flanks with no history or signs of trauma. Primary Survey Assess level of consciousness – AVPU Ensure airway – ensure patency and positioning Have suction equipment ready. Consider spinal motion restriction if indicated. Assess breathing – Give supplemental O2 if signs of compromise. Maintain SpO2 > 94%. Assist with bag valve mask if respiratory effort is ineffective. Assess circulation – control bleeding and manage shock appropriately. See Shock Protocol Take measures to prevent hypothermia. Altered LOC and signs of poor perfusion could indicate shock and should be managed appropriately. Secondary Assessment and Treatment Monitor vital signs and O2 saturation. Perform blood glucose analysis. Treat if BGL is < 60 mg/dl. Cardiac monitor Record and evaluate 12-Lead ECG. Physical exam and OPQRST/SAMPLE history. History of blood in vomit or stool. Prior abdominal surgery? Last meal? Assess for signs of dehydration and/or shock. Consider possible causes (GI, GU, cardiac, aneurysm, medications, toxic exposure, pregnancy, etc.) Save emesis or other drainage for signs of GI bleed etc. Keep the patient NPO Initiate IV of normal saline. If fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol. Titrate to a systolic blood pressure of > 90 mmHg. For pain management, See Pain Management Protocol. If nausea or vomiting are present, See Nausea/Vomiting Protocol."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vital Signs OPQRST/SAMPLE Cardiac rhythm Treatment(s) Communication with Medical Control."
-        }
+        {"type":"heading","level":2,"text":"Abdominal Discomfort"},
+        {"type":"paragraph","text":"This protocol applies to adult patients with pain/discomfort presenting in the abdomen or the flanks with no history or signs of trauma."},
+        {"type":"flow-stage","title":"Primary Survey","arrowAfter":true,"items":[
+          {"text":"Assess level of consciousness – AVPU","bold":["Assess level of consciousness"]},
+          {"text":"Ensure airway – ensure patency and positioning","bold":["Ensure airway"]},
+          {"text":"Have suction equipment ready.","indent":1},
+          {"text":"Consider spinal motion restriction if indicated.","indent":1},
+          {"text":"Assess breathing – Give supplemental O₂ if signs of compromise. Maintain SpO₂ ≥ 94%.","bold":["Assess breathing","Maintain SpO₂ ≥ 94%."]},
+          {"text":"Assist with bag valve mask if respiratory effort is ineffective.","indent":1},
+          {"text":"Assess circulation – control bleeding and manage shock appropriately. See Shock Protocol","bold":["Assess circulation"],"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          {"text":"Take measures to prevent hypothermia.","indent":1},
+          {"text":"Altered LOC and signs of poor perfusion could indicate shock and should be managed appropriately.","bold":["Altered LOC and signs of poor perfusion could indicate shock and should be managed appropriately."],"red":["Altered LOC and signs of poor perfusion could indicate shock and should be managed appropriately."]}
+        ]},
+        {"type":"flow-stage","title":"Secondary Assessment and Treatment","items":[
+          "Monitor vital signs and O₂ saturation.",
+          {"text":"Perform blood glucose analysis. Treat if BGL is < 60 mg/dl.","bold":["BGL is < 60 mg/dl."]},
+          "Cardiac monitor",
+          {"text":"Record and evaluate 12-Lead ECG.","indent":1},
+          "Physical exam and OPQRST/SAMPLE history.",
+          {"text":"History of blood in vomit or stool.","indent":1},
+          {"text":"Prior abdominal surgery?","indent":1},
+          {"text":"Last meal?","indent":1},
+          {"text":"Assess for signs of dehydration and/or shock.","indent":1},
+          "Consider possible causes (GI, GU, cardiac, aneurysm, medications, toxic exposure, pregnancy, etc.)",
+          "Save emesis or other drainage for signs of GI bleed etc.",
+          "Keep the patient NPO",
+          "Initiate IV of normal saline.",
+          {"text":"If fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.","indent":1,"bold":["20 ml/kg fluid bolus."],"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          {"text":"Titrate to a systolic blood pressure of ≥ 90 mmHg.","indent":1,"bold":["≥ 90 mmHg."]},
+          {"text":"For pain management, See Pain Management Protocol.","links":[{"text":"Pain Management Protocol","protocolId":"adult-pain-management"}]},
+          {"text":"If nausea or vomiting are present, See Nausea/Vomiting Protocol.","links":[{"text":"Nausea/Vomiting Protocol","protocolId":"adult-nausea-and-vomiting"}]}
+        ]},
+        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital Signs","OPQRST/SAMPLE","Cardiac rhythm","Treatment(s)","Communication with Medical Control"]}
       ],
-      "plainText": "Abdominal Discomfort\nThis protocol applies to adult patients with pain/discomfort presenting in the abdomen or the\nflanks with no history or signs of trauma.\nPrimary Survey\n•\nAssess level of consciousness – AVPU\n•\nEnsure airway – ensure patency and positioning\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\n•\nAssess breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nAssess circulation – control bleeding and manage shock appropriately. See Shock Protocol\no\nTake measures to prevent hypothermia.\n•\nAltered LOC and signs of poor perfusion could indicate shock and should be managed\nappropriately.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation.\n•\nPerform blood glucose analysis.  Treat if BGL is < 60 mg/dl.\n•\nCardiac monitor\no\nRecord and evaluate 12-Lead ECG.\n•\nPhysical exam and OPQRST/SAMPLE history.\no\nHistory of blood in vomit or stool.\no\nPrior abdominal surgery?\no\nLast meal?\no\nAssess for signs of dehydration and/or shock.\n•\nConsider possible causes (GI, GU, cardiac, aneurysm, medications, toxic exposure, pregnancy,\netc.)\n•\nSave emesis or other drainage for signs of GI bleed etc.\n•\nKeep the patient NPO\n•\nInitiate IV of normal saline.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.\no\nTitrate to a systolic blood pressure of > 90 mmHg.\n•\nFor pain management, See Pain Management Protocol.\n•\nIf nausea or vomiting are present, See Nausea/Vomiting Protocol.\nDocument:\n•\nVital Signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control.",
-      "pageText": [
-        {
-          "page": 106,
-          "text": "Abdominal Discomfort\nThis protocol applies to adult patients with pain/discomfort presenting in the abdomen or the\nflanks with no history or signs of trauma.\nPrimary Survey\n•\nAssess level of consciousness – AVPU\n•\nEnsure airway – ensure patency and positioning\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\n•\nAssess breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nAssess circulation – control bleeding and manage shock appropriately. See Shock Protocol\no\nTake measures to prevent hypothermia.\n•\nAltered LOC and signs of poor perfusion could indicate shock and should be managed\nappropriately.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation.\n•\nPerform blood glucose analysis.  Treat if BGL is < 60 mg/dl.\n•\nCardiac monitor\no\nRecord and evaluate 12-Lead ECG.\n•\nPhysical exam and OPQRST/SAMPLE history.\no\nHistory of blood in vomit or stool.\no\nPrior abdominal surgery?\no\nLast meal?\no\nAssess for signs of dehydration and/or shock.\n•\nConsider possible causes (GI, GU, cardiac, aneurysm, medications, toxic exposure, pregnancy,\netc.)\n•\nSave emesis or other drainage for signs of GI bleed etc.\n•\nKeep the patient NPO\n•\nInitiate IV of normal saline.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.\no\nTitrate to a systolic blood pressure of > 90 mmHg.\n•\nFor pain management, See Pain Management Protocol.\n•\nIf nausea or vomiting are present, See Nausea/Vomiting Protocol.\nDocument:\n•\nVital Signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control."
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
+      "plainText":"Abdominal Discomfort. Adult assessment and treatment for non-traumatic abdominal or flank pain, including shock, pain, nausea, and documentation guidance.",
+      "needsReview":false
     },
     {
       "id": "agitation-behavioral-emergency",
