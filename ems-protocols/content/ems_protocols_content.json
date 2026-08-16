@@ -7198,8 +7198,8 @@
           {"text":"Improved signs of perfusion","bold":["Improved signs of perfusion"],"red":true},
           {"text":"SpO₂ ≥ 94%","bold":["SpO₂ ≥ 94%"],"red":true}
         ]},
-        {"type":"table","className":"cpap-pressure-table","caption":"O-Two CPAP Mask","headers":["Flow","Pressure"],"rows":[["5 lpm","5 cmH₂O"],["10 lpm","10 cmH₂O"],["15 lpm","15 cmH₂O"]]},
         {"type":"stop-control","title":"STOP","text":"Contact Medical Control for additional orders","image":"assets/legend-medical-control.webp","alt":"Stop and contact Medical Control for additional orders"},
+        {"type":"table","className":"cpap-pressure-table","caption":"O-Two CPAP Mask","headers":["Flow","Pressure"],"rows":[["5 lpm","5 cmH₂O"],["10 lpm","10 cmH₂O"],["15 lpm","15 cmH₂O"]]},
         {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital signs","OPQRST/SAMPLE","Cardiac rhythm","CPAP settings","Treatment(s)","Improvements","Communication with Medical Control"]}
       ],
       "plainText":"Continuous Positive Airway Pressure (CPAP). Adult indications, contraindications, preparation, application, titration, success targets, and documentation.",
