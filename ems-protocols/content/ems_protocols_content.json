@@ -7658,13 +7658,13 @@
           "arrowAfter": true,
           "items": [
             {
-              "text": "Assess level of consciousness ? AVPU",
+              "text": "Assess level of consciousness – AVPU",
               "bold": [
                 "Assess level of consciousness"
               ]
             },
             {
-              "text": "Ensure airway ? ensure patency and positioning",
+              "text": "Ensure airway – ensure patency and positioning",
               "bold": [
                 "Ensure airway"
               ]
@@ -7678,10 +7678,10 @@
               "indent": 1
             },
             {
-              "text": "Assess breathing ? Give supplemental O? if signs of compromise. Maintain SpO? ? 94%.",
+              "text": "Assess breathing – Give supplemental O₂ if signs of compromise. Maintain SpO₂ ≥ 94%.",
               "bold": [
                 "Assess breathing",
-                "Maintain SpO? ? 94%."
+                "Maintain SpO₂ ≥ 94%."
               ]
             },
             {
@@ -7689,7 +7689,7 @@
               "indent": 1
             },
             {
-              "text": "Assess circulation ? control bleeding and manage shock appropriately. See Shock Protocol.",
+              "text": "Assess circulation – control bleeding and manage shock appropriately. See Shock Protocol.",
               "bold": [
                 "Assess circulation"
               ],
@@ -7711,7 +7711,7 @@
           "title": "Secondary Assessment and Treatment",
           "arrowAfter": true,
           "items": [
-            "Monitor vital signs and O? saturation.",
+            "Monitor vital signs and O₂ saturation.",
             {
               "text": "Pulse oximetry may not be accurate for toxic inhalation victims.",
               "indent": 1,
@@ -7725,7 +7725,7 @@
               ]
             },
             {
-              "text": "Perform blood glucose analysis ? Treat if BGL is < 60 mg/dl.",
+              "text": "Perform blood glucose analysis – Treat if BGL is < 60 mg/dl.",
               "bold": [
                 "BGL is < 60 mg/dl."
               ]
@@ -7767,7 +7767,7 @@
             },
             "If known or suspected carbon monoxide poisoning:",
             {
-              "text": "Provide 100% high flow O?.",
+              "text": "Provide 100% high flow O₂.",
               "indent": 1
             },
             {
@@ -7776,7 +7776,7 @@
             },
             "If organophosphate, carbamate, or nerve agent poisoning:",
             {
-              "text": "Administer Atropine 2?5 mg/kg IV/IO/IM every 10?15 minutes, titrate to clinical symptoms (drying of secretions)",
+              "text": "Administer Atropine 2–5 mg/kg IV/IO/IM every 10–15 minutes, titrate to clinical symptoms (drying of secretions)",
               "indent": 1,
               "links": [
                 {
