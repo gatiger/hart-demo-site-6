@@ -3,7 +3,7 @@ let deferredPrompt;
 let selectedId = null;
 let viewHistory = [];
 let viewHistoryIndex = -1;
-const CONTENT_VERSION = 'v135';
+const CONTENT_VERSION = 'v137';
 
 const treeNav = document.getElementById('treeNav');
 const searchBox = document.getElementById('searchBox');
@@ -29,7 +29,7 @@ installBtn?.addEventListener('click', async () => {
 async function init() {
   const response = await fetch('content/ems_protocols_content.json?v=' + CONTENT_VERSION, { cache: 'no-store' });
   protocolData = await response.json();
-  document.getElementById('metaLine').textContent = `Effective ${formatDate(protocolData.meta.effectiveDate)} • ${protocolData.protocols.length} entries`;
+  document.getElementById('metaLine').textContent = `Effective ${formatDate(protocolData.meta.effectiveDate)} ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ ${protocolData.protocols.length} entries`;
   renderTree(protocolData.navigation);
   showSplash();
   if ('serviceWorker' in navigator) navigator.serviceWorker.register('service-worker.js', { updateViaCache: 'none' }).then(registration => registration.update()).catch(() => {});
@@ -149,7 +149,7 @@ function makeSnippet(protocol, terms, phrase) {
   if (index < 0) index = 0;
   const start = Math.max(0, index - 60);
   const end = Math.min(text.length, index + 150);
-  return `${start > 0 ? '…' : ''}${text.slice(start, end)}${end < text.length ? '…' : ''}`;
+  return `${start > 0 ? 'ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦' : ''}${text.slice(start, end)}${end < text.length ? 'ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦' : ''}`;
 }
 
 function renderTree(sections, filter = '') {
@@ -161,7 +161,7 @@ function renderTree(sections, filter = '') {
   if (term) {
     const summary = document.createElement('div');
     summary.className = 'search-summary';
-    summary.textContent = `${results.length} result${results.length === 1 ? '' : 's'} for “${term}”`;
+    summary.textContent = `${results.length} result${results.length === 1 ? '' : 's'} for ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ${term}ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â`;
     treeNav.appendChild(summary);
 
     const resultList = document.createElement('div');
@@ -171,7 +171,7 @@ function renderTree(sections, filter = '') {
       btn.className = 'search-result-btn';
       btn.type = 'button';
       btn.dataset.id = protocol.id;
-      btn.innerHTML = `<strong>${escapeHtml(protocol.title)}</strong><span>${escapeHtml(protocol.categoryPath.join(' › '))}</span>${snippet ? `<small>${escapeHtml(snippet)}</small>` : ''}`;
+      btn.innerHTML = `<strong>${escapeHtml(protocol.title)}</strong><span>${escapeHtml(protocol.categoryPath.join(' ÃƒÂ¢Ã¢â€šÂ¬Ã‚Âº '))}</span>${snippet ? `<small>${escapeHtml(snippet)}</small>` : ''}`;
       btn.addEventListener('click', () => showProtocol(protocol.id));
       resultList.appendChild(btn);
     }
@@ -257,7 +257,7 @@ function showProtocol(id, options = {}) {
 
   document.getElementById('protocolType').textContent = protocol.type;
   document.getElementById('protocol-title').textContent = protocol.title;
-  document.getElementById('protocolPath').textContent = protocol.categoryPath.join(' › ');
+  document.getElementById('protocolPath').textContent = protocol.categoryPath.join(' ÃƒÂ¢Ã¢â€šÂ¬Ã‚Âº ');
 
   const content = document.getElementById('protocolContent');
   content.innerHTML = '';
@@ -710,7 +710,7 @@ function renderStrokeLateralityDiagram(block, container) {
     const arrow = document.createElement('span');
     arrow.className = 'stroke-laterality-arrow';
     arrow.setAttribute('aria-hidden', 'true');
-    arrow.textContent = '→';
+    arrow.textContent = 'ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢';
     visual.appendChild(arrow);
     const person = document.createElement('div');
     person.className = 'stroke-person affected-' + panelData.affectedSide + ' brain-' + panelData.brainSide;
@@ -727,20 +727,24 @@ function renderStrokeLateralityDiagram(block, container) {
     grid.appendChild(panel);
   }
   figure.appendChild(grid);
-  const footer = document.createElement('figcaption');
-  const review = document.createElement('strong');
-  review.textContent = block.reviewNote || '';
-  footer.appendChild(review);
-  if (block.sourceUrl && block.sourceLabel) {
-    footer.appendChild(document.createTextNode(' Source: '));
-    const source = document.createElement('a');
-    source.href = block.sourceUrl;
-    source.target = '_blank';
-    source.rel = 'noopener noreferrer';
-    source.textContent = block.sourceLabel;
-    footer.appendChild(source);
+  if (block.reviewNote || (block.sourceUrl && block.sourceLabel)) {
+    const footer = document.createElement('figcaption');
+    if (block.reviewNote) {
+      const review = document.createElement('strong');
+      review.textContent = block.reviewNote;
+      footer.appendChild(review);
+    }
+    if (block.sourceUrl && block.sourceLabel) {
+      footer.appendChild(document.createTextNode(block.reviewNote ? ' Source: ' : 'Source: '));
+      const source = document.createElement('a');
+      source.href = block.sourceUrl;
+      source.target = '_blank';
+      source.rel = 'noopener noreferrer';
+      source.textContent = block.sourceLabel;
+      footer.appendChild(source);
+    }
+    figure.appendChild(footer);
   }
-  figure.appendChild(footer);
   container.appendChild(figure);
 }
 function renderProtocolImage(block, container) {
@@ -802,7 +806,7 @@ function renderStopControl(block, container) {
   figure.className = `medical-control-reference ${block.arrowAfter ? 'flow-arrow-after' : ''}`;
   const image = document.createElement('img');
   image.src = block.image || 'assets/legend-medical-control.webp';
-  image.alt = block.alt || `${block.title || 'STOP'} — ${block.text || 'CONTACT MEDICAL CONTROL'}`;
+  image.alt = block.alt || `${block.title || 'STOP'} ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â ${block.text || 'CONTACT MEDICAL CONTROL'}`;
   image.loading = 'lazy';
   figure.appendChild(image);
   if (block.note) {
@@ -1075,7 +1079,7 @@ function renderBlock(block, container) {
     for (const item of block.items || []) {
       const li = document.createElement('li');
       const rawText = itemText(item);
-      const cleanText = ordered ? rawText.replace(/^\s*\d+[\).]\s*/, '') : rawText.replace(/^\s*[•\-o]\s*/, '');
+      const cleanText = ordered ? rawText.replace(/^\s*\d+[\).]\s*/, '') : rawText.replace(/^\s*[ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢\-o]\s*/, '');
       appendRichText(
         li,
         cleanText,
