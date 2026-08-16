@@ -4876,52 +4876,66 @@
       ],
       "status": "active",
       "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": [],
       "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
         "pageStart": 70,
         "pageEnd": 71,
         "pageLabel": "70-71"
       },
-      "summary": "",
+      "summary": "Assessment and treatment of pediatric patients with injury to more than one body system.",
       "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Pediatric Multiple System Trauma"
-        },
-        {
-          "type": "paragraph",
-          "text": "This protocol applies to pediatric patients presenting with injury to more than one body system. First Impression (Pediatric Assessment Triangle) Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry. Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds. Circulation – observe skin color for pallor, mottling and/or cyanosis. Primary Survey Massive hemorrhage Treat all life-threatening hemorrhage Tourniquets for massive extremity hemorrhage Wound packing for junctional hemorrhage Airway – ensure patency, manually stabilize C-Spine. Have suction equipment ready Consider spinal motion restriction if indicated. Respiratory/Breathing – give supplemental O2 if signs of compromise. Maintain SpO2 > 94%. Manage any injuries impairing ventilation. See Pediatric Chest Trauma Protocol. Chest wounds: Penetrating/Sucking chest wound, impaled objects, bruising Signs of pneumothorax Flail segments Assist with bag valve mask if respiratory effort is ineffective. Circulation – assess pulses and perfusion status Manage shock appropriately. See Shock Protocol. Head/Hypothermia Initial GCS/AVPU Pupils Prevent hypothermia Secondary Assessment and Treatment Monitor vital signs and O2 saturation Perform blood glucose analysis – Treat if BGL is < 60 mg/dl. Consider cardiac monitoring Record and evaluate 12-Lead ECG Physical Exam and OPQRST/SAMPLE history Perform spinal motion restriction Apply a rigid cervical collar. Secure to long spine board. Initiate patient transport to an appropriate level trauma center as soon as possible. Advanced airway/ventilatory management as needed. See Sedation Assisted Intubation Protocol. Initiate EtCO2 monitoring. Secondary Assessment and Treatment (Continued) Initiate IV/IO of normal saline at KVO rate. If fluid resuscitation is needed, administer 20 ml/kg bolus. See Shock Protocol. Perform detailed/focused physical assessment. Re-evaluate ABCs. Repeat neurological exam. Continue resuscitation and evaluation enroute. Manage any presenting Respiratory Distress, Seizures, and/or dysrhythmias in accordance with the appropriate protocol."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vital signs OPQRST/SAMPLE Cardiac rhythm Treatment(s) Communication with Medical Control Pediatric Multiple System Trauma (Continued)"
-        }
+        {"type":"heading","level":2,"text":"Pediatric Multiple System Trauma"},
+        {"type":"paragraph","text":"This protocol applies to pediatric patients presenting with injury to more than one body system."},
+        {"type":"flow-stage","title":"First Impression (Pediatric Assessment Triangle)","arrowAfter":true,"links":[{"text":"Pediatric Assessment Triangle","protocolId":"pediatric-assessment-triangle"}],"items":[
+          "Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.",
+          "Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.",
+          "Circulation – observe skin color for pallor, mottling, and/or cyanosis."
+        ]},
+        {"type":"flow-stage","title":"Primary Survey","arrowAfter":true,"items":[
+          {"text":"Massive hemorrhage","bold":["Massive hemorrhage"]},
+          {"text":"Treat all life-threatening hemorrhage.","indent":1},
+          {"text":"Tourniquets for massive extremity hemorrhage.","indent":2},
+          {"text":"Wound packing for junctional hemorrhage.","indent":2},
+          {"text":"Airway – ensure patency, manually stabilize C-Spine.","bold":["Airway"]},
+          {"text":"Have suction equipment ready.","indent":1},
+          {"text":"Consider spinal motion restriction if indicated.","indent":1},
+          {"text":"Respiratory/Breathing – give supplemental O₂ if signs of compromise. Maintain SpO₂ ≥ 94%.","bold":["Respiratory/Breathing","Maintain SpO₂ ≥ 94%."]},
+          {"text":"Manage any injuries impairing ventilation. See Pediatric Chest Trauma Protocol.","indent":1,"links":[{"text":"Pediatric Chest Trauma Protocol","protocolId":"chest-trauma"}]},
+          {"text":"Chest wounds: Penetrating/Sucking chest wound, impaled objects, bruising.","indent":2},
+          {"text":"Signs of pneumothorax.","indent":2},
+          {"text":"Flail segments.","indent":2},
+          {"text":"Assist with bag valve mask if respiratory effort is ineffective.","indent":1},
+          {"text":"Circulation – assess pulses and perfusion status.","bold":["Circulation"]},
+          {"text":"Manage shock appropriately. See Shock Protocol.","indent":1,"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          {"text":"Head/Hypothermia","bold":["Head/Hypothermia"]},
+          {"text":"Initial GCS/AVPU.","indent":1},
+          {"text":"Pupils.","indent":1},
+          {"text":"Prevent hypothermia.","indent":1}
+        ]},
+        {"type":"flow-stage","title":"Secondary Assessment and Treatment","items":[
+          "Monitor vital signs and O₂ saturation.",
+          {"text":"Perform blood glucose analysis – treat if BGL is < 60 mg/dl.","bold":["BGL is < 60 mg/dl."]},
+          "Consider cardiac monitoring.",
+          {"text":"Record and evaluate 12-Lead ECG.","indent":1},
+          "Physical exam and OPQRST/SAMPLE history.",
+          "Perform spinal motion restriction.",
+          {"text":"Apply a rigid cervical collar.","indent":1},
+          {"text":"Secure to long spine board.","indent":1},
+          "Initiate patient transport to an appropriate level trauma center as soon as possible.",
+          {"text":"Advanced airway/ventilatory management as needed. See Sedation Assisted Intubation Protocol.","links":[{"text":"Sedation Assisted Intubation Protocol","protocolId":"sedation-assisted-intubation"}]},
+          {"text":"Initiate EtCO₂ monitoring.","indent":1},
+          "Initiate IV/IO of normal saline at KVO rate.",
+          {"text":"If fluid resuscitation is needed, administer 20 ml/kg bolus. See Shock Protocol.","indent":1,"bold":["20 ml/kg bolus."],"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          "Perform detailed/focused physical assessment.",
+          {"text":"Re-evaluate ABCs.","indent":1},
+          {"text":"Repeat neurological exam.","indent":1},
+          "Continue resuscitation and evaluation enroute.",
+          {"text":"Manage any presenting Respiratory Distress, Seizures, and/or dysrhythmias in accordance with the appropriate protocol.","links":[{"text":"Respiratory Distress","protocolId":"respiratory-distress"},{"text":"Seizures","protocolId":"seizure"}]}
+        ]},
+        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital Signs","OPQRST/SAMPLE","Cardiac rhythm","Treatment(s)","Communication with Medical Control"]}
       ],
-      "plainText": "Pediatric Multiple System Trauma\nThis protocol applies to pediatric patients presenting with injury to more than one body system.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis.\nPrimary Survey\n•\nMassive hemorrhage\no\nTreat all life-threatening hemorrhage\n▪\nTourniquets for massive extremity hemorrhage\n▪\nWound packing for junctional hemorrhage\n•\nAirway – ensure patency, manually stabilize C-Spine.\no\nHave suction equipment ready\no\nConsider spinal motion restriction if indicated.\n•\nRespiratory/Breathing – give supplemental O2 if signs of compromise. Maintain SpO2 > 94%.\no\nManage any injuries impairing ventilation. See Pediatric Chest Trauma Protocol.\n▪\nChest wounds: Penetrating/Sucking chest wound, impaled objects, bruising\n▪\nSigns of pneumothorax\n▪\nFlail segments\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nCirculation – assess pulses and perfusion status\no\nManage shock appropriately. See Shock Protocol.\n•\nHead/Hypothermia\no\nInitial GCS/AVPU\no\nPupils\no\nPrevent hypothermia\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nConsider cardiac monitoring\no\nRecord and evaluate 12-Lead ECG\n•\nPhysical Exam and OPQRST/SAMPLE history\n•\nPerform spinal motion restriction\no\nApply a rigid cervical collar.\no\nSecure to long spine board.\n•\nInitiate patient transport to an appropriate level trauma center as soon as possible.\n•\nAdvanced airway/ventilatory management as needed. See Sedation Assisted Intubation\nProtocol.\no\nInitiate EtCO2 monitoring.\nSecondary Assessment and Treatment (Continued)\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, administer 20 ml/kg bolus. See Shock Protocol.\n•\nPerform detailed/focused physical assessment.\no\nRe-evaluate ABCs.\no\nRepeat neurological exam.\n•\nContinue resuscitation and evaluation enroute.\n•\nManage any presenting Respiratory Distress, Seizures, and/or dysrhythmias in accordance with\nthe appropriate protocol.\nDocument:\n•\nVital signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control\nPediatric Multiple System Trauma (Continued)",
-      "pageText": [
-        {
-          "page": 70,
-          "text": "Pediatric Multiple System Trauma\nThis protocol applies to pediatric patients presenting with injury to more than one body system.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis.\nPrimary Survey\n•\nMassive hemorrhage\no\nTreat all life-threatening hemorrhage\n▪\nTourniquets for massive extremity hemorrhage\n▪\nWound packing for junctional hemorrhage\n•\nAirway – ensure patency, manually stabilize C-Spine.\no\nHave suction equipment ready\no\nConsider spinal motion restriction if indicated.\n•\nRespiratory/Breathing – give supplemental O2 if signs of compromise. Maintain SpO2 > 94%.\no\nManage any injuries impairing ventilation. See Pediatric Chest Trauma Protocol.\n▪\nChest wounds: Penetrating/Sucking chest wound, impaled objects, bruising\n▪\nSigns of pneumothorax\n▪\nFlail segments\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nCirculation – assess pulses and perfusion status\no\nManage shock appropriately. See Shock Protocol.\n•\nHead/Hypothermia\no\nInitial GCS/AVPU\no\nPupils\no\nPrevent hypothermia\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nConsider cardiac monitoring\no\nRecord and evaluate 12-Lead ECG\n•\nPhysical Exam and OPQRST/SAMPLE history\n•\nPerform spinal motion restriction\no\nApply a rigid cervical collar.\no\nSecure to long spine board.\n•\nInitiate patient transport to an appropriate level trauma center as soon as possible.\n•\nAdvanced airway/ventilatory management as needed. See Sedation Assisted Intubation\nProtocol.\no\nInitiate EtCO2 monitoring."
-        },
-        {
-          "page": 71,
-          "text": "Secondary Assessment and Treatment (Continued)\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, administer 20 ml/kg bolus. See Shock Protocol.\n•\nPerform detailed/focused physical assessment.\no\nRe-evaluate ABCs.\no\nRepeat neurological exam.\n•\nContinue resuscitation and evaluation enroute.\n•\nManage any presenting Respiratory Distress, Seizures, and/or dysrhythmias in accordance with\nthe appropriate protocol.\nDocument:\n•\nVital signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control\nPediatric Multiple System Trauma (Continued)"
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Pediatric Multiple System Trauma. Primary survey, secondary assessment, treatment, transport, cross-references, and documentation.",
+      "needsReview":false
+    },    {
       "id": "head-and-spine-trauma",
       "title": "Head and Spine Trauma",
       "type": "protocol",
