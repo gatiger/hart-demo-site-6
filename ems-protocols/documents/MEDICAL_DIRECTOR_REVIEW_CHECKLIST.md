@@ -217,6 +217,12 @@ This internal checklist tracks items that must be confirmed before the native EM
 
 
 
+
+### Adult Clinical Protocols > Adult Trauma Emergencies > Chest Trauma
+
+- [ ] Verify chest-wound, pneumothorax, flail-segment, ventilation, transport, fluid, reassessment, capnography, and documentation instructions.
+- [ ] Verify every needle chest decompression indication, the ACLS/arrest requirement, warnings, complications language, and EtCO2 target of 35-45 mmHg.
+
 ### Adult Clinical Protocols > Adult Trauma Emergencies > Eye Trauma
 
 - [ ] Verify the vision assessment, ruptured-globe/enavulsed-eye wording, embedded-object care, chemical-exposure decontamination, bilateral eye covering, transport position, irrigation exception, pain-management instruction, and prohibition on NSAIDs/Toradol.

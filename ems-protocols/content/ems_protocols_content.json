@@ -718,7 +718,7 @@
               "status": "active"
             },
             {
-              "id": "chest-trauma",
+              "id": "adult-chest-trauma",
               "title": "Chest Trauma",
               "type": "protocol",
               "pageStart": 140,
@@ -8937,7 +8937,7 @@
       "displayMode": "structured"
     },
     {
-      "id": "chest-trauma",
+      "id": "adult-chest-trauma",
       "title": "Chest Trauma",
       "type": "protocol",
       "categoryPath": [
@@ -8948,14 +8948,19 @@
       "effectiveDate": "2026-06-08",
       "lastRevised": "",
       "version": "2026",
-      "tags": [],
+      "tags": [
+        "adult",
+        "trauma",
+        "chest trauma",
+        "needle decompression"
+      ],
       "source": {
         "pdf": "documents/ems/2026-hcems-protocols.pdf",
         "pageStart": 140,
         "pageEnd": 141,
         "pageLabel": "140-141"
       },
-      "summary": "",
+      "summary": "Assessment and treatment of adult patients presenting with chest trauma.",
       "content": [
         {
           "type": "heading",
@@ -8964,31 +8969,283 @@
         },
         {
           "type": "paragraph",
-          "text": "This protocol applies to adult patients presenting with chest trauma. Primary Survey Massive Hemorrhage Treat all life-threatening hemorrhage. See Hemorrhage Control Protocol. Tourniquets for massive extremity hemorrhage. Wound packing or junctional tourniquet for junctional hemorrhage. Airway – ensure patency and positioning. Have suction equipment ready. Consider spinal motion restriction if indicated. Respiratory/breathing – Give supplemental O2 if signs of compromise. Maintain SpO2 > 94%. Manage any injuries impairing ventilation immediately. Chest wounds: Open/Sucking, Impaled objects, bruising. Seal with a gloved hand. Apply an occlusive dressing. Monitor for signs of tension pneumothorax. Signs of Pneumothorax. Perform needle decompression on affected side. Flail Segments. Stabilize with bulky dressing, gentle pressure. DO NOT impair ventilation. Assist with bag valve mask if respiratory effort is ineffective. Circulation – Assess radial pulses and heart rate. Consider Pelvic Binder if appropriate. Head/Hypothermia Initial GCS/AVPU. Pupils. Prevent hypothermia. Secondary Assessment and Treatment Monitor vital signs and O2 saturation Perform blood glucose analysis – Treat if BGL is < 60 mg/dl. Cardiac Monitor Record and evaluate 12-Lead ECG. Physical exam and OPQRST/SAMPLE history. Expose and rapidly assess the head, chest abdomen, pelvis and extremities for injury. Evaluate the patient’s posterior when possible. Perform spinal motion restriction, rigid C-collar and secure to a long spine board if indicated. Initiate patient transport to a trauma center as soon as possible. Advanced airway/ventilatory support as needed. See Sedation Assisted Intubation Protocol. Initiate IV/IO of normal saline at KVO rate. If fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol. Chest Trauma (Continued) Secondary Assessment and Treatment (Continued) Reevaluate ABCs and perform detailed/focused assessment. Frequently reevaluate patient’s respiratory and perfusion status. Auscultate breath sounds. Apply capnography as needed. Maintain EtCO2 of 35-45 mmHg. Continue resuscitation and evaluation enroute. IMPORTANT – NEEDLE CHEST DECOMPRESSION Indications Peri-arrest, PEA, shock with hypotension and at least one of the following: Neck Vein distention Tracheal deviation away from the injured side. Increased resistance when ventilating. Hyper-expanded chest with little movement on respiration. If cardiac arrest is present, and ACLS has been initiated, DO NOT terminate efforts unless needle chest decompression is performed. Needle chest decompression should never be utilized based solely on the presence of poor or absent breath sounds on one side of the chest. The procedure has complications and should not be used lightly. However, when used appropriately, it can be life-saving. Overly aggressive positive pressure ventilation may cause a pneumothorax or exacerbate and existing pneumothorax."
+          "text": "This protocol applies to adult patients presenting with chest trauma."
         },
         {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
+          "type": "flow-stage",
+          "title": "Primary Survey",
+          "arrowAfter": true,
+          "items": [
+            {
+              "text": "Massive Hemorrhage",
+              "bold": [
+                "Massive Hemorrhage"
+              ]
+            },
+            {
+              "text": "Treat all life-threatening hemorrhage. See Hemorrhage Control Protocol.",
+              "indent": 1,
+              "bold": [
+                "Treat all life-threatening hemorrhage."
+              ],
+              "links": [
+                {
+                  "text": "Hemorrhage Control Protocol",
+                  "protocolId": "hemorrhage-control"
+                }
+              ]
+            },
+            {
+              "text": "Tourniquets for massive extremity hemorrhage.",
+              "indent": 2
+            },
+            {
+              "text": "Wound packing or junctional tourniquet for junctional hemorrhage.",
+              "indent": 2
+            },
+            {
+              "text": "Airway – ensure patency and positioning.",
+              "bold": [
+                "Airway"
+              ]
+            },
+            {
+              "text": "Have suction equipment ready.",
+              "indent": 1
+            },
+            {
+              "text": "Consider spinal motion restriction if indicated.",
+              "indent": 1
+            },
+            {
+              "text": "Respiratory/breathing – Give supplemental O₂ if signs of compromise. Maintain SpO₂ ≥ 94%.",
+              "bold": [
+                "Respiratory/breathing",
+                "Maintain SpO₂ ≥ 94%."
+              ]
+            },
+            {
+              "text": "Manage any injuries impairing ventilation immediately.",
+              "indent": 1
+            },
+            {
+              "text": "Chest wounds: Open/Sucking, Impaled objects, bruising.",
+              "indent": 2
+            },
+            {
+              "text": "Seal with a gloved hand.",
+              "indent": 3
+            },
+            {
+              "text": "Apply an occlusive dressing.",
+              "indent": 3
+            },
+            {
+              "text": "Monitor for signs of tension pneumothorax.",
+              "indent": 3
+            },
+            {
+              "text": "Signs of Pneumothorax.",
+              "indent": 2
+            },
+            {
+              "text": "Perform needle decompression on affected side.",
+              "indent": 3
+            },
+            {
+              "text": "Flail Segments.",
+              "indent": 2
+            },
+            {
+              "text": "Stabilize with bulky dressing, gentle pressure. DO NOT impair ventilation.",
+              "indent": 3,
+              "bold": [
+                "DO NOT"
+              ]
+            },
+            {
+              "text": "Assist with bag valve mask if respiratory effort is ineffective.",
+              "indent": 1
+            },
+            {
+              "text": "Circulation – Assess radial pulses and heart rate.",
+              "bold": [
+                "Circulation"
+              ]
+            },
+            {
+              "text": "Consider Pelvic Binder if appropriate.",
+              "indent": 1
+            },
+            {
+              "text": "Head/Hypothermia",
+              "bold": [
+                "Head/Hypothermia"
+              ]
+            },
+            {
+              "text": "Initial GCS/AVPU.",
+              "indent": 1
+            },
+            {
+              "text": "Pupils.",
+              "indent": 1
+            },
+            {
+              "text": "Prevent hypothermia.",
+              "indent": 1
+            }
+          ]
         },
         {
-          "type": "paragraph",
-          "text": "Vital signs OPQRST/SAMPLE Cardiac rhythm Treatment(s) Communication with Medical Control."
+          "type": "flow-stage",
+          "title": "Secondary Assessment and Treatment",
+          "items": [
+            "Monitor vital signs and O₂ saturation",
+            {
+              "text": "Perform blood glucose analysis – Treat if BGL is < 60 mg/dl.",
+              "bold": [
+                "BGL is < 60 mg/dl."
+              ]
+            },
+            "Cardiac Monitor",
+            {
+              "text": "Record and evaluate 12-Lead ECG.",
+              "indent": 1
+            },
+            "Physical exam and OPQRST/SAMPLE history.",
+            {
+              "text": "Expose and rapidly assess the head, chest abdomen, pelvis and extremities for injury.",
+              "indent": 1
+            },
+            {
+              "text": "Evaluate the patient’s posterior when possible.",
+              "indent": 2
+            },
+            "Perform spinal motion restriction, rigid C-collar and secure to a long spine board if indicated.",
+            "Initiate patient transport to a trauma center as soon as possible.",
+            {
+              "text": "Advanced airway/ventilatory support as needed. See Sedation Assisted Intubation Protocol.",
+              "links": [
+                {
+                  "text": "Sedation Assisted Intubation Protocol",
+                  "protocolId": "sedation-assisted-intubation"
+                }
+              ]
+            },
+            "Initiate IV/IO of normal saline at KVO rate.",
+            {
+              "text": "If fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.",
+              "indent": 1,
+              "links": [
+                {
+                  "text": "Shock Protocol",
+                  "protocolId": "shock-management"
+                }
+              ]
+            },
+            "Reevaluate ABCs and perform detailed/focused assessment.",
+            {
+              "text": "Frequently reevaluate patient’s respiratory and perfusion status.",
+              "indent": 1
+            },
+            {
+              "text": "Auscultate breath sounds.",
+              "indent": 1
+            },
+            {
+              "text": "Apply capnography as needed.",
+              "indent": 1
+            },
+            {
+              "text": "Maintain EtCO₂ of 35-45 mmHg.",
+              "indent": 2
+            },
+            "Continue resuscitation and evaluation enroute."
+          ]
+        },
+        {
+          "type": "flow-stage",
+          "title": "IMPORTANT – NEEDLE CHEST DECOMPRESSION",
+          "items": [
+            {
+              "text": "Indications",
+              "bold": [
+                "Indications"
+              ]
+            },
+            {
+              "text": "Peri-arrest, PEA, shock with hypotension and at least one of the following:",
+              "indent": 1,
+              "bold": [
+                "at least one of the following:"
+              ]
+            },
+            {
+              "text": "Neck Vein distention",
+              "indent": 2
+            },
+            {
+              "text": "Tracheal deviation away from the injured side.",
+              "indent": 2
+            },
+            {
+              "text": "Increased resistance when ventilating.",
+              "indent": 2
+            },
+            {
+              "text": "Hyper-expanded chest with little movement on respiration.",
+              "indent": 2
+            },
+            {
+              "text": "If cardiac arrest is present, and ACLS has been initiated, DO NOT terminate efforts unless needle chest decompression is performed.",
+              "icon": "assets/legend-important.webp",
+              "iconAlt": "Important protocol information",
+              "bold": [
+                "If cardiac arrest is present, and ACLS has been initiated, DO NOT terminate efforts unless needle chest decompression is performed."
+              ],
+              "red": [
+                "If cardiac arrest is present, and ACLS has been initiated, DO NOT terminate efforts unless needle chest decompression is performed."
+              ],
+              "highlight": true
+            },
+            {
+              "text": "Needle chest decompression should never be utilized based solely on the presence of poor or absent breath sounds on one side of the chest. The procedure has complications and should not be used lightly. However, when used appropriately, it can be life-saving.",
+              "icon": "assets/legend-important.webp",
+              "iconAlt": "Important protocol information",
+              "bold": [
+                "Needle chest decompression should never be utilized based solely on the presence of poor or absent breath sounds on one side of the chest. The procedure has complications and should not be used lightly. However, when used appropriately, it can be life-saving."
+              ],
+              "red": [
+                "Needle chest decompression should never be utilized based solely on the presence of poor or absent breath sounds on one side of the chest. The procedure has complications and should not be used lightly. However, when used appropriately, it can be life-saving."
+              ]
+            },
+            {
+              "text": "Overly aggressive positive pressure ventilation may cause a pneumothorax or exacerbate an existing pneumothorax.",
+              "icon": "assets/legend-important.webp",
+              "iconAlt": "Important protocol information",
+              "bold": [
+                "Overly aggressive positive pressure ventilation may cause a pneumothorax or exacerbate an existing pneumothorax."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "documentation-card",
+          "title": "Document:",
+          "image": "assets/legend-documentation.webp",
+          "alt": "Patient care documentation reminder symbol",
+          "items": [
+            "Vital signs",
+            "OPQRST/SAMPLE",
+            "Cardiac rhythm",
+            "Treatment(s)",
+            "Communication with Medical Control."
+          ]
         }
       ],
-      "plainText": "Chest Trauma\nThis protocol applies to adult patients presenting with chest trauma.\nPrimary Survey\n•\nMassive Hemorrhage\no\nTreat all life-threatening hemorrhage. See Hemorrhage Control Protocol.\n▪\nTourniquets for massive extremity hemorrhage.\n▪\nWound packing or junctional tourniquet for junctional hemorrhage.\n•\nAirway – ensure patency and positioning.\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\n•\nRespiratory/breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nManage any injuries impairing ventilation immediately.\n▪\nChest wounds: Open/Sucking, Impaled objects, bruising.\n•\nSeal with a gloved hand.\n•\nApply an occlusive dressing.\n•\nMonitor for signs of tension pneumothorax.\n▪\nSigns of Pneumothorax.\n•\nPerform needle decompression on affected side.\n▪\nFlail Segments.\n•\nStabilize with bulky dressing, gentle pressure. DO NOT impair ventilation.\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nCirculation – Assess radial pulses and heart rate.\no\nConsider Pelvic Binder if appropriate.\n•\nHead/Hypothermia\no\nInitial GCS/AVPU.\no\nPupils.\no\nPrevent hypothermia.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nCardiac Monitor\no\nRecord and evaluate 12-Lead ECG.\n•\nPhysical exam and OPQRST/SAMPLE history.\no\nExpose and rapidly assess the head, chest abdomen, pelvis and extremities for injury.\n▪\nEvaluate the patient’s posterior when possible.\n•\nPerform spinal motion restriction, rigid C-collar and secure to a long spine board if indicated.\n•\nInitiate patient transport to a trauma center as soon as possible.\n•\nAdvanced airway/ventilatory support as needed. See Sedation Assisted Intubation Protocol.\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.\nChest Trauma (Continued)\nSecondary Assessment and Treatment (Continued)\n•\nReevaluate ABCs and perform detailed/focused assessment.\no\nFrequently reevaluate patient’s respiratory and perfusion status.\no\nAuscultate breath sounds.\no\nApply capnography as needed.\n▪\nMaintain EtCO2 of 35-45 mmHg.\n•\nContinue resuscitation and evaluation enroute.\nIMPORTANT – NEEDLE CHEST DECOMPRESSION\nIndications\n•\nPeri-arrest, PEA, shock with hypotension and at least one of the following:\no\nNeck Vein distention\no\nTracheal deviation away from the injured side.\no\nIncreased resistance when ventilating.\no\nHyper-expanded chest with little movement on respiration.\nIf cardiac arrest is present, and ACLS has been initiated, DO NOT terminate efforts unless\nneedle chest decompression is performed.\nNeedle chest decompression should never be utilized based solely on the presence of poor\nor absent breath sounds on one side of the chest. The procedure has complications and\nshould not be used lightly. However, when used appropriately, it can be life-saving.\nOverly aggressive positive pressure ventilation may cause a pneumothorax or exacerbate\nand existing pneumothorax.\nDocument:\n•\nVital signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control.",
-      "pageText": [
-        {
-          "page": 140,
-          "text": "Chest Trauma\nThis protocol applies to adult patients presenting with chest trauma.\nPrimary Survey\n•\nMassive Hemorrhage\no\nTreat all life-threatening hemorrhage. See Hemorrhage Control Protocol.\n▪\nTourniquets for massive extremity hemorrhage.\n▪\nWound packing or junctional tourniquet for junctional hemorrhage.\n•\nAirway – ensure patency and positioning.\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\n•\nRespiratory/breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nManage any injuries impairing ventilation immediately.\n▪\nChest wounds: Open/Sucking, Impaled objects, bruising.\n•\nSeal with a gloved hand.\n•\nApply an occlusive dressing.\n•\nMonitor for signs of tension pneumothorax.\n▪\nSigns of Pneumothorax.\n•\nPerform needle decompression on affected side.\n▪\nFlail Segments.\n•\nStabilize with bulky dressing, gentle pressure. DO NOT impair ventilation.\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nCirculation – Assess radial pulses and heart rate.\no\nConsider Pelvic Binder if appropriate.\n•\nHead/Hypothermia\no\nInitial GCS/AVPU.\no\nPupils.\no\nPrevent hypothermia.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nCardiac Monitor\no\nRecord and evaluate 12-Lead ECG.\n•\nPhysical exam and OPQRST/SAMPLE history.\no\nExpose and rapidly assess the head, chest abdomen, pelvis and extremities for injury.\n▪\nEvaluate the patient’s posterior when possible.\n•\nPerform spinal motion restriction, rigid C-collar and secure to a long spine board if indicated.\n•\nInitiate patient transport to a trauma center as soon as possible.\n•\nAdvanced airway/ventilatory support as needed. See Sedation Assisted Intubation Protocol.\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol."
-        },
-        {
-          "page": 141,
-          "text": "Chest Trauma (Continued)\nSecondary Assessment and Treatment (Continued)\n•\nReevaluate ABCs and perform detailed/focused assessment.\no\nFrequently reevaluate patient’s respiratory and perfusion status.\no\nAuscultate breath sounds.\no\nApply capnography as needed.\n▪\nMaintain EtCO2 of 35-45 mmHg.\n•\nContinue resuscitation and evaluation enroute.\nIMPORTANT – NEEDLE CHEST DECOMPRESSION\nIndications\n•\nPeri-arrest, PEA, shock with hypotension and at least one of the following:\no\nNeck Vein distention\no\nTracheal deviation away from the injured side.\no\nIncreased resistance when ventilating.\no\nHyper-expanded chest with little movement on respiration.\nIf cardiac arrest is present, and ACLS has been initiated, DO NOT terminate efforts unless\nneedle chest decompression is performed.\nNeedle chest decompression should never be utilized based solely on the presence of poor\nor absent breath sounds on one side of the chest. The procedure has complications and\nshould not be used lightly. However, when used appropriately, it can be life-saving.\nOverly aggressive positive pressure ventilation may cause a pneumothorax or exacerbate\nand existing pneumothorax.\nDocument:\n•\nVital signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control."
-        }
-      ],
+      "plainText": "Chest Trauma. This protocol applies to adult patients presenting with chest trauma. Primary survey, secondary assessment and treatment, needle chest decompression indications and cautions, and documentation.",
       "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
       "displayMode": "structured"
     },
     {
