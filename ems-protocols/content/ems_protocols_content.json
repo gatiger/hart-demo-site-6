@@ -454,7 +454,7 @@
           "status": "active"
         },
         {
-          "id": "pain-management",
+          "id": "adult-pain-management",
           "title": "Pain Management",
           "type": "protocol",
           "pageStart": 91,
@@ -5654,7 +5654,7 @@
       "plainText":"Adult Assessment. Primary Survey followed by Trauma and Medical secondary assessment branches and documentation.",
       "needsReview":false
     },    {
-      "id": "pain-management",
+      "id": "adult-pain-management",
       "title": "Pain Management",
       "type": "protocol",
       "categoryPath": ["Adult Clinical Protocols"],
