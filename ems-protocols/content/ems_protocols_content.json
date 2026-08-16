@@ -7246,7 +7246,7 @@
         {"type":"flow-stage","title":"Pain Management","items":[
           "If pain scale is ≥ 6, consider one of the following:",
           {"text":"Morphine 0.1 mg/kg IV/IO/IM. Maximum Dose – 10 mg.","indent":1,"bold":["0.1 mg/kg","Maximum Dose – 10 mg."],"links":[{"text":"Morphine","protocolId":"morphine-sulfate"}]},
-          {"text":"OR","bold":["OR"],"noBullet":true},
+          {"text":"OR","indent":2,"bold":["OR"],"red":true,"redTextOnly":true,"noBullet":true},
           {"text":"Fentanyl 1–2 mcg/kg IV/IO/IM/IN. Maximum Dose – 200 mcg.","indent":1,"bold":["1–2 mcg/kg","Maximum Dose – 200 mcg."],"links":[{"text":"Fentanyl","protocolId":"fentanyl-sublimaze"}]},
           "If respirations become depressed:",
           {"text":"Administer Naloxone 0.01 mg/kg IV/IO/IN.","indent":1,"bold":["0.01 mg/kg"],"links":[{"text":"Naloxone","protocolId":"naloxone-narcan"}]},
