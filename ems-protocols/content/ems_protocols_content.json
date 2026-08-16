@@ -7122,69 +7122,90 @@
       "id": "continuous-positive-pressure-airway",
       "title": "Continuous Positive Pressure Airway",
       "type": "protocol",
-      "categoryPath": [
-        "Adult Clinical Protocols",
-        "Adult Medical Emergencies"
-      ],
+      "categoryPath": ["Adult Clinical Protocols", "Adult Medical Emergencies"],
       "status": "active",
       "effectiveDate": "2026-06-08",
       "lastRevised": "",
       "version": "2026",
       "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 126,
-        "pageEnd": 127,
-        "pageLabel": "126-127"
-      },
+      "source": {"pdf":"documents/ems/2026-hcems-protocols.pdf","pageStart":126,"pageEnd":127,"pageLabel":"126-127"},
       "summary": "",
       "content": [
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Page 127"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "O-Two CPAP Mask"
-        },
-        {
-          "type": "table",
-          "headers": [
-            "5 lpm",
-            "5cmH O\n2"
-          ],
-          "rows": [
-            [
-              "10 lpm",
-              "10cmH O\n2"
-            ],
-            [
-              "15 lpm",
-              "15cm H O\n2"
-            ]
-          ],
-          "sourcePage": 127,
-          "needsReview": true
-        }
+        {"type":"heading","level":2,"text":"Continuous Positive Airway Pressure (CPAP)"},
+        {"type":"paragraph","text":"This protocol applies to adult patients who are in respiratory distress and require positive pressure to maintain their airway."},
+        {"type":"flow-stage","title":"Indications for CPAP","arrowAfter":true,"items":[
+          "Consider CPAP for patients in either severe or moderate respiratory distress in the setting of the following conditions:",
+          {"text":"Pneumonia","indent":1},
+          {"text":"Asthma/COPD","indent":1},
+          {"text":"Pulmonary Edema","indent":1},
+          {"text":"CHF","indent":1},
+          "Presence of two or more of the following:",
+          {"text":"Respiratory rate > 25 breaths per minute","indent":1},
+          {"text":"Pulse oximetry < 90%","indent":1},
+          {"text":"Retractions or accessory muscle use are present","indent":1},
+          {"text":"Lung exam reveals wheezes, rales or diminished breath sounds","indent":1},
+          {"text":"Respiratory distress from any etiology.","indent":1},
+          {"text":"Altered LOC and signs of poor perfusion could indicate shock and should be managed appropriately.","bold":["Altered LOC and signs of poor perfusion could indicate shock and should be managed appropriately."],"red":true,"icon":"assets/legend-important.webp","iconAlt":"Important protocol instruction"}
+        ]},
+        {"type":"flow-stage","title":"Contraindications for CPAP","arrowAfter":true,"items":[
+          "Unable to follow commands",
+          "APNEA",
+          "Vomit or GI bleed",
+          "Major trauma",
+          "Signs and symptoms of a pneumothorax",
+          "Age < 12 years of age or mask doesn’t fit",
+          "Cardiac or respiratory arrest",
+          "Agonal respirations",
+          "Inability to maintain a patent airway",
+          "Hypotensive (systolic BP < 90 mmHg)",
+          "Major Trauma (especially with face, neck, chest and/or abdomen involvement)",
+          "Nausea/Vomiting",
+          "Inability to sit upright."
+        ]},
+        {"type":"flow-stage","title":"Preparation","arrowAfter":true,"items":[
+          "Prepare for application of O-Two CPAP device or AHP 300 Ventilator",
+          "Set pressure to 5 cmH₂O CPAP",
+          "Prepare the head strap",
+          "Attach system to O₂ supply",
+          "Ensure the availability of suction, airway and ventilation assist devices",
+          "Prepare to slowly increase and titrate pressure in 2.5 cmH₂O increments as clinically indicated."
+        ]},
+        {"type":"flow-stage","title":"Application of CPAP","items":[
+          "Apply the oxygen charged O-Two CPAP device or AHP 300 Ventilator system to the patient without securing the head strap.",
+          "Coach the patient to:",
+          {"text":"Hold the mask firmly to their own face.","indent":1},
+          {"text":"Inhale through the nose and exhale through the mouth.","indent":1},
+          {"text":"Continue to breathe evenly against the increasing pressure.","indent":1},
+          "Troubleshoot for leaks and adjust the mask to maintain a complete seal while applying the head strap.",
+          "Confirm the integrity of the circuit, mask seal, and oxygen delivery to the patient",
+          "Immediately re-assess the patient:",
+          {"text":"Pulmonary assessment including lung sounds, respiratory rate, and work of breathing.","indent":1},
+          {"text":"Cardiovascular assessment including blood pressure and heart rate.","indent":1},
+          "Consider the need to medicate for anxiety associated with CPAP.",
+          "Slowly and sequentially increase CPAP in 2.5 cmH₂O increments every 5–10 minutes as clinically indicated by the patient’s response to therapy. Max CPAP 15 cmH₂O.",
+          "Immediately re-assess the patient following each change in pressure.",
+          {"text":"Pulmonary assessment including lung sounds, respiratory rate and work of breathing.","indent":1},
+          {"text":"Cardiovascular assessment including blood pressure and heart rate.","indent":1},
+          "Titrate CPAP in 2.5 cmH₂O increments to relief of dyspnea while continuously assessing patient’s tolerance of CPAP. Max CPAP 15 cmH₂O.",
+          "If patient experiences increased anxiety and/or inability to maintain mask seal, consider ONE of the following:",
+          {"text":"Midazolam 1–5 mg IV/IO. Max Dose 5 mg","indent":1,"bold":["1–5 mg","Max Dose 5 mg"],"links":[{"text":"Midazolam","protocolId":"midazolam-versed"}]},
+          {"text":"OR","indent":1,"bold":["OR"]},
+          {"text":"Valium 2–10 mg IV/IO. Max Dose 10 mg.","indent":1,"bold":["2–10 mg","Max Dose 10 mg."],"links":[{"text":"Valium","protocolId":"diazepam"}]}
+        ]},
+        {"type":"flow-stage","title":"Critical Success Targets for CPAP","arrowAfter":true,"items":[
+          {"text":"Improvement in patient’s perceived work of breathing","bold":["Improvement in patient’s perceived work of breathing"],"red":true},
+          {"text":"Resolution of, or improvement in patient’s dyspnea","bold":["Resolution of, or improvement in patient’s dyspnea"],"red":true},
+          {"text":"Improved signs of perfusion","bold":["Improved signs of perfusion"],"red":true},
+          {"text":"SpO₂ ≥ 94%","bold":["SpO₂ ≥ 94%"],"red":true}
+        ]},
+        {"type":"table","className":"cpap-pressure-table","caption":"O-Two CPAP Mask","headers":["Flow","Pressure"],"rows":[["5 lpm","5 cmH₂O"],["10 lpm","10 cmH₂O"],["15 lpm","15 cmH₂O"]]},
+        {"type":"stop-control","title":"STOP","text":"Contact Medical Control for additional orders","image":"assets/legend-medical-control.webp","alt":"Stop and contact Medical Control for additional orders"},
+        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital signs","OPQRST/SAMPLE","Cardiac rhythm","CPAP settings","Treatment(s)","Improvements","Communication with Medical Control"]}
       ],
-      "plainText": "Continuous Positive Airway Pressure (CPAP)\nThis protocol applies to adult patients who are in respiratory distress and require positive\npressure to maintain their airway.\nIndications for CPAP\n•\nConsider CPAP for patients in either severe or moderate respiratory distress in the setting of the\nfollowing conditions:\no\nPneumonia\no\nAsthma/COPD\no\nPulmonary Edema\no\nCHF\n•\nPresence of two or more of the following:\no\nRespiratory rate > 25 breaths per minute\no\nPulse oximetry < 90%\no\nRetractions or accessory muscle use are present\no\nLung exam reveals wheezes, rales or diminished breath sounds\no\nRespiratory distress from any etiology.\nAltered LOC and signs of poor perfusion could indicate shock and should be managed\nappropriately.\nContraindications for CPAP\n•\nUnable to follow commands\n•\nAPNEA\n•\nVomit or GI bleed\n•\nMajor trauma\n•\nSigns and symptoms of a pneumothorax\n•\nAge < 12 years of age or mask doesn’t fit\n•\nCardiac or respiratory arrest\n•\nAgonal respirations\n•\nInability to maintain a patent airway\n•\nHypotensive (systolic BP < 90 mmHg)\n•\nMajor Trauma (especially with face, neck, chest and/or abdomen involvement)\n•\nNausea/Vomiting\n•\nInability to sit upright.\nPreparation\n•\nPrepare for application of O-Two CPAP device or AHP 300 Ventilator\n•\nSet pressure to 5 cmH2O CPAP\n•\nPrepare the head strap\n•\nAttach system to O2 supply\n•\nEnsure the availability of suction, airway and ventilation assist devices\n•\nPrepare to slowly increase and titrate pressure in 2.5 cmH2O increments as clinically indicated.\nO-Two CPAP Mask\n5 lpm\n5cmH2O\n10 lpm\n10cmH2O\n15 lpm\n15cm H2O\nContinuous Positive Airway Pressure (Continued)\nApplication of CPAP\n•\nApply the oxygen charged O-Two CPAP device or AHP 300 Ventilator system to the patient\nwithout securing the head strap.\n•\nCoach the patient to:\no\nHold the mask firmly to their own face.\no\nInhale through the nose and exhale through the mouth.\no\nContinue to breathe evenly against the increasing pressure.\n•\nTroubleshoot for leaks and adjust the mask to maintain a complete seal while applying the\nhead strap.\n•\nConfirm the integrity of the circuit, mask seal, and oxygen delivery to the patient\n•\nImmediately re-assess the patient:\no\nPulmonary assessment including lung sounds, respiratory rate, and work of breathing.\no\nCardiovascular assessment including blood pressure and heart rate.\n•\nConsider the need to medicate for anxiety associated with CPAP.\n•\nSlowly and sequentially increase CPAP in 2.5 cmH2O increments, every 5 – 10 minutes as\nclinically indicated by the patient’s response to therapy.  Max CPAP 15 cmH2O.\n•\nImmediately re-assess the patient following each change in pressure.\no\nPulmonary assessment including lung sounds, respiratory rate and work of breathing.\no\nCardiovascular assessment including blood pressure and heart rate.\n•\nTitrate CPAP in 2.5 cmH2O increments to relief of dyspnea while continuously assessing\npatient’s tolerance of CPAP.  Max CPAP 15 cmH2O.\n•\nIf patient experiences increased anxiety and/or inability to maintain mask seal, consider ONE\nof the following:\no\nMidazolam 1 – 5 mg IV/IO  Max Dose 5 mg\nOR\no\nValium 2 – 10 mg IV/IO  Max Dose 10 mg.\nCritical Success Targets for CPAP\n•\nImprovement in patient’s perceived work of breathing\n•\nResolution of, or improvement in patient’s dyspnea\n•\nImproved signs of perfusion\n•\nSpO2  > 94%\nContact Medical Control\nfor additional orders\nDocument:\n•\nVital signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nCPAP settings\n•\nTreatment(s)\n•\nImprovements\n•\nCommunication with\nMedical Control.",
-      "pageText": [
-        {
-          "page": 126,
-          "text": "Continuous Positive Airway Pressure (CPAP)\nThis protocol applies to adult patients who are in respiratory distress and require positive\npressure to maintain their airway.\nIndications for CPAP\n•\nConsider CPAP for patients in either severe or moderate respiratory distress in the setting of the\nfollowing conditions:\no\nPneumonia\no\nAsthma/COPD\no\nPulmonary Edema\no\nCHF\n•\nPresence of two or more of the following:\no\nRespiratory rate > 25 breaths per minute\no\nPulse oximetry < 90%\no\nRetractions or accessory muscle use are present\no\nLung exam reveals wheezes, rales or diminished breath sounds\no\nRespiratory distress from any etiology.\nAltered LOC and signs of poor perfusion could indicate shock and should be managed\nappropriately.\nContraindications for CPAP\n•\nUnable to follow commands\n•\nAPNEA\n•\nVomit or GI bleed\n•\nMajor trauma\n•\nSigns and symptoms of a pneumothorax\n•\nAge < 12 years of age or mask doesn’t fit\n•\nCardiac or respiratory arrest\n•\nAgonal respirations\n•\nInability to maintain a patent airway\n•\nHypotensive (systolic BP < 90 mmHg)\n•\nMajor Trauma (especially with face, neck, chest and/or abdomen involvement)\n•\nNausea/Vomiting\n•\nInability to sit upright.\nPreparation\n•\nPrepare for application of O-Two CPAP device or AHP 300 Ventilator\n•\nSet pressure to 5 cmH2O CPAP\n•\nPrepare the head strap\n•\nAttach system to O2 supply\n•\nEnsure the availability of suction, airway and ventilation assist devices\n•\nPrepare to slowly increase and titrate pressure in 2.5 cmH2O increments as clinically indicated."
-        },
-        {
-          "page": 127,
-          "text": "O-Two CPAP Mask\n5 lpm\n5cmH2O\n10 lpm\n10cmH2O\n15 lpm\n15cm H2O\nContinuous Positive Airway Pressure (Continued)\nApplication of CPAP\n•\nApply the oxygen charged O-Two CPAP device or AHP 300 Ventilator system to the patient\nwithout securing the head strap.\n•\nCoach the patient to:\no\nHold the mask firmly to their own face.\no\nInhale through the nose and exhale through the mouth.\no\nContinue to breathe evenly against the increasing pressure.\n•\nTroubleshoot for leaks and adjust the mask to maintain a complete seal while applying the\nhead strap.\n•\nConfirm the integrity of the circuit, mask seal, and oxygen delivery to the patient\n•\nImmediately re-assess the patient:\no\nPulmonary assessment including lung sounds, respiratory rate, and work of breathing.\no\nCardiovascular assessment including blood pressure and heart rate.\n•\nConsider the need to medicate for anxiety associated with CPAP.\n•\nSlowly and sequentially increase CPAP in 2.5 cmH2O increments, every 5 – 10 minutes as\nclinically indicated by the patient’s response to therapy.  Max CPAP 15 cmH2O.\n•\nImmediately re-assess the patient following each change in pressure.\no\nPulmonary assessment including lung sounds, respiratory rate and work of breathing.\no\nCardiovascular assessment including blood pressure and heart rate.\n•\nTitrate CPAP in 2.5 cmH2O increments to relief of dyspnea while continuously assessing\npatient’s tolerance of CPAP.  Max CPAP 15 cmH2O.\n•\nIf patient experiences increased anxiety and/or inability to maintain mask seal, consider ONE\nof the following:\no\nMidazolam 1 – 5 mg IV/IO  Max Dose 5 mg\nOR\no\nValium 2 – 10 mg IV/IO  Max Dose 10 mg.\nCritical Success Targets for CPAP\n•\nImprovement in patient’s perceived work of breathing\n•\nResolution of, or improvement in patient’s dyspnea\n•\nImproved signs of perfusion\n•\nSpO2  > 94%\nContact Medical Control\nfor additional orders\nDocument:\n•\nVital signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nCPAP settings\n•\nTreatment(s)\n•\nImprovements\n•\nCommunication with\nMedical Control."
-        }
-      ],
-      "needsReview": true,
-      "extractionNote": "Tables were converted from the PDF into in-page HTML table blocks. Review against the official PDF before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Continuous Positive Airway Pressure (CPAP). Adult indications, contraindications, preparation, application, titration, success targets, and documentation.",
+      "needsReview":false,
+      "displayMode":"structured"
+    },{
       "id": "sickle-cell-crisis",
       "title": "Sickle Cell Crisis",
       "type": "protocol",
