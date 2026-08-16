@@ -5337,43 +5337,63 @@
       ],
       "status": "active",
       "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": [],
       "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
         "pageStart": 81,
         "pageEnd": 82,
         "pageLabel": "81-82"
       },
-      "summary": "",
+      "summary": "Assessment and treatment of pediatric trauma patients with absent vital signs.",
       "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Pediatric Trauma Arrest"
-        },
-        {
-          "type": "paragraph",
-          "text": "This protocol applies to pediatric trauma patients with absent vital signs. Patients with injuries incompatible with life are covered under the Withholding or Termination of Resuscitation Protocol. First Impression (Pediatric Assessment Triangle) Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry. Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds. Circulation – observe skin color for pallor, mottling and/or cyanosis Primary Survey Massive hemorrhage Treat all life-threatening hemorrhage Tourniquets for massive extremity hemorrhage Wound packing for junctional hemorrhage Airway – ensure patency, manually stabilize C-Spine. Have suction equipment ready Consider spinal motion restriction if indicated. Respiratory/Breathing – give supplemental O2 if signs of compromise. Maintain SpO2 > 94%. Manage any injuries impairing ventilation. Chest wounds: Penetrating/Sucking chest wound, impaled objects, bruising Signs of pneumothorax Flail segments Assist with bag valve mask if respiratory effort is ineffective. Circulation – assess pulses and perfusion status Manage shock appropriately. See Shock Protocol. Head/Hypothermia Initial GCS/AVPU Pupils Prevent hypothermia Airway management, bleeding control and rapid transport are the most important interventions for victims of traumatic arrest. Minimize scene time to 10 minutes or less, (barring extrication time), and perform only critical interventions prior to transport. Secondary Assessment and Treatment Attempt to obtain OPQRST/SAMPLE history prior to transport. Begin transport as soon as possible. Minimize scene time 10 minutes or less if possible Continue protocol enroute. Move as rapidly and safely as possible toward an appropriate facility. Initiate cardiac monitoring Manage dysrhythmias per appropriate protocol. Initiate EtCO2 monitoring Advanced airway/ventilatory management as needed. Continue with compressions until return of adequate pulses. Establish IV/IO access using normal saline. Rapid infusion and monitor for the return of palpable pulses If pulse is restored, titrate the infusion rate to a Systolic blood pressure of 80-90 mmHg. Pediatric Trauma Arrest (Continued) Secondary Assessment and Treatment (Continued) If mechanism of injury, symptoms, and physical exam suggest a tension pneumothorax, consider needle decompression on the affected side or both sides if unsure. Contact Medical Control with patient status and treatment(s) as soon as possible. Document; Vital signs Mechanism of Injury ROSC/Vital sign changes if relevant Cardiac rhythms Treatment(s) Advanced airway procedures with EtCO2 Medications administered Available history Communications with Medical Control."
-        }
+        {"type":"heading","level":2,"text":"Pediatric Trauma Arrest"},
+        {"type":"paragraph","text":"This protocol applies to pediatric trauma patients with absent vital signs. Patients with injuries incompatible with life are covered under the Withholding or Termination of Resuscitation Protocol.","links":[{"text":"Withholding or Termination of Resuscitation Protocol","protocolId":"withholding-or-termination-of-resuscitation"}]},
+        {"type":"flow-stage","title":"First Impression (Pediatric Assessment Triangle)","arrowAfter":true,"links":[{"text":"Pediatric Assessment Triangle","protocolId":"pediatric-assessment-triangle"}],"items":[
+          "Appearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.",
+          "Breathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.",
+          "Circulation – observe skin color for pallor, mottling, and/or cyanosis."
+        ]},
+        {"type":"flow-stage","title":"Primary Survey","arrowAfter":true,"items":[
+          {"text":"Massive hemorrhage","bold":["Massive hemorrhage"]},
+          {"text":"Treat all life-threatening hemorrhage.","indent":1},
+          {"text":"Tourniquets for massive extremity hemorrhage.","indent":2},
+          {"text":"Wound packing for junctional hemorrhage.","indent":2},
+          {"text":"Airway – ensure patency, manually stabilize C-Spine.","bold":["Airway"]},
+          {"text":"Have suction equipment ready.","indent":1},
+          {"text":"Consider spinal motion restriction if indicated.","indent":1},
+          {"text":"Respiratory/Breathing – give supplemental O₂ if signs of compromise. Maintain SpO₂ ≥ 94%.","bold":["Respiratory/Breathing","Maintain SpO₂ ≥ 94%."]},
+          {"text":"Manage any injuries impairing ventilation.","indent":1},
+          {"text":"Chest wounds: Penetrating/Sucking chest wound, impaled objects, bruising.","indent":2},
+          {"text":"Signs of pneumothorax.","indent":2},
+          {"text":"Flail segments.","indent":2},
+          {"text":"Assist with bag valve mask if respiratory effort is ineffective.","indent":1},
+          {"text":"Circulation – assess pulses and perfusion status.","bold":["Circulation"]},
+          {"text":"Manage shock appropriately. See Shock Protocol.","indent":1,"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          {"text":"Head/Hypothermia","bold":["Head/Hypothermia"]},
+          {"text":"Initial GCS/AVPU.","indent":1},
+          {"text":"Pupils.","indent":1},
+          {"text":"Prevent hypothermia.","indent":1},
+          {"text":"Airway management, bleeding control and rapid transport are the most important interventions for victims of traumatic arrest. Minimize scene time to 10 minutes or less, barring extrication time, and perform only critical interventions prior to transport.","icon":"assets/legend-important.webp","iconAlt":"Important protocol information","bold":["Airway management, bleeding control and rapid transport are the most important interventions for victims of traumatic arrest. Minimize scene time to 10 minutes or less, barring extrication time, and perform only critical interventions prior to transport."],"red":["Airway management, bleeding control and rapid transport are the most important interventions for victims of traumatic arrest. Minimize scene time to 10 minutes or less, barring extrication time, and perform only critical interventions prior to transport."]}
+        ]},
+        {"type":"flow-stage","title":"Secondary Assessment and Treatment","items":[
+          "Attempt to obtain OPQRST/SAMPLE history prior to transport.",
+          {"text":"Begin transport as soon as possible. Minimize scene time 10 minutes or less if possible.","bold":["Minimize scene time 10 minutes or less"]},
+          "Continue protocol enroute.",
+          "Move as rapidly and safely as possible toward an appropriate facility.",
+          "Initiate cardiac monitoring.",
+          {"text":"Manage dysrhythmias per appropriate protocol.","indent":1},
+          "Initiate EtCO₂ monitoring.",
+          "Advanced airway/ventilatory management as needed.",
+          "Continue with compressions until return of adequate pulses.",
+          "Establish IV/IO access using normal saline.",
+          {"text":"Rapid infusion and monitor for the return of palpable pulses.","indent":1},
+          {"text":"If pulse is restored, titrate the infusion rate to a Systolic blood pressure of 80–90 mmHg.","indent":1},
+          "If mechanism of injury, symptoms, and physical exam suggest a tension pneumothorax, consider needle decompression on the affected side or both sides if unsure.",
+          "Contact Medical Control with patient status and treatment(s) as soon as possible."
+        ]},
+        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital Signs","Mechanisms of Injury","ROSC/Vital sign changes if relevant","Cardiac rhythms","Treatment(s)","Advanced airway procedures with EtCO₂","Medications administered","Available history","Communications with Medical Control"]}
       ],
-      "plainText": "Pediatric Trauma Arrest\nThis protocol applies to pediatric trauma patients with absent vital signs. Patients with injuries\nincompatible with life are covered under the Withholding or Termination of Resuscitation\nProtocol.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis\nPrimary Survey\n•\nMassive hemorrhage\no\nTreat all life-threatening hemorrhage\n▪\nTourniquets for massive extremity hemorrhage\n▪\nWound packing for junctional hemorrhage\n•\nAirway – ensure patency, manually stabilize C-Spine.\no\nHave suction equipment ready\no\nConsider spinal motion restriction if indicated.\n•\nRespiratory/Breathing – give supplemental O2 if signs of compromise. Maintain SpO2 > 94%.\no\nManage any injuries impairing ventilation.\n▪\nChest wounds: Penetrating/Sucking chest wound, impaled objects, bruising\n▪\nSigns of pneumothorax\n▪\nFlail segments\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nCirculation – assess pulses and perfusion status\no\nManage shock appropriately. See Shock Protocol.\n•\nHead/Hypothermia\no\nInitial GCS/AVPU\no\nPupils\no\nPrevent hypothermia\nAirway management, bleeding control and rapid transport are the most important\ninterventions for victims of traumatic arrest. Minimize scene time to 10 minutes or less,\n(barring extrication time), and perform only critical interventions prior to transport.\nSecondary Assessment and Treatment\n•\nAttempt to obtain OPQRST/SAMPLE history prior to transport.\n•\nBegin transport as soon as possible.  Minimize scene time 10 minutes or less if possible\n•\nContinue protocol enroute.\n•\nMove as rapidly and safely as possible toward an appropriate facility.\n•\nInitiate cardiac monitoring\no\nManage dysrhythmias per appropriate protocol.\n•\nInitiate EtCO2 monitoring\n•\nAdvanced airway/ventilatory management as needed.\n•\nContinue with compressions until return of adequate pulses.\n•\nEstablish IV/IO access using normal saline.\no\nRapid infusion and monitor for the return of palpable pulses\nIf pulse is restored, titrate the infusion rate to a Systolic blood pressure of 80-90 mmHg.\nPediatric Trauma Arrest (Continued)\nSecondary Assessment and Treatment (Continued)\n•\nIf mechanism of injury, symptoms, and physical exam suggest a tension pneumothorax,\nconsider needle decompression on the affected side or both sides if unsure.\n•\nContact Medical Control with patient status and treatment(s) as soon as possible.\nDocument;\n•\nVital signs\n•\nMechanism of Injury\n•\nROSC/Vital sign changes\nif relevant\n•\nCardiac rhythms\n•\nTreatment(s)\n•\nAdvanced airway\nprocedures with EtCO2\n•\nMedications administered\n•\nAvailable history\n•\nCommunications with\nMedical Control.",
-      "pageText": [
-        {
-          "page": 81,
-          "text": "Pediatric Trauma Arrest\nThis protocol applies to pediatric trauma patients with absent vital signs. Patients with injuries\nincompatible with life are covered under the Withholding or Termination of Resuscitation\nProtocol.\nFirst Impression (Pediatric Assessment Triangle)\n•\nAppearance – observe muscle tone, interactivity, consolability, look/gaze, and speech/cry.\n•\nBreathing – observe chest wall movement, accessory muscle use, abnormal airway sounds.\n•\nCirculation – observe skin color for pallor, mottling and/or cyanosis\nPrimary Survey\n•\nMassive hemorrhage\no\nTreat all life-threatening hemorrhage\n▪\nTourniquets for massive extremity hemorrhage\n▪\nWound packing for junctional hemorrhage\n•\nAirway – ensure patency, manually stabilize C-Spine.\no\nHave suction equipment ready\no\nConsider spinal motion restriction if indicated.\n•\nRespiratory/Breathing – give supplemental O2 if signs of compromise. Maintain SpO2 > 94%.\no\nManage any injuries impairing ventilation.\n▪\nChest wounds: Penetrating/Sucking chest wound, impaled objects, bruising\n▪\nSigns of pneumothorax\n▪\nFlail segments\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nCirculation – assess pulses and perfusion status\no\nManage shock appropriately. See Shock Protocol.\n•\nHead/Hypothermia\no\nInitial GCS/AVPU\no\nPupils\no\nPrevent hypothermia\nAirway management, bleeding control and rapid transport are the most important\ninterventions for victims of traumatic arrest. Minimize scene time to 10 minutes or less,\n(barring extrication time), and perform only critical interventions prior to transport.\nSecondary Assessment and Treatment\n•\nAttempt to obtain OPQRST/SAMPLE history prior to transport.\n•\nBegin transport as soon as possible.  Minimize scene time 10 minutes or less if possible\n•\nContinue protocol enroute.\n•\nMove as rapidly and safely as possible toward an appropriate facility.\n•\nInitiate cardiac monitoring\no\nManage dysrhythmias per appropriate protocol.\n•\nInitiate EtCO2 monitoring\n•\nAdvanced airway/ventilatory management as needed.\n•\nContinue with compressions until return of adequate pulses.\n•\nEstablish IV/IO access using normal saline.\no\nRapid infusion and monitor for the return of palpable pulses\nIf pulse is restored, titrate the infusion rate to a Systolic blood pressure of 80-90 mmHg."
-        },
-        {
-          "page": 82,
-          "text": "Pediatric Trauma Arrest (Continued)\nSecondary Assessment and Treatment (Continued)\n•\nIf mechanism of injury, symptoms, and physical exam suggest a tension pneumothorax,\nconsider needle decompression on the affected side or both sides if unsure.\n•\nContact Medical Control with patient status and treatment(s) as soon as possible.\nDocument;\n•\nVital signs\n•\nMechanism of Injury\n•\nROSC/Vital sign changes\nif relevant\n•\nCardiac rhythms\n•\nTreatment(s)\n•\nAdvanced airway\nprocedures with EtCO2\n•\nMedications administered\n•\nAvailable history\n•\nCommunications with\nMedical Control."
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Pediatric Trauma Arrest. Primary survey, rapid transport priorities, secondary treatment, tension pneumothorax consideration, and documentation.",
+      "needsReview":false
+    },    {
       "id": "burns",
       "title": "Burns",
       "type": "protocol",
