@@ -6082,64 +6082,50 @@
       "id": "post-resuscitation",
       "title": "Post Resuscitation",
       "type": "protocol",
-      "categoryPath": [
-        "Adult Clinical Protocols",
-        "Adult Cardiac Emergencies"
-      ],
+      "categoryPath": ["Adult Clinical Protocols","Adult Cardiac Emergencies"],
       "status": "active",
       "effectiveDate": "2026-06-08",
-      "lastRevised": "",
-      "version": "2026",
-      "tags": [],
-      "source": {
-        "pdf": "documents/ems/2026-hcems-protocols.pdf",
-        "pageStart": 102,
-        "pageEnd": 102,
-        "pageLabel": "102"
-      },
-      "summary": "",
+      "source": {"pageStart":102,"pageEnd":102,"pageLabel":"102"},
+      "summary": "Assessment and treatment of adult patients with return of spontaneous circulation after cardiac arrest.",
       "content": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Post Resuscitation"
-        },
-        {
-          "type": "paragraph",
-          "text": "This protocol applies to adult patients with history of cardiac arrest and return of spontaneous circulation (ROSC). Primary Survey Assess level of consciousness – AVPU. Ensure airway – ensure patency and positioning. Consider spinal motion restriction if indicated. Assess breathing – Give supplemental O2 if signs of compromise. Maintain SpO2 > 94%. Assist with bag valve mask if respiratory effort is ineffective. DO NOT hyperventilate. Assess circulation – control bleeding and manage shock appropriately. See Shock Protocol"
-        },
-        {
-          "type": "list",
-          "items": [
-            "Check distal pulses, capillary refill time, skin color and temp."
-          ]
-        },
-        {
-          "type": "paragraph",
-          "text": "Take measures to prevent hypothermia. Secondary Assessment and Treatment Monitor vital signs and O2 saturation. Perform blood glucose analysis. Treat if BGL is < 60 mg/dl. Cardiac monitor – record and evaluate 12 Lead ECG. DO NOT delay treatments/therapy for 12-Lead acquisition. Consider EtCO2 monitoring – Ideally > 20 mmHg. Physical Exam and OPQRST/SAMPLE history. Initiate IV/IO of normal saline If fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol. Titrate fluid resuscitation to a systolic blood pressure of > 90 mmHg. Second IV line can be established, if time permits. If systolic blood pressure is < 90 mmHg, despite fluid administration, consider one of the following: Epinephrine 2 – 10 mg/min. IV Infusion OR Levophed 1 – 10 mcg/min. IV Infusion See Levophed Dosing Chart. Dopamine 2 – 20 mcg/kg/min IV Infusion. See Dopamine Infusion Chart. The condition of post-resuscitation patients fluctuates rapidly and continuously. They require continuous close monitoring. Treat any presenting non-perfusing dysrhythmias in accordance with the appropriate protocol. Treat any perfusing dysrhythmias in accordance with the appropriate protocol."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vital Signs Time of ROSC Onset/duration of event Treatment(s) Communication with Medical Control."
-        }
+        {"type":"heading","level":2,"text":"Post Resuscitation"},
+        {"type":"paragraph","text":"This protocol applies to adult patients with history of cardiac arrest and return of spontaneous circulation (ROSC)."},
+        {"type":"flow-stage","title":"Primary Survey","arrowAfter":true,"items":[
+          "Assess level of consciousness – AVPU.",
+          {"text":"Ensure airway – ensure patency and positioning.","bold":["Ensure airway"]},
+          {"text":"Consider spinal motion restriction if indicated.","indent":1},
+          {"text":"Assess breathing – give supplemental O₂ if signs of compromise. Maintain SpO₂ ≥ 94%.","bold":["Assess breathing","Maintain SpO₂ ≥ 94%."]},
+          {"text":"Assist with bag valve mask if respiratory effort is ineffective.","indent":1},
+          {"text":"DO NOT hyperventilate.","indent":1,"bold":["DO NOT hyperventilate."]},
+          {"text":"Assess circulation – control bleeding and manage shock appropriately. See Shock Protocol.","bold":["Assess circulation"],"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          {"text":"Check distal pulses, capillary refill time, skin color and temp.","indent":1},
+          {"text":"Take measures to prevent hypothermia.","indent":1}
+        ]},
+        {"type":"flow-stage","title":"Secondary Assessment and Treatment","items":[
+          "Monitor vital signs and O₂ saturation.",
+          {"text":"Perform blood glucose analysis – treat if BGL is < 60 mg/dl.","bold":["BGL is < 60 mg/dl."]},
+          "Cardiac monitor – record and evaluate 12 Lead ECG.",
+          {"text":"DO NOT delay treatments/therapy for 12-Lead acquisition.","indent":1,"bold":["DO NOT delay treatments/therapy for 12-Lead acquisition."]},
+          "Consider EtCO₂ monitoring – ideally > 20 mmHg.",
+          "Physical exam and OPQRST/SAMPLE history.",
+          "Initiate IV/IO of normal saline.",
+          {"text":"If fluid resuscitation is needed, administer 20 ml/kg fluid bolus. See Shock Protocol.","indent":1,"bold":["20 ml/kg fluid bolus."],"links":[{"text":"Shock Protocol","protocolId":"shock-management"}]},
+          {"text":"Titrate fluid resuscitation to a systolic blood pressure of ≥ 90 mmHg.","indent":1},
+          {"text":"Second IV line can be established, if time permits.","indent":1},
+          "If systolic blood pressure is < 90 mmHg, despite fluid administration, consider one of the following:",
+          {"text":"Epinephrine 2–10 mcg/min. IV Infusion.","indent":1,"bold":["2–10 mcg/min."],"links":[{"text":"Epinephrine","protocolId":"epinephrine-1-1000-and-1-10-000"}]},
+          {"text":"OR","indent":1,"bold":["OR"]},
+          {"text":"Levophed 1–10 mcg/min. IV Infusion. See Levophed Dosing Chart.","indent":1,"bold":["1–10 mcg/min."],"links":[{"text":"Levophed","protocolId":"levophed-norepinephrine"},{"text":"Levophed Dosing Chart","protocolId":"levophed-dosage-chart"}]},
+          {"text":"Dopamine 2–20 mcg/kg/min. IV Infusion. See Dopamine Infusion Chart.","indent":1,"bold":["2–20 mcg/kg/min."],"links":[{"text":"Dopamine","protocolId":"dopamine"},{"text":"Dopamine Infusion Chart","protocolId":"dopamine"}]},
+          {"text":"The condition of post-resuscitation patients fluctuates rapidly and continuously. They require continuous close monitoring.","icon":"assets/legend-important.webp","iconAlt":"Important protocol information","bold":["The condition of post-resuscitation patients fluctuates rapidly and continuously. They require continuous close monitoring."],"red":["The condition of post-resuscitation patients fluctuates rapidly and continuously. They require continuous close monitoring."]},
+          {"text":"Treat any presenting non-perfusing dysrhythmias in accordance with the appropriate protocol.","icon":"assets/legend-important.webp","iconAlt":"Important protocol information","bold":["Treat any presenting non-perfusing dysrhythmias in accordance with the appropriate protocol."],"red":["Treat any presenting non-perfusing dysrhythmias in accordance with the appropriate protocol."]},
+          {"text":"Treat any perfusing dysrhythmias in accordance with the appropriate protocol.","icon":"assets/legend-important.webp","iconAlt":"Important protocol information","bold":["Treat any perfusing dysrhythmias in accordance with the appropriate protocol."],"red":["Treat any perfusing dysrhythmias in accordance with the appropriate protocol."]}
+        ]},
+        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital Signs","Time of ROSC","Onset/duration of event","Treatment(s)","Communication with Medical Control"]}
       ],
-      "plainText": "Post Resuscitation\nThis protocol applies to adult patients with history of cardiac arrest and return of spontaneous\ncirculation (ROSC).\nPrimary Survey\n•\nAssess level of consciousness – AVPU.\n•\nEnsure airway – ensure patency and positioning.\no\nConsider spinal motion restriction if indicated.\n•\nAssess breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nAssist with bag valve mask if respiratory effort is ineffective.\no\nDO NOT hyperventilate.\n•\nAssess circulation – control bleeding and manage shock appropriately. See Shock Protocol\no Check distal pulses, capillary refill time, skin color and temp.\no\nTake measures to prevent hypothermia.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation.\n•\nPerform blood glucose analysis.  Treat if BGL is < 60 mg/dl.\n•\nCardiac monitor – record and evaluate 12 Lead ECG.\no\nDO NOT delay treatments/therapy for 12-Lead acquisition.\n•\nConsider EtCO2 monitoring – Ideally > 20 mmHg.\n•\nPhysical Exam and OPQRST/SAMPLE history.\n•\nInitiate IV/IO of normal saline\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus.  See Shock Protocol.\no\nTitrate fluid resuscitation  to a systolic blood pressure of  > 90 mmHg.\no\nSecond IV line can be established, if time permits.\n•\nIf systolic blood pressure is  < 90 mmHg, despite fluid administration, consider one of the following:\no\nEpinephrine   2 – 10 mg/min.  IV Infusion\nOR\no\nLevophed 1 – 10 mcg/min.  IV Infusion  See Levophed Dosing Chart.\no\nDopamine 2 – 20 mcg/kg/min  IV Infusion.  See Dopamine Infusion Chart.\nThe condition of post-resuscitation patients fluctuates rapidly and continuously. They\nrequire continuous close monitoring.\nTreat any presenting non-perfusing dysrhythmias in accordance with the appropriate\nprotocol.\nTreat any perfusing dysrhythmias in accordance with the appropriate protocol.\nDocument:\n•\nVital Signs\n•\nTime of ROSC\n•\nOnset/duration of event\n•\nTreatment(s)\n•\nCommunication with\nMedical Control.",
-      "pageText": [
-        {
-          "page": 102,
-          "text": "Post Resuscitation\nThis protocol applies to adult patients with history of cardiac arrest and return of spontaneous\ncirculation (ROSC).\nPrimary Survey\n•\nAssess level of consciousness – AVPU.\n•\nEnsure airway – ensure patency and positioning.\no\nConsider spinal motion restriction if indicated.\n•\nAssess breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nAssist with bag valve mask if respiratory effort is ineffective.\no\nDO NOT hyperventilate.\n•\nAssess circulation – control bleeding and manage shock appropriately. See Shock Protocol\no Check distal pulses, capillary refill time, skin color and temp.\no\nTake measures to prevent hypothermia.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation.\n•\nPerform blood glucose analysis.  Treat if BGL is < 60 mg/dl.\n•\nCardiac monitor – record and evaluate 12 Lead ECG.\no\nDO NOT delay treatments/therapy for 12-Lead acquisition.\n•\nConsider EtCO2 monitoring – Ideally > 20 mmHg.\n•\nPhysical Exam and OPQRST/SAMPLE history.\n•\nInitiate IV/IO of normal saline\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus.  See Shock Protocol.\no\nTitrate fluid resuscitation  to a systolic blood pressure of  > 90 mmHg.\no\nSecond IV line can be established, if time permits.\n•\nIf systolic blood pressure is  < 90 mmHg, despite fluid administration, consider one of the following:\no\nEpinephrine   2 – 10 mg/min.  IV Infusion\nOR\no\nLevophed 1 – 10 mcg/min.  IV Infusion  See Levophed Dosing Chart.\no\nDopamine 2 – 20 mcg/kg/min  IV Infusion.  See Dopamine Infusion Chart.\nThe condition of post-resuscitation patients fluctuates rapidly and continuously. They\nrequire continuous close monitoring.\nTreat any presenting non-perfusing dysrhythmias in accordance with the appropriate\nprotocol.\nTreat any perfusing dysrhythmias in accordance with the appropriate protocol.\nDocument:\n•\nVital Signs\n•\nTime of ROSC\n•\nOnset/duration of event\n•\nTreatment(s)\n•\nCommunication with\nMedical Control."
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
-    },
-    {
+      "plainText":"Post Resuscitation. Primary and secondary assessment after ROSC, blood-pressure support, continuous monitoring, and documentation.",
+      "needsReview":false
+    },    {
       "id": "left-ventricular-assist-device-lvad",
       "title": "Left Ventricular Assist Device (LVAD)",
       "type": "protocol",
