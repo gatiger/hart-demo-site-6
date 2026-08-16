@@ -6132,7 +6132,7 @@
       "categoryPath": ["Adult Clinical Protocols","Adult Cardiac Emergencies"],
       "status": "active",
       "effectiveDate": "2026-06-08",
-      "source": {"pageStart":103,"pageEnd":103,"pageLabel":"103"},
+      "source": {"pageStart":103,"pageEnd":105,"pageLabel":"103-105"},
       "summary": "Assessment and treatment of adult patients with an implanted left ventricular assist device.",
       "content": [
         {"type":"heading","level":2,"text":"Left Ventricular Assist Device (LVAD)"},
@@ -6171,7 +6171,41 @@
           {"text":"If signs and symptoms of acute CHF, withhold fluid bolus. See CHF in the Respiratory Distress Protocol.","links":[{"text":"Respiratory Distress Protocol","protocolId":"respiratory-distress"}]},
           "Transport to the appropriate facility."
         ]},
-        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital Signs","Pertinent assessment findings","Onset/duration of event","Treatment(s)","Communication with Medical Control"]}
+        {"type":"heading","level":2,"text":"Treating Patients with Left Ventricular Assist Device (LVAD)"},
+        {"type":"flow-stage","title":"24/7 UR Medicine Advanced Heart Failure Team","items":["1-800-892-4964","585-273-3760"]},
+        {"type":"flow-stage","title":"UR Medicine Transfer Center","items":["1-800-499-9298","585-275-4999"]},
+        {"type":"paragraph","text":"A Left Ventricular Assist Device (LVAD) is an internal heart pump used to treat heart failure. The pump provides continuous blood flow from the left ventricle to the aorta. It requires an external controller and batteries."},
+        {"type":"flow-stage","title":"When caring for a person with an LVAD, follow these steps:","items":[
+          "Listen for a humming sound where the heart is.",
+          "Find the percutaneous lead (the driveline exiting the abdomen and connected to the controller).",
+          "Verify controller is connected to adequate power.",
+          "Identify and treat life-threatening events as you would with any other patient.",
+          {"text":"Reversal of INR is reserved for life-threatening injuries and should be discussed with the attending cardiac surgeon.","bold":["Reversal of INR is reserved for life-threatening injuries"]},
+          "Cardioversion/defibrillation can be performed on an LVAD patient."
+        ]},
+        {"type":"lvad-device-grid","title":"Types of Continuous Flow Left Ventricular Assist Devices","devices":[
+          {"name":"HeartMate II™","deviceType":"Axial Flow Pump","image":"assets/lvad-heartmate-ii.jpg","alt":"HeartMate II continuous-flow left ventricular assist device with controller and batteries","specs":[{"label":"Speed:","value":"8000–10000 rpm"},{"label":"Flow:","value":"4–6 lpm"},{"label":"Power:","value":"4–6 watts"},{"label":"Pulsatility Index:","value":"4–7"},{"label":"MAP:","value":"70–90 mm Hg"},{"label":"Medication:","value":"Warfarin/Aspirin"},{"label":"Batteries:","value":"10–12 hours"},{"label":"Controller:","value":"Emergency battery"}]},
+          {"name":"HeartWare HVAD™","deviceType":"Centrifugal Flow Pump","image":"assets/lvad-heartware-hvad.jpg","alt":"HeartWare HVAD continuous-flow left ventricular assist device worn with controller and batteries","specs":[{"label":"Speed:","value":"2400–3200 rpm"},{"label":"Flow:","value":"4–6 lpm"},{"label":"Power:","value":"3–5 watts"},{"label":"Pulsatility Index:","value":"Not applicable"},{"label":"MAP:","value":"70–90 mm Hg"},{"label":"Medication:","value":"Warfarin/Aspirin"},{"label":"Batteries:","value":"8–12 hours"},{"label":"Controller:","value":"No emergency battery"}]},
+          {"name":"HeartMate 3™","deviceType":"Centrifugal Flow Pump","image":"assets/lvad-heartmate-3.jpg","alt":"HeartMate 3 continuous-flow left ventricular assist device with controller and batteries","specs":[{"label":"Speed:","value":"4800–6500 rpm"},{"label":"Flow:","value":"4–6 lpm"},{"label":"Power:","value":"3–5 watts"},{"label":"Pulsatility Index:","value":"2–6"},{"label":"MAP:","value":"70–90 mm Hg"},{"label":"Medication:","value":"Warfarin/Aspirin"},{"label":"Batteries:","value":"15 hours"},{"label":"Controller:","value":"Emergency battery"}]}
+        ]},
+        {"type":"flow-stage","title":"Understanding LVAD Vital Signs","items":[
+          "The patient may have a weak or absent radial pulse.",
+          "Assess adequate perfusion based on mentation, skin color and capillary refill.",
+          "Measure blood pressure by Doppler if the patient does not have a palpable radial pulse.",
+          {"text":"Find arterial flow with Doppler.","indent":1},
+          {"text":"Increase cuff pressure until signal goes away.","indent":1},
+          {"text":"Decrease pressure until signal returns.","indent":1},
+          {"text":"Opening sound is considered the MAP.","indent":1},
+          {"text":"Goal MAP < 90 mm Hg.","indent":1,"bold":["Goal MAP < 90 mm Hg."]},
+          "May utilize manual cuff and calculate a MAP if patient has a palpable radial pulse."
+        ]},
+        {"type":"lvad-device-grid","title":"LVAD Monitor Comparison","devices":[
+          {"name":"Patient without LVAD","deviceType":"MAP 84, pulse pressure 67","image":"assets/lvad-monitor-without-lvad.png","alt":"Bedside monitor example for a patient without an LVAD showing MAP 84 and pulse pressure 67","specs":[]},
+          {"name":"Patient with LVAD","deviceType":"MAP 83, pulse pressure 12","image":"assets/lvad-monitor-with-lvad.png","alt":"Bedside monitor example for a patient with an LVAD showing MAP 83 and pulse pressure 12","specs":[]}
+        ]},
+        {"type":"lvad-unresponsive-flow","title":"Assessment of the Unresponsive LVAD Patient"},
+        {"type":"external-link","text":"UR Medicine VAD Program Educational Resources","url":"https://www.urmc.rochester.edu/MediaLibraries/URMCMedia/cardiology/patient-care/documents/LVAD_TREATING_2.pdf"},
+        {"type":"paragraph","text":"For questions, email UR Medicine VAD Educator Lisa Fowler at lisa_chemotti@urmc.rochester.edu."},        {"type":"documentation-card","title":"Document:","image":"assets/legend-documentation.webp","alt":"Patient care documentation reminder symbol","items":["Vital Signs","Pertinent assessment findings","Onset/duration of event","Treatment(s)","Communication with Medical Control"]}
       ],
       "plainText":"Left Ventricular Assist Device. Primary and secondary assessment, device-specific management, emergency contact guidance, transport, and documentation.",
       "needsReview":false

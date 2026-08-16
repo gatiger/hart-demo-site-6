@@ -1,4 +1,4 @@
-const CACHE_NAME = 'hcems-protocols-v97';
+const CACHE_NAME = 'hcems-protocols-v98';
 const APP_SHELL = [
   './',
   './index.html',
@@ -10,6 +10,11 @@ const APP_SHELL = [
   './assets/legend-important.webp',
   './assets/legend-medical-control.webp',
   './assets/pediatric-pain-rating-scale.png',
+  './assets/lvad-heartmate-ii.jpg',
+  './assets/lvad-heartware-hvad.jpg',
+  './assets/lvad-heartmate-3.jpg',
+  './assets/lvad-monitor-without-lvad.png',
+  './assets/lvad-monitor-with-lvad.png',
   './page-images/page-211.jpg',
   './content/ems_protocols_content.json',
 ];

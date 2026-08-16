@@ -707,3 +707,40 @@ details[open] > .tree-heading.tree-toggle::before {
 .table-footnote-red { color: #c31515; font-weight: 800; }
 
 .protocol-highlight-flow-item { padding: .35rem .5rem; background: #fff200; color: #c31515; font-weight: 900; }
+
+/* Native UR Medicine LVAD reference material */
+.lvad-contact-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; }
+.lvad-device-section { margin: 1.5rem 0; }
+.lvad-device-section > h3, .lvad-unresponsive-flow > h3 { padding: .7rem 1rem; background: #12658a; color: #fff; text-align: center; text-transform: uppercase; letter-spacing: .035em; }
+.lvad-device-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1rem; }
+.lvad-device-card { overflow: hidden; border: 1px solid #b9c9d6; border-radius: .8rem; background: #fff; box-shadow: 0 5px 18px rgba(18,52,77,.08); }
+.lvad-device-card > img { display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; background: #111; }
+.lvad-device-card h4 { margin: .8rem 1rem .1rem; color: #b34e1e; font-size: 1.1rem; }
+.lvad-device-type { margin: 0 1rem .75rem; font-weight: 800; }
+.lvad-device-card dl { display: grid; grid-template-columns: auto 1fr; gap: .25rem .4rem; margin: 0; padding: 0 1rem 1rem; font-size: .9rem; }
+.lvad-device-card dt { font-weight: 800; }
+.lvad-device-card dd { margin: 0; }
+.lvad-monitor-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; margin: 1rem 0 1.5rem; }
+.lvad-monitor-grid .protocol-reference-image { margin: 0; border: 1px solid #b9c9d6; border-radius: .7rem; }
+.lvad-unresponsive-flow { margin: 1.5rem 0; padding: 0 1rem 1.25rem; border: 1px solid #b9c9d6; border-radius: .8rem; background: #f8fbfd; }
+.lvad-flow-start,.lvad-flow-question,.lvad-flow-box,.lvad-flow-action,.lvad-flow-outcome,.lvad-flow-call { width: min(32rem,100%); margin-inline: auto; padding: .75rem 1rem; border: 2px solid #4b8aa4; border-radius: .4rem; background: #fff; text-align: center; }
+.lvad-flow-start { width: min(18rem,100%); border-color: #b56342; font-weight: 900; text-transform: uppercase; }
+.lvad-flow-question { width: min(15rem,100%); border-radius: 50%; font-weight: 900; }
+.lvad-flow-box ul { margin: .4rem 0 0; text-align: left; }
+.lvad-flow-arrow { width: 8px; height: 2rem; margin: 0 auto; background: #173a5e; position: relative; }
+.lvad-flow-arrow::after { content:""; position:absolute; left:50%; bottom:-.1rem; transform:translateX(-50%); border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #173a5e; }
+.lvad-flow-branches { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 2rem; position: relative; margin: 2.5rem 0 1.5rem; }
+.lvad-flow-branches::before { content:""; position:absolute; left:25%; right:25%; top:-1.5rem; border-top:6px solid #173a5e; }
+.lvad-flow-branch { position: relative; }
+.lvad-flow-branch::before { content:""; position:absolute; left:50%; top:-1.5rem; height:1.5rem; border-left:6px solid #173a5e; }
+.lvad-flow-branch > span,.lvad-vad-paths span { display:block; color:#2c7555; font-weight:900; text-align:center; }
+.lvad-flow-no > span,.lvad-vad-paths > div:last-child > span { color:#a63b32; }
+.lvad-flow-branch .lvad-flow-question { margin-top: 1rem; }
+.lvad-vad-paths { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; margin-top:1rem; }
+.lvad-flow-action { border-color:#d2a62e; font-weight:900; }
+.lvad-restart-labels { display:flex; justify-content:space-around; margin-top:.5rem; }
+.lvad-flow-outcome { border-color:#478f60; background:#edf8f0; font-weight:900; }
+.lvad-flow-call { width:min(18rem,100%); border-color:#b56342; font-weight:900; }
+@media (max-width:760px){.lvad-device-grid{grid-template-columns:1fr}.lvad-device-card{display:grid;grid-template-columns:9rem 1fr}.lvad-device-card>img{grid-row:1/4;height:100%}.lvad-device-card dl{grid-column:2}.lvad-contact-grid,.lvad-monitor-grid,.lvad-flow-branches{grid-template-columns:1fr}.lvad-flow-branches::before,.lvad-flow-branch::before{display:none}.lvad-flow-branch{margin-top:1rem}}
+@media (max-width:480px){.lvad-device-card{display:block}.lvad-device-card>img{aspect-ratio:4/3}.lvad-vad-paths{grid-template-columns:1fr}}
+.lvad-monitor-section .lvad-device-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }

@@ -833,7 +833,77 @@ function renderTwoWayDecision(block, container) {
   }
   container.appendChild(flow);
 }
+function renderLvadDeviceGrid(block, container) {
+  const section = document.createElement('section');
+  section.className = 'lvad-device-section' + (block.title === 'LVAD Monitor Comparison' ? ' lvad-monitor-section' : '');
+  const heading = document.createElement('h3');
+  heading.textContent = block.title || '';
+  section.appendChild(heading);
+  const grid = document.createElement('div');
+  grid.className = 'lvad-device-grid';
+  for (const device of block.devices || []) {
+    const card = document.createElement('article');
+    card.className = 'lvad-device-card';
+    const image = document.createElement('img');
+    image.src = device.image || '';
+    image.alt = device.alt || '';
+    image.loading = 'lazy';
+    card.appendChild(image);
+    const title = document.createElement('h4');
+    title.textContent = device.name || '';
+    card.appendChild(title);
+    const subtitle = document.createElement('p');
+    subtitle.className = 'lvad-device-type';
+    subtitle.textContent = device.deviceType || '';
+    card.appendChild(subtitle);
+    const list = document.createElement('dl');
+    for (const spec of device.specs || []) {
+      const term = document.createElement('dt');
+      term.textContent = spec.label || '';
+      const value = document.createElement('dd');
+      value.textContent = spec.value || '';
+      list.append(term, value);
+    }
+    card.appendChild(list);
+    grid.appendChild(card);
+  }
+  section.appendChild(grid);
+  container.appendChild(section);
+}
+
+function renderLvadUnresponsiveFlow(block, container) {
+  const flow = document.createElement('section');
+  flow.className = 'lvad-unresponsive-flow';
+  const heading = document.createElement('h3');
+  heading.textContent = block.title || 'Assessment of the Unresponsive LVAD Patient';
+  flow.appendChild(heading);
+  const diagram = document.createElement('div');
+  diagram.innerHTML = `
+    <div class="lvad-flow-start">Unresponsive LVAD Patient</div>
+    <div class="lvad-flow-arrow" aria-hidden="true"></div>
+    <div class="lvad-flow-box">Assess ventilation and perfusion:<ul><li>Normal skin color?</li><li>Normal capillary refill?</li></ul></div>
+    <div class="lvad-flow-arrow" aria-hidden="true"></div>
+    <div class="lvad-flow-question">Adequate perfusion?</div>
+    <div class="lvad-flow-branches">
+      <div class="lvad-flow-branch lvad-flow-yes"><span>YES</span><div class="lvad-flow-box">Assess and treat non-LVAD causes for altered mental status such as:<ul><li>Hypoxia</li><li>Stroke</li><li>Overdose</li><li>Blood glucose</li></ul></div></div>
+      <div class="lvad-flow-branch lvad-flow-no"><span>NO</span><div class="lvad-flow-box">Assess VAD:<ul><li>Connections ok?</li><li>Adequate power?</li><li>Auscultate apex for VAD hum</li></ul></div><div class="lvad-flow-question">VAD hum?</div><div class="lvad-vad-paths"><div><span>YES</span><div class="lvad-flow-action">Perform external chest compressions</div></div><div><span>NO</span><div class="lvad-flow-box">Attempt to restart LVAD<br>Change controller</div><div class="lvad-flow-question">VAD restarted?</div><div class="lvad-restart-labels"><span>NO</span><span>YES</span></div></div></div></div>
+    </div>
+    <div class="lvad-flow-outcome">Follow ACLS protocols</div>
+    <div class="lvad-flow-arrow" aria-hidden="true"></div>
+    <div class="lvad-flow-call">Call VAD Center</div>`;
+  flow.appendChild(diagram);
+  container.appendChild(flow);
+}
 function renderBlock(block, container) {
+  if (block.type === 'lvad-device-grid') {
+    renderLvadDeviceGrid(block, container);
+    return;
+  }
+
+  if (block.type === 'lvad-unresponsive-flow') {
+    renderLvadUnresponsiveFlow(block, container);
+    return;
+  }
   if (block.type === 'two-way-decision') {
     renderTwoWayDecision(block, container);
     return;
