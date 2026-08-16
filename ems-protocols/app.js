@@ -891,9 +891,9 @@ function renderLvadUnresponsiveFlow(block, container) {
         <path d="M645 430 H590"/><path d="M760 465 V490"/>
         <path d="M775 580 V605"/>
         <path d="M655 640 H620 V530 H590"/>
-        <path d="M760 675 V735 H340"/>
-        <path d="M475 620 V735 H340"/>
-        <path d="M185 365 V735 H340"/>
+        <path d="M760 675 V762 H340"/>
+        <path d="M475 620 V762 H340"/>
+        <path d="M185 365 V710 H210 V735"/>
         <path d="M210 790 V830"/>
       </g>
       <g class="lvad-chart-labels">
