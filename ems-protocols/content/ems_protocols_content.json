@@ -742,7 +742,7 @@
               "status": "active"
             },
             {
-              "id": "trauma-arrest",
+              "id": "adult-trauma-arrest",
               "title": "Trauma Arrest",
               "type": "protocol",
               "pageStart": 146,
@@ -9803,7 +9803,7 @@
       "displayMode": "structured"
     },
     {
-      "id": "trauma-arrest",
+      "id": "adult-trauma-arrest",
       "title": "Trauma Arrest",
       "type": "protocol",
       "categoryPath": [
@@ -9814,14 +9814,20 @@
       "effectiveDate": "2026-06-08",
       "lastRevised": "",
       "version": "2026",
-      "tags": [],
+      "tags": [
+        "adult",
+        "trauma",
+        "trauma arrest",
+        "needle decompression",
+        "resuscitation"
+      ],
       "source": {
         "pdf": "documents/ems/2026-hcems-protocols.pdf",
         "pageStart": 146,
         "pageEnd": 147,
         "pageLabel": "146-147"
       },
-      "summary": "",
+      "summary": "Assessment and treatment of adult trauma patients with absent vital signs.",
       "content": [
         {
           "type": "heading",
@@ -9830,31 +9836,221 @@
         },
         {
           "type": "paragraph",
-          "text": "This protocol applies to adult trauma patients with absent vital signs. Patients with injuries incompatible with life are covered under the Withholding or Termination of Resuscitation Protocol. Primary Survey In the event of multiple patients, ensure you have the appropriate resources and have triaged all other patients before committing to the treatment of a traumatic arrest patient. Assess for signs of life. Control life-threatening hemorrhage. Tourniquets for massive extremity injuries. Begin high quality CPR and restrict interruptions of compressions as much as possible. Apply automated compression device if available. Ensure airway/ventilatory support. A blind insertion airway device (BIAD) or supra-glottic airway (SGA) may be inserted early, otherwise ventilate with a bag valve mask and 100% O2. DO NOT attempt insertion of an endotracheal tube for the first 5 minutes of the resuscitation attempt, except in the presence of stridor. Ventilate with 100% O2 only until the chest rises. Ventilate at a rate of 6-8 breaths per minute. DO NOT over ventilate. Airway management, bleeding control and rapid transport are the most important interventions for victims of traumatic arrest. Minimize scene time to 10 minutes or less, barring extrication time, and perform only critical interventions before transport. Secondary Assessment and Treatment Physical exam and OPQRST/SAMPLE history. Expose and rapidly assess the head, chest abdomen, pelvis and extremities for injury. Evaluate the patient’s posterior when possible. Perform spinal motion restriction, rigid C-collar and secure to a long spine board if indicated. Initiate patient transport as soon as possible. Continue protocol(s) enroute. Initiate cardiac monitoring. Manage dysrhythmias per appropriate protocol. Advanced airway/ventilatory support as needed. Initiate EtCO2 monitoring. Maintain EtCO2 of 30-35 mmHg. Continue with chest compressions until return of adequate pulses. Initiate IV/IO of normal saline at KVO rate. If fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol. If palpable pulse is restored, titrate the IV infusion to a systolic of blood pressure of 80-90 mmHg. If mechanism of injury, symptoms and physical exam suggest a tension pneumothorax, consider needle decompression to the affected side(s). Trauma Arrest (Continued) Secondary Assessment and Treatment (Continued) Transport patient to the closest appropriate facility. Contact Medical Control with patient status and treatment(s) as soon as possible. If the patient remains in persistent Asystole, contact Medical Control for Termination of Resuscitation protocol. IMPORTANT – NEEDLE CHEST DECOMPRESSION Indications Peri-arrest, PEA, shock with hypotension and at least one of the following: Neck Vein distention Tracheal deviation away from the injured side. Increased resistance when ventilating. Hyper-expanded chest with little movement on respiration. If cardiac arrest is present, and ACLS has been initiated, DO NOT terminate efforts unless needle chest decompression is performed. Needle chest decompression should never be utilized based solely on the presence of poor or absent breath sounds on one side of the chest. The procedure has complications and should not be used lightly. However, when used appropriately, it can be life-saving. Overly aggressive positive pressure ventilation may cause a pneumothorax or exacerbate and existing pneumothorax."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
+          "text": "This protocol applies to adult trauma patients with absent vital signs."
         },
         {
           "type": "paragraph",
-          "text": "Vital signs Mechanism of Injury ROSC/vital signs changes if relevant Cardiac rhythm(s) Treatment(s) Advanced airway procedures with EtCO2. Medications administered Available history Communication with Medical Control."
-        }
-      ],
-      "plainText": "Trauma Arrest\nThis protocol applies to adult trauma patients with absent vital signs.\nPatients with injuries incompatible with life are covered under the Withholding or Termination of\nResuscitation Protocol.\nPrimary Survey\n•\nIn the event of multiple patients, ensure you have the appropriate resources and have triaged all\nother patients before committing to the treatment of a traumatic arrest patient.\n•\nAssess for signs of life.\n•\nControl life-threatening hemorrhage.\no\nTourniquets for massive extremity injuries.\n•\nBegin high quality CPR and restrict interruptions of compressions as much as possible. Apply\nautomated compression device if available.\n•\nEnsure airway/ventilatory support.\no\nA blind insertion airway device (BIAD) or supra-glottic airway (SGA) may be inserted early,\notherwise ventilate with a bag valve mask and 100% O2.\n•\nDO NOT attempt insertion of an endotracheal tube for the first 5 minutes of the resuscitation\nattempt, except in the presence of stridor.\n•\nVentilate with 100% O2 only until the chest rises. Ventilate at a rate of 6-8 breaths per minute. DO\nNOT over ventilate.\nAirway management, bleeding control and rapid transport are the most important\ninterventions for victims of traumatic arrest.\nMinimize scene time to 10 minutes or less, barring extrication time, and perform only critical\ninterventions before transport.\nSecondary Assessment and Treatment\n•\nPhysical exam and OPQRST/SAMPLE history.\no\nExpose and rapidly assess the head, chest abdomen, pelvis and extremities for injury.\n▪\nEvaluate the patient’s posterior when possible.\n•\nPerform spinal motion restriction, rigid C-collar and secure to a long spine board if indicated.\n•\nInitiate patient transport as soon as possible.\n•\nContinue protocol(s) enroute.\n•\nInitiate cardiac monitoring.\no\nManage dysrhythmias per appropriate protocol.\n•\nAdvanced airway/ventilatory support as needed.\no\nInitiate EtCO2 monitoring.\n▪\nMaintain EtCO2 of 30-35 mmHg.\n•\nContinue with chest compressions until return of adequate pulses.\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.\no\nIf palpable pulse is restored, titrate the IV infusion to a systolic of blood pressure of 80-90\nmmHg.\n•\nIf mechanism of injury, symptoms and physical exam suggest a tension pneumothorax, consider\nneedle decompression to the affected side(s).\nTrauma Arrest (Continued)\nSecondary Assessment and Treatment (Continued)\n•\nTransport patient to the closest appropriate facility.\n•\nContact Medical Control with patient status and treatment(s) as soon as possible.\n•\nIf the patient remains in persistent Asystole, contact Medical Control for Termination of\nResuscitation protocol.\nIMPORTANT – NEEDLE CHEST DECOMPRESSION\nIndications\n•\nPeri-arrest, PEA, shock with hypotension and at least one of the following:\no\nNeck Vein distention\no\nTracheal deviation away from the injured side.\no\nIncreased resistance when ventilating.\no\nHyper-expanded chest with little movement on respiration.\nIf cardiac arrest is present, and ACLS has been initiated, DO NOT terminate efforts unless\nneedle chest decompression is performed.\nNeedle chest decompression should never be utilized based solely on the presence of\npoor or absent breath sounds on one side of the chest. The procedure has complications\nand should not be used lightly. However, when used appropriately, it can be life-saving.\nOverly aggressive positive pressure ventilation may cause a pneumothorax or exacerbate\nand existing pneumothorax.\nDocument:\n•\nVital signs\n•\nMechanism of Injury\n•\nROSC/vital signs changes\nif relevant\n•\nCardiac rhythm(s)\n•\nTreatment(s)\n•\nAdvanced airway\nprocedures with EtCO2.\n•\nMedications administered\n•\nAvailable history\n•\nCommunication with\nMedical Control.",
-      "pageText": [
-        {
-          "page": 146,
-          "text": "Trauma Arrest\nThis protocol applies to adult trauma patients with absent vital signs.\nPatients with injuries incompatible with life are covered under the Withholding or Termination of\nResuscitation Protocol.\nPrimary Survey\n•\nIn the event of multiple patients, ensure you have the appropriate resources and have triaged all\nother patients before committing to the treatment of a traumatic arrest patient.\n•\nAssess for signs of life.\n•\nControl life-threatening hemorrhage.\no\nTourniquets for massive extremity injuries.\n•\nBegin high quality CPR and restrict interruptions of compressions as much as possible. Apply\nautomated compression device if available.\n•\nEnsure airway/ventilatory support.\no\nA blind insertion airway device (BIAD) or supra-glottic airway (SGA) may be inserted early,\notherwise ventilate with a bag valve mask and 100% O2.\n•\nDO NOT attempt insertion of an endotracheal tube for the first 5 minutes of the resuscitation\nattempt, except in the presence of stridor.\n•\nVentilate with 100% O2 only until the chest rises. Ventilate at a rate of 6-8 breaths per minute. DO\nNOT over ventilate.\nAirway management, bleeding control and rapid transport are the most important\ninterventions for victims of traumatic arrest.\nMinimize scene time to 10 minutes or less, barring extrication time, and perform only critical\ninterventions before transport.\nSecondary Assessment and Treatment\n•\nPhysical exam and OPQRST/SAMPLE history.\no\nExpose and rapidly assess the head, chest abdomen, pelvis and extremities for injury.\n▪\nEvaluate the patient’s posterior when possible.\n•\nPerform spinal motion restriction, rigid C-collar and secure to a long spine board if indicated.\n•\nInitiate patient transport as soon as possible.\n•\nContinue protocol(s) enroute.\n•\nInitiate cardiac monitoring.\no\nManage dysrhythmias per appropriate protocol.\n•\nAdvanced airway/ventilatory support as needed.\no\nInitiate EtCO2 monitoring.\n▪\nMaintain EtCO2 of 30-35 mmHg.\n•\nContinue with chest compressions until return of adequate pulses.\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.\no\nIf palpable pulse is restored, titrate the IV infusion to a systolic of blood pressure of 80-90\nmmHg.\n•\nIf mechanism of injury, symptoms and physical exam suggest a tension pneumothorax, consider\nneedle decompression to the affected side(s)."
+          "text": "Patients with injuries incompatible with life are covered under the Withholding or Termination of Resuscitation Protocol.",
+          "bold": [
+            "Patients with injuries incompatible with life are covered under the"
+          ],
+          "links": [
+            {
+              "text": "Withholding or Termination of Resuscitation Protocol",
+              "protocolId": "withholding-or-termination-of-resuscitation"
+            }
+          ]
         },
         {
-          "page": 147,
-          "text": "Trauma Arrest (Continued)\nSecondary Assessment and Treatment (Continued)\n•\nTransport patient to the closest appropriate facility.\n•\nContact Medical Control with patient status and treatment(s) as soon as possible.\n•\nIf the patient remains in persistent Asystole, contact Medical Control for Termination of\nResuscitation protocol.\nIMPORTANT – NEEDLE CHEST DECOMPRESSION\nIndications\n•\nPeri-arrest, PEA, shock with hypotension and at least one of the following:\no\nNeck Vein distention\no\nTracheal deviation away from the injured side.\no\nIncreased resistance when ventilating.\no\nHyper-expanded chest with little movement on respiration.\nIf cardiac arrest is present, and ACLS has been initiated, DO NOT terminate efforts unless\nneedle chest decompression is performed.\nNeedle chest decompression should never be utilized based solely on the presence of\npoor or absent breath sounds on one side of the chest. The procedure has complications\nand should not be used lightly. However, when used appropriately, it can be life-saving.\nOverly aggressive positive pressure ventilation may cause a pneumothorax or exacerbate\nand existing pneumothorax.\nDocument:\n•\nVital signs\n•\nMechanism of Injury\n•\nROSC/vital signs changes\nif relevant\n•\nCardiac rhythm(s)\n•\nTreatment(s)\n•\nAdvanced airway\nprocedures with EtCO2.\n•\nMedications administered\n•\nAvailable history\n•\nCommunication with\nMedical Control."
+          "type": "flow-stage",
+          "title": "Primary Survey",
+          "arrowAfter": true,
+          "items": [
+            "In the event of multiple patients, ensure you have the appropriate resources and have triaged all other patients before committing to the treatment of a traumatic arrest patient.",
+            "Assess for signs of life.",
+            "Control life-threatening hemorrhage.",
+            {
+              "text": "Tourniquets for massive extremity injuries.",
+              "indent": 1
+            },
+            "Begin high quality CPR and restrict interruptions of compressions as much as possible. Apply automated compression device if available.",
+            "Ensure airway/ventilatory support.",
+            {
+              "text": "A blind insertion airway device (BIAD) or supra-glottic airway (SGA) may be inserted early, otherwise ventilate with a bag valve mask and 100% O₂.",
+              "indent": 1
+            },
+            {
+              "text": "DO NOT attempt insertion of an endotracheal tube for the first 5 minutes of the resuscitation attempt, except in the presence of stridor.",
+              "bold": [
+                "DO NOT"
+              ]
+            },
+            {
+              "text": "Ventilate with 100% O₂ only until the chest rises. Ventilate at a rate of 6-8 breaths per minute. DO NOT over ventilate.",
+              "bold": [
+                "DO NOT over ventilate."
+              ]
+            },
+            {
+              "text": "Airway management, bleeding control and rapid transport are the most important interventions for victims of traumatic arrest.",
+              "icon": "assets/legend-important.webp",
+              "iconAlt": "Important protocol information",
+              "bold": [
+                "Airway management, bleeding control and rapid transport are the most important interventions for victims of traumatic arrest."
+              ],
+              "red": [
+                "Airway management, bleeding control and rapid transport are the most important interventions for victims of traumatic arrest."
+              ]
+            },
+            {
+              "text": "Minimize scene time to 10 minutes or less, barring extrication time, and perform only critical interventions before transport.",
+              "icon": "assets/legend-important.webp",
+              "iconAlt": "Important protocol information",
+              "bold": [
+                "Minimize scene time to 10 minutes or less, barring extrication time, and perform only critical interventions before transport."
+              ],
+              "red": [
+                "Minimize scene time to 10 minutes or less, barring extrication time, and perform only critical interventions before transport."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "flow-stage",
+          "title": "Secondary Assessment and Treatment",
+          "items": [
+            "Physical exam and OPQRST/SAMPLE history.",
+            {
+              "text": "Expose and rapidly assess the head, chest abdomen, pelvis and extremities for injury.",
+              "indent": 1
+            },
+            {
+              "text": "Evaluate the patient’s posterior when possible.",
+              "indent": 2
+            },
+            "Perform spinal motion restriction, rigid C-collar and secure to a long spine board if indicated.",
+            "Initiate patient transport as soon as possible.",
+            "Continue protocol(s) enroute.",
+            "Initiate cardiac monitoring.",
+            {
+              "text": "Manage dysrhythmias per appropriate protocol.",
+              "indent": 1
+            },
+            "Advanced airway/ventilatory support as needed.",
+            {
+              "text": "Initiate EtCO₂ monitoring.",
+              "indent": 1
+            },
+            {
+              "text": "Maintain EtCO₂ of 30-35 mmHg.",
+              "indent": 2
+            },
+            "Continue with chest compressions until return of adequate pulses.",
+            "Initiate IV/IO of normal saline at KVO rate.",
+            {
+              "text": "If fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.",
+              "indent": 1,
+              "links": [
+                {
+                  "text": "Shock Protocol",
+                  "protocolId": "shock-management"
+                }
+              ]
+            },
+            {
+              "text": "If palpable pulse is restored, titrate the IV infusion to a systolic of blood pressure of 80-90 mmHg.",
+              "indent": 1
+            },
+            "If mechanism of injury, symptoms and physical exam suggest a tension pneumothorax, consider needle decompression to the affected side(s).",
+            "Transport patient to the closest appropriate facility.",
+            "Contact Medical Control with patient status and treatment(s) as soon as possible.",
+            {
+              "text": "If the patient remains in persistent Asystole, contact Medical Control for Termination of Resuscitation protocol.",
+              "links": [
+                {
+                  "text": "Termination of Resuscitation protocol",
+                  "protocolId": "withholding-or-termination-of-resuscitation"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "flow-stage",
+          "title": "IMPORTANT – NEEDLE CHEST DECOMPRESSION",
+          "items": [
+            {
+              "text": "Indications",
+              "bold": [
+                "Indications"
+              ]
+            },
+            {
+              "text": "Peri-arrest, PEA, shock with hypotension and at least one of the following:",
+              "indent": 1,
+              "bold": [
+                "at least one of the following:"
+              ]
+            },
+            {
+              "text": "Neck Vein distention",
+              "indent": 2
+            },
+            {
+              "text": "Tracheal deviation away from the injured side.",
+              "indent": 2
+            },
+            {
+              "text": "Increased resistance when ventilating.",
+              "indent": 2
+            },
+            {
+              "text": "Hyper-expanded chest with little movement on respiration.",
+              "indent": 2
+            },
+            {
+              "text": "If cardiac arrest is present, and ACLS has been initiated, DO NOT terminate efforts unless needle chest decompression is performed.",
+              "icon": "assets/legend-important.webp",
+              "iconAlt": "Important protocol information",
+              "bold": [
+                "If cardiac arrest is present, and ACLS has been initiated, DO NOT terminate efforts unless needle chest decompression is performed."
+              ],
+              "red": [
+                "If cardiac arrest is present, and ACLS has been initiated, DO NOT terminate efforts unless needle chest decompression is performed."
+              ],
+              "highlight": true
+            },
+            {
+              "text": "Needle chest decompression should never be utilized based solely on the presence of poor or absent breath sounds on one side of the chest. The procedure has complications and should not be used lightly. However, when used appropriately, it can be life-saving.",
+              "icon": "assets/legend-important.webp",
+              "iconAlt": "Important protocol information",
+              "bold": [
+                "Needle chest decompression should never be utilized based solely on the presence of poor or absent breath sounds on one side of the chest. The procedure has complications and should not be used lightly. However, when used appropriately, it can be life-saving."
+              ],
+              "red": [
+                "Needle chest decompression should never be utilized based solely on the presence of poor or absent breath sounds on one side of the chest. The procedure has complications and should not be used lightly. However, when used appropriately, it can be life-saving."
+              ]
+            },
+            {
+              "text": "Overly aggressive positive pressure ventilation may cause a pneumothorax or exacerbate an existing pneumothorax.",
+              "icon": "assets/legend-important.webp",
+              "iconAlt": "Important protocol information",
+              "bold": [
+                "Overly aggressive positive pressure ventilation may cause a pneumothorax or exacerbate an existing pneumothorax."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "documentation-card",
+          "title": "Document:",
+          "image": "assets/legend-documentation.webp",
+          "alt": "Patient care documentation reminder symbol",
+          "items": [
+            "Vital signs",
+            "Mechanism of Injury",
+            "ROSC/vital signs changes if relevant",
+            "Cardiac rhythm(s)",
+            "Treatment(s)",
+            "Advanced airway procedures with EtCO₂.",
+            "Medications administered",
+            "Available history",
+            "Communication with Medical Control."
+          ]
         }
       ],
+      "plainText": "Trauma Arrest. This protocol applies to adult trauma patients with absent vital signs. Primary survey, secondary assessment and treatment, needle chest decompression, termination-of-resuscitation consultation, and documentation.",
       "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
       "displayMode": "structured"
     },
     {

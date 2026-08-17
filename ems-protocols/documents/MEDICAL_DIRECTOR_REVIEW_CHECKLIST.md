@@ -220,6 +220,12 @@ This internal checklist tracks items that must be confirmed before the native EM
 
 
 
+
+### Adult Clinical Protocols > Adult Trauma Emergencies > Trauma Arrest
+
+- [ ] Verify traumatic-arrest triage, hemorrhage control, CPR/device use, airway timing, ventilation rate, scene-time target, transport, monitoring, EtCO2 target, fluid treatment, post-ROSC blood-pressure target, and medical-control requirements.
+- [ ] Verify both termination-of-resuscitation references and every needle chest decompression indication, arrest requirement, warning, and complication statement.
+
 ### Adult Clinical Protocols > Adult Trauma Emergencies > Extremity Trauma
 
 - [ ] Verify fracture/dislocation assessment, traction and splinting criteria, cold-pack/elevation care, amputation-part handling and transport, pain-control cross-reference, and documentation requirements.
