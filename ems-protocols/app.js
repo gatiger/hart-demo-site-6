@@ -3,7 +3,7 @@ let deferredPrompt;
 let selectedId = null;
 let viewHistory = [];
 let viewHistoryIndex = -1;
-const CONTENT_VERSION = 'v150';
+const CONTENT_VERSION = 'v151';
 
 const treeNav = document.getElementById('treeNav');
 const searchBox = document.getElementById('searchBox');
@@ -747,6 +747,81 @@ function renderStrokeLateralityDiagram(block, container) {
   }
   container.appendChild(figure);
 }
+function renderBurnFormulaLayout(block, container) {
+  const section = document.createElement('section');
+  section.className = 'burn-formula-layout';
+
+  const makeCard = (className, title) => {
+    const card = document.createElement('section');
+    card.className = `burn-formula-card ${className}`;
+    const heading = document.createElement('h3');
+    heading.textContent = title || '';
+    card.appendChild(heading);
+    return card;
+  };
+
+  (block.formulas || []).forEach((formula, index) => {
+    const card = makeCard(`burn-formula-${index + 1}`, formula.title);
+    const fraction = document.createElement('div');
+    fraction.className = 'burn-formula-fraction';
+    const numerator = document.createElement('strong');
+    numerator.textContent = formula.numerator || '';
+    const denominator = document.createElement('strong');
+    denominator.textContent = formula.denominator || '';
+    fraction.append(numerator, denominator);
+    const description = document.createElement('p');
+    description.textContent = formula.description || '';
+    card.append(fraction, description);
+    section.appendChild(card);
+  });
+
+  if (block.rule) {
+    const card = makeCard('burn-rule-ten', block.rule.title);
+    const list = document.createElement('ul');
+    (block.rule.items || []).forEach(item => {
+      const data = typeof item === 'string' ? { text: item } : item;
+      const li = document.createElement('li');
+      li.textContent = data.text || '';
+      if (data.red) li.classList.add('burn-formula-red');
+      list.appendChild(li);
+    });
+    card.appendChild(list);
+    section.appendChild(card);
+  }
+
+  if (block.palmar) {
+    const card = makeCard('burn-palmar', block.palmar.title);
+    const text = document.createElement('p');
+    text.textContent = block.palmar.text || '';
+    card.appendChild(text);
+    section.appendChild(card);
+  }
+
+  const figure = document.createElement('figure');
+  figure.className = 'burn-tbsa-figure';
+  const image = document.createElement('img');
+  image.src = block.image || '';
+  image.alt = block.alt || '';
+  image.loading = 'lazy';
+  figure.appendChild(image);
+  section.appendChild(figure);
+
+  const warnings = document.createElement('section');
+  warnings.className = 'burn-formula-warnings';
+  (block.warnings || []).forEach(message => {
+    const row = document.createElement('div');
+    const icon = document.createElement('img');
+    icon.src = 'assets/legend-important.webp';
+    icon.alt = '';
+    const text = document.createElement('p');
+    text.textContent = message;
+    row.append(icon, text);
+    warnings.appendChild(row);
+  });
+  section.appendChild(warnings);
+  container.appendChild(section);
+}
+
 function renderProtocolImage(block, container) {
   const figure = document.createElement('figure');
   figure.className = 'protocol-reference-image';
@@ -1023,6 +1098,11 @@ function renderBlock(block, container) {
 
   if (block.type === 'stroke-laterality-diagram') {
     renderStrokeLateralityDiagram(block, container);
+    return;
+  }
+
+  if (block.type === 'burn-formula-layout') {
+    renderBurnFormulaLayout(block, container);
     return;
   }
 

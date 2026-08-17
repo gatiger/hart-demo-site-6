@@ -1,4 +1,4 @@
-const CACHE_NAME = 'hcems-protocols-v150';
+const CACHE_NAME = 'hcems-protocols-v151';
 const APP_SHELL = [
   './',
   './index.html',
@@ -16,6 +16,7 @@ const APP_SHELL = [
   './assets/lvad-monitor-without-lvad.webp',
   './assets/lvad-monitor-with-lvad.webp',
   './page-images/page-211.jpg',
+  './assets/adult-burn-tbsa-estimation.webp',
   './content/ems_protocols_content.json',
 ];
 self.addEventListener('install', event => {

@@ -10439,88 +10439,41 @@
           ]
         },
         {
-          "type": "flow-stage",
-          "title": "Burn Resuscitation Formulas",
-          "items": [
+          "type": "burn-formula-layout",
+          "formulas": [
             {
-              "text": "Parkland Formula",
-              "bold": [
-                "Parkland Formula"
-              ]
+              "title": "Parkland Formula",
+              "numerator": "4 ml/kg × weight(Kg) × % TBSA Burned",
+              "denominator": "2",
+              "description": "This will give you the total milliliters of crystalloid needed to be administered in the first 8 hours."
             },
             {
-              "text": "4 ml/kg × weight (Kg) × % TBSA Burned ÷ 2",
-              "indent": 1,
-              "bold": [
-                "4 ml/kg × weight (Kg) × % TBSA Burned ÷ 2"
-              ]
-            },
-            {
-              "text": "This will give you the total milliliters of crystalloid needed to be administered in the first 8 hours.",
-              "indent": 1
-            },
-            {
-              "text": "Consensus Formula",
-              "bold": [
-                "Consensus Formula"
-              ]
-            },
-            {
-              "text": "2 – 4 ml/kg × weight (Kg) × % TBSA Burned ÷ 2",
-              "indent": 1,
-              "bold": [
-                "2 – 4 ml/kg × weight (Kg) × % TBSA Burned ÷ 2"
-              ]
-            },
-            {
-              "text": "This will give you the total milliliters of crystalloid needed to be administered in the first 8 hours.",
-              "indent": 1
-            },
-            {
-              "text": "USAISR Rule of Ten",
-              "bold": [
-                "USAISR Rule of Ten"
-              ]
-            },
-            {
-              "text": "TBSA calculated and rounded to the nearest 10. (i.e. 37% TBSA would be rounded to 40.)",
-              "indent": 1
-            },
-            {
-              "text": "That rounded percentage is multiplied by 10.",
-              "indent": 1
-            },
-            {
-              "text": "This quick calculation will give you the number of milliliters per hour of crystalloid to be administered.",
-              "indent": 1
-            },
-            {
-              "text": "This rule only applies to patients weighing 88-154 lbs. (40-70 kg). For any patient exceeding this weight range, for each 10kg in body weight over 70 kg, an additional 100 ml/hr. is given.",
-              "indent": 1
-            },
-            {
-              "text": "TBSA Estimation Methods",
-              "bold": [
-                "TBSA Estimation Methods"
-              ]
-            },
-            {
-              "text": "Palmar Method",
-              "indent": 1,
-              "bold": [
-                "Palmar Method"
-              ]
-            },
-            {
-              "text": "The patient’s palm + fingers = 1%",
-              "indent": 2
-            },
-            {
-              "text": "DO NOT exceed 2 liters of crystalloid IV solution unless authorized by Medical Control.",
-              "bold": [
-                "DO NOT exceed 2 liters of crystalloid IV solution unless authorized by Medical Control."
-              ]
-            },
+              "title": "Consensus Formula",
+              "numerator": "2 – 4 ml/kg × weight (Kg) × % TBSA Burned",
+              "denominator": "2",
+              "description": "This will give you the total milliliters of crystalloid needed to be administered in the first 8 hours."
+            }
+          ],
+          "rule": {
+            "title": "USAISR Rule of Ten",
+            "items": [
+              "TBSA calculated and rounded to the nearest 10. (i.e. 37% TBSA would be rounded to 40.)",
+              "That rounded percentage is multiplied by 10.",
+              "This quick calculation will give you the number of milliliters per hour of crystalloid to be administered.",
+              {
+                "text": "This rule only applies to patients weighing 88-154 lbs. (40-70 kg). For any patient exceeding this weight range, for each 10kg in body weight over 70 kg, an additional 100 ml/hr. is given.",
+                "red": true
+              }
+            ]
+          },
+          "palmar": {
+            "title": "Palmar Method",
+            "text": "The patient’s palm + fingers = 1%"
+          },
+          "image": "assets/adult-burn-tbsa-estimation.webp",
+          "alt": "TBSA estimation methods showing adult and pediatric rule-of-nines percentages and the palmar one-percent method",
+          "warnings": [
+            "DO NOT exceed 2 liters of crystalloid IV solution unless authorized by Medical Control.",
             "Contact Medical Control for fluid orders in patients with congestive heart failure or cardiac disease."
           ]
         },

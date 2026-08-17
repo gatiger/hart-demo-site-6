@@ -831,3 +831,24 @@ details[open] > .tree-heading.tree-toggle::before {
 .stroke-laterality-diagram figcaption { margin-top:1rem; padding:.75rem; border-radius:8px; background:#fff4d9; color:#664b00; text-align:center; }
 .stroke-laterality-diagram figcaption a { color:#075f78; }
 @media(max-width:760px){.stroke-laterality-grid{grid-template-columns:1fr}.stroke-laterality-visual{min-height:160px}.stroke-laterality-diagram{padding:.9rem}}
+/* Adult burns formulas and TBSA estimation */
+.burn-formula-layout { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); grid-template-areas:"formula1 formula2" "rule figure" "palmar figure" "warnings warnings"; gap:1rem; margin:1.25rem 0; }
+.burn-formula-card { padding:.85rem 1rem; border:1px solid #263746; border-radius:.2rem; background:#fff; }
+.burn-formula-card h3 { margin:0 0 .55rem; font-size:1rem; }
+.burn-formula-card p { margin:.7rem 0 0; }
+.burn-formula-1 { grid-area:formula1; }
+.burn-formula-2 { grid-area:formula2; }
+.burn-rule-ten { grid-area:rule; }
+.burn-palmar { grid-area:palmar; align-self:start; }
+.burn-rule-ten ul { margin:.35rem 0 0; }
+.burn-formula-red { color:#c31515; font-weight:900; }
+.burn-formula-fraction { display:grid; justify-items:center; margin:.2rem 0 .7rem; }
+.burn-formula-fraction strong:first-child { width:100%; padding-bottom:.18rem; border-bottom:2px solid #111; text-align:center; }
+.burn-formula-fraction strong:last-child { padding-top:.15rem; }
+.burn-tbsa-figure { grid-area:figure; align-self:center; margin:0; padding:.5rem; background:#fff; }
+.burn-tbsa-figure img { display:block; width:100%; height:auto; object-fit:contain; }
+.burn-formula-warnings { grid-area:warnings; display:grid; gap:.8rem; padding:1rem; border:1px solid #263746; background:#fff; }
+.burn-formula-warnings > div { display:grid; grid-template-columns:2.75rem 1fr; align-items:start; gap:.7rem; }
+.burn-formula-warnings img { width:2.5rem; height:2.5rem; object-fit:contain; }
+.burn-formula-warnings p { margin:0; color:#c31515; font-weight:900; }
+@media (max-width:760px) { .burn-formula-layout { grid-template-columns:1fr; grid-template-areas:"formula1" "formula2" "rule" "palmar" "figure" "warnings"; } }
