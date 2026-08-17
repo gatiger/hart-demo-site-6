@@ -10966,7 +10966,7 @@
     },
     {
       "id": "acetaminophen-pedi-liquid",
-      "title": "Acetaminophen (Pedi) Liquid",
+      "title": "Acetaminophen Pediatric Liquid (Tylenol®)",
       "type": "drug",
       "categoryPath": [
         "EMS Drug Formulary"
@@ -10975,14 +10975,21 @@
       "effectiveDate": "2026-06-08",
       "lastRevised": "",
       "version": "2026",
-      "tags": [],
+      "tags": [
+        "acetaminophen",
+        "tylenol",
+        "pediatric",
+        "fever",
+        "antipyretic"
+      ],
       "source": {
         "pdf": "documents/ems/2026-hcems-protocols.pdf",
         "pageStart": 155,
         "pageEnd": 155,
         "pageLabel": "155"
       },
-      "summary": "",
+      "summary": "Pediatric liquid acetaminophen indication, dose, onset, contraindication, expected effects, administration, and special considerations.",
+      "displayMode": "native",
       "content": [
         {
           "type": "heading",
@@ -10992,50 +10999,84 @@
         {
           "type": "heading",
           "level": 3,
-          "text": "Indication"
+          "text": "Indication:"
         },
         {
-          "type": "paragraph",
-          "text": "Used for fevers >100.2 to prevent increase of fever and to lower body temperature. Can be used post-febrile seizure as long as patient is responsive. Pain relief of minor pediatric injuries."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Pediatric dose range"
-        },
-        {
-          "type": "paragraph",
-          "text": "0-10 yrs.: 15mg/kg PO if > 4 hours since last antipyretic."
+          "type": "list",
+          "items": [
+            "Used for fevers >100.2 to prevent increase of fever and to lower body temperature. Can be used post-febrile seizure as long as patient is responsive. Pain relief of minor pediatric injuries."
+          ]
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Time to onset"
+          "text": "Pediatric dose range:"
         },
         {
-          "type": "paragraph",
-          "text": "PO: 20 minutes"
+          "type": "list",
+          "items": [
+            "0-10 yrs.: 15mg/kg PO if > 4 hours since last antipyretic."
+          ]
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Contraindications"
+          "text": "Time to onset:"
         },
         {
-          "type": "paragraph",
-          "text": "Known hypersensitivity (rare) What side effects/potential complications are expected? Abdominal Pain Nausea / Vomiting How is it given? Use a disposable syringe to inject liquid medication into cheek area of mouth. (No sharp attached). Then dispose of syringe. Are there any special instructions/considerations? Use with caution by mouth if noted altered mental status or lethargy."
+          "type": "list",
+          "items": [
+            "PO: 20 minutes"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Contraindications:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Known hypersensitivity (rare)"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "What side effects/potential complications are expected?"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Abdominal Pain",
+            "Nausea / Vomiting"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "How is it given?"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Use a disposable syringe to inject liquid medication into cheek area of mouth. (No sharp attached). Then dispose of syringe."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Are there any special instructions/considerations?"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Use with caution by mouth if noted altered mental status or lethargy."
+          ]
         }
       ],
-      "plainText": "Acetaminophen Pediatric Liquid (Tylenol®)\nIndication:\n•\nUsed for fevers >100.2 to prevent increase of fever and to lower body temperature.\nCan be used post-febrile seizure as long as patient is responsive. Pain relief of minor\npediatric injuries.\nPediatric dose range:\n•\n0-10 yrs.: 15mg/kg PO if > 4 hours since last antipyretic.\nTime to onset:\n•\nPO: 20 minutes\nContraindications:\n•\nKnown hypersensitivity (rare)\nWhat side effects/potential complications are expected?\n•\nAbdominal Pain\n•\nNausea / Vomiting\nHow is it given?\n•\nUse a disposable syringe to inject liquid medication into cheek area of mouth. (No sharp\nattached).  Then dispose of syringe.\nAre there any special instructions/considerations?\n•\nUse with caution by mouth if noted altered mental status or lethargy.",
-      "pageText": [
-        {
-          "page": 155,
-          "text": "Acetaminophen Pediatric Liquid (Tylenol®)\nIndication:\n•\nUsed for fevers >100.2 to prevent increase of fever and to lower body temperature.\nCan be used post-febrile seizure as long as patient is responsive. Pain relief of minor\npediatric injuries.\nPediatric dose range:\n•\n0-10 yrs.: 15mg/kg PO if > 4 hours since last antipyretic.\nTime to onset:\n•\nPO: 20 minutes\nContraindications:\n•\nKnown hypersensitivity (rare)\nWhat side effects/potential complications are expected?\n•\nAbdominal Pain\n•\nNausea / Vomiting\nHow is it given?\n•\nUse a disposable syringe to inject liquid medication into cheek area of mouth. (No sharp\nattached).  Then dispose of syringe.\nAre there any special instructions/considerations?\n•\nUse with caution by mouth if noted altered mental status or lethargy."
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
+      "plainText": "Acetaminophen Pediatric Liquid (Tylenol®). Pediatric indication, dose range, onset, contraindication, expected complications, administration, and special considerations.",
+      "needsReview": false
     },
     {
       "id": "adenosine-adenocard",

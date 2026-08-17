@@ -347,6 +347,10 @@ These are not routine transcription checks. Each item below represents source ma
 
 ## EMS Drug Formulary
 
+### EMS Drug Formulary > Acetaminophen Pediatric Liquid (Tylenol®)
+
+- [ ] Verify the fever threshold, post-febrile-seizure indication, minor-injury pain indication, pediatric age range, dose, interval since the last antipyretic, onset, contraindication, administration method, and altered-mental-status/lethargy caution.
+
 ### EMS Drug Formulary > Adenosine (Adenocard®)
 
 - [ ] Verify the indication, adult dose, repeat dose, pediatric Medical Control requirement, pediatric doses and maximums, onset, contraindications, rapid-push/flush technique, monitoring, interactions, expected complications, and special considerations.
