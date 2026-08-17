@@ -221,6 +221,13 @@ This internal checklist tracks items that must be confirmed before the native EM
 
 
 
+
+### Adult Clinical Protocols > Adult Trauma Emergencies > Burns
+
+- [ ] Verify scene safety, burn-center/trauma-center/aeromedical destination guidance, airway and inhalation-injury management, carbon-monoxide warnings, burn wound care, TBSA/depth criteria, IV access, Lactated Ringers, pain management, and documentation.
+- [ ] Verify every carbon-monoxide and heat-inhalation sign and symptom.
+- [ ] Review page 150 against the original PDF and approve the Parkland Formula, Consensus Formula, USAISR Rule of Ten, weight-range adjustment, Palmar Method, two-liter limit, and CHF/cardiac-disease medical-control instruction.
+
 ### Adult Clinical Protocols > Adult Trauma Emergencies > Trauma Arrest
 
 - [ ] Verify traumatic-arrest triage, hemorrhage control, CPR/device use, airway timing, ventilation rate, scene-time target, transport, monitoring, EtCO2 target, fluid treatment, post-ROSC blood-pressure target, and medical-control requirements.

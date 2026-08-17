@@ -750,7 +750,7 @@
               "status": "active"
             },
             {
-              "id": "burns",
+              "id": "adult-burns",
               "title": "Burns",
               "type": "protocol",
               "pageStart": 148,
@@ -10054,7 +10054,7 @@
       "displayMode": "structured"
     },
     {
-      "id": "burns",
+      "id": "adult-burns",
       "title": "Burns",
       "type": "protocol",
       "categoryPath": [
@@ -10065,14 +10065,22 @@
       "effectiveDate": "2026-06-08",
       "lastRevised": "",
       "version": "2026",
-      "tags": [],
+      "tags": [
+        "adult",
+        "trauma",
+        "burns",
+        "inhalation injury",
+        "carbon monoxide",
+        "TBSA",
+        "burn formulas"
+      ],
       "source": {
         "pdf": "documents/ems/2026-hcems-protocols.pdf",
         "pageStart": 148,
         "pageEnd": 150,
         "pageLabel": "148-150"
       },
-      "summary": "",
+      "summary": "Assessment and treatment of adult patients with thermal, chemical, electrical, or inhalation burns.",
       "content": [
         {
           "type": "heading",
@@ -10081,45 +10089,458 @@
         },
         {
           "type": "paragraph",
-          "text": "This protocol applies to adult patients who have sustained thermal, chemical or electrical burns and/or have sustained inhalation injuries. Hypotension is not normally seen with prehospital burn patients. Hypotension suggests other trauma. Refer to the trauma protocol(s) as needed. Ensure scene safety Remove patient from the burning process, only if properly trained and equipped to do so. Primary Survey Massive Hemorrhage Treat all life-threatening hemorrhage. See Hemorrhage Control Protocol. Tourniquets for massive extremity hemorrhage. Wound packing or junctional tourniquet for junctional hemorrhage. Airway – ensure patency and positioning. Have suction equipment ready. Consider spinal motion restriction if indicated. Respiratory/breathing – Give supplemental O2 if signs of compromise. Maintain SpO2 > 94%. Manage any injuries impairing ventilation immediately. Look closely for evidence of inhalation injury (hoarseness, stridor, sooty sputum, facial burns, or singed nasal or facial hair). Airway burns may require aggressive airway management. Consider false pulse oximetry readings due to possible carbon monoxide exposure. Assist with bag valve mask if respiratory effort is ineffective. Circulation – Assess radial pulses and heart rate. Consider Pelvic Binder if appropriate. Head/Hypothermia Initial GCS/AVPU. Pupils. Prevent hypothermia. Secondary Assessment and Treatment Remove and secure any jewelry, belts, shoes, etc. from burned areas. Remove any burned or singed clothing not stuck to skin."
+          "text": "This protocol applies to adult patients who have sustained thermal, chemical or electrical burns and/or have sustained inhalation injuries."
         },
         {
-          "type": "heading",
-          "level": 3,
-          "text": "Initial care for burn wounds"
+          "type": "flow-stage",
+          "arrowAfter": true,
+          "items": [
+            {
+              "text": "Hypotension is not normally seen with prehospital burn patients. Hypotension suggests other trauma. Refer to the trauma protocol(s) as needed.",
+              "icon": "assets/legend-important.webp",
+              "iconAlt": "Important protocol information",
+              "bold": [
+                "Hypotension is not normally seen with prehospital burn patients. Hypotension suggests other trauma. Refer to the trauma protocol(s) as needed."
+              ],
+              "red": [
+                "Hypotension is not normally seen with prehospital burn patients. Hypotension suggests other trauma. Refer to the trauma protocol(s) as needed."
+              ],
+              "links": [
+                {
+                  "text": "trauma protocol(s)",
+                  "protocolId": "adult-multiple-system-trauma"
+                }
+              ]
+            },
+            "Ensure scene safety",
+            "Remove patient from the burning process, only if properly trained and equipped to do so."
+          ]
         },
         {
-          "type": "paragraph",
-          "text": "Chemical Injury – brush off chemical, flush with water to remove any residual chemical. Ensure chemical IS NOT water reactive before flushing with water. Electrical Injury – treat dysrhythmias per appropriate cardiac dysrhythmia protocol. Electrical Injuries are very difficult to estimate TBSA. Thermal Injury – dry sterile dressings and/or burn sheets. Begin transport as soon as possible. Consider aeromedical transport. If no other trauma mechanism, transport to a burn center. If trauma mechanism exists, consider transport to a trauma center. Transport patients with an unmanageable airway, uncontrolled hemorrhage, and/or hemodynamic instability to the closest hospital emergency department. Burns (Continued) Secondary Assessment and Treatment (Continued) Advanced airway/ventilatory support as needed. Initiate EtCO2 monitoring. SpO2 readings may not be accurate due to carbon monoxide exposure. Initiate cardiac monitoring. Manage dysrhythmias per appropriate protocol. Assess for the following; Possible carbon monoxide poisoning. Signs and symptoms may include any of the following: Heat inhalation injury. Signs and symptoms may include any of the following: Total Body Surface Area Estimation. Rule of 9’s, or Palmar Method Estimate total body surface area burned. TBSA calculations - only use Partial Thickness burns (2nd degree) and higher (3rd and 4th degree) for fluid resuscitation calculations. Depth of burns Superficial – 1st Degree Partial Thickness – 2nd Degree Full Thickness – 3rd Degree Fourth Degree – extends beyond skin and into muscle and/or bone. Initiate IV/IO of normal saline at KVO rate. Lactated Ringers is preferred for burn resuscitation. Use the Parkland Formula, Consensus Formula, or USAISR Rule of Ten for calculating flow rates. (See formulas on next page) DO NOT delay transport to establish IV access. For pain management, See Pain Management Protocol. Dizziness. Weakness and fatigue. Shortness of breath. Chest pain. Singed facial hair, nasal hair. Dark gray or black sputum. Difficulty swallowing/pain. Shortness of breath or tachypnea. Hoarseness or loss of voice. Burns to the lips, mouth or tongue. Swelling or redness inside the oropharynx. Persistent coughing or wheezing. Stridor. Headache. Nausea and/or vomiting. Confusion or disorientation. Blurred Vision. Loss of Consciousness."
+          "type": "flow-stage",
+          "title": "Primary Survey",
+          "arrowAfter": true,
+          "items": [
+            {
+              "text": "Massive Hemorrhage",
+              "bold": [
+                "Massive Hemorrhage"
+              ]
+            },
+            {
+              "text": "Treat all life-threatening hemorrhage. See Hemorrhage Control Protocol.",
+              "indent": 1,
+              "bold": [
+                "Treat all life-threatening hemorrhage."
+              ],
+              "links": [
+                {
+                  "text": "Hemorrhage Control Protocol",
+                  "protocolId": "hemorrhage-control"
+                }
+              ]
+            },
+            {
+              "text": "Tourniquets for massive extremity hemorrhage.",
+              "indent": 2
+            },
+            {
+              "text": "Wound packing or junctional tourniquet for junctional hemorrhage.",
+              "indent": 2
+            },
+            {
+              "text": "Airway – ensure patency and positioning.",
+              "bold": [
+                "Airway"
+              ]
+            },
+            {
+              "text": "Have suction equipment ready.",
+              "indent": 1
+            },
+            {
+              "text": "Consider spinal motion restriction if indicated.",
+              "indent": 1
+            },
+            {
+              "text": "Respiratory/breathing – Give supplemental O₂ if signs of compromise. Maintain SpO₂ ≥ 94%.",
+              "bold": [
+                "Respiratory/breathing",
+                "Maintain SpO₂ ≥ 94%."
+              ]
+            },
+            {
+              "text": "Manage any injuries impairing ventilation immediately.",
+              "indent": 1
+            },
+            {
+              "text": "Look closely for evidence of inhalation injury (hoarseness, stridor, sooty sputum, facial burns, or singed nasal or facial hair).",
+              "indent": 2
+            },
+            {
+              "text": "Airway burns may require aggressive airway management.",
+              "indent": 2
+            },
+            {
+              "text": "Consider false pulse oximetry readings due to possible carbon monoxide exposure.",
+              "indent": 2
+            },
+            {
+              "text": "Assist with bag valve mask if respiratory effort is ineffective.",
+              "indent": 1
+            },
+            {
+              "text": "Circulation – Assess radial pulses and heart rate.",
+              "bold": [
+                "Circulation"
+              ]
+            },
+            {
+              "text": "Consider Pelvic Binder if appropriate.",
+              "indent": 1
+            },
+            {
+              "text": "Head/Hypothermia",
+              "bold": [
+                "Head/Hypothermia"
+              ]
+            },
+            {
+              "text": "Initial GCS/AVPU.",
+              "indent": 1
+            },
+            {
+              "text": "Pupils.",
+              "indent": 1
+            },
+            {
+              "text": "Prevent hypothermia.",
+              "indent": 1
+            }
+          ]
         },
         {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
+          "type": "flow-stage",
+          "title": "Secondary Assessment and Treatment",
+          "items": [
+            "Remove and secure any jewelry, belts, shoes, etc. from burned areas.",
+            {
+              "text": "Remove any burned or singed clothing not stuck to skin.",
+              "indent": 1
+            },
+            "Initial care for burn wounds:",
+            {
+              "text": "Chemical Injury – brush off chemical, flush with water to remove any residual chemical.",
+              "indent": 1,
+              "bold": [
+                "Chemical Injury"
+              ]
+            },
+            {
+              "text": "Ensure chemical IS NOT water reactive before flushing with water.",
+              "indent": 2,
+              "bold": [
+                "IS NOT"
+              ]
+            },
+            {
+              "text": "Electrical Injury – treat dysrhythmias per appropriate cardiac dysrhythmia protocol.",
+              "indent": 1,
+              "bold": [
+                "Electrical Injury"
+              ]
+            },
+            {
+              "text": "Electrical Injuries are very difficult to estimate TBSA.",
+              "indent": 2
+            },
+            {
+              "text": "Thermal Injury – dry sterile dressings and/or burn sheets.",
+              "indent": 1,
+              "bold": [
+                "Thermal Injury"
+              ]
+            },
+            "Begin transport as soon as possible. Consider aeromedical transport.",
+            {
+              "text": "If no other trauma mechanism, transport to a burn center.",
+              "indent": 1
+            },
+            {
+              "text": "If trauma mechanism exists, consider transport to a trauma center.",
+              "indent": 1
+            },
+            {
+              "text": "Transport patients with an unmanageable airway, uncontrolled hemorrhage, and/or hemodynamic instability to the closest hospital emergency department.",
+              "indent": 1
+            },
+            "Advanced airway/ventilatory support as needed.",
+            {
+              "text": "Initiate EtCO₂ monitoring.",
+              "indent": 1
+            },
+            {
+              "text": "SpO₂ readings may not be accurate due to carbon monoxide exposure.",
+              "indent": 1
+            },
+            "Initiate cardiac monitoring.",
+            {
+              "text": "Manage dysrhythmias per appropriate protocol.",
+              "indent": 1
+            },
+            "Assess for the following:",
+            {
+              "text": "Possible carbon monoxide poisoning. Signs and symptoms may include any of the following:",
+              "indent": 1
+            },
+            {
+              "text": "Headache.",
+              "indent": 2
+            },
+            {
+              "text": "Nausea and/or vomiting.",
+              "indent": 2
+            },
+            {
+              "text": "Confusion or disorientation.",
+              "indent": 2
+            },
+            {
+              "text": "Blurred Vision.",
+              "indent": 2
+            },
+            {
+              "text": "Loss of Consciousness.",
+              "indent": 2
+            },
+            {
+              "text": "Dizziness.",
+              "indent": 2
+            },
+            {
+              "text": "Weakness and fatigue.",
+              "indent": 2
+            },
+            {
+              "text": "Shortness of breath.",
+              "indent": 2
+            },
+            {
+              "text": "Chest pain.",
+              "indent": 2
+            },
+            {
+              "text": "Heat inhalation injury. Signs and symptoms may include any of the following:",
+              "indent": 1
+            },
+            {
+              "text": "Hoarseness or loss of voice.",
+              "indent": 2
+            },
+            {
+              "text": "Burns to the lips, mouth or tongue.",
+              "indent": 2
+            },
+            {
+              "text": "Swelling or redness inside the oropharynx.",
+              "indent": 2
+            },
+            {
+              "text": "Persistent coughing or wheezing.",
+              "indent": 2
+            },
+            {
+              "text": "Stridor.",
+              "indent": 2
+            },
+            {
+              "text": "Singed facial hair, nasal hair.",
+              "indent": 2
+            },
+            {
+              "text": "Dark gray or black sputum.",
+              "indent": 2
+            },
+            {
+              "text": "Difficulty swallowing/pain.",
+              "indent": 2
+            },
+            {
+              "text": "Shortness of breath or tachypnea.",
+              "indent": 2
+            },
+            {
+              "text": "Total Body Surface Area Estimation.",
+              "indent": 1
+            },
+            {
+              "text": "Rule of 9’s, or Palmar Method",
+              "indent": 2
+            },
+            {
+              "text": "Estimate total body surface area burned.",
+              "indent": 3
+            },
+            {
+              "text": "TBSA calculations - only use Partial Thickness burns (2nd degree) and higher (3rd and 4th degree) for fluid resuscitation calculations.",
+              "indent": 4
+            },
+            {
+              "text": "Depth of burns",
+              "indent": 2
+            },
+            {
+              "text": "Superficial – 1st Degree",
+              "indent": 3
+            },
+            {
+              "text": "Partial Thickness – 2nd Degree",
+              "indent": 3
+            },
+            {
+              "text": "Full Thickness – 3rd Degree",
+              "indent": 3
+            },
+            {
+              "text": "Fourth Degree – extends beyond skin and into muscle and/or bone.",
+              "indent": 3
+            },
+            "Initiate IV/IO of normal saline at KVO rate.",
+            {
+              "text": "Lactated Ringers is preferred for burn resuscitation.",
+              "indent": 1,
+              "links": [
+                {
+                  "text": "Lactated Ringers",
+                  "protocolId": "lactated-ringers"
+                }
+              ]
+            },
+            {
+              "text": "Use the Parkland Formula, Consensus Formula, or USAISR Rule of Ten for calculating flow rates. (See formulas below)",
+              "indent": 1
+            },
+            {
+              "text": "DO NOT delay transport to establish IV access.",
+              "indent": 1,
+              "bold": [
+                "DO NOT"
+              ]
+            },
+            {
+              "text": "For pain management, See Pain Management Protocol.",
+              "links": [
+                {
+                  "text": "Pain Management Protocol",
+                  "protocolId": "adult-pain-management"
+                }
+              ]
+            }
+          ]
         },
         {
-          "type": "paragraph",
-          "text": "Vital signs Burn type, location, size and depth. Cardiac rhythm Treatment(s) Communication with Medical Control. Burns (Continued) Parkland Formula 4 ml/kg x weight(Kg) x % TBSA Burned 2 This will give you the total milliliters of crystalloid needed to be administered in the first 8 hours. Consensus Formula 2 – 4 ml/kg x weight (Kg) x % TBSA Burned 2 This will give you the total milliliters of crystalloid needed to be administered in the first 8 hours. USAISR Rule of Ten TBSA calculated and rounded to the nearest 10. (i.e. 37% TBSA would be rounded to 40.) That rounded percentage is multiplied by 10. This quick calculation will give you the number of milliliters per hour of crystalloid to be administered. This rule only applies to patients weighing 88-154 lbs. (40-70 kg). For any patient exceeding this weight range, for each 10kg in body weight over 70 kg, an additional 100 ml/hr. is given. TBSA Estimation Methods Palmar Method The patient’s palm + fingers = 1% DO NOT exceed 2 liters of crystalloid IV solution unless authorized by Medical Control. Contact Medical Control for fluid orders in patients with congestive heart failure or cardiac disease."
+          "type": "flow-stage",
+          "title": "Burn Resuscitation Formulas",
+          "items": [
+            {
+              "text": "Parkland Formula",
+              "bold": [
+                "Parkland Formula"
+              ]
+            },
+            {
+              "text": "4 ml/kg × weight (Kg) × % TBSA Burned ÷ 2",
+              "indent": 1,
+              "bold": [
+                "4 ml/kg × weight (Kg) × % TBSA Burned ÷ 2"
+              ]
+            },
+            {
+              "text": "This will give you the total milliliters of crystalloid needed to be administered in the first 8 hours.",
+              "indent": 1
+            },
+            {
+              "text": "Consensus Formula",
+              "bold": [
+                "Consensus Formula"
+              ]
+            },
+            {
+              "text": "2 – 4 ml/kg × weight (Kg) × % TBSA Burned ÷ 2",
+              "indent": 1,
+              "bold": [
+                "2 – 4 ml/kg × weight (Kg) × % TBSA Burned ÷ 2"
+              ]
+            },
+            {
+              "text": "This will give you the total milliliters of crystalloid needed to be administered in the first 8 hours.",
+              "indent": 1
+            },
+            {
+              "text": "USAISR Rule of Ten",
+              "bold": [
+                "USAISR Rule of Ten"
+              ]
+            },
+            {
+              "text": "TBSA calculated and rounded to the nearest 10. (i.e. 37% TBSA would be rounded to 40.)",
+              "indent": 1
+            },
+            {
+              "text": "That rounded percentage is multiplied by 10.",
+              "indent": 1
+            },
+            {
+              "text": "This quick calculation will give you the number of milliliters per hour of crystalloid to be administered.",
+              "indent": 1
+            },
+            {
+              "text": "This rule only applies to patients weighing 88-154 lbs. (40-70 kg). For any patient exceeding this weight range, for each 10kg in body weight over 70 kg, an additional 100 ml/hr. is given.",
+              "indent": 1
+            },
+            {
+              "text": "TBSA Estimation Methods",
+              "bold": [
+                "TBSA Estimation Methods"
+              ]
+            },
+            {
+              "text": "Palmar Method",
+              "indent": 1,
+              "bold": [
+                "Palmar Method"
+              ]
+            },
+            {
+              "text": "The patient’s palm + fingers = 1%",
+              "indent": 2
+            },
+            {
+              "text": "DO NOT exceed 2 liters of crystalloid IV solution unless authorized by Medical Control.",
+              "bold": [
+                "DO NOT exceed 2 liters of crystalloid IV solution unless authorized by Medical Control."
+              ]
+            },
+            "Contact Medical Control for fluid orders in patients with congestive heart failure or cardiac disease."
+          ]
+        },
+        {
+          "type": "documentation-card",
+          "title": "Document:",
+          "image": "assets/legend-documentation.webp",
+          "alt": "Patient care documentation reminder symbol",
+          "items": [
+            "Vital signs",
+            "Burn type, location, size and depth.",
+            "Cardiac rhythm",
+            "Treatment(s)",
+            "Communication with Medical Control."
+          ]
         }
       ],
-      "plainText": "Burns\nThis protocol applies to adult patients who have sustained thermal, chemical or electrical burns\nand/or have sustained inhalation injuries.\nHypotension is not normally seen with prehospital burn patients. Hypotension suggests\nother trauma. Refer to the trauma protocol(s) as needed.\n•\nEnsure scene safety\n•\nRemove patient from the burning process, only if properly trained and equipped to do so.\nPrimary Survey\n•\nMassive Hemorrhage\no\nTreat all life-threatening hemorrhage. See Hemorrhage Control Protocol.\n▪\nTourniquets for massive extremity hemorrhage.\n▪\nWound packing or junctional tourniquet for junctional hemorrhage.\n•\nAirway – ensure patency and positioning.\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\n•\nRespiratory/breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nManage any injuries impairing ventilation immediately.\n▪\nLook closely for evidence of inhalation injury (hoarseness, stridor, sooty sputum,\nfacial burns, or singed nasal or facial hair).\n▪\nAirway burns may require aggressive airway management.\n▪\nConsider false pulse oximetry readings due to possible carbon monoxide\nexposure.\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nCirculation – Assess radial pulses and heart rate.\no\nConsider Pelvic Binder if appropriate.\n•\nHead/Hypothermia\no\nInitial GCS/AVPU.\no\nPupils.\no\nPrevent hypothermia.\nSecondary Assessment and Treatment\n•\nRemove and secure any jewelry, belts, shoes, etc. from burned areas.\no\nRemove any burned or singed clothing not stuck to skin.\n•\nInitial care for burn wounds:\no\nChemical  Injury – brush off chemical, flush with water to remove any residual chemical.\n▪\nEnsure chemical IS NOT water reactive before flushing with water.\no\nElectrical Injury – treat dysrhythmias per appropriate cardiac dysrhythmia protocol.\n▪\nElectrical Injuries are very difficult to estimate TBSA.\no\nThermal Injury – dry sterile dressings and/or burn sheets.\n•\nBegin transport as soon as possible.  Consider aeromedical transport.\no\nIf no other trauma mechanism, transport to a burn center.\no\nIf trauma mechanism exists, consider transport to a trauma center.\no\nTransport patients with an unmanageable airway, uncontrolled hemorrhage, and/or\nhemodynamic instability to the closest hospital emergency department.\nBurns (Continued)\nSecondary Assessment and Treatment (Continued)\n•\nAdvanced airway/ventilatory support as needed.\no\nInitiate EtCO2 monitoring.\no\nSpO2 readings may not be accurate due to carbon monoxide exposure.\n•\nInitiate cardiac monitoring.\no\nManage dysrhythmias per appropriate protocol.\n•\nAssess for the following;\no\nPossible carbon monoxide poisoning. Signs and symptoms may include any of the\nfollowing:\no\nHeat inhalation injury.  Signs and symptoms may include any of the following:\no\nTotal Body Surface Area Estimation.\n▪\nRule of 9’s, or Palmar Method\n•\nEstimate total body surface area burned.\no\nTBSA calculations - only use Partial Thickness burns (2nd degree)\nand higher (3rd and 4th degree) for fluid resuscitation calculations.\n▪\nDepth of burns\n•\nSuperficial – 1st Degree\n•\nPartial Thickness – 2nd Degree\n•\nFull Thickness – 3rd Degree\n•\nFourth Degree – extends beyond skin and into muscle and/or bone.\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nLactated Ringers is preferred for burn resuscitation.\no\nUse the Parkland Formula, Consensus Formula, or USAISR Rule of Ten for calculating\nflow rates. (See formulas on next page)\no\nDO NOT delay transport to establish IV access.\n•\nFor pain management,  See Pain Management Protocol.\n▪\nDizziness.\n▪\nWeakness and fatigue.\n▪\nShortness of breath.\n▪\nChest pain.\n▪\nSinged facial hair, nasal hair.\n▪\nDark gray or black sputum.\n▪\nDifficulty swallowing/pain.\n▪\nShortness of breath or\ntachypnea.\n▪\nHoarseness or loss of voice.\n▪\nBurns to the lips, mouth or tongue.\n▪\nSwelling or redness inside the\noropharynx.\n▪\nPersistent coughing or wheezing.\n▪\nStridor.\n▪\nHeadache.\n▪\nNausea and/or vomiting.\n▪\nConfusion or disorientation.\n▪\nBlurred Vision.\n▪\nLoss of Consciousness.\nDocument:\n•\nVital signs\n•\nBurn type, location, size and\ndepth.\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with Medical\nControl.\nBurns (Continued)\nParkland Formula\n4 ml/kg x weight(Kg) x % TBSA Burned\n2\nThis will give you the total milliliters of\ncrystalloid needed to be administered\nin the first 8 hours.\nConsensus Formula\n2 – 4 ml/kg x weight (Kg) x % TBSA Burned\n2\nThis will give you the total milliliters of\ncrystalloid needed to be administered in\nthe first 8 hours.\nUSAISR Rule of Ten\n▪\nTBSA calculated and rounded to the\nnearest 10. (i.e. 37% TBSA would be\nrounded to 40.)\n▪\nThat rounded percentage is multiplied by\n10.\n▪\nThis quick calculation will give you the\nnumber of milliliters per hour of crystalloid\nto be administered.\n▪\nThis rule only applies to patients weighing\n88-154 lbs. (40-70 kg). For any patient\nexceeding this weight range, for each 10kg\nin body weight over 70 kg, an additional\n100 ml/hr. is given.\nTBSA Estimation Methods\nPalmar Method\nThe patient’s palm + fingers = 1%\nDO NOT exceed 2 liters of crystalloid IV solution unless authorized by Medical Control.\nContact Medical Control for fluid orders in patients with congestive heart failure or cardiac\ndisease.",
-      "pageText": [
-        {
-          "page": 148,
-          "text": "Burns\nThis protocol applies to adult patients who have sustained thermal, chemical or electrical burns\nand/or have sustained inhalation injuries.\nHypotension is not normally seen with prehospital burn patients. Hypotension suggests\nother trauma. Refer to the trauma protocol(s) as needed.\n•\nEnsure scene safety\n•\nRemove patient from the burning process, only if properly trained and equipped to do so.\nPrimary Survey\n•\nMassive Hemorrhage\no\nTreat all life-threatening hemorrhage. See Hemorrhage Control Protocol.\n▪\nTourniquets for massive extremity hemorrhage.\n▪\nWound packing or junctional tourniquet for junctional hemorrhage.\n•\nAirway – ensure patency and positioning.\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\n•\nRespiratory/breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nManage any injuries impairing ventilation immediately.\n▪\nLook closely for evidence of inhalation injury (hoarseness, stridor, sooty sputum,\nfacial burns, or singed nasal or facial hair).\n▪\nAirway burns may require aggressive airway management.\n▪\nConsider false pulse oximetry readings due to possible carbon monoxide\nexposure.\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nCirculation – Assess radial pulses and heart rate.\no\nConsider Pelvic Binder if appropriate.\n•\nHead/Hypothermia\no\nInitial GCS/AVPU.\no\nPupils.\no\nPrevent hypothermia.\nSecondary Assessment and Treatment\n•\nRemove and secure any jewelry, belts, shoes, etc. from burned areas.\no\nRemove any burned or singed clothing not stuck to skin.\n•\nInitial care for burn wounds:\no\nChemical  Injury – brush off chemical, flush with water to remove any residual chemical.\n▪\nEnsure chemical IS NOT water reactive before flushing with water.\no\nElectrical Injury – treat dysrhythmias per appropriate cardiac dysrhythmia protocol.\n▪\nElectrical Injuries are very difficult to estimate TBSA.\no\nThermal Injury – dry sterile dressings and/or burn sheets.\n•\nBegin transport as soon as possible.  Consider aeromedical transport.\no\nIf no other trauma mechanism, transport to a burn center.\no\nIf trauma mechanism exists, consider transport to a trauma center.\no\nTransport patients with an unmanageable airway, uncontrolled hemorrhage, and/or\nhemodynamic instability to the closest hospital emergency department."
-        },
-        {
-          "page": 149,
-          "text": "Burns (Continued)\nSecondary Assessment and Treatment (Continued)\n•\nAdvanced airway/ventilatory support as needed.\no\nInitiate EtCO2 monitoring.\no\nSpO2 readings may not be accurate due to carbon monoxide exposure.\n•\nInitiate cardiac monitoring.\no\nManage dysrhythmias per appropriate protocol.\n•\nAssess for the following;\no\nPossible carbon monoxide poisoning. Signs and symptoms may include any of the\nfollowing:\no\nHeat inhalation injury.  Signs and symptoms may include any of the following:\no\nTotal Body Surface Area Estimation.\n▪\nRule of 9’s, or Palmar Method\n•\nEstimate total body surface area burned.\no\nTBSA calculations - only use Partial Thickness burns (2nd degree)\nand higher (3rd and 4th degree) for fluid resuscitation calculations.\n▪\nDepth of burns\n•\nSuperficial – 1st Degree\n•\nPartial Thickness – 2nd Degree\n•\nFull Thickness – 3rd Degree\n•\nFourth Degree – extends beyond skin and into muscle and/or bone.\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nLactated Ringers is preferred for burn resuscitation.\no\nUse the Parkland Formula, Consensus Formula, or USAISR Rule of Ten for calculating\nflow rates. (See formulas on next page)\no\nDO NOT delay transport to establish IV access.\n•\nFor pain management,  See Pain Management Protocol.\n▪\nDizziness.\n▪\nWeakness and fatigue.\n▪\nShortness of breath.\n▪\nChest pain.\n▪\nSinged facial hair, nasal hair.\n▪\nDark gray or black sputum.\n▪\nDifficulty swallowing/pain.\n▪\nShortness of breath or\ntachypnea.\n▪\nHoarseness or loss of voice.\n▪\nBurns to the lips, mouth or tongue.\n▪\nSwelling or redness inside the\noropharynx.\n▪\nPersistent coughing or wheezing.\n▪\nStridor.\n▪\nHeadache.\n▪\nNausea and/or vomiting.\n▪\nConfusion or disorientation.\n▪\nBlurred Vision.\n▪\nLoss of Consciousness.\nDocument:\n•\nVital signs\n•\nBurn type, location, size and\ndepth.\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with Medical\nControl."
-        },
-        {
-          "page": 150,
-          "text": "Burns (Continued)\nParkland Formula\n4 ml/kg x weight(Kg) x % TBSA Burned\n2\nThis will give you the total milliliters of\ncrystalloid needed to be administered\nin the first 8 hours.\nConsensus Formula\n2 – 4 ml/kg x weight (Kg) x % TBSA Burned\n2\nThis will give you the total milliliters of\ncrystalloid needed to be administered in\nthe first 8 hours.\nUSAISR Rule of Ten\n▪\nTBSA calculated and rounded to the\nnearest 10. (i.e. 37% TBSA would be\nrounded to 40.)\n▪\nThat rounded percentage is multiplied by\n10.\n▪\nThis quick calculation will give you the\nnumber of milliliters per hour of crystalloid\nto be administered.\n▪\nThis rule only applies to patients weighing\n88-154 lbs. (40-70 kg). For any patient\nexceeding this weight range, for each 10kg\nin body weight over 70 kg, an additional\n100 ml/hr. is given.\nTBSA Estimation Methods\nPalmar Method\nThe patient’s palm + fingers = 1%\nDO NOT exceed 2 liters of crystalloid IV solution unless authorized by Medical Control.\nContact Medical Control for fluid orders in patients with congestive heart failure or cardiac\ndisease."
-        }
-      ],
-      "needsReview": true,
-      "extractionNote": "Displayed from the official PDF by default because this page may contain tables, charts, forms, signatures, algorithms, or visual formatting that should not be flattened into text. Convert to structured table/blocks only after manual review.",
-      "displayMode": "pdf-page"
+      "plainText": "Burns. Adult thermal, chemical, electrical, and inhalation burn assessment and treatment, carbon monoxide and heat-inhalation findings, TBSA estimation, fluid formulas, pain management, and documentation.",
+      "needsReview": false,
+      "displayMode": "structured"
     },
     {
       "id": "snakebite",
