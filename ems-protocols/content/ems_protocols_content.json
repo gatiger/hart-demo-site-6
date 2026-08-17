@@ -726,7 +726,7 @@
               "status": "active"
             },
             {
-              "id": "abdominal-and-pelvic-trauma",
+              "id": "adult-abdominal-and-pelvic-trauma",
               "title": "Abdominal and Pelvic Trauma",
               "type": "protocol",
               "pageStart": 142,
@@ -9249,7 +9249,7 @@
       "displayMode": "structured"
     },
     {
-      "id": "abdominal-and-pelvic-trauma",
+      "id": "adult-abdominal-and-pelvic-trauma",
       "title": "Abdominal and Pelvic Trauma",
       "type": "protocol",
       "categoryPath": [
@@ -9260,14 +9260,21 @@
       "effectiveDate": "2026-06-08",
       "lastRevised": "",
       "version": "2026",
-      "tags": [],
+      "tags": [
+        "adult",
+        "trauma",
+        "abdominal trauma",
+        "pelvic trauma",
+        "evisceration",
+        "impaled object"
+      ],
       "source": {
         "pdf": "documents/ems/2026-hcems-protocols.pdf",
         "pageStart": 142,
         "pageEnd": 143,
         "pageLabel": "142-143"
       },
-      "summary": "",
+      "summary": "Assessment and treatment of adult patients presenting with injury to the abdomen and/or pelvis.",
       "content": [
         {
           "type": "heading",
@@ -9276,49 +9283,243 @@
         },
         {
           "type": "paragraph",
-          "text": "This protocol applies to adult patients presenting with injury to the abdomen and/or pelvis. Primary Survey Massive Hemorrhage Treat all life-threatening hemorrhage. See Hemorrhage Control Protocol. Tourniquets for massive extremity hemorrhage. Wound packing or junctional tourniquet for junctional hemorrhage. Airway – ensure patency and positioning. Have suction equipment ready. Consider spinal motion restriction if indicated. Respiratory/breathing – Give supplemental O2 if signs of compromise. Maintain SpO2 > 94%. Manage any injuries impairing ventilation immediately. Chest wounds: Open/Sucking, Impaled objects, bruising. Signs of Pneumothorax. Flail Segments. Assist with bag valve mask if respiratory effort is ineffective. Circulation – Assess radial pulses and heart rate. Consider Pelvic Binder if appropriate. Head/Hypothermia Initial GCS/AVPU. Pupils. Prevent hypothermia. Secondary Assessment and Treatment Monitor vital signs and O2 saturation Perform blood glucose analysis – Treat if BGL is < 60 mg/dl. Cardiac Monitor Record and evaluate 12-Lead ECG. Physical exam and OPQRST/SAMPLE history. Expose and rapidly assess the head, chest abdomen, pelvis and extremities for injury. Evaluate the patient’s posterior when possible. Note any abdominal rigidity, distention, tenderness, etc. Note any pelvic instability. Perform spinal motion restriction, rigid C-collar and secure to a long spine board if indicated. Initiate patient transport to a trauma center as soon as possible. Advanced airway/ventilatory support as needed. See Sedation Assisted Intubation Protocol. Initiate IV/IO of normal saline at KVO rate. If fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol. Abdominal and Pelvic Trauma (Continued) Secondary Assessment and Treatment (Continued)"
+          "text": "This protocol applies to adult patients presenting with injury to the abdomen and/or pelvis."
         },
         {
-          "type": "heading",
-          "level": 3,
-          "text": "For evisceration"
+          "type": "flow-stage",
+          "title": "Primary Survey",
+          "arrowAfter": true,
+          "items": [
+            {
+              "text": "Massive Hemorrhage",
+              "bold": [
+                "Massive Hemorrhage"
+              ]
+            },
+            {
+              "text": "Treat all life-threatening hemorrhage. See Hemorrhage Control Protocol.",
+              "indent": 1,
+              "bold": [
+                "Treat all life-threatening hemorrhage."
+              ],
+              "links": [
+                {
+                  "text": "Hemorrhage Control Protocol",
+                  "protocolId": "hemorrhage-control"
+                }
+              ]
+            },
+            {
+              "text": "Tourniquets for massive extremity hemorrhage.",
+              "indent": 2
+            },
+            {
+              "text": "Wound packing or junctional tourniquet for junctional hemorrhage.",
+              "indent": 2
+            },
+            {
+              "text": "Airway – ensure patency and positioning.",
+              "bold": [
+                "Airway"
+              ]
+            },
+            {
+              "text": "Have suction equipment ready.",
+              "indent": 1
+            },
+            {
+              "text": "Consider spinal motion restriction if indicated.",
+              "indent": 1
+            },
+            {
+              "text": "Respiratory/breathing – Give supplemental O₂ if signs of compromise. Maintain SpO₂ ≥ 94%.",
+              "bold": [
+                "Respiratory/breathing",
+                "Maintain SpO₂ ≥ 94%."
+              ]
+            },
+            {
+              "text": "Manage any injuries impairing ventilation immediately.",
+              "indent": 1
+            },
+            {
+              "text": "Chest wounds: Open/Sucking, Impaled objects, bruising.",
+              "indent": 2
+            },
+            {
+              "text": "Signs of Pneumothorax.",
+              "indent": 2
+            },
+            {
+              "text": "Flail Segments.",
+              "indent": 2
+            },
+            {
+              "text": "Assist with bag valve mask if respiratory effort is ineffective.",
+              "indent": 1
+            },
+            {
+              "text": "Circulation – Assess radial pulses and heart rate.",
+              "bold": [
+                "Circulation"
+              ]
+            },
+            {
+              "text": "Consider Pelvic Binder if appropriate.",
+              "indent": 1
+            },
+            {
+              "text": "Head/Hypothermia",
+              "bold": [
+                "Head/Hypothermia"
+              ]
+            },
+            {
+              "text": "Initial GCS/AVPU.",
+              "indent": 1
+            },
+            {
+              "text": "Pupils.",
+              "indent": 1
+            },
+            {
+              "text": "Prevent hypothermia.",
+              "indent": 1
+            }
+          ]
         },
         {
-          "type": "paragraph",
-          "text": "DO NOT attempt to replace protruding organs. Apply a moistened sterile dressing directly to the site. Cover the moistened sterile dressing with an occlusive dressing. Place the patient on their back, with legs flexed at the knees to reduce pain."
+          "type": "flow-stage",
+          "title": "Secondary Assessment and Treatment",
+          "items": [
+            "Monitor vital signs and O₂ saturation",
+            {
+              "text": "Perform blood glucose analysis – Treat if BGL is < 60 mg/dl.",
+              "bold": [
+                "BGL is < 60 mg/dl."
+              ]
+            },
+            "Cardiac Monitor",
+            {
+              "text": "Record and evaluate 12-Lead ECG.",
+              "indent": 1
+            },
+            "Physical exam and OPQRST/SAMPLE history.",
+            {
+              "text": "Expose and rapidly assess the head, chest abdomen, pelvis and extremities for injury.",
+              "indent": 1
+            },
+            {
+              "text": "Evaluate the patient’s posterior when possible.",
+              "indent": 2
+            },
+            {
+              "text": "Note any abdominal rigidity, distention, tenderness, etc.",
+              "indent": 2
+            },
+            {
+              "text": "Note any pelvic instability.",
+              "indent": 2
+            },
+            "Perform spinal motion restriction, rigid C-collar and secure to a long spine board if indicated.",
+            "Initiate patient transport to a trauma center as soon as possible.",
+            {
+              "text": "Advanced airway/ventilatory support as needed. See Sedation Assisted Intubation Protocol.",
+              "links": [
+                {
+                  "text": "Sedation Assisted Intubation Protocol",
+                  "protocolId": "sedation-assisted-intubation"
+                }
+              ]
+            },
+            "Initiate IV/IO of normal saline at KVO rate.",
+            {
+              "text": "If fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.",
+              "indent": 1,
+              "links": [
+                {
+                  "text": "Shock Protocol",
+                  "protocolId": "shock-management"
+                }
+              ]
+            },
+            {
+              "text": "For evisceration:",
+              "bold": [
+                "For evisceration:"
+              ]
+            },
+            {
+              "text": "DO NOT attempt to replace protruding organs.",
+              "indent": 1,
+              "bold": [
+                "DO NOT"
+              ]
+            },
+            {
+              "text": "Apply a moistened sterile dressing directly to the site.",
+              "indent": 1
+            },
+            {
+              "text": "Cover the moistened sterile dressing with an occlusive dressing.",
+              "indent": 1
+            },
+            {
+              "text": "Place the patient on their back, with legs flexed at the knees to reduce pain.",
+              "indent": 1
+            },
+            {
+              "text": "For Impaled objects:",
+              "bold": [
+                "For Impaled objects:"
+              ]
+            },
+            {
+              "text": "Carefully cut away any clothing that is around the object.",
+              "indent": 1
+            },
+            {
+              "text": "Manually stabilize the object avoid applying any pressure to the object.",
+              "indent": 1
+            },
+            {
+              "text": "Use bulky dressings and cravats to stabilize the object.",
+              "indent": 1
+            },
+            {
+              "text": "Minimize patient movement.",
+              "indent": 1
+            },
+            {
+              "text": "If impaled object has been removed prior to EMS arrival, make every attempt to transport the object with the patient.",
+              "icon": "assets/legend-important.webp",
+              "iconAlt": "Important protocol information",
+              "bold": [
+                "If impaled object has been removed prior to EMS arrival, make every attempt to transport the object with the patient."
+              ],
+              "red": [
+                "If impaled object has been removed prior to EMS arrival, make every attempt to transport the object with the patient."
+              ]
+            },
+            "Continue resuscitation and evaluation enroute."
+          ]
         },
         {
-          "type": "heading",
-          "level": 3,
-          "text": "For Impaled objects"
-        },
-        {
-          "type": "paragraph",
-          "text": "Carefully cut away any clothing that is around the object. Manually stabilize the object avoid applying any pressure to the object. Use bulky dressings and cravats to stabilize the object. Minimize patient movement. If impaled object has been removed prior to EMS arrival, make every attempt to transport the object with the patient. Continue resuscitation and evaluation enroute."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
-        },
-        {
-          "type": "paragraph",
-          "text": "Vital signs OPQRST/SAMPLE Cardiac rhythm Treatment(s) Communication with Medical Control."
+          "type": "documentation-card",
+          "title": "Document:",
+          "image": "assets/legend-documentation.webp",
+          "alt": "Patient care documentation reminder symbol",
+          "items": [
+            "Vital signs",
+            "OPQRST/SAMPLE",
+            "Cardiac rhythm",
+            "Treatment(s)",
+            "Communication with Medical Control."
+          ]
         }
       ],
-      "plainText": "Abdominal and Pelvic Trauma\nThis protocol applies to adult patients presenting with injury to the abdomen and/or pelvis.\nPrimary Survey\n•\nMassive Hemorrhage\no\nTreat all life-threatening hemorrhage. See Hemorrhage Control Protocol.\n▪\nTourniquets for massive extremity hemorrhage.\n▪\nWound packing or junctional tourniquet for junctional hemorrhage.\n•\nAirway – ensure patency and positioning.\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\n•\nRespiratory/breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nManage any injuries impairing ventilation immediately.\n▪\nChest wounds: Open/Sucking, Impaled objects, bruising.\n▪\nSigns of Pneumothorax.\n▪\nFlail Segments.\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nCirculation – Assess radial pulses and heart rate.\no\nConsider Pelvic Binder if appropriate.\n•\nHead/Hypothermia\no\nInitial GCS/AVPU.\no\nPupils.\no\nPrevent hypothermia.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nCardiac Monitor\no\nRecord and evaluate 12-Lead ECG.\n•\nPhysical exam and OPQRST/SAMPLE history.\no\nExpose and rapidly assess the head, chest abdomen, pelvis and extremities for injury.\n▪\nEvaluate the patient’s posterior when possible.\n▪\nNote any abdominal rigidity, distention, tenderness, etc.\n▪\nNote any pelvic instability.\n•\nPerform spinal motion restriction, rigid C-collar and secure to a long spine board if indicated.\n•\nInitiate patient transport to a trauma center as soon as possible.\n•\nAdvanced airway/ventilatory support as needed. See Sedation Assisted Intubation Protocol.\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.\nAbdominal and Pelvic Trauma (Continued)\nSecondary Assessment and Treatment (Continued)\n•\nFor evisceration:\no\nDO NOT attempt to replace protruding organs.\no\nApply a moistened sterile dressing directly to the site.\no\nCover the moistened sterile dressing with an occlusive dressing.\no\nPlace the patient on their back, with legs flexed at the knees to reduce pain.\n•\nFor Impaled objects:\no\nCarefully cut away any clothing that is around the object.\no\nManually stabilize the object avoid applying any pressure to the object.\no\nUse bulky dressings and cravats to stabilize the object.\no\nMinimize patient movement.\nIf impaled object has been removed prior to EMS arrival, make every attempt to transport\nthe object with the patient.\n•\nContinue resuscitation and evaluation enroute.\nDocument:\n•\nVital signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control.",
-      "pageText": [
-        {
-          "page": 142,
-          "text": "Abdominal and Pelvic Trauma\nThis protocol applies to adult patients presenting with injury to the abdomen and/or pelvis.\nPrimary Survey\n•\nMassive Hemorrhage\no\nTreat all life-threatening hemorrhage. See Hemorrhage Control Protocol.\n▪\nTourniquets for massive extremity hemorrhage.\n▪\nWound packing or junctional tourniquet for junctional hemorrhage.\n•\nAirway – ensure patency and positioning.\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\n•\nRespiratory/breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nManage any injuries impairing ventilation immediately.\n▪\nChest wounds: Open/Sucking, Impaled objects, bruising.\n▪\nSigns of Pneumothorax.\n▪\nFlail Segments.\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nCirculation – Assess radial pulses and heart rate.\no\nConsider Pelvic Binder if appropriate.\n•\nHead/Hypothermia\no\nInitial GCS/AVPU.\no\nPupils.\no\nPrevent hypothermia.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation\n•\nPerform blood glucose analysis – Treat if BGL is < 60 mg/dl.\n•\nCardiac Monitor\no\nRecord and evaluate 12-Lead ECG.\n•\nPhysical exam and OPQRST/SAMPLE history.\no\nExpose and rapidly assess the head, chest abdomen, pelvis and extremities for injury.\n▪\nEvaluate the patient’s posterior when possible.\n▪\nNote any abdominal rigidity, distention, tenderness, etc.\n▪\nNote any pelvic instability.\n•\nPerform spinal motion restriction, rigid C-collar and secure to a long spine board if indicated.\n•\nInitiate patient transport to a trauma center as soon as possible.\n•\nAdvanced airway/ventilatory support as needed. See Sedation Assisted Intubation Protocol.\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol."
-        },
-        {
-          "page": 143,
-          "text": "Abdominal and Pelvic Trauma (Continued)\nSecondary Assessment and Treatment (Continued)\n•\nFor evisceration:\no\nDO NOT attempt to replace protruding organs.\no\nApply a moistened sterile dressing directly to the site.\no\nCover the moistened sterile dressing with an occlusive dressing.\no\nPlace the patient on their back, with legs flexed at the knees to reduce pain.\n•\nFor Impaled objects:\no\nCarefully cut away any clothing that is around the object.\no\nManually stabilize the object avoid applying any pressure to the object.\no\nUse bulky dressings and cravats to stabilize the object.\no\nMinimize patient movement.\nIf impaled object has been removed prior to EMS arrival, make every attempt to transport\nthe object with the patient.\n•\nContinue resuscitation and evaluation enroute.\nDocument:\n•\nVital signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control."
-        }
-      ],
+      "plainText": "Abdominal and Pelvic Trauma. This protocol applies to adult patients presenting with injury to the abdomen and/or pelvis. Primary survey, secondary assessment and treatment, evisceration and impaled-object care, transport, and documentation.",
       "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
       "displayMode": "structured"
     },
     {

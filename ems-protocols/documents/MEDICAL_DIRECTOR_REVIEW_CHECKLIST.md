@@ -218,6 +218,12 @@ This internal checklist tracks items that must be confirmed before the native EM
 
 
 
+
+### Adult Clinical Protocols > Adult Trauma Emergencies > Abdominal and Pelvic Trauma
+
+- [ ] Verify abdominal and pelvic assessment, spinal restriction, trauma-center transport, fluid treatment, evisceration care, impaled-object care, transport of a removed object, continued resuscitation, and documentation requirements.
+- [ ] Confirm the source wording ?Manually stabilize the object avoid applying any pressure to the object? or approve a grammatical correction.
+
 ### Adult Clinical Protocols > Adult Trauma Emergencies > Chest Trauma
 
 - [ ] Verify chest-wound, pneumothorax, flail-segment, ventilation, transport, fluid, reassessment, capnography, and documentation instructions.
