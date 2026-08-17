@@ -19,6 +19,77 @@ This internal checklist tracks items that must be confirmed before the native EM
 - [ ] Identify the controlling signed record, its storage location, and the process for approving and recording future revisions.
 - [ ] Give written authorization to publish the native HTML version for operational use.
 
+
+## Specific questions and uncertainties
+
+These are not routine transcription checks. Each item below represents source material that was unclear, potentially outdated, internally inconsistent, recreated, or dependent on a policy decision. Obtain a specific answer before publication and record the reviewer, date, decision, and any required correction beneath the item.
+
+### Administrative > Approval Statement
+
+- [ ] Is the proposed electronic approval statement acceptable as a replacement for displaying the signed PDF approval page?
+- [ ] Are "Signature on file" and the statement that original signatures are maintained at Hart County EMS headquarters accurate?
+- [ ] Should the statement say "for authorized personnel" when the EMS protocol URL is not protected by authentication?
+
+### Pediatric Clinical Protocols > Pain Management
+
+- [ ] Is Hart County authorized to reproduce and use the Wong-Baker FACES Pain Rating Scale in the native app, and what attribution is required?
+
+### Pediatric Clinical Protocols > Pediatric Trauma Emergencies > Burns
+
+- [ ] Is the recreated Pediatric Rule of 9s/Palmar Rule image clinically accurate, including every percentage and label?
+
+### Adult Clinical Protocols > Pain Management
+
+- [ ] Is the Wong-Baker FACES Pain Rating Scale appropriate for the stated adult use, and is Hart County authorized to reproduce it?
+
+### Adult Clinical Protocols > Adult Cardiac Emergencies > Left Ventricular Assist Device (LVAD)
+
+- [ ] Should HeartWare HVAD and HeartMate II remain as legacy-device guidance? The PDF includes them, but current source material indicates HeartWare HVAD distribution stopped in 2021 and HeartMate II is no longer implanted by UR Medicine.
+- [ ] Is the adapted UR Medicine content appropriate for Hart County EMS, and has reproduction/adaptation permission been obtained?
+- [ ] Should crews call the patient's own VAD center before contacting UR Medicine?
+- [ ] Are the UR Medicine telephone numbers, VAD educator contact, and educational-resource URL still current?
+
+### Adult Clinical Protocols > Adult Medical Emergencies > Toxic Exposure
+
+- [ ] Is the listed adult atropine dose of 2-5 mg/kg IV/IO/IM every 10-15 minutes correct for this protocol?
+- [ ] Does "obstetric history" belong in the adult Toxic Exposure assessment, or was it carried over in error?
+- [ ] May EMS personnel follow Georgia Poison Control advice as Medical Control direction, as stated in the source?
+
+### Adult Clinical Protocols > Adult Medical Emergencies > Stroke
+
+- [ ] Is the recreated left-brain/right-brain stroke diagram clinically accurate, including the opposite-side red body highlighting and all listed effects?
+- [ ] Is the American Stroke Association reference/attribution sufficient, and is permission required for the adapted diagram?
+
+### Adult Clinical Protocols > Adult Trauma Emergencies > Burns
+
+- [ ] Is the recreated adult/pediatric TBSA estimation diagram clinically accurate, including every percentage and label?
+- [ ] Are the Parkland Formula, Consensus Formula, USAISR Rule of Ten, weight-range adjustment, Palmar Method, two-liter limit, and CHF/cardiac-disease instruction current and approved?
+
+### Adult Clinical Protocols > Adult Trauma Emergencies > Extremity Trauma
+
+- [ ] The source documentation box lists "Vital signs" twice. Should the second entry remain "Vital signs," or should it be "Cardiac rhythm"?
+
+### Adult Clinical Protocols > Adult Trauma Emergencies > Abdominal and Pelvic Trauma
+
+- [ ] Should "Manually stabilize the object avoid applying any pressure to the object" be grammatically corrected, and what exact approved wording should replace it?
+
+### Adult Clinical Protocols > Adult Trauma Emergencies > Eye Trauma
+
+- [ ] Is "enavulsed" the intended clinical term, or should it be corrected to "avulsed" or "enucleated"?
+
+### Resources > Sedation Assisted Intubation
+
+- [ ] Does the referenced 2012 Georgia EMSMDAC guidance remain current and authorized for use?
+
+### Resources > Advanced Transport Ventilator
+
+- [ ] Which predicted-body-weight/tidal-volume values are correct where the source entries are inconsistent?
+
+### External material and publication policy
+
+- [ ] Who will confirm and document reproduction permission for external charts, pain scales, algorithms, images, logos, and adapted educational material?
+- [ ] Which signed document or controlled record becomes the authoritative source after the protocols are fully native HTML?
+
 ## Administrative
 
 ### Administrative > Approval Statement
