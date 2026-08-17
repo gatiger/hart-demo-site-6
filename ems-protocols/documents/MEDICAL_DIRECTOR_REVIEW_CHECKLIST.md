@@ -223,6 +223,11 @@ This internal checklist tracks items that must be confirmed before the native EM
 
 
 
+
+### Adult Clinical Protocols > Adult Trauma Emergencies > Submersion
+
+- [ ] Verify water-rescue safety, hemorrhage/airway treatment, monitoring, EtCO2 target, fluids, hypothermia cross-reference, mandatory transport instruction, and documentation requirements.
+
 ### Adult Clinical Protocols > Adult Trauma Emergencies > Snakebite
 
 - [ ] Verify the rescue-personnel warning, prohibition on transporting snakes, dead-snake warning, positioning, swelling/erythema marking, snake identification, EtCO2 target, extremity positioning, wound restrictions, fluids, pain management, and documentation requirements.

@@ -766,7 +766,7 @@
               "status": "active"
             },
             {
-              "id": "submersion",
+              "id": "adult-submersion",
               "title": "Submersion",
               "type": "protocol",
               "pageStart": 152,
@@ -10740,8 +10740,8 @@
       "displayMode": "structured"
     },
     {
-      "id": "submersion",
-      "title": "Submersion",
+      "id": "adult-submersion",
+      "title": "Submersion Event",
       "type": "protocol",
       "categoryPath": [
         "Adult Clinical Protocols",
@@ -10751,14 +10751,20 @@
       "effectiveDate": "2026-06-08",
       "lastRevised": "",
       "version": "2026",
-      "tags": [],
+      "tags": [
+        "adult",
+        "trauma",
+        "submersion",
+        "drowning",
+        "water rescue"
+      ],
       "source": {
         "pdf": "documents/ems/2026-hcems-protocols.pdf",
         "pageStart": 152,
         "pageEnd": 152,
         "pageLabel": "152"
       },
-      "summary": "",
+      "summary": "Assessment and treatment of adult patients who have been submerged under water.",
       "content": [
         {
           "type": "heading",
@@ -10767,27 +10773,195 @@
         },
         {
           "type": "paragraph",
-          "text": "Applies to any adult patient that has been submerged under water for any period of time. Special Note: Safety of rescue personnel is top priority! Enter water only if trained to do so, only if equipped and as a last resort. Primary Survey Massive Hemorrhage Treat all life-threatening hemorrhage. See Hemorrhage Control Protocol. Airway – ensure patency and positioning. Have suction equipment ready. Consider spinal motion restriction if indicated. Respiratory/breathing – Give supplemental O2 if signs of compromise. Maintain SpO2 > 94%. Manage any injuries impairing ventilation immediately. Assist with bag valve mask if respiratory effort is ineffective. Circulation – Assess radial pulses and heart rate. Consider Pelvic Binder if appropriate. Head/Hypothermia Initial GCS/AVPU. Pupils. Prevent hypothermia. Secondary Assessment and Treatment Monitor vital signs and O2 saturation Cardiac Monitor Obtain and evaluate 12-Lead ECG as soon as possible. Treat arrhythmias under the appropriate protocol. Perform blood glucose analysis. Treat if BGL is < 60 mg/dl. Initiate EtCO2 monitoring. Physical exam and OPQRST/SAMPLE history. Advanced airway/ventilatory support as needed. Initiate EtCO2 monitoring. Maintain EtCO2 of 30-35 mmHg Initiate IV/IO of normal saline at KVO rate. If fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol. If patient is hypothermic, See Cold Related Emergencies Protocol. All submersion victims should be transported, even if they appear uninjured or appear to have recovered."
+          "text": "Applies to any adult patient that has been submerged under water for any period of time."
         },
         {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
+          "type": "flow-stage",
+          "arrowAfter": true,
+          "items": [
+            {
+              "text": "Special Note: Safety of rescue personnel is top priority! Enter water only if trained to do so, only if equipped and as a last resort.",
+              "bold": [
+                "Special Note: Safety of rescue personnel is top priority! Enter water only if trained to do so, only if equipped and as a last resort."
+              ],
+              "red": [
+                "Special Note: Safety of rescue personnel is top priority! Enter water only if trained to do so, only if equipped and as a last resort."
+              ]
+            }
+          ]
         },
         {
-          "type": "paragraph",
-          "text": "Vital signs OPQRST/SAMPLE Cardiac rhythm Treatment(s) Communication with Medical Control."
-        }
-      ],
-      "plainText": "Submersion Event\nApplies to any adult patient that has been submerged under water for any period of time.\nSpecial Note: Safety of rescue personnel is top priority! Enter water only if trained to do so, only if\nequipped and as a last resort.\nPrimary Survey\n•\nMassive Hemorrhage\no\nTreat all life-threatening hemorrhage. See Hemorrhage Control Protocol.\n•\nAirway – ensure patency and positioning.\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\n•\nRespiratory/breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nManage any injuries impairing ventilation immediately.\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nCirculation – Assess radial pulses and heart rate.\no\nConsider Pelvic Binder if appropriate.\n•\nHead/Hypothermia\no\nInitial GCS/AVPU.\no\nPupils.\no\nPrevent hypothermia.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation\n•\nCardiac Monitor\no\nObtain and evaluate 12-Lead ECG as soon as possible.\no\nTreat arrhythmias under the appropriate protocol.\n•\nPerform blood glucose analysis.  Treat if BGL is < 60 mg/dl.\n•\nInitiate EtCO2 monitoring.\n•\nPhysical exam and OPQRST/SAMPLE history.\n•\nAdvanced airway/ventilatory support as needed.\no\nInitiate EtCO2 monitoring.\no\nMaintain EtCO2 of 30-35 mmHg\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.\n•\nIf patient is hypothermic,  See Cold Related Emergencies Protocol.\nAll submersion victims should be transported, even if they appear uninjured or appear to\nhave recovered.\nDocument:\n•\nVital signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control.",
-      "pageText": [
+          "type": "flow-stage",
+          "title": "Primary Survey",
+          "arrowAfter": true,
+          "items": [
+            {
+              "text": "Massive Hemorrhage",
+              "bold": [
+                "Massive Hemorrhage"
+              ]
+            },
+            {
+              "text": "Treat all life-threatening hemorrhage. See Hemorrhage Control Protocol.",
+              "indent": 1,
+              "bold": [
+                "Treat all life-threatening hemorrhage."
+              ],
+              "links": [
+                {
+                  "text": "Hemorrhage Control Protocol",
+                  "protocolId": "hemorrhage-control"
+                }
+              ]
+            },
+            {
+              "text": "Airway – ensure patency and positioning.",
+              "bold": [
+                "Airway"
+              ]
+            },
+            {
+              "text": "Have suction equipment ready.",
+              "indent": 1
+            },
+            {
+              "text": "Consider spinal motion restriction if indicated.",
+              "indent": 1
+            },
+            {
+              "text": "Respiratory/breathing – Give supplemental O₂ if signs of compromise. Maintain SpO₂ ≥ 94%.",
+              "bold": [
+                "Respiratory/breathing",
+                "Maintain SpO₂ ≥ 94%."
+              ]
+            },
+            {
+              "text": "Manage any injuries impairing ventilation immediately.",
+              "indent": 1
+            },
+            {
+              "text": "Assist with bag valve mask if respiratory effort is ineffective.",
+              "indent": 1
+            },
+            {
+              "text": "Circulation – Assess radial pulses and heart rate.",
+              "bold": [
+                "Circulation"
+              ]
+            },
+            {
+              "text": "Consider Pelvic Binder if appropriate.",
+              "indent": 1
+            },
+            {
+              "text": "Head/Hypothermia",
+              "bold": [
+                "Head/Hypothermia"
+              ]
+            },
+            {
+              "text": "Initial GCS/AVPU.",
+              "indent": 1
+            },
+            {
+              "text": "Pupils.",
+              "indent": 1
+            },
+            {
+              "text": "Prevent hypothermia.",
+              "indent": 1
+            }
+          ]
+        },
         {
-          "page": 152,
-          "text": "Submersion Event\nApplies to any adult patient that has been submerged under water for any period of time.\nSpecial Note: Safety of rescue personnel is top priority! Enter water only if trained to do so, only if\nequipped and as a last resort.\nPrimary Survey\n•\nMassive Hemorrhage\no\nTreat all life-threatening hemorrhage. See Hemorrhage Control Protocol.\n•\nAirway – ensure patency and positioning.\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\n•\nRespiratory/breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nManage any injuries impairing ventilation immediately.\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nCirculation – Assess radial pulses and heart rate.\no\nConsider Pelvic Binder if appropriate.\n•\nHead/Hypothermia\no\nInitial GCS/AVPU.\no\nPupils.\no\nPrevent hypothermia.\nSecondary Assessment and Treatment\n•\nMonitor vital signs and O2 saturation\n•\nCardiac Monitor\no\nObtain and evaluate 12-Lead ECG as soon as possible.\no\nTreat arrhythmias under the appropriate protocol.\n•\nPerform blood glucose analysis.  Treat if BGL is < 60 mg/dl.\n•\nInitiate EtCO2 monitoring.\n•\nPhysical exam and OPQRST/SAMPLE history.\n•\nAdvanced airway/ventilatory support as needed.\no\nInitiate EtCO2 monitoring.\no\nMaintain EtCO2 of 30-35 mmHg\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.\n•\nIf patient is hypothermic,  See Cold Related Emergencies Protocol.\nAll submersion victims should be transported, even if they appear uninjured or appear to\nhave recovered.\nDocument:\n•\nVital signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control."
+          "type": "flow-stage",
+          "title": "Secondary Assessment and Treatment",
+          "arrowAfter": true,
+          "items": [
+            "Monitor vital signs and O₂ saturation",
+            "Cardiac Monitor",
+            {
+              "text": "Obtain and evaluate 12-Lead ECG as soon as possible.",
+              "indent": 1
+            },
+            {
+              "text": "Treat dysrhythmias under the appropriate protocol.",
+              "indent": 1
+            },
+            {
+              "text": "Perform blood glucose analysis. Treat if BGL is < 60 mg/dl.",
+              "bold": [
+                "BGL is < 60 mg/dl."
+              ]
+            },
+            "Initiate EtCO₂ monitoring.",
+            "Physical exam and OPQRST/SAMPLE history.",
+            "Advanced airway/ventilatory support as needed.",
+            {
+              "text": "Initiate EtCO₂ monitoring.",
+              "indent": 1
+            },
+            {
+              "text": "Maintain EtCO₂ of 30-35 mmHg",
+              "indent": 1,
+              "bold": [
+                "Maintain EtCO₂ of 30-35 mmHg"
+              ]
+            },
+            "Initiate IV/IO of normal saline at KVO rate.",
+            {
+              "text": "If fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.",
+              "indent": 1,
+              "links": [
+                {
+                  "text": "Shock Protocol",
+                  "protocolId": "shock-management"
+                }
+              ]
+            },
+            {
+              "text": "If patient is hypothermic, See Cold Related Emergencies Protocol.",
+              "links": [
+                {
+                  "text": "Cold Related Emergencies Protocol",
+                  "protocolId": "adult-cold-related-emergencies"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "flow-stage",
+          "items": [
+            {
+              "text": "All submersion victims should be transported, even if they appear uninjured or appear to have recovered.",
+              "icon": "assets/legend-important.webp",
+              "iconAlt": "Important protocol information",
+              "bold": [
+                "All submersion victims should be transported, even if they appear uninjured or appear to have recovered."
+              ],
+              "red": [
+                "All submersion victims should be transported, even if they appear uninjured or appear to have recovered."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "documentation-card",
+          "title": "Document:",
+          "image": "assets/legend-documentation.webp",
+          "alt": "Patient care documentation reminder symbol",
+          "items": [
+            "Vital signs",
+            "OPQRST/SAMPLE",
+            "Cardiac rhythm",
+            "Treatment(s)",
+            "Communication with Medical Control."
+          ]
         }
       ],
+      "plainText": "Submersion Event. Adult water-rescue safety, primary survey, secondary assessment and treatment, hypothermia cross-reference, mandatory transport, and documentation.",
       "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
       "displayMode": "structured"
     },
     {
