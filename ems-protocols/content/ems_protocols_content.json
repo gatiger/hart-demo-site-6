@@ -758,7 +758,7 @@
               "status": "active"
             },
             {
-              "id": "snakebite",
+              "id": "adult-snakebite",
               "title": "Snakebite",
               "type": "protocol",
               "pageStart": 151,
@@ -10496,7 +10496,7 @@
       "displayMode": "structured"
     },
     {
-      "id": "snakebite",
+      "id": "adult-snakebite",
       "title": "Snakebite",
       "type": "protocol",
       "categoryPath": [
@@ -10507,14 +10507,19 @@
       "effectiveDate": "2026-06-08",
       "lastRevised": "",
       "version": "2026",
-      "tags": [],
+      "tags": [
+        "adult",
+        "trauma",
+        "snakebite",
+        "scene safety"
+      ],
       "source": {
         "pdf": "documents/ems/2026-hcems-protocols.pdf",
         "pageStart": 151,
         "pageEnd": 151,
         "pageLabel": "151"
       },
-      "summary": "",
+      "summary": "Assessment and treatment of adult patients with suspected snakebite.",
       "content": [
         {
           "type": "heading",
@@ -10522,28 +10527,216 @@
           "text": "Snakebite"
         },
         {
-          "type": "paragraph",
-          "text": "Special Note: Safety of rescue personnel is top priority ! Ensure scene safety and determine location of snake. DO NOT transport snake. (A picture will suffice.) DEAD SNAKES ARE STILL DANGEROUS. Primary Survey Massive Hemorrhage Treat all life-threatening hemorrhage. See Hemorrhage Control Protocol. Airway – ensure patency and positioning. Have suction equipment ready. Consider spinal motion restriction if indicated. Respiratory/breathing – Give supplemental O2 if signs of compromise. Maintain SpO2 > 94%. Manage any injuries impairing ventilation immediately. Assist with bag valve mask if respiratory effort is ineffective. Circulation – Assess radial pulses and heart rate. Consider Pelvic Binder if appropriate. Head/Hypothermia Initial GCS/AVPU. Pupils. Prevent hypothermia. Secondary Assessment and Treatment Place patient in position of comfort and minimize patient exertion. If patient is hypotensive, place in supine position and manage shock appropriately. See Shock Protocol. Monitor vital signs and O2 saturation Cardiac Monitor Obtain and evaluate 12-Lead ECG as soon as possible. Treat arrhythmias under the appropriate protocol. Perform blood glucose analysis. Treat if BGL is < 60 mg/dl. Initiate EtCO2 monitoring. Physical exam and OPQRST/SAMPLE history. Assess for swelling, skin color changes, and/or shock. Mark on skin the leading edge of swelling and erythema and record time. Repeat if leading edge is progressing. If able, safely determine type, size and length of snake. Advanced airway/ventilatory support as needed. Initiate EtCO2 monitoring. Maintain EtCO2 of 30-35 mmHg DO NOT place bitten extremity in an elevated or lowered position. Clean wound, apply light dressing, unless wound is bleeding profusely. No ice, No constricting bands, No cutting of bite. Initiate IV/IO of normal saline at KVO rate. If fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol. For pain management, See Pain Management Protocol."
+          "type": "flow-stage",
+          "arrowAfter": true,
+          "items": [
+            {
+              "text": "Special Note: Safety of rescue personnel is top priority! Ensure scene safety and determine location of snake. DO NOT transport snake. (A picture will suffice.) DEAD SNAKES ARE STILL DANGEROUS.",
+              "bold": [
+                "Special Note: Safety of rescue personnel is top priority! Ensure scene safety and determine location of snake. DO NOT transport snake. (A picture will suffice.) DEAD SNAKES ARE STILL DANGEROUS."
+              ],
+              "red": [
+                "Special Note: Safety of rescue personnel is top priority! Ensure scene safety and determine location of snake. DO NOT transport snake. (A picture will suffice.) DEAD SNAKES ARE STILL DANGEROUS."
+              ]
+            }
+          ]
         },
         {
-          "type": "heading",
-          "level": 3,
-          "text": "Document"
+          "type": "flow-stage",
+          "title": "Primary Survey",
+          "arrowAfter": true,
+          "items": [
+            {
+              "text": "Massive Hemorrhage",
+              "bold": [
+                "Massive Hemorrhage"
+              ]
+            },
+            {
+              "text": "Treat all life-threatening hemorrhage. See Hemorrhage Control Protocol.",
+              "indent": 1,
+              "bold": [
+                "Treat all life-threatening hemorrhage."
+              ],
+              "links": [
+                {
+                  "text": "Hemorrhage Control Protocol",
+                  "protocolId": "hemorrhage-control"
+                }
+              ]
+            },
+            {
+              "text": "Airway – ensure patency and positioning.",
+              "bold": [
+                "Airway"
+              ]
+            },
+            {
+              "text": "Have suction equipment ready.",
+              "indent": 1
+            },
+            {
+              "text": "Consider spinal motion restriction if indicated.",
+              "indent": 1
+            },
+            {
+              "text": "Respiratory/breathing – Give supplemental O₂ if signs of compromise. Maintain SpO₂ ≥ 94%.",
+              "bold": [
+                "Respiratory/breathing",
+                "Maintain SpO₂ ≥ 94%."
+              ]
+            },
+            {
+              "text": "Manage any injuries impairing ventilation immediately.",
+              "indent": 1
+            },
+            {
+              "text": "Assist with bag valve mask if respiratory effort is ineffective.",
+              "indent": 1
+            },
+            {
+              "text": "Circulation – Assess radial pulses and heart rate.",
+              "bold": [
+                "Circulation"
+              ]
+            },
+            {
+              "text": "Consider Pelvic Binder if appropriate.",
+              "indent": 1
+            },
+            {
+              "text": "Head/Hypothermia",
+              "bold": [
+                "Head/Hypothermia"
+              ]
+            },
+            {
+              "text": "Initial GCS/AVPU.",
+              "indent": 1
+            },
+            {
+              "text": "Pupils.",
+              "indent": 1
+            },
+            {
+              "text": "Prevent hypothermia.",
+              "indent": 1
+            }
+          ]
         },
         {
-          "type": "paragraph",
-          "text": "Vital Signs OPQRST/SAMPLE Cardiac rhythm Treatment(s) Communication with Medical Control."
-        }
-      ],
-      "plainText": "Snakebite\nSpecial Note: Safety of rescue personnel is top priority ! Ensure scene safety and determine\nlocation of snake. DO NOT transport snake. (A picture will suffice.) DEAD SNAKES ARE STILL\nDANGEROUS.\nPrimary Survey\n•\nMassive Hemorrhage\no\nTreat all life-threatening hemorrhage. See Hemorrhage Control Protocol.\n•\nAirway – ensure patency and positioning.\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\n•\nRespiratory/breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nManage any injuries impairing ventilation immediately.\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nCirculation – Assess radial pulses and heart rate.\no\nConsider Pelvic Binder if appropriate.\n•\nHead/Hypothermia\no\nInitial GCS/AVPU.\no\nPupils.\no\nPrevent hypothermia.\nSecondary Assessment and Treatment\n•\nPlace patient in position of comfort and minimize patient exertion.\no\nIf patient is hypotensive, place in supine position and manage shock appropriately. See\nShock Protocol.\n•\nMonitor vital signs and O2 saturation\n•\nCardiac Monitor\no\nObtain and evaluate 12-Lead ECG as soon as possible.\no\nTreat arrhythmias under the appropriate protocol.\n•\nPerform blood glucose analysis.  Treat if BGL is < 60 mg/dl.\n•\nInitiate EtCO2 monitoring.\n•\nPhysical exam and OPQRST/SAMPLE history.\no\nAssess for swelling, skin color changes, and/or shock.\no\nMark on skin the leading edge of swelling and erythema and record time.\no\nRepeat if leading edge is progressing.\no\nIf able, safely determine type, size and length of snake.\n•\nAdvanced airway/ventilatory support as needed.\no\nInitiate EtCO2 monitoring.\no\nMaintain EtCO2 of 30-35 mmHg\n•\nDO NOT place bitten extremity in an elevated or lowered position.\n•\nClean wound, apply light dressing, unless wound is bleeding profusely.\no\nNo ice, No constricting bands, No cutting of bite.\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.\n•\nFor pain management,  See Pain Management Protocol.\nDocument:\n•\nVital Signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control.\no",
-      "pageText": [
+          "type": "flow-stage",
+          "title": "Secondary Assessment and Treatment",
+          "items": [
+            "Place patient in position of comfort and minimize patient exertion.",
+            {
+              "text": "If patient is hypotensive, place in supine position and manage shock appropriately. See Shock Protocol.",
+              "indent": 1,
+              "links": [
+                {
+                  "text": "Shock Protocol",
+                  "protocolId": "shock-management"
+                }
+              ]
+            },
+            "Monitor vital signs and O₂ saturation",
+            "Cardiac Monitor",
+            {
+              "text": "Obtain and evaluate 12-Lead ECG as soon as possible.",
+              "indent": 1
+            },
+            {
+              "text": "Treat dysrhythmias under the appropriate protocol.",
+              "indent": 1
+            },
+            {
+              "text": "Perform blood glucose analysis. Treat if BGL is < 60 mg/dl.",
+              "bold": [
+                "BGL is < 60 mg/dl."
+              ]
+            },
+            "Initiate EtCO₂ monitoring.",
+            "Physical exam and OPQRST/SAMPLE history.",
+            {
+              "text": "Assess for swelling, skin color changes, and/or shock.",
+              "indent": 1
+            },
+            {
+              "text": "Mark on skin the leading edge of swelling and erythema and record time.",
+              "indent": 1
+            },
+            {
+              "text": "Repeat if leading edge is progressing.",
+              "indent": 1
+            },
+            {
+              "text": "If able, safely determine type, size and length of snake.",
+              "indent": 1
+            },
+            "Advanced airway/ventilatory support as needed.",
+            {
+              "text": "Initiate EtCO₂ monitoring.",
+              "indent": 1
+            },
+            {
+              "text": "Maintain EtCO₂ of 30-35 mmHg",
+              "indent": 1,
+              "bold": [
+                "Maintain EtCO₂ of 30-35 mmHg"
+              ]
+            },
+            {
+              "text": "DO NOT place bitten extremity in an elevated or lowered position.",
+              "bold": [
+                "DO NOT"
+              ]
+            },
+            "Clean wound, apply light dressing, unless wound is bleeding profusely.",
+            {
+              "text": "No ice, No constricting bands, No cutting of bite.",
+              "indent": 1,
+              "bold": [
+                "No ice, No constricting bands, No cutting of bite."
+              ]
+            },
+            "Initiate IV/IO of normal saline at KVO rate.",
+            {
+              "text": "If fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.",
+              "indent": 1,
+              "links": [
+                {
+                  "text": "Shock Protocol",
+                  "protocolId": "shock-management"
+                }
+              ]
+            },
+            {
+              "text": "For pain management, See Pain Management Protocol.",
+              "links": [
+                {
+                  "text": "Pain Management Protocol",
+                  "protocolId": "adult-pain-management"
+                }
+              ]
+            }
+          ]
+        },
         {
-          "page": 151,
-          "text": "Snakebite\nSpecial Note: Safety of rescue personnel is top priority ! Ensure scene safety and determine\nlocation of snake. DO NOT transport snake. (A picture will suffice.) DEAD SNAKES ARE STILL\nDANGEROUS.\nPrimary Survey\n•\nMassive Hemorrhage\no\nTreat all life-threatening hemorrhage. See Hemorrhage Control Protocol.\n•\nAirway – ensure patency and positioning.\no\nHave suction equipment ready.\no\nConsider spinal motion restriction if indicated.\n•\nRespiratory/breathing – Give supplemental O2 if signs of compromise.  Maintain SpO2 > 94%.\no\nManage any injuries impairing ventilation immediately.\no\nAssist with bag valve mask if respiratory effort is ineffective.\n•\nCirculation – Assess radial pulses and heart rate.\no\nConsider Pelvic Binder if appropriate.\n•\nHead/Hypothermia\no\nInitial GCS/AVPU.\no\nPupils.\no\nPrevent hypothermia.\nSecondary Assessment and Treatment\n•\nPlace patient in position of comfort and minimize patient exertion.\no\nIf patient is hypotensive, place in supine position and manage shock appropriately. See\nShock Protocol.\n•\nMonitor vital signs and O2 saturation\n•\nCardiac Monitor\no\nObtain and evaluate 12-Lead ECG as soon as possible.\no\nTreat arrhythmias under the appropriate protocol.\n•\nPerform blood glucose analysis.  Treat if BGL is < 60 mg/dl.\n•\nInitiate EtCO2 monitoring.\n•\nPhysical exam and OPQRST/SAMPLE history.\no\nAssess for swelling, skin color changes, and/or shock.\no\nMark on skin the leading edge of swelling and erythema and record time.\no\nRepeat if leading edge is progressing.\no\nIf able, safely determine type, size and length of snake.\n•\nAdvanced airway/ventilatory support as needed.\no\nInitiate EtCO2 monitoring.\no\nMaintain EtCO2 of 30-35 mmHg\n•\nDO NOT place bitten extremity in an elevated or lowered position.\n•\nClean wound, apply light dressing, unless wound is bleeding profusely.\no\nNo ice, No constricting bands, No cutting of bite.\n•\nInitiate IV/IO of normal saline at KVO rate.\no\nIf fluid resuscitation is needed, 20 ml/kg fluid bolus. See Shock Protocol.\n•\nFor pain management,  See Pain Management Protocol.\nDocument:\n•\nVital Signs\n•\nOPQRST/SAMPLE\n•\nCardiac rhythm\n•\nTreatment(s)\n•\nCommunication with\nMedical Control.\no"
+          "type": "documentation-card",
+          "title": "Document:",
+          "image": "assets/legend-documentation.webp",
+          "alt": "Patient care documentation reminder symbol",
+          "items": [
+            "Vital Signs",
+            "OPQRST/SAMPLE",
+            "Cardiac rhythm",
+            "Treatment(s)",
+            "Communication with Medical Control."
+          ]
         }
       ],
+      "plainText": "Snakebite. Adult scene safety, assessment, monitoring, wound care, shock treatment, pain management, and documentation.",
       "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
       "displayMode": "structured"
     },
     {

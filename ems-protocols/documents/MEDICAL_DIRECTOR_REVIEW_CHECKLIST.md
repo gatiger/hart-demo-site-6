@@ -222,6 +222,11 @@ This internal checklist tracks items that must be confirmed before the native EM
 
 
 
+
+### Adult Clinical Protocols > Adult Trauma Emergencies > Snakebite
+
+- [ ] Verify the rescue-personnel warning, prohibition on transporting snakes, dead-snake warning, positioning, swelling/erythema marking, snake identification, EtCO2 target, extremity positioning, wound restrictions, fluids, pain management, and documentation requirements.
+
 ### Adult Clinical Protocols > Adult Trauma Emergencies > Burns
 
 - [ ] Verify scene safety, burn-center/trauma-center/aeromedical destination guidance, airway and inhalation-injury management, carbon-monoxide warnings, burn wound care, TBSA/depth criteria, IV access, Lactated Ringers, pain management, and documentation.
