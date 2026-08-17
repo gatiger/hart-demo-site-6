@@ -789,14 +789,14 @@
           "pageEnd": 155,
           "status": "active"
         },
-        {
-          "id": "adenosine-adenocard",
-          "title": "Adenosine (Adenocard®)",
-          "type": "drug",
-          "pageStart": 156,
-          "pageEnd": 156,
-          "status": "active"
-        },
+    {
+      "id": "adenosine-adenocard",
+      "title": "Adenosine (Adenocard®)",
+      "type": "drug",
+      "pageStart": 156,
+      "pageEnd": 156,
+      "status": "active"
+    },
         {
           "id": "albuterol",
           "title": "Albuterol",
@@ -11048,14 +11048,21 @@
       "effectiveDate": "2026-06-08",
       "lastRevised": "",
       "version": "2026",
-      "tags": [],
+      "tags": [
+        "adenosine",
+        "adenocard",
+        "PSVT",
+        "tachycardia",
+        "antiarrhythmic"
+      ],
       "source": {
         "pdf": "documents/ems/2026-hcems-protocols.pdf",
         "pageStart": 156,
         "pageEnd": 156,
         "pageLabel": "156"
       },
-      "summary": "",
+      "summary": "Indications, adult and pediatric dosing, administration, monitoring, interactions, adverse effects, and special considerations for adenosine.",
+      "displayMode": "native",
       "content": [
         {
           "type": "heading",
@@ -11065,59 +11072,135 @@
         {
           "type": "heading",
           "level": 3,
-          "text": "Indications"
+          "text": "Indications:"
         },
         {
-          "type": "paragraph",
-          "text": "PSVT and undifferentiated regular wide-complex tachycardia."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Adult Dose Range"
-        },
-        {
-          "type": "paragraph",
-          "text": "6 mg; if not effective within 1 – 2 minutes, 12 mg may be given; may repeat 12 mg bolus if needed."
+          "type": "list",
+          "items": [
+            "PSVT and undifferentiated regular wide-complex tachycardia."
+          ]
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Pediatric Dose Range"
+          "text": "Adult Dose Range:"
         },
         {
-          "type": "paragraph",
-          "text": "(Given only after orders from Medical Control) 0.1 mg/kg; if not effective, administer 0.2 mg/kg. Maximum initial dose: 6 mg/ Maximum additional single dose: 12 mg. Time to Onset Rapid"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Contraindications"
-        },
-        {
-          "type": "paragraph",
-          "text": "2nd or 3rd degree AV block, or sick sinus syndrome, or any bradycardic rhythm (except in patients with a pacemaker). Known hypersensitivity. How is it given? Rapid IV push over 1 – 2 seconds via peripheral IV line with at least 20 ml Normal Saline flush. What should be monitored? ECG Heart rate Blood Pressure"
+          "type": "list",
+          "items": [
+            "6 mg; if not effective within 1 – 2 minutes, 12 mg may be given; may repeat 12 mg bolus if needed."
+          ]
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Major drug interactions"
+          "text": "Pediatric Dose Range:"
         },
         {
-          "type": "paragraph",
-          "text": "Theophylline and caffeine (may require increased dose of adenosine). Dipyridamole (may require reduced dose of adenosine) Carbamazepine (may increase heart block) What side effects/potential complications are expected? Facial flushing. Palpitations. Chest pain. Hypotension. Headache. Shortness of breath/dyspnea. Sweating. Are there any special instructions/considerations? Use large proximal vein. Follow medication immediately with syringe flush of normal saline (not just open line; not fast enough). Use two syringe technique if possible. Consider other arrythmias such as Atrial Flutter, Atrial Fibrillation, or Ventricular Tachycardia before administration."
+          "type": "list",
+          "items": [
+            {
+              "text": "(Given only after orders from Medical Control) 0.1 mg/kg; if not effective, administer 0.2 mg/kg. Maximum initial dose: 6 mg/ Maximum additional single dose: 12 mg.",
+              "bold": [
+                "(Given only after orders from Medical Control)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Time to Onset"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Rapid"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Contraindications:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "2nd or 3rd degree AV block, or sick sinus syndrome, or any bradycardic rhythm (except in patients with a pacemaker).",
+            "Known hypersensitivity."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "How is it given?"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Rapid IV push over 1 – 2 seconds via peripheral IV line with at least 20 ml Normal Saline flush."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "What should be monitored?"
+        },
+        {
+          "type": "list",
+          "items": [
+            "ECG",
+            "Heart rate",
+            "Blood Pressure"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Major drug interactions:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Theophylline and caffeine (may require increased dose of adenosine).",
+            "Dipyridamole (may require reduced dose of adenosine)",
+            "Carbamazepine (may increase heart block)"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "What side effects/potential complications are expected?"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Facial flushing.",
+            "Palpitations.",
+            "Chest pain.",
+            "Hypotension.",
+            "Headache.",
+            "Shortness of breath/dyspnea.",
+            "Sweating."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Are there any special instructions/considerations?"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Use large proximal vein.",
+            "Follow medication immediately with syringe flush of normal saline (not just open line; not fast enough).",
+            "Use two syringe technique if possible.",
+            "Consider other arrhythmias such as Atrial Flutter, Atrial Fibrillation, or Ventricular Tachycardia before administration."
+          ]
         }
       ],
-      "plainText": "Adenosine (Adenocard®)\nIndications:\n•\nPSVT and undifferentiated regular wide-complex tachycardia.\nAdult Dose Range:\n•\n6 mg; if not effective within 1 – 2 minutes, 12 mg may be given; may repeat 12 mg bolus if\nneeded.\nPediatric Dose Range:\n•\n(Given only after orders from Medical Control) 0.1 mg/kg; if not effective, administer 0.2 mg/kg.\nMaximum initial dose: 6 mg/ Maximum additional single dose: 12 mg.\nTime to Onset\n•\nRapid\nContraindications:\n•\n2nd or 3rd degree AV block, or sick sinus syndrome, or any bradycardic rhythm (except in patients\nwith a pacemaker).\n•\nKnown hypersensitivity.\nHow is it given?\n•\nRapid IV push over 1 – 2 seconds via peripheral IV line with at least 20 ml Normal Saline flush.\nWhat should be monitored?\n•\nECG\n•\nHeart rate\n•\nBlood Pressure\nMajor drug interactions:\n•\nTheophylline and caffeine (may require increased dose of adenosine).\n•\nDipyridamole (may require reduced dose of adenosine)\n•\nCarbamazepine (may increase heart block)\nWhat side effects/potential complications are expected?\n•\nFacial flushing.\n•\nPalpitations.\n•\nChest pain.\n•\nHypotension.\n•\nHeadache.\n•\nShortness of breath/dyspnea.\n•\nSweating.\nAre there any special instructions/considerations?\n•\nUse large proximal vein.\n•\nFollow medication immediately with syringe flush of normal saline (not just open line; not fast\nenough).\n•\nUse two syringe technique if possible.\n•\nConsider other arrythmias such as Atrial Flutter, Atrial Fibrillation, or Ventricular Tachycardia\nbefore administration.",
-      "pageText": [
-        {
-          "page": 156,
-          "text": "Adenosine (Adenocard®)\nIndications:\n•\nPSVT and undifferentiated regular wide-complex tachycardia.\nAdult Dose Range:\n•\n6 mg; if not effective within 1 – 2 minutes, 12 mg may be given; may repeat 12 mg bolus if\nneeded.\nPediatric Dose Range:\n•\n(Given only after orders from Medical Control) 0.1 mg/kg; if not effective, administer 0.2 mg/kg.\nMaximum initial dose: 6 mg/ Maximum additional single dose: 12 mg.\nTime to Onset\n•\nRapid\nContraindications:\n•\n2nd or 3rd degree AV block, or sick sinus syndrome, or any bradycardic rhythm (except in patients\nwith a pacemaker).\n•\nKnown hypersensitivity.\nHow is it given?\n•\nRapid IV push over 1 – 2 seconds via peripheral IV line with at least 20 ml Normal Saline flush.\nWhat should be monitored?\n•\nECG\n•\nHeart rate\n•\nBlood Pressure\nMajor drug interactions:\n•\nTheophylline and caffeine (may require increased dose of adenosine).\n•\nDipyridamole (may require reduced dose of adenosine)\n•\nCarbamazepine (may increase heart block)\nWhat side effects/potential complications are expected?\n•\nFacial flushing.\n•\nPalpitations.\n•\nChest pain.\n•\nHypotension.\n•\nHeadache.\n•\nShortness of breath/dyspnea.\n•\nSweating.\nAre there any special instructions/considerations?\n•\nUse large proximal vein.\n•\nFollow medication immediately with syringe flush of normal saline (not just open line; not fast\nenough).\n•\nUse two syringe technique if possible.\n•\nConsider other arrythmias such as Atrial Flutter, Atrial Fibrillation, or Ventricular Tachycardia\nbefore administration."
-        }
-      ],
-      "needsReview": false,
-      "extractionNote": "Auto-extracted from PDF. Review formatting, tables, diagrams, dosage charts, and flowcharts before publishing.",
-      "displayMode": "structured"
+      "plainText": "Adenosine (Adenocard®). Indications, adult and pediatric dose ranges, onset, contraindications, administration, monitoring, drug interactions, side effects, and special instructions.",
+      "needsReview": false
     },
     {
       "id": "albuterol",

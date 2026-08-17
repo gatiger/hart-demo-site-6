@@ -345,6 +345,12 @@ These are not routine transcription checks. Each item below represents source ma
 - [ ] Verify massive-hemorrhage interventions, airway/breathing steps, pelvic-binder consideration, spinal motion restriction, trauma-center transport, fluids, reassessment, and documentation requirements.
 - [ ] Verify all cross-references and the wording ?Continue all resuscitation efforts and evaluations enroute.?
 
+## EMS Drug Formulary
+
+### EMS Drug Formulary > Adenosine (Adenocard®)
+
+- [ ] Verify the indication, adult dose, repeat dose, pediatric Medical Control requirement, pediatric doses and maximums, onset, contraindications, rapid-push/flush technique, monitoring, interactions, expected complications, and special considerations.
+
 ## Resources
 
 ### Resources > Medication Administration
