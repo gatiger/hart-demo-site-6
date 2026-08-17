@@ -77,6 +77,14 @@ These are not routine transcription checks. Each item below represents source ma
 
 - [ ] Is "enavulsed" the intended clinical term, or should it be corrected to "avulsed" or "enucleated"?
 
+### EMS Drug Formulary
+
+- [ ] The Dopamine infusion chart labels its rate columns as mcg/kg/hr while the surrounding dosing instructions use mcg/kg/min. Which unit is correct for the approved chart?
+- [ ] Lorazepam (Ativan®) and Phenergan have full formulary pages in the PDF, but their navigation labels say REMOVED. Should either entry remain visible, be hidden, or display an explicit removed-from-service notice?
+- [ ] Epinephrine (Adrenalin®) lists the adult symptomatic-bradycardia mixture as 1 mg of 1:1,000 epinephrine in 250 ml of normal saline or D5W. Confirm the concentration, dose, carrier, and 2–10 mcg/min range.
+- [ ] Tranexamic Acid (TXA) gives a 10-minute infusion in the adult dose section but 5–10 minutes in the administration section. Which infusion time should control?
+- [ ] Diazepam says “Contact Medical Control or advisement on use.” Confirm whether the approved wording should be “Contact Medical Control for advisement on use.”
+
 ### Resources > Sedation Assisted Intubation
 
 - [ ] Does the referenced 2012 Georgia EMSMDAC guidance remain current and authorized for use?
@@ -354,6 +362,14 @@ These are not routine transcription checks. Each item below represents source ma
 ### EMS Drug Formulary > Adenosine (Adenocard®)
 
 - [ ] Verify the indication, adult dose, repeat dose, pediatric Medical Control requirement, pediatric doses and maximums, onset, contraindications, rapid-push/flush technique, monitoring, interactions, expected complications, and special considerations.
+
+### EMS Drug Formulary > Complete Formulary (PDF pages 155–195)
+
+- [ ] Compare all 39 native drug entries word-for-word with the signed source, including section order, bullets, nesting, bold text, registered marks, inequalities, ranges, routes, units, punctuation, and red warnings.
+- [ ] Verify every adult and pediatric indication, dose, concentration, maximum, route, interval, age/weight threshold, onset, duration, contraindication, monitoring item, interaction, adverse effect, and special instruction.
+- [ ] Verify the native Dextrose mixing table, both Dopamine infusion tables, the Epinephrine infusion table, and the Lidocaine infusion table value by value.
+- [ ] Confirm each internal medication/chart cross-reference opens the intended native page and that PDF-only ?next page? wording has been removed without changing clinical meaning.
+- [ ] Confirm the formulary visibility and operational status of every medication, especially entries labeled REMOVED in navigation.
 
 ## Resources
 

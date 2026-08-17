@@ -3,7 +3,7 @@ let deferredPrompt;
 let selectedId = null;
 let viewHistory = [];
 let viewHistoryIndex = -1;
-const CONTENT_VERSION = 'v155';
+const CONTENT_VERSION = 'v156';
 
 const treeNav = document.getElementById('treeNav');
 const searchBox = document.getElementById('searchBox');
