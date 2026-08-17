@@ -219,6 +219,12 @@ This internal checklist tracks items that must be confirmed before the native EM
 
 
 
+
+### Adult Clinical Protocols > Adult Trauma Emergencies > Extremity Trauma
+
+- [ ] Verify fracture/dislocation assessment, traction and splinting criteria, cold-pack/elevation care, amputation-part handling and transport, pain-control cross-reference, and documentation requirements.
+- [ ] Confirm whether the duplicated ?Vital signs? entry in the source documentation box should remain or whether one entry should be ?Cardiac rhythm.?
+
 ### Adult Clinical Protocols > Adult Trauma Emergencies > Abdominal and Pelvic Trauma
 
 - [ ] Verify abdominal and pelvic assessment, spinal restriction, trauma-center transport, fluid treatment, evisceration care, impaled-object care, transport of a removed object, continued resuscitation, and documentation requirements.
