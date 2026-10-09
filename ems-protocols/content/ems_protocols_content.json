@@ -30555,14 +30555,8 @@
       "summary": "",
       "content": [
         {
-          "type": "heading",
-          "level": 2,
-          "text": "Abbreviations and Definitions — Source page 198"
-        },
-        {
           "type": "table",
           "className": "abbreviations-table",
-          "sourcePage": 198,
           "headers": [
             "Abbreviation / term",
             "Definition"
@@ -30727,23 +30721,7 @@
             [
               "ET",
               "Endotracheal Intubation"
-            ]
-          ]
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Abbreviations and Definitions — Source page 199"
-        },
-        {
-          "type": "table",
-          "className": "abbreviations-table",
-          "sourcePage": 199,
-          "headers": [
-            "Abbreviation / term",
-            "Definition"
-          ],
-          "rows": [
+            ],
             [
               "ETA",
               "Estimated Time of Arrival"
@@ -30903,23 +30881,7 @@
             [
               "OCGA",
               "Official Code of Georgia"
-            ]
-          ]
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Abbreviations and Definitions — Source page 200"
-        },
-        {
-          "type": "table",
-          "className": "abbreviations-table",
-          "sourcePage": 200,
-          "headers": [
-            "Abbreviation / term",
-            "Definition"
-          ],
-          "rows": [
+            ],
             [
               "OPA",
               "Oropharyngeal Airway"
